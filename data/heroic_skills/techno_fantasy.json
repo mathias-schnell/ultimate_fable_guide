@@ -1,0 +1,188 @@
+{
+  "source": {
+    "name": "techno_fantasy",
+    "label": "Techno Fantasy Atlas"
+  },
+  "skills": [
+    {
+      "name": "Arcane Soldier",
+      "classes": [
+        "Elementalist",
+        "Sharpshooter",
+        "Weaponmaster"
+      ],
+      "summary": "Perform a free attack against a target, then immediately cast an offensive spell (OO) against them.",
+      "description": "You may use an action to perform a free attack with a weapon you have equipped. This attack must target a single enemy. If the attack is successful, treat your High Roll as 0 when determining damage dealt by it. After the attack has been resolved, if it was successful, you may perform the Spell action for free: the spell you cast this way must be an offensive spell (OO) with a total MP cost equal to or lower than 20, and it may only target the enemy you attacked (you must still spend the appropriate Mind Points and perform the Magic Check). Treat your Magic Check’s High Roll as 0 when determining damage or other effects caused by this spell.",
+      "additional_requirements": [
+        "Offensive spells"
+      ]
+    },
+    {
+      "name": "Brainwave Discharge",
+      "classes": [
+        "Esper"
+      ],
+      "summary": "Erase your Brainwave Clock and deal damage.",
+      "description": "While your Brainwave Clock is full, you may use an action to erase all of its sections. If you do, you may choose one option: you deal 20 physical damage to every enemy that is present on the scene, or you deal 30 physical damage to a single enemy you can see. This amount increases by 10 if you are level 20 or higher, or by 20 if you are level 40 or higher."
+    },
+    {
+      "name": "Bullet Time",
+      "classes": [
+        "Entropist",
+        "Rogue"
+      ],
+      "summary": "Gain several benefits from Dodge and Stolen Time.",
+      "description": "You gain a bonus to your Initiative modifier equal to (your SL in Dodge + your SL in Stolen Time).\n\nAs long as you have no shields and no martial armor equipped, all damage you suffer is reduced by an amount equal to (your SL in Dodge) (applied before damage Affinities) and you deal extra damage equal to (your SL in Stolen Time).",
+      "additional_requirements": [
+        "Dodge",
+        "Stolen Time"
+      ]
+    },
+    {
+      "name": "Decoy Bait",
+      "classes": [
+        "Sharpshooter"
+      ],
+      "summary": "Hawkeye creates a decoy and grants a punishing attack.",
+      "description": "When you use your Hawkeye Skill and choose the first option, if no decoy bait is present on the scene, you may spend 10 Mind Points. If you do, you create a decoy bait with Hit Points equal to (half your level + (your SL in Hawkeye, multiplied by 5)).\n\nWhen an enemy who can see your decoy bait deals damage to one or more creatures, your decoy bait automatically suffers damage in place of one of those creatures, chosen randomly (your decoy bait is always treated as having neutral Affinity towards all damage types, and cannot gain any other Affinity; the decoy bait only suffers the damage in place of the creature, not any other effects).\n\nWhen an enemy reduces your decoy bait to 0 Hit Points, your decoy bait is automatically destroyed and you roll 1d10. If the number rolled is equal to or lower than (3 + your SL in Hawkeye), you may perform a free attack with a bow or firearm weapon you have equipped. This attack may only target that enemy, gains a bonus equal to (your SL in Hawkeye) to its Accuracy Check, and its damage ignores Immunities and Resistances.\n\nYour decoy bait cannot recover Hit Points and is automatically destroyed at the end of the scene. Make sure to describe what it looks like!",
+      "additional_requirements": [
+        "Hawkeye"
+      ]
+    },
+    {
+      "name": "Dreamslice",
+      "classes": [
+        "Darkblade",
+        "Esper"
+      ],
+      "summary": "Shadow Strike reduces MP and causes action loss when using swords.",
+      "description": "When you hit one or more creatures with an attack from your Shadow Strike Skill using a weapon that belongs to the sword Category, each of those creatures loses an amount of Mind Points equal to (the number you rolled on your Might die for Shadow Strike). Then, if the number you rolled on your Might die for Shadow Strike was 8 or higher, you may choose one creature hit by the attack. If that creature is your focus or you have a Bond towards them, that creature will perform one fewer action during their next turn (to a minimum of zero actions)."
+    },
+    {
+      "name": "Dynamic Synchronization",
+      "classes": [
+        "Pilot"
+      ],
+      "summary": "Join forces with another pilot or passenger.",
+      "description": "At the start of your turn during a conflict, if you are driving your personal vehicle, you may choose one option: you synchronize with another Player Character who is present on the scene and driving their own personal vehicle, or you synchronize with another Player Character who is a passenger on your personal vehicle. Describe how the two of you join forces! You and the chosen character both receive the following benefits as long as the synchronization remains active:\n\n• When you perform a Check, you may use the current Attribute die sizes of the other PC in place of yours (for one or both dice).\n• When you deal damage, deal extra damage equal to (the strength of your Bond towards the other PC, plus the strength of their Bond towards you).\n• You may use an action to perform a free attack with one enabled or disabled weapon module present on the personal vehicle the other PC is currently on.\n• When your turn ends, if the other PC has yet to take their turn during this round, they may take their turn immediately after yours.\n\nThis synchronization lasts until the end of the scene, or until you or the other Player Character die, fall unconscious, leave the scene, synchronize again or are no longer aboard a personal vehicle."
+    },
+    {
+      "name": "Greater Akromorphosis",
+      "classes": [
+        "Mutant"
+      ],
+      "summary": "Gain different benefits based on the Category of your unarmed strikes.",
+      "description": "You gain the following benefits based on the current Category of your unarmed strikes.\n\n• Arcane, brawling, dagger, thrown: your attacks with unarmed strikes treat the Defense of each target as being equal to their current Insight die size.\n• Bow, sword: your attacks with unarmed strikes that target two or more creatures deal 5 extra damage.\n• Firearm, heavy: your unarmed strikes deal 5 extra damage to constructs, and 5 extra damage to non-construct creatures who have at least one shield and/or martial armor equipped.\n• Flail, spear: you gain a +2 bonus to Defense, and your attacks with unarmed strikes may target flying creatures.\n\nIf your unarmed strikes are treated as belonging to more than one Category (for instance due to the Blade Adept Heroic Skill; see High Fantasy Atlas, page 154), you gain all the benefits of the corresponding Categories.",
+      "additional_requirements": [
+        "Akromorphosis"
+      ]
+    },
+    {
+      "name": "Greater Ecdysis",
+      "classes": [
+        "Mutant"
+      ],
+      "summary": "Ecdysis allows you to end status effects and spells.",
+      "description": "When you use the Ecdysis Skill, you may also choose one or both options: you recover from all status effects, and/or if you are affected by one or more spells with a duration of “Scene”, you are no longer affected by any of those spells."
+    },
+    {
+      "name": "Greater Theriomorphosis",
+      "classes": [
+        "Mutant"
+      ],
+      "summary": "Act after Theriomorphosis.",
+      "description": "When you use the Theriomorphosis Skill on your turn during a conflict, if this did not happen through the Genoclepsis Skill, you may manifest the effects of up to three therioforms from those you have learned (instead of two). Then, you may perform an additional action. This additional action cannot be used for the Theriomorphosis Skill."
+    },
+    {
+      "name": "Hit the Nerve",
+      "classes": [
+        "Chanter",
+        "Orator"
+      ],
+      "summary": "Use Condemn to inflict enraged and gain benefits against enraged creatures.",
+      "description": "When you successfully use the Condemn Skill against an enemy you know one or more Traits of, you recover an amount of Mind Points equal to half the amount of MP lost by the target, and you may have them suffer enraged instead of the normal status effects.\n\nAdditionally, when you perform an Opposed Check against an enraged creature, or an Accuracy Check or Magic Check for an attack or offensive spell (OO) that includes one or more enraged creatures among its targets, you trigger a critical success when both dice show the same number (as long as the Check is not a fumble).",
+      "additional_requirements": [
+        "Condemn"
+      ]
+    },
+    {
+      "name": "Make it or Break it",
+      "classes": [
+        "Darkblade",
+        "Fury"
+      ],
+      "summary": "Double the HR of an attack but risk damaging the weapon.",
+      "description": "Before you perform an Accuracy Check, you may declare “make it or break it!”. If you do, the Check’s High Roll is doubled when determining damage, but if the Result is an even number, you apply the following penalties after the attack is resolved:\n\n• If the weapon you used is transforming (page 113), it immediately changes form and it cannot change form again until the end of the scene.\n• If the weapon you used is not transforming, or if it is a transforming weapon that cannot change form (see above), it is placed inside your backpack and cannot be equipped until the end of the scene; however, you may immediately perform the Equipment action for free.\n\nThis Heroic Skill does not apply to attacks with unarmed strikes, improvised weapons, weapon modules (page 161), or Twin Shields (Core Rulebook, page 197)."
+    },
+    {
+      "name": "Mimeoclepsis",
+      "classes": [
+        "Chimerist",
+        "Mutant"
+      ],
+      "summary": "Learn spells through the Mutant’s Genoclepsis.",
+      "description": "When you use the Genoclepsis Skill on an NPC, if that NPC’s Species is among those you can learn spells from with the Spell Mimic Skill, the Game Master must reveal all spells known by that NPC. Then, if that NPC knows one or more spells, you may learn one of those spells as a Chimerist spell of your own.",
+      "additional_requirements": [
+        "Genoclepsis",
+        "Spell Mimic"
+      ]
+    },
+    {
+      "name": "Nebulization",
+      "classes": [
+        "Tinkerer"
+      ],
+      "summary": "Your potions are strengthened by repeated use.",
+      "description": "When you create a potion, you gain 1 Nebulization Point, or 2 Nebulization Points if that potion was created via the Alchemy benefit of the Gadget Skill.\n\nPotions and elemental shards you create deal extra damage equal to twice your current Nebulization Points.\n\nPotions you create that restore Hit Points and/or Mind Points restore additional HP and/or MP equal to (your current Nebulization Points, multiplied by 5).\n\nYou may never have more than 5 Nebulization Points, and you lose all of them at the end of each scene.",
+      "additional_requirements": [
+        "Gadget (advanced Alchemy benefit)"
+      ]
+    },
+    {
+      "name": "Overload Burst",
+      "classes": [
+        "Pilot"
+      ],
+      "summary": "Hold on at 1 HP, then unleash your personal vehicle against your foes.",
+      "description": "Choose a damage type from bolt, dark, fire, ice, and light.\n\nWhen you are reduced to 0 Hit Points for the first time during a scene, if you are driving your personal vehicle, you may choose to be reduced to exactly 1 Hit Point instead. If you do, you and any passengers leave your personal vehicle, which disappears from the game world. Then, you may deal an amount of damage equal to your Crisis score to a single creature you can see. This damage is of the type you have chosen from the list above. If your personal vehicle disappears from the game world this way, the next use of your Compression Tech Skill has an additional cost of 1 Fabula Point.",
+      "additional_requirements": [
+        "Compression Tech"
+      ]
+    },
+    {
+      "name": "Psychic Field",
+      "classes": [
+        "Esper"
+      ],
+      "summary": "Extend some of your psychic gifts to your allies.",
+      "description": "Your gifts with event “When you deal damage” can also be used “When an ally who is able to hear you deals damage”.\n\nYour psychic shield gift, if you have acquired it, has its effect changed to “You and every ally who is able to hear you may treat your Defense and Magic Defense scores as being equal to (your current Willpower die size + (the number of filled sections in your Brainwave Clock, multiplied by 2)) against that Check (you may still use your normal scores if better).”"
+    },
+    {
+      "name": "Quantum Magicannon",
+      "classes": [
+        "Tinkerer"
+      ],
+      "summary": "Improve your magicannon and use it for explosive attacks.",
+      "description": "Your attacks with the magicannon deal 5 extra damage.\n\nWhen you perform the Attack action with your magicannon, if you have no other weapon equipped, you may choose one option: destroy the magicannon, then create and equip a new one for free (ignore the IP cost), using this newly equipped magicannon for your attack; or the attack gains multi (3); or you perform two separate attacks instead of one, following the rules for two-weapon fighting (Core Rulebook, page 69).",
+      "additional_requirements": [
+        "Gadget (advanced Magitech benefit)"
+      ]
+    },
+    {
+      "name": "Quick Scan",
+      "classes": [
+        "Loremaster"
+      ],
+      "summary": "Examine multiple creatures.",
+      "description": "When you perform the Study action during a conflict, you may examine the profiles of all enemies you can see. If you do, you perform a single (INS + INS) Open Check and apply the result separately to each enemy (Core Rulebook, page 319). However, if you have acquired the Flash of Insight Skill, this Check cannot trigger it."
+    },
+    {
+      "name": "Steel Witch",
+      "classes": [
+        "Pilot"
+      ],
+      "summary": "Gain benefits when you cast spells on a personal vehicle.",
+      "description": "After you cast the first spell of your turn during a conflict, if you are driving your personal vehicle, you may choose one option (after the spell has been resolved): choose one enabled module and disable it, then choose one disabled module and enable it; or the next spell you cast before the end of this scene that deals damage deals 5 extra damage; or the next spell you cast before the end of this scene that restores Hit Points to one or more creatures restores 10 additional Hit Points to each of those creatures."
+    }
+  ]
+}

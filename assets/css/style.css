@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    width: min(1200px, 95%);
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.page-header {
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+}
+
+.page-header p {
+    margin: 0;
+}
+
+.skills {
+    border: 1px solid #ccc;
+}
+
+.skill-list-header,
+.skill {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+}
+
+.skill-list-header {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.skill-list-header > div,
+.skill > div {
+    padding: 0.75rem 1rem;
+}
+
+.skill {
+    border-bottom: 1px solid #ddd;
+}
+
+.skill:last-child {
+    border-bottom: none;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.class-tag {
+    display: inline-block;
+    margin: 0.1rem 0.25rem 0.1rem 0;
+}
