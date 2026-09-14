@@ -1,4 +1,7 @@
 <?php
+    ini_set("display_errors", true);
+    error_reporting(E_ALL);
+    include_once("includes/app_conf.php");
     $json_files = scandir(__DIR__ . '/data/heroic_skills/');
 ?>
 
@@ -17,6 +20,31 @@
         <header class="page-header">
             <h1>Heroic Skills</h1>
         </header>
+        <div class="filter-section">
+            <div class="filter-wrapper">
+                <div id="filter-rows-container" class="filter-rows-container"></div>
+            </div>
+
+            <!-- Hidden HTML Template used by JS to clone new dropdown rows -->
+            <template id="filter-row-template">
+                <div class="filter-row">
+                    <select class="tag-select">
+                        <option value="">-- Select Tag --</option>
+                        <?php foreach ($filter_tags as $group_label => $tags): ?>
+                            <optgroup label="<?= htmlspecialchars($group_label) ?>">
+                                <?php foreach ($tags as $tag_key => $tag_name): ?>
+                                    <option value="<?= htmlspecialchars($tag_key) ?>">
+                                        <?= htmlspecialchars($tag_name) ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </optgroup>
+                        <?php endforeach; ?>
+                    </select>
+                    <button type="button" class="btn-add-row" title="Add filter">&plus;</button>
+                    <button type="button" class="btn-remove-row" title="Remove filter">&times;</button>
+                </div>
+            </template>
+        </div>
         <section class="skills">
             <div class="skill-list-header">
                 <div></div>
@@ -34,9 +62,10 @@
                         $source = $data['source'] ?? [];
                         $skills = $data['skills'] ?? [];
                         foreach ($skills as $id => $skill):
+                            $tags = "source-" . $source['name'] . ', ' . htmlspecialchars(implode(',', $skill['tags']));
                             $id = "heroic-skill-description-" . $file . "-" . $id + 1;
                         ?>
-                        <article class="skill" data-classes="<?= htmlspecialchars(implode(',', $skill['classes'])) ?>">
+                        <article class="skill" data-tags="<?=$tags ?>">
                             <div class="skill-row">
                                 <div class="skill-expand">
                                     <button class="heroic-skill-toggle"

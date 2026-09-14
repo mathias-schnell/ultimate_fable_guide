@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.2] - 2026-09-13
+
+### Added
+- Added filtering system that uses tags to limit what is shown.
+
+### Internal
+- Added several tags to the `heroic_skills` data for categorization and grouping purposes.
+
+---
+
 ## [0.1.1] - 2026-09-13
 
 ### Added

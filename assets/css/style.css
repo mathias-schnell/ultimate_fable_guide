@@ -33,8 +33,7 @@ body {
 }
 
 .page-header {
-    margin-bottom: 0.25rem;
-    padding: 0.5rem;
+    padding: 0.25rem 0.5rem;
 }
 
 .page-header h1 {
@@ -102,7 +101,104 @@ body {
     font-weight: bold;
 }
 
-.class-tag {
-    display: inline-block;
-    margin: 0.1rem 0.25rem 0.1rem 0;
+.filter-wrapper {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.filter-header h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #0f172a;
+}
+
+.filter-rows-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tag-select {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    color: #334155;
+    flex-grow: 1;
+    max-width: 320px;
+}
+
+.tag-select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.btn-add-row,
+.btn-remove-row {
+    background: none;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    color: #64748b;
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 0.35rem 0.65rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.btn-add-row:hover,
+.btn-remove-row:hover {
+    background-color: #fee2e2;
+    color: #dc2626;
+    border-color: #fca5a5;
+}
+
+.btn-add {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.btn-add:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-clear {
+    background: none;
+    border: none;
+    color: #0284c7;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.btn-clear:hover {
+    text-decoration: underline;
+}
+
+/* Hide skills filtered out */
+.skill.filtered-out {
+    display: none !important;
 }
