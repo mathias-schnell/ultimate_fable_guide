@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.1] - 2026-09-13
+
+### Added
+- Added a button that hides/shows the full Heroic Skill description for each skill.
+
+### Changed
+- Styling refinements.
+
+---
+
 ## [0.1.0] - 2026-09-12
 
 ### Added
