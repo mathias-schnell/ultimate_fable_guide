@@ -15,7 +15,7 @@
     {
       "name": "Brainwave Discharge",
       "classes": ["Esper"],
-      "tags": ["clock", "damage", "physical", "class-psychic"],
+      "tags": ["clock", "damage", "physical", "class-esper"],
       "summary": "Erase your Brainwave Clock and deal damage.",
       "description": "While your Brainwave Clock is full, you may use an action to erase all of its sections. If you do, you may choose one option: you deal 20 physical damage to every enemy that is present on the scene, or you deal 30 physical damage to a single enemy you can see. This amount increases by 10 if you are level 20 or higher, or by 20 if you are level 40 or higher."
     },
@@ -38,7 +38,7 @@
     {
       "name": "Dreamslice",
       "classes": ["Darkblade", "Esper"],
-      "tags": ["attack", "sword", "mp", "MIG", "bond", "skill", "class-darkblade", "class-psychic"],
+      "tags": ["attack", "sword", "mp", "MIG", "bond", "skill", "class-darkblade", "class-esper"],
       "summary": "Shadow Strike reduces MP and causes action loss when using swords.",
       "description": "When you hit one or more creatures with an attack from your Shadow Strike Skill using a weapon that belongs to the sword Category, each of those creatures loses an amount of Mind Points equal to (the number you rolled on your Might die for Shadow Strike). Then, if the number you rolled on your Might die for Shadow Strike was 8 or higher, you may choose one creature hit by the attack. If that creature is your focus or you have a Bond towards them, that creature will perform one fewer action during their next turn (to a minimum of zero actions)."
     },
@@ -113,7 +113,7 @@
     {
       "name": "Psychic Field",
       "classes": ["Esper"],
-      "tags": ["damage", "gift", "defense", "magic defense", "WLP", "clock", "class-psychic"],
+      "tags": ["damage", "gift", "defense", "magic defense", "WLP", "clock", "class-esper"],
       "summary": "Extend some of your psychic gifts to your allies.",
       "description": "Your gifts with event “When you deal damage” can also be used “When an ally who is able to hear you deals damage”.\n\nYour psychic shield gift, if you have acquired it, has its effect changed to “You and every ally who is able to hear you may treat your Defense and Magic Defense scores as being equal to (your current Willpower die size + (the number of filled sections in your Brainwave Clock, multiplied by 2)) against that Check (you may still use your normal scores if better).”"
     },

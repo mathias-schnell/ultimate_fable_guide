@@ -1,12 +1,32 @@
+/**
+ * @file app.js
+ */
+
+/**
+ * @typedef {Object} SkillContext
+ * @property {HTMLElement} filter_container - The container for all filtering controls
+ * @property {HTMLElement} skills_container - The container for all listed Heroic Skills
+ */
+
+const heroic_skill_click_actions = {
+    ".btn-add-filter-row"       : add_filter_row,
+    ".btn-remove-filter-row"    : remove_filter_row,
+    ".heroic-skill-toggle"      : toggle_heroic_skill,
+}
+
+const heroic_skill_change_actions = {
+    ".filter-tag-select"        : filter_heroic_skills, 
+}
+
 /** 
- * Try our best to ensure that everything starts after the DOM has loaded. 
+ * Try our best to ensure that everything starts after the DOM has loaded.
  */
 window.addEventListener("DOMContentLoaded", () => {
     initialize_app();
 });
 
 /** 
- * All the initialization that is required before the app is properly used. 
+ * All the initialization that is required before the app is properly used.
  */
 function initialize_app() {
     bind_heroic_skill_events();
@@ -16,84 +36,85 @@ function initialize_app() {
  * Event bindings related to the Heroic Skills section of the app.
  */
 function bind_heroic_skill_events() {
-    document.getElementById("heroic-skills").addEventListener("click", (e) => {
-        const skill_toggle = e.target.closest('.heroic-skill-toggle');
-        if (!skill_toggle) return;
-        const is_expanded = skill_toggle.getAttribute('aria-expanded') === 'true';
-        skill_toggle.setAttribute('aria-expanded', !is_expanded);
-        document.getElementById(skill_toggle.getAttribute('aria-controls')).classList.toggle('hidden', is_expanded);
+    const heroic_skills = document.getElementById("heroic-skills");
+    if(!heroic_skills) return;
+
+    const context = {
+        filter_container: heroic_skills.querySelector('.filter-rows-container'),
+        skills_container: heroic_skills.querySelector('.skills-container'),
+    }
+    add_filter_row(null, context);
+    
+    const dispatcher = (actions) => (e) => {
+        for (const [selector, handler] of Object.entries(actions)) {
+            const target = e.target.closest(selector);
+            if (target) { handler(target, context); break; }
+        }
+    };
+
+    heroic_skills.addEventListener("click", dispatcher(heroic_skill_click_actions));
+    heroic_skills.addEventListener("change", dispatcher(heroic_skill_change_actions));
+}
+
+/**
+ * Clones the hidden filter-row-prime and appends a new filter row to the container.
+ * 
+ * @param {HTMLElement|null} target
+ * @param {SkillContext} context
+ */
+function add_filter_row(target, { filter_container }) {
+    const prime = filter_container.querySelector('.filter-row-prime');
+    if(!prime) return;
+
+    const row = prime.cloneNode(true);
+    row.classList.remove('filter-row-prime');
+    filter_container.appendChild(row);
+}
+
+/**
+ * Removes the given row if it isn't the only row in its container.
+ * 
+ * @param {HTMLElement|null} target
+ * @param {SkillContext} context
+ */
+function remove_filter_row(target, context) {
+    const row = target.closest('.filter-row') || target.parentElement;
+
+    if (context.filter_container.children.length > 2) {
+        row.remove();
+        filter_heroic_skills(target, context);
+    }
+}
+
+/**
+ * Collects selected values across all active filters and filters Heroic Skills using OR logic.
+ * 
+ * @param {HTMLElement|null} target
+ * @param {SkillContext} context
+ */
+function filter_heroic_skills(target, { filter_container, skills_container }) {
+    const selects = filter_container.querySelectorAll('.filter-tag-select');
+    const active_tags = new Set( Array.from(selects, s => s.value).filter(Boolean) );
+
+    skills_container.querySelectorAll(".skill").forEach(article => {
+        const tags = article.dataset.tags ? article.dataset.tags.split(',').map(t => t.trim()) : [];
+        const match = active_tags.size === 0 || Array.from(active_tags).some(tag => tags.includes(tag));
+        article.classList.toggle('filtered-out', !match);
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('filter-rows-container');
-    const template = document.getElementById('filter-row-template');
-    const addBtn = document.getElementById('add-filter-btn');
-    const skillArticles = document.querySelectorAll('article.skill');
+/**
+ * Show or hide the full description of the passed in Heroic Skill that was clicked.
+ * 
+ * @param {HTMLElement|null} target
+ * @param {SkillContext} context
+ */
+function toggle_heroic_skill(target, { skills_container }) {
+    const is_expanded = target.getAttribute('aria-expanded') === 'true';
+    const target_id = target.getAttribute('aria-controls');
 
-    // Add initial default row on page load
-    addFilterRow();
-
-    /**
-     * Clones the template and appends a new filter row to the container.
-     */
-    function addFilterRow() {
-        const clone = template.content.cloneNode(true);
-        const row = clone.querySelector('.filter-row');
-        const select = row.querySelector('.tag-select');
-        const addBtn = row.querySelector('.btn-add-row');
-        const removeBtn = row.querySelector('.btn-remove-row');
-
-        // Trigger filter update when selection changes
-        select.addEventListener('change', filterSkills);
-
-        // Event Listener: Add new row button
-        addBtn.addEventListener('click', () => {
-            addFilterRow();
-        });
-
-        // Remove row event listener
-        removeBtn.addEventListener('click', () => {
-            // Ensure at least one empty row remains
-            if (container.children.length > 1) {
-                row.remove();
-            }
-            filterSkills();
-        });
-
-        container.appendChild(row);
+    target.setAttribute('aria-expanded', !is_expanded);
+    if(target_id) {
+        skills_container.querySelector('#' + target_id)?.classList.toggle('hidden', is_expanded);
     }
-
-    /**
-     * Collects selected values across all active dropdowns
-     * and filters skill articles using OR logic.
-     */
-    function filterSkills() {
-        // Collect all non-empty selected tag values
-        const selects = container.querySelectorAll('.tag-select');
-        const activeTags = new Set();
-
-        selects.forEach(select => {
-            if (select.value) {
-                activeTags.add(select.value);
-            }
-        });
-
-        // Filter articles
-        skillArticles.forEach(article => {
-            // Retrieve comma-separated tags from data attribute
-            const rawTags = article.dataset.tags ? article.dataset.tags.split(',') : [];
-            const articleTags = rawTags.map(t => t.trim());
-
-            // OR Logic: Shows if skill matches AT LEAST ONE selected tag
-            const isMatch = Array.from(activeTags).some(tag => articleTags.includes(tag));
-
-            // If no filters are chosen, or at least one matches, show the row
-            if (activeTags.size === 0 || isMatch) {
-                article.classList.remove('filtered-out');
-            } else {
-                article.classList.add('filtered-out');
-            }
-        });
-    }
-});
+}

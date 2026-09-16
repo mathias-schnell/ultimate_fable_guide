@@ -45,7 +45,7 @@ body {
     margin: 0;
 }
 
-.skills {
+.skills-container {
     border: 1px solid #ccc;
 }
 
@@ -133,7 +133,11 @@ body {
     gap: 0.5rem;
 }
 
-.tag-select {
+.filter-row.filter-row-prime {
+    display: none;
+}
+
+.filter-tag-select {
     padding: 0.5rem 0.75rem;
     border: 1px solid #cbd5e1;
     border-radius: 6px;
@@ -144,14 +148,14 @@ body {
     max-width: 320px;
 }
 
-.tag-select:focus {
+.filter-tag-select:focus {
     outline: none;
     border-color: #2563eb;
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
 }
 
-.btn-add-row,
-.btn-remove-row {
+.btn-add-filter-row,
+.btn-remove-filter-row {
     background: none;
     border: 1px solid #e2e8f0;
     border-radius: 6px;

@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.3] - 2026-09-16
+
+### Internal
+- Cleaned up and optimized `app.js` significantly.
+- Corrected some naming errors in `app_conf.php` and `techno_fantasy.json`.
+- Some minor structure and naming changes in `index.php` and `style.css`.
+
+---
+
 ## [0.1.2] - 2026-09-13
 
 ### Added

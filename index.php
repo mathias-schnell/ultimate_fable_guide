@@ -20,32 +20,25 @@
         <header class="page-header">
             <h1>Heroic Skills</h1>
         </header>
-        <div class="filter-section">
-            <div class="filter-wrapper">
-                <div id="filter-rows-container" class="filter-rows-container"></div>
+        <section class="filter-rows-container">
+            <div class="filter-row filter-row-prime">
+                <select class="filter-tag-select">
+                    <option value="">-- Select Tag --</option>
+                    <?php foreach ($filter_tags as $group_label => $tags): ?>
+                        <optgroup label="<?= htmlspecialchars($group_label) ?>">
+                            <?php foreach ($tags as $tag_key => $tag_name): ?>
+                                <option value="<?= htmlspecialchars($tag_key) ?>">
+                                    <?= htmlspecialchars($tag_name) ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </optgroup>
+                    <?php endforeach; ?>
+                </select>
+                <button type="button" class="btn-add-filter-row" title="Add filter">&plus;</button>
+                <button type="button" class="btn-remove-filter-row" title="Remove filter">&times;</button>
             </div>
-
-            <!-- Hidden HTML Template used by JS to clone new dropdown rows -->
-            <template id="filter-row-template">
-                <div class="filter-row">
-                    <select class="tag-select">
-                        <option value="">-- Select Tag --</option>
-                        <?php foreach ($filter_tags as $group_label => $tags): ?>
-                            <optgroup label="<?= htmlspecialchars($group_label) ?>">
-                                <?php foreach ($tags as $tag_key => $tag_name): ?>
-                                    <option value="<?= htmlspecialchars($tag_key) ?>">
-                                        <?= htmlspecialchars($tag_name) ?>
-                                    </option>
-                                <?php endforeach; ?>
-                            </optgroup>
-                        <?php endforeach; ?>
-                    </select>
-                    <button type="button" class="btn-add-row" title="Add filter">&plus;</button>
-                    <button type="button" class="btn-remove-row" title="Remove filter">&times;</button>
-                </div>
-            </template>
-        </div>
-        <section class="skills">
+        </section>
+        <section class="skills-container">
             <div class="skill-list-header">
                 <div></div>
                 <div>Source</div>
