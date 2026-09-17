@@ -87,8 +87,14 @@
                                     <?= htmlspecialchars($skill['summary']) ?>
                                 </div>
                             </div>
-                            <div class="skill-description hidden" id="<?=$id ?>">
-                                <?= htmlspecialchars($skill['description']) ?>
+                            <div class="skill-description-container hidden" id="<?=$id ?>">
+                                <?php if(isset($skill['additional_requirements'])): ?>
+                                    <div class="skill-additional-requirement">
+                                        <strong>Additional Requirements: </strong>
+                                        <span><?= htmlspecialchars($skill['additional_requirements']) ?></span>
+                                    </div>
+                                <?php endif; ?>
+                                <div class="skill-description"><?= $skill['description'] ?></div>
                             </div>
                         </article>
                     <?php endforeach; ?>

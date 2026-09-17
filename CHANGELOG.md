@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.4] - 2026-09-16
+
+### Changed
+- Updated all Heroic Skills data to highlight/bold specific words and phrases.
+- Updated styling to have a more aesthetically pleasing and easier-to-read light theme.
+- Updated fonts to have a more unique style.
+
+---
+
 ## [0.1.3] - 2026-09-16
 
 ### Internal
