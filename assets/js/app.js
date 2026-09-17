@@ -11,12 +11,16 @@
 const heroic_skill_click_actions = {
     ".btn-add-filter-row"       : add_filter_row,
     ".btn-remove-filter-row"    : remove_filter_row,
+    ".heroic-skill-pin"         : toggle_heroic_pin,
     ".heroic-skill-toggle"      : toggle_heroic_skill,
 }
 
 const heroic_skill_change_actions = {
+    ".filter-include-exclude"   : filter_heroic_skills,
     ".filter-tag-select"        : filter_heroic_skills, 
 }
+
+let pin_count = 0;
 
 /** 
  * Try our best to ensure that everything starts after the DOM has loaded.
@@ -82,8 +86,11 @@ function remove_filter_row(target, context) {
 
     if (context.filter_container.children.length > 2) {
         row.remove();
-        filter_heroic_skills(target, context);
+    } else {
+        row.querySelector(".filter-include-exclude").selectedIndex = 0;
+        row.querySelector(".filter-tag-select").selectedIndex = 0;
     }
+    filter_heroic_skills(target, context);
 }
 
 /**
@@ -93,14 +100,52 @@ function remove_filter_row(target, context) {
  * @param {SkillContext} context
  */
 function filter_heroic_skills(target, { filter_container, skills_container }) {
-    const selects = filter_container.querySelectorAll('.filter-tag-select');
-    const active_tags = new Set( Array.from(selects, s => s.value).filter(Boolean) );
+    const includes = new Set();
+    const excludes = new Set();
+    const filter_rows = filter_container.querySelectorAll('.filter-row:not(.filter-row-prime)');
+    
+    filter_rows.forEach(row => {
+        const mode = row.querySelector(".filter-include-exclude")?.value;
+        const tag = row.querySelector(".filter-tag-select")?.value;
+        if(!tag) return;
+        if(mode === "1") {
+            includes.add(tag);
+        } else {
+            excludes.add(tag);
+        }
+    });
 
     skills_container.querySelectorAll(".skill").forEach(article => {
+        if(article.getAttribute("aria-pinned") === "true") return;
         const tags = article.dataset.tags ? article.dataset.tags.split(',').map(t => t.trim()) : [];
-        const match = active_tags.size === 0 || Array.from(active_tags).some(tag => tags.includes(tag));
-        article.classList.toggle('filtered-out', !match);
+        const included = includes.size === 0 || [...includes].some(tag => tags.includes(tag));
+        const excluded = [...excludes].some(tag => tags.includes(tag));
+        const show = included && !excluded;
+
+        article.classList.toggle('filtered-out', !show);
     });
+}
+
+/**
+ * Show or hide the full description of the passed in Heroic Skill that was clicked.
+ * 
+ * @param {HTMLElement|null} target
+ * @param {SkillContext} context
+ */
+function toggle_heroic_pin(target, context) {
+    const is_pinned = target.getAttribute('aria-checked') === 'true';
+
+    if(is_pinned && pin_count > 0) { 
+        pin_count--;
+    } else if (!is_pinned && pin_count < 5) {
+        pin_count++;
+    } else {
+        return;
+    }
+
+    target.setAttribute("aria-checked", !is_pinned);
+    target.closest(".skill").setAttribute("aria-pinned", !is_pinned);
+    filter_heroic_skills(target, context);
 }
 
 /**

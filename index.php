@@ -22,6 +22,10 @@
         </header>
         <section class="filter-rows-container">
             <div class="filter-row filter-row-prime">
+                <select class="filter-include-exclude">
+                    <option value="1">Include</option>
+                    <option value="0">Exclude</option>
+                </select>
                 <select class="filter-tag-select">
                     <option value="">-- Select Tag --</option>
                     <?php foreach ($filter_tags as $group_label => $tags): ?>
@@ -45,6 +49,7 @@
                 <div>Name</div>
                 <div>Requirements</div>
                 <div>Summary</div>
+                <div></div>
             </div>
             <?php
                 foreach($json_files as $file):
@@ -85,6 +90,13 @@
                                 </div>
                                 <div class="skill-summary">
                                     <?= htmlspecialchars($skill['summary']) ?>
+                                </div>
+                                <div class="skill-pin">
+                                    <button class="heroic-skill-pin"
+                                            type="button"
+                                            aria-checked="false">
+                                        🖈
+                                    </button>
                                 </div>
                             </div>
                             <div class="skill-description-container hidden" id="<?=$id ?>">

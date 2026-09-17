@@ -28,7 +28,7 @@
     {
       "name": "Brambleheart",
       "classes": ["Darkblade", "Floralist"],
-      "tags": ["resistance", "light", "poison", "hp", "crisis", "garden", "clock", "skill", "attack", "damage", "dark", "class-darkblade", "class-florist"],
+      "tags": ["resistance", "light", "poison", "hp", "crisis", "garden", "clock", "skill", "attack", "damage", "dark", "class-darkblade", "class-floralist"],
       "summary": "Your brambles protect you and react to enemy attacks.",
       "description": "You are Resistant to <strong>light</strong> damage and <strong>poison</strong> damage.\n\nAfter you <strong>lose Hit Points</strong>, if you are in Crisis and a <strong>magiseed</strong> is present in your <strong>garden</strong>, you may fill <strong>1 section</strong> of your <strong>Growth Clock</strong>.\n\nAdditionally, when you use the <strong>Shadow Strike</strong> Skill, you may have your attack deal <strong>poison</strong> damage instead of <strong>dark</strong> damage (the damage type still <strong>cannot</strong> be changed). If you do, your <strong>Shadow Strike</strong> deals extra damage equal to (twice the number of filled sections in your <strong>Growth Clock</strong>)."
     },
@@ -84,14 +84,14 @@
     {
       "name": "Greater Chloromancy",
       "classes": ["Floralist"],
-      "tags": ["garden", "clock", "mp", "skill", "class-florist"],
+      "tags": ["garden", "clock", "mp", "skill", "class-floralist"],
       "summary": "Increase magiseed effects and manipulate vegetation.",
       "description": "Once per turn when a <strong>magiseed</strong> leaves your <strong>garden</strong>, if that <strong>magiseed</strong> has one or more “<strong>at the end</strong> of your turn” effects, you may spend 20 Mind Points. If you do, reproduce one of those effects (you may also choose an effect that doesn’t match the current sections of your <strong>Growth Clock</strong>).\n\nAdditionally, if you have acquired the <strong>Verdant Sway</strong> Skill, your Rituals can now also influence and control soldier-Rank creatures belonging to the <strong>plant</strong> <strong>Species</strong> (but you are still unable to create them)."
     },
     {
       "name": "Green Thumb",
       "classes": ["Floralist"],
-      "tags": ["clock", "damage", "resistance", "garden", "class-florist"],
+      "tags": ["clock", "damage", "resistance", "garden", "class-floralist"],
       "summary": "Quicken or delay the growth of your magiseeds.",
       "description": "When <strong>you fill 1 or more sections of your Growth Clock</strong>, you may choose one option: you fill <strong>1 additional section</strong> of your <strong>Growth Clock</strong>; or you fill <strong>1 fewer section</strong> of your <strong>Growth Clock</strong> (to a minimum of 0 sections filled). If you do, you <strong>cannot</strong> use this effect again until after your <strong>Growth Clock</strong> has become completely empty.\n\nAdditionally, damage dealt by your <strong>magiseeds</strong> ignores Resistances."
     },

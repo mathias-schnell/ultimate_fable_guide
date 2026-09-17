@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.5] - 2026-09-16
+
+### Added
+- Pinning system for Heroic Skills that let's the user pin up to five of them. Pinning them prevents them from being hidden by filters, highlights them and keeps them at the top of the list.
+
+### Fixed
+- Fixed some data and tags that were using "Florist" instead of "Floralist".
+
+---
+
 ## [0.1.4] - 2026-09-16
 
 ### Changed

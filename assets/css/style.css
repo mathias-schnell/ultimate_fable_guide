@@ -39,11 +39,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+.heroic-skill-pin,
 .heroic-skill-toggle {
     height: 100%;
     transform: rotate(0deg);
     transition: transform 0.25s ease;
     width: 100%;
+}
+
+.heroic-skill-pin[aria-checked="true"] {
+    transform: rotate(-45deg);
 }
 
 .heroic-skill-toggle[aria-expanded="true"] {
@@ -66,18 +71,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .skills-container {
     border: 1px solid #CCCCCC;
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-list-header,
 .skill-row {
     align-items: center;
     display: grid;
-    grid-template-columns: 0.25fr 1fr 1fr 1fr 3fr;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 3fr 0.25fr;
 }
 
 .skill-list-header {
-    font-weight: bold;
     border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+    order: -10;
 }
 
 .skill-list-header > div,
@@ -87,6 +95,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .skill {
     border-bottom: 1px solid #CCCCCC;
+}
+
+.skill[aria-pinned="true"] {
+    background-color: #D0D0D0;
+    border-bottom: 1px solid #AAAAAA;
+    order: -1;
 }
 
 .skill:last-child {
@@ -146,6 +160,15 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+.filter-include-exclude {
+    max-width: 100px;
+}
+
+.filter-tag-select {
+    max-width: 300px;
+}
+
+.filter-include-exclude,
 .filter-tag-select {
     padding: 0.5rem 0.75rem;
     border: 1px solid #24211D;
@@ -154,7 +177,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
     color: 24211D;
     flex-grow: 1;
-    max-width: 320px;
 }
 
 .filter-tag-select:focus {
