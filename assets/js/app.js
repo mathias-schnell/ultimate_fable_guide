@@ -33,19 +33,43 @@ window.addEventListener("DOMContentLoaded", () => {
  * All the initialization that is required before the app is properly used.
  */
 function initialize_app() {
+    bind_navigation_events();
     bind_heroic_skill_events();
+}
+
+function bind_navigation_events() {
+    const nav = document.querySelector(".tab-nav");
+    if(!nav) return;
+    nav.addEventListener("click", (e) => {
+        const tab = e.target.closest(".tab");
+        if(!tab) return;
+        toggle_nav_tab(nav, tab);
+    });
+}
+
+
+/**
+ * Make the clicked navigation tab active
+ */
+function toggle_nav_tab(nav, tab) {
+    nav.querySelectorAll(".tab").forEach(t => {
+        t.classList.remove("active");
+        t.setAttribute("aria-selected", "false");
+    });
+    tab.classList.add("active");
+    tab.setAttribute("aria-selected", "true");
 }
 
 /**
  * Event bindings related to the Heroic Skills section of the app.
  */
 function bind_heroic_skill_events() {
-    const heroic_skills = document.getElementById("heroic-skills");
-    if(!heroic_skills) return;
+    const container = document.getElementById("main-container");
+    if(!container) return;
 
     const context = {
-        filter_container: heroic_skills.querySelector('.filter-rows-container'),
-        skills_container: heroic_skills.querySelector('.skills-container'),
+        filter_container: container.querySelector('.filter-rows-container'),
+        skills_container: container.querySelector('.skills-container'),
     }
     add_filter_row(null, context);
     
@@ -56,8 +80,8 @@ function bind_heroic_skill_events() {
         }
     };
 
-    heroic_skills.addEventListener("click", dispatcher(heroic_skill_click_actions));
-    heroic_skills.addEventListener("change", dispatcher(heroic_skill_change_actions));
+    container.addEventListener("click", dispatcher(heroic_skill_click_actions));
+    container.addEventListener("change", dispatcher(heroic_skill_change_actions));
 }
 
 /**

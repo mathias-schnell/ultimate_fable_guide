@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.6] - 2026-09-17
+
+### Added
+- Tab-based navigation system at the top of the app. Will add more tabs to switch between content at a later time.
+
+### Changed
+- Styling additions, changes and fixes.
+
+### Internal
+- Split up `index.php` into multiple parts that are included and pieced together from files in `includes`.
+- Defined some constants in `app_conf.php` that help PHP locate files.
+
+---
+
 ## [0.1.5] - 2026-09-16
 
 ### Added

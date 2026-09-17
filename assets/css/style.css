@@ -3,9 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,700;1,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
+  --body-bg-color: #F5F3EF;
+  --container-bg-color: #F5F3EF;
+  --header-bg-color: #EBE9E5;
+  --inactive-tab-bg-color: #D8D3CA;
+  --inactive-tab-text-color: #666666;
   --font-family-heading: 'Philosopher', Georgia, serif;
   --font-family-body: 'Rubik', sans-serif;
   --font-size-pixel-heading: 1.5rem;
+  --text-color: #24211D;
   --leading-pixel: 1.2;
   --leading-body: 1.55;
   interpolate-size: allow-keywords;
@@ -17,8 +23,8 @@
 
 html,
 body {
-    background-color: #F5F3EF;
-    color:#24211D;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
@@ -36,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
+    background-color: var(--container-bg-color);
     width: 100%;
 }
 
@@ -56,17 +63,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-header {
-    padding: 0.25rem 0.5rem;
+    background-color: var(--header-bg-color);
+    border-bottom: 2px solid var(--text-color);
+    padding: 0.2rem 0.1rem 0 0.1rem;
 }
 
-.page-header h1 {
-    margin: 0 0 0.25rem;
-    font-size: 2rem;
+.page-header .tab-nav {
+    display: flex;
+    gap: 0;
+    position: relative;
+}
+
+.page-header .tab-nav .tab {
+    background-color: var(--inactive-tab-bg-color);
+    border: 1px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+    border-radius: 12px 12px 0 0;
+    color: var(--inactive-tab-text-color);
+    cursor: pointer;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-pixel-heading);
     font-weight: 600;
+    margin-bottom: -1px;
+    padding: 0 0.5rem;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-.page-header p {
-    margin: 0;
+.page-header .tab-nav .tab:hover:not(.active) {
+    background-color: #E6E1D7;
+    color: var(--text-color);
+}
+
+.page-header .tab-nav .tab.active {
+    background-color: var(--container-bg-color);
+    border-bottom: 2px solid var(--container-bg-color);
+    color: var(--text-color);
+    z-index: 2;
 }
 
 .skills-container {
@@ -136,7 +170,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-.skill-row > .skill-expand {
+.skill-row > .skill-expand,
+.skill-row > .skill-pin {
     font-size: 125%;
     padding: 0;
     margin: 0;
@@ -146,8 +181,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 0.25rem 0.5rem;
-    margin-bottom: 0.25rem;
+    padding: 0.5rem;
 }
 
 .filter-row {
@@ -175,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 6px;
     background-color: #F8F8F8;
     font-size: 0.9rem;
-    color: 24211D;
+    color: var(--text-color);
     flex-grow: 1;
 }
 

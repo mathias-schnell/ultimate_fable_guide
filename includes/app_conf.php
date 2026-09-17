@@ -1,5 +1,10 @@
 <?php
 
+define('APP_ROOT',      dirname(__DIR__));
+define('INCLUDES_PATH', APP_ROOT . '/includes');
+define('DATA_PATH',     APP_ROOT . '/data');
+define('ASSETS_PATH',   APP_ROOT . '/assets');
+
 $filter_tags = [
     "Source Books" => [
         "source-core"            => "Core",
