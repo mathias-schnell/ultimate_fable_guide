@@ -4,28 +4,28 @@
                 class="tab active"
                 id="tab-heroic-skills"
                 aria-selected="true"
-                aria-controls="panel-heroic-skills">
+                aria-controls="heroic-skills-container">
                 Heroic Skills
-        </button>
-        <!--<button type="button"
-                class="tab"
-                id="tab-class-skills"
-                aria-selected="false"
-                aria-controls="panel-class-skills">
-                Class Skills
         </button>
         <button type="button"
                 class="tab"
+                id="tab-class-skills"
+                aria-selected="false"
+                aria-controls="class-skills-container">
+                Class Skills
+        </button>
+        <!--<button type="button"
+                class="tab"
                 id="tab-weapons"
                 aria-selected="false"
-                aria-controls="panel-weapons">
+                aria-controls="weapons-container">
                 Weapons
         </button>
         <button type="button"
                 class="tab"
                 id="tab-armor"
                 aria-selected="false"
-                aria-controls="panel-armor">
+                aria-controls="armor-container">
                 Armor
         </button>-->
 </header>

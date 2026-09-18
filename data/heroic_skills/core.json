@@ -3,7 +3,7 @@
     "name": "core",
     "label": "Core Rulebook"
   },
-  "skills": [
+  "heroic-skills": [
     {
       "name": "Ambidextrous",
       "classes": [],

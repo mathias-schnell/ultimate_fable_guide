@@ -3,7 +3,7 @@
     "name": "natural_fantasy",
     "label": "Natural Fantasy Atlas"
   },
-  "skills": [
+  "heroic-skills": [
     {
       "name": "All You Can Eat",
       "classes": ["Gourmet"],

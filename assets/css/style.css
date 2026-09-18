@@ -46,22 +46,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-.heroic-skill-pin,
-.heroic-skill-toggle {
-    height: 100%;
-    transform: rotate(0deg);
-    transition: transform 0.25s ease;
-    width: 100%;
-}
-
-.heroic-skill-pin[aria-checked="true"] {
-    transform: rotate(-45deg);
-}
-
-.heroic-skill-toggle[aria-expanded="true"] {
-    transform: rotate(90deg);
-}
-
 .page-header {
     background-color: var(--header-bg-color);
     border-bottom: 2px solid var(--text-color);
@@ -103,78 +87,19 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
 }
 
-.skills-container {
+.content-container {
     border: 1px solid #CCCCCC;
     display: flex;
     flex-direction: column;
 }
 
-.skill-list-header,
-.skill-row {
-    align-items: center;
-    display: grid;
-    grid-template-columns: 0.25fr 1fr 1fr 1fr 3fr 0.25fr;
+.content-container > * {
+    display: none;
 }
 
-.skill-list-header {
-    border-bottom: 1px solid #CCCCCC;
-    font-weight: bold;
-    order: -10;
-}
-
-.skill-list-header > div,
-.skill-row > div {
-    padding: 0.5rem;
-}
-
-.skill {
-    border-bottom: 1px solid #CCCCCC;
-}
-
-.skill[aria-pinned="true"] {
-    background-color: #D0D0D0;
-    border-bottom: 1px solid #AAAAAA;
-    order: -1;
-}
-
-.skill:last-child {
-    border-bottom: none;
-}
-
-.skill > .skill-description-container {
-    height: auto;
-    opacity: 1;
-    overflow: hidden;
-    padding: 0.25rem 1rem 0.75rem 1rem;
-    transition: height 0.33s,
-                opacity 0s,
-                padding 0s;
-}
-
-.skill > .skill-description-container strong {
-    font-weight: 600;    
-}
-
-.skill > .skill-description-container > .skill-additional-requirement {
-    margin-bottom: 1rem;
-}
-
-.skill > .skill-description-container > .skill-description {
-    white-space: pre-wrap;
-}
-
-.skill > .skill-description-container.hidden {
-    height: 0;
-    margin: 0;
-    opacity: 0;
-    padding: 0;
-}
-
-.skill-row > .skill-expand,
-.skill-row > .skill-pin {
-    font-size: 125%;
-    padding: 0;
-    margin: 0;
+.content-container > *.active {
+    display: flex;
+    flex-direction: column;
 }
 
 .filter-rows-container {
@@ -238,7 +163,6 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #dc2626;
 }
 
-/* Hide skills filtered out */
-.skill.filtered-out {
+.filtered-out {
     display: none !important;
 }

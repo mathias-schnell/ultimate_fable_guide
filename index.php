@@ -12,13 +12,18 @@
     <title>Ultimate Fable Guide</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/heroic_skills.css">
+    <link rel="stylesheet" href="assets/css/class_skills.css">
     <script type="module" src="assets/js/app.js"></script>
 </head>
 <body>
     <main id="main-container" class="container">
         <?php include_once(INCLUDES_PATH . "/header.php"); ?>
         <?php include_once(INCLUDES_PATH . "/filter.php"); ?>
-        <?php include_once(INCLUDES_PATH . "/content.php"); ?>     
+        <section class="content-container">
+            <?php include_once(INCLUDES_PATH . "/content/heroic_skills.php"); ?>
+            <?php include_once(INCLUDES_PATH . "/content/class_skills.php"); ?>
+        </section>
     </main>
 </body>
 </html>

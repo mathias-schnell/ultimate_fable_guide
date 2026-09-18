@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0] - 2026-09-18
+
+### Added
+- Tab and panel for 'Class Skills'.
+
+---
+
 ## [0.1.6] - 2026-09-17
 
 ### Added

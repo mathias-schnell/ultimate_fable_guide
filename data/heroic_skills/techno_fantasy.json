@@ -3,7 +3,7 @@
     "name": "techno_fantasy",
     "label": "Techno Fantasy Atlas"
   },
-  "skills": [
+  "heroic-skills": [
     {
       "name": "Arcane Soldier",
       "classes": ["Elementalist", "Sharpshooter", "Weaponmaster"],
