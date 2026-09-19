@@ -1,148 +1,148 @@
 {
-    "source": {
-        "name": "high_fantasy",
-        "label": "High Fantasy Atlas"
+  "source": {
+    "name": "high_fantasy",
+    "label": "High Fantasy Atlas"
+  },
+  "class-skills": [
+    {
+      "name": "Magichant",
+      "class": "Chanter",
+      "max-sl": 10,
+      "description": "On your turn during a conflict scene, you may use an action and spend a variable amount of MP to weave voice and music into a magical effect known as a verse.\nYou may only sing one verse per turn, even if you have access to multiple actions; the full rules for verses can be found starting on the next page.\nWhen you first acquire this Skill, you learn all three volumes, plus one key and one tone (see next page). Whenever you acquire this Skill again, you may learn one key or one tone (your choice).",
+      "tags": ["class-chanter", "mp", "verse"]
     },
-    "class-skills": [
-        {
-            "name": "Magichant",
-            "class": "Chanter",
-            "max-sl": 10,
-            "description": "On your turn during a conflict scene, you may use an action and spend a variable amount of MP to weave voice and music into a magical effect known as a verse.\nYou may only sing one verse per turn, even if you have access to multiple actions; the full rules for verses can be found starting on the next page.\nWhen you first acquire this Skill, you learn all three volumes, plus one key and one tone (see next page). Whenever you acquire this Skill again, you may learn one key or one tone (your choice).",
-            "tags": []
-        },
-        {
-            "name": "Resonance",
-            "class": "Chanter",
-            "max-sl": 3,
-            "description": "After you affect one or more enemies with a verse, if you have an arcane weapon equipped, you may choose one option: until the start of your next turn, your allies deal (SL) extra damage to those enemies; or until the start of your next turn, you recover (SL) Mind Points every time one of those enemies suffers damage (if the same source deals damage to two or more of those enemies at the same time, you recover (SL) MP for each damaged enemy).",
-            "tags": []
-        },
-        {
-            "name": "Siren’s Song",
-            "class": "Chanter",
-            "max-sl": 1,
-            "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create hearing-based illusions.",
-            "tags": []
-        },
-        {
-            "name": "Sound Barrier",
-            "class": "Chanter",
-            "max-sl": 5,
-            "description": "After you sing a verse with medium or high volume, all physical damage you suffer until the start of your next turn is reduced by (SL) (applied before Affinities).",
-            "tags": []
-        },
-        {
-            "name": "Vibrato",
-            "class": "Chanter",
-            "max-sl": 1,
-            "description": "After you sing a verse with low or medium volume, you may perform a free attack with a weapon you have equipped; treat your High Roll (HR) as 0 when calculating damage dealt by this attack.",
-            "tags": []
-        },
-        {
-            "name": "Bishop’s Edict",
-            "class": "Commander",
-            "max-sl": 5,
-            "description": "During a conflict, you may use an action and spend 10 Mind Points to choose one option: all MP costs are doubled; or all sources of damage deal (SL × 3) extra damage. The chosen effect lasts until the start of your next turn.",
-            "tags": []
-        },
-        {
-            "name": "Charging Cavalry",
-            "class": "Commander",
-            "max-sl": 5,
-            "description": "During a conflict, you may use an action and spend 10 MP to choose one ally that can hear you. That ally may perform a free attack with a weapon they have equipped (or with a basic attack if they are an NPC). They gain a bonus equal to (SL) to the Accuracy Check, but treat their High Roll as 0 when calculating damage.",
-            "tags": []
-        },
-        {
-            "name": "Crushing Chariot",
-            "class": "Commander",
-            "max-sl": 1,
-            "description": "After you use Bishop’s Edict, Charging Cavalry or King’s Castle, you may choose another Player Character that can hear you who has yet to take a turn during this round. That character may take their turn immediately after yours during this round.",
-            "tags": []
-        },
-        {
-            "name": "King’s Castle",
-            "class": "Commander",
-            "max-sl": 4,
-            "description": "During a conflict, you may use an action and spend 10 Mind Points to choose one option: no creature can recover Hit Points or Mind Points; or all effects that restore Mind Points restore (SL × 5) additional Mind Points. The chosen effect lasts until the start of your next turn.",
-            "tags": []
-        },
-        {
-            "name": "Queen’s Gambit",
-            "class": "Commander",
-            "max-sl": 6,
-            "description": "During a conflict, you may use an action to perform a free attack with a weapon you have equipped, treating your High Roll as 0 when calculating damage. After this attack has been resolved, you may choose one option: one ally who is able to hear you recovers (5 + (SL × 5)) Hit Points; or you use a Skill you acquired among Bishop’s Edict, Charging Cavalry or King’s Castle for free (spending the appropriate MP).",
-            "tags": []
-        },
-        {
-            "name": "Dance",
-            "class": "Dancer",
-            "max-sl": 10,
-            "description": "Each time you take this Skill, you learn a dance (see next page).\nOn your turn during a conflict scene, if you have no martial armor equipped, you may spend 10 Mind Points to perform a dance you have learned. This doesn’t require an action, but it can only be done once per turn, while no other effect is being resolved.\nIf you already performed a different dance during your previous turn in this scene, the cost of the new dance is reduced to 5 Mind Points.\nSome dances are instantaneous and resolve immediately, while others have effects that last until the start of your next turn.",
-            "tags": []
-        },
-        {
-            "name": "Follow My Lead",
-            "class": "Dancer",
-            "max-sl": 1,
-            "description": "When you perform a dance with a duration of “Until the start of your next turn”, you may spend 10 Mind Points. If you do, choose one ally you can see towards whom you have a Bond of affection: apply the benefits of the dance to that ally as well as yourself (the benefits still last until the start of your next turn).",
-            "tags": []
-        },
-        {
-            "name": "Frenetic Footwork",
-            "class": "Dancer",
-            "max-sl": 2,
-            "description": "After you perform a dance with a duration of “Until the start of your next turn”, you gain a bonus equal to (SL × 2) to all Opposed Checks that rely on acrobatics, coordination or speed until the start of your next turn.",
-            "tags": []
-        },
-        {
-            "name": "Quick-Change",
-            "class": "Dancer",
-            "max-sl": 1,
-            "description": "After you perform a dance, you may perform the Equipment action for free.",
-            "tags": []
-        },
-        {
-            "name": "Wardancer",
-            "class": "Dancer",
-            "max-sl": 5,
-            "description": "After you perform a dance, your attacks with brawling, dagger, flail, sword, and thrown weapons deal (SL) extra damage until the start of your next turn. If you have an arcane weapon equipped, offensive spells you cast also deal (SL) extra damage until the start of your next turn.",
-            "tags": []
-        },
-        {
-            "name": "Magic Symbols",
-            "class": "Symbolist",
-            "max-sl": 3,
-            "description": "If an ally bears one of your symbols, that ally may perform the Spell action and destroy that symbol to cast a single spell among those you know, as long as it has a total Mind Point cost equal to or lower than (SL × 10) (that ally must still pay the MP cost).",
-            "tags": []
-        },
-        {
-            "name": "Mirage",
-            "class": "Symbolist",
-            "max-sl": 1,
-            "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create sight-based illusions.",
-            "tags": []
-        },
-        {
-            "name": "Personal Touch",
-            "class": "Symbolist",
-            "max-sl": 5,
-            "description": "When a creature you can see that is bearing one of your symbols suffers damage or recovers Hit Points and/or Mind Points, you may have that creature suffer (SL) extra damage or recover (SL) additional Hit Points and/or Mind Points, respectively.",
-            "tags": []
-        },
-        {
-            "name": "Symbolic Connection",
-            "class": "Symbolist",
-            "max-sl": 1,
-            "description": "You always know the exact direction in which to find any creature bearing one of your symbols, as long as that creature is within 2 travel days of your position.",
-            "tags": []
-        },
-        {
-            "name": "Symbolism",
-            "class": "Symbolist",
-            "max-sl": 5,
-            "description": "Each time you acquire this Skill, you learn two symbols (see next page).\nYou may have up to (SL + 1) symbols active at the same time; if you create more while at your limit, you must first choose and destroy some of your previous symbols.\nYou may perform the Inventory action and spend 2 Inventory Points to create a symbol you have learned and choose one option: apply that symbol to yourself; or apply that symbol to an ally you can see; or perform a free attack with a weapon you have equipped. This attack deals no damage, but you apply a copy of the chosen symbol to each enemy hit by the attack (each copy counts as a separate symbol towards your limit or (SL + 1) active symbols).",
-            "tags": []
-        }
-    ]
+    {
+      "name": "Resonance",
+      "class": "Chanter",
+      "max-sl": 3,
+      "description": "After you affect one or more enemies with a verse, if you have an arcane weapon equipped, you may choose one option: until the start of your next turn, your allies deal (SL) extra damage to those enemies; or until the start of your next turn, you recover (SL) Mind Points every time one of those enemies suffers damage (if the same source deals damage to two or more of those enemies at the same time, you recover (SL) MP for each damaged enemy).",
+      "tags": ["class-chanter", "verse", "arcane", "equipment", "damage", "mp"]
+    },
+    {
+      "name": "Siren’s Song",
+      "class": "Chanter",
+      "max-sl": 1,
+      "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create hearing-based illusions.",
+      "tags": ["class-chanter", "spell"]
+    },
+    {
+      "name": "Sound Barrier",
+      "class": "Chanter",
+      "max-sl": 5,
+      "description": "After you sing a verse with medium or high volume, all physical damage you suffer until the start of your next turn is reduced by (SL) (applied before Affinities).",
+      "tags": ["class-chanter", "verse", "physical", "damage"]
+    },
+    {
+      "name": "Vibrato",
+      "class": "Chanter",
+      "max-sl": 1,
+      "description": "After you sing a verse with low or medium volume, you may perform a free attack with a weapon you have equipped; treat your High Roll (HR) as 0 when calculating damage dealt by this attack.",
+      "tags": ["class-chanter", "verse", "attack", "equipment", "damage"]
+    },
+    {
+      "name": "Bishop’s Edict",
+      "class": "Commander",
+      "max-sl": 5,
+      "description": "During a conflict, you may use an action and spend 10 Mind Points to choose one option: all MP costs are doubled; or all sources of damage deal (SL × 3) extra damage. The chosen effect lasts until the start of your next turn.",
+      "tags": ["class-commander", "mp", "damage"]
+    },
+    {
+      "name": "Charging Cavalry",
+      "class": "Commander",
+      "max-sl": 5,
+      "description": "During a conflict, you may use an action and spend 10 MP to choose one ally that can hear you. That ally may perform a free attack with a weapon they have equipped (or with a basic attack if they are an NPC). They gain a bonus equal to (SL) to the Accuracy Check, but treat their High Roll as 0 when calculating damage.",
+      "tags": ["class-commander", "mp", "attack", "equipment", "damage"]
+    },
+    {
+      "name": "Crushing Chariot",
+      "class": "Commander",
+      "max-sl": 1,
+      "description": "After you use Bishop’s Edict, Charging Cavalry or King’s Castle, you may choose another Player Character that can hear you who has yet to take a turn during this round. That character may take their turn immediately after yours during this round.",
+      "tags": ["class-commander"]
+    },
+    {
+      "name": "King’s Castle",
+      "class": "Commander",
+      "max-sl": 4,
+      "description": "During a conflict, you may use an action and spend 10 Mind Points to choose one option: no creature can recover Hit Points or Mind Points; or all effects that restore Mind Points restore (SL × 5) additional Mind Points. The chosen effect lasts until the start of your next turn.",
+      "tags": ["class-commander", "hp", "mp"]
+    },
+    {
+      "name": "Queen’s Gambit",
+      "class": "Commander",
+      "max-sl": 6,
+      "description": "During a conflict, you may use an action to perform a free attack with a weapon you have equipped, treating your High Roll as 0 when calculating damage. After this attack has been resolved, you may choose one option: one ally who is able to hear you recovers (5 + (SL × 5)) Hit Points; or you use a Skill you acquired among Bishop’s Edict, Charging Cavalry or King’s Castle for free (spending the appropriate MP).",
+      "tags": ["class-commander", "attack", "equipment", "damage", "hp", "mp"]
+    },
+    {
+      "name": "Dance",
+      "class": "Dancer",
+      "max-sl": 10,
+      "description": "Each time you take this Skill, you learn a dance (see next page).\nOn your turn during a conflict scene, if you have no martial armor equipped, you may spend 10 Mind Points to perform a dance you have learned. This doesn’t require an action, but it can only be done once per turn, while no other effect is being resolved.\nIf you already performed a different dance during your previous turn in this scene, the cost of the new dance is reduced to 5 Mind Points.\nSome dances are instantaneous and resolve immediately, while others have effects that last until the start of your next turn.",
+      "tags": ["class-dancer", "dance", "mp"]
+    },
+    {
+      "name": "Follow My Lead",
+      "class": "Dancer",
+      "max-sl": 1,
+      "description": "When you perform a dance with a duration of “Until the start of your next turn”, you may spend 10 Mind Points. If you do, choose one ally you can see towards whom you have a Bond of affection: apply the benefits of the dance to that ally as well as yourself (the benefits still last until the start of your next turn).",
+      "tags": ["class-dancer", "dance", "mp", "bond"]
+    },
+    {
+      "name": "Frenetic Footwork",
+      "class": "Dancer",
+      "max-sl": 2,
+      "description": "After you perform a dance with a duration of “Until the start of your next turn”, you gain a bonus equal to (SL × 2) to all Opposed Checks that rely on acrobatics, coordination or speed until the start of your next turn.",
+      "tags": ["class-dancer", "dance"]
+    },
+    {
+      "name": "Quick-Change",
+      "class": "Dancer",
+      "max-sl": 1,
+      "description": "After you perform a dance, you may perform the Equipment action for free.",
+      "tags": ["class-dancer", "dance", "equipment"]
+    },
+    {
+      "name": "Wardancer",
+      "class": "Dancer",
+      "max-sl": 5,
+      "description": "After you perform a dance, your attacks with brawling, dagger, flail, sword, and thrown weapons deal (SL) extra damage until the start of your next turn. If you have an arcane weapon equipped, offensive spells you cast also deal (SL) extra damage until the start of your next turn.",
+      "tags": ["class-dancer", "dance", "brawling", "dagger", "flail", "sword", "thrown", "damage", "arcane", "equipment", "spell"]
+    },
+    {
+      "name": "Magic Symbols",
+      "class": "Symbolist",
+      "max-sl": 3,
+      "description": "If an ally bears one of your symbols, that ally may perform the Spell action and destroy that symbol to cast a single spell among those you know, as long as it has a total Mind Point cost equal to or lower than (SL × 10) (that ally must still pay the MP cost).",
+      "tags": ["class-symbolist", "symbol", "spell", "mp"]
+    },
+    {
+      "name": "Mirage",
+      "class": "Symbolist",
+      "max-sl": 1,
+      "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create sight-based illusions.",
+      "tags": ["class-symbolist", "spell"]
+    },
+    {
+      "name": "Personal Touch",
+      "class": "Symbolist",
+      "max-sl": 5,
+      "description": "When a creature you can see that is bearing one of your symbols suffers damage or recovers Hit Points and/or Mind Points, you may have that creature suffer (SL) extra damage or recover (SL) additional Hit Points and/or Mind Points, respectively.",
+      "tags": ["class-symbolist", "symbol", "damage", "hp", "mp"]
+    },
+    {
+      "name": "Symbolic Connection",
+      "class": "Symbolist",
+      "max-sl": 1,
+      "description": "You always know the exact direction in which to find any creature bearing one of your symbols, as long as that creature is within 2 travel days of your position.",
+      "tags": ["class-symbolist", "symbol", "travel"]
+    },
+    {
+      "name": "Symbolism",
+      "class": "Symbolist",
+      "max-sl": 5,
+      "description": "Each time you acquire this Skill, you learn two symbols (see next page).\nYou may have up to (SL + 1) symbols active at the same time; if you create more while at your limit, you must first choose and destroy some of your previous symbols.\nYou may perform the Inventory action and spend 2 Inventory Points to create a symbol you have learned and choose one option: apply that symbol to yourself; or apply that symbol to an ally you can see; or perform a free attack with a weapon you have equipped. This attack deals no damage, but you apply a copy of the chosen symbol to each enemy hit by the attack (each copy counts as a separate symbol towards your limit or (SL + 1) active symbols).",
+      "tags": ["class-symbolist", "symbol", "ip", "attack", "equipment", "damage"]
+    }
+  ]
 }

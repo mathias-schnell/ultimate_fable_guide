@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.2] - 2026-09-19
+
+### Added
+- Tag data for 'Class Skills'.
+
+### Fixed
+- Some incorrect spellings, words and references in the 'Class Skills' and 'Heroic Skills' data.
+
+---
+
 ## [0.2.1] - 2026-09-19
 
 ### Added

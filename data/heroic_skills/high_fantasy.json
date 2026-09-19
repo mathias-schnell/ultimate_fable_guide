@@ -140,7 +140,7 @@
       "classes": ["Dancer"],
       "summary": "Perform three dances, then take a temporary break.",
       "description": "At the start of your turn during a conflict, if you have no <strong>martial armor</strong> equipped, you may spend 1 Fabula Point to perform <strong>up to three different dances</strong> among those you know, in the order you prefer and without paying their MP cost. If you do, you <strong>cannot perform dances in any way</strong> until the end of your next turn.",
-      "tags": ["equipment", "fabula point", "mp", "dance"]
+      "tags": ["class-dancer", "equipment", "fabula point", "mp", "dance"]
     },
     {
       "name": "Spider’s Web",
@@ -154,7 +154,7 @@
       "classes": ["Dancer", "Fury", "Sharpshooter"],
       "summary": "Gain benefits for consecutive attacks with thrown weapons.",
       "description": "When you perform a ranged attack using a weapon that belongs to the <strong>thrown</strong> Category, <strong>if you have no martial armor and no shields equipped</strong>, you gain 1 Momentum Point.\n\nYou may never have more than 5 Momentum Points.\n\nYour ranged attacks using weapons that belong to the <strong>thrown</strong> Category deal extra damage equal to your current Momentum Points.\n\nWhen a creature hits you with an attack targeting your Defense, you must spend all your accumulated Momentum Points and increase your Defense score by an equal amount against that attack (this may turn the hit into a miss).\n\nYou also lose all Momentum Points <strong>at the end</strong> of each scene, or if you equip a shield or <strong>martial armor</strong>.",
-      "tags": ["class-fury", "class-sharpshooter", "attack", "equipment", "ranged", "defense", "damage", "thrown"]
+      "tags": ["class-dancer", "class-fury", "class-sharpshooter", "attack", "equipment", "ranged", "defense", "damage", "thrown"]
     },
     {
       "name": "Tabula Rasa",
@@ -175,7 +175,7 @@
       "classes": ["Dancer", "Weaponmaster"],
       "summary": "Equip three daggers or swords and perform triple attacks.",
       "description": "As long as you have a one-handed melee weapon that belongs to the dagger or sword Categories equipped in each of your normal hand slots, you may treat your armor slot as if it were a second <strong>off-hand slot</strong>. You may only use this special slot to equip a one-handed melee weapon that belongs to the dagger or sword Categories — note that the <strong>Monkey Grip</strong> Skill does not turn two-handed weapons into one-handed weapons, and thus <strong>cannot</strong> be used in combination with Triple Slash.\n\nWhen you perform the Attack action while you have three daggers and/or swords equipped, you may attack once with each weapon. This follows the normal rules for two-weapon fighting: each of the three attacks loses the multi property and <strong>cannot</strong> gain it, and you treat the <strong>High Roll (HR)</strong> of each Accuracy Check as being equal to 0 when determining damage.",
-      "tags": ["class-weaponmaster", "attack", "equipment", "melee", "damage", "multi", "two-handed", "two-weapon", "dagger", "sword"]
+      "tags": ["class-dancer", "class-weaponmaster", "attack", "equipment", "melee", "damage", "multi", "two-handed", "two-weapon", "dagger", "sword"]
     }
   ]
 }

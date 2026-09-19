@@ -21,7 +21,7 @@
     {
       "name": "Bend Magic",
       "classes": ["Elementalist", "Entropist", "Invoker", "Symbolist"],
-      "tags": ["spell", "skill", "invocation", "mp", "class-elementalist", "class-entropist", "class-invoke", "class-symbolist"],
+      "tags": ["spell", "skill", "invocation", "mp", "class-elementalist", "class-entropist", "class-invoker", "class-symbolist"],
       "summary": "React to enemy spells with your invocations.",
       "description": "After an enemy you can see <strong>hits or misses you with an offensive spell</strong> (🗲), if the Result of their <strong>Magic Check</strong> was an <strong>even number</strong>, you may <strong>immediately</strong> use the <strong>Invocation</strong> Skill for free (after the spell has been fully resolved) to perform an <strong>invocation</strong> you have access to against that enemy, without spending Mind Points. This <strong>invocation</strong> must not be a “<strong>hex</strong>”, and it may target only that enemy (you <strong>cannot</strong> use the <strong>Linked Invocation</strong> Skill with it)."
     },
@@ -42,7 +42,7 @@
     {
       "name": "Cheer Up!",
       "classes": ["Chanter", "Esper", "Orator"],
-      "tags": ["DEX", "INS", "MIG", "WLP", "class-chanter", "class-psychic", "class-orator"],
+      "tags": ["DEX", "INS", "MIG", "WLP", "class-chanter", "class-esper", "class-orator"],
       "summary": "Improves My Trust in You.",
       "description": "When you use My Trust in You on another Player Character, that character chooses Dexterity, Insight, Might, or Willpower: they treat the chosen Attribute as being increased by one die size (up to a maximum of d12) until the end of the scene or until you use My Trust in You on them again."
     },
@@ -63,14 +63,14 @@
     {
       "name": "Ephemeral Tranquility",
       "classes": ["Dancer", "Esper", "Rogue", "Spiritist", "Symbolist"],
-      "tags": ["spell", "status", "mp", "hp", "crisis", "class-psychic", "class-rogue", "class-spiritist", "class-symbolist"],
+      "tags": ["spell", "status", "mp", "hp", "crisis", "class-dancer", "class-esper", "class-rogue", "class-spiritist", "class-symbolist"],
       "summary": "Improves Hallucination and Torpor, and cleanses status effects to cause HP loss.",
       "description": "When you cast the <strong>Hallucination</strong> or <strong>Torpor</strong> spells, you may apply <strong>both</strong> status effects to each target hit by the spell.\n\nDuring a conflict, you may use an action and spend up to 20 Mind Points. For every 10 Mind Points spent this way, you may choose a different enemy you can see who is suffering from <strong>two or more status effects</strong>. Every enemy chosen this way recovers from all status effects and loses an amount of Hit Points equal to (<strong>half</strong> your level + (the number of status effects that enemy recovered from this way, multiplied by 10)).\n\nThen, you recover 20 Mind Points for each of those enemies that entered Crisis or was reduced to 0 Hit Points by this effect."
     },
     {
       "name": "Fitcast",
       "classes": ["Chimerist", "Darkblade", "Esper", "Fury", "Wayfarer"],
-      "tags": ["spell", "MIG", "equipment", "arcane", "skill", "class-chimerist", "class-darkblade", "class-psychic", "class-fury", "class-wayfarer"],
+      "tags": ["spell", "MIG", "equipment", "arcane", "skill", "class-chimerist", "class-darkblade", "class-esper", "class-fury", "class-wayfarer"],
       "summary": "Use Might for Magic Checks, and treat weapons relying on Might as being arcane.",
       "description": "When you perform a <strong>Magic Check</strong> for a spell or Ritual, you may replace one of the <strong>Attributes</strong> with Might (such as (MIG + MIG) for a Chimerism Ritual).\n\nAs long as the <strong>Accuracy</strong> formula of a weapon you have equipped includes Might, you may treat that weapon as also belonging to the <strong>arcane</strong> Category for the purpose of Skills and effects that require it."
     },
@@ -98,7 +98,7 @@
     {
       "name": "Inner Wellspring",
       "classes": ["Invoker"],
-      "tags": ["resistance", "damage", "invocation", "class-invoke"],
+      "tags": ["resistance", "damage", "invocation", "class-invoker"],
       "summary": "Carry an elemental wellspring of your choice within yourself.",
       "description": "When you acquire this Heroic Skill and whenever you <strong>rest</strong>, you may choose one <strong>wellspring</strong>: <strong>air</strong>, earth, <strong>fire</strong>, lightning, or water. If you do, you gain the following benefits until your next <strong>rest</strong>:\n\n• You always treat the chosen <strong>wellspring</strong> as being available during each scene, in addition to whatever wellsprings are already available.\n• You may perform Rituals of the <strong>Elementalism</strong> discipline, but only if those Rituals manipulate the element of the chosen <strong>wellspring</strong>.\n• You gain Resistance to the damage type corresponding to the chosen <strong>wellspring</strong>.\n• When you deal damage, you may change its type to the one corresponding to the chosen <strong>wellspring</strong>. If you do, that damage ignores Resistances."
     },
@@ -140,7 +140,7 @@
     {
       "name": "Strength of Five Wellsprings",
       "classes": ["Invoker"],
-      "tags": ["invocation", "INS", "DEX", "MIG", "WLP", "class-invoke"],
+      "tags": ["invocation", "INS", "DEX", "MIG", "WLP", "class-invoker"],
       "summary": "Invocations improve Attributes.",
       "description": "After you perform an <strong>invocation</strong> during a conflict, you and up to one ally you can see increase one of your <strong>Attributes</strong>’ die sizes by one (up to a maximum of d12). This increase lasts until the end of the scene or until you use this Skill again, and the Attribute is based on the <strong>wellspring</strong> you <strong>invoke</strong>d: <strong>air</strong> (Insight), earth (one Attribute of your choice), <strong>fire</strong> (Dexterity), lightning (Might), or water (Willpower)."
     },
