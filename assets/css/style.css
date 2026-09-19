@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-header {
     background-color: var(--header-bg-color);
-    border-bottom: 2px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
     padding: 0.2rem 0.1rem 0 0.1rem;
 }
 
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 .page-header .tab-nav .tab {
     background-color: var(--inactive-tab-bg-color);
     border: 1px solid var(--text-color);
-    border-bottom: 2px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
     border-radius: 12px 12px 0 0;
     color: var(--inactive-tab-text-color);
     cursor: pointer;

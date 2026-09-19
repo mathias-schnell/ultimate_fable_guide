@@ -1,0 +1,148 @@
+{
+    "source": {
+        "name": "natural_fantasy",
+        "label": "Natural Fantasy Atlas"
+    },
+    "class-skills": [
+        {
+            "name": "Battle Gardening",
+            "class": "Floralist",
+            "max-sl": 3,
+            "description": "After you plant a magiseed through the Chloromancy Skill (not when using Graft), you may choose one option: perform a free attack with an equipped weapon; or perform the Spell action for free, casting a spell with a total Mind Point cost equal to or lower than (5 + (SL × 5)) (you must still pay its MP cost). Treat the High Roll (HR) of your Accuracy Check or Magic Check as being equal to 0 when determining damage dealt by this attack or spell.",
+            "tags": []
+        },
+        {
+            "name": "Chloromancy",
+            "class": "Floralist",
+            "max-sl": 10,
+            "description": "Each time you acquire this Skill, you discover a new type of magiseed from the list found in the next pages.\nDuring a conflict, if there are no magiseeds in your garden, you may use an action and spend 20 Mind Points to plant a magiseed of a type you have discovered. The rules for the garden and for magiseed growth can be found in the next pages.",
+            "tags": []
+        },
+        {
+            "name": "Graft",
+            "class": "Floralist",
+            "max-sl": 1,
+            "description": "As long as there is a magiseed in your garden and 1 or more sections of your Growth Clock are filled, you may use an action to remove that magiseed from your garden: if you do, plant a different magiseed among those you have discovered (keep the current filled sections of your Growth Clock unchanged).",
+            "tags": []
+        },
+        {
+            "name": "Tree of Life",
+            "class": "Floralist",
+            "max-sl": 5,
+            "description": "When a magiseed is removed from your garden, you may choose one creature you can see: if that creature is in Crisis, they recover (5 + (SL × 5)) Hit Points.",
+            "tags": []
+        },
+        {
+            "name": "Verdant Sway",
+            "class": "Floralist",
+            "max-sl": 1,
+            "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create, animate, and/or control vegetation, pollen, spores, and toxins (but you cannot create nor control plant-Species NPCs this way).",
+            "tags": []
+        },
+        {
+            "name": "Cooking",
+            "class": "Gourmet",
+            "max-sl": 5,
+            "description": "When you rest inside a settlement, you gain (SL) ingredients (see next page).\nYou may use an action and combine 2 or 3 ingredients to prepare a delicacy (see next page) and choose one option: you apply its effects to yourself or an ally you can see; or you perform a free attack with a weapon you have equipped. This attack deals no damage, but you apply the delicacy’s effects to each enemy hit by the attack.\nYou may carry up to 10 + (SL × 5) ingredients, and they will never spoil until you use them; if you take this Skill during character creation, you begin play with ten ingredients with random tastes.",
+            "tags": []
+        },
+        {
+            "name": "Knife and Fork",
+            "class": "Gourmet",
+            "max-sl": 1,
+            "description": "When you perform the free attack granted by the Cooking Skill, if you combined no more than 2 ingredients, you may have the attack deal damage as normal. If you do, you treat your High Roll (HR) as 0 when calculating damage dealt by this attack.",
+            "tags": []
+        },
+        {
+            "name": "Made with Love",
+            "class": "Gourmet",
+            "max-sl": 3,
+            "description": "When you use the Cooking Skill and choose to apply the effects of the delicacy to yourself or an ally you can see, you may spend up to (SL × 10) MP. For every 10 MP you spend this way, apply the delicacy’s effects to an additional ally you can see.",
+            "tags": []
+        },
+        {
+            "name": "Salt and Pepper",
+            "class": "Gourmet",
+            "max-sl": 1,
+            "description": "When you prepare a delicacy, you may spend 2 Inventory Points: if you do, change the taste of one ingredient to a different taste of your choice.",
+            "tags": []
+        },
+        {
+            "name": "Traveling Cook",
+            "class": "Gourmet",
+            "max-sl": 3,
+            "description": "After each travel roll, if you acquired the Cooking Skill, you gain (SL × 2) ingredients.",
+            "tags": []
+        },
+        {
+            "name": "Elemental Harmony",
+            "class": "Invoker",
+            "max-sl": 2,
+            "description": "You may always communicate with creatures of the elemental Species.\nWhen you restore a creature’s Hit Points with an invocation or spell, if an elemental is present on the scene, the restored amount is increased by (SL × 5).",
+            "tags": []
+        },
+        {
+            "name": "Invocation",
+            "class": "Invoker",
+            "max-sl": 3,
+            "description": "You may use an action and spend 5 Mind Points to perform an invocation, drawing energy from one of the wellsprings present on the scene (see next page). Your (SL) in this Skill determines which invocations you have access to.",
+            "tags": []
+        },
+        {
+            "name": "Linked Invocation",
+            "class": "Invoker",
+            "max-sl": 3,
+            "description": "When you perform an invocation, you may spend up to (SL × 10) additional Mind Points. For every 10 Mind Points you spend this way, the invocation may target an additional creature you can see.",
+            "tags": []
+        },
+        {
+            "name": "Ripples",
+            "class": "Invoker",
+            "max-sl": 5,
+            "description": "After an enemy you can see loses Hit Points due to damage dealt by one of your allies, if that damage was increased by one or more of your “hex” invocations, you may perform a free attack with a weapon you have equipped. This attack may only target that enemy, and receives a bonus equal to (SL) to its Accuracy Check; if it is successful, all its damage becomes of the same type dealt by your ally, and all “hex” invocations present on its target end immediately after the attack has been resolved.\nIf two or more enemies trigger this Skill at the same time, you can perform a free attack against each of them, in whatever order you prefer.",
+            "tags": []
+        },
+        {
+            "name": "Wellspring Expansion",
+            "class": "Invoker",
+            "max-sl": 5,
+            "description": "As long as you have a weapon belonging to the arcane, bow, brawling, flail, sword, or thrown Category equipped, your “blast” invocations deal (SL) extra damage, and the extra damage granted by your “hex” invocations is increased by (SL).",
+            "tags": []
+        },
+        {
+            "name": "Expiration Date",
+            "class": "Merchant",
+            "max-sl": 3,
+            "description": "When a potion or delicacy (see page 151) you created that does not deal damage causes one or more creatures to recover Hit Points, you may instead have it deal poison damage equal to (half your level + (SL × 10)) to each of those creatures. This damage’s type cannot change, and it is halved if you are dealing damage to two or more creatures.",
+            "tags": []
+        },
+        {
+            "name": "I've Heard of It!",
+            "class": "Merchant",
+            "max-sl": 3,
+            "description": "After you or an ally who is able to hear and understand you roll dice for a Check to examine a creature, item, or location, you may spend 1 Trade Point to grant a bonus equal to (SL × 2) to the Result of that Check.",
+            "tags": []
+        },
+        {
+            "name": "Private Stock",
+            "class": "Merchant",
+            "max-sl": 3,
+            "description": "When you or another Player Character spend (SL + 2) or fewer Inventory Points, you may spend 1 Trade Point to ignore that cost.",
+            "tags": []
+        },
+        {
+            "name": "Real Treasure",
+            "class": "Merchant",
+            "max-sl": 3,
+            "description": "Once per session, when you help an NPC or community defeat greed and corruption, improve their quality of life, or coexist with other creatures, if you have acquired the Winds of Trade Skill, you gain (SL + 1) Trade Points.",
+            "tags": []
+        },
+        {
+            "name": "Winds of Trade",
+            "class": "Merchant",
+            "max-sl": 3,
+            "description": "After you rest in an area where commerce is possible, you gain (SL + 1) Trade Points.\nYou may never have more than (SL + 3) Trade Points; if you acquire this Skill during character creation, you begin play with 2 Trade Points.\nDuring a non-conflict scene, you may spend 2 Trade Points to choose one option: you create a material or rare item approved by the Game Master whose value in zenit is equal to or lower than (your level, multiplied by 30); or you create an NPC that lives nearby and explain their occupation as well as how you met them, then the Game Master tells you what they require in exchange for their services.",
+            "tags": []
+        }
+    ]
+}

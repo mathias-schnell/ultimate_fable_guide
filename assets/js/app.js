@@ -8,24 +8,29 @@
  * @property {HTMLElement} skills_container - The container for all listed Heroic Skills
  */
 
-const class_skills_click_actions = {
-    ".btn-add-filter-row"       : add_filter_row,
-    ".btn-remove-filter-row"    : remove_filter_row,
+const content_click_actions = {
     ".class-skills-pin"         : toggle_class_pin,
     ".class-skills-toggle"      : toggle_class_skill,
-}
-
-const heroic_skills_click_actions = {
-    ".btn-add-filter-row"        : add_filter_row,
-    ".btn-remove-filter-row"     : remove_filter_row,
     ".heroic-skills-pin"         : toggle_heroic_pin,
     ".heroic-skills-toggle"      : toggle_heroic_skill,
-}
+};
 
-const heroic_skills_change_actions = {
+const filter_click_actions = {
+    ".btn-add-filter-row"        : add_filter_row,
+    ".btn-remove-filter-row"     : remove_filter_row,
+};
+
+const filter_change_actions = {
     ".filter-include-exclude"   : filter_heroic_skills,
     ".filter-tag-select"        : filter_heroic_skills, 
-}
+};
+
+const dispatcher = (actions, context) => (e) => {
+    for (const [selector, handler] of Object.entries(actions)) {
+        const target = e.target.closest(selector);
+        if (target) { handler(target, context); break; }
+    }
+};
 
 let pin_count = 0;
 
@@ -40,22 +45,28 @@ window.addEventListener("DOMContentLoaded", () => {
  * All the initialization that is required before the app is properly used.
  */
 function initialize_app() {
-    const content_container = document.querySelector(".content-container");
+    const container = document.getElementById("main-container");
+    if(!container) return;
 
-    bind_navigation_events(content_container);
-    bind_class_skills_events();
-    bind_heroic_skills_events();
-    show_content(content_container);
+    const context = {
+        nav_container: container.querySelector('.tab-nav'),
+        filter_container: container.querySelector('.filter-rows-container'),
+        content_container: container.querySelector('.content-container'),
+    }
+
+    bind_navigation_events(context);
+    bind_filter_events(context);
+    bind_content_events(context);
+    show_content(context.content_container);
 }
 
-function bind_navigation_events(content_container) {
-    const nav = document.querySelector(".tab-nav");
-    if(!nav) return;
-    nav.addEventListener("click", (e) => {
+function bind_navigation_events({ nav_container, content_container } = {}) {
+    if(!nav_container || !content_container) return;
+    nav_container.addEventListener("click", (e) => {
         const tab = e.target.closest(".tab");
         if(!tab) return;
         const content = tab.getAttribute("aria-controls");
-        toggle_nav_tab(nav, tab);
+        toggle_nav_tab(nav_container, tab);
         show_content(content_container, content);
     });
 }
@@ -65,6 +76,7 @@ function bind_navigation_events(content_container) {
  * Make the clicked navigation tab active
  */
 function toggle_nav_tab(nav, tab) {
+    if(!nav || !tab) return;
     nav.querySelectorAll(".tab").forEach(t => {
         t.classList.remove("active");
         t.setAttribute("aria-selected", "false");
@@ -74,52 +86,19 @@ function toggle_nav_tab(nav, tab) {
 }
 
 /**
- * Event bindings related to the Heroic Skills section of the app.
+ * Event bindings related to the Filter section of the app.
  */
-function bind_heroic_skills_events() {
-    const container = document.getElementById("main-container");
-    if(!container) return;
-
-    const context = {
-        filter_container: container.querySelector('.filter-rows-container'),
-        skills_container: container.querySelector('.heroic-skills-container'),
-    }
-    console.log(context);
+function bind_filter_events(context) {
+    context.filter_container?.addEventListener("click", dispatcher(filter_click_actions, context));
+    context.filter_container?.addEventListener("change", dispatcher(filter_change_actions, context));
     add_filter_row(null, context);
-    
-    const dispatcher = (actions) => (e) => {
-        for (const [selector, handler] of Object.entries(actions)) {
-            const target = e.target.closest(selector);
-            if (target) { handler(target, context); break; }
-        }
-    };
-
-    container.addEventListener("click", dispatcher(heroic_skills_click_actions));
-    container.addEventListener("change", dispatcher(heroic_skills_change_actions));
 }
 
 /**
- * Event bindings related to the Class Skills section of the app.
+ * Event bindings related to the Content section of the app.
  */
-function bind_class_skills_events() {
-    const container = document.getElementById("main-container");
-    if(!container) return;
-
-    const context = {
-        filter_container: container.querySelector('.filter-rows-container'),
-        skills_container: container.querySelector('.class-skills-container'),
-    }
-    console.log(context);
-    add_filter_row(null, context);
-    
-    const dispatcher = (actions) => (e) => {
-        for (const [selector, handler] of Object.entries(actions)) {
-            const target = e.target.closest(selector);
-            if (target) { handler(target, context); break; }
-        }
-    };
-
-    container.addEventListener("click", dispatcher(class_skills_click_actions));
+function bind_content_events(context) {
+    context.content_container?.addEventListener("click", dispatcher(content_click_actions, context));
 }
 
 /**
@@ -128,7 +107,8 @@ function bind_class_skills_events() {
  * @param {HTMLElement|null} target
  * @param {SkillContext} context
  */
-function add_filter_row(target, { filter_container }) {
+function add_filter_row(target, { filter_container } = {}) {
+    if(!filter_container) return;
     const prime = filter_container.querySelector('.filter-row-prime');
     if(!prime) return;
 
@@ -143,8 +123,10 @@ function add_filter_row(target, { filter_container }) {
  * @param {HTMLElement|null} target
  * @param {SkillContext} context
  */
-function remove_filter_row(target, context) {
+function remove_filter_row(target, context = {}) {
+    if(!target || !context.filter_container) return;
     const row = target.closest('.filter-row') || target.parentElement;
+    if(!row) return;
 
     if (context.filter_container.children.length > 2) {
         row.remove();
@@ -161,7 +143,8 @@ function remove_filter_row(target, context) {
  * @param {HTMLElement|null} target
  * @param {SkillContext} context
  */
-function filter_heroic_skills(target, { filter_container, skills_container }) {
+function filter_heroic_skills(target, { filter_container, content_container } = {}) {
+    if(!filter_container || !content_container) return;
     const includes = new Set();
     const excludes = new Set();
     const filter_rows = filter_container.querySelectorAll('.filter-row:not(.filter-row-prime)');
@@ -177,7 +160,7 @@ function filter_heroic_skills(target, { filter_container, skills_container }) {
         }
     });
 
-    skills_container.querySelectorAll(".skill").forEach(article => {
+    content_container.querySelectorAll("article").forEach(article => {
         if(article.getAttribute("aria-pinned") === "true") return;
         const tags = article.dataset.tags ? article.dataset.tags.split(',').map(t => t.trim()) : [];
         const included = includes.size === 0 || [...includes].some(tag => tags.includes(tag));
@@ -206,7 +189,7 @@ function toggle_class_pin(target, context) {
     }
 
     target.setAttribute("aria-checked", !is_pinned);
-    target.closest(".class-skills").setAttribute("aria-pinned", !is_pinned);
+    target.closest(".class-skills")?.setAttribute("aria-pinned", String(!is_pinned));
     filter_heroic_skills(target, context);
 }
 
@@ -228,7 +211,7 @@ function toggle_heroic_pin(target, context) {
     }
 
     target.setAttribute("aria-checked", !is_pinned);
-    target.closest(".heroic-skills").setAttribute("aria-pinned", !is_pinned);
+    target.closest(".heroic-skills")?.setAttribute("aria-pinned", String(!is_pinned));
     filter_heroic_skills(target, context);
 }
 
@@ -238,13 +221,14 @@ function toggle_heroic_pin(target, context) {
  * @param {HTMLElement|null} target
  * @param {SkillContext} context
  */
-function toggle_class_skill(target, { skills_container }) {
+function toggle_class_skill(target, { content_container } = {}) {
+    if(!content_container) return;
     const is_expanded = target.getAttribute('aria-expanded') === 'true';
     const target_id = target.getAttribute('aria-controls');
 
     target.setAttribute('aria-expanded', !is_expanded);
     if(target_id) {
-        skills_container.querySelector('#' + target_id)?.classList.toggle('hidden', is_expanded);
+        content_container.querySelector('#' + target_id)?.classList.toggle('hidden', is_expanded);
     }
 }
 
@@ -254,13 +238,14 @@ function toggle_class_skill(target, { skills_container }) {
  * @param {HTMLElement|null} target
  * @param {SkillContext} context
  */
-function toggle_heroic_skill(target, { skills_container }) {
+function toggle_heroic_skill(target, { content_container } = {}) {
+    if(!content_container) return;
     const is_expanded = target.getAttribute('aria-expanded') === 'true';
     const target_id = target.getAttribute('aria-controls');
 
     target.setAttribute('aria-expanded', !is_expanded);
     if(target_id) {
-        skills_container.querySelector('#' + target_id)?.classList.toggle('hidden', is_expanded);
+        content_container.querySelector('#' + target_id)?.classList.toggle('hidden', is_expanded);
     }
 }
 
@@ -270,11 +255,12 @@ function toggle_heroic_skill(target, { skills_container }) {
  * @param {*} container 
  * @param {*} content 
  */
-function show_content(container, content = null) {
-    [...container.children].forEach(item => item.classList.remove("active"));
+function show_content(content_container, content = null) {
+    if(!content_container) return;
+    [...content_container.children].forEach(item => item.classList.remove("active"));
     if(content) {
-        container.querySelector("#" + content).classList.add("active");
+        content_container.querySelector("#" + content)?.classList.add("active");
     } else {
-        container.children[0].classList.add("active");
+        content_container.children[0]?.classList.add("active");
     }
 }
