@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.3] - 2026-09-20
+
+### Internal
+- Condensed and cleaned up code.
+- Added predefined paths and URLs to `app_conf.php` to help with portability.
+- Data, styling, navigation tabs and content layouts are now set and loaded programmatically by PHP for each category of content (Class Skills, Heroic Skills, etc.)
+
+---
+
 ## [0.2.2] - 2026-09-19
 
 ### Added

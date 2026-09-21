@@ -8,31 +8,41 @@
  * @property {HTMLElement} skills_container - The container for all listed Heroic Skills
  */
 
+/** 
+ * Defining the actions that will happen to the content area of the app on click 
+ */
 const content_click_actions = {
-    ".class-skills-pin"         : toggle_class_pin,
-    ".class-skills-toggle"      : toggle_class_skill,
-    ".heroic-skills-pin"         : toggle_heroic_pin,
-    ".heroic-skills-toggle"      : toggle_heroic_skill,
+    ".class-skills-pin"          : toggle_pin,
+    ".class-skills-toggle"       : toggle_item,
+    ".heroic-skills-pin"         : toggle_pin,
+    ".heroic-skills-toggle"      : toggle_item,
 };
 
+/** 
+ * Defining the actions that will happen to the filter area of the app on click 
+ */
 const filter_click_actions = {
     ".btn-add-filter-row"        : add_filter_row,
     ".btn-remove-filter-row"     : remove_filter_row,
 };
 
+/** 
+ * Defining the actions that will happen to the filter area of the app when something changes 
+ */
 const filter_change_actions = {
-    ".filter-include-exclude"   : filter_heroic_skills,
-    ".filter-tag-select"        : filter_heroic_skills, 
+    ".filter-include-exclude"   : filter_content,
+    ".filter-tag-select"        : filter_content, 
 };
 
+/** 
+ * Creates a generic action dispatcher for all the above actions 
+ */
 const dispatcher = (actions, context) => (e) => {
     for (const [selector, handler] of Object.entries(actions)) {
         const target = e.target.closest(selector);
         if (target) { handler(target, context); break; }
     }
 };
-
-let pin_count = 0;
 
 /** 
  * Try our best to ensure that everything starts after the DOM has loaded.
@@ -57,9 +67,15 @@ function initialize_app() {
     bind_navigation_events(context);
     bind_filter_events(context);
     bind_content_events(context);
+    toggle_nav_tab(context.nav_container, context.nav_container.children[0]);
     show_content(context.content_container);
 }
 
+/**
+ * Event bindings releated to the app's navigation
+ * 
+ * @param {*} param0 
+ */
 function bind_navigation_events({ nav_container, content_container } = {}) {
     if(!nav_container || !content_container) return;
     nav_container.addEventListener("click", (e) => {
@@ -70,7 +86,6 @@ function bind_navigation_events({ nav_container, content_container } = {}) {
         show_content(content_container, content);
     });
 }
-
 
 /**
  * Make the clicked navigation tab active
@@ -134,7 +149,7 @@ function remove_filter_row(target, context = {}) {
         row.querySelector(".filter-include-exclude").selectedIndex = 0;
         row.querySelector(".filter-tag-select").selectedIndex = 0;
     }
-    filter_heroic_skills(target, context);
+    filter_content(target, context);
 }
 
 /**
@@ -143,7 +158,7 @@ function remove_filter_row(target, context = {}) {
  * @param {HTMLElement|null} target
  * @param {SkillContext} context
  */
-function filter_heroic_skills(target, { filter_container, content_container } = {}) {
+function filter_content(target, { filter_container, content_container } = {}) {
     if(!filter_container || !content_container) return;
     const includes = new Set();
     const excludes = new Set();
@@ -172,73 +187,25 @@ function filter_heroic_skills(target, { filter_container, content_container } = 
 }
 
 /**
- * Show or hide the full description of the passed in Class Skill that was clicked.
+ * Pin the article to the top of the content section.
  * 
  * @param {HTMLElement|null} target
  * @param {SkillContext} context
  */
-function toggle_class_pin(target, context) {
+function toggle_pin(target, context) {
     const is_pinned = target.getAttribute('aria-checked') === 'true';
-
-    if(is_pinned && pin_count > 0) { 
-        pin_count--;
-    } else if (!is_pinned && pin_count < 5) {
-        pin_count++;
-    } else {
-        return;
-    }
-
     target.setAttribute("aria-checked", !is_pinned);
-    target.closest(".class-skills")?.setAttribute("aria-pinned", String(!is_pinned));
-    filter_heroic_skills(target, context);
+    target.closest("article")?.setAttribute("aria-pinned", String(!is_pinned));
+    filter_content(target, context);
 }
 
 /**
- * Show or hide the full description of the passed in Heroic Skill that was clicked.
+ * Show or hide the full description of the passed in article.
  * 
  * @param {HTMLElement|null} target
  * @param {SkillContext} context
  */
-function toggle_heroic_pin(target, context) {
-    const is_pinned = target.getAttribute('aria-checked') === 'true';
-
-    if(is_pinned && pin_count > 0) { 
-        pin_count--;
-    } else if (!is_pinned && pin_count < 5) {
-        pin_count++;
-    } else {
-        return;
-    }
-
-    target.setAttribute("aria-checked", !is_pinned);
-    target.closest(".heroic-skills")?.setAttribute("aria-pinned", String(!is_pinned));
-    filter_heroic_skills(target, context);
-}
-
-/**
- * Show or hide the full description of the passed in Class Skill that was clicked.
- * 
- * @param {HTMLElement|null} target
- * @param {SkillContext} context
- */
-function toggle_class_skill(target, { content_container } = {}) {
-    if(!content_container) return;
-    const is_expanded = target.getAttribute('aria-expanded') === 'true';
-    const target_id = target.getAttribute('aria-controls');
-
-    target.setAttribute('aria-expanded', !is_expanded);
-    if(target_id) {
-        content_container.querySelector('#' + target_id)?.classList.toggle('hidden', is_expanded);
-    }
-}
-
-/**
- * Show or hide the full description of the passed in Heroic Skill that was clicked.
- * 
- * @param {HTMLElement|null} target
- * @param {SkillContext} context
- */
-function toggle_heroic_skill(target, { content_container } = {}) {
+function toggle_item(target, { content_container } = {}) {
     if(!content_container) return;
     const is_expanded = target.getAttribute('aria-expanded') === 'true';
     const target_id = target.getAttribute('aria-controls');
