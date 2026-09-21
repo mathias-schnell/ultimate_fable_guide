@@ -3,27 +3,26 @@
  */
 
 /**
- * @typedef {Object} SkillContext
+ * @typedef {Object} AppContext
+ * @property {HTMLElement} nav_container - The container for all the navigation tabs
  * @property {HTMLElement} filter_container - The container for all filtering controls
- * @property {HTMLElement} skills_container - The container for all listed Heroic Skills
+ * @property {HTMLElement} content_container - The container for the main content
  */
 
 /** 
  * Defining the actions that will happen to the content area of the app on click 
  */
 const content_click_actions = {
-    ".class-skills-pin"          : toggle_pin,
-    ".class-skills-toggle"       : toggle_item,
-    ".heroic-skills-pin"         : toggle_pin,
-    ".heroic-skills-toggle"      : toggle_item,
+    "[class$='pin']"    : toggle_pin,
+    "[class$='toggle']" : toggle_item,
 };
 
 /** 
  * Defining the actions that will happen to the filter area of the app on click 
  */
 const filter_click_actions = {
-    ".btn-add-filter-row"        : add_filter_row,
-    ".btn-remove-filter-row"     : remove_filter_row,
+    ".btn-add-filter-row"       : add_filter_row,
+    ".btn-remove-filter-row"    : remove_filter_row,
 };
 
 /** 
@@ -74,7 +73,7 @@ function initialize_app() {
 /**
  * Event bindings releated to the app's navigation
  * 
- * @param {*} param0 
+ * @param {AppContext} param0 
  */
 function bind_navigation_events({ nav_container, content_container } = {}) {
     if(!nav_container || !content_container) return;
@@ -120,7 +119,7 @@ function bind_content_events(context) {
  * Clones the hidden filter-row-prime and appends a new filter row to the container.
  * 
  * @param {HTMLElement|null} target
- * @param {SkillContext} context
+ * @param {AppContext} context
  */
 function add_filter_row(target, { filter_container } = {}) {
     if(!filter_container) return;
@@ -136,7 +135,7 @@ function add_filter_row(target, { filter_container } = {}) {
  * Removes the given row if it isn't the only row in its container.
  * 
  * @param {HTMLElement|null} target
- * @param {SkillContext} context
+ * @param {AppContext} context
  */
 function remove_filter_row(target, context = {}) {
     if(!target || !context.filter_container) return;
@@ -156,7 +155,7 @@ function remove_filter_row(target, context = {}) {
  * Collects selected values across all active filters and filters Heroic Skills using OR logic.
  * 
  * @param {HTMLElement|null} target
- * @param {SkillContext} context
+ * @param {AppContext} context
  */
 function filter_content(target, { filter_container, content_container } = {}) {
     if(!filter_container || !content_container) return;
@@ -190,7 +189,7 @@ function filter_content(target, { filter_container, content_container } = {}) {
  * Pin the article to the top of the content section.
  * 
  * @param {HTMLElement|null} target
- * @param {SkillContext} context
+ * @param {AppContext} context
  */
 function toggle_pin(target, context) {
     const is_pinned = target.getAttribute('aria-checked') === 'true';
@@ -203,7 +202,7 @@ function toggle_pin(target, context) {
  * Show or hide the full description of the passed in article.
  * 
  * @param {HTMLElement|null} target
- * @param {SkillContext} context
+ * @param {AppContext} context
  */
 function toggle_item(target, { content_container } = {}) {
     if(!content_container) return;
@@ -219,8 +218,8 @@ function toggle_item(target, { content_container } = {}) {
 /**
  * Show the relevant content in the content container and hide the others.
  * 
- * @param {*} container 
- * @param {*} content 
+ * @param {HTMLElement} container 
+ * @param {String|null} content 
  */
 function show_content(content_container, content = null) {
     if(!content_container) return;

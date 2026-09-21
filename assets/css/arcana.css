@@ -1,0 +1,87 @@
+.arcana-pin,
+.arcana-toggle {
+    height: 100%;
+    transform: rotate(0deg);
+    transition: transform 0.25s ease;
+    width: 100%;
+}
+
+.arcana-pin[aria-checked="true"] {
+    transform: rotate(-45deg);
+}
+
+.arcana-toggle[aria-expanded="true"] {
+    transform: rotate(90deg);
+}
+
+.arcana-list-header,
+.arcana-row {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0.25fr 3fr 3fr 0.25fr;
+}
+
+.arcana-list-header {
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+    order: -10;
+}
+
+.arcana-list-header > div,
+.arcana-row > div {
+    padding: 0.5rem;
+}
+
+.arcana {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.arcana[aria-pinned="true"] {
+    background-color: #D0D0D0;
+    border-bottom: 1px solid #AAAAAA;
+    order: -1;
+}
+
+.arcana:last-child {
+    border-bottom: none;
+}
+
+.arcana > .arcana-description-container {
+    height: auto;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0.25rem 1rem 0.75rem 1rem;
+    transition: height 0.33s,
+                opacity 0s,
+                padding 0s;
+}
+
+.arcana > .arcana-description-container strong {
+    font-weight: 600;    
+}
+
+.arcana > .arcana-description-container > .arcana-additional-requirement {
+    margin-bottom: 1rem;
+}
+
+.arcana > .arcana-description-container > .arcana-description > * {
+    white-space: pre-line;
+}
+
+.arcana > .arcana-description-container > .arcana-description > p {
+    margin-bottom: 0.5rem;
+}
+
+.arcana > .arcana-description-container.hidden {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+}
+
+.arcana-row > .arcana-expand,
+.arcana-row > .arcana-pin {
+    font-size: 125%;
+    padding: 0;
+    margin: 0;
+}

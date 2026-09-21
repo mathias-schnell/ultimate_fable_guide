@@ -1,9 +1,7 @@
 <div class="<?=$html_key ?>-list-header">
     <div></div>
-    <div>Source</div>
     <div>Name</div>
-    <div>Requirements</div>
-    <div>Summary</div>
+    <div>Domains</div>
     <div></div>
 </div>
 <?php
@@ -28,23 +26,11 @@
                             ▶
                         </button>
                     </div>
-                    <div class="<?=$html_key ?>-source">
-                        <?= htmlspecialchars($source['label']) ?>
-                    </div>
                     <div class="<?=$html_key ?>-name">
                         <?= htmlspecialchars($entry['name']) ?>
                     </div>
-                    <div class="<?=$html_key ?>-requirements">
-                        <?php if (empty($entry['classes'])): ?>
-                            <span>-</span>
-                        <?php else: ?>
-                            <span class="class-tag">
-                                <?= htmlspecialchars(implode(', ', $entry['classes'])) ?>
-                            </span>
-                        <?php endif; ?>
-                    </div>
-                    <div class="<?=$html_key ?>-summary">
-                        <?= htmlspecialchars($entry['summary']) ?>
+                    <div class="<?=$html_key ?>-domains">
+                        <?= htmlspecialchars(implode(', ', $entry['domains'])) ?>
                     </div>
                     <div class="<?=$html_key ?>-pin">
                         <button class="<?=$html_key ?>-pin"
@@ -55,13 +41,17 @@
                     </div>
                 </div>
                 <div class="<?=$html_key ?>-description-container hidden" id="<?=$id ?>">
-                    <?php if(isset($entry['additional_requirements'])): ?>
-                        <div class="<?=$html_key ?>-additional-requirement">
-                            <strong>Additional Requirements: </strong>
-                            <span><?= htmlspecialchars($entry['additional_requirements']) ?></span>
-                        </div>
-                    <?php endif; ?>
-                    <div class="<?=$html_key ?>-description"><?= $entry['description'] ?></div>
+                    <div class="<?=$html_key ?>-description">
+                        <?php if(!empty($entry['merge'])): ?>
+                            <h4>Merge</h4>
+                            <p><?=$entry['merge'] ?></p>
+                        <?php endif; ?>
+
+                        <?php if(!empty($entry['dismiss'])): ?>
+                            <h4>Dismiss</h4>
+                            <p><?=$entry['dismiss'] ?></p>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </article>
         <?php endforeach; ?>
