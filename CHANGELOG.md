@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0] - 2026-09-22
+
+### Added
+- Added some additional tags.
+- Added content for 'Arcana' and 'Spells'
+
+---
+
 ## [0.2.3] - 2026-09-20
 
 ### Internal

@@ -86,7 +86,7 @@
             "hinder"       => "Hinder",
             "guard"        => "Guard",
             "clock"        => "Clock",
-            "fabula point" => "Fabula Point",
+            "fabula-point" => "Fabula Point",
             "bond"         => "Bond",
             "critical"     => "Critical",
             "fumble"       => "Fumble",
@@ -99,7 +99,7 @@
             "mp"            => "MP",
             "ip"            => "IP",
             "defense"       => "Defense",
-            "magic defense" => "Magic Defense",
+            "magic-defense" => "Magic Defense",
             "initiative"    => "Initiative",
             "MIG"           => "Might (MIG)",
             "DEX"           => "Dexterity (DEX)",
@@ -127,7 +127,7 @@
             "poison"   => "Poison",
         ],
 
-        "Weapon Categories & Properties" => [
+        "Item Categories & Properties" => [
             "multi"      => "Multi",
             "two-handed" => "Two-Handed",
             "two-weapon" => "Two-Weapon",
@@ -141,10 +141,13 @@
             "spear"      => "Spear",
             "sword"      => "Sword",
             "thrown"     => "Thrown",
+            "weapon"     => "Weapon",
+            "shield"     => "Shield",
+            "armor"      => "Armor",
         ],
 
         "Class Features & Subsystems" => [
-            "trade point" => "Trade Point",
+            "trade-point" => "Trade Point",
             "ingredient"  => "Ingredient",
             "invocation"  => "Invocation",
             "symbol"      => "Symbol",

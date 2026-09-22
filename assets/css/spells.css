@@ -1,52 +1,52 @@
-.class-skills-pin,
-.class-skills-toggle {
+.spells-pin,
+.spells-toggle {
     height: 100%;
     transform: rotate(0deg);
     transition: transform 0.25s ease;
     width: 100%;
 }
 
-.class-skills-pin[aria-checked="true"] {
+.spells-pin[aria-checked="true"] {
     transform: rotate(-45deg);
 }
 
-.class-skills-toggle[aria-expanded="true"] {
+.spells-toggle[aria-expanded="true"] {
     transform: rotate(90deg);
 }
 
-.class-skills-list-header,
-.class-skills-row {
+.spells-list-header,
+.spells-row {
     align-items: center;
     display: grid;
-    grid-template-columns: 0.25fr 1.5fr 1.5fr 2fr 1fr 0.25fr;
+    grid-template-columns: 0.25fr 1.25fr 1fr 0.75fr 1.5fr 1.5fr 0.25fr;
 }
 
-.class-skills-list-header {
+.spells-list-header {
     border-bottom: 1px solid #CCCCCC;
     font-weight: bold;
     order: -10;
 }
 
-.class-skills-list-header > div,
-.class-skills-row > div {
+.spells-list-header > div,
+.spells-row > div {
     padding: 0.5rem;
 }
 
-.class-skills {
+.spells {
     border-bottom: 1px solid #CCCCCC;
 }
 
-.class-skills[aria-pinned="true"] {
+.spells[aria-pinned="true"] {
     background-color: #D0D0D0;
     border-bottom: 1px solid #AAAAAA;
     order: -1;
 }
 
-.class-skills:last-child {
+.spells:last-child {
     border-bottom: none;
 }
 
-.class-skills > .class-skills-description-container {
+.spells > .spells-description-container {
     height: auto;
     opacity: 1;
     overflow: hidden;
@@ -56,27 +56,27 @@
                 padding 0s;
 }
 
-.class-skills > .class-skills-description-container strong {
+.spells > .spells-description-container strong {
     font-weight: 600;    
 }
 
-.class-skills > .class-skills-description-container > .class-skills-additional-requirement {
+.spells > .spells-description-container > .spells-additional-requirement {
     margin-bottom: 1rem;
 }
 
-.class-skills > .class-skills-description-container > .class-skills-description {
+.spells > .spells-description-container > .spells-description {
     white-space: pre-wrap;
 }
 
-.class-skills > .class-skills-description-container.hidden {
+.spells > .spells-description-container.hidden {
     height: 0;
     margin: 0;
     opacity: 0;
     padding: 0;
 }
 
-.class-skills-row > .class-skills-expand,
-.class-skills-row > .class-skills-pin {
+.spells-row > .spells-expand,
+.spells-row > .spells-pin {
     font-size: 125%;
     padding: 0;
     margin: 0;
