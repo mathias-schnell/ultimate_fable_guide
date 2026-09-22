@@ -1,10 +1,17 @@
 # Changelog
 
+## [0.3.1] - 2026-09-22
+
+### Fixed
+- Added a missing column in the Spells content.
+
+---
+
 ## [0.3.0] - 2026-09-22
 
 ### Added
 - Added some additional tags.
-- Added content for 'Arcana' and 'Spells'
+- Added content for 'Arcana' and 'Spells'.
 
 ---
 

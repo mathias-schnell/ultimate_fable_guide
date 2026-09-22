@@ -1,6 +1,7 @@
 <div class="<?=$html_key ?>-list-header">
     <div></div>
     <div>Spell</div>
+    <div>Class</div>
     <div>MP</div>
     <div>Target</div>
     <div>Duration</div>
