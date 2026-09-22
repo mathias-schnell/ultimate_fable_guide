@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2] - 2026-09-22
+
+### Fixed
+- App portability should be better via better file path and URL generation.
+
+---
+
 ## [0.3.1] - 2026-09-22
 
 ### Fixed
