@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3] - 2026-09-22
+
+### Added
+- Content for 'Dances'.
+
+---
+
 ## [0.3.2] - 2026-09-22
 
 ### Fixed
