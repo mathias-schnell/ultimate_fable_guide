@@ -1,0 +1,128 @@
+{
+  "source": {
+    "name": "natural_fantasy",
+    "label": "Natural Fantasy Atlas"
+  },
+  "magiseeds": [
+    {
+      "name": "Arctic Narcissus",
+      "summary": "It stubbornly survives in frozen territories.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are Resistant to earth and ice damage.</td></tr><tr><td>2-3</td><td>You and your allies present on the scene are Resistant to earth and ice damage.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "earth", "ice", "resistance", "damage"]
+    },
+    {
+      "name": "Blazing Chrysanthemum",
+      "summary": "Its thick petals resemble an erupting volcano.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1-3</td><td>At the end of your turn, choose earth or fire. Until you use this effect again or this magiseed is no longer in your garden, all damage dealt by you and every ally present on the scene becomes the chosen type, its type cannot change, and it ignores Resistances.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "earth", "fire", "damage", "resistance"]
+    },
+    {
+      "name": "Desert Dahlia",
+      "summary": "A tenacious plant, it doesn’t fear the dryness of dunes.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are Resistant to air and fire damage.</td></tr><tr><td>2-3</td><td>You and your allies present on the scene are Resistant to air and fire damage.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "air", "fire", "resistance", "damage"]
+    },
+    {
+      "name": "Golden Ginkgo",
+      "summary": "Its vibrantly colored leaves represent tenacity.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you and every ally you can see recover from dazed, enraged, and shaken.</td></tr><tr><td>2-3</td><td>At the end of your turn, you and every ally you can see recover an amount of Mind Points equal to (5 + your Skill Level in Chloromancy).</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "status", "mp"]
+    },
+    {
+      "name": "Grave Asphodel",
+      "summary": "Solemn and elegant, it embodies death’s ineluctability.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers shaken.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers shaken.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of dark damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from shaken.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "status", "dark", "damage"]
+    },
+    {
+      "name": "Hermit Iris",
+      "summary": "Its leaves carry whispers of ancient knowledge.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, choose an enemy you can see. The Game Master reveals its Level, Rank, Species, maximum Hit Points, maximum Mind Points, Traits, Attributes, Defense, and Magic Defense.</td></tr><tr><td>2-3</td><td>At the end of your turn, choose an enemy you can see. The Game Master reveals its Level, Rank, Species, maximum Hit Points, maximum Mind Points, Traits, Attributes, Defense, Magic Defense, and Affinities.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "study", "hp", "mp", "defense", "magic-defense"]
+    },
+    {
+      "name": "Hookleaf Nightshade",
+      "summary": "Its purplish berries contain a deadly magical venom.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>All damage you deal becomes poison, its type cannot change, and it ignores Immunities and Resistances.</td></tr><tr><td>2-3</td><td>All damage you deal becomes poison, its type cannot change, and it ignores Immunities and Resistances. Additionally, when you deal poison damage for the first time during your turn, you deal extra damage equal to (your Skill Level in Chloromancy) and each creature that lost Hit Points this way suffers poisoned.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "poison", "damage", "immunity", "resistance", "status", "hp"]
+    },
+    {
+      "name": "Horned Hawthorn",
+      "summary": "Favored by witches and surgeons alike for its purifying properties.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are Resistant to dark and poison damage.</td></tr><tr><td>2-3</td><td>You and your allies present on the scene are Resistant to dark and poison damage.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "dark", "poison", "resistance", "damage"]
+    },
+    {
+      "name": "Lunar Magnolia",
+      "summary": "It blooms in the darkest hours of the night.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1-3</td><td>At the end of your turn, choose ice or light. Until you use this effect again or this magiseed is no longer in your garden, all damage dealt by you and every ally present on the scene becomes the chosen type, its type cannot change, and it ignores Resistances.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "ice", "light", "damage", "resistance"]
+    },
+    {
+      "name": "Ocean Lotus",
+      "summary": "A graceful symbol of serenity and wisdom.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are immune to dazed and slow.</td></tr><tr><td>2</td><td>You treat your Dexterity and Insight as being one die size higher (up to a maximum of d12).</td></tr><tr><td>3</td><td>You and every ally you can see treat your Dexterity and Insight as being one die size higher (up to a maximum of d12).</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "immunity", "status", "DEX", "INS"]
+    },
+    {
+      "name": "Pilgrim Gazalia",
+      "summary": "Its flamboyant corolla is synonymous with abundance.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1-2</td><td>At the end of your turn, choose yourself or another Player Character you can see. The chosen character regains 2 Inventory Points.</td></tr><tr><td>3</td><td>At the end of your turn, you and every other Player Character you can see regain 1 Inventory Point.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "ip"]
+    },
+    {
+      "name": "Prancing Dandelion",
+      "summary": "A symbol of energy and vivacity, it spreads seeds through stormy winds.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1-3</td><td>At the end of your turn, choose air or bolt. Until you use this effect again or this magiseed is no longer in your garden, all damage dealt by you and every ally present on the scene becomes the chosen type, its type cannot change, and it ignores Resistances.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "air", "bolt", "damage", "resistance"]
+    },
+    {
+      "name": "Regal Protea",
+      "summary": "A colorful and tenacious flower, favored by an ancient dynasty.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are immune to shaken and weak.</td></tr><tr><td>2</td><td>You treat your Might and Willpower as being one die size higher (up to a maximum of d12).</td></tr><tr><td>3</td><td>You and every ally you can see treat your Might and Willpower as being one die size higher (up to a maximum of d12).</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "immunity", "status", "MIG", "WLP"]
+    },
+    {
+      "name": "Remedy Lily",
+      "summary": "Its elegant flowers filter and purify spiritual energy.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you and every ally you can see recover from poisoned, slow, and weak.</td></tr><tr><td>2-3</td><td>At the end of your turn, you and every ally you can see recover an amount of Hit Points equal to (15 + your Skill Level in Chloromancy).</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "status", "hp"]
+    },
+    {
+      "name": "Serrated Rose",
+      "summary": "Its thorns form a tangle equally breathtaking and dangerous.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers slow.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers slow.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of physical damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from slow.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "status", "physical", "damage"]
+    },
+    {
+      "name": "Silver Strelitzia",
+      "summary": "Its silvery blossoms are easily mistaken for jewels.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are Resistant to bolt and light damage.</td></tr><tr><td>2-3</td><td>You and your allies present on the scene are Resistant to bolt and light damage.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "bolt", "light", "resistance", "damage"]
+    },
+    {
+      "name": "Star Peony",
+      "summary": "It silently gazes into celestial depths.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers dazed.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers dazed.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of light damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from dazed.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "status", "light", "damage"]
+    },
+    {
+      "name": "Striped Orchid",
+      "summary": "Each segment of this plant is covered in toxins.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers weak.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers weak.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of poison damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from weak.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "status", "poison", "damage"]
+    },
+    {
+      "name": "Wardwattle",
+      "summary": "A tangle of robust branches, whose thorns spread powerful poison.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are Resistant to physical damage.</td></tr><tr><td>2</td><td>You are Resistant to physical damage. Additionally, after a creature hits you with a melee attack, you deal an amount of physical damage to that creature equal to (5 + your Skill Level in Chloromancy) (after their attack was resolved).</td></tr><tr><td>3</td><td>You are Resistant to physical damage. Additionally, after a creature hits you with a melee attack, you deal an amount of physical damage to that creature equal to (5 + your Skill Level in Chloromancy), and then deal an amount of poison damage to that creature equal to (5 + your Skill Level in Chloromancy) (both these damage instances happen after that creature’s attack was resolved).</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "resistance", "physical", "damage", "melee", "poison"]
+    },
+    {
+      "name": "Wrathful Carnation",
+      "summary": "Despite their beauty, its yellow flowers emit an irritatingly pungent smell.",
+      "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1-4</td><td>When this magiseed leaves your garden, choose up to one enemy you can see. Until the end of your next turn, when the chosen enemy performs an attack or casts an offensive spell (O), they must include you among the targets of that attack of spell (if able).<br><br>At the end of your turn, you may remove this magiseed from your garden; if you do, erase all sections of your Growth Clock.</td></tr></tbody></table>",
+      "tags": ["class-floralist", "garden", "attack", "spell", "clock"]
+    }
+  ]
+}

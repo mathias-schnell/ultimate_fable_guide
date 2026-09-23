@@ -61,7 +61,7 @@ function get_row_data($key, $html_key, $columns): string {
             $entries = $data[$html_key] ?? [];
             foreach ($entries as $id => $entry):
                 $tags = "source-" . $source['name'] . ', ' . htmlspecialchars(implode(',', $entry['tags']));
-                $id = "{$html_key}-description-{$source['name']}-" . $id + 1;
+                $id = "{$html_key}-description-{$source['name']}-" . ($id + 1);
             ?>
             <article class="<?=$html_key ?>" data-tags="<?=$tags ?>">
                 <div class="<?=$html_key ?>-row">
@@ -94,7 +94,7 @@ function get_row_data($key, $html_key, $columns): string {
                 </div>
                 <div class="<?=$html_key ?>-description-container hidden" id="<?=$id ?>">
                     <div class="<?=$html_key ?>-description">
-                        <?php echo get_row_description($entry); ?>
+                        <?=$entry['description'] ?>
                     </div>
                 </div>
             </article>
@@ -115,22 +115,4 @@ function get_cell_data($key, $entry): string {
         endif;
     endif;
     return $data;
-}
-
-function get_row_description($entry): string {
-    $desc = "";
-    ob_start();
-    if(isset($entry['merge']) && isset($entry['dismiss'])):
-        ?>
-            <h4>Merge</h4>
-            <p><?=$entry['merge'] ?></p>
-            <h4>Dismiss</h4>
-            <p><?=$entry['dismiss'] ?></p>
-        <?php
-    else:
-        ?>
-            <p><?=$entry['description'] ?></p>
-        <?php
-    endif;
-    return ob_get_clean();
 }

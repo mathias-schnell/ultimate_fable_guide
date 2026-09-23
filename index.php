@@ -6,8 +6,8 @@
 
     $stylesheets = "<link rel='stylesheet' href='" . CSS_URL . "/reset.css'>\n
                     <link rel='stylesheet' href='" . CSS_URL . "/style.css'>\n
-                    <link rel='stylesheet' href='" . CSS_URL . "/content.css'>\n";
-    $stylesheets .= get_stylesheets($sections);
+                    <link rel='stylesheet' href='" . CSS_URL . "/content-general.css'>\n
+                    <link rel='stylesheet' href='" . CSS_URL . "/content-specific.css'>\n";
 ?>
 
 <!DOCTYPE html>

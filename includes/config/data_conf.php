@@ -49,5 +49,9 @@ $columns = [
     ],
     "symbols" => [
         ['label' => 'Name',         'class' => 'name'],
+    ],
+    "magiseeds" => [
+        ['label' => 'Name',         'class' => 'name'],
+        ['label' => 'Summary',      'class' => 'summary'],
     ]
 ];

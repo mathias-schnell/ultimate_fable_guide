@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.4.1] - 2026-09-23
+
+### Added
+- Content for 'Magiseeds'.
+
+### Internal
+- Removed specific stylesheets for categories and instead combined all the specific styles into `content-specific.css`.
+- Renamed `content.css` to `content-general.css`
+- Combined 'merge' and 'dismiss' data from Arcana into a single 'description' field.
+- Removed unncessary code from `index.php` given the above changes.
+
 ## [0.4.0] - 2026-09-22
 
 ### Added
