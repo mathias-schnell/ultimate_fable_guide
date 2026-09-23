@@ -1,0 +1,87 @@
+.content-container [class*="-pin"],
+.content-container [class*="-toggle"] {
+    height: 100%;
+    transform: rotate(0deg);
+    transition: transform 0.25s ease;
+    width: 100%;
+}
+
+.content-container [class*="-pin"][aria-checked="true"] {
+    transform: rotate(-45deg);
+}
+
+.content-container [class*="-toggle"][aria-expanded="true"] {
+    transform: rotate(90deg);
+}
+
+.content-container [class*="-list-header"],
+.content-container [class*="-row"] {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
+}
+
+.content-container [class*="-list-header"] {
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+    order: -10;
+}
+
+.content-container [class*="-list-header"] > div,
+.content-container [class*="-row"] > div {
+    padding: 0.5rem;
+}
+
+.content-container :has(> [class*="-row"]) {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.content-container :has(> [class*="-row"])[aria-pinned="true"] {
+    background-color: #D0D0D0;
+    border-bottom: 1px solid #AAAAAA;
+    order: -1;
+}
+
+.content-container :has(> [class*="-row"]):last-child {
+    border-bottom: none;
+}
+
+.content-container [class*="-description-container"] {
+    height: auto;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0.25rem 1rem 0.75rem 1rem;
+    transition: height 0.33s,
+                opacity 0s,
+                padding 0s;
+}
+
+.content-container [class*="-description-container"] strong {
+    font-weight: 600;    
+}
+
+.content-container [class*="-description-container"] > [class*="-additional-requirement"] {
+    margin-bottom: 1rem;
+}
+
+.content-container [class*="-description-container"] > [class*="-description"] > * {
+    white-space: pre-line;
+}
+
+.content-container [class*="-description-container"] > [class*="-description"] > p {
+    margin-bottom: 0.5rem;
+}
+
+.content-container [class*="-description-container"].hidden {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+}
+
+.content-container [class*="-row"] > [class*="-expand"],
+.content-container [class*="-row"] > [class*="-pin"] {
+    font-size: 125%;
+    padding: 0;
+    margin: 0;
+}

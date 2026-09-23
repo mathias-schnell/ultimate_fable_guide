@@ -6,63 +6,63 @@
   "heroic-skills": [
     {
       "name": "Ambidextrous",
-      "classes": [],
+      "requirements": [],
       "tags": ["two-weapon", "melee", "ranged", "damage", "defense", "class-any"],
       "summary": "Fight with two weapons of different categories.",
       "description": "You may apply the benefits of <strong>two-weapon fighting</strong> to <strong>weapons</strong> belonging to different Categories, even if one is a <strong>melee</strong> weapon and the other is a <strong>ranged</strong> weapon (such as a <strong>dagger</strong> and a <strong>firearm</strong>, for instance).\n\nAs long as you have <strong>exactly two weapons equipped</strong> and they <strong>share no Categories with each other</strong>, you gain a +2 bonus to Defense and the <strong>second attack</strong> you perform during each of your turns deals 5 extra damage."
     },
     {
       "name": "Extra HP",
-      "classes": [],
+      "requirements": [],
       "tags": ["hp", "class-any"],
       "summary": "Increase your maximum Hit Points.",
       "description": "Permanently increase your maximum Hit Points by 10. The amount of additional HP increases to 20 if you are <strong>level 40 or higher</strong>."
     },
     {
       "name": "Extra IP",
-      "classes": [],
+      "requirements": [],
       "tags": ["ip", "class-any"],
       "summary": "Increase your maximum Inventory Points.",
       "description": "Permanently increase your maximum Inventory Points by 4."
     },
     {
       "name": "Extra MP",
-      "classes": [],
+      "requirements": [],
       "tags": ["mp", "class-any"],
       "summary": "Increase your maximum Mind Points.",
       "description": "Permanently increase your maximum Mind Points by 10. The amount of additional MP increases to 20 if you are <strong>level 40 or higher</strong>."
     },
     {
       "name": "Extra Spells",
-      "classes": [],
+      "requirements": [],
       "tags": ["spell", "class-any"],
       "summary": "Learn two spells from a Class of your choice.",
       "description": "When you acquire this <strong>Skill</strong>, learn any <strong>two</strong> spells from one of the following lists: <strong>Elementalist</strong>, <strong>Entropist</strong>, or <strong>Spiritist</strong>. Both spells chosen this way must come from the same list, and they follow the standard rules for casting spells of that Class."
     },
     {
       "name": "Adversity",
-      "classes": ["Darkblade"],
+      "requirements": ["Darkblade"],
       "tags": ["status", "damage", "class-darkblade"],
       "summary": "Status effects make you stronger.",
       "description": "As long as you are suffering from one or more status effects, you gain a +1 bonus on all Checks for every status effect you are suffering from, and you deal 2 extra damage for every status effect you are suffering from (be it with attacks, spells, Arcana, items or any other method)."
     },
     {
       "name": "Arcane Echoes",
-      "classes": ["Arcanist"],
+      "requirements": ["Arcanist"],
       "tags": ["clock", "class-arcanist"],
       "summary": "Arcana help you influence Clocks.",
       "description": "When you successfully perform a Check to fill or erase one or more sections of a Clock, if the <strong>domains</strong> of one or more Arcana you have bound are applicable to the Check in question, you may fill or erase an additional section of that Clock.\n\nThe Game Master has final say on whether a given domain applies or not."
     },
     {
       "name": "Chimeric Mastery",
-      "classes": ["Chimerist"],
+      "requirements": ["Chimerist"],
       "tags": ["spell", "class-chimerist"],
       "summary": "Learn spells from new Species and increase spell limit.",
       "description": "Choose <strong>two</strong> creature Species among <strong>construct</strong>, <strong>demon</strong>, <strong>elemental</strong>, and <strong>undead</strong>. You can now use <strong>spell mimic</strong> to learn spells from creatures of the chosen Species. This Heroic <strong>Skill</strong> <strong>may be acquired up to twice</strong>, each time selecting <strong>two</strong> Species from the list above.\n\nWhenever you acquire this <strong>Skill</strong>, you also increase your upper limit for memorized Chimerist spells by 2."
     },
     {
       "name": "Comet",
-      "classes": ["Entropist"],
+      "requirements": ["Entropist"],
       "tags": ["spell", "damage", "mp", "class-entropist"],
       "summary": "Learn the Comet spell.",
       "description": "You learn the ultimate <strong>Entropist</strong> spell: <strong>Comet</strong>.",
@@ -76,28 +76,28 @@
     },
     {
       "name": "Deep Pockets",
-      "classes": ["Tinkerer"],
+      "requirements": ["Tinkerer"],
       "tags": ["ip", "class-tinkerer"],
       "summary": "Reduce Inventory Point costs.",
       "description": "You reduce Inventory Point costs by 1 (to a minimum of 1)."
     },
     {
       "name": "Disarming Rhetoric",
-      "classes": ["Orator"],
+      "requirements": ["Orator"],
       "tags": ["mp", "status", "crisis", "class-orator"],
       "summary": "Persuade enemies to retreat.",
       "description": "During a conflict scene, you may use an action and choose a <strong>soldier</strong>-rank creature that can hear and understand you (the Game Master must tell you who is a valid <strong>target</strong>). If that creature is <strong>shaken</strong> or in <strong>Crisis</strong>, you may spend an amount of Mind Points equal to (20 + half that creature’s level) to have them peacefully leave the conflict.\n\nDescribe how you convince them to desist."
     },
     {
       "name": "Heartbreaker",
-      "classes": ["Darkblade"],
+      "requirements": ["Darkblade"],
       "tags": ["hp", "damage", "attack", "bond", "class-darkblade"],
       "summary": "Sacrifice HP for massive damage.",
       "description": "When you hit a creature with an attack, if that attack <strong>only</strong> targeted that creature and you have a <strong>Bond</strong> towards them, you may choose to spend half of your <strong>current</strong> Hit Points, rounded down. If you do, the attack deals extra damage equal to (10 multiplied by the strength of your <strong>Bond</strong> towards the <strong>target</strong>).\n\nYou may use this <strong>Skill</strong> <strong>only</strong> on your turn during a conflict, and <strong>only once per turn</strong>."
     },
     {
       "name": "Heroic Companion",
-      "classes": ["Wayfarer"],
+      "requirements": ["Wayfarer"],
       "tags": ["hp", "damage", "companion", "skill", "DEX", "INS", "MIG", "WLP", "class-wayfarer"],
       "summary": "Your Companion grows stronger.",
       "description": "You gain the following benefits:\n\n• The companion’s maximum Hit Points increase by 10.\n• The companion deals 5 extra damage.\n• Choose one of the companion’s Attributes: <strong>Dexterity</strong>, <strong>Insight</strong>, <strong>Might</strong>, or <strong>Willpower</strong>. The chosen Attribute is permanently increased by one die size (up to a maximum size of <strong>d12</strong>).\n• The companion gains an additional <strong>Skill</strong>. When you reach <strong>level 40</strong>, or if you have already reached it, the companion gains an additional <strong>Skill</strong>. Make sure to discuss your <strong>Skill</strong> choices with the Game Master and the other Players.",
@@ -105,7 +105,7 @@
     },
     {
       "name": "Hope",
-      "classes": ["Spiritist"],
+      "requirements": ["Spiritist"],
       "tags": ["spell", "hp", "mp", "fabula point", "crisis", "class-spiritist"],
       "summary": "Learn the Hope spell.",
       "description": "You learn the ultimate <strong>Spiritist</strong> spell: <strong>Hope</strong>.",
@@ -119,21 +119,21 @@
     },
     {
       "name": "Mathemagic",
-      "classes": ["Loremaster"],
+      "requirements": ["Loremaster"],
       "tags": ["spell", "mp", "magic defense", "DEX", "INS", "MIG", "WLP", "class-loremaster"],
       "summary": "Extend single-target spells.",
       "description": "When you cast a spell with a <strong>target</strong> of “One creature”, you may choose an Attribute (<strong>Dexterity</strong>, <strong>Insight</strong>, <strong>Might</strong>, or <strong>Willpower</strong>) and a die size (<strong>d6</strong>, <strong>d8</strong>, <strong>d10</strong>, or <strong>d12</strong>). If you do, the spell’s <strong>target</strong> becomes “Every creature present on the scene whose <strong>current</strong> die size in that Attribute matches your choice” and its <strong>total Mind Point cost is doubled</strong>. Additionally, all mentions of “the <strong>target</strong>” in the spell’s text are replaced with “each <strong>target</strong>”; or they are replaced with “one or more <strong>target</strong>s” if the spell is <strong>Anomaly</strong>, <strong>Dispel</strong>, <strong>Mercy</strong>, or <strong>Mirror</strong>. When the spell ends on one or more of its <strong>target</strong>s, it automatically ends on all its <strong>target</strong>s.\n\nIf you cast an offensive spell (🗲) this way, you perform a single Magic Check and confront it with the Magic Defense of each <strong>target</strong>."
     },
     {
       "name": "Monkey Grip",
-      "classes": ["Fury"],
+      "requirements": ["Fury"],
       "tags": ["two-handed", "damage", "flail", "heavy", "spear", "sword", "resistance", "class-fury"],
       "summary": "Equip some two-handed weapons in a single-hand slot.",
       "description": "You may now equip <strong>two-handed</strong> <strong>weapons</strong> belonging to the <strong>flail</strong>, <strong>heavy</strong>, <strong>spear</strong>, and <strong>sword</strong> Categories within a single hand slot.\n\nAdditionally, the <strong>first</strong> attack you perform with a <strong>two-handed</strong> weapon during each turn deals 5 extra damage, and its damage ignores Resistances."
     },
     {
       "name": "Perfect Aim",
-      "classes": ["Sharpshooter"],
+      "requirements": ["Sharpshooter"],
       "tags": ["ranged", "attack", "status", "mp", "skill", "class-sharpshooter"],
       "summary": "Choose two options when using Warning Shot.",
       "description": "When you hit one or more creatures with a <strong>ranged</strong> attack and choose to deal no damage in order to gain the benefits of the <strong>Warning Shot</strong> <strong>Skill</strong>, you may choose <strong>two</strong> options instead of one (for instance, you could inflict both <strong>shaken</strong> and <strong>slow</strong> on each creature, or inflict a status effect on each creature while also lowering their Mind Points).",
@@ -141,7 +141,7 @@
     },
     {
       "name": "Pillage",
-      "classes": ["Rogue"],
+      "requirements": ["Rogue"],
       "tags": ["skill", "magic defense", "class-rogue"],
       "summary": "Steal from multiple creatures.",
       "description": "When you use the <strong>Soul Steal</strong> <strong>Skill</strong>, you may <strong>target</strong> any number of creatures at the same time (you perform a single Check and compare it to the Magic Defense of each creature you are attempting to steal from).",
@@ -149,91 +149,91 @@
     },
     {
       "name": "Powerful Shot",
-      "classes": ["Sharpshooter"],
+      "requirements": ["Sharpshooter"],
       "tags": ["ranged", "attack", "damage", "class-sharpshooter"],
       "summary": "Deal extra damage at range.",
       "description": "Your <strong>ranged</strong> attacks deal 5 extra damage. The amount of extra damage increases to 10 if you are <strong>level 40 or higher</strong>."
     },
     {
       "name": "Powerful Spell",
-      "classes": ["Chimerist", "Elementalist", "Entropist", "Spiritist"],
+      "requirements": ["Chimerist", "Elementalist", "Entropist", "Spiritist"],
       "tags": ["spell", "damage", "class-chimerist", "class-elementalist", "class-entropist", "class-spiritist"],
       "summary": "Deal extra damage with spells.",
       "description": "Spells you cast deal 5 extra damage. The amount of extra damage increases to 10 if you are <strong>level 40 or higher</strong>."
     },
     {
       "name": "Powerful Strike",
-      "classes": ["Fury", "Weaponmaster"],
+      "requirements": ["Fury", "Weaponmaster"],
       "tags": ["melee", "attack", "damage", "class-fury", "class-weaponmaster"],
       "summary": "Deal extra damage in melee.",
       "description": "Your <strong>melee</strong> attacks deal 5 extra damage. The amount of extra damage increases to 10 if you are <strong>level 40 or higher</strong>."
     },
     {
       "name": "Predictable!",
-      "classes": ["Loremaster"],
+      "requirements": ["Loremaster"],
       "tags": ["mp", "attack", "guard", "objective", "spell", "skill", "class-loremaster"],
       "summary": "Force an enemy to spend MP to perform specific actions.",
       "description": "During a conflict, you may use an action and spend 20 Mind Points to anticipate the upcoming moves of a creature you can see, as long as you know <strong>two or more</strong> of that creature’s <strong>Traits</strong>. If you do so, choose one type of action among the following: <strong>Attack</strong>, <strong>Guard</strong>, <strong>Objective</strong>, <strong>Spell</strong>, or <strong>Skill</strong>. Until the start of your next turn, the creature must spend 20 Mind Points whenever they wish to perform that action. If they can’t, they must perform a different action."
     },
     {
       "name": "Rampart",
-      "classes": ["Guardian"],
+      "requirements": ["Guardian"],
       "tags": ["damage", "status", "resistance", "class-guardian"],
       "summary": "Resist damage and status effects during the first round.",
       "description": "During the <strong>first</strong> round of each conflict scene, you gain Resistance to all damage types and cannot suffer status effects (you <strong>do not</strong> recover from preexisting status effects, however). These benefits <strong>only</strong> last until the end of the <strong>first</strong> round."
     },
     {
       "name": "Repetition",
-      "classes": ["Orator"],
+      "requirements": ["Orator"],
       "tags": ["mp", "skill", "class-orator"],
       "summary": "Condemn or Encourage twice.",
       "description": "Once per turn during a conflict, after you use the <strong>Condemn</strong> <strong>Skill</strong> or the <strong>Encourage</strong> <strong>Skill</strong>, you may perform that same <strong>Skill</strong> again (on the same <strong>target</strong> or a different one). You must still pay the Mind Point cost for the second use of the <strong>Skill</strong>."
     },
     {
       "name": "Revelation",
-      "classes": ["Arcanist"],
+      "requirements": ["Arcanist"],
       "tags": ["fabula point", "skill", "class-arcanist"],
       "summary": "Bind a previously unknown Arcanum, and improve dismiss effects.",
       "description": "You make contact with an unknown Arcanum and bind it to your soul. This Arcanum must be something you design together with the rest of the group; as long as you live, no one else in your world will be able to bind that Arcanum.\n\nOnce per scene while you are <strong>merged</strong> with an Arcanum, you may use an action and spend 2 Fabula Points to <strong>trigger</strong> that Arcanum’s <strong>dismiss</strong> effect (if any) without <strong>dismiss</strong>ing them. Doing so <strong>does not</strong> <strong>trigger</strong> the <strong>Arcane Circle</strong> <strong>Skill</strong>."
     },
     {
       "name": "Status Immunity",
-      "classes": ["Wayfarer"],
+      "requirements": ["Wayfarer"],
       "tags": ["status", "immunity", "class-wayfarer"],
       "summary": "Ignore a status effect.",
       "description": "You are permanently immune to a single status effect of your choice."
     },
     {
       "name": "Unbreakable",
-      "classes": ["Guardian"],
+      "requirements": ["Guardian"],
       "tags": ["hp", "crisis", "class-guardian"],
       "summary": "Survive a fatal hit once per scene.",
       "description": "Once per scene when you are about to be reduced to 0 Hit Points, you may instead choose to withstand the pain and be reduced to exactly 1 Hit Point."
     },
     {
       "name": "Upgrade",
-      "classes": ["Tinkerer"],
+      "requirements": ["Tinkerer"],
       "tags": ["equipment", "skill", "class-tinkerer"],
       "summary": "Modify equipment Qualities.",
       "description": "When you rest, you may choose any number of <strong>weapons</strong>, <strong>armor</strong>, and/or <strong>shields</strong> among those owned by your group. For each item chosen this way, you may either <strong>add a Quality</strong> to it (if it doesn’t have one) or <strong>replace its current Quality</strong> with a different one. These new Qualities must come from the list of default Qualities available for items of that type, and must have an associated cost modifier of <strong>+1000 zenit or lower</strong>. At the end of the rest, you must pay an amount of zenit equal to the total sum of those cost modifiers, reduced by (your <strong>Skill</strong> Level in Visionary, multiplied by 100). If you do, the items will be modified according to your choices."
     },
     {
       "name": "Tempest Strike",
-      "classes": ["Weaponmaster"],
+      "requirements": ["Weaponmaster"],
       "tags": ["melee", "attack", "damage", "class-weaponmaster"],
       "summary": "Concentrate multi attacks on a single target.",
       "description": "When you perform a <strong>melee</strong> attack with the <strong>multi</strong> property, you gain a bonus to your Accuracy Check equal to the value of that <strong>multi</strong> property, and the attack deals 5 extra damage. If the attack targets <strong>only one creature</strong>, it deals another 5 extra damage."
     },
     {
       "name": "Vanish",
-      "classes": ["Rogue"],
+      "requirements": ["Rogue"],
       "tags": ["fabula point", "attack", "spell", "class-rogue"],
       "summary": "Disappear after an attack.",
       "description": "When you hit one or more creatures with an attack or offensive spell (🗲), you may spend 1 Fabula Point. If you do, each of those creatures becomes unable to see you until the start of your next turn."
     },
     {
       "name": "Volcano",
-      "classes": ["Elementalist"],
+      "requirements": ["Elementalist"],
       "tags": ["spell", "damage", "fire", "mp", "resistance", "immunity", "class-elementalist"],
       "summary": "Learn the Volcano spell.",
       "description": "You learn the ultimate <strong>Elementalist</strong> spell: <strong>Volcano</strong> (if it better fits your character, you may give this spell a different name and change its damage to air, bolt, earth, or ice).",

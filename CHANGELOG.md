@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.4.0] - 2026-09-22
+
+### Added
+- Content for 'Symbols'.
+
+### Internal
+- Removed specific content templates for various categories and instead the raw data determines how the content is generated.
+- Removed most of the specific stylesheets for various categories. All categories now have a default style that contributes to a majority of the styling and specific category stylesheets modify a small portion of the final styling.
+
+---
+
 ## [0.3.3] - 2026-09-22
 
 ### Added

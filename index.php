@@ -1,26 +1,13 @@
 <?php
-    require_once __DIR__ . '/includes/app_conf.php';
+    require_once __DIR__ . '/includes/config/app_conf.php';
+    require_once __DIR__ . '/includes/config/data_conf.php';
+    require_once __DIR__ . '/includes/config/tags_conf.php';
+    require_once __DIR__ . '/includes/helpers/helper_funcs.php';
 
     $stylesheets = "<link rel='stylesheet' href='" . CSS_URL . "/reset.css'>\n
-                    <link rel='stylesheet' href='" . CSS_URL . "/style.css'>\n";
-    $content = "";
-    $tab_buttons = "";
-    
-    foreach($sections as $key => $label):
-        if(file_exists(CSS_PATH . "/{$key}.css")):
-            $style_url = CSS_URL . "/{$key}.css";
-            $stylesheets .= "<link rel='stylesheet' href='{$style_url}'>\n";
-        endif;
-
-        if(file_exists($content_path = INCLUDES_PATH . "/content/{$key}.php")):
-            $html_key = str_replace("_", "-", $key);
-            $tab_buttons .= "<button type='button' class='tab' id='tab-{$html_key}' aria-selected='false' aria-controls='{$html_key}-container'> {$label} </button>\n";
-
-            ob_start();
-            include_once($content_path);
-            $content .= "<div id='{$html_key}-container' class='{$html_key}-container'>\n" . ob_get_clean() . "\n</div>\n";
-        endif;
-    endforeach;
+                    <link rel='stylesheet' href='" . CSS_URL . "/style.css'>\n
+                    <link rel='stylesheet' href='" . CSS_URL . "/content.css'>\n";
+    $stylesheets .= get_stylesheets($sections);
 ?>
 
 <!DOCTYPE html>
@@ -36,12 +23,12 @@
     <main id="main-container" class="container">
         <header class="page-header">
             <nav class="tab-nav">
-                <?=$tab_buttons ?>
+                <?=get_nav_tabs($sections); ?>
             </nav>
         </header>
-        <?php include_once(INCLUDES_PATH . "/filter.php"); ?>
+        <?php include_once(INCLUDES_PATH . "/layout/filter.php"); ?>
         <section class="content-container">
-            <?=$content ?>
+            <?=get_content($sections, $columns); ?>
         </section>
     </main>
 </body>

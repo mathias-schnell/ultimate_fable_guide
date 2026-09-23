@@ -6,14 +6,14 @@
   "heroic-skills": [
     {
       "name": "Arcane Mark",
-      "classes": ["Sharpshooter", "Symbolist", "Weaponmaster"],
+      "requirements": ["Sharpshooter", "Symbolist", "Weaponmaster"],
       "summary": "Improve spells’ critical chance with arcane weapons.",
       "description": "When you hit one or more creatures with an attack using a weapon that belongs to the <strong>arcane</strong> Category, the attack deals 5 extra damage and you may choose one of those creatures. If the next offensive spell (🗲) you cast during this scene only targets the chosen creature, its Magic Check will trigger a <strong>critical success</strong> if both dice show the same number (and the Check is not a <strong>fumble</strong>).",
       "tags": ["class-sharpshooter", "class-symbolist", "class-weaponmaster", "attack", "spell", "critical", "fumble", "damage", "arcane"]
     },
     {
       "name": "Bimagus",
-      "classes": ["Elementalist", "Entropist", "Spiritist"],
+      "requirements": ["Elementalist", "Entropist", "Spiritist"],
       "class_requirement_minimum": 2,
       "level_requirement": 30,
       "summary": "Cast two spells in succession while saving MP.",
@@ -22,49 +22,49 @@
     },
     {
       "name": "Blade Adept",
-      "classes": ["Rogue", "Weaponmaster"],
+      "requirements": ["Rogue", "Weaponmaster"],
       "summary": "Gain bonuses with daggers and treat them as brawling, sword, and thrown weapons.",
       "description": "While you have one or more melee dagger weapons equipped, you gain a +1 bonus to Defense and Magic Defense, and you treat those weapons as also belonging to the <strong>brawling</strong>, sword, and <strong>thrown</strong> Categories for the purpose of Skills and effects.\n\nAdditionally, your attacks with weapons that belong to the dagger Category may target creatures that <strong>cannot</strong> normally be targeted by melee attacks.",
       "tags": ["class-rogue", "class-weaponmaster", "attack", "equipment", "melee", "skill", "defense", "magic defense", "brawling", "dagger", "sword", "thrown"]
     },
     {
       "name": "Bullet Break",
-      "classes": ["Sharpshooter"],
+      "requirements": ["Sharpshooter"],
       "summary": "Counterattack with firearms after using Crossfire.",
       "description": "After you negate a ranged attack with the <strong>Crossfire</strong> Skill, if the Result of the Accuracy Check was an <strong>even number</strong>, you may perform a <strong>free attack</strong> against the attacker with a ranged firearm weapon you have equipped. This attack must have that enemy as its only target; treat your <strong>High Roll (HR)</strong> as 0 when calculating damage dealt by it.",
       "tags": ["class-sharpshooter", "attack", "ranged", "skill", "damage", "firearm"]
     },
     {
       "name": "Ceaseless Battlefield",
-      "classes": ["Commander"],
+      "requirements": ["Commander"],
       "summary": "Halve the MP cost of Commander Skills.",
       "description": "The MP costs for your <strong>Bishop’s Edict</strong>, <strong>Charging Cavalry</strong> and <strong>King’s Castle</strong> are halved.",
       "tags": ["class-commander", "skill", "mp"]
     },
     {
       "name": "Clean Slate",
-      "classes": ["Symbolist"],
+      "requirements": ["Symbolist"],
       "summary": "Remove spells and status effects from creatures.",
       "description": "You may use an action and spend up to 30 Mind Points to choose one creature you can see for every 5 MP spent this way. Each creature chosen this way recovers from all status effects and is no longer affected by any spells with a <strong>duration</strong> of “Scene” that were affecting them.",
       "tags": ["class-symbolist", "spell", "status", "mp"]
     },
     {
       "name": "Double Arrow",
-      "classes": ["Commander", "Sharpshooter"],
+      "requirements": ["Commander", "Sharpshooter"],
       "summary": "Attack twice with bows.",
       "description": "When you perform the Attack action with a ranged weapon that belongs to the <strong>bow</strong> Category, if you have <strong>no other weapon equipped</strong>, you may perform two separate attacks instead of one (against the same target or against different targets). If you do, both attacks follow the rules for two-weapon fighting: each attack loses the multi property and <strong>cannot</strong> gain it, and you treat the <strong>High Roll</strong> of each Accuracy Check as being equal to 0 when determining damage.\n\nNote that this Heroic Skill <strong>does not stack</strong> with a custom weapon’s <strong>quick</strong> customization (using <strong>Double Arrow</strong> with a <strong>quick</strong> <strong>bow</strong> doesn’t allow more than two attacks, in short).",
       "tags": ["class-commander", "class-sharpshooter", "attack", "ranged", "damage", "multi", "two-weapon", "bow"]
     },
     {
       "name": "Fast Rituals",
-      "classes": ["Chimerist", "Elementalist", "Entropist", "Spiritist"],
+      "requirements": ["Chimerist", "Elementalist", "Entropist", "Spiritist"],
       "summary": "Reduce the number of sections for Ritual Clocks in conflicts.",
       "description": "When you initiate a Ritual during a conflict scene, its Ritual Clock is created with <strong>two fewer sections</strong> than normal, to a minimum of <strong>four sections</strong>.",
       "tags": ["class-chimerist", "class-elementalist", "class-entropist", "class-spiritist", "clock"]
     },
     {
       "name": "Fleeting Moment",
-      "classes": ["Weaponmaster"],
+      "requirements": ["Weaponmaster"],
       "summary": "Add High Roll when you Counterattack with a sword.",
       "description": "When you perform a <strong>Counterattack</strong> using a melee weapon that belongs to the sword Category, you may add your <strong>High Roll</strong> to the damage dealt by the attack (you do not have to treat it as being 0).",
       "additional_requirements": "You must have acquired the Counterattack Skill.",
@@ -72,7 +72,7 @@
     },
     {
       "name": "Grand Summoning",
-      "classes": ["Arcanist"],
+      "requirements": ["Arcanist"],
       "level_requirement": 30,
       "summary": "Summon Arcana as creatures.",
       "description": "When you summon an Arcanum, you may decide to spend 1 Fabula Point and <strong>half</strong> of your current Hit Points (rounded down) to shape your lifeforce into a full manifestation of their power. If you do, the Arcanum manifests as a soldier-rank creature of the <strong>demon</strong> Species under your control (they count as an ally and have their own independent turn during conflicts – if you use this Skill during a conflict scene, the Arcanum joins the scene <strong>at the end</strong> of the current round). You also do not gain any of the merge benefits you would normally enjoy when summoning that Arcanum.\n\nThe summoned creature has the following profile:\n• <strong>Level</strong> is equal to your level (thus gaining the bonuses to Checks and damage).\n• A d10 in one Attribute of your choice, and a d8 in all other <strong>Attributes</strong>.\n• <strong>Maximum Hit Points</strong> equal to (twice the creature’s base Might die size, plus <strong>half</strong> of your maximum Hit Points). The creature has <strong>no Mind Points</strong>.\n• Resistance to two damage types of your choice.\n• The creature receives all the merge benefits the Arcanum would normally grant you when summoned (damage Affinities, immunity to status effects, increased Attribute sizes, etc.). If a merge benefit would cause the Arcanum to be dismissed, this will cause the summoned creature to vanish unless you spend 20 Mind Points.\n• A <strong>melee basic attack</strong> whose Accuracy Check relies on two different <strong>Attributes</strong> of your choice and deals (HR + 8) <strong>physical</strong> damage. Choose two different options: the attack is a ranged attack; or it deals 4 extra damage; or it deals damage of a type other than <strong>physical</strong>; or the Accuracy Check relies on a <strong>single Attribute</strong>.\n• The creature may perform the Skill action to produce one of the dismiss effects normally granted by that Arcanum, but doing so will cause the summoned creature to vanish unless you spend 20 Mind Points.\n\nThe following rules apply when you <strong>Grand Summon</strong> an Arcanum:\n• The creature is always summoned at full Hit Points, with no status effects.\n• The creature vanishes if it reaches 0 Hit Points, if you die, lose consciousness or leave the scene, or <strong>if you summon or Grand Summon</strong> an Arcanum again. The creature also vanishes when a scene ends, or if you simply command them to do so (this will not trigger the corresponding Arcanum’s dismiss effect).\n• Take note of all choices made for <strong>Attributes</strong> and <strong>basic attack</strong> during the first time you <strong>Summon</strong> a given Arcanum: these choices will remain unchanged whenever you <strong>Grand Summon</strong> that same Arcanum again in the future.",
@@ -80,28 +80,28 @@
     },
     {
       "name": "Hoplite",
-      "classes": ["Commander", "Guardian"],
+      "requirements": ["Commander", "Guardian"],
       "summary": "Strengthen attacks when fighting with a weapon and shield.",
       "description": "As long as you have a weapon equipped in your <strong>main hand slot</strong> and a shield equipped in your <strong>off-hand slot</strong>, your attacks with that weapon deal 5 extra damage and you gain a +1 bonus to Defense.\n\nThis Skill <strong>cannot</strong> be combined with <strong>custom weapons</strong> with the defence boost customization, <strong>nor</strong> with the <strong>Dual Shieldbearer</strong> Skill.",
       "tags": ["class-commander", "class-guardian", "attack", "equipment", "skill", "defense", "damage"]
     },
     {
       "name": "Iron Forest",
-      "classes": ["Commander", "Weaponmaster"],
+      "requirements": ["Commander", "Weaponmaster"],
       "summary": "Force enemies to spend MP to act after hitting with a spear.",
       "description": "After you hit one or more creatures with a melee attack using a weapon that belongs to the spear Category, if you have <strong>no other weapon equipped</strong>, you may spend 20 Mind Points and choose one of those creatures. If you do so, the attack deals <strong>half</strong> the normal amount of damage to each of its targets, and you choose one type of action among the following: Attack, Guard, Objective, Spell, or Skill. From now on, the chosen creature must spend 10 Mind Points whenever they wish to perform that type of action. If they can’t, they must perform a different type of action. This effect lasts until the start of your next turn, or until you use this Skill again.",
       "tags": ["class-commander", "class-weaponmaster", "attack", "melee", "spell", "skill", "objective", "guard", "mp", "damage", "spear"]
     },
     {
       "name": "Magic Guard",
-      "classes": ["Chimerist", "Elementalist", "Entropist", "Spiritist"],
+      "requirements": ["Chimerist", "Elementalist", "Entropist", "Spiritist"],
       "summary": "Negate enemy spells while you are in Guard.",
       "description": "When you perform the Guard action, if you choose not to provide cover to another creature, you gain the following benefit until the start of your next turn: when a creature you can see casts a spell, after that creature pays for the spell’s MP cost, you may spend an amount of Mind Points equal to (10 + the spell’s total MP cost) in order to completely stop the casting of the spell and negate its effects (the spell isn’t cast, but the creature is still considered to have spent their action).",
       "tags": ["class-chimerist", "class-elementalist", "class-entropist", "class-spiritist", "spell", "guard", "mp"]
     },
     {
       "name": "Paso Doble",
-      "classes": ["Dancer"],
+      "requirements": ["Dancer"],
       "summary": "Ignore the MP cost of Follow My Lead when you are in Crisis.",
       "description": "While you are in Crisis, you ignore the MP cost for your <strong>Follow My Lead</strong> Skill.",
       "additional_requirements": "You must have acquired the Follow My Lead Skill.",
@@ -109,70 +109,70 @@
     },
     {
       "name": "Power Chord",
-      "classes": ["Chanter"],
+      "requirements": ["Chanter"],
       "summary": "Improve allies’ critical success chance with songs.",
       "description": "When you sing a <strong>verse</strong> with <strong>medium</strong> or <strong>high</strong> <strong>volume</strong>, you may double the <strong>verse</strong>’s cost in Mind Points, or spend 1 Fabula Point. If you do, you and every ally that is able to hear you gain the following benefit until the start of your next turn: your Accuracy Checks trigger a <strong>critical success</strong> when both dice show the same number (as long as the Check is not a <strong>fumble</strong>).",
       "tags": ["class-chanter", "fabula point", "critical", "fumble", "mp", "verse"]
     },
     {
       "name": "Pulverizing Strike",
-      "classes": ["Darkblade", "Fury", "Weaponmaster"],
+      "requirements": ["Darkblade", "Fury", "Weaponmaster"],
       "summary": "Breach deals damage with heavy weapons.",
       "description": "After you hit a creature with <strong>Breach</strong>, if you attacked with a melee weapon that belongs to the heavy Category, you may have the attack deal damage equal to your <strong>High Roll</strong> instead of dealing no damage. Any source of extra damage, including the extra damage from the third option of the <strong>Breach</strong> Skill itself, still applies — ignore the damage dealt by the weapon.",
       "tags": ["class-darkblade", "class-fury", "class-weaponmaster", "attack", "melee", "skill", "damage", "heavy"]
     },
     {
       "name": "Rising Tide",
-      "classes": ["Fury", "Weaponmaster"],
+      "requirements": ["Fury", "Weaponmaster"],
       "summary": "Gain benefits for consecutive attacks with brawling weapons.",
       "description": "When you perform a melee attack using a weapon that belongs to the <strong>brawling</strong> Category, <strong>if you have no martial armor and no shields equipped</strong>, you gain 1 Bravery Point.\n\nAs long as you have no <strong>martial armor</strong> and no shields equipped, your melee attacks with <strong>brawling</strong> weapons deal extra damage equal to (2 + your current Bravery Points).\n\n<strong>At the end</strong> of each scene, or if you have 5 or more Bravery Points <strong>at the end</strong> of your turn, you lose all accumulated Bravery Points. Then, if you lost at least 1 point this way, you recover 10 Hit Points and 10 Mind Points.",
       "tags": ["class-fury", "class-weaponmaster", "attack", "equipment", "melee", "hp", "mp", "damage", "brawling"]
     },
     {
       "name": "Ritual Seals",
-      "classes": ["Symbolist"],
+      "requirements": ["Symbolist"],
       "summary": "Place Rituals into seals.",
       "description": "When you perform a Ritual outside a conflict scene, if that Ritual has a <strong>total cost equal to or lower than 60 Mind Points</strong>, you may stop the process immediately before the Magic Check and store the Ritual’s effect inside a <strong>Ritual seal</strong> placed on a surface you can touch. If you do, name a <strong>condition</strong> — this can be anything from “when I enter Crisis” to “as soon as I snap my fingers”. When that <strong>condition</strong> is met, the <strong>seal</strong> vanishes and the Ritual is unleashed at the <strong>seal</strong>’s location: you perform the Magic Check and resolve the effects as normal (even if you are unconscious or not present on the scene).\n\nYou may only have <strong>one Ritual seal</strong> active at the same time — if you die or create a new <strong>Ritual seal</strong>, the one you previously created will vanish.",
       "tags": ["class-symbolist", "crisis", "mp", "symbol"]
     },
     {
       "name": "Showstopper",
-      "classes": ["Dancer"],
+      "requirements": ["Dancer"],
       "summary": "Perform three dances, then take a temporary break.",
       "description": "At the start of your turn during a conflict, if you have no <strong>martial armor</strong> equipped, you may spend 1 Fabula Point to perform <strong>up to three different dances</strong> among those you know, in the order you prefer and without paying their MP cost. If you do, you <strong>cannot perform dances in any way</strong> until the end of your next turn.",
       "tags": ["class-dancer", "equipment", "fabula point", "mp", "dance"]
     },
     {
       "name": "Spider’s Web",
-      "classes": ["Fury", "Weaponmaster"],
+      "requirements": ["Fury", "Weaponmaster"],
       "summary": "Attack twice with flails.",
       "description": "When you perform the Attack action with a melee weapon that belongs to the flail Category, if you have <strong>no other weapon equipped</strong>, you may perform two separate attacks instead of one (against the same target or against different targets). If you do, both attacks follow the rules for two-weapon fighting: each attack loses the multi property and <strong>cannot</strong> gain it, and you treat the <strong>High Roll</strong> of each Accuracy Check as being equal to 0 when determining damage.\n\nNote that this Heroic Skill <strong>does not stack</strong> with a custom weapon’s <strong>quick</strong> customization (using <strong>Spider’s Web</strong> with a <strong>quick</strong> flail doesn’t allow more than two attacks, in short).",
       "tags": ["class-fury", "class-weaponmaster", "attack", "melee", "damage", "multi", "two-weapon", "flail"]
     },
     {
       "name": "Swirling Swarm",
-      "classes": ["Dancer", "Fury", "Sharpshooter"],
+      "requirements": ["Dancer", "Fury", "Sharpshooter"],
       "summary": "Gain benefits for consecutive attacks with thrown weapons.",
       "description": "When you perform a ranged attack using a weapon that belongs to the <strong>thrown</strong> Category, <strong>if you have no martial armor and no shields equipped</strong>, you gain 1 Momentum Point.\n\nYou may never have more than 5 Momentum Points.\n\nYour ranged attacks using weapons that belong to the <strong>thrown</strong> Category deal extra damage equal to your current Momentum Points.\n\nWhen a creature hits you with an attack targeting your Defense, you must spend all your accumulated Momentum Points and increase your Defense score by an equal amount against that attack (this may turn the hit into a miss).\n\nYou also lose all Momentum Points <strong>at the end</strong> of each scene, or if you equip a shield or <strong>martial armor</strong>.",
       "tags": ["class-dancer", "class-fury", "class-sharpshooter", "attack", "equipment", "ranged", "defense", "damage", "thrown"]
     },
     {
       "name": "Tabula Rasa",
-      "classes": ["Commander"],
+      "requirements": ["Commander"],
       "summary": "Your Skills cause HP loss.",
       "description": "After you use <strong>Bishop’s Edict</strong> or <strong>King’s Castle</strong> Skills, if you are in Crisis, you may have every enemy creature present on the scene lose 10 Hit Points. This amount increases to 20 Hit Points if you are <strong>level 20 or higher</strong>, or 30 Hit Points if you are level 40 or higher.",
       "tags": ["class-commander", "skill", "crisis", "hp"]
     },
     {
       "name": "Theme Song",
-      "classes": ["Chanter"],
+      "requirements": ["Chanter"],
       "summary": "Gain a theme song with a variety of benefits.",
       "description": "When you acquire this Skill, you obtain a <strong>theme song</strong> – give it a name and assign it a key from the ones you have learned (you can also choose a real-world song for this). Once per conflict scene after you sing a <strong>verse</strong> in your <strong>theme song</strong>’s key, you may start your <strong>theme song</strong> — if it’s a real song, it’s a great idea to play it in the background!\n\nWhile singing your <strong>theme song</strong>, you gain the following benefits:\n• You gain Resistance to (<strong>theme song</strong>’s key type) damage.\n• When you deal (<strong>theme song</strong>’s key type) damage, you deal 5 extra damage and the type of that damage <strong>cannot</strong> be changed.\n• The MP cost for singing <strong>verse</strong>s in the same key as your <strong>theme song</strong> is <strong>half</strong>ed. This benefit applies to you and to any of your allies who are able to sing <strong>verse</strong>s.\n\nThe <strong>theme song</strong> lasts until the end of the scene or until you leave the scene, die, or fall unconscious. The <strong>theme song</strong> also ends as soon as you sing a <strong>verse</strong> in a key other than the <strong>theme song</strong>’s, if your turn ends and you have not sung any <strong>verse</strong>, or if another character starts their <strong>theme song</strong>.",
       "tags": ["class-chanter", "mp", "damage", "resistance", "verse"]
     },
     {
       "name": "Triple Slash",
-      "classes": ["Dancer", "Weaponmaster"],
+      "requirements": ["Dancer", "Weaponmaster"],
       "summary": "Equip three daggers or swords and perform triple attacks.",
       "description": "As long as you have a one-handed melee weapon that belongs to the dagger or sword Categories equipped in each of your normal hand slots, you may treat your armor slot as if it were a second <strong>off-hand slot</strong>. You may only use this special slot to equip a one-handed melee weapon that belongs to the dagger or sword Categories — note that the <strong>Monkey Grip</strong> Skill does not turn two-handed weapons into one-handed weapons, and thus <strong>cannot</strong> be used in combination with Triple Slash.\n\nWhen you perform the Attack action while you have three daggers and/or swords equipped, you may attack once with each weapon. This follows the normal rules for two-weapon fighting: each of the three attacks loses the multi property and <strong>cannot</strong> gain it, and you treat the <strong>High Roll (HR)</strong> of each Accuracy Check as being equal to 0 when determining damage.",
       "tags": ["class-dancer", "class-weaponmaster", "attack", "equipment", "melee", "damage", "multi", "two-handed", "two-weapon", "dagger", "sword"]
