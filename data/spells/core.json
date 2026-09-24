@@ -272,7 +272,7 @@
       "target": "One creature",
       "duration": "Scene",
       "description": "You allow a creature to focus their vital energy into accomplishing what they previously could not. Choose one Attribute: Dexterity, Insight, Might, or Willpower. Until this spell ends, the target treats the chosen Attribute as if it were one die size higher (up to a maximum of d12).",
-      "tags": ["class-spiritist", "spell", "attributes", "dexterity", "insight", "might", "willpower"]
+      "tags": ["class-spiritist", "spell", "attributes", "DEX", "INS", "MIG", "WLP"]
     },
     {
       "name": "Barrier",

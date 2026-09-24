@@ -13,8 +13,9 @@
  * Defining the actions that will happen to the content area of the app on click 
  */
 const content_click_actions = {
-    "[class$='pin']"    : toggle_pin,
-    "[class$='toggle']" : toggle_item,
+    "[class*='-pin']"            : toggle_pin,
+    "[class*='-toggle']"         : toggle_item,
+    "[class*='-multitoggle']"    : toggle_all,
 };
 
 /** 
@@ -29,7 +30,7 @@ const filter_click_actions = {
  * Defining the actions that will happen to the filter area of the app when something changes 
  */
 const filter_change_actions = {
-    ".filter-include-exclude"   : filter_content,
+    ".filter-mode"              : filter_content,
     ".filter-tag-select"        : filter_content, 
 };
 
@@ -140,12 +141,12 @@ function add_filter_row(target, { filter_container } = {}) {
 function remove_filter_row(target, context = {}) {
     if(!target || !context.filter_container) return;
     const row = target.closest('.filter-row') || target.parentElement;
+    const rows = context.filter_container.querySelectorAll(".filter-row:not(.filter-row-prime)");
     if(!row) return;
 
-    if (context.filter_container.children.length > 2) {
+    if (rows.length > 1) {
         row.remove();
     } else {
-        row.querySelector(".filter-include-exclude").selectedIndex = 0;
         row.querySelector(".filter-tag-select").selectedIndex = 0;
     }
     filter_content(target, context);
@@ -159,29 +160,62 @@ function remove_filter_row(target, context = {}) {
  */
 function filter_content(target, { filter_container, content_container } = {}) {
     if(!filter_container || !content_container) return;
-    const includes = new Set();
-    const excludes = new Set();
+    const selected_tags = new Set();
+    const mode = parseInt(filter_container.querySelector(".filter-mode")?.value);
     const filter_rows = filter_container.querySelectorAll('.filter-row:not(.filter-row-prime)');
     
     filter_rows.forEach(row => {
-        const mode = row.querySelector(".filter-include-exclude")?.value;
         const tag = row.querySelector(".filter-tag-select")?.value;
         if(!tag) return;
-        if(mode === "1") {
-            includes.add(tag);
-        } else {
-            excludes.add(tag);
-        }
+        selected_tags.add(tag);
     });
 
     content_container.querySelectorAll("article").forEach(article => {
         if(article.getAttribute("aria-pinned") === "true") return;
-        const tags = article.dataset.tags ? article.dataset.tags.split(',').map(t => t.trim()) : [];
-        const included = includes.size === 0 || [...includes].some(tag => tags.includes(tag));
-        const excluded = [...excludes].some(tag => tags.includes(tag));
-        const show = included && !excluded;
+        const raw_tags = article.dataset.tags ? article.dataset.tags.split(',').map(t => t.trim()) : [];
+        const article_tags = new Set(raw_tags);
+        let match = false;
+        
+        if(selected_tags.size === 0) {
+            match = true;
+        } else {
+            switch (mode) {
+                case 0:
+                    match = [...selected_tags].some(tag => article_tags.has(tag));
+                    break;
+                case 1:
+                    match = [...selected_tags].every(tag => article_tags.has(tag));
+                    break;
+                case 2:
+                    match = selected_tags.size === article_tags.size &&
+                            [...selected_tags].every(tag => article_tags.has(tag));
+                    break;
+            }
+        }
+        article.classList.toggle('filtered-out', !match);
+    });
+}
 
-        article.classList.toggle('filtered-out', !show);
+/**
+ * Toggle all items of the current category to show or hide.
+ * 
+ * @param {HTMLElement|null} target
+ * @param {AppContext} context
+ */
+function toggle_all(target, { content_container } = {}) {
+    if(!content_container) return;
+    const key = "." + target.dataset.key + "-toggle";
+    const rows = content_container.querySelectorAll(target.getAttribute("aria-controls"));
+    const is_expanded = target.getAttribute('aria-expanded') === 'true';
+    const next_state = !is_expanded;
+
+    target.innerHTML = next_state ? "-" : "+";
+    target.setAttribute('aria-expanded', String(next_state));
+
+    rows.forEach(row => {
+        const toggle = row.querySelector(key);
+        if (!toggle || (toggle.getAttribute("aria-expanded") === "true") === next_state) return;
+        toggle_item(toggle, { content_container }, !is_expanded);
     });
 }
 
@@ -203,16 +237,18 @@ function toggle_pin(target, context) {
  * 
  * @param {HTMLElement|null} target
  * @param {AppContext} context
+ * @param {bool|null} forced_state
  */
-function toggle_item(target, { content_container } = {}) {
-    if(!content_container) return;
-    const is_expanded = target.getAttribute('aria-expanded') === 'true';
+function toggle_item(target, { content_container } = {}, forced_state = null) {
+    if(!target || !content_container) return;
     const target_id = target.getAttribute('aria-controls');
+    if(!target_id) return;
+    
+    const is_expanded = target.getAttribute('aria-expanded') === 'true';
+    const new_state = forced_state ?? !is_expanded;
 
-    target.setAttribute('aria-expanded', !is_expanded);
-    if(target_id) {
-        content_container.querySelector('#' + target_id)?.classList.toggle('hidden', is_expanded);
-    }
+    target.setAttribute('aria-expanded', String(new_state));
+    content_container.querySelector('#' + target_id)?.classList.toggle('hidden', !new_state);
 }
 
 /**

@@ -121,28 +121,28 @@
             "class": "Merchant",
             "max-sl": 3,
             "description": "After you or an ally who is able to hear and understand you roll dice for a Check to examine a creature, item, or location, you may spend 1 Trade Point to grant a bonus equal to (SL × 2) to the Result of that Check.",
-            "tags": ["class-merchant", "trade point"]
+            "tags": ["class-merchant", "trade-point"]
         },
         {
             "name": "Private Stock",
             "class": "Merchant",
             "max-sl": 3,
             "description": "When you or another Player Character spend (SL + 2) or fewer Inventory Points, you may spend 1 Trade Point to ignore that cost.",
-            "tags": ["class-merchant", "ip", "trade point"]
+            "tags": ["class-merchant", "ip", "trade-point"]
         },
         {
             "name": "Real Treasure",
             "class": "Merchant",
             "max-sl": 3,
             "description": "Once per session, when you help an NPC or community defeat greed and corruption, improve their quality of life, or coexist with other creatures, if you have acquired the Winds of Trade Skill, you gain (SL + 1) Trade Points.",
-            "tags": ["class-merchant", "skill", "trade point"]
+            "tags": ["class-merchant", "skill", "trade-point"]
         },
         {
             "name": "Winds of Trade",
             "class": "Merchant",
             "max-sl": 3,
             "description": "After you rest in an area where commerce is possible, you gain (SL + 1) Trade Points.\nYou may never have more than (SL + 3) Trade Points; if you acquire this Skill during character creation, you begin play with 2 Trade Points.\nDuring a non-conflict scene, you may spend 2 Trade Points to choose one option: you create a material or rare item approved by the Game Master whose value in zenit is equal to or lower than (your level, multiplied by 30); or you create an NPC that lives nearby and explain their occupation as well as how you met them, then the Game Master tells you what they require in exchange for their services.",
-            "tags": ["class-merchant", "trade point", "skill"]
+            "tags": ["class-merchant", "trade-point", "skill"]
         }
     ]
 }

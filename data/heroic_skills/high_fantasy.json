@@ -25,7 +25,7 @@
       "requirements": ["Rogue", "Weaponmaster"],
       "summary": "Gain bonuses with daggers and treat them as brawling, sword, and thrown weapons.",
       "description": "While you have one or more melee dagger weapons equipped, you gain a +1 bonus to Defense and Magic Defense, and you treat those weapons as also belonging to the <strong>brawling</strong>, sword, and <strong>thrown</strong> Categories for the purpose of Skills and effects.\n\nAdditionally, your attacks with weapons that belong to the dagger Category may target creatures that <strong>cannot</strong> normally be targeted by melee attacks.",
-      "tags": ["class-rogue", "class-weaponmaster", "attack", "equipment", "melee", "skill", "defense", "magic defense", "brawling", "dagger", "sword", "thrown"]
+      "tags": ["class-rogue", "class-weaponmaster", "attack", "equipment", "melee", "skill", "defense", "magic-defense", "brawling", "dagger", "sword", "thrown"]
     },
     {
       "name": "Bullet Break",
@@ -76,7 +76,7 @@
       "level_requirement": 30,
       "summary": "Summon Arcana as creatures.",
       "description": "When you summon an Arcanum, you may decide to spend 1 Fabula Point and <strong>half</strong> of your current Hit Points (rounded down) to shape your lifeforce into a full manifestation of their power. If you do, the Arcanum manifests as a soldier-rank creature of the <strong>demon</strong> Species under your control (they count as an ally and have their own independent turn during conflicts – if you use this Skill during a conflict scene, the Arcanum joins the scene <strong>at the end</strong> of the current round). You also do not gain any of the merge benefits you would normally enjoy when summoning that Arcanum.\n\nThe summoned creature has the following profile:\n• <strong>Level</strong> is equal to your level (thus gaining the bonuses to Checks and damage).\n• A d10 in one Attribute of your choice, and a d8 in all other <strong>Attributes</strong>.\n• <strong>Maximum Hit Points</strong> equal to (twice the creature’s base Might die size, plus <strong>half</strong> of your maximum Hit Points). The creature has <strong>no Mind Points</strong>.\n• Resistance to two damage types of your choice.\n• The creature receives all the merge benefits the Arcanum would normally grant you when summoned (damage Affinities, immunity to status effects, increased Attribute sizes, etc.). If a merge benefit would cause the Arcanum to be dismissed, this will cause the summoned creature to vanish unless you spend 20 Mind Points.\n• A <strong>melee basic attack</strong> whose Accuracy Check relies on two different <strong>Attributes</strong> of your choice and deals (HR + 8) <strong>physical</strong> damage. Choose two different options: the attack is a ranged attack; or it deals 4 extra damage; or it deals damage of a type other than <strong>physical</strong>; or the Accuracy Check relies on a <strong>single Attribute</strong>.\n• The creature may perform the Skill action to produce one of the dismiss effects normally granted by that Arcanum, but doing so will cause the summoned creature to vanish unless you spend 20 Mind Points.\n\nThe following rules apply when you <strong>Grand Summon</strong> an Arcanum:\n• The creature is always summoned at full Hit Points, with no status effects.\n• The creature vanishes if it reaches 0 Hit Points, if you die, lose consciousness or leave the scene, or <strong>if you summon or Grand Summon</strong> an Arcanum again. The creature also vanishes when a scene ends, or if you simply command them to do so (this will not trigger the corresponding Arcanum’s dismiss effect).\n• Take note of all choices made for <strong>Attributes</strong> and <strong>basic attack</strong> during the first time you <strong>Summon</strong> a given Arcanum: these choices will remain unchanged whenever you <strong>Grand Summon</strong> that same Arcanum again in the future.",
-      "tags": ["class-arcanist", "attack", "melee", "ranged", "skill", "status", "fabula point", "hp", "mp", "MIG", "damage", "resistance", "immunity", "physical", "companion"]
+      "tags": ["class-arcanist", "attack", "melee", "ranged", "skill", "status", "fabula-point", "hp", "mp", "MIG", "damage", "resistance", "immunity", "physical", "companion"]
     },
     {
       "name": "Hoplite",
@@ -112,7 +112,7 @@
       "requirements": ["Chanter"],
       "summary": "Improve allies’ critical success chance with songs.",
       "description": "When you sing a <strong>verse</strong> with <strong>medium</strong> or <strong>high</strong> <strong>volume</strong>, you may double the <strong>verse</strong>’s cost in Mind Points, or spend 1 Fabula Point. If you do, you and every ally that is able to hear you gain the following benefit until the start of your next turn: your Accuracy Checks trigger a <strong>critical success</strong> when both dice show the same number (as long as the Check is not a <strong>fumble</strong>).",
-      "tags": ["class-chanter", "fabula point", "critical", "fumble", "mp", "verse"]
+      "tags": ["class-chanter", "fabula-point", "critical", "fumble", "mp", "verse"]
     },
     {
       "name": "Pulverizing Strike",
@@ -140,7 +140,7 @@
       "requirements": ["Dancer"],
       "summary": "Perform three dances, then take a temporary break.",
       "description": "At the start of your turn during a conflict, if you have no <strong>martial armor</strong> equipped, you may spend 1 Fabula Point to perform <strong>up to three different dances</strong> among those you know, in the order you prefer and without paying their MP cost. If you do, you <strong>cannot perform dances in any way</strong> until the end of your next turn.",
-      "tags": ["class-dancer", "equipment", "fabula point", "mp", "dance"]
+      "tags": ["class-dancer", "equipment", "fabula-point", "mp", "dance"]
     },
     {
       "name": "Spider’s Web",

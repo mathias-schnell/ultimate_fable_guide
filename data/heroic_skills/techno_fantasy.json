@@ -105,7 +105,7 @@
     {
       "name": "Overload Burst",
       "requirements": ["Pilot"],
-      "tags": ["bolt", "dark", "fire", "ice", "light", "hp", "vehicle", "crisis", "damage", "fabula point", "skill", "class-pilot"],
+      "tags": ["bolt", "dark", "fire", "ice", "light", "hp", "vehicle", "crisis", "damage", "fabula-point", "skill", "class-pilot"],
       "summary": "Hold on at 1 HP, then unleash your personal vehicle against your foes.",
       "description": "Choose a damage type from bolt, dark, fire, ice, and light.\n\nWhen you are reduced to 0 Hit Points for the first time during a scene, if you are driving your <strong>personal vehicle</strong>, you may choose to be reduced to exactly 1 Hit Point instead. If you do, you and any passengers leave your <strong>personal vehicle</strong>, which disappears from the game world. Then, you may deal an amount of damage equal to your Crisis score to a single creature you can see. This damage is of the type you have chosen from the list above. If your <strong>personal vehicle</strong> disappears from the game world this way, the next use of your <strong>Compression Tech</strong> Skill has an additional cost of 1 Fabula Point.",
       "additional_requirements": "You must have acquired the Compression Tech skill."
@@ -113,7 +113,7 @@
     {
       "name": "Psychic Field",
       "requirements": ["Esper"],
-      "tags": ["damage", "gift", "defense", "magic defense", "WLP", "clock", "class-esper"],
+      "tags": ["damage", "gift", "defense", "magic-defense", "WLP", "clock", "class-esper"],
       "summary": "Extend some of your psychic gifts to your allies.",
       "description": "Your <strong>gifts</strong> with <strong>event</strong> “When you <strong>deal damage</strong>” can also be used “When an ally who is able to hear you deals damage”.\n\nYour <strong>psychic shield gift</strong>, if you have acquired it, has its <strong>effect</strong> changed to “You and every ally who is able to hear you may treat your Defense and Magic Defense scores as being equal to (your current Willpower die size + (the number of filled sections in your <strong>Brainwave Clock</strong>, multiplied by 2)) against that Check (you may still use your normal scores if better).”"
     },

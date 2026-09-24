@@ -133,37 +133,30 @@ h6 {
 .filter-rows-container {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 0.5rem;
+    gap: 0.35rem;
+    padding: 0.35rem;
 }
 
 .filter-row {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.35rem;
 }
 
 .filter-row.filter-row-prime {
     display: none;
 }
 
-.filter-include-exclude {
-    max-width: 100px;
-}
-
+.filter-mode,
 .filter-tag-select {
-    max-width: 300px;
-}
-
-.filter-include-exclude,
-.filter-tag-select {
-    padding: 0.5rem 0.75rem;
+    align-self: flex-start;
     border: 1px solid #24211D;
-    border-radius: 6px;
+    border-radius: 8px;
     background-color: #F8F8F8;
-    font-size: 0.9rem;
     color: var(--text-color);
-    flex-grow: 1;
+    font-size: 0.9rem;
+    padding: 0.35rem;
+    width: max-content;
 }
 
 .filter-tag-select:focus {
@@ -176,11 +169,11 @@ h6 {
 .btn-remove-filter-row {
     background-color: #F8F8F8;
     border: 1px solid #24211D;
-    border-radius: 6px;
+    border-radius: 8px;
     color: #24211D;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1;
-    padding: 0.35rem 0.65rem;
+    padding: 0.35rem 0.5rem;
     cursor: pointer;
     transition: all 0.15s ease;
 }

@@ -20,7 +20,7 @@
       "name": "Arcanum of the Gate",
       "domains": ["space", "travel", "void"],
       "description": "<h4>Merge</h4><p>You gain Resistance to dark damage. You gain a +1 bonus to your Magic Defense.</p><h4>Dismiss</h4><p>When you dismiss this Arcanum, choose Oblivion or Warp:\nOblivion. Choose any number of creatures you can see: you deal 30 dark damage to each of them. This damage ignores Resistances.\nWarp. You teleport yourself and up to five other nearby willing creatures to a location you previously visited, if that location is within 1 travel day.</p>",
-      "tags": ["class-arcanist", "resistance", "dark", "damage", "magic defense", "travel"]
+      "tags": ["class-arcanist", "resistance", "dark", "damage", "magic-defense", "travel"]
     },
     {
       "name": "Arcanum of the Grimoire",

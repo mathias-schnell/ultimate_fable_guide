@@ -106,7 +106,7 @@
     {
       "name": "Hope",
       "requirements": ["Spiritist"],
-      "tags": ["spell", "hp", "mp", "fabula point", "crisis", "class-spiritist"],
+      "tags": ["spell", "hp", "mp", "fabula-point", "crisis", "class-spiritist"],
       "summary": "Learn the Hope spell.",
       "description": "You learn the ultimate <strong>Spiritist</strong> spell: <strong>Hope</strong>.",
       "spell": {
@@ -120,7 +120,7 @@
     {
       "name": "Mathemagic",
       "requirements": ["Loremaster"],
-      "tags": ["spell", "mp", "magic defense", "DEX", "INS", "MIG", "WLP", "class-loremaster"],
+      "tags": ["spell", "mp", "magic-defense", "DEX", "INS", "MIG", "WLP", "class-loremaster"],
       "summary": "Extend single-target spells.",
       "description": "When you cast a spell with a <strong>target</strong> of “One creature”, you may choose an Attribute (<strong>Dexterity</strong>, <strong>Insight</strong>, <strong>Might</strong>, or <strong>Willpower</strong>) and a die size (<strong>d6</strong>, <strong>d8</strong>, <strong>d10</strong>, or <strong>d12</strong>). If you do, the spell’s <strong>target</strong> becomes “Every creature present on the scene whose <strong>current</strong> die size in that Attribute matches your choice” and its <strong>total Mind Point cost is doubled</strong>. Additionally, all mentions of “the <strong>target</strong>” in the spell’s text are replaced with “each <strong>target</strong>”; or they are replaced with “one or more <strong>target</strong>s” if the spell is <strong>Anomaly</strong>, <strong>Dispel</strong>, <strong>Mercy</strong>, or <strong>Mirror</strong>. When the spell ends on one or more of its <strong>target</strong>s, it automatically ends on all its <strong>target</strong>s.\n\nIf you cast an offensive spell (🗲) this way, you perform a single Magic Check and confront it with the Magic Defense of each <strong>target</strong>."
     },
@@ -142,7 +142,7 @@
     {
       "name": "Pillage",
       "requirements": ["Rogue"],
-      "tags": ["skill", "magic defense", "class-rogue"],
+      "tags": ["skill", "magic-defense", "class-rogue"],
       "summary": "Steal from multiple creatures.",
       "description": "When you use the <strong>Soul Steal</strong> <strong>Skill</strong>, you may <strong>target</strong> any number of creatures at the same time (you perform a single Check and compare it to the Magic Defense of each creature you are attempting to steal from).",
       "additional_requirements": "You must have acquired the Soul Steal skill."
@@ -192,7 +192,7 @@
     {
       "name": "Revelation",
       "requirements": ["Arcanist"],
-      "tags": ["fabula point", "skill", "class-arcanist"],
+      "tags": ["fabula-point", "skill", "class-arcanist"],
       "summary": "Bind a previously unknown Arcanum, and improve dismiss effects.",
       "description": "You make contact with an unknown Arcanum and bind it to your soul. This Arcanum must be something you design together with the rest of the group; as long as you live, no one else in your world will be able to bind that Arcanum.\n\nOnce per scene while you are <strong>merged</strong> with an Arcanum, you may use an action and spend 2 Fabula Points to <strong>trigger</strong> that Arcanum’s <strong>dismiss</strong> effect (if any) without <strong>dismiss</strong>ing them. Doing so <strong>does not</strong> <strong>trigger</strong> the <strong>Arcane Circle</strong> <strong>Skill</strong>."
     },
@@ -227,7 +227,7 @@
     {
       "name": "Vanish",
       "requirements": ["Rogue"],
-      "tags": ["fabula point", "attack", "spell", "class-rogue"],
+      "tags": ["fabula-point", "attack", "spell", "class-rogue"],
       "summary": "Disappear after an attack.",
       "description": "When you hit one or more creatures with an attack or offensive spell (🗲), you may spend 1 Fabula Point. If you do, each of those creatures becomes unable to see you until the start of your next turn."
     },

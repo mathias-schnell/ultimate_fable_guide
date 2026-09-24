@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.4.3] - 2026-09-23
+
+### Added
+- Expand/Contract all button that expands or contracts all of the contents of the currently displayed category.
+
+### Changed
+- Changed the filtering system with three different filtering modes for better and more intuitive control of the filtering.
+
+### Internal
+- Corrected more tags in the data.
+- Fixed some edge cases in the code.
+- Made some code more robust and strict.
+
+---
+
+## [0.4.2] - 2026-09-23
+
+### Internal
+- Corrected some tag names in the data to match with the names used in the filters.
+
+### Removed
+- The limit of five pins has been erased. It is now unlimited.
+
+---
+
 ## [0.4.1] - 2026-09-23
 
 ### Added
@@ -10,6 +35,8 @@
 - Renamed `content.css` to `content-general.css`
 - Combined 'merge' and 'dismiss' data from Arcana into a single 'description' field.
 - Removed unncessary code from `index.php` given the above changes.
+
+---
 
 ## [0.4.0] - 2026-09-22
 

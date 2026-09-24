@@ -77,7 +77,7 @@
     {
       "name": "For a Better Future",
       "requirements": ["Merchant"],
-      "tags": ["fabula point", "trade point", "travel", "skill", "class-merchant"],
+      "tags": ["fabula-point", "trade-point", "travel", "skill", "class-merchant"],
       "summary": "Use Trade Points instead of Fabula Points and improve settlements with donations.",
       "description": "When you need to spend one or more Fabula Points, if you are not spending them to <strong>alter the story</strong>, you may spend that many <strong>Trade Points</strong> instead. Describe which memories of your trades and journeys give you strength!\n\nAdditionally, when you gain two or more <strong>Trade Points</strong> through the <strong>Real Treasure</strong> or <strong>Winds of Trade</strong> Skills, you may choose to gain exactly 1 <strong>Trade Point</strong> instead. If you do, choose a settlement within <strong>1 travel day</strong> of your position and increase its <strong>prosperity</strong> by an amount equal to (your Skill Level in <strong>Winds of Trade</strong> + your Skill Level in <strong>Real Treasure</strong>); a settlement’s <strong>prosperity</strong> starts at 0 and has no upper limit.\n\nThe chart below indicates the effects of your donations on the settlement and on anything within <strong>1 travel day</strong> of it.\n\nProsperity Effects within <strong>1 travel day</strong> of the settlement\n10 or more: When you or an ally need to pay a cost in zenit, whatever the reason, that cost is <strong>halved</strong>.\n15 or more: People gladly accommodate you and your allies: while in this area, you can always <strong>rest</strong> freely, without spending zenit. Furthermore, any <strong>travel rolls</strong> made in this area never use a die greater than d8.\n20 or more: When a Villain in this area spends Ultima Points, they must spend twice as many Ultima Points."
     },
@@ -105,14 +105,14 @@
     {
       "name": "Power Nap",
       "requirements": ["Guardian", "Merchant", "Wayfarer"],
-      "tags": ["hp", "mp", "status", "defense", "magic defense", "skill", "attack", "spell", "class-guardian", "class-merchant", "class-wayfarer"],
+      "tags": ["hp", "mp", "status", "defense", "magic-defense", "skill", "attack", "spell", "class-guardian", "class-merchant", "class-wayfarer"],
       "summary": "Take a little nap during a conflict to regain your energies.",
       "description": "On your turn during a conflict, you may use an action to recover an amount of Hit Points and Mind Points equal to (20 + <strong>half</strong> your level) and also recover from all status effects. If you do, your turn ends <strong>immediately</strong>, you lose the ability to <strong>hear and see</strong>, and your <strong>Defense and Magic Defense</strong> scores become <strong>equal to 5</strong> and <strong>cannot</strong> be modified in any way (but you may still use the <strong>Protect</strong> Skill from the <strong>Guardian</strong> Class, if you have acquired it!). These penalties last until the start of your next turn, until after you <strong>lose Hit Points</strong>, or until after you <strong>are hit by an attack or offensive spell</strong> (🗲)."
     },
     {
       "name": "Side by Side",
       "requirements": ["Wayfarer"],
-      "tags": ["companion", "damage", "fabula point", "skill", "mp", "class-wayfarer"],
+      "tags": ["companion", "damage", "fabula-point", "skill", "mp", "class-wayfarer"],
       "summary": "Improve your synergy with your Faithful Companion.",
       "description": "When your companion deals damage, they deal 5 extra damage.\n\nWhen your companion performs a Check, you may spend 1 Fabula Point and <strong>invoke</strong> one of your companion’s <strong>Traits</strong> in order to let them reroll one or <strong>both</strong> dice.\n\nAfter you use the <strong>Faithful Companion</strong> Skill to have your companion perform an action during your turn, you may choose one option (after the companion’s action has been resolved): you and your companion each recover 10 Mind Points; or the first time you or your companion perform a Check <strong>before</strong> the end of your next turn, that Check gains a bonus equal to (your Skill Level in <strong>Faithful Companion</strong>)."
     },

@@ -1,9 +1,10 @@
 <section class="filter-rows-container">
+    <select class="filter-mode">
+        <option value="0">Match one</option>
+        <option value="1">Match all</option>
+        <option value="2">Match exact</option>
+    </select>
     <div class="filter-row filter-row-prime">
-        <select class="filter-include-exclude">
-            <option value="1">Include</option>
-            <option value="0">Exclude</option>
-        </select>
         <select class="filter-tag-select">
             <option value="">-- Select Tag --</option>
             <?php foreach ($filter_tags as $group_label => $tags): ?>

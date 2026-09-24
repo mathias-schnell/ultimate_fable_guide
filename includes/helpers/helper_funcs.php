@@ -40,7 +40,9 @@ function get_column_headers($key, $html_key, $columns): string {
     ob_start();
     ?>
         <div class="<?=$html_key ?>-list-header">
-            <div></div>
+            <div>
+                <button class="<?=$html_key ?>-multitoggle" type="button" data-key="<?=$html_key ?>" aria-expanded="false" aria-controls="article.<?=$html_key ?>">+</button>
+            </div>
             <?php foreach($columns[$key] as $col): ?>
                 <div><?=$col['label'] ?></div>
             <?php endforeach; ?>

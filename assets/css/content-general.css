@@ -1,5 +1,6 @@
 .content-container [class*="-pin"],
-.content-container [class*="-toggle"] {
+.content-container [class*="-toggle"],
+.content-container [class*="-multitoggle"] {
     height: 100%;
     transform: rotate(0deg);
     transition: transform 0.25s ease;
