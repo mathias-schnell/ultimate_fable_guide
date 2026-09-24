@@ -18,3 +18,11 @@ jobs:
           script: |
             cd /home/schnell/schnell.dreamhosters.com/projects/ultimate_fable_guide
             git pull origin main
+      - name: Notify Discord
+        uses: sarisia/actions-status-discord@v1
+        if: always()
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          status: ${{ job.status }}
+          title: "Ultimate Fable Guide Deployment"
+          description: "Triggered by commit `${{ github.sha }}` on `${{ github.ref_name }}`."

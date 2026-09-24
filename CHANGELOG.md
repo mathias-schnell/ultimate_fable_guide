@@ -1,11 +1,18 @@
 # Changelog
 
+## [0.4.5] - 2026-09-24
+
+### Internal
+- Updating Github workflow to include posting status updates to a Discord server. 
+
+---
+
 ## [0.4.4] - 2026-09-23
 
 ### Added
 - Content for 'Gifts'.
 - Content for 'Invocations'.
-- Contnet for 'Therioforms'.
+- Content for 'Therioforms'.
 
 ---
 
