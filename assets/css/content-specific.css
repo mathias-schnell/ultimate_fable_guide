@@ -13,9 +13,19 @@
     grid-template-columns: 0.25fr 2fr 4fr 0.25fr;
 }
 
+.content-container .gifts-list-header,
+.content-container .gifts-row {
+    grid-template-columns: 0.25fr 1.5fr 4.5fr 0.25fr;
+}
+
 .content-container .heroic-skills-list-header,
 .content-container .heroic-skills-row {
     grid-template-columns: 0.25fr 1fr 1fr 1fr 3fr 0.25fr;
+}
+
+.content-container .invocations-list-header,
+.content-container .invocations-row {
+    grid-template-columns: 0.25fr 2fr 2fr 2fr 0.25fr;
 }
 
 .content-container .magiseeds-list-header,
@@ -66,4 +76,9 @@
 .content-container .symbols-list-header,
 .content-container .symbols-row {
     grid-template-columns: 0.25fr 6fr 0.25fr;
+}
+
+.content-container .therioforms-list-header,
+.content-container .therioforms-row {
+    grid-template-columns: 0.25fr 1.5fr 4.5fr 0.25fr;
 }

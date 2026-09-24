@@ -1,0 +1,62 @@
+{
+  "source": {
+    "name": "techno_fantasy",
+    "label": "Techno Fantasy Atlas"
+  },
+  "gifts": [
+    {
+      "name": "Atmokinesis",
+      "event": "When you deal damage",
+      "description": "That damage becomes air or bolt, and its source deals extra damage equal to (2 + the number of filled sections in your Brainwave Clock).",
+      "tags": ["class-esper", "air", "bolt", "damage", "clock"]
+    },
+    {
+      "name": "Clairvoyance",
+      "event": "When an NPC becomes your focus or when you create a Bond towards an NPC",
+      "description": "Ask the Game Master a single question about that NPC, which the Game Master must answer truthfully. Then, describe what sensation revealed this information to you. You may use this gift only once on each NPC.",
+      "tags": ["class-esper", "bond", "focus", "npc", "study"]
+    },
+    {
+      "name": "Gravitokinesis",
+      "event": "When you deal damage",
+      "description": "That damage becomes earth or physical, and its source deals extra damage equal to (2 + the number of filled sections in your Brainwave Clock). If the source deals damage to one or more flying creatures, they are forced to land immediately.",
+      "tags": ["class-esper", "earth", "physical", "damage", "clock"]
+    },
+    {
+      "name": "Life Transference",
+      "event": "When you cause one or more enemies to lose HP",
+      "description": "Choose yourself or an ally who is your focus: if the chosen creature is in Crisis, they recover an amount of Hit Points equal to (5 + (the number of filled sections in your Brainwave Clock, multiplied by 5)).",
+      "tags": ["class-esper", "hp", "focus", "crisis", "clock"]
+    },
+    {
+      "name": "Photokinesis",
+      "event": "When you deal damage",
+      "description": "That damage becomes dark or light, and its source deals extra damage equal to (2 + the number of filled sections in your Brainwave Clock).",
+      "tags": ["class-esper", "dark", "light", "damage", "clock"]
+    },
+    {
+      "name": "Psychic Backlash",
+      "event": "After an enemy succeeds on an Opposed Check against you or causes you to lose Hit Points",
+      "description": "That enemy loses an amount of Mind Points equal to (5 + (the number of filled sections in your Brainwave Clock, multiplied by 5)). Then, choose one option: that enemy suffers dazed, or that enemy suffers shaken.",
+      "tags": ["class-esper", "mp", "status", "hp", "clock"]
+    },
+    {
+      "name": "Psychic Shield",
+      "event": "After an enemy you can see performs an Accuracy Check or a Magic Check",
+      "description": "For the purposes of that Check, you may treat your Defense and Magic Defense scores as being equal to (your current Willpower die size + (the number of filled sections in your Brainwave Clock, multiplied by 2)). You may still use your normal scores if better.",
+      "tags": ["class-esper", "defense", "magic-defense", "WLP", "clock"]
+    },
+    {
+      "name": "Reassuring Presence",
+      "event": "After you cover an ally with the Guard action",
+      "description": "That ally recovers an amount of Mind Points equal to (10 + (the number of filled sections in your Brainwave Clock, multiplied by 5)). If that ally is your focus, they recover from a single status effect of their choice out of dazed, enraged, and shaken.",
+      "tags": ["class-esper", "mp", "status", "focus", "clock"]
+    },
+    {
+      "name": "Thermokinesis",
+      "event": "When you deal damage",
+      "description": "That damage becomes fire or ice, and its source deals extra damage equal to (2 + the number of filled sections in your Brainwave Clock).",
+      "tags": ["class-esper", "fire", "ice", "damage", "clock"]
+    }
+  ]
+}

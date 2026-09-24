@@ -10,7 +10,7 @@ $sections = [
     "symbols"           => "Symbols",
     "magiseeds"         => "Magiseeds",
     "invocations"       => "Invocations",
-    "psychic_gifts"     => "Psychic Gifts",
+    "gifts"             => "Gifts",
     "therioforms"       => "Therioforms",
     "vehicle_modules"   => "Vehicle Modules",
     "weapons"           => "Weapons",
@@ -53,5 +53,18 @@ $columns = [
     "magiseeds" => [
         ['label' => 'Name',         'class' => 'name'],
         ['label' => 'Summary',      'class' => 'summary'],
+    ],
+    "invocations" => [
+        ['label' => 'Name',         'class' => 'name'],
+        ['label' => 'Wellspring',   'class' => 'wellspring'],
+        ['label' => 'Required SL',  'class' => 'required_sl'],
+    ],
+    "gifts" => [
+        ['label' => 'Name',         'class' => 'name'],
+        ['label' => 'Event',        'class' => 'event'],
+    ],
+    "therioforms" => [
+        ['label' => 'Name',         'class' => 'name'],
+        ['label' => 'Suggestions',  'class' => 'suggestions'],
     ]
 ];
