@@ -86,3 +86,38 @@
     padding: 0;
     margin: 0;
 }
+
+.content-container .magiseeds-description table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-container .magiseeds-description th,
+.content-container .magiseeds-description td {
+    padding: 0.5rem;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #AAAAAA;
+    border-left: 1px solid #AAAAAA;
+}
+
+.content-container .magiseeds-description th {
+    background-color: #964B00;
+    color: #E8ECEF;
+    font-weight: 600;
+}
+
+.content-container .magiseeds-description th:first-child {
+    text-align: center;
+}
+
+.content-container .magiseeds-description td:first-child {
+    background-color: #d2b48c;
+    font-weight: 600;
+}
+
+.content-container .magiseeds-description th:first-child,
+.content-container .magiseeds-description td:first-child {
+    white-space: nowrap;
+    width: 1%;
+}

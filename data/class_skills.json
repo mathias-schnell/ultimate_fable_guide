@@ -1,0 +1,945 @@
+{
+  "schema": {
+    "key": "class_skills",
+    "title": "Class Skills",
+    "grid-template-columns": "0.25fr 2.5fr 2.5fr 1fr 0.25fr",
+    "universal-tags": ["skill"],
+    "columns": [
+      { "label": "Class", "field": "class", "class": "class" },
+      { "label": "Name", "field": "name", "class": "name" },
+      { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
+    ]
+  },
+  "groups": [
+    {
+      "group-tags": ["core"],
+      "class_skills": [
+        {
+          "name": "Arcane Circle",
+          "class": "Arcanist",
+          "max-sl": 4,
+          "description": "After you willingly dismiss an Arcanum on your turn during a conflict (see next page), if that Arcanum had not been summoned during this same turn and you have an arcane weapon equipped, you may perform the Spell action for free (after resolving the dismiss effect). The spell you cast this way must have a total Mind Point cost of (SL × 5) or lower (you must still pay the spell’s MP cost).",
+          "tags": ["arcane", "arcanist", "mp", "spell"]
+        },
+        {
+          "name": "Arcane Regeneration",
+          "class": "Arcanist",
+          "max-sl": 2,
+          "description": "When you summon an Arcanum, you recover (SL × 5) Hit Points.",
+          "tags": ["arcanist", "hp"]
+        },
+        {
+          "name": "Bind and Summon",
+          "class": "Arcanist",
+          "max-sl": 1,
+          "description": "You may bind Arcana to your soul and summon them later. The Game Master will tell you the details of each binding process when you first encounter the Arcanum in question. You may use an action and spend 40 Mind Points to summon an Arcanum you have bound: the details of this process are explained on the next page. If you take this Skill at character creation, you begin play with one Arcanum of your choice already bound to you, chosen from the list on the next pages. Other than that, you may only obtain new Arcana through exploration and story progression.",
+          "tags": ["arcanist", "mp"]
+        },
+        {
+          "name": "Emergency Arcanum",
+          "class": "Arcanist",
+          "max-sl": 6,
+          "description": "As long as you are in Crisis, the cost for summoning your Arcana is reduced by (SL × 5) Mind Points.",
+          "tags": ["arcanist", "crisis", "mp"]
+        },
+        {
+          "name": "Ritual Arcanism",
+          "class": "Arcanist",
+          "max-sl": 1,
+          "description": "You may perform Rituals of the Arcanism discipline, as long as their effects fall within the domains of one or more Arcana you have bound (see next pages). Arcanism Rituals use (WLP + WLP) for the Magic Check.",
+          "tags": ["arcanist", "spell", "WLP"]
+        },
+        {
+          "name": "Consume",
+          "class": "Chimerist",
+          "max-sl": 5,
+          "description": "After you deal damage to one or more creatures with a spell, if you have an arcane, dagger or flail weapon equipped, you recover (SL × 2) Mind Points.",
+          "tags": ["arcane", "chimerist", "dagger", "damage", "flail", "mp", "spell"]
+        },
+        {
+          "name": "Feral Speech",
+          "class": "Chimerist",
+          "max-sl": 1,
+          "description": "You can always communicate with creatures of the beast, monster and plant Species.",
+          "tags": ["chimerist"]
+        },
+        {
+          "name": "Pathogenesis",
+          "class": "Chimerist",
+          "max-sl": 1,
+          "description": "When you deal damage to one or more creatures with one of your Chimerist spells, each of those creatures that share their Species with the creature you originally learned that spell from suffers poisoned.",
+          "tags": ["chimerist", "damage", "poison", "spell", "status"]
+        },
+        {
+          "name": "Ritual Chimerism",
+          "class": "Chimerist",
+          "max-sl": 1,
+          "description": "You may perform Rituals whose effects fall within the Chimerism discipline. When you acquire this Skill, choose (INS + WLP) or (MIG + WLP). From now on, your Chimerism Rituals will use the chosen Attributes for the Magic Check.",
+          "tags": ["chimerist", "INS", "MIG", "spell", "WLP"]
+        },
+        {
+          "name": "Spell Mimic",
+          "class": "Chimerist",
+          "max-sl": 10,
+          "description": "After a beast, monster, or plant creature you can see casts a spell and resolves its effects, you may learn that spell as a Chimerist spell of your own: if you do, record the Species of the creature you learned it from. When you first acquire this Skill, choose (INS + WLP) or (MIG + WLP). From now on, your offensive (OO) Chimerist spells will use the chosen Attributes for the Magic Check, regardless of the Attributes used by the creature you learned the spell from. You may have up to (SL + 2) different Chimerist spells memorized this way. If you want to memorize a new Chimerist spell but are already at your limit, you must forget one of your old spells and replace it with the new spell.",
+          "tags": ["chimerist", "INS", "MIG", "spell", "WLP"]
+        },
+        {
+          "name": "Agony",
+          "class": "Darkblade",
+          "max-sl": 5,
+          "description": "Once per turn (including other creatures’ turns), after you deal damage to one or more enemies you have a Bond towards, you may recover (SL × 2) Hit Points and (SL × 2) Mind Points.",
+          "tags": ["bond", "damage", "darkblade", "hp", "mp"]
+        },
+        {
+          "name": "Dark Blood",
+          "class": "Darkblade",
+          "max-sl": 1,
+          "description": "As long as you are in Crisis, you gain Resistance to dark damage and poison damage.",
+          "tags": ["crisis", "damage", "dark", "darkblade", "poison", "resistance"]
+        },
+        {
+          "name": "Heart of Darkness",
+          "class": "Darkblade",
+          "max-sl": 1,
+          "description": "Once per scene, when you enter Crisis, you may choose a specific creature you can see that you don’t have a Bond towards. If you do, create a Bond of hatred towards that creature.",
+          "tags": ["bond", "crisis", "darkblade"]
+        },
+        {
+          "name": "Painful Lesson",
+          "class": "Darkblade",
+          "max-sl": 3,
+          "description": "After another creature causes you to lose Hit Points (with an attack, a spell or any other method), you may immediately perform the Study action on that creature (page 74) for free. If you do, gain a bonus equal to (SL) to your Check. Remember, you can study the same aspect of a creature only once.",
+          "tags": ["attack", "darkblade", "hp", "spell", "study"]
+        },
+        {
+          "name": "Shadow Strike",
+          "class": "Darkblade",
+          "max-sl": 5,
+          "description": "You have learned to channel your vital force into your attacks. You may use an action to perform a Shadow Strike: roll your current Might die and lose an amount of Hit Points equal to (the number rolled on your Might die). If this didn’t reduce your Hit Points to 0, you may perform a free attack with a weapon you have equipped: if this attack hits one or more targets, it deals extra damage equal to (SL + the number rolled on your Might die). However, all damage dealt by this attack becomes dark and its damage type cannot be changed.",
+          "tags": ["attack", "damage", "dark", "darkblade", "equipment", "hp", "MIG"]
+        },
+        {
+          "name": "Cataclysm",
+          "class": "Elementalist",
+          "max-sl": 3,
+          "description": "When you cast a spell with a duration of “Instantaneous”, if you have an arcane weapon equipped, you may increase the spell’s total MP cost by up to (SL × 10) Mind Points. If you do so, the spell deals 5 extra damage for every 10 Mind Points by which you increased its cost this way.",
+          "tags": ["arcane", "damage", "elementalist", "equipment", "mp", "spell"]
+        },
+        {
+          "name": "Elemental Magic",
+          "class": "Elementalist",
+          "max-sl": 10,
+          "description": "Each time you acquire this Skill, learn one Elementalist spell (see next two pages). Offensive (OO) Elementalist spells use (INS + WLP) for the Magic Check.",
+          "tags": ["elementalist", "INS", "spell", "WLP"]
+        },
+        {
+          "name": "Magical Artillery",
+          "class": "Elementalist",
+          "max-sl": 3,
+          "description": "When you cast an offensive spell (OO), if you have an arcane weapon equipped, you gain a bonus to your Magic Check equal to (SL × 2).",
+          "tags": ["arcane", "elementalist", "equipment", "spell"]
+        },
+        {
+          "name": "Ritual Elementalism",
+          "class": "Elementalist",
+          "max-sl": 1,
+          "description": "You may perform Rituals whose effects fall within the Elementalism discipline. Elementalism Rituals use (INS + WLP) for the Magic Check.",
+          "tags": ["elementalist", "INS", "spell", "WLP"]
+        },
+        {
+          "name": "Spellblade",
+          "class": "Elementalist",
+          "max-sl": 3,
+          "description": "When you cast an offensive spell (OO) targeting a single creature, if the spell has a total Mind Point cost of (SL × 20) or lower, you may choose one non-arcane weapon you have equipped. If you do, your Magic Check for the spell uses the chosen weapon’s Accuracy Check formula; if that formula includes Dexterity, the Magic Check also gains a bonus equal to (SL). For instance, casting an Elementalist spell through a bronze sword (page 131) when you have Skill Level 2 in Spellblade will cause the Magic Check to be (DEX + MIG).",
+          "tags": ["DEX", "elementalist", "equipment", "MIG", "mp", "spell"]
+        },
+        {
+          "name": "Absorb MP",
+          "class": "Entropist",
+          "max-sl": 5,
+          "description": "After you suffer damage, you may recover (SL × 2) Mind Points.",
+          "tags": ["damage", "entropist", "mp"]
+        },
+        {
+          "name": "Entropic Magic",
+          "class": "Entropist",
+          "max-sl": 10,
+          "description": "Each time you acquire this Skill, learn one Entropist spell (see next two pages). Offensive (OO) Entropist spells use (INS + WLP) for the Magic Check.",
+          "tags": ["entropist", "INS", "spell", "WLP"]
+        },
+        {
+          "name": "Lucky Seven",
+          "class": "Entropist",
+          "max-sl": 1,
+          "description": "You have a lucky number; at the start of each session, that number is 7. Once per scene after you roll dice for a Check, you may replace the value shown on one of those dice with your lucky number (even if this would give an impossible value, such as a value of 7 on a d6). If you do, the replaced value becomes your new lucky number.",
+          "tags": ["entropist"]
+        },
+        {
+          "name": "Ritual Entropism",
+          "class": "Entropist",
+          "max-sl": 1,
+          "description": "You may perform Rituals whose effects fall within the Entropism discipline. Entropism Rituals use (INS + WLP) for the Magic Check.",
+          "tags": ["entropist", "INS", "spell", "WLP"]
+        },
+        {
+          "name": "Stolen Time",
+          "class": "Entropist",
+          "max-sl": 4,
+          "description": "During a conflict, you may use an action to interfere with the flow of time by spending up to (SL × 5) Mind Points. For every 5 Mind Points you spend this way, choose one option: one creature you can see suffers slow; or one creature you can see recovers from slow; or one enemy you can see that is suffering from slow loses (10 + (SL × 5)) Hit Points; or one creature you can see may perform the Equipment action for free; or choose one ally you can see that has yet to take a turn during this round: that ally may take their turn immediately after yours during this round. Each option can only be chosen once per use of this Skill.",
+          "tags": ["entropist", "equipment", "hp", "mp", "status"]
+        },
+        {
+          "name": "Adrenaline",
+          "class": "Fury",
+          "max-sl": 5,
+          "description": "As long as you are in Crisis, you deal (SL × 2) extra damage (be it with attacks, spells, Arcana, items or any other method).",
+          "tags": ["attack", "crisis", "damage", "fury", "spell"]
+        },
+        {
+          "name": "Frenzy",
+          "class": "Fury",
+          "max-sl": 1,
+          "description": "Your Accuracy Checks with brawling, dagger, flail and thrown weapons trigger a critical success if both dice show the same number (and the Check is not a fumble).",
+          "tags": ["brawling", "critical", "dagger", "flail", "fumble", "fury", "thrown"]
+        },
+        {
+          "name": "Indomitable Spirit",
+          "class": "Fury",
+          "max-sl": 4,
+          "description": "When you spend one or more Fabula Points, you get an additional benefit — choose one option: you recover (SL × 5) Hit Points; or you recover (SL × 5) Mind Points; or you recover from a single status effect of your choice.",
+          "tags": ["fabula-point", "fury", "hp", "mp", "status"]
+        },
+        {
+          "name": "Provoke",
+          "class": "Fury",
+          "max-sl": 5,
+          "description": "You may use an action and spend 5 Mind Points to perform an Opposed (MIG + WLP) Check against an enemy you can see — describe how you taunt them! If you succeed, the target suffers enraged, is compelled to focus their attention on you, and must include you among the targets of their attacks and offensive spells (OO) if able. This compulsion ends if you fall unconscious or leave the scene, if the creature is no longer enraged, or if they are successfully provoked by someone else. You gain a bonus equal to (SL) to your (MIG + WLP) Checks for this Skill.",
+          "tags": ["attack", "fury", "MIG", "mp", "spell", "status", "WLP"]
+        },
+        {
+          "name": "Withstand",
+          "class": "Fury",
+          "max-sl": 5,
+          "description": "When you perform the Guard action, if you choose not to provide cover to another creature, you recover Hit Points equal to (5 + (SL, multiplied by the highest strength among your Bonds)) and choose Might or Willpower: you treat the chosen Attribute as being one die size higher (up to a maximum of d12) until the end of your next turn.",
+          "tags": ["bond", "fury", "guard", "hp", "MIG", "WLP"]
+        },
+        {
+          "name": "Bodyguard",
+          "class": "Guardian",
+          "max-sl": 1,
+          "description": "If you perform the Guard action and choose to provide cover to an ally, that creature gains Resistance to all damage types until the start of your next turn.",
+          "tags": ["damage", "guard", "guardian", "resistance"]
+        },
+        {
+          "name": "Defensive Mastery",
+          "class": "Guardian",
+          "max-sl": 5,
+          "description": "As long as you have a shield or martial armor equipped, all damage you suffer is reduced by (SL) (applied before damage Affinities).",
+          "tags": ["damage", "equipment", "guardian"]
+        },
+        {
+          "name": "Dual Shieldbearer",
+          "class": "Guardian",
+          "max-sl": 1,
+          "description": "You may now equip a shield in your main hand slot. As long as you have two shields equipped, you gain the benefits of both items and may treat them as the following combined two-handed melee brawling weapon: Twin Shields (MIG + MIG) (HR + 5) physical. Deals extra damage equal to your (SL) in Defensive Mastery (above).",
+          "tags": ["brawling", "damage", "equipment", "guardian", "melee", "MIG", "physical", "two-handed"]
+        },
+        {
+          "name": "Fortress",
+          "class": "Guardian",
+          "max-sl": 5,
+          "description": "Permanently increase your maximum Hit Points by (SL × 3).",
+          "tags": ["guardian", "hp"]
+        },
+        {
+          "name": "Protect",
+          "class": "Guardian",
+          "max-sl": 1,
+          "description": "When another creature is threatened by an attack, spell or other danger, you may take their place (any Checks that are part of the danger will be performed against you; you may declare the use of this Skill before or after the Checks have been made). If the danger already affected you, it affects you twice (resolve both instances separately); you also cannot protect multiple creatures from the same danger. If you use this Skill during a conflict, you cannot use it again until the start of your next turn.",
+          "tags": ["attack", "guardian", "spell"]
+        },
+        {
+          "name": "Flash of Insight",
+          "class": "Loremaster",
+          "max-sl": 3,
+          "description": "When you get a Result of 13 or higher on a Check performed to investigate a creature, item or location — this includes using the Study action during a conflict — you may ask the Game Master up to (SL) questions concerning the subject of your investigation. You may ask these questions immediately or save them for later; whenever you ask one of these questions, the Game Master will answer truthfully and you will describe your character’s deductive process. This Skill may only be used once on the same creature, item or location.",
+          "tags": ["loremaster", "study"]
+        },
+        {
+          "name": "Focused",
+          "class": "Loremaster",
+          "max-sl": 5,
+          "description": "Permanently increase your maximum Mind Points by (SL × 3). When you perform an Open Check using (INS + INS), you gain a bonus equal to (SL) on that Check (this only applies to Open Checks).",
+          "tags": ["INS", "loremaster", "mp"]
+        },
+        {
+          "name": "Knowledge Is Power",
+          "class": "Loremaster",
+          "max-sl": 1,
+          "description": "When you perform an Accuracy Check, you may replace one of the Attribute dice with Insight (such as (INS + INS) for a pistol or (INS + MIG) for a waraxe).",
+          "tags": ["INS", "loremaster", "MIG"]
+        },
+        {
+          "name": "Quick Assessment",
+          "class": "Loremaster",
+          "max-sl": 6,
+          "description": "At the start of a conflict, you may spend up to (SL × 5) Mind Points. For every 5 Mind Points you spend this way, choose one option: choose a creature you can see and the GM reveals one of their Traits; or name a damage type and choose a creature you can see, and the GM reveals that creature’s Affinity towards that damage type.",
+          "tags": ["damage", "loremaster", "mp"]
+        },
+        {
+          "name": "Trained Memory",
+          "class": "Loremaster",
+          "max-sl": 1,
+          "description": "You may perfectly recall the details of any scene you have visited within the past week. You can “go back in time” within your mind in order to examine and investigate such scenes again — your Flash of Insight Skill will apply to these memories as well.",
+          "tags": ["loremaster", "study"]
+        },
+        {
+          "name": "Condemn",
+          "class": "Orator",
+          "max-sl": 6,
+          "description": "You may use an action and spend 5 Mind Points to perform an Opposed (INS + WLP) Check against an enemy that can hear and understand you. If you succeed, that enemy loses (SL × 5) Mind Points, suffers a status effect of your choice between dazed and shaken, and all sources deal (SL) extra damage to them until the start of your next turn. You gain a bonus equal to (SL) to your (INS + WLP) Checks for this Skill.",
+          "tags": ["damage", "INS", "mp", "orator", "status", "WLP"]
+        },
+        {
+          "name": "Encourage",
+          "class": "Orator",
+          "max-sl": 6,
+          "description": "You may use an action and spend 5 Mind Points to choose an ally that can hear and understand you. That ally recovers (SL × 10) Hit Points and chooses Dexterity, Insight, Might, or Willpower: they treat the chosen Attribute as being one die size higher (up to a maximum of d12) until the start of your next turn.",
+          "tags": ["DEX", "hp", "INS", "MIG", "mp", "orator", "WLP"]
+        },
+        {
+          "name": "My Trust in You",
+          "class": "Orator",
+          "max-sl": 2,
+          "description": "When another Player Character who is able to hear you rolls dice for a Check, you may spend 1 Fabula Point and invoke one of their Traits or Bonds in order to let them reroll dice or improve the Result of the Check (following the normal rules). Then, if you have a Bond towards that character, they recover (SL × 10) Mind Points.",
+          "tags": ["bond", "fabula-point", "mp", "orator"]
+        },
+        {
+          "name": "Persuasive",
+          "class": "Orator",
+          "max-sl": 2,
+          "description": "When you successfully perform a Check to fill or erase sections of a Clock, if your approach relied on charm, diplomacy, deception or intimidation, you may spend up to (SL × 20) Mind Points. If you do, fill or erase an additional section of that Clock for every 20 Mind Points you spend this way.",
+          "tags": ["clock", "mp", "orator"]
+        },
+        {
+          "name": "Unexpected Ally",
+          "class": "Orator",
+          "max-sl": 1,
+          "description": "You may use an action and spend 1 Fabula Point to choose a non-hostile creature able to hear and understand you. If you do, that creature becomes helpful towards you so long as you are kind and respectful to them and your requests are reasonable.",
+          "tags": ["fabula-point", "orator"]
+        },
+        {
+          "name": "Cheap Shot",
+          "class": "Rogue",
+          "max-sl": 5,
+          "description": "When you hit a creature with an attack, if the attack only targeted that creature and they are suffering from one or more status effects, you may have it deal extra damage equal to (SL + the number of status effects on the creature).",
+          "tags": ["attack", "damage", "rogue", "status"]
+        },
+        {
+          "name": "Dodge",
+          "class": "Rogue",
+          "max-sl": 3,
+          "description": "As long as you have no shields and no martial armor equipped, your Defense score is increased by (SL).",
+          "tags": ["defense", "equipment", "rogue"]
+        },
+        {
+          "name": "High Speed",
+          "class": "Rogue",
+          "max-sl": 3,
+          "description": "At the start of a conflict, you may spend 10 Mind Points. If you do, choose one option and apply it before the start of the first round: perform a free attack with a weapon you have equipped; or perform the Hinder or Objective action for free. You also gain a bonus equal to (SL) to all Checks you perform as part of the chosen option.",
+          "tags": ["attack", "equipment", "hinder", "mp", "objective", "rogue"]
+        },
+        {
+          "name": "See You Later",
+          "class": "Rogue",
+          "max-sl": 1,
+          "description": "You may use an action and spend 1 Fabula Point to vanish from the current scene, reappearing whenever you want during a different scene in which another Player Character is present. Describe how you escaped and miraculously got here!",
+          "tags": ["fabula-point", "rogue"]
+        },
+        {
+          "name": "Soul Steal",
+          "class": "Rogue",
+          "max-sl": 5,
+          "description": "During a conflict, you may use an action to perform a (DEX + WLP) Check against the Magic Defense of an enemy you can see. If you succeed and the target is a soldier, you regain (SL) Inventory Points; if they are an elite or champion, the GM gives you their soul treasure, an item worth an amount of zenit equal to or lower than (the target’s level multiplied by 30, or by 50 if they are a Villain). This soul treasure appears in your backpack; a creature can be successfully stolen from with this Skill only once. You gain a bonus equal to (SL) to your (DEX + WLP) Checks for this Skill.",
+          "tags": ["DEX", "ip", "magic-defense", "rogue", "WLP"]
+        },
+        {
+          "name": "Barrage",
+          "class": "Sharpshooter",
+          "max-sl": 1,
+          "description": "When you perform a ranged attack, you may spend 10 Mind Points to choose one option: the attack gains multi (2); or you increase the attack’s multi property by one, up to a maximum of multi (3).",
+          "tags": ["attack", "mp", "multi", "ranged", "sharpshooter"]
+        },
+        {
+          "name": "Crossfire",
+          "class": "Sharpshooter",
+          "max-sl": 1,
+          "description": "After a creature you can see performs a ranged attack, you may spend an amount of Mind Points equal to (5 + the Result of their Accuracy Check) to have the attack automatically miss all targets. You can only use this Skill if you have a ranged weapon equipped, and it has no effect if the Accuracy Check was a critical success.",
+          "tags": ["attack", "critical", "equipment", "mp", "ranged", "sharpshooter"]
+        },
+        {
+          "name": "Hawkeye",
+          "class": "Sharpshooter",
+          "max-sl": 5,
+          "description": "When you perform the Guard action, if you choose not to provide cover to another creature, you may choose one option: the next ranged attack you perform before the end of the current scene will deal (SL × 3) extra damage; or you may perform a free attack with a bow or firearm you have equipped, treating your High Roll as 0 when calculating damage dealt by this attack.",
+          "tags": ["attack", "bow", "damage", "equipment", "firearm", "guard", "ranged", "sharpshooter"]
+        },
+        {
+          "name": "Ranged Weapon Mastery",
+          "class": "Sharpshooter",
+          "max-sl": 4,
+          "description": "You gain a bonus equal to (SL) to all Accuracy Checks with ranged weapons.",
+          "tags": ["ranged", "sharpshooter"]
+        },
+        {
+          "name": "Warning Shot",
+          "class": "Sharpshooter",
+          "max-sl": 4,
+          "description": "When you hit one or more targets with a ranged attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict shaken on each target hit by the attack; or inflict slow on each target hit by the attack; or each target hit by the attack loses (SL × 10) Mind Points. Describe your maneuver!",
+          "tags": ["attack", "damage", "mp", "ranged", "sharpshooter", "status"]
+        },
+        {
+          "name": "Healing Power",
+          "class": "Spiritist",
+          "max-sl": 2,
+          "description": "When you cast a spell that targets one or more allies, if you have an arcane weapon equipped, you may have each of those allies recover an amount of Hit Points equal to (3 + (SL, multiplied by the number of Bonds you have)). This healing is separate from any healing caused by the effects of the spell.",
+          "tags": ["arcane", "bond", "equipment", "hp", "spell", "spiritist"]
+        },
+        {
+          "name": "Ritual Spiritism",
+          "class": "Spiritist",
+          "max-sl": 1,
+          "description": "You may perform Rituals whose effects fall within the Spiritism discipline. Spiritism Rituals use (INS + WLP) for the Magic Check.",
+          "tags": ["INS", "spell", "spiritist", "WLP"]
+        },
+        {
+          "name": "Spiritual Magic",
+          "class": "Spiritist",
+          "max-sl": 10,
+          "description": "Each time you acquire this Skill, learn one Spiritist spell (see next two pages). Offensive (OO) Spiritist spells use (INS + WLP) for the Magic Check.",
+          "tags": ["INS", "spell", "spiritist", "WLP"]
+        },
+        {
+          "name": "Support Magic",
+          "class": "Spiritist",
+          "max-sl": 1,
+          "description": "When you cast a spell that targets one or more allies, if you have an arcane weapon equipped, you may choose one of those allies you have a Bond towards. If you do, that ally gains a bonus to the next Check they perform during the current scene; this bonus is equal to the strength of your Bond towards them.",
+          "tags": ["arcane", "bond", "equipment", "spell", "spiritist"]
+        },
+        {
+          "name": "Vismagus",
+          "class": "Spiritist",
+          "max-sl": 1,
+          "description": "When you cast a spell, if you don’t have enough Mind Points to pay for its total cost, you may choose to spend an amount of Hit Points equal to (10 + the spell’s total MP cost) instead. If a spell cast this way would cause you to recover Hit Points, you instead recover no Hit Points (the spell functions normally on any other target).",
+          "tags": ["hp", "mp", "spell", "spiritist"]
+        },
+        {
+          "name": "Emergency Item",
+          "class": "Tinkerer",
+          "max-sl": 1,
+          "description": "Once per conflict scene, if you are in Crisis, you may perform an additional action on your turn. This action must be the Inventory action.",
+          "tags": ["crisis", "tinkerer"]
+        },
+        {
+          "name": "Gadgets",
+          "class": "Tinkerer",
+          "max-sl": 5,
+          "description": "When you first acquire this Skill, choose a gadget type: alchemy, infusions or magitech (see next four pages). You gain its basic benefits. Whenever you take this Skill again, choose one option: you gain the basic benefits of a new gadget type; or you gain the advanced benefits of a gadget type whose basic benefits you already obtained; or you gain the superior benefits of a gadget type whose advanced benefits you already obtained.",
+          "tags": ["tinkerer"]
+        },
+        {
+          "name": "Potion Rain",
+          "class": "Tinkerer",
+          "max-sl": 2,
+          "description": "When you create a potion that restores a single creature’s HP and/or MP, you may have it affect up to (SL) additional creatures. If you do, the potion only restores half the normal amount of HP and MP to each creature.",
+          "tags": ["hp", "mp", "tinkerer"]
+        },
+        {
+          "name": "Secret Formula",
+          "class": "Tinkerer",
+          "max-sl": 5,
+          "description": "Magispheres and potions you create that restore HP and/or MP restore (SL × 5) additional HP and/or MP, respectively. Elemental shards, magispheres, and potions you create deal (SL) extra damage.",
+          "tags": ["damage", "hp", "mp", "tinkerer"]
+        },
+        {
+          "name": "Visionary",
+          "class": "Tinkerer",
+          "max-sl": 5,
+          "description": "When you work on a Project, up to (SL × 100) zenit of material costs are automatically paid; additionally, you generate an additional (SL) progress every day. If multiple characters with this Skill work on the same Project, the effects will be cumulative.",
+          "tags": ["tinkerer"]
+        },
+        {
+          "name": "Faithful Companion",
+          "class": "Wayfarer",
+          "max-sl": 5,
+          "description": "Together with your group, create a level 5 beast, construct, elemental or plant NPC (page 302) that becomes your companion: this creature has no initiative score and does not level up, can have a maximum of two basic attacks, gains a bonus equal to (SL) to Accuracy Checks and Magic Checks, and their maximum Hit Points are equal to ((SL, multiplied by the companion’s base Might size) + half your level). Your companion doesn’t get an independent turn during conflicts, but you can use an action to have them perform an action (once per turn). If your companion is affected by any turn-related effects (page 77), these are based on your turn. Your companion joins and leaves scenes when you do, and gains your same benefits for rests. If reduced to 0 HP, your companion flees the scene and rejoins you at the start of the next scene in which you are present, with current HP equal to their Crisis score.",
+          "tags": ["companion", "crisis", "hp", "wayfarer"]
+        },
+        {
+          "name": "Resourceful",
+          "class": "Wayfarer",
+          "max-sl": 4,
+          "description": "You regain (SL) Inventory Points after each travel roll (page 106).",
+          "tags": ["ip", "travel", "wayfarer"]
+        },
+        {
+          "name": "Tavern Talk",
+          "class": "Wayfarer",
+          "max-sl": 3,
+          "description": "When you rest inside an inn or tavern, you may ask the Game Master up to (SL) questions about your surroundings and the people who live here; the Game Master will answer truthfully and you describe how you gathered the information.",
+          "tags": ["wayfarer"]
+        },
+        {
+          "name": "Treasure Hunter",
+          "class": "Wayfarer",
+          "max-sl": 2,
+          "description": "When your group journeys on the world map, you will make a discovery on a roll of (SL + 1) or lower on the travel roll (instead of only on a 1).",
+          "tags": ["travel", "wayfarer"]
+        },
+        {
+          "name": "Well-Traveled",
+          "class": "Wayfarer",
+          "max-sl": 1,
+          "description": "You reduce the die rolled for your travel rolls by one size (to a minimum of d6). If multiple characters have this Skill, the effects are not cumulative.",
+          "tags": ["travel", "wayfarer"]
+        },
+        {
+          "name": "Bladestorm",
+          "class": "Weaponmaster",
+          "max-sl": 1,
+          "description": "When you perform a melee attack, you may spend 10 Mind Points to choose one option: the attack gains multi (2); or you increase the attack’s multi property by one, up to a maximum of multi (3).",
+          "tags": ["attack", "melee", "mp", "multi", "weaponmaster"]
+        },
+        {
+          "name": "Bone Crusher",
+          "class": "Weaponmaster",
+          "max-sl": 4,
+          "description": "When you hit one or more targets with a melee attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict dazed on each target hit by the attack; or inflict weak on each target hit by the attack; or each target hit by the attack loses (SL × 10) Mind Points. Describe your maneuver!",
+          "tags": ["attack", "damage", "melee", "mp", "status", "weaponmaster"]
+        },
+        {
+          "name": "Breach",
+          "class": "Weaponmaster",
+          "max-sl": 3,
+          "description": "You may use an action and spend 5 Mind Points to perform a free attack with a melee weapon you have equipped. This attack must target a single creature. If the attack is successful, it deals no damage and you choose one option: you destroy one shield equipped by the target; or you destroy the target’s equipped armor; or all sources deal (SL × 2) extra damage to the target until the start of your next turn.",
+          "tags": ["attack", "damage", "equipment", "melee", "mp", "weaponmaster"]
+        },
+        {
+          "name": "Counterattack",
+          "class": "Weaponmaster",
+          "max-sl": 1,
+          "description": "After an enemy hits or misses you with a melee attack, if the Result of their Accuracy Check was an even number, you may perform a free attack against that enemy (after their attack has been fully resolved). This attack must be a melee attack and must have that enemy as its only target; treat your High Roll as 0 when calculating damage dealt by this attack.",
+          "tags": ["attack", "damage", "melee", "weaponmaster"]
+        },
+        {
+          "name": "Melee Weapon Mastery",
+          "class": "Weaponmaster",
+          "max-sl": 4,
+          "description": "You gain a bonus equal to (SL) to all Accuracy Checks with melee weapons.",
+          "tags": ["melee", "weaponmaster"]
+        }
+      ]
+    },
+    {
+      "group-tags": ["high-fantasy"],
+      "class_skills": [
+        {
+          "name": "Magichant",
+          "class": "Chanter",
+          "max-sl": 10,
+          "description": "On your turn during a conflict scene, you may use an action and spend a variable amount of MP to weave voice and music into a magical effect known as a verse.\nYou may only sing one verse per turn, even if you have access to multiple actions; the full rules for verses can be found starting on the next page.\nWhen you first acquire this Skill, you learn all three volumes, plus one key and one tone (see next page). Whenever you acquire this Skill again, you may learn one key or one tone (your choice).",
+          "tags": ["chanter", "mp", "verse"]
+        },
+        {
+          "name": "Resonance",
+          "class": "Chanter",
+          "max-sl": 3,
+          "description": "After you affect one or more enemies with a verse, if you have an arcane weapon equipped, you may choose one option: until the start of your next turn, your allies deal (SL) extra damage to those enemies; or until the start of your next turn, you recover (SL) Mind Points every time one of those enemies suffers damage (if the same source deals damage to two or more of those enemies at the same time, you recover (SL) MP for each damaged enemy).",
+          "tags": ["arcane", "chanter", "damage", "equipment", "mp", "verse"]
+        },
+        {
+          "name": "Siren’s Song",
+          "class": "Chanter",
+          "max-sl": 1,
+          "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create hearing-based illusions.",
+          "tags": ["chanter", "spell"]
+        },
+        {
+          "name": "Sound Barrier",
+          "class": "Chanter",
+          "max-sl": 5,
+          "description": "After you sing a verse with medium or high volume, all physical damage you suffer until the start of your next turn is reduced by (SL) (applied before Affinities).",
+          "tags": ["chanter", "damage", "physical", "verse"]
+        },
+        {
+          "name": "Vibrato",
+          "class": "Chanter",
+          "max-sl": 1,
+          "description": "After you sing a verse with low or medium volume, you may perform a free attack with a weapon you have equipped; treat your High Roll (HR) as 0 when calculating damage dealt by this attack.",
+          "tags": ["attack", "chanter", "damage", "equipment", "verse"]
+        },
+        {
+          "name": "Bishop’s Edict",
+          "class": "Commander",
+          "max-sl": 5,
+          "description": "During a conflict, you may use an action and spend 10 Mind Points to choose one option: all MP costs are doubled; or all sources of damage deal (SL × 3) extra damage. The chosen effect lasts until the start of your next turn.",
+          "tags": ["commander", "damage", "mp"]
+        },
+        {
+          "name": "Charging Cavalry",
+          "class": "Commander",
+          "max-sl": 5,
+          "description": "During a conflict, you may use an action and spend 10 MP to choose one ally that can hear you. That ally may perform a free attack with a weapon they have equipped (or with a basic attack if they are an NPC). They gain a bonus equal to (SL) to the Accuracy Check, but treat their High Roll as 0 when calculating damage.",
+          "tags": ["attack", "commander", "damage", "equipment", "mp"]
+        },
+        {
+          "name": "Crushing Chariot",
+          "class": "Commander",
+          "max-sl": 1,
+          "description": "After you use Bishop’s Edict, Charging Cavalry or King’s Castle, you may choose another Player Character that can hear you who has yet to take a turn during this round. That character may take their turn immediately after yours during this round.",
+          "tags": ["commander"]
+        },
+        {
+          "name": "King’s Castle",
+          "class": "Commander",
+          "max-sl": 4,
+          "description": "During a conflict, you may use an action and spend 10 Mind Points to choose one option: no creature can recover Hit Points or Mind Points; or all effects that restore Mind Points restore (SL × 5) additional Mind Points. The chosen effect lasts until the start of your next turn.",
+          "tags": ["commander", "hp", "mp"]
+        },
+        {
+          "name": "Queen’s Gambit",
+          "class": "Commander",
+          "max-sl": 6,
+          "description": "During a conflict, you may use an action to perform a free attack with a weapon you have equipped, treating your High Roll as 0 when calculating damage. After this attack has been resolved, you may choose one option: one ally who is able to hear you recovers (5 + (SL × 5)) Hit Points; or you use a Skill you acquired among Bishop’s Edict, Charging Cavalry or King’s Castle for free (spending the appropriate MP).",
+          "tags": ["attack", "commander", "damage", "equipment", "hp", "mp"]
+        },
+        {
+          "name": "Dance",
+          "class": "Dancer",
+          "max-sl": 10,
+          "description": "Each time you take this Skill, you learn a dance (see next page).\nOn your turn during a conflict scene, if you have no martial armor equipped, you may spend 10 Mind Points to perform a dance you have learned. This doesn’t require an action, but it can only be done once per turn, while no other effect is being resolved.\nIf you already performed a different dance during your previous turn in this scene, the cost of the new dance is reduced to 5 Mind Points.\nSome dances are instantaneous and resolve immediately, while others have effects that last until the start of your next turn.",
+          "tags": ["dance", "dancer", "mp"]
+        },
+        {
+          "name": "Follow My Lead",
+          "class": "Dancer",
+          "max-sl": 1,
+          "description": "When you perform a dance with a duration of “Until the start of your next turn”, you may spend 10 Mind Points. If you do, choose one ally you can see towards whom you have a Bond of affection: apply the benefits of the dance to that ally as well as yourself (the benefits still last until the start of your next turn).",
+          "tags": ["bond", "dance", "dancer", "mp"]
+        },
+        {
+          "name": "Frenetic Footwork",
+          "class": "Dancer",
+          "max-sl": 2,
+          "description": "After you perform a dance with a duration of “Until the start of your next turn”, you gain a bonus equal to (SL × 2) to all Opposed Checks that rely on acrobatics, coordination or speed until the start of your next turn.",
+          "tags": ["dance", "dancer"]
+        },
+        {
+          "name": "Quick-Change",
+          "class": "Dancer",
+          "max-sl": 1,
+          "description": "After you perform a dance, you may perform the Equipment action for free.",
+          "tags": ["dance", "dancer", "equipment"]
+        },
+        {
+          "name": "Wardancer",
+          "class": "Dancer",
+          "max-sl": 5,
+          "description": "After you perform a dance, your attacks with brawling, dagger, flail, sword, and thrown weapons deal (SL) extra damage until the start of your next turn. If you have an arcane weapon equipped, offensive spells you cast also deal (SL) extra damage until the start of your next turn.",
+          "tags": ["arcane", "brawling", "dagger", "dance", "dancer", "damage", "equipment", "flail", "spell", "sword", "thrown"]
+        },
+        {
+          "name": "Magic Symbols",
+          "class": "Symbolist",
+          "max-sl": 3,
+          "description": "If an ally bears one of your symbols, that ally may perform the Spell action and destroy that symbol to cast a single spell among those you know, as long as it has a total Mind Point cost equal to or lower than (SL × 10) (that ally must still pay the MP cost).",
+          "tags": ["mp", "spell", "symbol", "symbolist"]
+        },
+        {
+          "name": "Mirage",
+          "class": "Symbolist",
+          "max-sl": 1,
+          "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create sight-based illusions.",
+          "tags": ["spell", "symbolist"]
+        },
+        {
+          "name": "Personal Touch",
+          "class": "Symbolist",
+          "max-sl": 5,
+          "description": "When a creature you can see that is bearing one of your symbols suffers damage or recovers Hit Points and/or Mind Points, you may have that creature suffer (SL) extra damage or recover (SL) additional Hit Points and/or Mind Points, respectively.",
+          "tags": ["damage", "hp", "mp", "symbol", "symbolist"]
+        },
+        {
+          "name": "Symbolic Connection",
+          "class": "Symbolist",
+          "max-sl": 1,
+          "description": "You always know the exact direction in which to find any creature bearing one of your symbols, as long as that creature is within 2 travel days of your position.",
+          "tags": ["symbol", "symbolist", "travel"]
+        },
+        {
+          "name": "Symbolism",
+          "class": "Symbolist",
+          "max-sl": 5,
+          "description": "Each time you acquire this Skill, you learn two symbols (see next page).\nYou may have up to (SL + 1) symbols active at the same time; if you create more while at your limit, you must first choose and destroy some of your previous symbols.\nYou may perform the Inventory action and spend 2 Inventory Points to create a symbol you have learned and choose one option: apply that symbol to yourself; or apply that symbol to an ally you can see; or perform a free attack with a weapon you have equipped. This attack deals no damage, but you apply a copy of the chosen symbol to each enemy hit by the attack (each copy counts as a separate symbol towards your limit or (SL + 1) active symbols).",
+          "tags": ["attack", "damage", "equipment", "ip", "symbol", "symbolist"]
+        }
+      ]
+    },
+    {
+      "group-tags": ["natural-fantasy"],
+      "class_skills": [
+        {
+          "name": "Battle Gardening",
+          "class": "Floralist",
+          "max-sl": 3,
+          "description": "After you plant a magiseed through the Chloromancy Skill (not when using Graft), you may choose one option: perform a free attack with an equipped weapon; or perform the Spell action for free, casting a spell with a total Mind Point cost equal to or lower than (5 + (SL × 5)) (you must still pay its MP cost). Treat the High Roll (HR) of your Accuracy Check or Magic Check as being equal to 0 when determining damage dealt by this attack or spell.",
+          "tags": ["attack", "damage", "equipment", "floralist", "garden", "mp", "skill", "spell"]
+        },
+        {
+          "name": "Chloromancy",
+          "class": "Floralist",
+          "max-sl": 10,
+          "description": "Each time you acquire this Skill, you discover a new type of magiseed from the list found in the next pages.\nDuring a conflict, if there are no magiseeds in your garden, you may use an action and spend 20 Mind Points to plant a magiseed of a type you have discovered. The rules for the garden and for magiseed growth can be found in the next pages.",
+          "tags": ["floralist", "garden", "mp", "skill"]
+        },
+        {
+          "name": "Graft",
+          "class": "Floralist",
+          "max-sl": 1,
+          "description": "As long as there is a magiseed in your garden and 1 or more sections of your Growth Clock are filled, you may use an action to remove that magiseed from your garden: if you do, plant a different magiseed among those you have discovered (keep the current filled sections of your Growth Clock unchanged).",
+          "tags": ["clock", "floralist", "garden"]
+        },
+        {
+          "name": "Tree of Life",
+          "class": "Floralist",
+          "max-sl": 5,
+          "description": "When a magiseed is removed from your garden, you may choose one creature you can see: if that creature is in Crisis, they recover (5 + (SL × 5)) Hit Points.",
+          "tags": ["crisis", "floralist", "garden", "hp"]
+        },
+        {
+          "name": "Verdant Sway",
+          "class": "Floralist",
+          "max-sl": 1,
+          "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create, animate, and/or control vegetation, pollen, spores, and toxins (but you cannot create nor control plant-Species NPCs this way).",
+          "tags": ["floralist"]
+        },
+        {
+          "name": "Cooking",
+          "class": "Gourmet",
+          "max-sl": 5,
+          "description": "When you rest inside a settlement, you gain (SL) ingredients (see next page).\nYou may use an action and combine 2 or 3 ingredients to prepare a delicacy (see next page) and choose one option: you apply its effects to yourself or an ally you can see; or you perform a free attack with a weapon you have equipped. This attack deals no damage, but you apply the delicacy’s effects to each enemy hit by the attack.\nYou may carry up to 10 + (SL × 5) ingredients, and they will never spoil until you use them; if you take this Skill during character creation, you begin play with ten ingredients with random tastes.",
+          "tags": ["attack", "damage", "equipment", "gourmet", "ingredient"]
+        },
+        {
+          "name": "Knife and Fork",
+          "class": "Gourmet",
+          "max-sl": 1,
+          "description": "When you perform the free attack granted by the Cooking Skill, if you combined no more than 2 ingredients, you may have the attack deal damage as normal. If you do, you treat your High Roll (HR) as 0 when calculating damage dealt by this attack.",
+          "tags": ["attack", "damage", "gourmet", "ingredient", "skill"]
+        },
+        {
+          "name": "Made with Love",
+          "class": "Gourmet",
+          "max-sl": 3,
+          "description": "When you use the Cooking Skill and choose to apply the effects of the delicacy to yourself or an ally you can see, you may spend up to (SL × 10) MP. For every 10 MP you spend this way, apply the delicacy’s effects to an additional ally you can see.",
+          "tags": ["gourmet", "mp", "skill"]
+        },
+        {
+          "name": "Salt and Pepper",
+          "class": "Gourmet",
+          "max-sl": 1,
+          "description": "When you prepare a delicacy, you may spend 2 Inventory Points: if you do, change the taste of one ingredient to a different taste of your choice.",
+          "tags": ["gourmet", "ingredient", "ip"]
+        },
+        {
+          "name": "Traveling Cook",
+          "class": "Gourmet",
+          "max-sl": 3,
+          "description": "After each travel roll, if you acquired the Cooking Skill, you gain (SL × 2) ingredients.",
+          "tags": ["gourmet", "ingredient", "skill", "travel"]
+        },
+        {
+          "name": "Elemental Harmony",
+          "class": "Invoker",
+          "max-sl": 2,
+          "description": "You may always communicate with creatures of the elemental Species.\nWhen you restore a creature’s Hit Points with an invocation or spell, if an elemental is present on the scene, the restored amount is increased by (SL × 5).",
+          "tags": ["hp", "invocation", "invoker", "spell"]
+        },
+        {
+          "name": "Invocation",
+          "class": "Invoker",
+          "max-sl": 3,
+          "description": "You may use an action and spend 5 Mind Points to perform an invocation, drawing energy from one of the wellsprings present on the scene (see next page). Your (SL) in this Skill determines which invocations you have access to.",
+          "tags": ["invocation", "invoker", "mp", "skill"]
+        },
+        {
+          "name": "Linked Invocation",
+          "class": "Invoker",
+          "max-sl": 3,
+          "description": "When you perform an invocation, you may spend up to (SL × 10) additional Mind Points. For every 10 Mind Points you spend this way, the invocation may target an additional creature you can see.",
+          "tags": ["invocation", "invoker", "mp"]
+        },
+        {
+          "name": "Ripples",
+          "class": "Invoker",
+          "max-sl": 5,
+          "description": "After an enemy you can see loses Hit Points due to damage dealt by one of your allies, if that damage was increased by one or more of your “hex” invocations, you may perform a free attack with a weapon you have equipped. This attack may only target that enemy, and receives a bonus equal to (SL) to its Accuracy Check; if it is successful, all its damage becomes of the same type dealt by your ally, and all “hex” invocations present on its target end immediately after the attack has been resolved.\nIf two or more enemies trigger this Skill at the same time, you can perform a free attack against each of them, in whatever order you prefer.",
+          "tags": ["attack", "damage", "equipment", "hp", "invocation", "invoker", "skill"]
+        },
+        {
+          "name": "Wellspring Expansion",
+          "class": "Invoker",
+          "max-sl": 5,
+          "description": "As long as you have a weapon belonging to the arcane, bow, brawling, flail, sword, or thrown Category equipped, your “blast” invocations deal (SL) extra damage, and the extra damage granted by your “hex” invocations is increased by (SL).",
+          "tags": ["arcane", "bow", "brawling", "damage", "flail", "invocation", "invoker", "sword", "thrown"]
+        },
+        {
+          "name": "Expiration Date",
+          "class": "Merchant",
+          "max-sl": 3,
+          "description": "When a potion or delicacy (see page 151) you created that does not deal damage causes one or more creatures to recover Hit Points, you may instead have it deal poison damage equal to (half your level + (SL × 10)) to each of those creatures. This damage’s type cannot change, and it is halved if you are dealing damage to two or more creatures.",
+          "tags": ["damage", "hp", "merchant", "poison"]
+        },
+        {
+          "name": "I've Heard of It!",
+          "class": "Merchant",
+          "max-sl": 3,
+          "description": "After you or an ally who is able to hear and understand you roll dice for a Check to examine a creature, item, or location, you may spend 1 Trade Point to grant a bonus equal to (SL × 2) to the Result of that Check.",
+          "tags": ["merchant", "trade-point"]
+        },
+        {
+          "name": "Private Stock",
+          "class": "Merchant",
+          "max-sl": 3,
+          "description": "When you or another Player Character spend (SL + 2) or fewer Inventory Points, you may spend 1 Trade Point to ignore that cost.",
+          "tags": ["ip", "merchant", "trade-point"]
+        },
+        {
+          "name": "Real Treasure",
+          "class": "Merchant",
+          "max-sl": 3,
+          "description": "Once per session, when you help an NPC or community defeat greed and corruption, improve their quality of life, or coexist with other creatures, if you have acquired the Winds of Trade Skill, you gain (SL + 1) Trade Points.",
+          "tags": ["merchant", "skill", "trade-point"]
+        },
+        {
+          "name": "Winds of Trade",
+          "class": "Merchant",
+          "max-sl": 3,
+          "description": "After you rest in an area where commerce is possible, you gain (SL + 1) Trade Points.\nYou may never have more than (SL + 3) Trade Points; if you acquire this Skill during character creation, you begin play with 2 Trade Points.\nDuring a non-conflict scene, you may spend 2 Trade Points to choose one option: you create a material or rare item approved by the Game Master whose value in zenit is equal to or lower than (your level, multiplied by 30); or you create an NPC that lives nearby and explain their occupation as well as how you met them, then the Game Master tells you what they require in exchange for their services.",
+          "tags": ["merchant", "skill", "trade-point"]
+        }
+      ]
+    },
+    {
+      "group-tags": ["techno-fantasy"],
+      "class_skills": [
+        {
+          "name": "Cognitive Focus",
+          "class": "Esper",
+          "max-sl": 5,
+          "description": "At the start of your turn during a conflict, you may choose one ally who is able to hear you or one enemy you can see that is suffering from dazed, enraged, and/or shaken. Until the start of your next turn, the chosen creature becomes your focus.\nYou gain a bonus equal to (SL) to Checks you perform to examine your focus, as well as to your Accuracy Checks and Magic Checks for attacks and offensive spells (O) that include your focus among the targets. When you cause your focus to recover Hit Points and/or Mind Points, they recover (SL × 2) additional HP and/or MP, respectively.",
+          "tags": ["attack", "esper", "hp", "mp", "spell", "status"]
+        },
+        {
+          "name": "Hypercognition",
+          "class": "Esper",
+          "max-sl": 5,
+          "description": "The Mind Point cost of your spells and verses (High Fantasy Atlas, page 138) that include your focus among their targets is reduced by (SL), or by (SL × 2) if your focus is the only target (to a minimum cost of 0 Mind Points).",
+          "tags": ["esper", "mp", "spell", "verse"]
+        },
+        {
+          "name": "Navigator",
+          "class": "Esper",
+          "max-sl": 1,
+          "description": "You can communicate telepathically with any conscious ally within 1 travel day of you; you are able to hear each other for the sake of Skills and effects.\nYou gain the ability to perform Rituals of the Ritualism discipline. Additionally, you may use Ritualism to transport creatures in and out of the soul network, and to gain information and track entities while inside the soul network.",
+          "tags": ["esper", "skill", "travel"]
+        },
+        {
+          "name": "Psychic Gifts",
+          "class": "Esper",
+          "max-sl": 5,
+          "description": "Each time you take this Skill, you gain a gift. The rules for gifts and for the Brainwave Clock can be found on the next page.",
+          "tags": ["clock", "esper", "gift", "skill"]
+        },
+        {
+          "name": "Psychokinesis",
+          "class": "Esper",
+          "max-sl": 1,
+          "description": "When you perform an Accuracy Check, you may replace one of the Attribute dice with Willpower (such as (DEX + WLP) for a shortbow). Additionally, your melee attacks with weapons belonging to the arcane or sword Categories may target flying creatures.",
+          "tags": ["arcane", "attack", "esper", "melee", "sword", "WLP"]
+        },
+        {
+          "name": "Akromorphosis",
+          "class": "Mutant",
+          "max-sl": 3,
+          "description": "Your unarmed strikes deal (6 + (SL × 2)) extra damage, and you gain a bonus equal to (SL) to your Accuracy Checks with them.\nAt the start of your turn during a conflict, you may choose a weapon Category other than brawling. If you do, your unarmed strikes now belong to the chosen Category. If you choose bow, firearm or thrown, they become ranged weapons instead of melee. If you choose dagger or sword, they cannot be used with Triple Slash (High Fantasy Atlas, page 161). These changes last until the start of your next turn.",
+          "tags": ["bow", "brawling", "dagger", "damage", "firearm", "melee", "mutant", "ranged", "sword", "thrown"]
+        },
+        {
+          "name": "Biophagy",
+          "class": "Mutant",
+          "max-sl": 4,
+          "description": "After one of your attacks or offensive spells (O) causes one or more enemies to lose Hit Points, if you are in Crisis, you may recover (SL × 5) Hit Points.",
+          "tags": ["attack", "crisis", "hp", "mutant", "spell"]
+        },
+        {
+          "name": "Ecdysis",
+          "class": "Mutant",
+          "max-sl": 1,
+          "description": "After you lose Hit Points due to damage, if that damage had a type other than physical, you may spend 10 Hit Points to gain Resistance to that damage type until you use this Skill again.",
+          "tags": ["damage", "hp", "mutant", "physical", "resistance"]
+        },
+        {
+          "name": "Genoclepsis",
+          "class": "Mutant",
+          "max-sl": 2,
+          "description": "When you deal damage to one or more NPCs, you learn their Species and the GM chooses (SL) therioforms appropriate to those NPCs (see next page): if you have acquired the Theriomorphosis Skill, you may immediately pay its HP cost and use it to manifest those therioforms (even if they are not among those you have learned).",
+          "tags": ["damage", "hp", "mutant", "skill", "therioform"]
+        },
+        {
+          "name": "Theriomorphosis",
+          "class": "Mutant",
+          "max-sl": 6,
+          "description": "Each time you acquire this Skill, you learn a therioform (see next page).\nYou may use an action and spend one third of your current Hit Points (rounded down) to manifest the effects of up to two therioforms from those you have learned. The details of this transformation are explained on the next page.",
+          "tags": ["hp", "mutant", "skill", "therioform"]
+        },
+        {
+          "name": "Compression Tech",
+          "class": "Pilot",
+          "max-sl": 1,
+          "description": "As long as there is no one aboard your personal vehicle, you may have it safely disappear from the game world at any time. What magic or technology allows it?\nIf your personal vehicle is not present in the game world and you are in a space big enough to contain it, you may perform the Inventory action and spend 2 Inventory Points to have the vehicle appear near you, and enter it for free.",
+          "tags": ["ip", "pilot", "vehicle"]
+        },
+        {
+          "name": "Flexible Configuration",
+          "class": "Pilot",
+          "max-sl": 4,
+          "description": "When you perform the Equipment or Guard action while driving your personal vehicle, you may choose up to (SL) of its enabled modules and disable them. If you do, choose up to (SL) among its disabled modules and enable them.",
+          "tags": ["equipment", "guard", "module", "pilot", "vehicle"]
+        },
+        {
+          "name": "Heart in the Engine",
+          "class": "Pilot",
+          "max-sl": 3,
+          "description": "At the start of your turn during a conflict, if you are driving your personal vehicle, you may spend 10 Mind Points. If you do, choose one option: the next time you deal damage during this turn, deal (SL × 2) extra damage; or, the next time you suffer damage before the start of your next turn, that damage is reduced by (SL × 2) (applied before damage Affinities); or, you recover from either slow or weak (your choice).",
+          "tags": ["damage", "mp", "pilot", "status", "vehicle"]
+        },
+        {
+          "name": "Personal Vehicle",
+          "class": "Pilot",
+          "max-sl": 5,
+          "description": "When you acquire this Skill, you gain a personal vehicle with a frame of your choice and three different modules of your choice (see next page).\nWhenever you acquire this Skill again, you acquire two additional modules of your choice.",
+          "tags": ["module", "pilot", "skill", "vehicle"]
+        },
+        {
+          "name": "Strong Grip",
+          "class": "Pilot",
+          "max-sl": 1,
+          "description": "When you perform an Accuracy Check with a weapon module, you may replace one of the Attributes with Might (such as (MIG + WLP) for an arcane module).",
+          "tags": ["arcane", "MIG", "module", "pilot"]
+        }
+      ]
+    }
+  ]
+}

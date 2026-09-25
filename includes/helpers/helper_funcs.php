@@ -1,50 +1,44 @@
 <?php
 
-function get_stylesheets($sections): string {
-    $sheets = "";
-    foreach($sections as $key => $label):
-        if(file_exists(CSS_PATH . "/{$key}.css")):
-            $style_url = CSS_URL . "/{$key}.css";
-            $sheets .= "<link rel='stylesheet' href='{$style_url}'>\n";
-        endif;
-    endforeach;
-    return $sheets;
-}
-
-function get_nav_tabs($sections): string {
+function get_nav_tabs(array $sections): string {
     $tabs = "";
     foreach($sections as $key => $label):
-        if(is_dir(DATA_PATH . "/{$key}") && count(scandir(DATA_PATH . "/{$key}")) > 2):
-            $html_key = str_replace("_", "-", $key);
-            $tabs .= "<button type='button' class='tab' id='tab-{$html_key}' aria-selected='false' aria-controls='{$html_key}-container'> {$label} </button>\n"; 
+        $file_key = str_replace("-", "_", $key);
+        if(file_exists(DATA_PATH . "/{$file_key}.json")):
+            $tabs .= "<button type='button' class='tab' id='tab-{$key}' aria-selected='false' aria-controls='{$key}-container'> {$label} </button>\n";
         endif;
     endforeach;
     return $tabs;
 }
 
-function get_content($sections, $columns): string {
+function get_content(array $sections): string {
     $content = "";
     foreach($sections as $key => $label):
-        if(is_dir(DATA_PATH . "/{$key}") && count(scandir(DATA_PATH . "/{$key}")) > 2):
-            $html_key = str_replace("_", "-", $key);
-            $content .= "<div id='{$html_key}-container' class='{$html_key}-container'>";
-            $content .= get_column_headers($key, $html_key, $columns);
-            $content .= get_row_data($key, $html_key, $columns);
-            $content .= "</div>";
-        endif;
+        $file_key = str_replace("-", "_", $key);
+        $filepath = DATA_PATH . "/{$file_key}.json";
+        if (!file_exists($filepath)) continue;
+
+        $data = json_decode(file_get_contents($filepath), true) ?? [];
+        $cols = $data['schema']['columns'] ?? [];
+        $grid_cols = $data['schema']['grid-template-columns'] ?? "";
+
+        $content .= "<div id='{$key}-container' class='{$key}-container'>";
+        $content .= get_column_headers($key, $cols, $grid_cols);
+        $content .= get_row_data($data, $key, $cols, $grid_cols);
+        $content .= "</div>";
     endforeach;
     return $content;
 }
 
-function get_column_headers($key, $html_key, $columns): string {
+function get_column_headers(string $key, array $cols, string $grid_cols): string {
     ob_start();
     ?>
-        <div class="<?=$html_key ?>-list-header">
+        <div class="<?=$key ?>-list-header" <?=($grid_cols ? "style='grid-template-columns:{$grid_cols};'" : "") ?>>
             <div>
-                <button class="<?=$html_key ?>-multitoggle" type="button" data-key="<?=$html_key ?>" aria-expanded="false" aria-controls="article.<?=$html_key ?>">+</button>
+                <button class="<?=$key ?>-multitoggle" type="button" data-key="<?=$key ?>" aria-expanded="false" aria-controls="article.<?=$key ?>">+</button>
             </div>
-            <?php foreach($columns[$key] as $col): ?>
-                <div><?=$col['label'] ?></div>
+            <?php foreach($cols as $col): ?>
+                <div><?= htmlspecialchars($col['label']) ?></div>
             <?php endforeach; ?>
             <div></div>
         </div>
@@ -52,69 +46,86 @@ function get_column_headers($key, $html_key, $columns): string {
     return ob_get_clean();
 }
 
-function get_row_data($key, $html_key, $columns): string {
+function get_row_data(array $data, string $key, array $cols, string $grid_cols): string {
     ob_start();
-    $json_files = array_slice(scandir(DATA_PATH . "/{$key}"), 2);
-    foreach($json_files as $file):
-        if (pathinfo($file, PATHINFO_EXTENSION) === 'json'):
-            $json_data = file_get_contents(DATA_PATH . "/{$key}/{$file}");
-            $data = json_decode($json_data, true);
-            $source = $data['source'] ?? [];
-            $entries = $data[$html_key] ?? [];
-            foreach ($entries as $id => $entry):
-                $tags = "source-" . $source['name'] . ', ' . htmlspecialchars(implode(',', $entry['tags']));
-                $id = "{$html_key}-description-{$source['name']}-" . ($id + 1);
-            ?>
-            <article class="<?=$html_key ?>" data-tags="<?=$tags ?>">
-                <div class="<?=$html_key ?>-row">
-                    <div class="<?=$html_key ?>-expand">
-                        <button class="<?=$html_key ?>-toggle"
-                                type="button"
-                                aria-expanded="false"
-                                aria-controls="<?=$id ?>"> 
-                            ▶
-                        </button>
-                    </div>
-                    <?php foreach($columns[$key] as $col): ?>
-                        <div class=<?=$html_key . "-" . $col['class'] ?>>
-                            <?php
-                                if($col['class'] == "source"):
-                                    echo $source['label'];
-                                else:
-                                    echo get_cell_data($col['class'], $entry);
-                                endif;
-                            ?>
-                        </div>
-                    <?php endforeach; ?>
-                    <div class="<?=$html_key ?>-pin">
-                        <button class="<?=$html_key ?>-pin"
-                                type="button"
-                                aria-checked="false">
-                            🖈
-                        </button>
-                    </div>
-                </div>
-                <div class="<?=$html_key ?>-description-container hidden" id="<?=$id ?>">
-                    <div class="<?=$html_key ?>-description">
-                        <?=$entry['description'] ?>
-                    </div>
-                </div>
-            </article>
-            <?php 
-            endforeach;
-        endif;
-    endforeach;
+    
+    $universal_tags = $data['schema']['universal-tags'] ?? [];
+    $data_key = $data['schema']['key'];
+    $entry_counter = 0;
+
+    if (isset($data['groups']) && is_array($data['groups'])) {
+        foreach ($data['groups'] as $group) {
+            $group_tags = $group['group-tags'] ?? [];
+            $items = $group[$data_key] ?? $group[$key] ?? [];
+            foreach ($items as $entry) {
+                $entry_counter++;
+                $combined_tags = array_unique(array_merge($universal_tags, $group_tags, $entry['tags'] ?? []));
+                $tags_str = htmlspecialchars(implode(', ', $combined_tags));
+                $id = "{$key}-description-{$entry_counter}";
+                render_row_article($key, $id, $tags_str, $cols, $entry, $grid_cols);
+            }
+        }
+    } else {
+        $items = $data[$data_key] ?? $data[$key] ?? [];
+        foreach ($items as $entry) {
+            $entry_counter++;
+            $combined_tags = array_unique(array_merge($universal_tags, $entry['tags'] ?? []));
+            $tags_str = htmlspecialchars(implode(', ', $combined_tags));
+            $id = "{$key}-description-{$entry_counter}";
+            render_row_article($key, $id, $tags_str, $cols, $entry, $grid_cols);
+        }
+    }
     return ob_get_clean();
 }
 
-function get_cell_data($key, $entry): string {
-    $data = "";
-    if (isset($entry[$key])):
-        if(is_array($entry[$key])):
-            $data = implode(', ', $entry[$key]);
-        else:
-            $data = $entry[$key];
-        endif;
-    endif;
-    return $data;
+function render_row_article(string $key, string $id, string $tags_str, array $cols, array $entry, string $grid_cols): void {
+    ?>
+    <article class="<?= $key ?>" data-tags="<?= $tags_str ?>">
+        <div class="<?= $key ?>-row" <?=($grid_cols ? "style='grid-template-columns:{$grid_cols};'" : "") ?>>
+            <div class="<?= $key ?>-expand">
+                <button class="<?= $key ?>-toggle" type="button" aria-expanded="false" aria-controls="<?= $id ?>">▶</button>
+            </div>
+
+            <?php foreach ($cols as $col): 
+                $field_name = $col['field'] ?? $col['class'];
+                $cell_class = $col['class'] ?? $field_name;
+            ?>
+                <div class="<?= $key . "-" . $cell_class ?>">
+                    <?= get_cell_data($field_name, $entry) ?>
+                </div>
+            <?php endforeach; ?>
+
+            <div class="<?= $key ?>-pin">
+                <button class="<?= $key ?>-pin" type="button" aria-checked="false">🖈</button>
+            </div>
+        </div>
+
+        <div class="<?= $key ?>-description-container hidden" id="<?= $id ?>">
+            <div class="<?= $key ?>-description">
+                <?= $entry['description'] ?? '' ?>
+                
+                <?php if (!empty($entry['additional_requirements'])): ?>
+                    <p class="additional-requirements">
+                        <strong>Additional Requirements:</strong> <?= htmlspecialchars($entry['additional_requirements']) ?>
+                    </p>
+                <?php endif; ?>
+
+                <?php if (!empty($entry['spell'])): ?>
+                    <div class="heroic-spell-block">
+                        <h4>Spell: <?= htmlspecialchars($entry['spell']['name']) ?> (<?= $entry['spell']['mp'] ?> MP)</h4>
+                        <p><strong>Target:</strong> <?= htmlspecialchars($entry['spell']['target']) ?> | <strong>Duration:</strong> <?= htmlspecialchars($entry['spell']['duration']) ?></p>
+                        <p><?= $entry['spell']['description'] ?></p>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </article>
+    <?php
+}
+
+function get_cell_data(string $key, array $entry): string {
+    if (!isset($entry[$key])) return "";
+    $val = $entry[$key];
+    if (is_array($val)) return empty($val) ? "—" : htmlspecialchars(implode(', ', $val));
+    return htmlspecialchars((string)$val);
 }

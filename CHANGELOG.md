@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.0] - 2026-09-24
+
+### Internal
+- Refactored code to be completely data-driven. All information about content will come from the JSON data ingested. 
+
+### Removed
+- Many redundant files have been removed now that all information and generation is handled by the JSON data and helper functions.
+
+---
+
 ## [0.4.5] - 2026-09-24
 
 ### Internal

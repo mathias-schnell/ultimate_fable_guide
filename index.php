@@ -6,8 +6,7 @@
 
     $stylesheets = "<link rel='stylesheet' href='" . CSS_URL . "/reset.css'>\n
                     <link rel='stylesheet' href='" . CSS_URL . "/style.css'>\n
-                    <link rel='stylesheet' href='" . CSS_URL . "/content-general.css'>\n
-                    <link rel='stylesheet' href='" . CSS_URL . "/content-specific.css'>\n";
+                    <link rel='stylesheet' href='" . CSS_URL . "/content.css'>\n";
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +27,7 @@
         </header>
         <?php include_once(INCLUDES_PATH . "/layout/filter.php"); ?>
         <section class="content-container">
-            <?=get_content($sections, $columns); ?>
+            <?=get_content($sections); ?>
         </section>
     </main>
 </body>

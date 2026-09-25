@@ -1,80 +1,86 @@
 {
-  "source": {
-    "name": "techno_fantasy",
-    "label": "Techno Fantasy Atlas"
+  "schema": {
+    "key": "therioforms",
+    "title": "Therioforms",
+    "grid-template-columns": "0.25fr 1.5fr 4.5fr 0.25fr",
+    "universal-tags": ["mutant", "therioform", "techno-fantasy"],
+    "columns": [
+      { "label": "Name", "field": "name", "class": "name" },
+      { "label": "Suggestions", "field": "suggestions", "class": "suggestions" }
+    ]
   },
   "therioforms": [
     {
       "name": "Amphibia",
       "suggestions": "Frogs, salamanders, regenerating creatures, aquatic monsters.",
       "description": "You may breathe underwater and your eyes can see perfectly in dim light.<br><br>When you recover Hit Points, you recover 5 additional Hit Points and you may recover from a single status effect of your choice.",
-      "tags": ["class-mutant", "hp", "status", "water"]
+      "tags": ["hp", "status", "water"]
     },
     {
       "name": "Arpaktida",
       "suggestions": "Wolves, birds of prey, creatures with sharp hunting senses.",
       "description": "You treat your Insight as if it were one die size higher (to a maximum of d12).<br><br>When you deal damage to one or more creatures for the first time during your turn, if at least one of them is in Crisis, you deal 5 extra damage to each of those creatures.",
-      "tags": ["class-mutant", "INS", "damage", "crisis"]
+      "tags": ["crisis", "damage", "INS"]
     },
     {
       "name": "Dynamotheria",
       "suggestions": "Bears, dinosaurs, creatures of massive size and strength.",
       "description": "You treat your Might as if it were one die size higher (to a maximum of d12).<br><br>When you succeed on a Check to advance or turn back a Clock, if that Check includes Might, you may fill or erase 1 additional section of that Clock.",
-      "tags": ["class-mutant", "MIG", "clock"]
+      "tags": ["clock", "MIG"]
     },
     {
       "name": "Electrophora",
       "suggestions": "Electric creatures, lightning elementals, robots.",
       "description": "When you deal damage with an attack or spell, you may have all that damage become bolt. While your unarmed strikes deal bolt damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers slow.",
-      "tags": ["class-mutant", "bolt", "damage", "unarmed", "status", "hp"]
+      "tags": ["bolt", "damage", "hp", "status", "unarmed"]
     },
     {
       "name": "Neurophagoida",
       "suggestions": "Parasites, undead, creatures who feed on souls.",
       "description": "When you use the Biophagy Skill, you also recover an amount of Mind Points equal to (4 + (your Skill Level in Theriomorphosis)).",
-      "tags": ["class-mutant", "mp", "skill"]
+      "tags": ["mp", "skill"]
     },
     {
       "name": "Placophora",
       "suggestions": "Crustaceans, turtles, armored creatures and vehicles.",
       "description": "You may treat your Defense score as being equal to (13 + (half your Skill Level in Theriomorphosis)) (you may still use your normal scores if better).",
-      "tags": ["class-mutant", "defense"]
+      "tags": ["defense"]
     },
     {
       "name": "Pneumophora",
       "suggestions": "Jet-propulsion mollusks, great winged beasts, rockets.",
       "description": "When you deal damage with an attack or spell, you may have all that damage become air. While your unarmed strikes deal air damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers weak.",
-      "tags": ["class-mutant", "air", "damage", "unarmed", "status", "hp"]
+      "tags": ["air", "damage", "hp", "status", "unarmed"]
     },
     {
       "name": "Polypoda",
       "suggestions": "Squids, octopi, creatures with tendrils or vines.",
       "description": "Your attacks with unarmed strikes gain multi (3).",
-      "tags": ["class-mutant", "unarmed", "attack", "multi"]
+      "tags": ["attack", "multi", "unarmed"]
     },
     {
       "name": "Pterotheria",
       "suggestions": "Bats, birds, winged insects, flying creatures.",
       "description": "You are able to fly. In addition to the obvious advantages in mobility, your melee attacks can target flying creatures and you cannot be targeted by melee attacks unless the attacker is flying or is somehow able to reach flying targets.<br><br>These benefits do not apply if you are unable to fly freely (such as when inside a vehicle designed for human-sized creatures, or in a narrow corridor). Additionally, when you suffer air, bolt or ice damage during a conflict scene, you lose these benefits until the start of your next turn.",
-      "tags": ["class-mutant", "flying", "melee", "air", "bolt", "ice", "damage"]
+      "tags": ["air", "bolt", "damage", "flying", "ice", "melee"]
     },
     {
       "name": "Pyrophora",
       "suggestions": "Bombardier beetles, pistol shrimps, fire elementals.",
       "description": "When you deal damage with an attack or spell, you may have all that damage become fire. While your unarmed strikes deal fire damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers dazed.",
-      "tags": ["class-mutant", "fire", "damage", "unarmed", "status", "hp"]
+      "tags": ["damage", "fire", "hp", "status", "unarmed"]
     },
     {
       "name": "Tachytheria",
       "suggestions": "Cats, gazelles, hares, creatures that are agile and quick.",
       "description": "You treat your Dexterity as if it were one die size higher (to a maximum of d12).<br><br>When you succeed on a Check to advance or turn back a Clock, if that Check includes Dexterity, you may fill or erase 1 additional section of that Clock.",
-      "tags": ["class-mutant", "DEX", "clock"]
+      "tags": ["clock", "DEX"]
     },
     {
       "name": "Toxicophora",
       "suggestions": "Spiders, snakes, toxic slimes and other venomous creatures.",
       "description": "When you deal damage with an attack or spell, you may have all that damage become poison. While your unarmed strikes deal poison damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers poisoned.",
-      "tags": ["class-mutant", "poison", "damage", "unarmed", "status", "hp"]
+      "tags": ["damage", "hp", "poison", "status", "unarmed"]
     }
   ]
 }
