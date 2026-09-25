@@ -1,19 +1,21 @@
 {
   "schema": {
-    "key": "heroic_skills",
+    "key": "heroic-skills",
     "title": "Heroic Skills",
-    "grid-template-columns": "0.25fr 1.5fr 1.5fr 3fr 0.25fr",
-    "universal-tags": [],
-    "columns": [
-      { "label": "Name", "field": "name", "class": "name" },
-      { "label": "Requirements", "field": "requirements", "class": "requirements" },
-      { "label": "Summary", "field": "summary", "class": "summary" }
-    ]
+    "universal-tags": []
   },
   "groups": [
     {
+      "name": "core",
+      "label": "Core Rulebook",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Requirements", "field": "requirements", "class": "requirements" },
+        { "label": "Summary", "field": "summary", "class": "summary" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 3fr 0.25fr",
       "group-tags": ["core"],
-      "heroic_skills": [
+      "heroic-skills": [
         {
           "name": "Ambidextrous",
           "requirements": [],
@@ -258,8 +260,16 @@
       ]
     },
     {
+      "name": "high-fantasy",
+      "label": "High Fantasy Atlas",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Requirements", "field": "requirements", "class": "requirements" },
+        { "label": "Summary", "field": "summary", "class": "summary" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 3fr 0.25fr",
       "group-tags": ["high-fantasy"],
-      "heroic_skills": [
+      "heroic-skills": [
         {
           "name": "Arcane Mark",
           "requirements": ["Sharpshooter", "Symbolist", "Weaponmaster"],
@@ -436,8 +446,16 @@
       ]
     },
     {
+      "name": "natural-fantasy",
+      "label": "Natural Fantasy Atlas",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Requirements", "field": "requirements", "class": "requirements" },
+        { "label": "Summary", "field": "summary", "class": "summary" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 3fr 0.25fr",
       "group-tags": ["natural-fantasy"],
-      "heroic_skills": [
+      "heroic-skills": [
         {
           "name": "All You Can Eat",
           "requirements": ["Gourmet"],
@@ -588,8 +606,16 @@
       ]
     },
     {
+      "name": "techno-fantasy",
+      "label": "Techno Fantasy Atlas",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Requirements", "field": "requirements", "class": "requirements" },
+        { "label": "Summary", "field": "summary", "class": "summary" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 3fr 0.25fr",
       "group-tags": ["techno-fantasy"],
-      "heroic_skills": [
+      "heroic-skills": [
         {
           "name": "Arcane Soldier",
           "requirements": ["Elementalist", "Sharpshooter", "Weaponmaster"],

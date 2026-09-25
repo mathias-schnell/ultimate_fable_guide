@@ -2,18 +2,20 @@
   "schema": {
     "key": "spells",
     "title": "Spells",
-    "grid-template-columns": "0.25fr 1.25fr 1fr 0.75fr 1.5fr 1.5fr 0.25fr",
-    "universal-tags": ["core", "spell"],
-    "columns": [
-      { "label": "Name", "field": "name", "class": "name" },
-      { "label": "Class", "field": "class", "class": "class" },
-      { "label": "MP", "field": "mp", "class": "mp" },
-      { "label": "Target", "field": "target", "class": "target" },
-      { "label": "Duration", "field": "duration", "class": "duration" }
-    ]
+    "universal-tags": ["core", "spell"]
   },
   "groups": [
     {
+      "name": "elementalist",
+      "label": "Elementalist Spells",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Class", "field": "class", "class": "class" },
+        { "label": "MP", "field": "mp", "class": "mp" },
+        { "label": "Target", "field": "target", "class": "target" },
+        { "label": "Duration", "field": "duration", "class": "duration" }
+      ],
+      "grid-template-columns": "0.25fr 1.25fr 1fr 0.75fr 1.5fr 1.5fr 0.25fr",
       "group-tags": ["elementalist"],
       "spells": [
         {
@@ -149,6 +151,16 @@
       ]
     },
     {
+      "name": "entropist",
+      "label": "Entropist Spells",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Class", "field": "class", "class": "class" },
+        { "label": "MP", "field": "mp", "class": "mp" },
+        { "label": "Target", "field": "target", "class": "target" },
+        { "label": "Duration", "field": "duration", "class": "duration" }
+      ],
+      "grid-template-columns": "0.25fr 1.25fr 1fr 0.75fr 1.5fr 1.5fr 0.25fr",
       "group-tags": ["entropist"],
       "spells": [
         {
@@ -274,6 +286,16 @@
       ]
     },
     {
+      "name": "Spiritist",
+      "label": "Spiritist Spells",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Class", "field": "class", "class": "class" },
+        { "label": "MP", "field": "mp", "class": "mp" },
+        { "label": "Target", "field": "target", "class": "target" },
+        { "label": "Duration", "field": "duration", "class": "duration" }
+      ],
+      "grid-template-columns": "0.25fr 1.25fr 1fr 0.75fr 1.5fr 1.5fr 0.25fr",
       "group-tags": ["spiritist"],
       "spells": [
         {

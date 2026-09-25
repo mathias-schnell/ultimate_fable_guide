@@ -205,12 +205,20 @@ function filter_content(target, { filter_container, content_container } = {}) {
 function toggle_all(target, { content_container } = {}) {
     if(!content_container) return;
     const key = "." + target.dataset.key + "-toggle";
+    const toggles = content_container.querySelectorAll(`.${target.className}`);
     const rows = content_container.querySelectorAll(target.getAttribute("aria-controls"));
     const is_expanded = target.getAttribute('aria-expanded') === 'true';
     const next_state = !is_expanded;
 
-    target.innerHTML = next_state ? "-" : "+";
-    target.setAttribute('aria-expanded', String(next_state));
+    toggles.forEach(item => {
+        item.innerHTML = next_state ? "-" : "+";
+        item.setAttribute('aria-expanded', String(next_state));
+        if(next_state) {
+            item.setAttribute('title', 'Contract All');
+        } else {
+            item.setAttribute('title', 'Expand All');
+        }
+    });
 
     rows.forEach(row => {
         const toggle = row.querySelector(key);
@@ -248,6 +256,11 @@ function toggle_item(target, { content_container } = {}, forced_state = null) {
     const new_state = forced_state ?? !is_expanded;
 
     target.setAttribute('aria-expanded', String(new_state));
+    if(new_state) {
+        target.setAttribute('title', "Contract");
+    } else {
+        target.setAttribute('title', "Expand");
+    }
     content_container.querySelector('#' + target_id)?.classList.toggle('hidden', !new_state);
 }
 

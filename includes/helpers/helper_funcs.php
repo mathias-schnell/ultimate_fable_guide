@@ -17,73 +17,95 @@ function get_content(array $sections): string {
         $file_key = str_replace("-", "_", $key);
         $filepath = DATA_PATH . "/{$file_key}.json";
         if (!file_exists($filepath)) continue;
-
         $data = json_decode(file_get_contents($filepath), true) ?? [];
-        $cols = $data['schema']['columns'] ?? [];
-        $grid_cols = $data['schema']['grid-template-columns'] ?? "";
 
         $content .= "<div id='{$key}-container' class='{$key}-container'>";
-        $content .= get_column_headers($key, $cols, $grid_cols);
-        $content .= get_row_data($data, $key, $cols, $grid_cols);
+        $content .= get_content_groups($data, $key);
         $content .= "</div>";
     endforeach;
     return $content;
 }
 
-function get_column_headers(string $key, array $cols, string $grid_cols): string {
+function get_content_groups(array $data, string $key): string {
     ob_start();
-    ?>
-        <div class="<?=$key ?>-list-header" <?=($grid_cols ? "style='grid-template-columns:{$grid_cols};'" : "") ?>>
-            <div>
-                <button class="<?=$key ?>-multitoggle" type="button" data-key="<?=$key ?>" aria-expanded="false" aria-controls="article.<?=$key ?>">+</button>
-            </div>
-            <?php foreach($cols as $col): ?>
-                <div><?= htmlspecialchars($col['label']) ?></div>
-            <?php endforeach; ?>
-            <div></div>
-        </div>
-    <?php
+    
+    $universal_tags = $data['schema']['universal-tags'] ?? [];
+    $data_key = $data['schema']['key'] ?? "";
+    $groups = $data['groups'] ?? [];
+    $entry_counter = 0;
+    $previous_cols = null;
+
+    foreach ($groups as $group) {
+        $group_name = $group['name'] ?? '';
+        $group_label = $group['label'] ?? '';
+        $cols = $group['columns'] ?? [];
+        $grid_template = $group['grid-template-columns'] ?? '';
+        $group_tags = $group['group-tags'] ?? [];
+        $items = $group[$data_key] ?? [];
+        $grid_style = !empty($grid_template) ? " style='grid-template-columns: {$grid_template};'" : "";
+        $show_header = ($cols !== $previous_cols) || !empty($group_label);
+        $previous_cols = $cols;
+
+        ?>
+        <section class="<?= $key ?>-group">
+            <?php if ($show_header): ?>
+                <h3 class="<?= $key ?>-group-title"><?= htmlspecialchars($group_label) ?></h3>
+                <div class="<?= $key ?>-list-header"<?= $grid_style ?>>
+                    <div>
+                        <button class="<?= $key ?>-multitoggle" type="button" title="Expand All" data-key="<?= $key ?>" aria-expanded="false" aria-controls="article.<?= $key ?>">+</button>
+                    </div>
+                    <?php foreach ($cols as $col): ?>
+                        <div><?= htmlspecialchars($col['label']) ?></div>
+                    <?php endforeach; ?>
+                    <div></div>
+                </div>
+            <?php endif; ?>
+
+            <?php
+            foreach ($items as $entry) {
+                $entry_counter++;
+                $combined_tags = array_unique(array_merge($universal_tags, $group_tags, $entry['tags'] ?? []));
+                $tags_str = htmlspecialchars(implode(', ', $combined_tags));
+                $id = "{$key}-description-{$entry_counter}";
+                render_row_article($key, $id, $tags_str, $cols, $entry, $grid_style);
+            }
+            ?>
+        </section>
+        <?php
+    }
+
     return ob_get_clean();
 }
 
-function get_row_data(array $data, string $key, array $cols, string $grid_cols): string {
+function get_row_data(array $data, string $key, array $cols, string $grid_style): string {
     ob_start();
     
     $universal_tags = $data['schema']['universal-tags'] ?? [];
     $data_key = $data['schema']['key'];
     $entry_counter = 0;
 
-    if (isset($data['groups']) && is_array($data['groups'])) {
-        foreach ($data['groups'] as $group) {
-            $group_tags = $group['group-tags'] ?? [];
-            $items = $group[$data_key] ?? $group[$key] ?? [];
-            foreach ($items as $entry) {
-                $entry_counter++;
-                $combined_tags = array_unique(array_merge($universal_tags, $group_tags, $entry['tags'] ?? []));
-                $tags_str = htmlspecialchars(implode(', ', $combined_tags));
-                $id = "{$key}-description-{$entry_counter}";
-                render_row_article($key, $id, $tags_str, $cols, $entry, $grid_cols);
-            }
-        }
-    } else {
-        $items = $data[$data_key] ?? $data[$key] ?? [];
+    foreach ($data['groups'] as $group) {
+        $group_tags = $group['group-tags'] ?? [];
+        $items = $group[$data_key] ?? $group[$key] ?? [];
         foreach ($items as $entry) {
             $entry_counter++;
-            $combined_tags = array_unique(array_merge($universal_tags, $entry['tags'] ?? []));
+            $combined_tags = array_unique(array_merge($universal_tags, $group_tags, $entry['tags'] ?? []));
             $tags_str = htmlspecialchars(implode(', ', $combined_tags));
             $id = "{$key}-description-{$entry_counter}";
-            render_row_article($key, $id, $tags_str, $cols, $entry, $grid_cols);
+            render_row_article($key, $id, $tags_str, $cols, $entry, $grid_style);
         }
     }
     return ob_get_clean();
 }
 
-function render_row_article(string $key, string $id, string $tags_str, array $cols, array $entry, string $grid_cols): void {
+function render_row_article(string $key, string $id, string $tags_str, array $cols, array $entry, string $grid_style): void {
     ?>
     <article class="<?= $key ?>" data-tags="<?= $tags_str ?>">
-        <div class="<?= $key ?>-row" <?=($grid_cols ? "style='grid-template-columns:{$grid_cols};'" : "") ?>>
+        <div class="<?= $key ?>-row"<?= $grid_style ?>>
             <div class="<?= $key ?>-expand">
-                <button class="<?= $key ?>-toggle" type="button" aria-expanded="false" aria-controls="<?= $id ?>">▶</button>
+                <?php if(!empty($entry['description'])): ?>
+                    <button class="<?= $key ?>-toggle" type="button" title="Expand" aria-expanded="false" aria-controls="<?= $id ?>">▶</button>
+                <?php endif; ?>
             </div>
 
             <?php foreach ($cols as $col): 
@@ -99,26 +121,28 @@ function render_row_article(string $key, string $id, string $tags_str, array $co
                 <button class="<?= $key ?>-pin" type="button" aria-checked="false">🖈</button>
             </div>
         </div>
+        
+        <?php if(!empty($entry['description'])): ?>
+            <div class="<?= $key ?>-description-container hidden" id="<?= $id ?>">
+                <div class="<?= $key ?>-description">
+                    <?= $entry['description'] ?? '' ?>
+                    
+                    <?php if (!empty($entry['additional_requirements'])): ?>
+                        <p class="additional-requirements">
+                            <strong>Additional Requirements:</strong> <?= htmlspecialchars($entry['additional_requirements']) ?>
+                        </p>
+                    <?php endif; ?>
 
-        <div class="<?= $key ?>-description-container hidden" id="<?= $id ?>">
-            <div class="<?= $key ?>-description">
-                <?= $entry['description'] ?? '' ?>
-                
-                <?php if (!empty($entry['additional_requirements'])): ?>
-                    <p class="additional-requirements">
-                        <strong>Additional Requirements:</strong> <?= htmlspecialchars($entry['additional_requirements']) ?>
-                    </p>
-                <?php endif; ?>
-
-                <?php if (!empty($entry['spell'])): ?>
-                    <div class="heroic-spell-block">
-                        <h4>Spell: <?= htmlspecialchars($entry['spell']['name']) ?> (<?= $entry['spell']['mp'] ?> MP)</h4>
-                        <p><strong>Target:</strong> <?= htmlspecialchars($entry['spell']['target']) ?> | <strong>Duration:</strong> <?= htmlspecialchars($entry['spell']['duration']) ?></p>
-                        <p><?= $entry['spell']['description'] ?></p>
-                    </div>
-                <?php endif; ?>
+                    <?php if (!empty($entry['spell'])): ?>
+                        <div class="heroic-spell-block">
+                            <h4>Spell: <?= htmlspecialchars($entry['spell']['name']) ?> (<?= $entry['spell']['mp'] ?> MP)</h4>
+                            <p><strong>Target:</strong> <?= htmlspecialchars($entry['spell']['target']) ?> | <strong>Duration:</strong> <?= htmlspecialchars($entry['spell']['duration']) ?></p>
+                            <p><?= $entry['spell']['description'] ?></p>
+                        </div>
+                    <?php endif; ?>
+                </div>
             </div>
-        </div>
+        <?php endif; ?>
     </article>
     <?php
 }

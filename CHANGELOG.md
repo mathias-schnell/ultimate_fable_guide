@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.5.1] - 2026-09-25
+
+### Added
+- Content for 'Verses'.
+- Sub-categories for 'Class Skills', 'Heroic Skills', 'Spells' and 'Verses'.
+
+### Changed
+- If a row of data has no "description" then no button to expand/contract the row will be generated.
+- The Expand All/Contract All buttons across an entire category will all trigger simultaneously when one is triggered.
+- Reordered the category tabs slightly.
+
+### Internal
+- Standardized the JSON data structure for all content.
+
+---
+
 ## [0.5.0] - 2026-09-24
 
 ### Internal

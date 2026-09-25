@@ -1,19 +1,21 @@
 {
   "schema": {
-    "key": "class_skills",
+    "key": "class-skills",
     "title": "Class Skills",
-    "grid-template-columns": "0.25fr 2.5fr 2.5fr 1fr 0.25fr",
-    "universal-tags": ["skill"],
-    "columns": [
-      { "label": "Class", "field": "class", "class": "class" },
-      { "label": "Name", "field": "name", "class": "name" },
-      { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
-    ]
+    "universal-tags": ["skill"]
   },
   "groups": [
     {
+      "name": "core",
+      "label": "Core Rulebook",
+      "columns": [
+        { "label": "Class", "field": "class", "class": "class" },
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
+      ],
+      "grid-template-columns": "0.25fr 2.5fr 2.5fr 1fr 0.25fr",
       "group-tags": ["core"],
-      "class_skills": [
+      "class-skills": [
         {
           "name": "Arcane Circle",
           "class": "Arcanist",
@@ -542,8 +544,16 @@
       ]
     },
     {
+      "name": "high-fantasy",
+      "label": "High Fantasy Atlas",
+      "columns": [
+        { "label": "Class", "field": "class", "class": "class" },
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
+      ],
+      "grid-template-columns": "0.25fr 2.5fr 2.5fr 1fr 0.25fr",
       "group-tags": ["high-fantasy"],
-      "class_skills": [
+      "class-skills": [
         {
           "name": "Magichant",
           "class": "Chanter",
@@ -687,8 +697,16 @@
       ]
     },
     {
+      "name": "natural-fantasy",
+      "label": "Natural Fantasy Atlas",
+      "columns": [
+        { "label": "Class", "field": "class", "class": "class" },
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
+      ],
+      "grid-template-columns": "0.25fr 2.5fr 2.5fr 1fr 0.25fr",
       "group-tags": ["natural-fantasy"],
-      "class_skills": [
+      "class-skills": [
         {
           "name": "Battle Gardening",
           "class": "Floralist",
@@ -832,8 +850,16 @@
       ]
     },
     {
+      "name": "techno-fantasy",
+      "label": "Techno Fantasy Atlas",
+      "columns": [
+        { "label": "Class", "field": "class", "class": "class" },
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
+      ],
+      "grid-template-columns": "0.25fr 2.5fr 2.5fr 1fr 0.25fr",
       "group-tags": ["techno-fantasy"],
-      "class_skills": [
+      "class-skills": [
         {
           "name": "Cognitive Focus",
           "class": "Esper",

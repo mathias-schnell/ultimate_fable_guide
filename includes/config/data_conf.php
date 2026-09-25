@@ -3,8 +3,8 @@
 $sections = [
     "class-skills"      => "Class Skills",
     "heroic-skills"     => "Heroic Skills",
-    "arcana"            => "Arcana",
     "spells"            => "Spells",
+    "arcana"            => "Arcana",
     "verses"            => "Verses",
     "dances"            => "Dances",
     "symbols"           => "Symbols",
