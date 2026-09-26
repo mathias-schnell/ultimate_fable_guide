@@ -21,6 +21,9 @@
 
 .content-container [class*="-group"] {
     display: grid;
+    overflow-x: auto;
+    max-width: 100%;
+    width: 100%;
 }
 
 .content-container [class*="-group"].hidden {

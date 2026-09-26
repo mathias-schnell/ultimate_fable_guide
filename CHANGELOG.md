@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.5] - 2026-09-25
+
+### Fixed
+- Fixed a mobile display bug that could have navigation arrows render off screen.
+
+---
+
 ## [0.5.4] - 2026-09-25
 
 ### Fixed
