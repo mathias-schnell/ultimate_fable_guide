@@ -1,8 +1,8 @@
 <section class="filter-rows-container">
     <select class="filter-mode">
-        <option value="0">Match one</option>
-        <option value="1">Match all</option>
-        <option value="2">Match exact</option>
+        <option>--- Filter Mode ---</option>
+        <option value="0">Show items with ONE of...</option>
+        <option value="1">Show items with ALL of...</option>
     </select>
     <div class="filter-row filter-row-prime">
         <select class="filter-tag-select">

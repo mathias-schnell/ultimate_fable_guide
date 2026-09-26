@@ -211,15 +211,11 @@ function filter_content(target, { filter_container, content_container } = {}) {
             match = true;
         } else {
             switch (mode) {
-                case 0:
-                    match = [...selected_tags].some(tag => article_tags.has(tag));
-                    break;
                 case 1:
                     match = [...selected_tags].every(tag => article_tags.has(tag));
                     break;
-                case 2:
-                    match = selected_tags.size === article_tags.size &&
-                            [...selected_tags].every(tag => article_tags.has(tag));
+                default:
+                    match = [...selected_tags].some(tag => article_tags.has(tag));
                     break;
             }
         }

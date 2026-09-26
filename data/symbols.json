@@ -17,97 +17,97 @@
         {
           "name": "Symbol of Binding",
           "description": "The current Attribute die sizes of the creature bearing this symbol can never be higher than that creature’s corresponding base Attribute die sizes (this does not end any spells or effects, but it will negate their influence over the creature’s Attributes).",
-          "tags": ["symbolist", "symbol", "MIG", "DEX", "INS", "WLP"]
+          "tags": ["MIG", "DEX", "INS", "WLP"]
         },
         {
           "name": "Symbol of Creation",
           "description": "When the creature bearing this symbol needs to spend Inventory Points during a conflict, they may instead destroy this symbol to spend no Inventory Points.",
-          "tags": ["symbolist", "symbol", "ip"]
+          "tags": ["ip"]
         },
         {
           "name": "Symbol of Despair",
           "description": "When the creature bearing this symbol recovers Hit Points and/or Mind Points during conflicts, instead they only recover half the normal amount of Hit Points and/or Mind Points, respectively.",
-          "tags": ["symbolist", "symbol", "hp", "mp"]
+          "tags": ["hp", "mp"]
         },
         {
           "name": "Symbol of Destiny",
           "description": "After the creature bearing this symbol rolls dice for a Check, if you are able to see them, you may spend 1 Fabula Point to force that creature to reroll both dice. You may only do so once per Check, and only if the Result was not a critical success or fumble.",
-          "tags": ["symbolist", "symbol", "fabula-point", "critical", "fumble"]
+          "tags": ["fabula-point", "critical", "fumble"]
         },
         {
           "name": "Symbol of Elements",
           "description": "When you create this symbol, choose a damage type: air, bolt, dark, earth, fire, ice, light, or poison. When the creature bearing this symbol deals damage to one or more creatures, if you can see the creature bearing this symbol, you may spend an amount of Mind Points equal to one third of the total damage being inflicted to those creatures (including any sources of extra damage). If you do, all damage dealt this way changes type to the type chosen when you created this symbol.",
-          "tags": ["symbolist", "symbol", "air", "bolt", "dark", "earth", "fire", "ice", "light", "poison", "damage", "mp"]
+          "tags": ["air", "bolt", "dark", "earth", "fire", "ice", "light", "poison", "damage", "mp"]
         },
         {
           "name": "Symbol of Enmity",
-          "description": "As long as the creature bearing this symbol is in Crisis, any of that creature’s enemies who are able to see them must include them among the targets of their attacks and offensive spells (O), if possible.",
-          "tags": ["symbolist", "symbol", "crisis", "attack", "spell"]
+          "description": "As long as the creature bearing this symbol is in Crisis, any of that creature’s enemies who are able to see them must include them among the targets of their attacks and offensive spells (🗲), if possible.",
+          "tags": ["crisis", "attack", "spell"]
         },
         {
           "name": "Symbol of Flux",
           "description": "When you create this symbol, choose a status effect: dazed, shaken, slow, or weak. Then, choose one option: the creature bearing this symbol gains immunity to the chosen status effect; or the creature bearing this symbol loses immunity to the chosen status effect and cannot gain it.",
-          "tags": ["symbolist", "symbol", "status", "immunity"]
+          "tags": ["status", "immunity"]
         },
         {
           "name": "Symbol of Forbiddance",
           "description": "When you create this symbol, choose an action type: Attack, Guard, Objective, Spell, or Skill. When the creature bearing this symbol performs the chosen action, they lose 5 Hit Points and 5 Mind Points (before performing that action). Both amounts increase to 10 if you are level 20 or higher, or to 20 if you are level 40 or higher.",
-          "tags": ["symbolist", "symbol", "attack", "guard", "objective", "spell", "skill", "hp", "mp"]
+          "tags": ["attack", "guard", "objective", "spell", "skill", "hp", "mp"]
         },
         {
           "name": "Symbol of Growth",
           "description": "Spells with a target of “Up to three creatures” cast by the creature bearing this symbol have a target of “Up to four creatures” instead. The creature still needs to spend additional Mind Points for a fourth target.",
-          "tags": ["symbolist", "symbol", "spell", "mp"]
+          "tags": ["spell", "mp"]
         },
         {
           "name": "Symbol of Metamorphosis",
           "description": "When you create this symbol, choose a Species: beast, construct, demon, elemental, monster, plant, or undead. The creature bearing this symbol is treated as belonging to the chosen Species for the sake of Skills and effects, instead of their normal Species (this does not otherwise alter any of the creature’s profile, such as their Affinities or any special rules they may have). This symbol cannot be applied to Player Characters.",
-          "tags": ["symbolist", "symbol", "skill"]
+          "tags": ["skill"]
         },
         {
           "name": "Symbol of Prosperity",
           "description": "When the creature bearing this symbol spends 1 Fabula Point to invoke a Trait or Bond, they also receive 100 zenit.",
-          "tags": ["symbolist", "symbol", "fabula-point", "bond"]
+          "tags": ["fabula-point", "bond"]
         },
         {
           "name": "Symbol of Protection",
           "description": "When you create this symbol, choose a damage type: air, bolt, dark, earth, fire, ice, light, or poison. The creature bearing this symbol gains Resistance to the chosen damage type.",
-          "tags": ["symbolist", "symbol", "air", "bolt", "dark", "earth", "fire", "ice", "light", "poison", "resistance", "damage"]
+          "tags": ["air", "bolt", "dark", "earth", "fire", "ice", "light", "poison", "resistance", "damage"]
         },
         {
           "name": "Symbol of Rebellion",
           "description": "If a Villain is present on the scene, any Opposed Checks made by the creature bearing this symbol trigger a critical success when both dice show the same number (as long as the Check is not a fumble).",
-          "tags": ["symbolist", "symbol", "critical", "fumble"]
+          "tags": ["critical", "fumble"]
         },
         {
           "name": "Symbol of Rebirth",
           "description": "If the creature bearing this symbol is about to be reduced to 0 Hit Points, they may destroy this symbol: if they do, they are instead reduced to exactly 1 Hit Point.",
-          "tags": ["symbolist", "symbol", "hp"]
+          "tags": ["hp"]
         },
         {
           "name": "Symbol of Revenge",
-          "description": "When a creature in Crisis hits the creature bearing this symbol with an attack or offensive spell (O), the creature in Crisis recovers 5 Hit Points and 5 Mind Points.",
-          "tags": ["symbolist", "symbol", "crisis", "attack", "spell", "hp", "mp"]
+          "description": "When a creature in Crisis hits the creature bearing this symbol with an attack or offensive spell (🗲), the creature in Crisis recovers 5 Hit Points and 5 Mind Points.",
+          "tags": ["crisis", "attack", "spell", "hp", "mp"]
         },
         {
           "name": "Symbol of Sacrifice",
           "description": "When the creature bearing this symbol suffers damage, if you are able to see them, you may destroy this symbol: if you do, you suffer the same amount of damage instead of that creature.",
-          "tags": ["symbolist", "symbol", "damage"]
+          "tags": ["damage"]
         },
         {
           "name": "Symbol of Sorcery",
           "description": "The total Mind Point cost of spells that target the creature bearing this symbol is reduced by 5 MP (to a minimum total cost of 5 MP). If a spell targets multiple creatures bearing this symbol, the effect will be cumulative.",
-          "tags": ["symbolist", "symbol", "mp", "spell"]
+          "tags": ["mp", "spell"]
         },
         {
           "name": "Symbol of Truth",
-          "description": "Checks performed to examine or locate the creature bearing this symbol, as well as Accuracy Checks and Magic Checks for attacks and offensive spells (O) that include the creature bearing this symbol among their targets, gain a +2 bonus. If an attack or spell targets multiple creatures bearing this symbol, the effect will be cumulative.",
-          "tags": ["symbolist", "symbol", "attack", "spell"]
+          "description": "Checks performed to examine or locate the creature bearing this symbol, as well as Accuracy Checks and Magic Checks for attacks and offensive spells (🗲) that include the creature bearing this symbol among their targets, gain a +2 bonus. If an attack or spell targets multiple creatures bearing this symbol, the effect will be cumulative.",
+          "tags": ["attack", "spell"]
         },
         {
           "name": "Symbol of Weakness",
           "description": "When you create this symbol, choose a damage type: air, bolt, dark, earth, fire, ice, light, or poison. The creature bearing this symbol suffers 5 extra damage from sources dealing damage of the chosen type.",
-          "tags": ["symbolist", "symbol", "air", "bolt", "dark", "earth", "fire", "ice", "light", "poison", "damage"]
+          "tags": ["air", "bolt", "dark", "earth", "fire", "ice", "light", "poison", "damage"]
         }
       ]
     }

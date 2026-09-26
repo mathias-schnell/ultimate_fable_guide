@@ -70,6 +70,7 @@ $filter_tags = [
         "MIG"           => "Might (MIG)",
         "mp"            => "Mind Points",
         "WLP"           => "Willpower (WLP)",
+        "zenit"         => "Zenit",
     ],
 
     "Damage & Affinities" => [
@@ -93,15 +94,19 @@ $filter_tags = [
     ],
 
     "Item Categories & Properties" => [
+        "accessory"  => "Accessory",
         "arcane"     => "Arcane",
         "armor"      => "Armor",
+        "basic"      => "Basic",
         "bow"        => "Bow",
         "brawling"   => "Brawling",
         "dagger"     => "Dagger",
         "firearm"    => "Firearm",
         "flail"      => "Flail",
         "heavy"      => "Heavy",
+        "martial"    => "Martial",
         "multi"      => "Multi",
+        "rare"       => "Rare",
         "shield"     => "Shield",
         "spear"      => "Spear",
         "sword"      => "Sword",

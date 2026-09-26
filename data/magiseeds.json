@@ -132,7 +132,7 @@
         {
           "name": "Wrathful Carnation",
           "summary": "Despite their beauty, its yellow flowers emit an irritatingly pungent smell.",
-          "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1-4</td><td>When this magiseed leaves your garden, choose up to one enemy you can see. Until the end of your next turn, when the chosen enemy performs an attack or casts an offensive spell (O), they must include you among the targets of that attack of spell (if able).<br><br>At the end of your turn, you may remove this magiseed from your garden; if you do, erase all sections of your Growth Clock.</td></tr></tbody></table>",
+          "description": "<table><thead><tr><th>⏲</th><th>Effect</th></tr></thead><tbody><tr><td>1-4</td><td>When this magiseed leaves your garden, choose up to one enemy you can see. Until the end of your next turn, when the chosen enemy performs an attack or casts an offensive spell (🗲), they must include you among the targets of that attack of spell (if able).<br><br>At the end of your turn, you may remove this magiseed from your garden; if you do, erase all sections of your Growth Clock.</td></tr></tbody></table>",
           "tags": ["attack", "clock", "garden", "spell"]
         }
       ]

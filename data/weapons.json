@@ -1,0 +1,1221 @@
+{
+  "schema": {
+    "key": "weapons",
+    "title": "Weapons",
+    "universal-tags": ["core", "weapon", "zenit"]
+  },
+  "groups": [
+    {
+      "name": "arcane",
+      "label": "Arcane",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["arcane"],
+      "weapons": [
+        {
+          "name": "Staff",
+          "cost": "100 z",
+          "accuracy": "【WLP + WLP】",
+          "damage": "【HR + 6】 physical",
+          "description": "Basic • Two-handed • Melee • No Quality.",
+          "tags": ["arcane", "basic", "two-handed", "melee", "physical", "WLP"]
+        },
+        {
+          "name": "Tome",
+          "cost": "100 z",
+          "accuracy": "【INS + INS】",
+          "damage": "【HR + 6】 physical",
+          "description": "Basic • Two-handed • Melee • No Quality.",
+          "tags": ["arcane", "basic", "two-handed", "melee", "physical", "INS"]
+        },
+        {
+          "name": "Blessed Mace",
+          "cost": "200 z",
+          "accuracy": "【WLP + WLP】",
+          "damage": "【HR + 2】 light",
+          "description": "Rare • One-handed • Melee • No Quality.",
+          "tags": ["arcane", "one-handed", "melee", "light", "WLP", "rare"]
+        },
+        {
+          "name": "Encyclopedia",
+          "cost": "600 z",
+          "accuracy": "【INS + INS】",
+          "damage": "【HR + 6】 physical",
+          "description": "Rare • Two-handed • Melee • You are immune to dazed.",
+          "tags": ["arcane", "two-handed", "melee", "physical", "INS", "rare", "immunity"]
+        },
+        {
+          "name": "Ars Goetia",
+          "cost": "800 z",
+          "accuracy": "【INS + INS】",
+          "damage": "【HR + 6】 light",
+          "description": "Rare • Two-handed • Melee • You gain a +2 bonus to Magic Checks against demons, as well as a +2 bonus to Opposed Checks against demons.",
+          "tags": ["arcane", "two-handed", "melee", "light", "INS", "rare", "demon"]
+        },
+        {
+          "name": "Ferula",
+          "cost": "1050 z",
+          "accuracy": "【INS + WLP】",
+          "damage": "【HR + 2】 physical",
+          "description": "Rare • One-handed • Melee • You gain a +1 bonus to your Magic Checks.",
+          "tags": ["arcane", "one-handed", "melee", "physical", "INS", "WLP", "rare", "magic-check"]
+        },
+        {
+          "name": "Tyrant’s Scepter",
+          "cost": "1200 z",
+          "accuracy": "【WLP + WLP】",
+          "damage": "【HR + 6】 dark",
+          "description": "Rare • Two-handed • Melee • Whenever you hit one or more creatures with this weapon, each of them loses 10 Mind Points.",
+          "tags": ["arcane", "two-handed", "melee", "dark", "WLP", "rare", "mp-loss"]
+        },
+        {
+          "name": "Cultes des Ghoules",
+          "cost": "1400 z",
+          "accuracy": "【INS + INS】",
+          "damage": "【HR + 6】 air",
+          "description": "Rare • One-handed • Melee • When you hit one or more creatures with this weapon, you may recover 5 Hit Points.",
+          "tags": ["arcane", "one-handed", "melee", "air", "INS", "rare", "healing"]
+        },
+        {
+          "name": "Caduceus",
+          "cost": "1600 z",
+          "accuracy": "【WLP + WLP】",
+          "damage": "【HR + 6】 physical",
+          "description": "Rare • Two-handed • Melee • Spells you cast whose effects restore Hit Points restore 5 additional Hit Points.",
+          "tags": ["arcane", "two-handed", "melee", "physical", "WLP", "rare", "healing"]
+        },
+        {
+          "name": "Necronomicon",
+          "cost": "1800 z",
+          "accuracy": "【INS + WLP】 +1",
+          "damage": "【HR + 6】 dark",
+          "description": "Rare • Two-handed • Melee • When you hit one or more creatures with an offensive spell (🗲), each of them suffers shaken.",
+          "tags": ["arcane", "two-handed", "melee", "dark", "INS", "WLP", "rare", "shaken", "status"]
+        },
+        {
+          "name": "Yellow Book",
+          "cost": "2100 z",
+          "accuracy": "【INS + INS】",
+          "damage": "【HR + 6】 physical",
+          "description": "Rare • Two-handed • Melee • Spells you cast deal 5 extra damage.",
+          "tags": ["arcane", "two-handed", "melee", "physical", "INS", "rare", "spell-damage"]
+        },
+        {
+          "name": "Rafflesia Staff",
+          "cost": "2200 z",
+          "accuracy": "【WLP + WLP】",
+          "damage": "【HR + 6】 poison",
+          "description": "Rare • Two-handed • Melee • When you hit one or more creatures with an offensive spell (🗲), each of them suffers poisoned.",
+          "tags": ["arcane", "two-handed", "melee", "poison", "WLP", "rare", "poisoned", "status"]
+        }
+      ]
+    },
+    {
+      "name": "bow",
+      "label": "Bows",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["bow"],
+      "weapons": [
+        {
+          "name": "Crossbow",
+          "cost": "150 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 8】 physical",
+          "description": "Basic • Two-handed • Ranged • No Quality.",
+          "tags": ["bow", "basic", "two-handed", "ranged", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Shortbow",
+          "cost": "200 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 8】 physical",
+          "description": "Basic • Two-handed • Ranged • No Quality.",
+          "tags": ["bow", "basic", "two-handed", "ranged", "physical", "DEX"]
+        },
+        {
+          "name": "Hand Crossbow",
+          "cost": "150 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 4】 physical",
+          "description": "Rare • One-handed • Ranged • No Quality.",
+          "tags": ["bow", "one-handed", "ranged", "physical", "DEX", "INS", "rare"]
+        },
+        {
+          "name": "Composite Bow",
+          "cost": "250 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • Two-handed • Ranged • No Quality.",
+          "tags": ["bow", "two-handed", "ranged", "physical", "DEX", "MIG", "rare"]
+        },
+        {
+          "name": "Siegebreaker 🟅",
+          "cost": "750 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 12】 physical",
+          "description": "Rare • Two-handed • Ranged • Damage dealt by this weapon ignores Resistances.",
+          "tags": ["bow", "two-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "ignore-resistance"]
+        },
+        {
+          "name": "Yoichi",
+          "cost": "900 z",
+          "accuracy": "【DEX + DEX】 +1",
+          "damage": "【HR + 8】 air",
+          "description": "Rare • Two-handed • Ranged • You are immune to shaken.",
+          "tags": ["bow", "two-handed", "ranged", "air", "DEX", "rare", "immunity"]
+        },
+        {
+          "name": "Thundering Bow",
+          "cost": "1000 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 8】 bolt",
+          "description": "Rare • Two-handed • Ranged • You gain Resistance to bolt damage.",
+          "tags": ["bow", "two-handed", "ranged", "bolt", "DEX", "rare", "resistance"]
+        },
+        {
+          "name": "Looting Bow",
+          "cost": "1250 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 8】 fire",
+          "description": "Rare • Two-handed • Ranged • When you reduce a creature to 0 Hit Points with this weapon, you may regain 2 Inventory Points.",
+          "tags": ["bow", "two-handed", "ranged", "fire", "DEX", "INS", "rare", "inventory-points"]
+        },
+        {
+          "name": "Gatling Crossbow 🟅",
+          "cost": "1350 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 12】 physical",
+          "description": "Rare • Two-handed • Ranged • Attacks with this weapon have multi (2).",
+          "tags": ["bow", "two-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "multi"]
+        },
+        {
+          "name": "Dragontrap Bow 🟅",
+          "cost": "1500 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 12】 earth",
+          "description": "Rare • Two-handed • Ranged • When you hit a flying target with this weapon, you may force that target to land immediately.",
+          "tags": ["bow", "two-handed", "ranged", "earth", "DEX", "martial", "rare", "flying"]
+        },
+        {
+          "name": "Frozen Envy 🟅",
+          "cost": "1500 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 12】 ice",
+          "description": "Rare • Two-handed • Ranged • When you hit one or more creatures with this weapon, if you have at least one Bond of inferiority, you may recover 5 MP.",
+          "tags": ["bow", "two-handed", "ranged", "ice", "DEX", "martial", "rare", "bond", "mp-recovery"]
+        },
+        {
+          "name": "Gorgon Eye 🟅",
+          "cost": "2000 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 12】 poison",
+          "description": "Rare • Two-handed • Ranged • Each target hit by this weapon suffers slow.",
+          "tags": ["bow", "two-handed", "ranged", "poison", "DEX", "martial", "rare", "slow", "status"]
+        },
+        {
+          "name": "Artemis 🟅",
+          "cost": "2100 z",
+          "accuracy": "【DEX + DEX】 +1",
+          "damage": "【HR + 12】 light",
+          "description": "Rare • Two-handed • Ranged • You gain Immunity to dark damage.",
+          "tags": ["bow", "two-handed", "ranged", "light", "DEX", "martial", "rare", "immunity"]
+        }
+      ]
+    },
+    {
+      "name": "brawling",
+      "label": "Brawling",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["brawling"],
+      "weapons": [
+        {
+          "name": "Unarmed Strike",
+          "cost": "—",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 0】 physical",
+          "description": "Basic • One-handed • Melee • Automatically equipped in each empty hand slot.",
+          "tags": ["brawling", "basic", "one-handed", "melee", "physical", "DEX", "MIG"]
+        },
+        {
+          "name": "Improvised (Melee)",
+          "cost": "—",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 2】 physical",
+          "description": "Basic • One-handed • Melee • Breaks after the attack.",
+          "tags": ["brawling", "basic", "one-handed", "melee", "physical", "DEX", "MIG", "improvised"]
+        },
+        {
+          "name": "Iron Knuckle",
+          "cost": "150 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 6】 physical",
+          "description": "Basic • One-handed • Melee • No Quality.",
+          "tags": ["brawling", "basic", "one-handed", "melee", "physical", "DEX", "MIG"]
+        },
+        {
+          "name": "Nekode",
+          "cost": "250 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 6】 physical",
+          "description": "Rare • One-handed • Melee • No Quality.",
+          "tags": ["brawling", "one-handed", "melee", "physical", "DEX", "MIG", "rare"]
+        },
+        {
+          "name": "Hellfist",
+          "cost": "350 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 6】 dark",
+          "description": "Rare • One-handed • Melee • Attacks with this weapon target Magic Defense.",
+          "tags": ["brawling", "one-handed", "melee", "dark", "DEX", "MIG", "rare", "mdef-target"]
+        },
+        {
+          "name": "Frozen Grasp",
+          "cost": "750 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 6】 ice",
+          "description": "Rare • One-handed • Melee • You are immune to enraged.",
+          "tags": ["brawling", "one-handed", "melee", "ice", "DEX", "MIG", "rare", "immunity"]
+        },
+        {
+          "name": "Bear Paw 🟅",
+          "cost": "850 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 10】 physical",
+          "description": "Rare • One-handed • Melee • You are immune to weak.",
+          "tags": ["brawling", "one-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "immunity"]
+        },
+        {
+          "name": "Fuel Knuckle",
+          "cost": "950 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 6】 fire",
+          "description": "Rare • One-handed • Melee • You gain Resistance to fire damage.",
+          "tags": ["brawling", "one-handed", "melee", "fire", "DEX", "MIG", "rare", "resistance"]
+        },
+        {
+          "name": "Silver Talon",
+          "cost": "1100 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 6】 light",
+          "description": "Rare • One-handed • Melee • You gain a +1 bonus to Magic Defense.",
+          "tags": ["brawling", "one-handed", "melee", "light", "DEX", "rare", "mdef-bonus"]
+        },
+        {
+          "name": "Old Bandages",
+          "cost": "1250 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 6】 physical",
+          "description": "Rare • One-handed • Melee • You gain Resistance to dark and poison damage.",
+          "tags": ["brawling", "one-handed", "melee", "physical", "DEX", "MIG", "rare", "resistance"]
+        },
+        {
+          "name": "Storm Fist",
+          "cost": "1300 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 6】 bolt",
+          "description": "Rare • One-handed • Melee • Attacks with this weapon have multi (2).",
+          "tags": ["brawling", "one-handed", "melee", "bolt", "MIG", "rare", "multi"]
+        },
+        {
+          "name": "Lobster Claw 🟅",
+          "cost": "1950 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 10】 physical",
+          "description": "Rare • One-handed • Melee • Each target hit by this weapon suffers slow.",
+          "tags": ["brawling", "one-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "slow", "status"]
+        },
+        {
+          "name": "Dozer Glove 🟅",
+          "cost": "2000 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 10】 earth",
+          "description": "Rare • One-handed • Melee • Each target hit by this weapon suffers dazed.",
+          "tags": ["brawling", "one-handed", "melee", "earth", "MIG", "martial", "rare", "dazed", "status"]
+        },
+        {
+          "name": "Venom Claw",
+          "cost": "2250 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 6】 physical",
+          "description": "Rare • One-handed • Melee • Each target hit by this weapon suffers poisoned.",
+          "tags": ["brawling", "one-handed", "melee", "physical", "DEX", "MIG", "rare", "poisoned", "status"]
+        },
+        {
+          "name": "God Hand 🟅",
+          "cost": "2550 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 10】 light",
+          "description": "Rare • One-handed • Melee • Damage dealt by this weapon ignores Affinities.",
+          "tags": ["brawling", "one-handed", "melee", "light", "DEX", "MIG", "martial", "rare", "ignore-affinities"]
+        }
+      ]
+    },
+    {
+      "name": "dagger",
+      "label": "Daggers",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["dagger"],
+      "weapons": [
+        {
+          "name": "Steel Dagger",
+          "cost": "150 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 4】 physical",
+          "description": "Basic • One-handed • Melee • No Quality.",
+          "tags": ["dagger", "basic", "one-handed", "melee", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Latrodectus",
+          "cost": "250 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 4】 poison",
+          "description": "Rare • One-handed • Melee • No Quality.",
+          "tags": ["dagger", "one-handed", "melee", "poison", "DEX", "INS", "rare"]
+        },
+        {
+          "name": "Heart Knife",
+          "cost": "550 z",
+          "accuracy": "【DEX + WLP】",
+          "damage": "【HR + 4】 light",
+          "description": "Rare • One-handed • Melee • This weapon deals 5 extra damage to demons.",
+          "tags": ["dagger", "one-handed", "melee", "light", "DEX", "WLP", "rare", "demon"]
+        },
+        {
+          "name": "Atom Slicer",
+          "cost": "600 z",
+          "accuracy": "【DEX + DEX】 +1",
+          "damage": "【HR + 4】 physical",
+          "description": "Rare • One-handed • Melee • Damage dealt by this weapon ignores Resistances.",
+          "tags": ["dagger", "one-handed", "melee", "physical", "DEX", "rare", "ignore-resistance"]
+        },
+        {
+          "name": "Silent Edge",
+          "cost": "700 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 4】 air",
+          "description": "Rare • One-handed • Melee • You are immune to slow.",
+          "tags": ["dagger", "one-handed", "melee", "air", "DEX", "rare", "immunity"]
+        },
+        {
+          "name": "Spell Sever",
+          "cost": "850 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 4】 dark",
+          "description": "Rare • One-handed • Melee • When you hit a creature with this weapon, if the attack had a single target, you may choose a single spell with a duration of “Scene” affecting the target and end its effects on that creature.",
+          "tags": ["dagger", "one-handed", "melee", "dark", "DEX", "INS", "rare", "dispell"]
+        },
+        {
+          "name": "Assassin’s Blade",
+          "cost": "1000 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 4】 physical",
+          "description": "Rare • One-handed • Melee • This weapon deals 5 extra damage to enemies in Crisis.",
+          "tags": ["dagger", "one-handed", "melee", "physical", "DEX", "INS", "rare", "crisis"]
+        },
+        {
+          "name": "Gourmet Cutter",
+          "cost": "1350 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • One-handed • Melee • When you hit one or more creatures with this weapon, you may recover 5 Hit Points.",
+          "tags": ["dagger", "one-handed", "melee", "physical", "DEX", "INS", "rare", "healing"]
+        },
+        {
+          "name": "Barbed Knife",
+          "cost": "1650 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 4】 physical",
+          "description": "Rare • One-handed • Melee • Each target hit by this weapon suffers shaken.",
+          "tags": ["dagger", "one-handed", "melee", "physical", "DEX", "INS", "rare", "shaken", "status"]
+        },
+        {
+          "name": "Cold Finger",
+          "cost": "1950 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 8】 ice",
+          "description": "Rare • One-handed • Melee • Each target hit by this weapon suffers weak.",
+          "tags": ["dagger", "one-handed", "melee", "ice", "DEX", "INS", "rare", "weak", "status"]
+        },
+        {
+          "name": "Hornet",
+          "cost": "2200 z",
+          "accuracy": "【DEX + DEX】 +1",
+          "damage": "【HR + 4】 physical",
+          "description": "Rare • One-handed • Melee • Attacks with this weapon have multi (3).",
+          "tags": ["dagger", "one-handed", "melee", "physical", "DEX", "rare", "multi"]
+        },
+        {
+          "name": "Frantic Nail",
+          "cost": "2450 z",
+          "accuracy": "【INS + INS】 +1",
+          "damage": "【HR + 8】 fire",
+          "description": "Rare • One-handed • Melee • Each target hit by this weapon suffers enraged.",
+          "tags": ["dagger", "one-handed", "melee", "fire", "INS", "rare", "enraged", "status"]
+        }
+      ]
+    },
+    {
+      "name": "firearm",
+      "label": "Firearms",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["firearm"],
+      "weapons": [
+        {
+          "name": "Pistol 🟅",
+          "cost": "250 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 8】 physical",
+          "description": "Basic • One-handed • Ranged • No Quality.",
+          "tags": ["firearm", "basic", "one-handed", "ranged", "physical", "DEX", "INS", "martial"]
+        },
+        {
+          "name": "Revolver 🟅",
+          "cost": "300 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • One-handed • Ranged • No Quality.",
+          "tags": ["firearm", "one-handed", "ranged", "physical", "DEX", "martial", "rare"]
+        },
+        {
+          "name": "Istinggar 🟅",
+          "cost": "350 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 12】 physical",
+          "description": "Rare • Two-handed • Ranged • No Quality.",
+          "tags": ["firearm", "two-handed", "ranged", "physical", "DEX", "INS", "martial", "rare"]
+        },
+        {
+          "name": "Spellshot 🟅",
+          "cost": "400 z",
+          "accuracy": "【INS + INS】",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • One-handed • Ranged • Attacks with this weapon target Magic Defense.",
+          "tags": ["firearm", "one-handed", "ranged", "physical", "INS", "martial", "rare", "mdef-target"]
+        },
+        {
+          "name": "Diamond Pistol 🟅",
+          "cost": "650 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • One-handed • Ranged • This weapon deals 5 extra damage to constructs.",
+          "tags": ["firearm", "one-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "construct"]
+        },
+        {
+          "name": "Headhunter 🟅",
+          "cost": "800 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • One-handed • Ranged • This weapon deals 5 extra damage to targets you have a Bond of hatred towards.",
+          "tags": ["firearm", "one-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "bond"]
+        },
+        {
+          "name": "Comet Gun 🟅",
+          "cost": "950 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 8】 dark",
+          "description": "Rare • One-handed • Ranged • You are immune to dazed.",
+          "tags": ["firearm", "one-handed", "ranged", "dark", "DEX", "INS", "martial", "rare", "immunity"]
+        },
+        {
+          "name": "Bunker Cannon 🟅",
+          "cost": "1050 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 12】 physical",
+          "description": "Rare • Two-handed • Ranged • You gain a +1 bonus to Defense.",
+          "tags": ["firearm", "two-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "def-bonus"]
+        },
+        {
+          "name": "Alchemusket 🟅",
+          "cost": "1300 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 8】 poison",
+          "description": "Rare • One-handed • Ranged • Potions you create with your Inventory Points deal 5 extra damage and restore 5 additional Hit Points.",
+          "tags": ["firearm", "one-handed", "ranged", "poison", "DEX", "INS", "martial", "rare", "potions"]
+        },
+        {
+          "name": "Calamity 🟅",
+          "cost": "1550 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 16】 fire",
+          "description": "Rare • Two-handed • Ranged • Attacks with this weapon have multi (2).",
+          "tags": ["firearm", "two-handed", "ranged", "fire", "DEX", "INS", "martial", "rare", "multi"]
+        },
+        {
+          "name": "Freezing Shot 🟅",
+          "cost": "1850 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 8】 ice",
+          "description": "Rare • One-handed • Ranged • Each target hit by this weapon suffers slow.",
+          "tags": ["firearm", "one-handed", "ranged", "ice", "DEX", "INS", "martial", "rare", "slow", "status"]
+        },
+        {
+          "name": "Quatermain 🟅",
+          "cost": "2600 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 12】 air",
+          "description": "Rare • Two-handed • Ranged • This weapon deals extra damage equal to the difference between your current and maximum Inventory Points.",
+          "tags": ["firearm", "two-handed", "ranged", "air", "DEX", "INS", "martial", "rare", "inventory-points"]
+        }
+      ]
+    },
+    {
+      "name": "flail",
+      "label": "Flails",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["flail"],
+      "weapons": [
+        {
+          "name": "Chain Whip",
+          "cost": "150 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 8】 physical",
+          "description": "Basic • Two-handed • Melee • No Quality.",
+          "tags": ["flail", "basic", "two-handed", "melee", "physical", "DEX"]
+        },
+        {
+          "name": "Old Whip",
+          "cost": "650 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • Two-handed • Melee • This weapon deals 5 extra damage to beasts and monsters.",
+          "tags": ["flail", "two-handed", "melee", "physical", "DEX", "rare", "beast", "monster"]
+        },
+        {
+          "name": "Dusk Star",
+          "cost": "750 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 4】 dark",
+          "description": "Rare • One-handed • Melee • You are immune to shaken.",
+          "tags": ["flail", "one-handed", "melee", "dark", "DEX", "rare", "immunity"]
+        },
+        {
+          "name": "Witchbane",
+          "cost": "800 z",
+          "accuracy": "【DEX + DEX】 +1",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • Two-handed • Melee • Damage dealt by this weapon reduces the target’s Mind Points instead of their Hit Points. If the target’s Mind Points reach 0, any excess loss is applied to their Hit Points as normal.",
+          "tags": ["flail", "two-handed", "melee", "physical", "DEX", "rare", "mp-damage"]
+        },
+        {
+          "name": "Salamander",
+          "cost": "1000 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • One-handed • Melee • You gain Resistance to fire damage.",
+          "tags": ["flail", "one-handed", "melee", "physical", "DEX", "MIG", "rare", "resistance"]
+        },
+        {
+          "name": "Nunchaku",
+          "cost": "1100 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • One-handed • Melee • You gain a +1 bonus to Defense.",
+          "tags": ["flail", "one-handed", "melee", "physical", "DEX", "MIG", "rare", "def-bonus"]
+        },
+        {
+          "name": "Dominatrix",
+          "cost": "1200 z",
+          "accuracy": "【DEX + WLP】",
+          "damage": "【HR + 8】 fire",
+          "description": "Rare • One-handed • Melee • You gain a +2 bonus to Accuracy Checks and Magic Checks against enraged targets.",
+          "tags": ["flail", "one-handed", "melee", "fire", "DEX", "WLP", "rare", "enraged"]
+        },
+        {
+          "name": "Whipblade 🟅",
+          "cost": "1400 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 12】 physical",
+          "description": "Rare • Two-handed • Melee • Attacks with this weapon have multi (2).",
+          "tags": ["flail", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "multi"]
+        },
+        {
+          "name": "Silk Wire 🟅",
+          "cost": "1450 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 12】 physical",
+          "description": "Rare • Two-handed • Melee • You gain Resistance to physical damage.",
+          "tags": ["flail", "two-handed", "melee", "physical", "DEX", "martial", "rare", "resistance"]
+        },
+        {
+          "name": "Kusarigama",
+          "cost": "1650 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • Two-handed • Melee • Each target hit by this weapon suffers slow.",
+          "tags": ["flail", "two-handed", "melee", "physical", "DEX", "rare", "slow", "status"]
+        },
+        {
+          "name": "Jormungand 🟅",
+          "cost": "2400 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 12】 dark",
+          "description": "Rare • Two-handed • Melee • Attacks with this weapon have multi (3).",
+          "tags": ["flail", "two-handed", "melee", "dark", "DEX", "MIG", "martial", "rare", "multi"]
+        },
+        {
+          "name": "Koi Whisker 🟅",
+          "cost": "2800 z",
+          "accuracy": "【DEX + WLP】",
+          "damage": "【HR + 12】 physical",
+          "description": "Rare • Two-handed • Melee • You gain Immunity to dark and light damage.",
+          "tags": ["flail", "two-handed", "melee", "physical", "DEX", "WLP", "martial", "rare", "immunity"]
+        }
+      ]
+    },
+    {
+      "name": "heavy",
+      "label": "Heavy",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["heavy"],
+      "weapons": [
+        {
+          "name": "Iron Hammer",
+          "cost": "200 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 6】 physical",
+          "description": "Basic • One-handed • Melee • No Quality.",
+          "tags": ["heavy", "basic", "one-handed", "melee", "physical", "MIG"]
+        },
+        {
+          "name": "Broadaxe 🟅",
+          "cost": "250 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 10】 physical",
+          "description": "Basic • One-handed • Melee • No Quality.",
+          "tags": ["heavy", "basic", "one-handed", "melee", "physical", "MIG", "martial"]
+        },
+        {
+          "name": "Waraxe 🟅",
+          "cost": "250 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 14】 physical",
+          "description": "Basic • Two-handed • Melee • No Quality.",
+          "tags": ["heavy", "basic", "two-handed", "melee", "physical", "MIG", "martial"]
+        },
+        {
+          "name": "Bardiche 🟅",
+          "cost": "350 z",
+          "accuracy": "【MIG + MIG】 +1",
+          "damage": "【HR + 14】 physical",
+          "description": "Rare • Two-handed • Melee • No Quality.",
+          "tags": ["heavy", "two-handed", "melee", "physical", "MIG", "martial", "rare"]
+        },
+        {
+          "name": "Artisan’s Mallet",
+          "cost": "450 z",
+          "accuracy": "【INS + MIG】",
+          "damage": "【HR + 6】 physical",
+          "description": "Rare • One-handed • Melee • This weapon deals 5 extra damage to constructs.",
+          "tags": ["heavy", "one-handed", "melee", "physical", "INS", "MIG", "rare", "construct"]
+        },
+        {
+          "name": "Beowulf 🟅",
+          "cost": "550 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 10】 physical",
+          "description": "Rare • One-handed • Melee • This weapon deals 5 extra damage to monsters.",
+          "tags": ["heavy", "one-handed", "melee", "physical", "MIG", "martial", "rare", "monster"]
+        },
+        {
+          "name": "Belly of the Beast 🟅",
+          "cost": "650 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 14】 poison",
+          "description": "Rare • Two-handed • Melee • This weapon deals 5 extra damage to humanoids.",
+          "tags": ["heavy", "two-handed", "melee", "poison", "MIG", "martial", "rare", "humanoid"]
+        },
+        {
+          "name": "Forest Hatchet 🟅",
+          "cost": "750 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 10】 physical",
+          "description": "Rare • One-handed • Melee • This weapon deals 5 extra damage to beasts and plants.",
+          "tags": ["heavy", "one-handed", "melee", "physical", "MIG", "martial", "rare", "beast", "plant"]
+        },
+        {
+          "name": "Adamanthammer 🟅",
+          "cost": "1050 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 14】 physical",
+          "description": "Rare • Two-handed • Melee • You gain a +1 bonus to Defense.",
+          "tags": ["heavy", "two-handed", "melee", "physical", "MIG", "martial", "rare", "def-bonus"]
+        },
+        {
+          "name": "Aura Hammer 🟅",
+          "cost": "1350 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 14】 light",
+          "description": "Rare • Two-handed • Melee • Attacks with this weapon have multi (2).",
+          "tags": ["heavy", "two-handed", "melee", "light", "MIG", "martial", "rare", "multi"]
+        },
+        {
+          "name": "Gravity Mace 🟅",
+          "cost": "1850 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 14】 earth",
+          "description": "Rare • Two-handed • Melee • Each target hit by this weapon suffers slow.",
+          "tags": ["heavy", "two-handed", "melee", "earth", "MIG", "martial", "rare", "slow", "status"]
+        },
+        {
+          "name": "Mjolnir 🟅",
+          "cost": "1850 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 10】 bolt",
+          "description": "Rare • One-handed • Melee • Each target hit by this weapon suffers dazed.",
+          "tags": ["heavy", "one-handed", "melee", "bolt", "MIG", "martial", "rare", "dazed", "status"]
+        },
+        {
+          "name": "Wyrmwing 🟅",
+          "cost": "2050 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 18】 fire",
+          "description": "Rare • Two-handed • Melee • You gain Immunity to fire damage.",
+          "tags": ["heavy", "two-handed", "melee", "fire", "MIG", "martial", "rare", "immunity"]
+        },
+        {
+          "name": "Soul of Pillage 🟅",
+          "cost": "2550 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 18】 dark",
+          "description": "Rare • Two-handed • Melee • Each target hit by this weapon suffers enraged.",
+          "tags": ["heavy", "two-handed", "melee", "dark", "MIG", "martial", "rare", "enraged", "status"]
+        },
+        {
+          "name": "Winter Kolossus 🟅",
+          "cost": "2550 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 18】 ice",
+          "description": "Rare • Two-handed • Melee • You gain a +1 bonus to Defense and Magic Defense.",
+          "tags": ["heavy", "two-handed", "melee", "ice", "MIG", "martial", "rare", "def-bonus", "mdef-bonus"]
+        }
+      ]
+    },
+    {
+      "name": "spear",
+      "label": "Spears",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["spear"],
+      "weapons": [
+        {
+          "name": "Light Spear 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 8】 physical",
+          "description": "Basic • One-handed • Melee • No Quality.",
+          "tags": ["spear", "basic", "one-handed", "melee", "physical", "DEX", "MIG", "martial"]
+        },
+        {
+          "name": "Heavy Spear 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 12】 physical",
+          "description": "Basic • Two-handed • Melee • No Quality.",
+          "tags": ["spear", "basic", "two-handed", "melee", "physical", "DEX", "MIG", "martial"]
+        },
+        {
+          "name": "Dragontongue 🟅",
+          "cost": "500 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 12】 fire",
+          "description": "Rare • Two-handed • Melee • Attacks with this weapon target Magic Defense.",
+          "tags": ["spear", "two-handed", "melee", "fire", "DEX", "MIG", "martial", "rare", "mdef-target"]
+        },
+        {
+          "name": "Rocinante 🟅",
+          "cost": "500 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • One-handed • Melee • This weapon deals 1 extra damage per status effect you have.",
+          "tags": ["spear", "one-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "status-effect"]
+        },
+        {
+          "name": "Serpent Spear 🟅",
+          "cost": "800 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 16】 physical",
+          "description": "Rare • Two-handed • Melee • Damage dealt by this weapon ignores Resistances.",
+          "tags": ["spear", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "ignore-resistance"]
+        },
+        {
+          "name": "Halberd 🟅",
+          "cost": "1000 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 12】 physical",
+          "description": "Rare • Two-handed • Melee • You gain a +1 bonus to Defense.",
+          "tags": ["spear", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "def-bonus"]
+        },
+        {
+          "name": "Narwhalhorn 🟅",
+          "cost": "1200 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 12】 ice",
+          "description": "Rare • One-handed • Melee • You gain Resistance to ice damage.",
+          "tags": ["spear", "one-handed", "melee", "ice", "DEX", "MIG", "martial", "rare", "resistance"]
+        },
+        {
+          "name": "Brave Glaive 🟅",
+          "cost": "1300 z",
+          "accuracy": "【MIG + WLP】",
+          "damage": "【HR + 12】 earth",
+          "description": "Rare • Two-handed • Melee • As long as you have at least three Bonds of loyalty or affection, you gain a +1 bonus to Defense and Magic Defense.",
+          "tags": ["spear", "two-handed", "melee", "earth", "MIG", "WLP", "martial", "rare", "bond", "def-bonus", "mdef-bonus"]
+        },
+        {
+          "name": "Morrigan 🟅",
+          "cost": "1400 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 12】 dark",
+          "description": "Rare • Two-handed • Melee • When you hit one or more creatures with this weapon, you may recover 10 Mind Points.",
+          "tags": ["spear", "two-handed", "melee", "dark", "DEX", "MIG", "martial", "rare", "mp-recovery"]
+        },
+        {
+          "name": "Gae Bolg 🟅",
+          "cost": "1800 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 12】 physical",
+          "description": "Rare • Two-handed • Melee • If you roll a critical success on an Accuracy Check with this weapon, you may spend that opportunity to deal 10 extra damage.",
+          "tags": ["spear", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "critical"]
+        },
+        {
+          "name": "Longinus 🟅",
+          "cost": "2000 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 16】 physical",
+          "description": "Rare • Two-handed • Melee • Each target hit by this weapon suffers weak.",
+          "tags": ["spear", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "weak", "status"]
+        },
+        {
+          "name": "Nine-teeth Rake 🟅",
+          "cost": "2500 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 16】 poison",
+          "description": "Rare • Two-handed • Melee • You Absorb poison damage.",
+          "tags": ["spear", "two-handed", "melee", "poison", "DEX", "MIG", "martial", "rare", "absorb"]
+        },
+        {
+          "name": "Gungnir 🟅",
+          "cost": "3000 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 16】 light",
+          "description": "Rare • Two-handed • Melee • You gain Immunity to fire and ice damage.",
+          "tags": ["spear", "two-handed", "melee", "light", "DEX", "MIG", "martial", "rare", "immunity"]
+        }
+      ]
+    },
+    {
+      "name": "sword",
+      "label": "Swords",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["sword"],
+      "weapons": [
+        {
+          "name": "Bronze Sword 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 6】 physical",
+          "description": "Basic • One-handed • Melee • No Quality.",
+          "tags": ["sword", "basic", "one-handed", "melee", "physical", "DEX", "MIG", "martial"]
+        },
+        {
+          "name": "Greatsword 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 10】 physical",
+          "description": "Basic • Two-handed • Melee • No Quality.",
+          "tags": ["sword", "basic", "two-handed", "melee", "physical", "DEX", "MIG", "martial"]
+        },
+        {
+          "name": "Katana 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 10】 physical",
+          "description": "Basic • Two-handed • Melee • No Quality.",
+          "tags": ["sword", "basic", "two-handed", "melee", "physical", "DEX", "INS", "martial"]
+        },
+        {
+          "name": "Rapier 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 6】 physical",
+          "description": "Basic • One-handed • Melee • No Quality.",
+          "tags": ["sword", "basic", "one-handed", "melee", "physical", "DEX", "INS", "martial"]
+        },
+        {
+          "name": "Zweihänder 🟅",
+          "cost": "400 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 14】 physical",
+          "description": "Rare • Two-handed • Melee • No Quality.",
+          "tags": ["sword", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare"]
+        },
+        {
+          "name": "Falling Rain 🟅",
+          "cost": "450 z",
+          "accuracy": "【DEX + DEX】 +1",
+          "damage": "【HR + 10】 ice",
+          "description": "Rare • Two-handed • Melee • Attacks with this weapon target Magic Defense.",
+          "tags": ["sword", "two-handed", "melee", "ice", "DEX", "martial", "rare", "mdef-target"]
+        },
+        {
+          "name": "Flamberge 🟅",
+          "cost": "500 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 10】 fire",
+          "description": "Rare • One-handed • Melee • No Quality.",
+          "tags": ["sword", "one-handed", "melee", "fire", "DEX", "MIG", "martial", "rare"]
+        },
+        {
+          "name": "Elegant Edge 🟅",
+          "cost": "700 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 6】 physical",
+          "description": "Rare • One-handed • Melee • You are immune to enraged.",
+          "tags": ["sword", "one-handed", "melee", "physical", "DEX", "INS", "martial", "rare", "immunity"]
+        },
+        {
+          "name": "Joyeuse 🟅",
+          "cost": "900 z",
+          "accuracy": "【MIG + WLP】 +1",
+          "damage": "【HR + 10】 physical",
+          "description": "Rare • One-handed • Melee • You are immune to shaken.",
+          "tags": ["sword", "one-handed", "melee", "physical", "MIG", "WLP", "martial", "rare", "immunity"]
+        },
+        {
+          "name": "Deathblade 🟅",
+          "cost": "1000 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 6】 dark",
+          "description": "Rare • One-handed • Melee • This weapon deals 5 extra damage if you are in Crisis.",
+          "tags": ["sword", "one-handed", "melee", "dark", "DEX", "MIG", "martial", "rare", "crisis"]
+        },
+        {
+          "name": "Gunsword 🟅",
+          "cost": "1000 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 10】 physical",
+          "description": "Rare • Two-handed • Melee • This weapon can target flying creatures.",
+          "tags": ["sword", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "flying"]
+        },
+        {
+          "name": "Main Gauche 🟅",
+          "cost": "1000 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 6】 physical",
+          "description": "Rare • One-handed • Melee • You gain a +1 bonus to Defense.",
+          "tags": ["sword", "one-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "def-bonus"]
+        },
+        {
+          "name": "The Rikizo 🟅",
+          "cost": "1200 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 10】 physical",
+          "description": "Rare • Two-handed • Melee • Deals 2 extra damage for each Class you have mastered.",
+          "tags": ["sword", "two-handed", "melee", "physical", "DEX", "INS", "martial", "rare", "class-mastery"]
+        },
+        {
+          "name": "Flesh Eater 🟅",
+          "cost": "1300 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 10】 poison",
+          "description": "Rare • One-handed • Melee • This weapon deals 5 extra damage to weak targets.",
+          "tags": ["sword", "one-handed", "melee", "poison", "MIG", "martial", "rare", "weak"]
+        },
+        {
+          "name": "Kusanagi 🟅",
+          "cost": "1500 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 14】 air",
+          "description": "Rare • Two-handed • Melee • Attacks with this weapon have multi (2).",
+          "tags": ["sword", "two-handed", "melee", "air", "DEX", "MIG", "martial", "rare", "multi"]
+        },
+        {
+          "name": "Excalibur 🟅",
+          "cost": "2300 z",
+          "accuracy": "【MIG + WLP】 +1",
+          "damage": "【HR + 10】 light",
+          "description": "Rare • Two-handed • Melee • You are immune to all status effects.",
+          "tags": ["sword", "two-handed", "melee", "light", "MIG", "WLP", "martial", "rare", "immunity"]
+        }
+      ]
+    },
+    {
+      "name": "thrown",
+      "label": "Thrown",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["thrown"],
+      "weapons": [
+        {
+          "name": "Improvised (Ranged)",
+          "cost": "—",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 2】 physical",
+          "description": "Basic • One-handed • Ranged • Breaks after the attack.",
+          "tags": ["thrown", "basic", "one-handed", "ranged", "physical", "DEX", "MIG", "improvised"]
+        },
+        {
+          "name": "Shuriken",
+          "cost": "150 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 4】 physical",
+          "description": "Basic • One-handed • Ranged • No Quality.",
+          "tags": ["thrown", "basic", "one-handed", "ranged", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Crescent Edge",
+          "cost": "350 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 4】 light",
+          "description": "Rare • One-handed • Ranged • Attacks with this weapon target Magic Defense.",
+          "tags": ["thrown", "one-handed", "ranged", "light", "DEX", "INS", "rare", "mdef-target"]
+        },
+        {
+          "name": "Meteor Star",
+          "cost": "350 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 4】 fire",
+          "description": "Rare • One-handed • Ranged • No Quality.",
+          "tags": ["thrown", "one-handed", "ranged", "fire", "DEX", "INS", "rare"]
+        },
+        {
+          "name": "Throwing Axe",
+          "cost": "350 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • One-handed • Ranged • No Quality.",
+          "tags": ["thrown", "one-handed", "ranged", "physical", "DEX", "MIG", "rare"]
+        },
+        {
+          "name": "Boomerang",
+          "cost": "750 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 4】 physical",
+          "description": "Rare • One-handed • Ranged • This weapon deals 5 extra damage to beasts and monsters.",
+          "tags": ["thrown", "one-handed", "ranged", "physical", "DEX", "MIG", "rare", "beast", "monster"]
+        },
+        {
+          "name": "Wind Dancer",
+          "cost": "850 z",
+          "accuracy": "【DEX + WLP】",
+          "damage": "【HR + 8】 air",
+          "description": "Rare • One-handed • Ranged • Damage dealt by this weapon ignores Resistances.",
+          "tags": ["thrown", "one-handed", "ranged", "air", "DEX", "WLP", "rare", "ignore-resistance"]
+        },
+        {
+          "name": "Acupuncturer",
+          "cost": "950 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 8】 physical",
+          "description": "Rare • One-handed • Ranged • You are immune to poisoned.",
+          "tags": ["thrown", "one-handed", "ranged", "physical", "DEX", "INS", "rare", "immunity"]
+        },
+        {
+          "name": "Blue Pinwheel",
+          "cost": "950 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 4】 ice",
+          "description": "Rare • One-handed • Ranged • You gain Resistance to ice damage.",
+          "tags": ["thrown", "one-handed", "ranged", "ice", "DEX", "INS", "rare", "resistance"]
+        },
+        {
+          "name": "Crone’s Needle",
+          "cost": "1050 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 4】 earth",
+          "description": "Rare • One-handed • Ranged • You gain Resistance to dark damage.",
+          "tags": ["thrown", "one-handed", "ranged", "earth", "DEX", "INS", "rare", "resistance"]
+        },
+        {
+          "name": "Chakram",
+          "cost": "1250 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 4】 physical",
+          "description": "Rare • One-handed • Ranged • Attacks with this weapon have multi (2).",
+          "tags": ["thrown", "one-handed", "ranged", "physical", "DEX", "MIG", "rare", "multi"]
+        },
+        {
+          "name": "Vajra",
+          "cost": "2050 z",
+          "accuracy": "【DEX + WLP】 +1",
+          "damage": "【HR + 8】 bolt",
+          "description": "Rare • One-handed • Ranged • Each target hit by this weapon suffers shaken.",
+          "tags": ["thrown", "one-handed", "ranged", "bolt", "DEX", "WLP", "rare", "shaken", "status"]
+        },
+        {
+          "name": "Dark Orbit",
+          "cost": "2250 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 4】 dark",
+          "description": "Rare • One-handed • Ranged • You gain a +1 bonus to Defense and Magic Defense.",
+          "tags": ["thrown", "one-handed", "ranged", "dark", "DEX", "INS", "rare", "def-bonus", "mdef-bonus"]
+        },
+        {
+          "name": "Hive Dart",
+          "cost": "2300 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 4】 poison",
+          "description": "Rare • One-handed • Ranged • Each target hit by this weapon suffers poisoned.",
+          "tags": ["thrown", "one-handed", "ranged", "poison", "DEX", "rare", "poisoned", "status"]
+        }
+      ]
+    }
+  ]
+}

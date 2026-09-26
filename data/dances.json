@@ -90,7 +90,7 @@
         {
           "name": "Peacock Dance",
           "duration": "Instantaneous",
-          "description": "Choose another creature that is able to see you. The next time that creature performs an attack or casts an offensive spell (O) during this scene, that attack or spell must include you among its targets if possible.",
+          "description": "Choose another creature that is able to see you. The next time that creature performs an attack or casts an offensive spell (🗲) during this scene, that attack or spell must include you among its targets if possible.",
           "tags": ["attack", "spell"]
         },
         {

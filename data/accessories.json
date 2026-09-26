@@ -1,0 +1,195 @@
+{
+  "schema": {
+    "key": "accessories",
+    "title": "Accessories",
+    "universal-tags": ["core", "zenit", "accessory"]
+  },
+  "groups": [
+    {
+      "name": "accessories",
+      "label": "",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" }
+      ],
+      "grid-template-columns": "0.25fr 4fr 2fr 0.25fr",
+      "group-tags": [],
+      "accessories": [
+        {
+          "name": "Explorer’s Belt",
+          "cost": "500 z",
+          "description": "Rare • You gain a +4 bonus to your Initiative modifier.",
+          "tags": ["rare", "initiative"]
+        },
+        {
+          "name": "Gloves, Elegant",
+          "cost": "500 z",
+          "description": "Rare • You are immune to dazed.",
+          "tags": ["rare", "immunity", "status"]
+        },
+        {
+          "name": "Gloves, Rough",
+          "cost": "500 z",
+          "description": "Rare • You are immune to weak.",
+          "tags": ["rare", "immunity", "status"]
+        },
+        {
+          "name": "Gloves, Silky",
+          "cost": "500 z",
+          "description": "Rare • You are immune to slow.",
+          "tags": ["rare", "immunity", "status"]
+        },
+        {
+          "name": "Gloves, Warm",
+          "cost": "500 z",
+          "description": "Rare • You are immune to shaken.",
+          "tags": ["rare", "immunity", "status"]
+        },
+        {
+          "name": "Rookie’s Boots",
+          "cost": "600 z",
+          "description": "Rare • When you roll a fumble, if you have less than 10 Experience Points, you may gain 1 Experience Point.",
+          "tags": ["rare", "fumble"]
+        },
+        {
+          "name": "Han’nya Mask",
+          "cost": "700 z",
+          "description": "Rare • All damage you deal to shaken creatures ignores Resistances.",
+          "tags": ["rare", "damage", "status", "resistance"]
+        },
+        {
+          "name": "Pendant, Amber",
+          "cost": "700 z",
+          "description": "Rare • You gain Resistance to earth damage.",
+          "tags": ["rare", "resistance", "earth"]
+        },
+        {
+          "name": "Pendant, Amethyst",
+          "cost": "700 z",
+          "description": "Rare • You gain Resistance to dark damage.",
+          "tags": ["rare", "resistance", "dark"]
+        },
+        {
+          "name": "Pendant, Diamond",
+          "cost": "700 z",
+          "description": "Rare • You gain Resistance to light damage.",
+          "tags": ["rare", "resistance", "light"]
+        },
+        {
+          "name": "Pendant, Emerald",
+          "cost": "700 z",
+          "description": "Rare • You gain Resistance to poison damage.",
+          "tags": ["rare", "resistance", "poison"]
+        },
+        {
+          "name": "Pendant, Opal",
+          "cost": "700 z",
+          "description": "Rare • You gain Resistance to air damage.",
+          "tags": ["rare", "resistance", "air"]
+        },
+        {
+          "name": "Pendant, Ruby",
+          "cost": "700 z",
+          "description": "Rare • You gain Resistance to fire damage.",
+          "tags": ["rare", "resistance", "fire"]
+        },
+        {
+          "name": "Pendant, Sapphire",
+          "cost": "700 z",
+          "description": "Rare • You gain Resistance to ice damage.",
+          "tags": ["rare", "resistance", "ice"]
+        },
+        {
+          "name": "Pendant, Topaz",
+          "cost": "700 z",
+          "description": "Rare • You gain Resistance to bolt damage.",
+          "tags": ["rare", "resistance", "bolt"]
+        },
+        {
+          "name": "Ring of Sorcery",
+          "cost": "800 z",
+          "description": "Rare • You gain a +1 bonus to Magic Defense.",
+          "tags": ["rare", "magic-defense"]
+        },
+        {
+          "name": "Wanderer’s Boots",
+          "cost": "900 z",
+          "description": "Rare • When your group makes a discovery while traveling, you may gain 1 Fabula Point.",
+          "tags": ["rare", "travel", "fabula-point"]
+        },
+        {
+          "name": "Crested Helm",
+          "cost": "1000 z",
+          "description": "Rare • You gain a +1 bonus to your Accuracy Checks.",
+          "tags": ["rare", "attack"]
+        },
+        {
+          "name": "Gloves, Crimson",
+          "cost": "1000 z",
+          "description": "Rare • When you perform an attack with multi, you gain a +2 bonus to your Accuracy Check.",
+          "tags": ["rare", "attack", "multi"]
+        },
+        {
+          "name": "Pointy Yellow Hat",
+          "cost": "1000 z",
+          "description": "Rare • You gain a +1 bonus to your Magic Checks.",
+          "tags": ["rare", "spell"]
+        },
+        {
+          "name": "Ring of the Lion",
+          "cost": "1500 z",
+          "description": "Rare • You gain a +2 bonus to Opposed Checks that rely on Willpower.",
+          "tags": ["rare", "WLP"]
+        },
+        {
+          "name": "Ring of the Owl",
+          "cost": "1500 z",
+          "description": "Rare • You gain a +2 bonus to Opposed Checks that rely on Insight.",
+          "tags": ["rare", "INS"]
+        },
+        {
+          "name": "Ring of the Pupil",
+          "cost": "1500 z",
+          "description": "Rare • As long as you have at least two Bonds of admiration, you gain a +1 bonus to both your Defense and Magic Defense.",
+          "tags": ["rare", "bond", "defense", "magic-defense"]
+        },
+        {
+          "name": "Ring of Tales",
+          "cost": "1500 z",
+          "description": "Rare • When you roll a critical success, you may spend that opportunity to gain 1 Fabula Point.",
+          "tags": ["rare", "critical", "fabula-point"]
+        },
+        {
+          "name": "Gloves, Multigroa Skin",
+          "cost": "2000 z",
+          "description": "Rare • You are immune to all status effects.",
+          "tags": ["rare", "immunity", "status"]
+        },
+        {
+          "name": "Ring of Onions",
+          "cost": "2000 z",
+          "description": "Rare • As long as you have this accessory equipped, increase your maximum Hit Points and maximum Mind Points by 2 for each different Class you have.",
+          "tags": ["rare", "hp", "mp"]
+        },
+        {
+          "name": "Ring of Frost",
+          "cost": "2500 z",
+          "description": "Rare • You gain Absorption to ice damage and Vulnerability to fire damage.",
+          "tags": ["rare", "absorption", "vulnerability", "ice", "fire"]
+        },
+        {
+          "name": "Ring of Magma",
+          "cost": "2500 z",
+          "description": "Rare • You gain Absorption to fire damage and Vulnerability to ice damage.",
+          "tags": ["rare", "absorption", "vulnerability", "fire", "ice"]
+        },
+        {
+          "name": "Ring of the Egg",
+          "cost": "3000 z",
+          "description": "Rare • When reduced to 0 Hit Points, you may instead choose to resist with exactly 1 Hit Point. If you do, this effect cannot be used until after you rest.",
+          "tags": ["rare", "hp", "crisis"]
+        }
+      ]
+    }
+  ]
+}

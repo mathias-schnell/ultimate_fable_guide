@@ -83,7 +83,7 @@
           "name": "Spell Mimic",
           "class": "Chimerist",
           "max-sl": 10,
-          "description": "After a beast, monster, or plant creature you can see casts a spell and resolves its effects, you may learn that spell as a Chimerist spell of your own: if you do, record the Species of the creature you learned it from. When you first acquire this Skill, choose (INS + WLP) or (MIG + WLP). From now on, your offensive (OO) Chimerist spells will use the chosen Attributes for the Magic Check, regardless of the Attributes used by the creature you learned the spell from. You may have up to (SL + 2) different Chimerist spells memorized this way. If you want to memorize a new Chimerist spell but are already at your limit, you must forget one of your old spells and replace it with the new spell.",
+          "description": "After a beast, monster, or plant creature you can see casts a spell and resolves its effects, you may learn that spell as a Chimerist spell of your own: if you do, record the Species of the creature you learned it from. When you first acquire this Skill, choose (INS + WLP) or (MIG + WLP). From now on, your offensive (🗲) Chimerist spells will use the chosen Attributes for the Magic Check, regardless of the Attributes used by the creature you learned the spell from. You may have up to (SL + 2) different Chimerist spells memorized this way. If you want to memorize a new Chimerist spell but are already at your limit, you must forget one of your old spells and replace it with the new spell.",
           "tags": ["chimerist", "INS", "MIG", "spell", "WLP"]
         },
         {
@@ -132,14 +132,14 @@
           "name": "Elemental Magic",
           "class": "Elementalist",
           "max-sl": 10,
-          "description": "Each time you acquire this Skill, learn one Elementalist spell (see next two pages). Offensive (OO) Elementalist spells use (INS + WLP) for the Magic Check.",
+          "description": "Each time you acquire this Skill, learn one Elementalist spell (see next two pages). Offensive (🗲) Elementalist spells use (INS + WLP) for the Magic Check.",
           "tags": ["elementalist", "INS", "spell", "WLP"]
         },
         {
           "name": "Magical Artillery",
           "class": "Elementalist",
           "max-sl": 3,
-          "description": "When you cast an offensive spell (OO), if you have an arcane weapon equipped, you gain a bonus to your Magic Check equal to (SL × 2).",
+          "description": "When you cast an offensive spell (🗲), if you have an arcane weapon equipped, you gain a bonus to your Magic Check equal to (SL × 2).",
           "tags": ["arcane", "elementalist", "equipment", "spell"]
         },
         {
@@ -153,7 +153,7 @@
           "name": "Spellblade",
           "class": "Elementalist",
           "max-sl": 3,
-          "description": "When you cast an offensive spell (OO) targeting a single creature, if the spell has a total Mind Point cost of (SL × 20) or lower, you may choose one non-arcane weapon you have equipped. If you do, your Magic Check for the spell uses the chosen weapon’s Accuracy Check formula; if that formula includes Dexterity, the Magic Check also gains a bonus equal to (SL). For instance, casting an Elementalist spell through a bronze sword (page 131) when you have Skill Level 2 in Spellblade will cause the Magic Check to be (DEX + MIG).",
+          "description": "When you cast an offensive spell (🗲) targeting a single creature, if the spell has a total Mind Point cost of (SL × 20) or lower, you may choose one non-arcane weapon you have equipped. If you do, your Magic Check for the spell uses the chosen weapon’s Accuracy Check formula; if that formula includes Dexterity, the Magic Check also gains a bonus equal to (SL). For instance, casting an Elementalist spell through a bronze sword (page 131) when you have Skill Level 2 in Spellblade will cause the Magic Check to be (DEX + MIG).",
           "tags": ["DEX", "elementalist", "equipment", "MIG", "mp", "spell"]
         },
         {
@@ -167,7 +167,7 @@
           "name": "Entropic Magic",
           "class": "Entropist",
           "max-sl": 10,
-          "description": "Each time you acquire this Skill, learn one Entropist spell (see next two pages). Offensive (OO) Entropist spells use (INS + WLP) for the Magic Check.",
+          "description": "Each time you acquire this Skill, learn one Entropist spell (see next two pages). Offensive (🗲) Entropist spells use (INS + WLP) for the Magic Check.",
           "tags": ["entropist", "INS", "spell", "WLP"]
         },
         {
@@ -216,7 +216,7 @@
           "name": "Provoke",
           "class": "Fury",
           "max-sl": 5,
-          "description": "You may use an action and spend 5 Mind Points to perform an Opposed (MIG + WLP) Check against an enemy you can see — describe how you taunt them! If you succeed, the target suffers enraged, is compelled to focus their attention on you, and must include you among the targets of their attacks and offensive spells (OO) if able. This compulsion ends if you fall unconscious or leave the scene, if the creature is no longer enraged, or if they are successfully provoked by someone else. You gain a bonus equal to (SL) to your (MIG + WLP) Checks for this Skill.",
+          "description": "You may use an action and spend 5 Mind Points to perform an Opposed (MIG + WLP) Check against an enemy you can see — describe how you taunt them! If you succeed, the target suffers enraged, is compelled to focus their attention on you, and must include you among the targets of their attacks and offensive spells (🗲) if able. This compulsion ends if you fall unconscious or leave the scene, if the creature is no longer enraged, or if they are successfully provoked by someone else. You gain a bonus equal to (SL) to your (MIG + WLP) Checks for this Skill.",
           "tags": ["attack", "fury", "MIG", "mp", "spell", "status", "WLP"]
         },
         {
@@ -419,7 +419,7 @@
           "name": "Spiritual Magic",
           "class": "Spiritist",
           "max-sl": 10,
-          "description": "Each time you acquire this Skill, learn one Spiritist spell (see next two pages). Offensive (OO) Spiritist spells use (INS + WLP) for the Magic Check.",
+          "description": "Each time you acquire this Skill, learn one Spiritist spell (see next two pages). Offensive (🗲) Spiritist spells use (INS + WLP) for the Magic Check.",
           "tags": ["INS", "spell", "spiritist", "WLP"]
         },
         {
@@ -864,7 +864,7 @@
           "name": "Cognitive Focus",
           "class": "Esper",
           "max-sl": 5,
-          "description": "At the start of your turn during a conflict, you may choose one ally who is able to hear you or one enemy you can see that is suffering from dazed, enraged, and/or shaken. Until the start of your next turn, the chosen creature becomes your focus.\nYou gain a bonus equal to (SL) to Checks you perform to examine your focus, as well as to your Accuracy Checks and Magic Checks for attacks and offensive spells (O) that include your focus among the targets. When you cause your focus to recover Hit Points and/or Mind Points, they recover (SL × 2) additional HP and/or MP, respectively.",
+          "description": "At the start of your turn during a conflict, you may choose one ally who is able to hear you or one enemy you can see that is suffering from dazed, enraged, and/or shaken. Until the start of your next turn, the chosen creature becomes your focus.\nYou gain a bonus equal to (SL) to Checks you perform to examine your focus, as well as to your Accuracy Checks and Magic Checks for attacks and offensive spells (🗲) that include your focus among the targets. When you cause your focus to recover Hit Points and/or Mind Points, they recover (SL × 2) additional HP and/or MP, respectively.",
           "tags": ["attack", "esper", "hp", "mp", "spell", "status"]
         },
         {
@@ -906,7 +906,7 @@
           "name": "Biophagy",
           "class": "Mutant",
           "max-sl": 4,
-          "description": "After one of your attacks or offensive spells (O) causes one or more enemies to lose Hit Points, if you are in Crisis, you may recover (SL × 5) Hit Points.",
+          "description": "After one of your attacks or offensive spells (🗲) causes one or more enemies to lose Hit Points, if you are in Crisis, you may recover (SL × 5) Hit Points.",
           "tags": ["attack", "crisis", "hp", "mutant", "spell"]
         },
         {

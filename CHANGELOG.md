@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.5.6] - 2026-09-26
+
+### Added
+- Added content for 'Weapons' (Core Rulebook).
+- Added content for 'Armor' and 'Shields'. (Core Rulebook).
+- Added content for 'Accessories' (Core Rulebook).
+- Added new tags.
+
+### Changed
+- Changed the wording of the filtering modes and removed the 'match exact' option.
+
+### Internal
+- Updated data and added symbol for 'offensive spell'.
+
+---
+
 ## [0.5.5] - 2026-09-25
 
 ### Fixed

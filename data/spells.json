@@ -19,7 +19,7 @@
       "group-tags": ["elementalist"],
       "spells": [
         {
-          "name": "Boulder",
+          "name": "Boulder 🗲",
           "class": "Elementalist",
           "offensive": true,
           "mp": "20",
@@ -49,7 +49,7 @@
           "tags": ["air", "attack", "bolt", "damage", "earth", "equipment", "fire", "ice"]
         },
         {
-          "name": "Flare",
+          "name": "Flare 🗲",
           "class": "Elementalist",
           "offensive": true,
           "mp": "20",
@@ -59,7 +59,7 @@
           "tags": ["damage", "fire", "resistance"]
         },
         {
-          "name": "Fulgur",
+          "name": "Fulgur 🗲",
           "class": "Elementalist",
           "offensive": true,
           "mp": "10 × T",
@@ -69,7 +69,7 @@
           "tags": ["bolt", "damage", "status"]
         },
         {
-          "name": "Glacies",
+          "name": "Glacies 🗲",
           "class": "Elementalist",
           "offensive": true,
           "mp": "10 × T",
@@ -79,7 +79,7 @@
           "tags": ["damage", "ice", "status"]
         },
         {
-          "name": "Iceberg",
+          "name": "Iceberg 🗲",
           "class": "Elementalist",
           "offensive": true,
           "mp": "20",
@@ -89,7 +89,7 @@
           "tags": ["damage", "ice", "resistance"]
         },
         {
-          "name": "Ignis",
+          "name": "Ignis 🗲",
           "class": "Elementalist",
           "offensive": true,
           "mp": "10 × T",
@@ -109,7 +109,7 @@
           "tags": ["attack", "brawling", "damage", "melee", "spear", "sword"]
         },
         {
-          "name": "Terra",
+          "name": "Terra 🗲",
           "class": "Elementalist",
           "offensive": true,
           "mp": "10 × T",
@@ -119,7 +119,7 @@
           "tags": ["damage", "earth"]
         },
         {
-          "name": "Thunderbolt",
+          "name": "Thunderbolt 🗲",
           "class": "Elementalist",
           "offensive": true,
           "mp": "20",
@@ -129,7 +129,7 @@
           "tags": ["bolt", "damage", "resistance"]
         },
         {
-          "name": "Ventus",
+          "name": "Ventus 🗲",
           "class": "Elementalist",
           "offensive": true,
           "mp": "10 × T",
@@ -139,7 +139,7 @@
           "tags": ["air", "damage"]
         },
         {
-          "name": "Vortex",
+          "name": "Vortex 🗲",
           "class": "Elementalist",
           "offensive": true,
           "mp": "20",
@@ -174,7 +174,7 @@
           "tags": ["attack", "equipment", "mp"]
         },
         {
-          "name": "Anomaly",
+          "name": "Anomaly 🗲",
           "class": "Entropist",
           "offensive": true,
           "mp": "20",
@@ -214,7 +214,7 @@
           "tags": ["critical", "fumble"]
         },
         {
-          "name": "Drain Spirit",
+          "name": "Drain Spirit 🗲",
           "class": "Entropist",
           "offensive": true,
           "mp": "5",
@@ -224,7 +224,7 @@
           "tags": ["mp"]
         },
         {
-          "name": "Drain Vigor",
+          "name": "Drain Vigor 🗲",
           "class": "Entropist",
           "offensive": true,
           "mp": "10",
@@ -250,11 +250,11 @@
           "mp": "10",
           "target": "One creature",
           "duration": "Scene",
-          "description": "You twist the laws of magic. Until this spell ends, when the target is targeted by an offensive spell (O), the creature that cast that offensive spell will be targeted in their stead (any other targets of the offensive spell will be targeted as normal). Once that happens, this spell ends.",
+          "description": "You twist the laws of magic. Until this spell ends, when the target is targeted by an offensive spell (🗲), the creature that cast that offensive spell will be targeted in their stead (any other targets of the offensive spell will be targeted as normal). Once that happens, this spell ends.",
           "tags": []
         },
         {
-          "name": "Omega",
+          "name": "Omega 🗲",
           "class": "Entropist",
           "offensive": true,
           "mp": "15",
@@ -264,7 +264,7 @@
           "tags": ["hp"]
         },
         {
-          "name": "Stop",
+          "name": "Stop 🗲",
           "class": "Entropist",
           "offensive": true,
           "mp": "10",
@@ -274,7 +274,7 @@
           "tags": []
         },
         {
-          "name": "Umbra",
+          "name": "Umbra 🗲",
           "class": "Entropist",
           "offensive": true,
           "mp": "10 × T",
@@ -339,7 +339,7 @@
           "tags": ["status"]
         },
         {
-          "name": "Enrage",
+          "name": "Enrage 🗲",
           "class": "Spiritist",
           "offensive": true,
           "mp": "10",
@@ -349,7 +349,7 @@
           "tags": ["status"]
         },
         {
-          "name": "Hallucination",
+          "name": "Hallucination 🗲",
           "class": "Spiritist",
           "offensive": true,
           "mp": "5 × T",
@@ -369,7 +369,7 @@
           "tags": ["hp"]
         },
         {
-          "name": "Lux",
+          "name": "Lux 🗲",
           "class": "Spiritist",
           "offensive": true,
           "mp": "10 × T",
@@ -419,7 +419,7 @@
           "tags": ["attack", "damage", "equipment", "light"]
         },
         {
-          "name": "Torpor",
+          "name": "Torpor 🗲",
           "class": "Spiritist",
           "offensive": true,
           "mp": "5 × T",
