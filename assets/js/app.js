@@ -99,7 +99,11 @@ function toggle_nav_tab(target, context) {
     });
     target.classList.add("active");
     target.setAttribute("aria-selected", "true");
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    const nav = context.nav_container;
+    const scroll_to = target.offsetLeft - (nav.clientWidth / 2) + (target.offsetWidth / 2);
+    nav.scrollTo({ left: scroll_to, behavior: "smooth" });
+
     show_content(context.content_container, target.getAttribute("aria-controls"));
 }
 

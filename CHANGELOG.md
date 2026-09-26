@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.4] - 2026-09-25
+
+### Fixed
+- Fixed the jitter from the vertical scrollbar sometimes appearing and disappearing depending on the tab selected and content shown.
+- Fixed the horizontal jitter from changing tabs that would sometimes scroll the user down very slightly.
+
+---
+
 ## [0.5.3] - 2026-09-25
 
 ### Added
