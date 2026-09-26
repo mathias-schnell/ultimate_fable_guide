@@ -12,7 +12,7 @@
         { "label": "Name", "field": "name", "class": "name" }
       ],
       "grid-template-columns": "0.25fr 6fr 0.25fr",
-      "group_tags": [],
+      "group-tags": [],
       "symbols": [
         {
           "name": "Symbol of Binding",

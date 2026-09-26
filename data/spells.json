@@ -6,8 +6,8 @@
   },
   "groups": [
     {
-      "name": "elementalist",
-      "label": "Elementalist Spells",
+      "name": "",
+      "label": "",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Class", "field": "class", "class": "class" },
@@ -151,8 +151,8 @@
       ]
     },
     {
-      "name": "entropist",
-      "label": "Entropist Spells",
+      "name": "",
+      "label": "",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Class", "field": "class", "class": "class" },
@@ -286,8 +286,8 @@
       ]
     },
     {
-      "name": "Spiritist",
-      "label": "Spiritist Spells",
+      "name": "",
+      "label": "",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Class", "field": "class", "class": "class" },

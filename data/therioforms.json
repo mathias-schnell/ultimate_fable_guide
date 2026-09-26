@@ -13,7 +13,7 @@
         { "label": "Suggestions", "field": "suggestions", "class": "suggestions" }
       ],
       "grid-template-columns": "0.25fr 1.5fr 4.5fr 0.25fr",
-      "group_tags": [],
+      "group-tags": [],
       "therioforms": [
         {
           "name": "Amphibia",

@@ -13,7 +13,7 @@
         { "label": "Summary", "field": "summary", "class": "summary" }
       ],
       "grid-template-columns": "0.25fr 2fr 4fr 0.25fr",
-      "group_tags": [],
+      "group-tags": [],
       "magiseeds": [
         {
           "name": "Arctic Narcissus",

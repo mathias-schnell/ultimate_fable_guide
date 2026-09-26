@@ -19,6 +19,10 @@
     display: grid;
 }
 
+.content-container [class*="-group"].hidden {
+    display: none;
+}
+
 .content-container [class*="-group-title"] {
     font-weight: 600;
     padding: 0.25rem 0.75rem 0 0.75rem;

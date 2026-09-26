@@ -14,7 +14,7 @@
         { "label": "Required SL", "field": "required_sl", "class": "required_sl" }
       ],
       "grid-template-columns": "0.25fr 2fr 2fr 2fr 0.25fr",
-      "group_tags": [],
+      "group-tags": [],
       "invocations": [
         {
           "name": "Aero Blast",

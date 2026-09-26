@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.2] - 2026-09-25
+
+### Changed
+- If a category has multiple sub-categories, but no sub-category label and column headers are the same as the previous sub-category, then they will not be shown. In effect this will show the sub-categories as one large block of the same table of data until a sub-category label or different column headers appear.
+- If a sub-category has all of its content hidden after filtering, the whole sub-category will be hidden.
+
+### Internal
+- Corrected some JSON property names.
+- Cleaned up helper function code for rendering.
+
+---
+
 ## [0.5.1] - 2026-09-25
 
 ### Added

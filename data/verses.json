@@ -14,28 +14,28 @@
         { "label": "Targets", "field": "targets", "class": "targets" }
       ],
       "grid-template-columns": "0.25fr 1.25fr 1fr 3.75fr 0.25fr",
-      "group-tags": ["volume"],
+      "group-tags": ["mp"],
       "verses": [
         {
           "name": "Low",
           "mp": "10",
           "targets": "Yourself or another creature you can see who can hear you.",
           "description": "",
-          "tags": ["low", "single-target"]
+          "tags": []
         },
         {
           "name": "Medium",
           "mp": "20",
           "targets": "Every ally who can hear you.",
           "description": "",
-          "tags": ["medium", "area-ally"]
+          "tags": []
         },
         {
           "name": "High",
           "mp": "30",
           "targets": "Every enemy who can hear you.",
           "description": "",
-          "tags": ["high", "area-enemy"]
+          "tags": []
         }
       ]
     },
@@ -50,7 +50,7 @@
         { "label": "Recovery", "field": "recovery", "class": "recovery" }
       ],
       "grid-template-columns": "0.25fr 1.25fr 1fr 1.25fr 1.25fr 1.25fr 0.25fr",
-      "group-tags": ["key"],
+      "group-tags": ["status"],
       "verses": [
         {
           "name": "Flame",
@@ -59,7 +59,7 @@
           "attribute": "Might",
           "recovery": "Hit Points",
           "description": "",
-          "tags": ["flame", "fire", "shaken", "might", "hp"]
+          "tags": ["fire", "MIG", "hp"]
         },
         {
           "name": "Frost",
@@ -68,7 +68,7 @@
           "attribute": "Willpower",
           "recovery": "Mind Points",
           "description": "",
-          "tags": ["frost", "ice", "weak", "willpower", "mp"]
+          "tags": ["ice", "WLP", "mp"]
         },
         {
           "name": "Iron",
@@ -77,7 +77,7 @@
           "attribute": "Willpower",
           "recovery": "Mind Points",
           "description": "",
-          "tags": ["iron", "physical", "slow", "willpower", "mp"]
+          "tags": ["physical", "WLP", "mp"]
         },
         {
           "name": "Radiance",
@@ -86,7 +86,7 @@
           "attribute": "Insight",
           "recovery": "Hit Points",
           "description": "",
-          "tags": ["radiance", "light", "dazed", "insight", "hp"]
+          "tags": ["light", "INS", "hp"]
         },
         {
           "name": "Shadow",
@@ -95,7 +95,7 @@
           "attribute": "Dexterity",
           "recovery": "Mind Points",
           "description": "",
-          "tags": ["shadow", "dark", "weak", "dexterity", "mp"]
+          "tags": ["dark", "DEX", "mp"]
         },
         {
           "name": "Stone",
@@ -104,7 +104,7 @@
           "attribute": "Might",
           "recovery": "Hit Points",
           "description": "",
-          "tags": ["stone", "earth", "dazed", "might", "hp"]
+          "tags": ["earth", "MIG", "hp"]
         },
         {
           "name": "Thunder",
@@ -113,7 +113,7 @@
           "attribute": "Dexterity",
           "recovery": "Hit Points",
           "description": "",
-          "tags": ["thunder", "bolt", "shaken", "dexterity", "hp"]
+          "tags": ["bolt", "DEX", "hp"]
         },
         {
           "name": "Wind",
@@ -122,7 +122,7 @@
           "attribute": "Insight",
           "recovery": "Mind Points",
           "description": "",
-          "tags": ["wind", "air", "slow", "insight", "mp"]
+          "tags": ["air", "INS", "mp"]
         }
       ]
     },
@@ -133,42 +133,42 @@
         { "label": "Name", "field": "name", "class": "name" }
       ],
       "grid-template-columns": "0.25fr 6fr 0.25fr",
-      "group-tags": ["tone"],
+      "group-tags": [],
       "verses": [
         {
           "name": "Calm",
           "description": "Each target recovers (key recovery) equal to (10 + twice your current Willpower die size). This amount increases by 10 if you are level 20 or higher, or by 20 if you are level 40 or higher.\nIf this tone causes MP recovery, it has no effect on the character who sings it.",
-          "tags": ["calm", "recovery", "hp", "mp", "willpower"]
+          "tags": ["hp", "mp", "WLP"]
         },
         {
           "name": "Energetic",
           "description": "Until the start of your next turn, when a target succeeds on a Check that includes (key Attribute) and that Check allows them to advance or turn back a Clock, they may fill or erase an additional section of that Clock.",
-          "tags": ["energetic", "clock", "check"]
+          "tags": ["clock"]
         },
         {
           "name": "Frantic",
           "description": "You deal an amount of (key type) damage equal to twice your current Willpower die to each target. This tone deals 5 extra damage if you are level 20 or higher, or 10 extra damage if you are level 40 or higher.",
-          "tags": ["frantic", "damage", "willpower"]
+          "tags": ["damage", "WLP"]
         },
         {
           "name": "Haunting",
           "description": "Each target suffers (key status effect). Each target also loses Resistance to (key type) damage (if they have it) until the start of your next turn, and cannot gain Resistance to that damage type.",
-          "tags": ["haunting", "status", "resistance"]
+          "tags": ["status", "resistance"]
         },
         {
           "name": "Lively",
           "description": "Each target treats their (key Attribute) as being one die size higher (up to a maximum of d12) until the start of your next turn.",
-          "tags": ["lively", "attribute", "buff"]
+          "tags": ["attribute"]
         },
         {
           "name": "Menacing",
           "description": "The first time each target suffers damage before the start of your next turn, that damage becomes (key type). This can trigger once for each target of the verse, separately.",
-          "tags": ["menacing", "damage", "type-change"]
+          "tags": ["damage"]
         },
         {
           "name": "Solemn",
           "description": "Each target recovers from (key status effect). Each target also gains Resistance to (key type) damage until the start of your next turn.",
-          "tags": ["solemn", "cleanse", "resistance"]
+          "tags": ["resistance"]
         }
       ]
     }

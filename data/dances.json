@@ -13,7 +13,7 @@
         { "label": "Duration", "field": "duration", "class": "duration" }
       ],
       "grid-template-columns": "0.25fr 2fr 4fr 0.25fr",
-      "group_tags": [],
+      "group-tags": [],
       "dances": [
         {
           "name": "Angel Dance",

@@ -194,6 +194,10 @@ function filter_content(target, { filter_container, content_container } = {}) {
         }
         article.classList.toggle('filtered-out', !match);
     });
+
+    content_container.querySelectorAll("section[class*='-group']").forEach(group => {
+        group.classList.toggle("hidden", group.querySelectorAll('article.filtered-out').length === group.querySelectorAll('article').length);
+    });
 }
 
 /**

@@ -35,7 +35,7 @@ function get_content_groups(array $data, string $key): string {
     $entry_counter = 0;
     $previous_cols = null;
 
-    foreach ($groups as $group) {
+    foreach ($groups as $i => $group):
         $group_name = $group['name'] ?? '';
         $group_label = $group['label'] ?? '';
         $cols = $group['columns'] ?? [];
@@ -48,54 +48,43 @@ function get_content_groups(array $data, string $key): string {
 
         ?>
         <section class="<?= $key ?>-group">
-            <?php if ($show_header): ?>
-                <h3 class="<?= $key ?>-group-title"><?= htmlspecialchars($group_label) ?></h3>
-                <div class="<?= $key ?>-list-header"<?= $grid_style ?>>
-                    <div>
-                        <button class="<?= $key ?>-multitoggle" type="button" title="Expand All" data-key="<?= $key ?>" aria-expanded="false" aria-controls="article.<?= $key ?>">+</button>
-                    </div>
-                    <?php foreach ($cols as $col): ?>
-                        <div><?= htmlspecialchars($col['label']) ?></div>
-                    <?php endforeach; ?>
-                    <div></div>
-                </div>
-            <?php endif; ?>
+        <?php
+            if ($show_header):
+                render_group_header($key, $cols, $group_label, $grid_style);
+            endif;
 
-            <?php
-            foreach ($items as $entry) {
+            foreach ($items as $entry):
                 $entry_counter++;
                 $combined_tags = array_unique(array_merge($universal_tags, $group_tags, $entry['tags'] ?? []));
                 $tags_str = htmlspecialchars(implode(', ', $combined_tags));
                 $id = "{$key}-description-{$entry_counter}";
                 render_row_article($key, $id, $tags_str, $cols, $entry, $grid_style);
-            }
-            ?>
+            endforeach;
+        ?>
         </section>
         <?php
-    }
-
+    endforeach;
+    
     return ob_get_clean();
 }
 
-function get_row_data(array $data, string $key, array $cols, string $grid_style): string {
-    ob_start();
-    
-    $universal_tags = $data['schema']['universal-tags'] ?? [];
-    $data_key = $data['schema']['key'];
-    $entry_counter = 0;
-
-    foreach ($data['groups'] as $group) {
-        $group_tags = $group['group-tags'] ?? [];
-        $items = $group[$data_key] ?? $group[$key] ?? [];
-        foreach ($items as $entry) {
-            $entry_counter++;
-            $combined_tags = array_unique(array_merge($universal_tags, $group_tags, $entry['tags'] ?? []));
-            $tags_str = htmlspecialchars(implode(', ', $combined_tags));
-            $id = "{$key}-description-{$entry_counter}";
-            render_row_article($key, $id, $tags_str, $cols, $entry, $grid_style);
-        }
-    }
-    return ob_get_clean();
+function render_group_header(string $key, array $cols, string $group_label, string $grid_style): void {
+    if(!empty($group_label)):
+    ?>
+        <h3 class="<?= $key ?>-group-title"><?= htmlspecialchars($group_label) ?></h3>
+    <?php
+    endif;
+    ?>
+    <div class="<?= $key ?>-list-header"<?= $grid_style ?>>
+        <div>
+            <button class="<?= $key ?>-multitoggle" type="button" title="Expand All" data-key="<?= $key ?>" aria-expanded="false" aria-controls="article.<?= $key ?>">+</button>
+        </div>
+        <?php foreach ($cols as $col): ?>
+            <div><?= htmlspecialchars($col['label']) ?></div>
+        <?php endforeach; ?>
+        <div></div>
+    </div>
+    <?php
 }
 
 function render_row_article(string $key, string $id, string $tags_str, array $cols, array $entry, string $grid_style): void {
