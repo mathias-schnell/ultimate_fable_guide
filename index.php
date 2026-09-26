@@ -22,7 +22,9 @@
     <main id="main-container" class="container">
         <header class="page-header">
             <nav class="tab-nav">
+                <button type='button' class='nav-left-arrow'>◀</button>
                 <?=get_nav_tabs($sections); ?>
+                <button type='button' class='nav-right-arrow'>▶</button>
             </nav>
         </header>
         <?php include_once(INCLUDES_PATH . "/layout/filter.php"); ?>

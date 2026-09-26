@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.3] - 2026-09-25
+
+### Added
+- Navigation arrows at the top-left and top-right corners of the app to allow for selecting tabs even when they go off screen.
+
+---
+
 ## [0.5.2] - 2026-09-25
 
 ### Changed

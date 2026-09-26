@@ -10,7 +10,16 @@
  */
 
 /** 
- * Defining the actions that will happen to the content area of the app on click 
+ * Defining the actions that will happen in the navigation area of the app on click 
+ */
+const nav_click_actions = {
+    ".tab"              : toggle_nav_tab,
+    ".nav-left-arrow"   : move_tab_left,
+    ".nav-right-arrow"  : move_tab_right
+}
+
+/** 
+ * Defining the actions that will happen in the content area of the app on click 
  */
 const content_click_actions = {
     "[class*='-pin']"            : toggle_pin,
@@ -19,7 +28,7 @@ const content_click_actions = {
 };
 
 /** 
- * Defining the actions that will happen to the filter area of the app on click 
+ * Defining the actions that will happen in the filter area of the app on click 
  */
 const filter_click_actions = {
     ".btn-add-filter-row"       : add_filter_row,
@@ -27,7 +36,7 @@ const filter_click_actions = {
 };
 
 /** 
- * Defining the actions that will happen to the filter area of the app when something changes 
+ * Defining the actions that will happen in the filter area of the app when something changes 
  */
 const filter_change_actions = {
     ".filter-mode"              : filter_content,
@@ -67,8 +76,7 @@ function initialize_app() {
     bind_navigation_events(context);
     bind_filter_events(context);
     bind_content_events(context);
-    toggle_nav_tab(context.nav_container, context.nav_container.children[0]);
-    show_content(context.content_container);
+    toggle_nav_tab(context.nav_container.querySelector(".tab"), context);
 }
 
 /**
@@ -76,28 +84,47 @@ function initialize_app() {
  * 
  * @param {AppContext} param0 
  */
-function bind_navigation_events({ nav_container, content_container } = {}) {
-    if(!nav_container || !content_container) return;
-    nav_container.addEventListener("click", (e) => {
-        const tab = e.target.closest(".tab");
-        if(!tab) return;
-        const content = tab.getAttribute("aria-controls");
-        toggle_nav_tab(nav_container, tab);
-        show_content(content_container, content);
-    });
+function bind_navigation_events(context) {
+    context.nav_container?.addEventListener("click", dispatcher(nav_click_actions, context));
 }
 
 /**
  * Make the clicked navigation tab active
  */
-function toggle_nav_tab(nav, tab) {
-    if(!nav || !tab) return;
-    nav.querySelectorAll(".tab").forEach(t => {
-        t.classList.remove("active");
-        t.setAttribute("aria-selected", "false");
+function toggle_nav_tab(target, context) {
+    if(!target || !context.nav_container) return;
+    context.nav_container.querySelectorAll(".tab").forEach(tab => {
+        tab.classList.remove("active");
+        tab.setAttribute("aria-selected", "false");
     });
-    tab.classList.add("active");
-    tab.setAttribute("aria-selected", "true");
+    target.classList.add("active");
+    target.setAttribute("aria-selected", "true");
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    show_content(context.content_container, target.getAttribute("aria-controls"));
+}
+
+/**
+ * Change the active tab to the one that is to the current active tab's left
+ */
+function move_tab_left(target, context) {
+    const active_tab = context.nav_container.querySelector(".tab.active");
+    const prev_tab = active_tab.previousElementSibling;
+
+    if(!prev_tab.classList.contains("nav-left-arrow")) {
+        toggle_nav_tab(prev_tab, context);
+    }
+}
+
+/**
+ * Change the active tab to the one that is to the current active tab's right
+ */
+function move_tab_right(target, context) {
+    const active_tab = context.nav_container.querySelector(".tab.active");
+    const next_tab = active_tab.nextElementSibling;
+
+    if(!next_tab.classList.contains("nav-right-arrow")) {
+        toggle_nav_tab(next_tab, context);
+    }
 }
 
 /**
@@ -274,12 +301,10 @@ function toggle_item(target, { content_container } = {}, forced_state = null) {
  * @param {HTMLElement} container 
  * @param {String|null} content 
  */
-function show_content(content_container, content = null) {
+function show_content(content_container, content) {
     if(!content_container) return;
     [...content_container.children].forEach(item => item.classList.remove("active"));
     if(content) {
         content_container.querySelector("#" + content)?.classList.add("active");
-    } else {
-        content_container.children[0]?.classList.add("active");
     }
 }

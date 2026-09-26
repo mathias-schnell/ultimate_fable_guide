@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+.content-container [class*="-multitoggle"] {
+    font-size: var(--font-size-mediumlarge);
+}
+
 .content-container [class*="-pin"][aria-checked="true"] {
     transform: rotate(-45deg);
 }
@@ -34,19 +38,23 @@
 
 .content-container [class*="-list-header"],
 .content-container [class*="-row"] {
-    align-items: center;
     display: grid;
     grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
 }
 
+.content-container [class*="-row"] {
+    align-items: center;
+}
+
 .content-container [class*="-list-header"] {
+    align-items: baseline;
     border-bottom: 1px solid #CCCCCC;
     font-weight: bold;
 }
 
 .content-container [class*="-list-header"] > div,
 .content-container [class*="-row"] > div {
-    padding: 0.5rem;
+    padding: 0.4rem;
 }
 
 .content-container :has(> [class*="-row"]) {

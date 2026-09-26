@@ -13,6 +13,7 @@
   --font-size-xs: 0.5rem;
   --font-size-small: 0.75rem;
   --font-size-medium: 1rem;
+  --font-size-mediumlarge: 1.25rem;
   --font-size-large: 1.5rem;
   --font-size-xl: 2rem;
   --font-size-xxl: 2.5rem;
@@ -82,8 +83,15 @@ h6 {
 
 .page-header .tab-nav {
     display: flex;
-    gap: 0;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    gap: -25px;
+    margin-left: calc(var(--font-size-large) + 1rem);
+    margin-right: calc(var(--font-size-large) + 1rem);
+    overflow-x: scroll;
     position: relative;
+    scrollbar-width: none;
 }
 
 .page-header .tab-nav .tab {
@@ -93,14 +101,12 @@ h6 {
     border-radius: 12px 12px 0 0;
     color: var(--inactive-tab-text-color);
     cursor: pointer;
-    font-family: var(--font-family-heading);
-    font-size: var(--font-size-large);
-    font-weight: 600;
     margin-bottom: -1px;
     padding: 0 0.5rem;
     position: relative;
-    z-index: 1;
     transition: background-color 0.25s ease, color 0.25s ease;
+    white-space: nowrap;
+    z-index: 1;
 }
 
 .page-header .tab-nav .tab:hover:not(.active) {
@@ -113,6 +119,28 @@ h6 {
     border-bottom: 2px solid var(--container-bg-color);
     color: var(--text-color);
     z-index: 2;
+}
+
+.page-header .nav-left-arrow {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    cursor: pointer;
+    font-size: var(--font-size-large);
+    padding: 0.1rem 0.5rem;
+    z-index: 10;
+}
+
+.page-header .nav-right-arrow {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    cursor: pointer;
+    font-size: var(--font-size-large);
+    padding: 0.1rem 0.5rem;
+    z-index: 10;
 }
 
 .content-container {
