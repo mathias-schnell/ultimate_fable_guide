@@ -77,7 +77,7 @@ function render_group_header(string $key, array $cols, string $group_label, stri
     ?>
     <div class="<?= $key ?>-list-header"<?= $grid_style ?>>
         <div>
-            <button class="<?= $key ?>-multitoggle" type="button" title="Expand All" data-key="<?= $key ?>" aria-expanded="false" aria-controls="article.<?= $key ?>">+</button>
+            <button class="<?= $key ?>-multitoggle" type="button" title="Expand All" data-key="<?= $key ?>" aria-expanded="false" aria-controls="article.<?= $key ?>">⊕</button>
         </div>
         <?php foreach ($cols as $col): ?>
             <div><?= htmlspecialchars($col['label']) ?></div>

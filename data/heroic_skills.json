@@ -6,8 +6,8 @@
   },
   "groups": [
     {
-      "name": "core",
-      "label": "Core Rulebook",
+      "name": "",
+      "label": "",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Requirements", "field": "requirements", "class": "requirements" },
@@ -260,8 +260,8 @@
       ]
     },
     {
-      "name": "high-fantasy",
-      "label": "High Fantasy Atlas",
+      "name": "",
+      "label": "",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Requirements", "field": "requirements", "class": "requirements" },
@@ -446,8 +446,8 @@
       ]
     },
     {
-      "name": "natural-fantasy",
-      "label": "Natural Fantasy Atlas",
+      "name": "",
+      "label": "",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Requirements", "field": "requirements", "class": "requirements" },
@@ -606,8 +606,8 @@
       ]
     },
     {
-      "name": "techno-fantasy",
-      "label": "Techno Fantasy Atlas",
+      "name": "",
+      "label": "",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Requirements", "field": "requirements", "class": "requirements" },

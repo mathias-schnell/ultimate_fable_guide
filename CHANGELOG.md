@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.7] - 2026-09-26
+
+### Changed
+- Slight styling changes to make text and symbols more readable.
+- Reorganization of Class Skills, Heroic Skills and Spells.
+
+---
+
 ## [0.5.6] - 2026-09-26
 
 ### Added

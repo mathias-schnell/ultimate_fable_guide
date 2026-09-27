@@ -68,7 +68,7 @@ function initialize_app() {
     if(!container) return;
 
     const context = {
-        nav_container: container.querySelector('.tab-nav'),
+        nav_container: container.querySelector('.page-header'),
         filter_container: container.querySelector('.filter-rows-container'),
         content_container: container.querySelector('.content-container'),
     }
@@ -100,7 +100,7 @@ function toggle_nav_tab(target, context) {
     target.classList.add("active");
     target.setAttribute("aria-selected", "true");
 
-    const nav = context.nav_container;
+    const nav = target.parentElement;
     const scroll_to = target.offsetLeft - (nav.clientWidth / 2) + (target.offsetWidth / 2);
     nav.scrollTo({ left: scroll_to, behavior: "smooth" });
 
@@ -114,7 +114,7 @@ function move_tab_left(target, context) {
     const active_tab = context.nav_container.querySelector(".tab.active");
     const prev_tab = active_tab.previousElementSibling;
 
-    if(!prev_tab.classList.contains("nav-left-arrow")) {
+    if(prev_tab != null) {
         toggle_nav_tab(prev_tab, context);
     }
 }
@@ -126,7 +126,7 @@ function move_tab_right(target, context) {
     const active_tab = context.nav_container.querySelector(".tab.active");
     const next_tab = active_tab.nextElementSibling;
 
-    if(!next_tab.classList.contains("nav-right-arrow")) {
+    if(next_tab != null) {
         toggle_nav_tab(next_tab, context);
     }
 }
@@ -242,7 +242,7 @@ function toggle_all(target, { content_container } = {}) {
     const next_state = !is_expanded;
 
     toggles.forEach(item => {
-        item.innerHTML = next_state ? "-" : "+";
+        item.innerHTML = next_state ? "⊝" : "⊕";
         item.setAttribute('aria-expanded', String(next_state));
         if(next_state) {
             item.setAttribute('title', 'Contract All');

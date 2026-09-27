@@ -1,6 +1,7 @@
 .content-container [class*="-pin"],
 .content-container [class*="-toggle"],
 .content-container [class*="-multitoggle"] {
+    font-size: var(--font-size-large);
     height: 100%;
     transform: rotate(0deg);
     transition: transform 0.25s ease;
@@ -8,7 +9,7 @@
 }
 
 .content-container [class*="-multitoggle"] {
-    font-size: var(--font-size-mediumlarge);
+    font-size: var(--font-size-xl);
 }
 
 .content-container [class*="-pin"][aria-checked="true"] {
@@ -36,7 +37,7 @@
 }
 
 .content-container [class*="-group"]:not(:first-of-type) [class*="-group-title"] {
-    padding-top: 0.75rem;
+    padding-top: 1rem;
 }
 
 .content-container [class*="-list-header"],
@@ -50,9 +51,16 @@
 }
 
 .content-container [class*="-list-header"] {
-    align-items: baseline;
+    align-items: center;
     border-bottom: 1px solid #CCCCCC;
+    font-size: var(--font-size-mediumlarge);
     font-weight: bold;
+}
+
+.content-container [class*="-list-header"] > :first-child,
+.content-container [class*="-list-header"] > :last-child {
+    margin: 0;
+    padding: 0;
 }
 
 .content-container [class*="-list-header"] > div,
