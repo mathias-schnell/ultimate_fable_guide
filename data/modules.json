@@ -1,0 +1,375 @@
+{
+  "schema": {
+    "key": "modules",
+    "title": "Modules",
+    "universal-tags": ["module", "pilot", "techno-fantasy"]
+  },
+  "groups": [
+    {
+      "name": "weapon-modules",
+      "label": "Weapon Modules",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 2.5fr 1.75fr 1.75fr 0.25fr",
+      "group-tags": [],
+      "modules": [
+        {
+          "name": "Arcane",
+          "accuracy": "【DEX + WLP】",
+          "damage": "【HR + 8】 physical",
+          "description": "Arcane • Melee • No Qualities.",
+          "tags": ["arcane", "melee", "physical", "DEX", "WLP"]
+        },
+        {
+          "name": "Axe",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 12】 physical",
+          "description": "Heavy • Melee • No Qualities.",
+          "tags": ["heavy", "melee", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Blade",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 6】 physical",
+          "description": "Dagger • Melee • No Qualities.",
+          "tags": ["dagger", "melee", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Bow",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 12】 physical",
+          "description": "Bow • Ranged • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+          "tags": ["bow", "ranged", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Cannon",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 14】 physical",
+          "description": "Firearm • Ranged • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+          "tags": ["firearm", "ranged", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Claw",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 8】 physical",
+          "description": "Brawling • Melee • No Qualities. This weapon can be used to interact with the scene as if it were a free hand.",
+          "tags": ["brawling", "melee", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Claymore",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 14】 physical",
+          "description": "Sword • Melee • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+          "tags": ["sword", "melee", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Esoteric",
+          "accuracy": "【DEX + WLP】",
+          "damage": "【HR + 12】 physical",
+          "description": "Arcane • Melee • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+          "tags": ["arcane", "melee", "physical", "DEX", "WLP"]
+        },
+        {
+          "name": "Flail",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 10】 physical",
+          "description": "Flail • Melee • No Qualities.",
+          "tags": ["flail", "melee", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Flamer",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 8】 fire",
+          "description": "Firearm • Ranged • No Qualities.",
+          "tags": ["firearm", "ranged", "fire", "DEX", "INS"]
+        },
+        {
+          "name": "Machine Gun",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 10】 physical",
+          "description": "Firearm • Ranged • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled. Additionally, when you perform the Attack action and attack with this weapon module, you may perform two separate attacks instead of one (against the same target or against different targets). If you do, both attacks follow the rules for two-weapon fighting: each attack loses the multi property and cannot gain it, and you treat the High Roll of each Accuracy Check as being equal to 0 when determining damage.",
+          "tags": ["firearm", "ranged", "physical", "DEX", "INS", "attack", "damage", "multi"]
+        },
+        {
+          "name": "Rifle",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 10】 physical",
+          "description": "Firearm • Ranged • No Qualities.",
+          "tags": ["firearm", "ranged", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Scythe",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 16】 physical",
+          "description": "Heavy • Melee • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+          "tags": ["heavy", "melee", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Shield",
+          "accuracy": "—",
+          "damage": "—",
+          "description": "Shield • Exoskeleton and Mecha frames only. No Qualities. While driving this personal vehicle, you gain a +2 bonus to Defense and a +2 bonus to Magic Defense. Additionally, this weapon module does not count as a “weapon”: instead, it counts as an equipped shield. This module cannot be equipped in your main hand slot, unless you have acquired the Dual Shieldbearer Skill. If you have, your Twin Shields deal 2 extra damage (this is cumulative if you have two Shield modules enabled at the same time).",
+          "tags": ["shield", "defense", "magic-defense", "damage", "skill", "guardian"]
+        },
+        {
+          "name": "Spear",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 10】 physical",
+          "description": "Spear • Melee • No Qualities.",
+          "tags": ["spear", "melee", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Sword",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 8】 physical",
+          "description": "Sword • Melee • No Qualities.",
+          "tags": ["sword", "melee", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Trident",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 14】 physical",
+          "description": "Spear • Melee • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+          "tags": ["spear", "melee", "physical", "DEX", "INS"]
+        },
+        {
+            "name": "Richter Grasp",
+            "cost": "800 z",
+            "accuracy": "【DEX + INS】",
+            "damage": "【HR + 12】 earth",
+            "description": "Rare • Brawling • Melee • No qualities. This weapon can be used to interact with the scene as if it was a normal free hand.",
+            "tags": ["rare", "brawling", "melee", "earth", "DEX", "INS"]
+        },
+        {
+            "name": "Scrapper",
+            "cost": "900 z",
+            "accuracy": "【DEX + INS】 +1",
+            "damage": "【HR + 12】 physical",
+            "description": "Rare • Heavy • Melee • This weapon deals 5 extra damage to constructs.",
+            "tags": ["rare", "heavy", "melee", "physical", "DEX", "INS", "damage", "construct"]
+        },
+        {
+            "name": "Fimbulvetr Battery",
+            "cost": "1000 z",
+            "accuracy": "【DEX + INS】",
+            "damage": "【HR + 10】 ice",
+            "description": "Rare • Firearm • Ranged • Damage dealt by this weapon ignores Resistances.",
+            "tags": ["rare", "firearm", "ranged", "ice", "DEX", "INS", "damage", "resistance"]
+        },
+        {
+            "name": "EMP Cannon",
+            "cost": "1100 z",
+            "accuracy": "【DEX + INS】",
+            "damage": "【HR + 14】 bolt",
+            "description": "Rare • Firearm • Ranged • Each construct hit by an attack with this weapon suffers dazed. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+            "tags": ["rare", "firearm", "ranged", "bolt", "DEX", "INS", "construct", "attack", "status"]
+        },
+        {
+            "name": "Vanguard Pike",
+            "cost": "1100 z",
+            "accuracy": "【DEX + INS】 +1",
+            "damage": "【HR + 14】 physical",
+            "description": "Rare • Spear • Melee • This weapon deals 5 extra damage during the first round of each conflict. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+            "tags": ["rare", "spear", "melee", "physical", "DEX", "INS", "damage"]
+        },
+        {
+            "name": "Crescens",
+            "cost": "1200 z",
+            "accuracy": "【DEX + INS】 +1",
+            "damage": "【HR + 12】 physical",
+            "description": "Rare • Sword • Melee • This weapon deals extra damage equal to your Skill Level in Personal Vehicle.",
+            "tags": ["rare", "sword", "melee", "physical", "DEX", "INS", "damage", "skill", "pilot"]
+        },
+        {
+            "name": "Hookclaw",
+            "cost": "1200 z",
+            "accuracy": "【DEX + INS】",
+            "damage": "【HR + 10】 physical",
+            "description": "Rare • Flail • Melee • Attacks with this weapon can target flying creatures.",
+            "tags": ["rare", "flail", "melee", "physical", "DEX", "INS", "attack", "flying"]
+        },
+        {
+            "name": "Arbalest Mk II",
+            "cost": "1300 z",
+            "accuracy": "【DEX + INS】 +1",
+            "damage": "【HR + 16】 physical",
+            "description": "Rare • Bow • Ranged • This weapon deals 5 extra damage to flying creatures or those who are in midair. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+            "tags": ["rare", "bow", "ranged", "physical", "DEX", "INS", "damage", "flying"]
+        },
+        {
+            "name": "Reactive Deflector",
+            "cost": "1500 z",
+            "accuracy": "—",
+            "damage": "—",
+            "description": "Rare • Shield • As long as you are driving your personal vehicle and you have a Counterstrike support module enabled, you can apply its effects even when one of the characters on board your personal vehicle is hit by a melee attack (rather than only against ranged attacks). This module has all the effects of a Shield module.",
+            "tags": ["rare", "shield", "melee", "ranged", "pilot"]
+        },
+        {
+            "name": "Mercurialis",
+            "cost": "1600 z",
+            "accuracy": "【DEX + WLP】",
+            "damage": "【HR + 12】 fire",
+            "description": "Rare • Arcane • Melee • When a spell you cast deals damage to a single creature, it deals 5 extra damage to that target. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+            "tags": ["rare", "arcane", "melee", "fire", "DEX", "WLP", "spell", "damage"]
+        },
+        {
+            "name": "Morphshield",
+            "cost": "1800 z",
+            "accuracy": "—",
+            "damage": "—",
+            "description": "Rare • Shield • At the start of your turn during a conflict, you can disable this module to enable a different disabled weapon module of your choice. If you do, at the end of your turn you have to disable the chosen module and enable this one again. This module has all the effects of a Shield module.",
+            "tags": ["rare", "shield"]
+        },
+        {
+            "name": "Plasma Rifle",
+            "cost": "1800 z",
+            "accuracy": "【DEX + INS】 +1",
+            "damage": "【HR + 14】 light",
+            "description": "Rare • Firearm • Ranged • Accuracy Checks with this weapon trigger a critical success if both dice show the same number (and it is not a fumble).",
+            "tags": ["rare", "firearm", "ranged", "light", "DEX", "INS", "attack", "critical", "fumble"]
+        },
+        {
+            "name": "Aerowitzer",
+            "cost": "2000 z",
+            "accuracy": "【DEX + INS】",
+            "damage": "【HR + 18】 air",
+            "description": "Rare • Firearm • Ranged • As long as you are driving your personal vehicle you gain a +2 bonus to your Defense. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+            "tags": ["rare", "firearm", "ranged", "air", "DEX", "INS", "defense", "pilot"]
+        },
+        {
+            "name": "Warp Cannon",
+            "cost": "2800 z",
+            "accuracy": "【DEX + INS】 +1",
+            "damage": "【HR + 18】 dark",
+            "description": "Rare • Firearm • Ranged • Attacks with this weapon have multi (2). Additionally, all damage dealt by this weapon ignores Absorptions, Immunities, and Resistances. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+            "tags": ["rare", "firearm", "ranged", "dark", "DEX", "INS", "multi", "damage", "absorption", "immunity", "resistance"]
+        }
+      ]
+    },
+    {
+        "name": "armor-modules",
+        "label": "Armor Modules",
+        "columns": [
+            { "label": "Name", "field": "name", "class": "name" },
+            { "label": "Defense", "field": "defense", "class": "defense" },
+            { "label": "M. Defense", "field": "m_defense", "class": "m_defense" }
+        ],
+        "grid-template-columns": "0.25fr 2.5fr 1.75fr 1.75fr 0.25fr",
+        "group-tags": [],
+        "modules": [
+            {
+                "name": "Flexible Plating",
+                "defense": "DEX size +2",
+                "m_defense": "INS size +1",
+                "description": "No Qualities.",
+                "tags": ["DEX", "INS"]
+            },
+            {
+                "name": "Heavy Plating 🟅",
+                "defense": "12",
+                "m_defense": "8",
+                "description": "No Qualities.",
+                "tags": ["martial"]
+            },
+            {
+                "name": "Runic Plating 🟅",
+                "defense": "10",
+                "m_defense": "11",
+                "description": "No Qualities.",
+                "tags": ["martial"]
+            },
+            {
+                "name": "Standard Plating 🟅",
+                "defense": "11",
+                "m_defense": "10",
+                "description": "No Qualities.",
+                "tags": ["martial"]
+            }
+        ]
+    },
+    {
+    "name": "support-modules",
+    "label": "Support Modules",
+    "columns": [
+        { "label": "Name", "field": "name", "class": "name" }
+    ],
+    "grid-template-columns": "0.25fr 6.0fr 0.25fr",
+    "group-tags": ["support-module"],
+    "modules": [
+        {
+            "name": "Advanced Targeting",
+            "description": "While driving this personal vehicle, you gain a +2 bonus to your Accuracy Checks and to Magic Checks for offensive spells (🗲) you cast.",
+            "tags": ["attack", "spell"]
+        },
+        {
+            "name": "Aerial",
+            "description": "Counts as two enabled modules. This personal vehicle can fly, and its distance becomes ×3. While you are driving this personal vehicle, your melee attacks can target flying creatures, and none of the creatures inside the personal vehicle can be targeted by melee attacks unless the attacker is flying or is somehow able to reach flying targets. These benefits do not apply while the personal vehicle is inactive or grounded, while you are in Crisis, or while you are covering another creature with the Guard action. Additionally, if a creature aboard this personal vehicle suffers air, bolt or ice damage during a conflict, the benefits of this module cease until the start of your next turn.",
+            "tags": ["travel", "melee", "crisis", "guard", "air", "bolt", "ice", "damage"]
+        },
+        {
+            "name": "Anti-Element",
+            "description": "Each time you enable this module on your personal vehicle, choose a damage type: air, bolt, earth, fire or ice. Creatures aboard this personal vehicle are treated as being Resistant to the chosen damage type as long as this module remains enabled.",
+            "tags": ["air", "bolt", "earth", "fire", "ice", "resistance", "damage"]
+        },
+        {
+            "name": "Counterstrike",
+            "description": "After a creature aboard this personal vehicle is hit by a ranged attack, if you are driving this vehicle, you may spend 1 Inventory Point. If you do, you deal 10 physical damage to the attacker (after their attack has been resolved). This amount increases by 5 damage if you are level 20 or higher, or by 10 damage if you are level 40 or higher.",
+            "tags": ["attack", "ranged", "ip", "physical", "damage"]
+        },
+        {
+            "name": "Excavation",
+            "description": "This personal vehicle can burrow through the ground and is equipped with bright lights.",
+            "tags": ["travel"]
+        },
+        {
+            "name": "Expanded Plating",
+            "description": "Mecha and Steed frames only. While you are driving this personal vehicle, if it has a Heavy, Runic, or Standard Plating module enabled, all passengers aboard may treat their Defense and Magic Defense scores as being equal to those provided by the armor module in question (they may still use their normal scores if those are better).",
+            "tags": ["defense", "magic-defense", "armor"]
+        },
+        {
+            "name": "Magistatic",
+            "description": "After you pay the MP cost of an Arcanum, spell, or verse, if you are driving this personal vehicle and have an arcane weapon equipped, you recover 5 Mind Points, or 10 Mind Points if the cost was equal to or higher than 30 MP.",
+            "tags": ["mp", "arcanist", "spell", "verse", "arcane"]
+        },
+        {
+            "name": "Power",
+            "description": "Exoskeleton and Mecha frames only. While driving this personal vehicle, you gain a +2 bonus to all Opposed Checks that rely on brute force or physical resistance.",
+            "tags": ["MIG"]
+        },
+        {
+            "name": "Rapid Interface",
+            "description": "When you enter this personal vehicle on your turn during a conflict, you may perform an additional action.",
+            "tags": []
+        },
+        {
+            "name": "Seafarer",
+            "description": "This personal vehicle can travel on water and underwater.",
+            "tags": ["travel"]
+        },
+        {
+            "name": "Seat",
+            "description": "Mecha and Steed only. This personal vehicle can transport an additional human-sized passenger.",
+            "tags": ["travel"]
+        },
+        {
+            "name": "Secondary Offensive",
+            "description": "Exoskeleton and Mecha frames only. Each time you enable this module on your personal vehicle, choose one of its disabled weapon modules. As long as the chosen module is disabled and this module is enabled, you may use an action to perform a free attack with that weapon module.",
+            "tags": ["attack"]
+        },
+        {
+            "name": "Sensor",
+            "description": "While driving this personal vehicle, you gain a +2 bonus to Open Checks made to examine nearby creatures, items and locations.",
+            "tags": ["INS", "study"]
+        },
+        {
+            "name": "Turbo",
+            "description": "While driving this personal vehicle, you gain a +2 bonus to all Opposed Checks that rely on speed and rapid maneuvers.",
+            "tags": ["DEX"]
+        }
+      ]
+    }
+  ]
+}

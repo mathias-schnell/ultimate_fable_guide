@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.8] - 2026-09-26
+
+### Added
+- Added content for rare 'Weapons' (High Fantasy, Natural Fantasy & Techno Fantasy).
+- Added content for rare 'Armor' and 'Shields' (High Fantasy, Natural Fantasy & Techno Fantasy).
+- Added content for 'Accessories' (High Fantasy, Natural Fantasy & Techno Fantasy).
+- Added content for 'Modules' for Pilot (Techno Fantasy).
+
+---
+
 ## [0.5.7] - 2026-09-26
 
 ### Changed
