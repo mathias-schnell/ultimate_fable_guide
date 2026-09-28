@@ -4,154 +4,181 @@
     "title": "Invocations",
     "universal-tags": ["invocation", "invoker", "natural-fantasy"]
   },
-   "groups": [
+  "groups": [
     {
-      "name": "",
-      "label": "",
+      "name": "air",
+      "label": "Air Wellspring",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
-        { "label": "Wellspring", "field": "wellspring", "class": "wellspring" },
         { "label": "Required SL", "field": "required_sl", "class": "required_sl" }
       ],
-      "grid-template-columns": "0.25fr 2fr 2fr 2fr 0.25fr",
-      "group-tags": [],
+      "grid-template-columns": "0.25fr 3.5fr 2.5fr 0.25fr",
+      "group-tags": ["air"],
       "invocations": [
         {
           "name": "Aero Blast",
-          "wellspring": "Air",
           "required_sl": 1,
           "description": "You deal 20 air damage to the target.",
-          "tags": ["air", "damage"]
+          "tags": ["damage"]
         },
         {
           "name": "Aero Hex",
-          "wellspring": "Air",
           "required_sl": 2,
           "description": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal bolt and fire damage.",
           "tags": ["bolt", "damage", "fire"]
         },
         {
           "name": "Breeze",
-          "wellspring": "Air",
           "required_sl": 3,
           "description": "The target recovers 30 Hit Points.",
           "tags": ["hp"]
         },
         {
           "name": "Twister",
-          "wellspring": "Air",
           "required_sl": 3,
           "description": "You deal 10 air damage to the target, and they suffer dazed.",
-          "tags": ["air", "damage", "status"]
-        },
+          "tags": ["damage", "status"]
+        }
+      ]
+    },
+    {
+      "name": "earth",
+      "label": "Earth Wellspring",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Required SL", "field": "required_sl", "class": "required_sl" }
+      ],
+      "grid-template-columns": "0.25fr 3.5fr 2.5fr 0.25fr",
+      "group-tags": ["earth"],
+      "invocations": [
         {
           "name": "Geo Blast",
-          "wellspring": "Earth",
           "required_sl": 1,
           "description": "You deal 20 earth damage to the target.",
-          "tags": ["damage", "earth"]
+          "tags": ["damage"]
         },
         {
           "name": "Geo Hex",
-          "wellspring": "Earth",
           "required_sl": 2,
           "description": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air and ice damage.",
           "tags": ["air", "damage", "ice"]
         },
         {
           "name": "Growth",
-          "wellspring": "Earth",
           "required_sl": 3,
           "description": "The target recovers 30 Hit Points.",
           "tags": ["hp"]
         },
         {
           "name": "Quicksand",
-          "wellspring": "Earth",
           "required_sl": 3,
           "description": "You deal 10 earth damage to the target, and they suffer slow.",
-          "tags": ["damage", "earth", "status"]
-        },
+          "tags": ["damage", "status"]
+        }
+      ]
+    },
+    {
+      "name": "fire",
+      "label": "Fire Wellspring",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Required SL", "field": "required_sl", "class": "required_sl" }
+      ],
+      "grid-template-columns": "0.25fr 3.5fr 2.5fr 0.25fr",
+      "group-tags": ["fire"],
+      "invocations": [
         {
           "name": "Pyro Blast",
-          "wellspring": "Fire",
           "required_sl": 1,
           "description": "You deal 20 fire damage to the target.",
-          "tags": ["damage", "fire"]
+          "tags": ["damage"]
         },
         {
           "name": "Pyro Hex",
-          "wellspring": "Fire",
           "required_sl": 2,
           "description": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth and ice damage.",
           "tags": ["damage", "earth", "ice"]
         },
         {
           "name": "Burst",
-          "wellspring": "Fire",
           "required_sl": 3,
           "description": "You deal 10 fire damage to the target, and they suffer shaken.",
-          "tags": ["damage", "fire", "status"]
+          "tags": ["damage", "status"]
         },
         {
           "name": "Smoke",
-          "wellspring": "Fire",
           "required_sl": 3,
           "description": "The target loses 20 Mind Points and also suffers weak.",
           "tags": ["mp", "status"]
-        },
+        }
+      ]
+    },
+    {
+      "name": "lightning",
+      "label": "Lightning Wellspring",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Required SL", "field": "required_sl", "class": "required_sl" }
+      ],
+      "grid-template-columns": "0.25fr 3.5fr 2.5fr 0.25fr",
+      "group-tags": ["lightning"],
+      "invocations": [
         {
           "name": "Electro Blast",
-          "wellspring": "Lightning",
           "required_sl": 1,
           "description": "You deal 20 bolt damage to the target.",
           "tags": ["bolt", "damage"]
         },
         {
           "name": "Electro Hex",
-          "wellspring": "Lightning",
           "required_sl": 2,
           "description": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth and fire damage.",
           "tags": ["damage", "earth", "fire"]
         },
         {
           "name": "Static",
-          "wellspring": "Lightning",
           "required_sl": 3,
           "description": "You deal 10 bolt damage to the target, and they suffer slow.",
           "tags": ["bolt", "damage", "status"]
         },
         {
           "name": "Thunder",
-          "wellspring": "Lightning",
           "required_sl": 3,
           "description": "The target loses 20 Mind Points and also suffers dazed.",
           "tags": ["mp", "status"]
-        },
+        }
+      ]
+    },
+    {
+      "name": "water",
+      "label": "Water Wellspring",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Required SL", "field": "required_sl", "class": "required_sl" }
+      ],
+      "grid-template-columns": "0.25fr 3.5fr 2.5fr 0.25fr",
+      "group-tags": ["water"],
+      "invocations": [
         {
           "name": "Hydro Blast",
-          "wellspring": "Water",
           "required_sl": 1,
           "description": "You deal 20 ice damage to the target.",
           "tags": ["damage", "ice"]
         },
         {
           "name": "Hydro Hex",
-          "wellspring": "Water",
           "required_sl": 2,
           "description": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air and bolt damage.",
           "tags": ["air", "bolt", "damage"]
         },
         {
           "name": "Chill",
-          "wellspring": "Water",
           "required_sl": 3,
           "description": "The target loses 20 Mind Points and also suffers shaken.",
           "tags": ["mp", "status"]
         },
         {
           "name": "Frostbite",
-          "wellspring": "Water",
           "required_sl": 3,
           "description": "You deal 10 ice damage to the target, and they suffer weak.",
           "tags": ["damage", "ice", "status"]

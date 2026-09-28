@@ -21,11 +21,11 @@
 <body>
     <main id="main-container" class="container">
         <header class="page-header">
-            <button type='button' class='nav-left-arrow'>◀</button>
+            <button type='button' title='Previous' class='nav-left-arrow'>◀</button>
             <nav class="tab-nav">
                 <?=get_nav_tabs($sections); ?>
             </nav>
-            <button type='button' class='nav-right-arrow'>▶</button>
+            <button type='button' title='Next' class='nav-right-arrow'>▶</button>
         </header>
         <?php include_once(INCLUDES_PATH . "/layout/filter.php"); ?>
         <section class="content-container">

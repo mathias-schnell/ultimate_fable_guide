@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.5.9] - 2026-09-27
+
+### Changed
+- Reorganized 'Invocations'.
+- Updated TODO.md.
+- Updated app styling.
+- Changed some symbols and added ways to display them on mobile.
+- Added titles/tooltips for various clickable objects.
+
+---
+
 ## [0.5.8] - 2026-09-26
 
 ### Added
