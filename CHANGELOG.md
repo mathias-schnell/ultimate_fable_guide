@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.4] - 2026-10-02
+
+### Changed
+- Added and corrected some tags in the content data.
+
+---
+
 ## [0.6.3] - 2026-10-02
 
 ### Added
