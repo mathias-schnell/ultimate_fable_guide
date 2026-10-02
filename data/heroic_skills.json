@@ -227,7 +227,7 @@
           "requirements": ["Tinkerer"],
           "summary": "Modify equipment Qualities.",
           "description": "When you rest, you may choose any number of <strong>weapons</strong>, <strong>armor</strong>, and/or <strong>shields</strong> among those owned by your group. For each item chosen this way, you may either <strong>add a Quality</strong> to it (if it doesn’t have one) or <strong>replace its current Quality</strong> with a different one. These new Qualities must come from the list of default Qualities available for items of that type, and must have an associated cost modifier of <strong>+1000 zenit or lower</strong>. At the end of the rest, you must pay an amount of zenit equal to the total sum of those cost modifiers, reduced by (your <strong>Skill</strong> Level in Visionary, multiplied by 100). If you do, the items will be modified according to your choices.",
-          "tags": ["equipment", "skill", "tinkerer"]
+          "tags": ["equipment", "skill", "tinkerer", "zenit"]
         },
         {
           "name": "Tempest Strike",
@@ -531,7 +531,7 @@
           "requirements": ["Merchant"],
           "summary": "Use Trade Points instead of Fabula Points and improve settlements with donations.",
           "description": "When you need to spend one or more Fabula Points, if you are not spending them to <strong>alter the story</strong>, you may spend that many <strong>Trade Points</strong> instead. Describe which memories of your trades and journeys give you strength!\n\nAdditionally, when you gain two or more <strong>Trade Points</strong> through the <strong>Real Treasure</strong> or <strong>Winds of Trade</strong> Skills, you may choose to gain exactly 1 <strong>Trade Point</strong> instead. If you do, choose a settlement within <strong>1 travel day</strong> of your position and increase its <strong>prosperity</strong> by an amount equal to (your Skill Level in <strong>Winds of Trade</strong> + your Skill Level in <strong>Real Treasure</strong>); a settlement’s <strong>prosperity</strong> starts at 0 and has no upper limit.\n\nThe chart below indicates the effects of your donations on the settlement and on anything within <strong>1 travel day</strong> of it.\n\nProsperity Effects within <strong>1 travel day</strong> of the settlement\n10 or more: When you or an ally need to pay a cost in zenit, whatever the reason, that cost is <strong>halved</strong>.\n15 or more: People gladly accommodate you and your allies: while in this area, you can always <strong>rest</strong> freely, without spending zenit. Furthermore, any <strong>travel rolls</strong> made in this area never use a die greater than d8.\n20 or more: When a Villain in this area spends Ultima Points, they must spend twice as many Ultima Points.",
-          "tags": ["fabula-point", "merchant", "skill", "trade-point", "travel"]
+          "tags": ["fabula-point", "merchant", "skill", "trade-point", "travel", "zenit"]
         },
         {
           "name": "Greater Chloromancy",

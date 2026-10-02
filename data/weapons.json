@@ -2,7 +2,7 @@
   "schema": {
     "key": "weapons",
     "title": "Weapons",
-    "universal-tags": ["weapon", "zenit"]
+    "universal-tags": ["weapon"]
   },
   "groups": [
     {
@@ -292,7 +292,7 @@
           "cost": "1800 z",
           "accuracy": "【DEX + DEX】",
           "damage": "【HR + 8】 dark",
-          "description": "Rare • Two-handed • Ranged • When a creature includes you among the targets of an offensive spell (OO), if you are in Crisis, that creature must spend Hit Points instead of Mind Points to cast the spell.",
+          "description": "Rare • Two-handed • Ranged • When a creature includes you among the targets of an offensive spell (🗲), if you are in Crisis, that creature must spend Hit Points instead of Mind Points to cast the spell.",
           "tags": ["high-fantasy", "rare", "bow", "two-handed", "ranged", "dark", "DEX", "spell", "crisis", "hp", "mp"]
         },
         {
@@ -726,7 +726,7 @@
           "cost": "1800 z",
           "accuracy": "【DEX + INS】 +1",
           "damage": "【HR + 12】 earth",
-          "description": "Rare • One-handed • Ranged • When a creature includes you among the targets of an attack or offensive spell (OO), they must first spend 5 Mind Points. Otherwise, they cannot include you among the targets.",
+          "description": "Rare • One-handed • Ranged • When a creature includes you among the targets of an attack or offensive spell (🗲), they must first spend 5 Mind Points. Otherwise, they cannot include you among the targets.",
           "tags": ["high-fantasy", "rare", "martial", "firearm", "one-handed", "ranged", "earth", "DEX", "INS", "attack", "spell", "mp"]
         },
         {

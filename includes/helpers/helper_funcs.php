@@ -150,7 +150,7 @@ function render_group_header(string $key, array $cols, string $group_label, stri
             <button class="<?= $key ?>-multitoggle" type="button" title="Expand All" data-key="<?= $key ?>" aria-expanded="false" aria-controls="article.<?= $key ?>">⊕</button>
         </div>
         <?php foreach ($cols as $col): ?>
-            <div class="<?= $key ?>-col-sort" data-sort-by=<?= $key . "-" . $col['field'] ?>><?= htmlspecialchars(render_unicode_symbols($col['label'])) ?></div>
+            <div class="<?= $key ?>-col-sort" data-sort-by=<?= $key . "-" . $col['field'] ?>><?= htmlspecialchars($col['label']) ?></div>
         <?php endforeach; ?>
         <div></div>
     </div>
@@ -193,24 +193,27 @@ function render_article_description(string $key, string $id, array $entry, array
         <div class="<?= $key ?>-description-container hidden" id="<?= $id ?>">
             <?php if (!empty($entry['additional_requirements'])): ?>
                 <div class="additional-requirements">
-                    <strong>Additional Requirements:</strong> <?= $entry['additional_requirements'] ?? '' ?>
+                    <strong>Additional Requirements:</strong> <?= get_cell_data('additional_requirements', $entry) ?>
                 </div>
             <?php endif; ?>
 
             <div class="description">
-                <?= $entry['description'] ?? '' ?>
+                <?= get_cell_data('description', $entry) ?>
             </div>
 
-            <?php if (!empty($entry['spell'])): ?>
+            <?php 
+                if (!empty($entry['spell'])):
+                    $spell = $entry['spell'];
+            ?>
                 <div class="spell-block">
                     <div class="spell-block-header">
-                        <div><?= htmlspecialchars($entry['spell']['name']) ?></div>
-                        <div>MP: <span><?= $entry['spell']['mp'] ?></span></div>
-                        <div>Target: <span><?= htmlspecialchars($entry['spell']['target']) ?></span></div>
-                        <div>Duration: <span><?= htmlspecialchars($entry['spell']['duration']) ?></span></div>
+                        <div><?= get_cell_data('name', $spell) ?></div>
+                        <div>MP: <span><?= get_cell_data('mp', $spell) ?></span></div>
+                        <div>Target: <span><?= get_cell_data('target', $spell) ?></span></div>
+                        <div>Duration: <span><?= get_cell_data('duration', $spell) ?></span></div>
                     </div>
                     <div class="spell-block-description">
-                        <?= $entry['spell']['description'] ?>
+                        <?= get_cell_data('description', $spell) ?>
                     </div>
                 </div>
             <?php endif; ?>

@@ -471,7 +471,7 @@
           "class": "Rogue",
           "max-sl": 5,
           "description": "During a conflict, you may use an action to perform a (DEX + WLP) Check against the Magic Defense of an enemy you can see. If you succeed and the target is a soldier, you regain (SL) Inventory Points; if they are an elite or champion, the GM gives you their soul treasure, an item worth an amount of zenit equal to or lower than (the target’s level multiplied by 30, or by 50 if they are a Villain). This soul treasure appears in your backpack; a creature can be successfully stolen from with this Skill only once. You gain a bonus equal to (SL) to your (DEX + WLP) Checks for this Skill.",
-          "tags": ["DEX", "ip", "magic-defense", "rogue", "WLP"]
+          "tags": ["DEX", "ip", "magic-defense", "rogue", "WLP", "zenit"]
         }
       ]
     },
@@ -612,7 +612,7 @@
           "class": "Tinkerer",
           "max-sl": 5,
           "description": "When you work on a Project, up to (SL × 100) zenit of material costs are automatically paid; additionally, you generate an additional (SL) progress every day. If multiple characters with this Skill work on the same Project, the effects will be cumulative.",
-          "tags": ["tinkerer"]
+          "tags": ["project", "tinkerer", "zenit"]
         }
       ]
     },
@@ -846,7 +846,7 @@
           "name": "Wardancer",
           "class": "Dancer",
           "max-sl": 5,
-          "description": "After you perform a dance, your attacks with brawling, dagger, flail, sword, and thrown weapons deal (SL) extra damage until the start of your next turn. If you have an arcane weapon equipped, offensive spells you cast also deal (SL) extra damage until the start of your next turn.",
+          "description": "After you perform a dance, your attacks with brawling, dagger, flail, sword, and thrown weapons deal (SL) extra damage until the start of your next turn. If you have an arcane weapon equipped, offensive spells (🗲) you cast also deal (SL) extra damage until the start of your next turn.",
           "tags": ["arcane", "brawling", "dagger", "dance", "damage", "equipment", "flail", "spell", "sword", "thrown"]
         }
       ]
@@ -1082,7 +1082,7 @@
           "class": "Merchant",
           "max-sl": 3,
           "description": "After you rest in an area where commerce is possible, you gain (SL + 1) Trade Points.\nYou may never have more than (SL + 3) Trade Points; if you acquire this Skill during character creation, you begin play with 2 Trade Points.\nDuring a non-conflict scene, you may spend 2 Trade Points to choose one option: you create a material or rare item approved by the Game Master whose value in zenit is equal to or lower than (your level, multiplied by 30); or you create an NPC that lives nearby and explain their occupation as well as how you met them, then the Game Master tells you what they require in exchange for their services.",
-          "tags": ["skill", "trade-point"]
+          "tags": ["skill", "trade-point", "zenit"]
         }
       ]
     },
