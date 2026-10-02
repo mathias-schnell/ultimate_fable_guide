@@ -27,7 +27,6 @@
             </nav>
             <button type='button' title='Next' class='nav-right-arrow'>▶</button>
         </header>
-        <?php include_once(INCLUDES_PATH . "/layout/filter.php"); ?>
         <section class="content-container">
             <?=get_content($sections); ?>
         </section>

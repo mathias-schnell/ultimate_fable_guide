@@ -4,9 +4,9 @@
 
 /**
  * @typedef {Object} AppContext
- * @property {HTMLElement} nav_container - The container for all the navigation tabs
- * @property {HTMLElement} filter_container - The container for all filtering controls
- * @property {HTMLElement} content_container - The container for the main content
+ * @property {HTMLElement} nav - The container for all the navigation tabs
+ * @property {HTMLElement} content - The container for current active content
+ * @property {HTMLElement} filter - The container for current active filters
  */
 
 /** 
@@ -39,17 +39,18 @@ const filter_click_actions = {
  * Defining the actions that will happen in the filter area of the app when something changes 
  */
 const filter_change_actions = {
-    ".filter-mode"              : filter_content,
-    ".filter-tag-select"        : filter_content, 
+    ".filter-tag-select.filter-cat"         : show_filter_subcat,
+    ".filter-tag-select.filter-subcat"      : filter_content,
+    ".filter-mode"                          : filter_content, 
 };
 
 /** 
  * Creates a generic action dispatcher for all the above actions 
  */
-const dispatcher = (actions, context) => (e) => {
+const dispatcher = (actions, ctx) => (e) => {
     for (const [selector, handler] of Object.entries(actions)) {
         const target = e.target.closest(selector);
-        if (target) { handler(target, context); break; }
+        if (target) { handler(target, ctx); break; }
     }
 };
 
@@ -67,16 +68,16 @@ function initialize_app() {
     const container = document.getElementById("main-container");
     if(!container) return;
 
-    const context = {
-        nav_container: container.querySelector('.page-header'),
-        filter_container: container.querySelector('.filter-rows-container'),
-        content_container: container.querySelector('.content-container'),
+    const ctx = {
+        nav: container.querySelector('.page-header'),
+        content: container.querySelector('.content-container'),
+        filter: "",
     }
 
-    bind_navigation_events(context);
-    bind_filter_events(context);
-    bind_content_events(context);
-    toggle_nav_tab(context.nav_container.querySelector(".tab"), context);
+    bind_navigation_events(ctx);
+    bind_filter_events(ctx);
+    bind_content_events(ctx);
+    toggle_nav_tab(ctx.nav.querySelector(".tab"), ctx);
 }
 
 /**
@@ -84,16 +85,16 @@ function initialize_app() {
  * 
  * @param {AppContext} param0 
  */
-function bind_navigation_events(context) {
-    context.nav_container?.addEventListener("click", dispatcher(nav_click_actions, context));
+function bind_navigation_events(ctx) {
+    ctx.nav?.addEventListener("click", dispatcher(nav_click_actions, ctx));
 }
 
 /**
  * Make the clicked navigation tab active
  */
-function toggle_nav_tab(target, context) {
-    if(!target || !context.nav_container) return;
-    context.nav_container.querySelectorAll(".tab").forEach(tab => {
+function toggle_nav_tab(target, ctx) {
+    if(!target || !ctx.nav) return;
+    ctx.nav.querySelectorAll(".tab").forEach(tab => {
         tab.classList.remove("active");
         tab.setAttribute("aria-selected", "false");
     });
@@ -104,104 +105,119 @@ function toggle_nav_tab(target, context) {
     const scroll_to = target.offsetLeft - (nav.clientWidth / 2) + (target.offsetWidth / 2);
     nav.scrollTo({ left: scroll_to, behavior: "smooth" });
 
-    show_content(context.content_container, target.getAttribute("aria-controls"));
+    show_content(ctx.content, target.getAttribute("aria-controls"));
 }
 
 /**
  * Change the active tab to the one that is to the current active tab's left
  */
-function move_tab_left(target, context) {
-    const active_tab = context.nav_container.querySelector(".tab.active");
+function move_tab_left(target, ctx) {
+    const active_tab = ctx.nav.querySelector(".tab.active");
     const prev_tab = active_tab.previousElementSibling;
-
-    if(prev_tab != null) {
-        toggle_nav_tab(prev_tab, context);
-    }
+    if(prev_tab != null) toggle_nav_tab(prev_tab, ctx);
 }
 
 /**
  * Change the active tab to the one that is to the current active tab's right
  */
-function move_tab_right(target, context) {
-    const active_tab = context.nav_container.querySelector(".tab.active");
+function move_tab_right(target, ctx) {
+    const active_tab = ctx.nav.querySelector(".tab.active");
     const next_tab = active_tab.nextElementSibling;
-
-    if(next_tab != null) {
-        toggle_nav_tab(next_tab, context);
-    }
+    if(next_tab != null) toggle_nav_tab(next_tab, ctx);
 }
 
 /**
  * Event bindings related to the Filter section of the app.
  */
-function bind_filter_events(context) {
-    context.filter_container?.addEventListener("click", dispatcher(filter_click_actions, context));
-    context.filter_container?.addEventListener("change", dispatcher(filter_change_actions, context));
-    add_filter_row(null, context);
+function bind_filter_events(ctx) {
+    const filter_containers = ctx.content.querySelectorAll(".filter-container");
+    filter_containers.forEach(container => {
+        container.addEventListener("click", dispatcher(filter_click_actions, { nav : ctx.nav, content: ctx.content, filter: container }));
+        container.addEventListener("change", dispatcher(filter_change_actions, { nav : ctx.nav, content: ctx.content, filter: container }));
+    });
 }
 
 /**
  * Event bindings related to the Content section of the app.
  */
-function bind_content_events(context) {
-    context.content_container?.addEventListener("click", dispatcher(content_click_actions, context));
+function bind_content_events(ctx) {
+    ctx.content.addEventListener("click", dispatcher(content_click_actions, ctx));
+}
+
+/**
+ * Shows/hides the tags in 'filter-subcat' based on the chosen 'filter-cat'
+ */
+function show_filter_subcat(target, ctx) {
+    if(!ctx || !ctx.filter) return;
+    const row = target.closest('.filter-row') || target.parentElement;
+    if(!row) return;
+
+    const cat = target.value;
+    const subcat = row.querySelector('.filter-tag-select.filter-subcat');
+    if(!subcat) return;
+
+    subcat.selectedIndex = 0;
+    subcat.querySelectorAll('option:not(:first-child)').forEach(option => {
+        option.hidden = option.dataset.filterCat !== cat;
+    });
+    if(!cat) filter_content(target, ctx);
 }
 
 /**
  * Clones the hidden filter-row-prime and appends a new filter row to the container.
  * 
  * @param {HTMLElement|null} target
- * @param {AppContext} context
+ * @param {AppContext} ctx
  */
-function add_filter_row(target, { filter_container } = {}) {
-    if(!filter_container) return;
-    const prime = filter_container.querySelector('.filter-row-prime');
-    if(!prime) return;
-
-    const row = prime.cloneNode(true);
-    row.classList.remove('filter-row-prime');
-    filter_container.appendChild(row);
+function add_filter_row(target, ctx = {}) {
+    if(!ctx || !ctx.filter) return;
+    const first_row = ctx.filter.querySelector('.filter-row');
+    if(!first_row) return;
+    ctx.filter.appendChild(first_row.cloneNode(true));
 }
 
 /**
  * Removes the given row if it isn't the only row in its container.
  * 
  * @param {HTMLElement|null} target
- * @param {AppContext} context
+ * @param {AppContext} ctx
  */
-function remove_filter_row(target, context = {}) {
-    if(!target || !context.filter_container) return;
+function remove_filter_row(target, ctx = {}) {
+    if(!target || !ctx || !ctx.filter) return;
     const row = target.closest('.filter-row') || target.parentElement;
-    const rows = context.filter_container.querySelectorAll(".filter-row:not(.filter-row-prime)");
     if(!row) return;
 
-    if (rows.length > 1) {
+    if (ctx.filter.querySelectorAll(".filter-row").length > 1) {
         row.remove();
     } else {
-        row.querySelector(".filter-tag-select").selectedIndex = 0;
+        row.querySelector(".filter-tag-select.filter-cat").selectedIndex = 0;
+        row.querySelector(".filter-tag-select.filter-subcat").selectedIndex = 0;
+        row.querySelectorAll(".filter-tag-select.filter-subcat option:not(:first-child)").forEach(option => option.hidden = true);
     }
-    filter_content(target, context);
+    filter_content(target, ctx);
 }
 
 /**
  * Collects selected values across all active filters and filters Heroic Skills using OR logic.
  * 
  * @param {HTMLElement|null} target
- * @param {AppContext} context
+ * @param {AppContext} ctx
  */
-function filter_content(target, { filter_container, content_container } = {}) {
-    if(!filter_container || !content_container) return;
+function filter_content(target, ctx = {}) {
+    if(!ctx || !ctx.content || !ctx.filter) return;
+
     const selected_tags = new Set();
-    const mode = parseInt(filter_container.querySelector(".filter-mode")?.value);
-    const filter_rows = filter_container.querySelectorAll('.filter-row:not(.filter-row-prime)');
+    const mode = parseInt(ctx.filter.querySelector(".filter-mode")?.value);
+    const filter_rows = ctx.filter.querySelectorAll('.filter-row');
+    const filter_target = ctx.filter.dataset.filterFor;
     
     filter_rows.forEach(row => {
-        const tag = row.querySelector(".filter-tag-select")?.value;
+        const tag = row.querySelector(".filter-tag-select.filter-subcat")?.value;
         if(!tag) return;
         selected_tags.add(tag);
     });
 
-    content_container.querySelectorAll("article").forEach(article => {
+    ctx.content.querySelectorAll(`.${filter_target} article`).forEach(article => {
         if(article.getAttribute("aria-pinned") === "true") return;
         const raw_tags = article.dataset.tags ? article.dataset.tags.split(',').map(t => t.trim()) : [];
         const article_tags = new Set(raw_tags);
@@ -222,7 +238,7 @@ function filter_content(target, { filter_container, content_container } = {}) {
         article.classList.toggle('filtered-out', !match);
     });
 
-    content_container.querySelectorAll("section[class*='-group']").forEach(group => {
+    ctx.content.querySelectorAll("section[class*='-group']").forEach(group => {
         group.classList.toggle("hidden", group.querySelectorAll('article.filtered-out').length === group.querySelectorAll('article').length);
     });
 }
@@ -231,13 +247,13 @@ function filter_content(target, { filter_container, content_container } = {}) {
  * Toggle all items of the current category to show or hide.
  * 
  * @param {HTMLElement|null} target
- * @param {AppContext} context
+ * @param {AppContext} ctx
  */
-function toggle_all(target, { content_container } = {}) {
-    if(!content_container) return;
+function toggle_all(target, ctx = {}) {
+    if(!ctx || !ctx.content) return;
     const key = "." + target.dataset.key + "-toggle";
-    const toggles = content_container.querySelectorAll(`.${target.className}`);
-    const rows = content_container.querySelectorAll(target.getAttribute("aria-controls"));
+    const toggles = ctx.content.querySelectorAll(`.${target.className}`);
+    const rows = ctx.content.querySelectorAll(target.getAttribute("aria-controls"));
     const is_expanded = target.getAttribute('aria-expanded') === 'true';
     const next_state = !is_expanded;
 
@@ -254,7 +270,7 @@ function toggle_all(target, { content_container } = {}) {
     rows.forEach(row => {
         const toggle = row.querySelector(key);
         if (!toggle || (toggle.getAttribute("aria-expanded") === "true") === next_state) return;
-        toggle_item(toggle, { content_container }, !is_expanded);
+        toggle_item(toggle, ctx, !is_expanded);
     });
 }
 
@@ -262,24 +278,24 @@ function toggle_all(target, { content_container } = {}) {
  * Pin the article to the top of the content section.
  * 
  * @param {HTMLElement|null} target
- * @param {AppContext} context
+ * @param {AppContext} ctx
  */
-function toggle_pin(target, context) {
+function toggle_pin(target, ctx) {
     const is_pinned = target.getAttribute('aria-checked') === 'true';
     target.setAttribute("aria-checked", !is_pinned);
     target.closest("article")?.setAttribute("aria-pinned", String(!is_pinned));
-    filter_content(target, context);
+    filter_content(target, ctx);
 }
 
 /**
  * Show or hide the full description of the passed in article.
  * 
  * @param {HTMLElement|null} target
- * @param {AppContext} context
+ * @param {AppContext} ctx
  * @param {bool|null} forced_state
  */
-function toggle_item(target, { content_container } = {}, forced_state = null) {
-    if(!target || !content_container) return;
+function toggle_item(target, ctx = {}, forced_state = null) {
+    if(!target || !ctx || !ctx.content) return;
     const target_id = target.getAttribute('aria-controls');
     if(!target_id) return;
     
@@ -292,7 +308,7 @@ function toggle_item(target, { content_container } = {}, forced_state = null) {
     } else {
         target.setAttribute('title', "Expand");
     }
-    content_container.querySelector('#' + target_id)?.classList.toggle('hidden', !new_state);
+    ctx.content.querySelector('#' + target_id)?.classList.toggle('hidden', !new_state);
 }
 
 /**
@@ -301,10 +317,10 @@ function toggle_item(target, { content_container } = {}, forced_state = null) {
  * @param {HTMLElement} container 
  * @param {String|null} content 
  */
-function show_content(content_container, content) {
-    if(!content_container) return;
-    [...content_container.children].forEach(item => item.classList.remove("active"));
+function show_content(container, content) {
+    if(!container) return;
+    [...container.children].forEach(item => item.classList.remove("active"));
     if(content) {
-        content_container.querySelector("#" + content)?.classList.add("active");
+        container.querySelector("#" + content)?.classList.add("active");
     }
 }

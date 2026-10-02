@@ -1,5 +1,24 @@
 <?php
 
+function extract_used_tags(array $data): array {
+    $used_tags = [];
+    $key = $data['schema']['key'] ?? '';
+    
+    foreach ($data['groups'] as $group):
+        foreach ($group['group-tags'] as $tag):
+            $used_tags[$tag] = true;
+        endforeach;
+
+        foreach ($group[$key] as $item):
+            foreach ($item['tags'] as $tag):
+                $used_tags[$tag] = true;
+            endforeach;
+        endforeach;
+    endforeach;
+
+    return array_keys($used_tags);
+}
+
 function get_nav_tabs(array $sections): string {
     $tabs = "";
     foreach($sections as $key => $label):
@@ -28,6 +47,8 @@ function get_content(array $sections): string {
 
 function get_content_groups(array $data, string $key): string {
     ob_start();
+
+    render_filter_section($data, $key);
     
     $universal_tags = $data['schema']['universal-tags'] ?? [];
     $data_key = $data['schema']['key'] ?? "";
@@ -71,6 +92,50 @@ function get_content_groups(array $data, string $key): string {
     </section>
     <?php    
     return ob_get_clean();
+}
+
+function render_filter_section(array $data, string $key): void {
+    global $filter_tags;
+    $used_tags = extract_used_tags($data);
+    ?>
+    <section class="filter-container" data-filter-for="<?= $key ?>-container">
+        <select class="filter-mode" autocomplete="off">
+            <option value="" selected disabled>--- Filter Mode ---</option>
+            <option value="0">Match at least one of...</option>
+            <option value="1">Match at least all of...</option>
+        </select>
+        <div class="filter-row">
+            <select class="filter-tag-select filter-cat" autocomplete="off">
+                <option value="" selected>-- Select Tag Group --</option>
+                <?php 
+                    foreach ($filter_tags as $group_label => $tags):
+                        if (!array_intersect(array_keys($tags), $used_tags)) continue; 
+                    ?>
+                    <option value="<?= str_replace(" ", "-", strtolower($group_label)) ?>">
+                        <?= $group_label ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+            <select class="filter-tag-select filter-subcat" autocomplete="off">
+                <option value="" selected>-- Select Tag --</option>
+                <?php foreach ($filter_tags as $group_label => $tags): ?>
+                    <?php
+                        foreach ($tags as $tag_key => $tag_name):
+                            if (!in_array($tag_key, $used_tags)) continue;
+                            $group_key = str_replace(" ", "-", strtolower($group_label));
+                            $datacat = $group_key; 
+                    ?>
+                        <option value="<?= htmlspecialchars($tag_key) ?>" data-filter-cat="<?=$datacat ?>" hidden=true>
+                            <?= htmlspecialchars($tag_name) ?>
+                        </option>
+                    <?php endforeach; ?>
+                <?php endforeach; ?>
+            </select>
+            <button type="button" class="btn-add-filter-row" title="Add filter">&plus;</button>
+            <button type="button" class="btn-remove-filter-row" title="Remove filter">&times;</button>
+        </div>
+    </section>
+    <?php
 }
 
 function render_group_header(string $key, array $cols, string $group_label, string $grid_style): void {
@@ -128,7 +193,7 @@ function render_article_description(string $key, string $id, array $entry, array
         <div class="<?= $key ?>-description-container hidden" id="<?= $id ?>">
             <?php if (!empty($entry['additional_requirements'])): ?>
                 <div class="additional-requirements">
-                    <strong>Additional Requirements:</strong> <?= htmlspecialchars($entry['additional_requirements']) ?>
+                    <strong>Additional Requirements:</strong> <?= $entry['additional_requirements'] ?? '' ?>
                 </div>
             <?php endif; ?>
 

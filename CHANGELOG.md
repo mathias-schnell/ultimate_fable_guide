@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.6.0] - 2026-10-01
+
+### Changed
+- Massive refactor of filtering and tagging system.
+- Filters are now per-category instead of universal, meaning each one only affects the currently shown content and remembers its settings as the categories change.
+- Tags will smartly include/exclude themselves based on what is present in the content. If a tag doesn't appear in the content at all or is present in all pieces of the content, it is not used as a filtering option.
+- Refined the tag groups and tag options.
+
+---
+
 ## [0.5.9] - 2026-09-27
 
 ### Changed

@@ -280,7 +280,7 @@
         {
           "name": "Bimagus",
           "requirements": ["Elementalist", "Entropist", "Spiritist"],
-          "class_requirement_minimum": 2,
+          "additional_requirements": "You must have mastered <strong>two or more</strong> of the required classes and your character must be <strong>level 30 or higher</strong>.",
           "level_requirement": 30,
           "summary": "Cast two spells in succession while saving MP.",
           "description": "Once per turn during a conflict, if you have an <strong>arcane</strong> weapon equipped, you may use an action and spend <strong>20 to 50 Mind Points</strong> to perform the Spell action for free twice, casting two spells without needing to pay their MP costs. If you do, the two spells must have a combined total MP cost equal to or lower than (20 + the amount of MP you spent to use this Skill), and the second spell must have a total MP cost that is equal to or lower than <strong>half</strong> the total MP cost of the first spell.",

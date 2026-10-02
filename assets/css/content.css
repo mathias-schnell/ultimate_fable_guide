@@ -28,6 +28,7 @@
     display: grid;
     overflow-x: auto;
     max-width: 100%;
+    padding-top: 0.5rem;
     width: 100%;
 }
 
@@ -37,20 +38,16 @@
 
 .content-container [class*="-group-title"] {
     font-weight: 600;
-    padding: 0.25rem 0.75rem 0 0.75rem;
-}
-
-.content-container [class*="-group"]:not(:first-of-type) [class*="-group-title"] {
-    padding-top: 1rem;
+    padding: 0 0.75rem;
 }
 
 .content-container [class*="-list-header"],
-.content-container [class*="-row"] {
+.content-container [class*="-group"] [class*="-row"] {
     display: grid;
     grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
 }
 
-.content-container [class*="-row"] {
+.content-container [class*="-group"] [class*="-row"] {
     align-items: center;
 }
 
@@ -68,21 +65,21 @@
 }
 
 .content-container [class*="-list-header"] > div,
-.content-container [class*="-row"] > div {
+.content-container [class*="-group"] [class*="-row"] > div {
     padding: 0.4rem;
 }
 
-.content-container :has(> [class*="-row"]) {
+.content-container [class*="-group"] :has(> [class*="-row"]) {
     border-bottom: 1px solid #CCCCCC;
 }
 
-.content-container :has(> [class*="-row"])[aria-pinned="true"] {
+.content-container [class*="-group"] :has(> [class*="-row"])[aria-pinned="true"] {
     background-color: #D0D0D0;
     border-bottom: 1px solid #AAAAAA;
     order: -1;
 }
 
-.content-container :has(> [class*="-row"]):last-child {
+.content-container [class*="-group"] :has(> [class*="-row"]):last-child {
     border-bottom: none;
 }
 
@@ -136,8 +133,8 @@
     padding: 0;
 }
 
-.content-container [class*="-row"] > [class*="-expand"],
-.content-container [class*="-row"] > [class*="-pin"] {
+.content-container [class*="-group"] [class*="-row"] > [class*="-expand"],
+.content-container [class*="-group"] [class*="-row"] > [class*="-pin"] {
     font-size: 125%;
     padding: 0;
     margin: 0;
