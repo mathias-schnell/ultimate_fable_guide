@@ -270,8 +270,9 @@ function toggle_all(target, ctx = {}) {
     rows.forEach(row => {
         const toggle = row.querySelector(key);
         if (!toggle || (toggle.getAttribute("aria-expanded") === "true") === next_state) return;
-        toggle_item(toggle, ctx, !is_expanded);
+        toggle_item(toggle, ctx, !is_expanded, false);
     });
+    scroll_to_element(target);
 }
 
 /**
@@ -293,8 +294,9 @@ function toggle_pin(target, ctx) {
  * @param {HTMLElement|null} target
  * @param {AppContext} ctx
  * @param {bool|null} forced_state
+ * @param {bool} scroll_to
  */
-function toggle_item(target, ctx = {}, forced_state = null) {
+function toggle_item(target, ctx = {}, forced_state = null, scroll_to = true) {
     if(!target || !ctx || !ctx.content) return;
     const target_id = target.getAttribute('aria-controls');
     if(!target_id) return;
@@ -309,6 +311,7 @@ function toggle_item(target, ctx = {}, forced_state = null) {
         target.setAttribute('title', "Expand");
     }
     ctx.content.querySelector('#' + target_id)?.classList.toggle('hidden', !new_state);
+    if(scroll_to && new_state) scroll_to_element(target);
 }
 
 /**
@@ -323,4 +326,18 @@ function show_content(container, content) {
     if(content) {
         container.querySelector("#" + content)?.classList.add("active");
     }
+}
+
+/**
+ * Scroll the window to a specific element with an optional offset.
+ * 
+ * @param {HTMLElement|null} element 
+ * @param {number} offset 
+ * @returns 
+ */
+function scroll_to_element(element, offset = 50) {
+    if (!element) return;
+    const ele_pos = element.getBoundingClientRect().top;
+    const offset_pos = ele_pos + window.scrollY - offset;
+    window.scrollTo({ top: offset_pos, behavior: 'smooth'});
 }

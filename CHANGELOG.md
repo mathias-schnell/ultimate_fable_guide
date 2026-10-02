@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.6.2] - 2026-10-02
+
+### Added
+- Clicking an expand/contract button now causes the window to scroll just above that button (this should help with using the Expand All/Contract All buttons and staying near the content the user clicked).
+
+### Changed
+- Redid the tagging for most content.
+- Added more tags.
+
+---
+
 ## [0.6.1] - 2026-10-01
 
 ### Changed

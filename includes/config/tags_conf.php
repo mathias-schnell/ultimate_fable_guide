@@ -42,6 +42,7 @@ $filter_tags = [
         "arcana"      => "Arcana",
         "companion"   => "Companion",
         "dance"       => "Dances",
+        "focus"       => "Focus",
         "garden"      => "Garden",
         "gift"        => "Gifts",
         "ingredient"  => "Ingredients",
@@ -67,15 +68,28 @@ $filter_tags = [
     ],
 
     "Game Mechanics" => [
-        "bond"         => "Bond",
-        "clock"        => "Clock",
-        "crisis"       => "Crisis",
-        "critical"     => "Critical Success",
-        "fabula-point" => "Fabula Point",
-        "fumble"       => "Fumble",
-        "ritual"       => "Ritual",
-        "travel"       => "Travel",
-        "zenit"        => "Zenit",
+        "add-action"    => "Additional Action",
+        "ask-question"  => "Ask a Question",
+        "bond"          => "Bond",
+        "clock"         => "Clock",
+        "crisis"        => "Crisis",
+        "critical"      => "Critical Success",
+        "death-save"    => "Death Save Effect",
+        "dispel-effect" => "Dispel a Scene Effect",
+        "fabula-point"  => "Fabula Point",
+        "fewer-actions" => "Fewer Actions",
+        "free-attack"   => "Free Attack",
+        "free-spell"    => "Free Spell",
+        "flying"        => "Flying",
+        "fumble"        => "Fumble",
+        "reroll"        => "Reroll",
+        "ritual"        => "Ritual",
+        "species"       => "Species",
+        "take-turn"     => "Take Immediate Turn",
+        "taunt"         => "Taunt Effect",
+        "traits"        => "Traits",
+        "travel"        => "Travel",
+        "zenit"         => "Zenit",
     ],
 
     "Attributes & Stats" => [
@@ -91,8 +105,9 @@ $filter_tags = [
         "initiative"    => "Initiative",
     ],
 
-    "Damage Affinities" => [
+    "Affinities" => [
         "absorption"    => "Absorption",
+        "ignore"        => "Ignore",
         "immunity"      => "Immunity",
         "resistance"    => "Resistance",
         "vulnerability" => "Vulnerability",
@@ -121,14 +136,22 @@ $filter_tags = [
     ],
 
     "Equipment Types" => [
-        "basic"         => "Basic",
-        "rare"          => "Rare",
         "martial"       => "Martial",
         "non-martial"   => "Non-Martial",
         "accessory"     => "Accessory",
         "armor"         => "Armor",
         "shield"        => "Shield",
         "weapon"        => "Weapon",
+    ],
+
+    "Equipment Properties" => [
+        "basic"         => "Basic",
+        "rare"          => "Rare",
+        "multi"         => "Multi",
+        "one-handed"    => "One-Handed",
+        "two-handed"    => "Two-Handed",
+        "melee"         => "Melee",
+        "ranged"        => "Ranged",
     ],
 
     "Weapon Categories" => [
@@ -142,10 +165,6 @@ $filter_tags = [
         "spear"         => "Spear",
         "sword"         => "Sword",
         "thrown"        => "Thrown",
-        "one-handed"    => "One-Handed",
-        "two-handed"    => "Two-Handed",
-        "melee"         => "Melee",
-        "ranged"        => "Ranged",
     ],
 
     "Creature Species" => [

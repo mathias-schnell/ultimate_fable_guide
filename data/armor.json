@@ -2,7 +2,7 @@
   "schema": {
     "key": "armor",
     "title": "Armor",
-    "universal-tags": ["zenit", "defense", "magic-defense", "initiative"]
+    "universal-tags": ["defense", "magic-defense", "initiative"]
   },
   "groups": [
     {
@@ -25,7 +25,7 @@
           "m_defense": "INS size",
           "initiative": "—",
           "description": "Basic • No Quality.",
-          "tags": ["core", "basic", "DEX", "INS"]
+          "tags": ["basic", "core", "DEX", "INS"]
         },
         {
           "name": "Silk Shirt",
@@ -34,7 +34,7 @@
           "m_defense": "INS size +2",
           "initiative": "-1",
           "description": "Basic • No Quality.",
-          "tags": ["core", "basic", "DEX", "INS"]
+          "tags": ["basic", "core", "DEX", "INS"]
         },
         {
           "name": "Travel Garb",
@@ -43,7 +43,7 @@
           "m_defense": "INS size +1",
           "initiative": "-1",
           "description": "Basic • No Quality.",
-          "tags": ["core", "basic", "DEX", "INS"]
+          "tags": ["basic", "core", "DEX", "INS"]
         },
         {
           "name": "Combat Tunic",
@@ -52,7 +52,7 @@
           "m_defense": "INS size +1",
           "initiative": "—",
           "description": "Basic • No Quality.",
-          "tags": ["core", "basic", "DEX", "INS"]
+          "tags": ["basic", "core", "DEX", "INS"]
         },
         {
           "name": "Sage Robe",
@@ -61,7 +61,7 @@
           "m_defense": "INS size +2",
           "initiative": "-2",
           "description": "Basic • No Quality.",
-          "tags": ["core", "basic", "DEX", "INS"]
+          "tags": ["basic", "core", "DEX", "INS"]
         },
         {
           "name": "Brigandine 🟅",
@@ -70,7 +70,7 @@
           "m_defense": "INS size",
           "initiative": "-2",
           "description": "Basic • No Quality.",
-          "tags": ["core", "basic", "martial", "INS"]
+          "tags": ["basic", "core", "INS", "martial"]
         },
         {
           "name": "Bronze Plate 🟅",
@@ -79,7 +79,7 @@
           "m_defense": "INS size",
           "initiative": "-3",
           "description": "Basic • No Quality.",
-          "tags": ["core", "basic", "martial", "INS"]
+          "tags": ["basic", "core", "INS", "martial"]
         },
         {
           "name": "Runic Plate 🟅",
@@ -88,7 +88,7 @@
           "m_defense": "INS size +1",
           "initiative": "-3",
           "description": "Basic • No Quality.",
-          "tags": ["core", "basic", "martial", "INS"]
+          "tags": ["basic", "core", "INS", "martial"]
         },
         {
           "name": "Steel Plate 🟅",
@@ -97,7 +97,7 @@
           "m_defense": "INS size",
           "initiative": "-4",
           "description": "Basic • No Quality.",
-          "tags": ["core", "basic", "martial", "INS"]
+          "tags": ["basic", "core", "INS", "martial"]
         },
         {
           "name": "Slimy Jacket",
@@ -106,7 +106,7 @@
           "m_defense": "INS size +1",
           "initiative": "-1",
           "description": "Rare • You are immune to poisoned.",
-          "tags": ["core", "rare", "DEX", "INS", "immunity", "status", "poison"]
+          "tags": ["core", "DEX", "immunity", "INS", "poisoned", "rare"]
         },
         {
           "name": "Fox Garb",
@@ -115,7 +115,7 @@
           "m_defense": "INS size +1",
           "initiative": "—",
           "description": "Rare • You are immune to slow.",
-          "tags": ["core", "rare", "DEX", "INS", "immunity", "status"]
+          "tags": ["core", "DEX", "immunity", "INS", "rare", "slow"]
         },
         {
           "name": "Shadow Tunic",
@@ -124,7 +124,7 @@
           "m_defense": "INS size +1",
           "initiative": "+4",
           "description": "Rare • You gain a +4 bonus to your Initiative modifier (already included).",
-          "tags": ["core", "rare", "DEX", "INS", "initiative"]
+          "tags": ["core", "DEX", "initiative", "INS", "rare"]
         },
         {
           "name": "Desperado Coat",
@@ -133,7 +133,7 @@
           "m_defense": "INS size +1",
           "initiative": "-1",
           "description": "Rare • When you use the Barrage Skill (see Sharpshooter Class, page 205), the MP cost is halved.",
-          "tags": ["core", "rare", "DEX", "INS", "mp", "skill", "sharpshooter"]
+          "tags": ["core", "DEX", "INS", "mp", "rare", "sharpshooter", "skill"]
         },
         {
           "name": "Butler Uniform",
@@ -142,7 +142,7 @@
           "m_defense": "INS size +2",
           "initiative": "-2",
           "description": "Rare • When a potion or magisphere you created restores Hit Points, it restores 5 additional Hit Points.",
-          "tags": ["core", "rare", "DEX", "INS", "hp", "ip"]
+          "tags": ["core", "DEX", "hp", "INS", "rare", "tinkerer"]
         },
         {
           "name": "Maid Uniform",
@@ -151,7 +151,7 @@
           "m_defense": "INS size +2",
           "initiative": "-2",
           "description": "Rare • When a potion or magisphere you created restores Mind Points, it restores 5 additional Mind Points.",
-          "tags": ["core", "rare", "DEX", "INS", "mp", "ip"]
+          "tags": ["core", "DEX", "INS", "mp", "rare", "tinkerer"]
         },
         {
           "name": "Bandit Jacket",
@@ -160,7 +160,7 @@
           "m_defense": "INS size +1",
           "initiative": "-1",
           "description": "Rare • You gain a +1 bonus to Accuracy Checks with daggers.",
-          "tags": ["core", "rare", "DEX", "INS", "dagger", "attack"]
+          "tags": ["attack", "core", "dagger", "DEX", "INS", "rare"]
         },
         {
           "name": "Crystal Plate 🟅",
@@ -169,7 +169,7 @@
           "m_defense": "INS size",
           "initiative": "-3",
           "description": "Rare • You gain Resistance to dark damage.",
-          "tags": ["core", "rare", "martial", "INS", "resistance", "dark"]
+          "tags": ["core", "dark", "INS", "martial", "rare", "resistance"]
         },
         {
           "name": "Valkyrie Wings 🟅",
@@ -178,7 +178,7 @@
           "m_defense": "INS size +1",
           "initiative": "-3",
           "description": "Rare • When you cast the Soaring Strike spell (see Elementalist Class, page 189), the MP cost is halved.",
-          "tags": ["core", "rare", "martial", "INS", "spell", "mp", "elementalist"]
+          "tags": ["core", "elementalist", "INS", "martial", "mp", "rare", "spell"]
         },
         {
           "name": "Armor of Heroes 🟅",
@@ -186,8 +186,8 @@
           "defense": "12",
           "m_defense": "INS size",
           "initiative": "-4",
-          "description": "Rare • Critical successes rolled on Accuracy Checks and Magic Checks for attacks and offensive spells (OO) that include you among their targets do not generate opportunities.",
-          "tags": ["core", "rare", "martial", "INS", "critical", "attack", "spell"]
+          "description": "Rare • Critical successes rolled on Accuracy Checks and Magic Checks for attacks and offensive spells (🗲) that include you among their targets do not generate opportunities.",
+          "tags": ["attack", "core", "critical", "INS", "martial", "rare", "spell"]
         },
         {
           "name": "Black Belt",
@@ -196,7 +196,7 @@
           "m_defense": "INS size",
           "initiative": "—",
           "description": "Rare • Your attacks with brawling weapons deal 5 extra damage.",
-          "tags": ["core", "rare", "DEX", "INS", "brawling", "damage"]
+          "tags": ["brawling", "core", "DEX", "INS", "rare"]
         },
         {
           "name": "Meditation Robe",
@@ -205,7 +205,7 @@
           "m_defense": "INS size +2",
           "initiative": "-2",
           "description": "Rare • Whenever you recover Mind Points, you recover 5 additional Mind Points.",
-          "tags": ["core", "rare", "DEX", "INS", "mp"]
+          "tags": ["core", "DEX", "INS", "mp", "rare"]
         },
         {
           "name": "Archmage Robe",
@@ -214,7 +214,7 @@
           "m_defense": "INS size +2",
           "initiative": "-2",
           "description": "Rare • You gain a +1 bonus to your Magic Checks.",
-          "tags": ["core", "rare", "DEX", "INS", "spell"]
+          "tags": ["core", "DEX", "INS", "rare", "spell"]
         },
         {
           "name": "Automaton Suit 🟅",
@@ -223,7 +223,7 @@
           "m_defense": "INS size +1",
           "initiative": "-3",
           "description": "Rare • You gain Immunity to earth and poison damage, but Vulnerability to bolt damage.",
-          "tags": ["core", "rare", "martial", "INS", "immunity", "vulnerability", "earth", "poison", "bolt"]
+          "tags": ["bolt", "core", "earth", "immunity", "INS", "martial", "poison", "rare", "vulnerability"]
         },
         {
           "name": "Adamantorso 🟅",
@@ -232,7 +232,7 @@
           "m_defense": "INS size",
           "initiative": "-4",
           "description": "Rare • You gain Resistance to physical damage.",
-          "tags": ["core", "rare", "martial", "INS", "resistance", "physical"]
+          "tags": ["core", "INS", "martial", "physical", "rare", "resistance"]
         },
         {
           "name": "Ardent Yoroi 🟅",
@@ -241,7 +241,7 @@
           "m_defense": "INS size",
           "initiative": "-4",
           "description": "Rare • You gain a +1 bonus to your Accuracy Checks.",
-          "tags": ["core", "rare", "martial", "INS", "attack"]
+          "tags": ["attack", "core", "INS", "martial", "rare"]
         },
         {
           "name": "Demongrin 🟅",
@@ -250,7 +250,7 @@
           "m_defense": "INS size",
           "initiative": "-4",
           "description": "Rare • After a creature hits you with a melee attack, you deal 5 fire damage to that creature (after the attack has been resolved).",
-          "tags": ["core", "rare", "martial", "INS", "fire", "damage"]
+          "tags": ["core", "fire", "INS", "martial", "melee", "rare"]
         },
         {
           "name": "Bio Plate 🟅",
@@ -259,7 +259,7 @@
           "m_defense": "INS size",
           "initiative": "-3",
           "description": "Rare • You gain Immunity to poison damage.",
-          "tags": ["core", "rare", "martial", "INS", "immunity", "poison"]
+          "tags": ["core", "immunity", "INS", "martial", "poison", "rare"]
         },
         {
           "name": "White Tunic",
@@ -268,7 +268,7 @@
           "m_defense": "INS size +2",
           "initiative": "-2",
           "description": "Rare • Spells you cast whose effects restore Hit Points restore 5 additional Hit Points.",
-          "tags": ["core", "rare", "DEX", "INS", "hp", "spell"]
+          "tags": ["core", "DEX", "hp", "INS", "rare", "spell"]
         },
         {
           "name": "Granny Vest",
@@ -277,7 +277,7 @@
           "m_defense": "INS size +2",
           "initiative": "-1",
           "description": "Rare • You treat your Willpower as if it were one die size higher (up to a maximum of d12).",
-          "tags": ["core", "rare", "DEX", "INS", "WLP"]
+          "tags": ["core", "DEX", "INS", "rare", "WLP"]
         },
         {
           "name": "Black Tunic",
@@ -286,7 +286,7 @@
           "m_defense": "INS size +2",
           "initiative": "-2",
           "description": "Rare • Spells you cast deal 5 extra damage.",
-          "tags": ["core", "rare", "DEX", "INS", "spell", "damage"]
+          "tags": ["core", "DEX", "INS", "rare", "spell"]
         },
         {
           "name": "Red Tunic",
@@ -295,7 +295,7 @@
           "m_defense": "INS size +2",
           "initiative": "-1",
           "description": "Rare • You are treated as having an arcane weapon equipped for the sake of Skills that require it.",
-          "tags": ["core", "rare", "DEX", "INS", "arcane", "skill"]
+          "tags": ["arcane", "core", "DEX", "INS", "rare", "skill"]
         },
         {
           "name": "Dancing Dress",
@@ -304,7 +304,7 @@
           "m_defense": "INS size +2",
           "initiative": "-1",
           "description": "Rare • When you perform a dance with a duration of “Until the start of your next turn”, you may recover from a single status effect of your choice.",
-          "tags": ["high-fantasy", "rare", "DEX", "INS", "dance", "status"]
+          "tags": ["dance", "dancer", "dazed", "DEX", "enraged", "high-fantasy", "INS", "poisoned", "rare", "shaken", "slow", "weak"]
         },
         {
           "name": "Elemental Robe",
@@ -313,7 +313,7 @@
           "m_defense": "INS size +2",
           "initiative": "-2",
           "description": "Rare • While you are in Crisis, spells you cast that deal air, fire, bolt, ice, or earth damage deal 5 extra damage.",
-          "tags": ["high-fantasy", "rare", "DEX", "INS", "crisis", "spell", "damage", "air", "fire", "bolt", "ice", "earth"]
+          "tags": ["air", "bolt", "crisis", "DEX", "earth", "fire", "high-fantasy", "ice", "INS", "rare", "spell"]
         },
         {
           "name": "Orichalcum 🟅",
@@ -322,7 +322,7 @@
           "m_defense": "INS size",
           "initiative": "-4",
           "description": "Rare • As long as you have this armor equipped, increase your maximum HP by 10. This armor cannot be destroyed.",
-          "tags": ["high-fantasy", "rare", "martial", "INS", "hp"]
+          "tags": ["high-fantasy", "hp", "INS", "martial", "rare"]
         },
         {
           "name": "Woolly Cuirass 🟅",
@@ -331,7 +331,7 @@
           "m_defense": "INS size",
           "initiative": "-3",
           "description": "Rare • As long as you’re not in Crisis, you gain Resistance to ice damage and are immune to weak.",
-          "tags": ["natural-fantasy", "rare", "martial", "INS", "crisis", "resistance", "ice", "immunity", "status"]
+          "tags": ["crisis", "ice", "immunity", "INS", "martial", "natural-fantasy", "rare", "resistance", "weak"]
         },
         {
           "name": "Engineer Jacket",
@@ -340,7 +340,7 @@
           "m_defense": "INS size +1",
           "initiative": "-1",
           "description": "Rare • When you use an elemental shard, you may deal its damage to each of up to three creatures you can see. Additionally, when you deal damage with an elemental shard, you deal 5 extra damage.",
-          "tags": ["natural-fantasy", "rare", "DEX", "INS", "damage"]
+          "tags": ["DEX", "INS", "multi", "natural-fantasy", "rare"]
         },
         {
           "name": "Noble Dress",
@@ -349,7 +349,7 @@
           "m_defense": "INS size +1",
           "initiative": "—",
           "description": "Rare • When an ally who is able to see you causes you to recover Hit Points, if you are in Crisis, that ally recovers 5 Mind Points.",
-          "tags": ["natural-fantasy", "rare", "DEX", "INS", "hp", "crisis", "mp"]
+          "tags": ["crisis", "DEX", "hp", "INS", "mp", "natural-fantasy", "rare"]
         },
         {
           "name": "Apothecary Robes",
@@ -358,7 +358,7 @@
           "m_defense": "INS size +2",
           "initiative": "-2",
           "description": "Rare • When you use the Potion Rain Skill, the restoring effect is not halved.",
-          "tags": ["natural-fantasy", "rare", "DEX", "INS", "skill", "tinkerer"]
+          "tags": ["DEX", "INS", "natural-fantasy", "rare", "skill", "tinkerer"]
         },
         {
           "name": "Fairy Tunic",
@@ -367,7 +367,7 @@
           "m_defense": "INS size +2",
           "initiative": "-2",
           "description": "Rare • As long as you are affected by one or more spells with a duration of “Scene”, you gain a +2 bonus to Magic Defense.",
-          "tags": ["natural-fantasy", "rare", "DEX", "INS", "spell", "magic-defense"]
+          "tags": ["DEX", "INS", "magic-defense", "natural-fantasy", "rare", "spell"]
         },
         {
           "name": "Misdirector",
@@ -376,7 +376,7 @@
           "m_defense": "INS size +1",
           "initiative": "-1",
           "description": "Rare • As long as you have no shield equipped, you are Resistant to physical damage.",
-          "tags": ["techno-fantasy", "rare", "DEX", "INS", "shield", "resistance", "physical"]
+          "tags": ["DEX", "INS", "physical", "rare", "resistance", "shield", "techno-fantasy"]
         },
         {
           "name": "Lab Coat",
@@ -385,7 +385,7 @@
           "m_defense": "INS size +2",
           "initiative": "-2",
           "description": "Rare • If you have acquired the Secret Formula Skill, treat your Skill Level in it as if it were increased by 2 (up to a maximum of SL 7).",
-          "tags": ["techno-fantasy", "rare", "DEX", "INS", "skill", "tinkerer"]
+          "tags": ["DEX", "INS", "rare", "skill", "techno-fantasy", "tinkerer"]
         },
         {
           "name": "Biocloak",
@@ -394,7 +394,7 @@
           "m_defense": "INS size +1",
           "initiative": "—",
           "description": "Rare • When you use a Skill that requires you to spend Hit Points, like Ecdysis or Vismagus, you halve that cost.",
-          "tags": ["techno-fantasy", "rare", "DEX", "INS", "skill", "hp", "mutant", "spiritist"]
+          "tags": ["DEX", "hp", "INS", "mutant", "rare", "skill", "spiritist", "techno-fantasy"]
         },
         {
           "name": "Psyskeleton 🟅",
@@ -403,7 +403,7 @@
           "m_defense": "INS size +1",
           "initiative": "-3",
           "description": "Rare • After you perform the Guard action, if your Brainwave Clock is full, you can erase it completely.",
-          "tags": ["techno-fantasy", "rare", "martial", "INS", "guard", "clock", "esper"]
+          "tags": ["clock", "esper", "guard", "INS", "martial", "rare", "techno-fantasy"]
         }
       ]
     },
@@ -427,7 +427,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Basic • No Quality.",
-          "tags": ["core", "basic"]
+          "tags": ["basic", "core"]
         },
         {
           "name": "Runic Shield 🟅",
@@ -436,7 +436,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Basic • No Quality.",
-          "tags": ["core", "basic", "martial"]
+          "tags": ["basic", "core", "martial"]
         },
         {
           "name": "Aegis, Fulgur",
@@ -445,7 +445,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • You gain Resistance to bolt damage.",
-          "tags": ["core", "rare", "resistance", "bolt"]
+          "tags": ["bolt", "core", "rare", "resistance"]
         },
         {
           "name": "Aegis, Gelum",
@@ -454,7 +454,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • You gain Resistance to ice damage.",
-          "tags": ["core", "rare", "resistance", "ice"]
+          "tags": ["core", "ice", "rare", "resistance"]
         },
         {
           "name": "Aegis, Gorgonis",
@@ -463,7 +463,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • You gain Resistance to poison damage.",
-          "tags": ["core", "rare", "resistance", "poison"]
+          "tags": ["core", "poison", "rare", "resistance"]
         },
         {
           "name": "Aegis, Ignis",
@@ -472,7 +472,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • You gain Resistance to fire damage.",
-          "tags": ["core", "rare", "resistance", "fire"]
+          "tags": ["core", "fire", "rare", "resistance"]
         },
         {
           "name": "Aegis, Lux",
@@ -481,7 +481,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • You gain Resistance to light damage.",
-          "tags": ["core", "rare", "resistance", "light"]
+          "tags": ["core", "light", "rare", "resistance"]
         },
         {
           "name": "Aegis, Terra",
@@ -490,7 +490,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • You gain Resistance to earth damage.",
-          "tags": ["core", "rare", "resistance", "earth"]
+          "tags": ["core", "earth", "rare", "resistance"]
         },
         {
           "name": "Aegis, Umbra",
@@ -499,7 +499,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • You gain Resistance to dark damage.",
-          "tags": ["core", "rare", "resistance", "dark"]
+          "tags": ["core", "dark", "rare", "resistance"]
         },
         {
           "name": "Aegis, Ventus",
@@ -508,7 +508,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • You gain Resistance to air damage.",
-          "tags": ["core", "rare", "resistance", "air"]
+          "tags": ["air", "core", "rare", "resistance"]
         },
         {
           "name": "Demonshield 🟅",
@@ -517,7 +517,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Rare • After a creature deals damage to you, if you are in Crisis, you may have that creature suffer shaken.",
-          "tags": ["core", "rare", "martial", "crisis", "status"]
+          "tags": ["core", "crisis", "martial", "rare", "shaken"]
         },
         {
           "name": "Shield of Spring 🟅",
@@ -526,7 +526,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Rare • Whenever you recover Hit Points, you recover 5 additional Hit Points.",
-          "tags": ["core", "rare", "martial", "hp"]
+          "tags": ["core", "hp", "martial", "rare"]
         },
         {
           "name": "Seraph Shield 🟅",
@@ -535,7 +535,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Rare • As long as you are in Crisis, you are immune to all status effects.",
-          "tags": ["core", "rare", "martial", "crisis", "immunity", "status"]
+          "tags": ["core", "crisis", "dazed", "enraged", "immunity", "martial", "poisoned", "rare", "shaken", "slow", "weak"]
         },
         {
           "name": "Adamantower 🟅",
@@ -544,7 +544,7 @@
           "m_defense": "+3",
           "initiative": "—",
           "description": "Rare • You gain a +1 bonus to Defense and Magic Defense (already included).",
-          "tags": ["core", "rare", "martial", "defense", "magic-defense"]
+          "tags": ["core", "defense", "magic-defense", "martial", "rare"]
         },
         {
           "name": "Bag Shield",
@@ -553,7 +553,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • When a Skill lets you regain Inventory Points, you regain 1 additional Inventory Point.",
-          "tags": ["high-fantasy", "rare", "ip", "skill"]
+          "tags": ["high-fantasy", "ip", "rare", "skill"]
         },
         {
           "name": "Drumshield",
@@ -562,7 +562,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • If you have the Resonance Skill, consider your Skill Level in it increased by 2 (up to a maximum of SL 5).",
-          "tags": ["high-fantasy", "rare", "skill", "chanter"]
+          "tags": ["chanter", "high-fantasy", "rare", "skill"]
         },
         {
           "name": "Argus 🟅",
@@ -571,7 +571,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Rare • When you use the King’s Castle and Bishop’s Edict Skills, you may exclude one creature you can see from their effects.",
-          "tags": ["high-fantasy", "rare", "martial", "skill", "commander"]
+          "tags": ["commander", "high-fantasy", "martial", "rare", "skill"]
         },
         {
           "name": "Shield of Blades 🟅",
@@ -580,7 +580,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Rare • When you attack with a weapon belonging to the heavy, spear, or sword Category, if the attack has the multi property, that attack deals 5 extra damage.",
-          "tags": ["high-fantasy", "rare", "martial", "attack", "heavy", "spear", "sword", "multi", "damage"]
+          "tags": ["attack", "heavy", "high-fantasy", "martial", "multi", "rare", "spear", "sword"]
         },
         {
           "name": "Parry Shield 🟅",
@@ -589,7 +589,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Rare • If you have the Counterattack Skill, the Skill also triggers when the result of an enemy’s Accuracy Check is an odd number.",
-          "tags": ["high-fantasy", "rare", "martial", "skill", "weaponmaster"]
+          "tags": ["high-fantasy", "martial", "rare", "skill", "weaponmaster"]
         },
         {
           "name": "Plate Manica",
@@ -598,7 +598,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • As long as you have no martial armor and no other shield equipped, you may apply the effects of the Dodge Skill.",
-          "tags": ["natural-fantasy", "rare", "martial", "armor", "shield", "skill", "rogue"]
+          "tags": ["armor", "natural-fantasy", "rare", "rogue", "shield", "skill"]
         },
         {
           "name": "Lid Shield 🟅",
@@ -607,7 +607,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Rare • When you deal damage with a delicacy, you deal 5 extra damage.",
-          "tags": ["natural-fantasy", "rare", "martial", "damage", "gourmet"]
+          "tags": ["gourmet", "ingredient", "martial", "natural-fantasy", "rare"]
         },
         {
           "name": "Lily Vambrace 🟅",
@@ -616,7 +616,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Rare • If you have the Battle Gardening Skill, you can use it when you plant a magiseed with the Graft Skill.",
-          "tags": ["natural-fantasy", "rare", "martial", "skill", "floralist", "garden"]
+          "tags": ["floralist", "garden", "martial", "natural-fantasy", "rare", "skill"]
         },
         {
           "name": "Icebreaker 🟅",
@@ -625,7 +625,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Rare • All physical and fire damage you deal ignores Resistances.",
-          "tags": ["techno-fantasy", "rare", "martial", "physical", "fire", "damage", "resistance"]
+          "tags": ["fire", "ignore", "martial", "physical", "rare", "resistance", "techno-fantasy"]
         },
         {
           "name": "Ballistic Shield",
@@ -634,7 +634,7 @@
           "m_defense": "—",
           "initiative": "—",
           "description": "Rare • You gain a +1 bonus to your Accuracy Check with ranged weapons.",
-          "tags": ["techno-fantasy", "rare", "attack", "ranged"]
+          "tags": ["attack", "rare", "ranged", "techno-fantasy"]
         },
         {
           "name": "Windshield 🟅",
@@ -643,7 +643,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Rare • While driving your personal vehicle, you gain Resistance to air and ice damage.",
-          "tags": ["techno-fantasy", "rare", "martial", "vehicle", "pilot", "resistance", "air", "ice"]
+          "tags": ["air", "ice", "martial", "pilot", "rare", "resistance", "techno-fantasy", "vehicle"]
         },
         {
           "name": "Hekat Shield 🟅",
@@ -652,7 +652,7 @@
           "m_defense": "+2",
           "initiative": "—",
           "description": "Rare • You gain Resistance to damage dealt by spells. When a spell deals damage to you, you recover 5 Mind Points.",
-          "tags": ["techno-fantasy", "rare", "martial", "resistance", "damage", "spell", "mp"]
+          "tags": ["martial", "mp", "rare", "resistance", "spell", "techno-fantasy"]
         }
       ]
     }

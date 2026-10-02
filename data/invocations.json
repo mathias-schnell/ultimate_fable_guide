@@ -19,13 +19,13 @@
           "name": "Aero Blast",
           "required_sl": 1,
           "description": "You deal 20 air damage to the target.",
-          "tags": ["damage"]
+          "tags": []
         },
         {
           "name": "Aero Hex",
           "required_sl": 2,
           "description": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal bolt and fire damage.",
-          "tags": ["bolt", "damage", "fire"]
+          "tags": ["bolt", "fire"]
         },
         {
           "name": "Breeze",
@@ -37,7 +37,7 @@
           "name": "Twister",
           "required_sl": 3,
           "description": "You deal 10 air damage to the target, and they suffer dazed.",
-          "tags": ["damage", "status"]
+          "tags": ["dazed"]
         }
       ]
     },
@@ -55,13 +55,13 @@
           "name": "Geo Blast",
           "required_sl": 1,
           "description": "You deal 20 earth damage to the target.",
-          "tags": ["damage"]
+          "tags": []
         },
         {
           "name": "Geo Hex",
           "required_sl": 2,
           "description": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air and ice damage.",
-          "tags": ["air", "damage", "ice"]
+          "tags": ["air", "ice"]
         },
         {
           "name": "Growth",
@@ -73,7 +73,7 @@
           "name": "Quicksand",
           "required_sl": 3,
           "description": "You deal 10 earth damage to the target, and they suffer slow.",
-          "tags": ["damage", "status"]
+          "tags": ["slow"]
         }
       ]
     },
@@ -91,25 +91,25 @@
           "name": "Pyro Blast",
           "required_sl": 1,
           "description": "You deal 20 fire damage to the target.",
-          "tags": ["damage"]
+          "tags": []
         },
         {
           "name": "Pyro Hex",
           "required_sl": 2,
           "description": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth and ice damage.",
-          "tags": ["damage", "earth", "ice"]
+          "tags": ["earth", "ice"]
         },
         {
           "name": "Burst",
           "required_sl": 3,
           "description": "You deal 10 fire damage to the target, and they suffer shaken.",
-          "tags": ["damage", "status"]
+          "tags": ["shaken"]
         },
         {
           "name": "Smoke",
           "required_sl": 3,
           "description": "The target loses 20 Mind Points and also suffers weak.",
-          "tags": ["mp", "status"]
+          "tags": ["mp", "weak"]
         }
       ]
     },
@@ -127,25 +127,25 @@
           "name": "Electro Blast",
           "required_sl": 1,
           "description": "You deal 20 bolt damage to the target.",
-          "tags": ["bolt", "damage"]
+          "tags": ["bolt"]
         },
         {
           "name": "Electro Hex",
           "required_sl": 2,
           "description": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth and fire damage.",
-          "tags": ["damage", "earth", "fire"]
+          "tags": ["earth", "fire"]
         },
         {
           "name": "Static",
           "required_sl": 3,
           "description": "You deal 10 bolt damage to the target, and they suffer slow.",
-          "tags": ["bolt", "damage", "status"]
+          "tags": ["bolt", "slow"]
         },
         {
           "name": "Thunder",
           "required_sl": 3,
           "description": "The target loses 20 Mind Points and also suffers dazed.",
-          "tags": ["mp", "status"]
+          "tags": ["dazed", "mp"]
         }
       ]
     },
@@ -163,25 +163,25 @@
           "name": "Hydro Blast",
           "required_sl": 1,
           "description": "You deal 20 ice damage to the target.",
-          "tags": ["damage", "ice"]
+          "tags": ["ice"]
         },
         {
           "name": "Hydro Hex",
           "required_sl": 2,
           "description": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air and bolt damage.",
-          "tags": ["air", "bolt", "damage"]
+          "tags": ["air", "bolt"]
         },
         {
           "name": "Chill",
           "required_sl": 3,
           "description": "The target loses 20 Mind Points and also suffers shaken.",
-          "tags": ["mp", "status"]
+          "tags": ["mp", "shaken"]
         },
         {
           "name": "Frostbite",
           "required_sl": 3,
           "description": "You deal 10 ice damage to the target, and they suffer weak.",
-          "tags": ["damage", "ice", "status"]
+          "tags": ["ice", "weak"]
         }
       ]
     }

@@ -19,13 +19,13 @@
           "name": "Amphibia",
           "suggestions": "Frogs, salamanders, regenerating creatures, aquatic monsters.",
           "description": "You may breathe underwater and your eyes can see perfectly in dim light.<br><br>When you recover Hit Points, you recover 5 additional Hit Points and you may recover from a single status effect of your choice.",
-          "tags": ["hp", "status", "water"]
+          "tags": ["dazed", "enraged", "hp", "poisoned", "shaken", "slow", "weak"]
         },
         {
           "name": "Arpaktida",
           "suggestions": "Wolves, birds of prey, creatures with sharp hunting senses.",
           "description": "You treat your Insight as if it were one die size higher (to a maximum of d12).<br><br>When you deal damage to one or more creatures for the first time during your turn, if at least one of them is in Crisis, you deal 5 extra damage to each of those creatures.",
-          "tags": ["crisis", "damage", "INS"]
+          "tags": ["crisis", "INS"]
         },
         {
           "name": "Dynamotheria",
@@ -37,7 +37,7 @@
           "name": "Electrophora",
           "suggestions": "Electric creatures, lightning elementals, robots.",
           "description": "When you deal damage with an attack or spell, you may have all that damage become bolt. While your unarmed strikes deal bolt damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers slow.",
-          "tags": ["bolt", "damage", "hp", "status", "unarmed"]
+          "tags": ["bolt", "brawling", "hp", "slow"]
         },
         {
           "name": "Neurophagoida",
@@ -55,25 +55,25 @@
           "name": "Pneumophora",
           "suggestions": "Jet-propulsion mollusks, great winged beasts, rockets.",
           "description": "When you deal damage with an attack or spell, you may have all that damage become air. While your unarmed strikes deal air damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers weak.",
-          "tags": ["air", "damage", "hp", "status", "unarmed"]
+          "tags": ["air", "brawling", "hp", "weak"]
         },
         {
           "name": "Polypoda",
           "suggestions": "Squids, octopi, creatures with tendrils or vines.",
           "description": "Your attacks with unarmed strikes gain multi (3).",
-          "tags": ["attack", "multi", "unarmed"]
+          "tags": ["attack", "brawling", "multi"]
         },
         {
           "name": "Pterotheria",
           "suggestions": "Bats, birds, winged insects, flying creatures.",
           "description": "You are able to fly. In addition to the obvious advantages in mobility, your melee attacks can target flying creatures and you cannot be targeted by melee attacks unless the attacker is flying or is somehow able to reach flying targets.<br><br>These benefits do not apply if you are unable to fly freely (such as when inside a vehicle designed for human-sized creatures, or in a narrow corridor). Additionally, when you suffer air, bolt or ice damage during a conflict scene, you lose these benefits until the start of your next turn.",
-          "tags": ["air", "bolt", "damage", "flying", "ice", "melee"]
+          "tags": ["air", "bolt", "flying", "ice", "melee"]
         },
         {
           "name": "Pyrophora",
           "suggestions": "Bombardier beetles, pistol shrimps, fire elementals.",
           "description": "When you deal damage with an attack or spell, you may have all that damage become fire. While your unarmed strikes deal fire damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers dazed.",
-          "tags": ["damage", "fire", "hp", "status", "unarmed"]
+          "tags": ["brawling", "dazed", "fire", "hp"]
         },
         {
           "name": "Tachytheria",
@@ -85,7 +85,7 @@
           "name": "Toxicophora",
           "suggestions": "Spiders, snakes, toxic slimes and other venomous creatures.",
           "description": "When you deal damage with an attack or spell, you may have all that damage become poison. While your unarmed strikes deal poison damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers poisoned.",
-          "tags": ["damage", "hp", "poison", "status", "unarmed"]
+          "tags": ["brawling", "hp", "poison", "poisoned"]
         }
       ]
     }

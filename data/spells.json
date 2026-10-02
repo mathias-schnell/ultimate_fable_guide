@@ -25,7 +25,7 @@
           "target": "One creature",
           "duration": "Instantaneous",
           "description": "You summon a colossal block of stone and send it straight towards your enemy. You deal (HR + 25) earth damage to the target; this damage ignores Resistances.",
-          "tags": ["damage", "earth", "resistance"]
+          "tags": ["earth", "ignore", "resistance"]
         },
         {
           "name": "Elemental Shroud",
@@ -45,7 +45,7 @@
           "target": "One equipped weapon",
           "duration": "Scene",
           "description": "You imbue a weapon with elemental energy. Choose a damage type: air, bolt, earth, fire, or ice. Until this spell ends, all damage dealt by the weapon becomes of the chosen damage type. If you have that weapon equipped while you cast this spell, you may perform a free attack with it as part of the same action.\nThis spell can only be cast on a weapon equipped by a willing creature.",
-          "tags": ["air", "attack", "bolt", "damage", "earth", "equipment", "fire", "ice"]
+          "tags": ["air", "bolt", "earth", "fire", "free-attack", "ice", "weapon"]
         },
         {
           "name": "Flare 🗲",
@@ -55,7 +55,7 @@
           "target": "One creature",
           "duration": "Instantaneous",
           "description": "You channel a single ray of fire towards your foe, its temperature so high that it will pierce through most defenses. You deal (HR + 25) fire damage to the target; this damage ignores Resistances.",
-          "tags": ["damage", "fire", "resistance"]
+          "tags": ["fire", "ignore", "resistance"]
         },
         {
           "name": "Fulgur 🗲",
@@ -65,7 +65,7 @@
           "target": "Up to three creatures",
           "duration": "Instantaneous",
           "description": "You weave electricity into a wave of crackling bolts. You deal (HR + 15) bolt damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers dazed.",
-          "tags": ["bolt", "damage", "status"]
+          "tags": ["bolt", "dazed", "multi"]
         },
         {
           "name": "Glacies 🗲",
@@ -75,7 +75,7 @@
           "target": "Up to three creatures",
           "duration": "Instantaneous",
           "description": "You coat your foes under a thick layer of frost. You deal (HR + 15) ice damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers slow.",
-          "tags": ["damage", "ice", "status"]
+          "tags": ["ice", "slow"]
         },
         {
           "name": "Iceberg 🗲",
@@ -85,7 +85,7 @@
           "target": "One creature",
           "duration": "Instantaneous",
           "description": "A pillar of ice magic envelops your foe, dropping their temperature to critical levels. You deal (HR + 25) ice damage to the target; this damage ignores Resistances.",
-          "tags": ["damage", "ice", "resistance"]
+          "tags": ["ice", "ignore", "resistance"]
         },
         {
           "name": "Ignis 🗲",
@@ -95,7 +95,7 @@
           "target": "Up to three creatures",
           "duration": "Instantaneous",
           "description": "You unleash a searing barrage against your foes, conjuring flames out of thin air. You deal (HR + 15) fire damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers shaken.",
-          "tags": ["damage", "fire", "status"]
+          "tags": ["fire", "shaken"]
         },
         {
           "name": "Soaring Strike",
@@ -105,7 +105,7 @@
           "target": "Self",
           "duration": "Instantaneous",
           "description": "The wind carries your strikes across the battlefield. You may perform a free attack with a melee weapon you have equipped; this attack may target creatures that cannot normally be targeted by melee attacks.\nIf you used a weapon belonging to the brawling, spear, or sword Category for this attack, it deals 5 extra damage.\nIf you hit a flying target with this attack, you may force them to land immediately.",
-          "tags": ["attack", "brawling", "damage", "melee", "spear", "sword"]
+          "tags": ["brawling", "flying", "free-attack", "melee", "spear", "sword"]
         },
         {
           "name": "Terra 🗲",
@@ -115,7 +115,7 @@
           "target": "Up to three creatures",
           "duration": "Instantaneous",
           "description": "Spires of jagged rock erupt from the ground beneath your foes, closing around them. You deal (HR + 15) earth damage to each target hit by this spell. This spell cannot target creatures that are flying, floating, falling, or otherwise in mid-air.\nOpportunity: each target hit by this spell performs one fewer action on their next turn (to a minimum of 0 actions).",
-          "tags": ["damage", "earth"]
+          "tags": ["earth", "fewer-actions", "flying", "multi"]
         },
         {
           "name": "Thunderbolt 🗲",
@@ -125,7 +125,7 @@
           "target": "One creature",
           "duration": "Instantaneous",
           "description": "You send an arrow of overcharged lightning striking at your foe. You deal (HR + 25) bolt damage to the target; this damage ignores Resistances.",
-          "tags": ["bolt", "damage", "resistance"]
+          "tags": ["bolt", "ignore", "resistance"]
         },
         {
           "name": "Ventus 🗲",
@@ -135,7 +135,7 @@
           "target": "Up to three creatures",
           "duration": "Instantaneous",
           "description": "You summon the power of winds against your enemy. You deal (HR + 15) air damage to each target hit by this spell.\nOpportunity: each flying target hit by this spell is forced to land immediately.",
-          "tags": ["air", "damage"]
+          "tags": ["air", "flying", "multi"]
         },
         {
           "name": "Vortex 🗲",
@@ -145,7 +145,7 @@
           "target": "One creature",
           "duration": "Instantaneous",
           "description": "You slash through your foe with high-pressure wind. You deal (HR + 25) air damage to the target; this damage ignores Resistances.",
-          "tags": ["air", "damage", "resistance"]
+          "tags": ["air", "ignore", "resistance"]
         }
       ]
     },
@@ -169,7 +169,7 @@
           "target": "One creature",
           "duration": "Scene",
           "description": "At the end of each of their turns, the target may choose one option: perform a free attack with a weapon they have equipped; or perform the Spell action for free, casting a spell with a total MP cost equal to or lower than 10 (paying its MP cost). After the same creature benefits from this effect a second time, this spell ends.",
-          "tags": ["attack", "equipment", "mp"]
+          "tags": ["free-attack", "free-spell", "mp"]
         },
         {
           "name": "Anomaly 🗲",
@@ -179,7 +179,7 @@
           "target": "One creature",
           "duration": "Scene",
           "description": "You alter the very nature of your target. Until this spell ends, if the target would suffer damage of a type they Absorb or are Immune to, they are instead treated as if they were Vulnerable to that damage type. Once that happens, this spell ends.",
-          "tags": ["absorption", "damage", "immunity", "vulnerability"]
+          "tags": ["absorption", "immunity", "vulnerability"]
         },
         {
           "name": "Dark Weapon",
@@ -189,7 +189,7 @@
           "target": "One equipped weapon",
           "duration": "Scene",
           "description": "You imbue a weapon with dark energy. Until this spell ends, all damage dealt by the weapon becomes dark. If you have that weapon equipped while you cast this spell, you may perform a free attack with it as part of the same action.\nThis spell can only be cast on a weapon equipped by a willing creature.",
-          "tags": ["attack", "damage", "dark", "equipment"]
+          "tags": ["dark", "free-attack", "weapon"]
         },
         {
           "name": "Dispel",
@@ -199,7 +199,7 @@
           "target": "One creature",
           "duration": "Instantaneous",
           "description": "You cleanse all magic from a creature. If the target is affected by one or more spells with a duration of “Scene”, instead they are no longer affected by any of those spells.",
-          "tags": []
+          "tags": ["dispel-effect"]
         },
         {
           "name": "Divination",
@@ -209,7 +209,7 @@
           "target": "Self",
           "duration": "Scene",
           "description": "You glimpse briefly into the future. Until this spell ends, after a creature you can see rolls dice for a Check, if it's not a fumble nor a critical success, you may force them to reroll both dice. Once you have forced two rerolls this way, this spell ends.",
-          "tags": ["critical", "fumble"]
+          "tags": ["critical", "fumble", "reroll"]
         },
         {
           "name": "Drain Spirit 🗲",
@@ -229,7 +229,7 @@
           "target": "One creature",
           "duration": "Instantaneous",
           "description": "You steal another creature’s life force. You deal (HR + 15) dark damage to the target. Then, you recover an amount of Hit Points equal to half the total Hit Points loss they suffered (if the target had no HP left, you recover none).",
-          "tags": ["damage", "dark", "hp"]
+          "tags": ["dark", "hp"]
         },
         {
           "name": "Gamble",
@@ -239,7 +239,7 @@
           "target": "Special",
           "duration": "Instantaneous",
           "description": "You summon a vortex of chaotic energy. Roll your current Willpower die once for every 10 Mind Points spent while casting this spell, then keep the single die you prefer: the number on that die determines the effects of this spell.\n1: You lose half of your current Hit Points and half of your current Mind Points.\n2-3: Each creature present on the scene, including yourself, suffers poisoned.\n4-6: Each creature present on the scene, including yourself, suffers slow.\n7-8: Choose up to three creatures you can see: each of them recovers 50 Hit Points and also recovers from all status effects.\n9+: Choose any number of creatures you can see: you deal 30 damage to each of them. The damage type is determined randomly by rolling a d6: 1. air 2. bolt 3. dark 4. earth 5. fire 6. poison",
-          "tags": ["air", "bolt", "damage", "dark", "earth", "fire", "hp", "mp", "poison", "status", "WLP"]
+          "tags": ["air", "bolt", "dark", "earth", "fire", "hp", "mp", "poison", "poisoned", "slow", "WLP"]
         },
         {
           "name": "Mirror",
@@ -249,7 +249,7 @@
           "target": "One creature",
           "duration": "Scene",
           "description": "You twist the laws of magic. Until this spell ends, when the target is targeted by an offensive spell (🗲), the creature that cast that offensive spell will be targeted in their stead (any other targets of the offensive spell will be targeted as normal). Once that happens, this spell ends.",
-          "tags": []
+          "tags": ["spell"]
         },
         {
           "name": "Omega 🗲",
@@ -259,7 +259,7 @@
           "target": "One creature",
           "duration": "Instantaneous",
           "description": "You invoke doom on your foe, turning strength into frailty. The target loses an amount of Hit Points equal to (20 + half the target’s level).",
-          "tags": ["hp"]
+          "tags": ["hp", "untyped"]
         },
         {
           "name": "Stop 🗲",
@@ -269,7 +269,7 @@
           "target": "One creature",
           "duration": "Instantaneous",
           "description": "You trap a foe inside a circle of altered time and space. The target will perform one fewer action on their next turn (to a minimum of 0 actions).",
-          "tags": []
+          "tags": ["fewer-actions"]
         },
         {
           "name": "Umbra 🗲",
@@ -279,7 +279,7 @@
           "target": "Up to three creatures",
           "duration": "Instantaneous",
           "description": "A storm of dark energy turns matter into ash. You deal (HR + 15) dark damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers weak.",
-          "tags": ["damage", "dark", "status"]
+          "tags": ["dark", "weak"]
         }
       ]
     },
@@ -303,7 +303,7 @@
           "target": "Up to three creatures",
           "duration": "Scene",
           "description": "You project your soul outside your body and direct it to surround the targets, shielding them from dangerous magic. Until this spell ends, each target may treat their Magic Defense as being equal to 12 against any effects that target it (they are still free to use their normal Defense score if higher than 12). This value increases to 13 if you are level 20 or higher, or to 14 if you are level 40 or higher.",
-          "tags": ["magic-defense"]
+          "tags": ["magic-defense", "multi"]
         },
         {
           "name": "Awaken",
@@ -323,7 +323,7 @@
           "target": "Up to three creatures",
           "duration": "Scene",
           "description": "You project your soul outside your body and weave it into a barrier to protect the targets from attacks. Until this spell ends, each target may treat their Defense as being equal to 12 against any effects that target it (they are still free to use their normal Defense score if higher than 12). This value increases to 13 if you are level 20 or higher, or to 14 if you are level 40 or higher.",
-          "tags": ["defense"]
+          "tags": ["defense", "multi"]
         },
         {
           "name": "Cleanse",
@@ -333,7 +333,7 @@
           "target": "Up to three creatures",
           "duration": "Instantaneous",
           "description": "You strengthen and purify the soul energy coursing through your companions. Each target recovers from all status effects.",
-          "tags": ["status"]
+          "tags": ["dazed", "enraged", "poisoned", "shaken", "slow", "weak"]
         },
         {
           "name": "Enrage 🗲",
@@ -343,7 +343,7 @@
           "target": "One creature",
           "duration": "Instantaneous",
           "description": "You cause a creature to lose any semblance of temper and act brazenly. The target suffers enraged and cannot perform the Guard or Spell actions until the end of their next turn.",
-          "tags": ["status"]
+          "tags": ["enraged", "guard", "spell"]
         },
         {
           "name": "Hallucination 🗲",
@@ -353,7 +353,7 @@
           "target": "Up to three creatures",
           "duration": "Instantaneous",
           "description": "You alter the senses of your enemies, causing them to experience bizarre or frightening hallucinations. Choose dazed or shaken: you inflict the chosen status effect on each target hit by this spell.",
-          "tags": ["status"]
+          "tags": ["dazed", "shaken"]
         },
         {
           "name": "Heal",
@@ -363,7 +363,7 @@
           "target": "Up to three creatures",
           "duration": "Instantaneous",
           "description": "You invigorate your companions, soothing their pain and healing their fatigue. Each target recovers 40 Hit Points. This amount increases to 50 Hit Points if you are level 20 or higher, or to 60 Hit Points if you are level 40 or higher.",
-          "tags": ["hp"]
+          "tags": ["hp", "multi"]
         },
         {
           "name": "Lux 🗲",
@@ -373,7 +373,7 @@
           "target": "Up to three creatures",
           "duration": "Instantaneous",
           "description": "You focus your inner energy into a barrage of blinding soul rays. You deal (HR + 15) light damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers dazed.",
-          "tags": ["damage", "light", "status"]
+          "tags": ["dazed", "light", "multi"]
         },
         {
           "name": "Mercy",
@@ -383,7 +383,7 @@
           "target": "One creature",
           "duration": "Scene",
           "description": "You strengthen the heart of a creature against suffering and despair. Until this spell ends, if the target would be reduced to 0 Hit Points, they are instead left standing with exactly 1 Hit Point. Once that happens, this spell ends.",
-          "tags": ["hp"]
+          "tags": ["death-save", "hp"]
         },
         {
           "name": "Reinforce",
@@ -393,7 +393,7 @@
           "target": "Up to three creatures",
           "duration": "Scene",
           "description": "You protect the targets from attacks that would corrupt their body and spirit. Choose dazed, enraged, poisoned, shaken, slow, or weak. Until this spell ends, each target is immune to the chosen status effect.",
-          "tags": ["immunity", "status"]
+          "tags": ["dazed", "enraged", "immunity", "poisoned", "shaken", "slow", "weak"]
         },
         {
           "name": "Soul Shroud",
@@ -413,7 +413,7 @@
           "target": "One equipped weapon",
           "duration": "Scene",
           "description": "You imbue a weapon with the cleansing energy of your spirit. Until this spell ends, all damage dealt by the weapon becomes light. If you have that weapon equipped while you cast this spell, you may perform a free attack with it as part of the same action.\nThis spell can only be cast on a weapon equipped by a willing creature.",
-          "tags": ["attack", "damage", "equipment", "light"]
+          "tags": ["free-attack", "light", "weapon"]
         },
         {
           "name": "Torpor 🗲",
@@ -423,7 +423,7 @@
           "target": "Up to three creatures",
           "duration": "Instantaneous",
           "description": "You smother the soul energy coursing through the bodies of your foes, hindering their movements. Choose slow or weak: you inflict the chosen status effect on each target hit by this spell.",
-          "tags": ["status"]
+          "tags": ["slow", "weak"]
         }
       ]
     }
