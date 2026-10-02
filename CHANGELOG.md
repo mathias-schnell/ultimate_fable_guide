@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.1] - 2026-10-01
+
+### Changed
+- Updated tag category names.
+- Updated filter container styles.
+- Adding cache busting to the stylesheets and Javascript files.
+
+---
+
 ## [0.6.0] - 2026-10-01
 
 ### Changed

@@ -38,7 +38,7 @@ $filter_tags = [
         "weaponmaster" => "Weaponmaster",
     ],
 
-    "Class-Specific Mechanics" => [
+    "Class Mechanics" => [
         "arcana"      => "Arcana",
         "companion"   => "Companion",
         "dance"       => "Dances",
@@ -78,7 +78,7 @@ $filter_tags = [
         "zenit"        => "Zenit",
     ],
 
-    "Attributes & Character Stats" => [
+    "Attributes & Stats" => [
         "DEX"           => "Dexterity (DEX)",
         "INS"           => "Insight (INS)",
         "MIG"           => "Might (MIG)",
@@ -120,7 +120,7 @@ $filter_tags = [
         "poisoned"  => "Poisoned",
     ],
 
-    "Equipment Categories" => [
+    "Equipment Types" => [
         "basic"         => "Basic",
         "rare"          => "Rare",
         "martial"       => "Martial",
@@ -131,7 +131,7 @@ $filter_tags = [
         "weapon"        => "Weapon",
     ],
 
-    "Weapon Categories & Qualities" => [
+    "Weapon Categories" => [
         "arcane"        => "Arcane",
         "bow"           => "Bow",
         "brawling"      => "Brawling",

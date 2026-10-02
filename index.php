@@ -4,9 +4,10 @@
     require_once __DIR__ . '/includes/config/tags_conf.php';
     require_once __DIR__ . '/includes/helpers/helper_funcs.php';
 
-    $stylesheets = "<link rel='stylesheet' href='" . CSS_URL . "/reset.css'>\n
-                    <link rel='stylesheet' href='" . CSS_URL . "/style.css'>\n
-                    <link rel='stylesheet' href='" . CSS_URL . "/content.css'>\n";
+    $cachebust = "?" . time();
+    $stylesheets = "<link rel='stylesheet' href='" . CSS_URL . "/reset.css{$cachebust}'>\n
+                    <link rel='stylesheet' href='" . CSS_URL . "/style.css{$cachebust}'>\n
+                    <link rel='stylesheet' href='" . CSS_URL . "/content.css{$cachebust}'>\n";
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimate Fable Guide</title>
     <?=$stylesheets; ?>
-    <script type="module" src="<?=JS_URL?>/app.js"></script>
+    <script type="module" src="<?=JS_URL?>/app.js<?=$cachebust?>"></script>
 </head>
 <body>
     <main id="main-container" class="container">
