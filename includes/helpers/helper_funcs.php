@@ -150,7 +150,7 @@ function render_group_header(string $key, array $cols, string $group_label, stri
             <button class="<?= $key ?>-multitoggle" type="button" title="Expand All" data-key="<?= $key ?>" aria-expanded="false" aria-controls="article.<?= $key ?>">⊕</button>
         </div>
         <?php foreach ($cols as $col): ?>
-            <div><?= htmlspecialchars(render_unicode_symbols($col['label'])) ?></div>
+            <div class="<?= $key ?>-col-sort" data-sort-by=<?= $key . "-" . $col['field'] ?>><?= htmlspecialchars(render_unicode_symbols($col['label'])) ?></div>
         <?php endforeach; ?>
         <div></div>
     </div>
@@ -160,7 +160,7 @@ function render_group_header(string $key, array $cols, string $group_label, stri
 function render_row_article(string $key, string $id, array $combined_tags, array $cols, array $entry, string $grid_style): void {
     $tags_str = htmlspecialchars(implode(', ', $combined_tags));
     ?>
-    <article class="<?= $key ?>" data-tags="<?= $tags_str ?>">
+    <article class="<?= $key ?>" data-slug="<?= slugify(get_cell_data('name', $entry)) ?>" data-tags="<?= $tags_str ?>">
         <div class="<?= $key ?>-row"<?= $grid_style ?>>
             <div class="<?= $key ?>-expand">
                 <?php if(!empty($entry['description'])): ?>
@@ -243,4 +243,18 @@ function get_cell_data(string $key, array $entry): string {
     $val = $entry[$key];
     if (is_array($val)) return empty($val) ? "—" : htmlspecialchars(implode(', ', $val));
     return render_unicode_symbols((string)$val);
+}
+
+function slugify(string $text): string {
+    if (class_exists('Normalizer')) {
+        $text = Normalizer::normalize($text, Normalizer::FORM_D);
+        $text = preg_replace('/\p{Mn}/u', '', $text);
+    } else {
+        $text = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $text);
+    }
+    $text = strtolower($text);
+    $text = preg_replace('/[\'’]/u', '', $text);
+    $text = preg_replace('/[^a-z0-9\s-]/u', '', $text);
+    $text = preg_replace('/[\s-]+/u', '-', $text);
+    return trim($text, '-');
 }

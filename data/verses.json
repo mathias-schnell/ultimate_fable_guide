@@ -45,7 +45,7 @@
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Type", "field": "type", "class": "type" },
-        { "label": "Status Effect", "field": "status_effect", "class": "status-effect" },
+        { "label": "Status Effect", "field": "status-effect", "class": "status-effect" },
         { "label": "Attribute", "field": "attribute", "class": "attribute" },
         { "label": "Recovery", "field": "recovery", "class": "recovery" }
       ],
@@ -55,7 +55,7 @@
         {
           "name": "Flame",
           "type": "fire",
-          "status_effect": "shaken",
+          "status-effect": "shaken",
           "attribute": "Might",
           "recovery": "Hit Points",
           "description": "",
@@ -64,7 +64,7 @@
         {
           "name": "Frost",
           "type": "ice",
-          "status_effect": "weak",
+          "status-effect": "weak",
           "attribute": "Willpower",
           "recovery": "Mind Points",
           "description": "",
@@ -73,7 +73,7 @@
         {
           "name": "Iron",
           "type": "physical",
-          "status_effect": "slow",
+          "status-effect": "slow",
           "attribute": "Willpower",
           "recovery": "Mind Points",
           "description": "",
@@ -82,7 +82,7 @@
         {
           "name": "Radiance",
           "type": "light",
-          "status_effect": "dazed",
+          "status-effect": "dazed",
           "attribute": "Insight",
           "recovery": "Hit Points",
           "description": "",
@@ -91,7 +91,7 @@
         {
           "name": "Shadow",
           "type": "dark",
-          "status_effect": "weak",
+          "status-effect": "weak",
           "attribute": "Dexterity",
           "recovery": "Mind Points",
           "description": "",
@@ -100,7 +100,7 @@
         {
           "name": "Stone",
           "type": "earth",
-          "status_effect": "dazed",
+          "status-effect": "dazed",
           "attribute": "Might",
           "recovery": "Hit Points",
           "description": "",
@@ -109,7 +109,7 @@
         {
           "name": "Thunder",
           "type": "bolt",
-          "status_effect": "shaken",
+          "status-effect": "shaken",
           "attribute": "Dexterity",
           "recovery": "Hit Points",
           "description": "",
@@ -118,7 +118,7 @@
         {
           "name": "Wind",
           "type": "air",
-          "status_effect": "slow",
+          "status-effect": "slow",
           "attribute": "Insight",
           "recovery": "Mind Points",
           "description": "",

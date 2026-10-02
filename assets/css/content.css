@@ -69,6 +69,20 @@
     padding: 0.4rem;
 }
 
+.content-container [class*="-col-sort"] {
+    cursor: pointer;
+}
+
+.content-container [class*="-col-sort"][data-sort-desc='false']::after {
+    content: '▲';
+    padding-left: 0.25rem;
+}
+
+.content-container [class*="-col-sort"][data-sort-desc='true']::after {
+    content: '▼';
+    padding-left: 0.25rem;
+}
+
 .content-container [class*="-group"] :has(> [class*="-row"]) {
     border-bottom: 1px solid #CCCCCC;
 }
@@ -76,7 +90,6 @@
 .content-container [class*="-group"] :has(> [class*="-row"])[aria-pinned="true"] {
     background-color: #D0D0D0;
     border-bottom: 1px solid #AAAAAA;
-    order: -1;
 }
 
 .content-container [class*="-group"] :has(> [class*="-row"]):last-child {

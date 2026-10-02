@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.6.3] - 2026-10-02
+
+### Added
+- Clicking a column header will sort all content by that column's values for the entire category. First descending, then the opposite of the current state going forward.
+
+### Fixed
+- Some data keys/names were incorrect.
+
+---
+
 ## [0.6.2] - 2026-10-02
 
 ### Added
