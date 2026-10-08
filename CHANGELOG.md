@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.6.5] - 2026-10-02
+## [0.6.5] - 2026-10-07
 
 ### Added
 - Permanent bonuses for taking classes are now included in 'Class Skills'.
