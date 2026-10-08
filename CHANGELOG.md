@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.6] - 2026-10-07
+
+### Internal
+- Updated deploy script so that deploying to webhost with Github Actions is a complete copy and reset action rather than a simple pull for changes (this better replicates the expected behavior and eliminates the need for manual fixes when history gets muddled).
+
+---
+
 ## [0.6.5] - 2026-10-07
 
 ### Added
