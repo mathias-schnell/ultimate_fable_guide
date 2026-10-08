@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.6.5] - 2026-10-02
+
+### Added
+- Permanent bonuses for taking classes are now included in 'Class Skills'.
+
+### Internal
+- Adding the beginnings of an NPC builder.
+
+---
+
 ## [0.6.4] - 2026-10-02
 
 ### Changed

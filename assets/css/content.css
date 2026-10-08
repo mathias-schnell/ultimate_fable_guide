@@ -36,7 +36,8 @@
     display: none;
 }
 
-.content-container [class*="-group-title"] {
+.content-container [class*="-group-title"],
+.content-container [class*="-group-sub-labels"] {
     font-weight: 600;
     padding: 0 0.75rem;
 }

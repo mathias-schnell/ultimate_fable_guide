@@ -8,6 +8,7 @@
     {
       "name": "arcanist",
       "label": "Arcanist",
+      "sub-labels": ["Permanently increase your maximum Mind Points by 5."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -55,6 +56,7 @@
     {
       "name": "chimerist",
       "label": "Chimerist",
+      "sub-labels": ["Permanently increase your maximum Mind Points by 5.", "You may perform Rituals whose effects fall within the Ritualism discipline."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -102,6 +104,7 @@
     {
       "name": "darkblade",
       "label": "Darkblade",
+      "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial melee weapons and martial armor."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -149,6 +152,7 @@
     {
       "name": "elementalist",
       "label": "Elementalist",
+      "sub-labels": ["Permanently increase your maximum Mind Points by 5.", "You may perform Rituals whose effects fall within the Ritualism discipline."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -196,6 +200,7 @@
     {
       "name": "entropist",
       "label": "Entropist",
+      "sub-labels": ["Permanently increase your maximum Mind Points by 5.", "You may perform Rituals whose effects fall within the Ritualism discipline."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -243,6 +248,7 @@
     {
       "name": "fury",
       "label": "Fury",
+      "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial melee weapons and martial armor."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -290,6 +296,7 @@
     {
       "name": "guardian",
       "label": "Guardian",
+      "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial armor and martial shields."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -315,7 +322,7 @@
           "name": "Dual Shieldbearer",
           "class": "Guardian",
           "max-sl": 1,
-          "description": "You may now equip a shield in your main hand slot. As long as you have two shields equipped, you gain the benefits of both items and may treat them as the following combined two-handed melee brawling weapon: Twin Shields (MIG + MIG) (HR + 5) physical. Deals extra damage equal to your (SL) in Defensive Mastery (above).",
+          "description": "You may now equip a shield in your main hand slot. As long as you have two shields equipped, you gain the sub-labels of both items and may treat them as the following combined two-handed melee brawling weapon: Twin Shields (MIG + MIG) (HR + 5) physical. Deals extra damage equal to your (SL) in Defensive Mastery (above).",
           "tags": ["brawling", "damage", "equipment", "guardian", "melee", "MIG", "physical", "two-handed"]
         },
         {
@@ -337,6 +344,7 @@
     {
       "name": "loremaster",
       "label": "Loremaster",
+      "sub-labels": ["Permanently increase your maximum Mind Points by 5."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -384,6 +392,7 @@
     {
       "name": "orator",
       "label": "Orator",
+      "sub-labels": ["Permanently increase your maximum Mind Points by 5."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -431,6 +440,7 @@
     {
       "name": "rogue",
       "label": "Rogue",
+      "sub-labels": ["Permanently increase your maximum Inventory Points by 2."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -478,6 +488,7 @@
     {
       "name": "sharpshooter",
       "label": "Sharpshooter",
+      "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial ranged weapons and martial shields."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -525,6 +536,7 @@
     {
       "name": "spiritist",
       "label": "Spiritist",
+      "sub-labels": ["Permanently increase your maximum Mind Points by 5.", "You may perform Rituals whose effects fall within the Ritualism discipline."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -572,6 +584,7 @@
     {
       "name": "tinkerer",
       "label": "Tinkerer",
+      "sub-labels": ["Permanently increase your maximum Inventory Points by 2.", "You may initiate projects."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -590,7 +603,7 @@
           "name": "Gadgets",
           "class": "Tinkerer",
           "max-sl": 5,
-          "description": "When you first acquire this Skill, choose a gadget type: alchemy, infusions or magitech (see next four pages). You gain its basic benefits. Whenever you take this Skill again, choose one option: you gain the basic benefits of a new gadget type; or you gain the advanced benefits of a gadget type whose basic benefits you already obtained; or you gain the superior benefits of a gadget type whose advanced benefits you already obtained.",
+          "description": "When you first acquire this Skill, choose a gadget type: alchemy, infusions or magitech (see next four pages). You gain its basic sub-labels. Whenever you take this Skill again, choose one option: you gain the basic sub-labels of a new gadget type; or you gain the advanced sub-labels of a gadget type whose basic sub-labels you already obtained; or you gain the superior sub-labels of a gadget type whose advanced sub-labels you already obtained.",
           "tags": ["tinkerer"]
         },
         {
@@ -619,6 +632,7 @@
     {
       "name": "wayfarer",
       "label": "Wayfarer",
+      "sub-labels": ["Permanently increase your maximum Inventory Points by 2."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -630,7 +644,7 @@
           "name": "Faithful Companion",
           "class": "Wayfarer",
           "max-sl": 5,
-          "description": "Together with your group, create a level 5 beast, construct, elemental or plant NPC (page 302) that becomes your companion: this creature has no initiative score and does not level up, can have a maximum of two basic attacks, gains a bonus equal to (SL) to Accuracy Checks and Magic Checks, and their maximum Hit Points are equal to ((SL, multiplied by the companion’s base Might size) + half your level). Your companion doesn’t get an independent turn during conflicts, but you can use an action to have them perform an action (once per turn). If your companion is affected by any turn-related effects (page 77), these are based on your turn. Your companion joins and leaves scenes when you do, and gains your same benefits for rests. If reduced to 0 HP, your companion flees the scene and rejoins you at the start of the next scene in which you are present, with current HP equal to their Crisis score.",
+          "description": "Together with your group, create a level 5 beast, construct, elemental or plant NPC (page 302) that becomes your companion: this creature has no initiative score and does not level up, can have a maximum of two basic attacks, gains a bonus equal to (SL) to Accuracy Checks and Magic Checks, and their maximum Hit Points are equal to ((SL, multiplied by the companion’s base Might size) + half your level). Your companion doesn’t get an independent turn during conflicts, but you can use an action to have them perform an action (once per turn). If your companion is affected by any turn-related effects (page 77), these are based on your turn. Your companion joins and leaves scenes when you do, and gains your same sub-labels for rests. If reduced to 0 HP, your companion flees the scene and rejoins you at the start of the next scene in which you are present, with current HP equal to their Crisis score.",
           "tags": ["companion", "crisis", "hp", "wayfarer"]
         },
         {
@@ -666,6 +680,7 @@
     {
       "name": "weaponmaster",
       "label": "Weaponmaster",
+      "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial ranged weapons and martial shields."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -713,6 +728,7 @@
     {
       "name": "chanter",
       "label": "Chanter",
+      "sub-labels": ["Permanently increase your maximum Mind Points by 5."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -760,6 +776,7 @@
     {
       "name": "commander",
       "label": "Commander",
+      "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial melee weapons and martial ranged weapons."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -807,6 +824,7 @@
     {
       "name": "dancer",
       "label": "Dancer",
+      "sub-labels": ["Permanently increase your maximum Hit Points or Mind Points by 5 (your choice)."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -825,7 +843,7 @@
           "name": "Follow My Lead",
           "class": "Dancer",
           "max-sl": 1,
-          "description": "When you perform a dance with a duration of “Until the start of your next turn”, you may spend 10 Mind Points. If you do, choose one ally you can see towards whom you have a Bond of affection: apply the benefits of the dance to that ally as well as yourself (the benefits still last until the start of your next turn).",
+          "description": "When you perform a dance with a duration of “Until the start of your next turn”, you may spend 10 Mind Points. If you do, choose one ally you can see towards whom you have a Bond of affection: apply the sub-labels of the dance to that ally as well as yourself (the sub-labels still last until the start of your next turn).",
           "tags": ["bond", "dance", "mp"]
         },
         {
@@ -854,6 +872,7 @@
     {
       "name": "symbolist",
       "label": "Symbolist",
+      "sub-labels": ["Permanently increase your maximum Inventory Points by 2."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -901,6 +920,7 @@
     {
       "name": "floralist",
       "label": "Floralist",
+      "sub-labels": ["Permanently increase your maximum Hit Points or Mind Points by 5 (your choice)."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -948,6 +968,7 @@
     {
       "name": "gourmet",
       "label": "Gourmet",
+      "sub-labels": ["Permanently increase your maximum Inventory Points by 2.", "You may start Projects to create unique foods and drinks; they are always consumable and their area is based on the number and type of creatures you need to nourish."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -995,6 +1016,7 @@
     {
       "name": "invoker",
       "label": "Invoker",
+      "sub-labels": ["Permanently increase your maximum Hit Points or Mind Points by 5 (your choice)."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -1042,6 +1064,7 @@
     {
       "name": "merchant",
       "label": "Merchant",
+      "sub-labels": ["Permanently increase your maximum Inventory Points by 2."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -1089,6 +1112,7 @@
     {
       "name": "esper",
       "label": "Esper",
+      "sub-labels": ["Permanently increase your maximum Mind Points by 5."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -1136,6 +1160,7 @@
     {
       "name": "mutant",
       "label": "Mutant",
+      "sub-labels": ["Permanently increase your maximum Hit Points by 5."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
@@ -1183,6 +1208,7 @@
     {
       "name": "pilot",
       "label": "Pilot",
+      "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial melee weapons and martial ranged weapons."],
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }

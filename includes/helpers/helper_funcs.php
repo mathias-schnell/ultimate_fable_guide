@@ -61,6 +61,7 @@ function get_content_groups(array $data, string $key): string {
     foreach ($groups as $i => $group):
         $group_name = $group['name'] ?? '';
         $group_label = $group['label'] ?? '';
+        $sub_labels = $group['sub-labels'] ?? [];
         $cols = $group['columns'] ?? [];
         $grid_template = $group['grid-template-columns'] ?? '';
         $group_tags = $group['group-tags'] ?? [];
@@ -77,7 +78,7 @@ function get_content_groups(array $data, string $key): string {
         endif;
 
         if($show_header):
-            render_group_header($key, $cols, $group_label, $grid_style);
+            render_group_header($key, $cols, $group_label, $sub_labels,$grid_style);
         endif;
 
         foreach ($items as $entry):
@@ -138,10 +139,19 @@ function render_filter_section(array $data, string $key): void {
     <?php
 }
 
-function render_group_header(string $key, array $cols, string $group_label, string $grid_style): void {
+function render_group_header(string $key, array $cols, string $group_label, array $sub_labels, string $grid_style): void {
     if(!empty($group_label)):
     ?>
         <h3 class="<?= $key ?>-group-title"><?= htmlspecialchars($group_label) ?></h3>
+    <?php
+    endif;
+    if(!empty($sub_labels)):
+    ?>
+        <div class="<?= $key ?>-group-sub-labels">
+            <?php foreach ($sub_labels as $sub_label): ?>
+                <p><?= htmlspecialchars($sub_label) ?></p>
+            <?php endforeach; ?>
+        </div>
     <?php
     endif;
     ?>
