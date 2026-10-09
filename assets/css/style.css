@@ -248,12 +248,12 @@ h6 {
   width: 1rem;
 }
 
-.elem-physical.elem-icon { color: var(--elem-physical); mask-image: url('/assets/icons/physical.svg'); -webkit-mask-image: url('/assets/icons/physical.svg'); }
-.elem-air.elem-icon      { color: var(--elem-air); mask-image: url('/assets/icons/air.svg'); -webkit-mask-image: url('/assets/icons/air.svg'); }
-.elem-bolt.elem-icon     { color: var(--elem-bolt); mask-image: url('/assets/icons/bolt.svg'); -webkit-mask-image: url('/assets/icons/bolt.svg'); }
-.elem-ice.elem-icon      { color: var(--elem-ice); mask-image: url('/assets/icons/ice.svg'); -webkit-mask-image: url('/assets/icons/ice.svg'); }
-.elem-earth.elem-icon    { color: var(--elem-earth); mask-image: url('/assets/icons/earth.svg'); -webkit-mask-image: url('/assets/icons/earth.svg'); }
-.elem-fire.elem-icon     { color: var(--elem-fire); mask-image: url('/assets/icons/fire.svg'); -webkit-mask-image: url('/assets/icons/fire.svg'); }
-.elem-light.elem-icon    { color: var(--elem-light); mask-image: url('/assets/icons/light.svg'); -webkit-mask-image: url('/assets/icons/light.svg'); }
-.elem-dark.elem-icon     { color: var(--elem-dark); mask-image: url('/assets/icons/dark.svg'); -webkit-mask-image: url('/assets/icons/dark.svg'); }
-.elem-poison.elem-icon   { color: var(--elem-poison); mask-image: url('/assets/icons/poison.svg'); -webkit-mask-image: url('/assets/icons/poison.svg'); }
+.elem-physical.elem-icon { color: var(--elem-physical); mask-image: url('./assets/icons/physical.svg'); -webkit-mask-image: url('./assets/icons/physical.svg'); }
+.elem-air.elem-icon      { color: var(--elem-air); mask-image: url('./assets/icons/air.svg'); -webkit-mask-image: url('./assets/icons/air.svg'); }
+.elem-bolt.elem-icon     { color: var(--elem-bolt); mask-image: url('./assets/icons/bolt.svg'); -webkit-mask-image: url('./assets/icons/bolt.svg'); }
+.elem-ice.elem-icon      { color: var(--elem-ice); mask-image: url('./assets/icons/ice.svg'); -webkit-mask-image: url('./assets/icons/ice.svg'); }
+.elem-earth.elem-icon    { color: var(--elem-earth); mask-image: url('./assets/icons/earth.svg'); -webkit-mask-image: url('./assets/icons/earth.svg'); }
+.elem-fire.elem-icon     { color: var(--elem-fire); mask-image: url('./assets/icons/fire.svg'); -webkit-mask-image: url('./assets/icons/fire.svg'); }
+.elem-light.elem-icon    { color: var(--elem-light); mask-image: url('./assets/icons/light.svg'); -webkit-mask-image: url('./assets/icons/light.svg'); }
+.elem-dark.elem-icon     { color: var(--elem-dark); mask-image: url('./assets/icons/dark.svg'); -webkit-mask-image: url('./assets/icons/dark.svg'); }
+.elem-poison.elem-icon   { color: var(--elem-poison); mask-image: url('./assets/icons/poison.svg'); -webkit-mask-image: url('./assets/icons/poison.svg'); }
