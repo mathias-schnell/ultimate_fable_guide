@@ -28,7 +28,7 @@
     display: grid;
     overflow-x: auto;
     max-width: 100%;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     width: 100%;
 }
 
@@ -36,10 +36,16 @@
     display: none;
 }
 
-.content-container [class*="-group-title"],
-.content-container [class*="-group-sub-labels"] {
+.content-container [class*="-group-title"] {
+    font-size: var(--font-size-xxl);
     font-weight: 600;
-    padding: 0 0.75rem;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.content-container [class*="-group-sub-labels"] {
+    font-size: var(--font-size-large);
+    font-weight: 400;
+    padding: 0 1rem 0 1rem;
 }
 
 .content-container [class*="-list-header"],

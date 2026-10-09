@@ -1,0 +1,306 @@
+{
+  "schema": {
+    "key": "gadgets",
+    "title": "Gadgets",
+    "universal-tags": ["tinkerer", "core"]
+  },
+  "groups": [
+    {
+      "name": "alchemy-mix",
+      "label": "Alchemy",
+      "sub-labels": ["Mix"],
+      "columns": [
+        { "label": "Mix", "field": "name", "class": "name" },
+        { "label": "IP Cost", "field": "ip-cost", "class": "ip-cost" },
+        { "label": "Effect", "field": "effect", "class": "effect" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1fr 3.5fr 0.25fr",
+      "group-tags": ["inventory", "ip"],
+      "gadgets": [
+        {
+          "name": "Basic",
+          "ip-cost": "3",
+          "effect": "Roll two d20s and assign one to target and one to effect.",
+          "tags": ["inventory", "ip"]
+        },
+        {
+          "name": "Advanced",
+          "ip-cost": "4",
+          "effect": "Roll three d20s and assign one to target and one to effect.",
+          "tags": ["inventory", "ip"]
+        },
+        {
+          "name": "Superior",
+          "ip-cost": "5",
+          "effect": "Roll four d20s and assign one to target and one to effect.",
+          "tags": ["inventory", "ip"]
+        }
+      ]
+    },
+    {
+      "name": "alchemy-target",
+      "label": "",
+      "sub-labels": ["Target"],
+      "columns": [
+        { "label": "Die", "field": "die", "class": "die" },
+        { "label": "Target", "field": "target", "class": "target" }
+      ],
+      "grid-template-columns": "0.25fr 2fr 4fr 0.25fr",
+      "group-tags": ["inventory"],
+      "gadgets": [
+        {
+          "die": "1-6",
+          "target": "... you or one ally you can see that is present on the scene.",
+          "tags": []
+        },
+        {
+          "die": "7-11",
+          "target": "... one enemy you can see that is present on the scene.",
+          "tags": []
+        },
+        {
+          "die": "12-16",
+          "target": "... you and every ally present on the scene.",
+          "tags": ["multi"]
+        },
+        {
+          "die": "17-20",
+          "target": "... every enemy present on the scene.",
+          "tags": ["multi"]
+        }
+      ]
+    },
+    {
+      "name": "alchemy-effect",
+      "label": "",
+      "sub-labels": ["Effect"],
+      "columns": [
+        { "label": "Die", "field": "die", "class": "die" },
+        { "label": "Effect", "field": "effect", "class": "effect" }
+      ],
+      "grid-template-columns": "0.25fr 2fr 4fr 0.25fr",
+      "group-tags": ["inventory"],
+      "gadgets": [
+        {
+          "die": "Any",
+          "effect": "... is dealt 20 poison damage. This amount increases to 30 damage if you are level 20 or higher, or to 40 damage if you are level 40 or higher.",
+          "tags": ["poison"]
+        },
+        {
+          "die": "Any",
+          "effect": "... recovers 30 Hit Points.",
+          "tags": ["hp"]
+        },
+        {
+          "die": "1",
+          "effect": "... treats their Dexterity and Might dice as if they were one size higher (up to a maximum of d12) until the end of your next turn.",
+          "tags": ["DEX", "MIG"]
+        },
+        {
+          "die": "2",
+          "effect": "As effect 1, but with Insight and Willpower.",
+          "tags": ["INS", "WLP"]
+        },
+        {
+          "die": "3",
+          "effect": "... is dealt 20 air damage. This amount increases to 30 damage if you are level 20 or higher, or to 40 damage if you are level 40 or higher.",
+          "tags": ["air"]
+        },
+        {
+          "die": "4",
+          "effect": "As effect 3, but with bolt damage.",
+          "tags": ["bolt"]
+        },
+        {
+          "die": "5",
+          "effect": "As effect 3, but with dark damage.",
+          "tags": ["dark"]
+        },
+        {
+          "die": "6",
+          "effect": "As effect 3, but with earth damage.",
+          "tags": ["earth"]
+        },
+        {
+          "die": "7",
+          "effect": "As effect 3, but with fire damage.",
+          "tags": ["fire"]
+        },
+        {
+          "die": "8",
+          "effect": "As effect 3, but with ice damage.",
+          "tags": ["ice"]
+        },
+        {
+          "die": "9",
+          "effect": "... gains Resistance to air and fire damage until the end of the scene.",
+          "tags": ["air", "fire", "resistance"]
+        },
+        {
+          "die": "10",
+          "effect": "As effect 9, but with bolt and ice damage.",
+          "tags": ["bolt", "ice", "resistance"]
+        },
+        {
+          "die": "11",
+          "effect": "As effect 9, but with dark and earth damage.",
+          "tags": ["dark", "earth", "resistance"]
+        },
+        {
+          "die": "12",
+          "effect": "... suffers enraged.",
+          "tags": ["enraged"]
+        },
+        {
+          "die": "13",
+          "effect": "... suffers poisoned.",
+          "tags": ["poisoned"]
+        },
+        {
+          "die": "14",
+          "effect": "... suffers dazed, shaken, slow and weak.",
+          "tags": ["dazed", "shaken", "slow", "weak"]
+        },
+        {
+          "die": "15",
+          "effect": "... recovers from all status effects.",
+          "tags": []
+        },
+        {
+          "die": "16-17",
+          "effect": "... recovers 50 Hit Points and 50 Mind Points.",
+          "tags": ["hp", "mp"]
+        },
+        {
+          "die": "18",
+          "effect": "... recovers 100 Hit Points.",
+          "tags": ["hp"]
+        },
+        {
+          "die": "19",
+          "effect": "... recovers 100 Mind Points.",
+          "tags": ["mp"]
+        },
+        {
+          "die": "20",
+          "effect": "... recovers 100 Hit Points and 100 Mind Points.",
+          "tags": ["hp", "mp"]
+        }
+      ]
+    },
+    {
+      "name": "infusions-basic",
+      "label": "Infusions",
+      "sub-labels": ["Basic"],
+      "columns": [
+        { "label": "Infusion", "field": "name", "class": "name" },
+        { "label": "Effect", "field": "effect", "class": "effect" }
+      ],
+      "grid-template-columns": "0.25fr 2fr 4fr 0.25fr",
+      "group-tags": ["attack", "inventory", "ip"],
+      "gadgets": [
+        {
+          "name": "Cryo",
+          "effect": "The attack deals 5 extra damage, and its damage becomes ice.",
+          "tags": ["ice"]
+        },
+        {
+          "name": "Pyro",
+          "effect": "The attack deals 5 extra damage, and its damage becomes fire.",
+          "tags": ["fire"]
+        },
+        {
+          "name": "Volt",
+          "effect": "The attack deals 5 extra damage, and its damage becomes bolt.",
+          "tags": ["bolt"]
+        }
+      ]
+    },
+    {
+      "name": "infusions-advanced",
+      "label": "",
+      "sub-labels": ["Advanced"],
+      "columns": [
+        { "label": "Infusion", "field": "name", "class": "name" },
+        { "label": "Effect", "field": "effect", "class": "effect" }
+      ],
+      "grid-template-columns": "0.25fr 2fr 4fr 0.25fr",
+      "group-tags": ["attack", "inventory", "ip"],
+      "gadgets": [
+        {
+          "name": "Cyclone",
+          "effect": "The attack deals 5 extra damage, and its damage becomes air.",
+          "tags": ["air"]
+        },
+        {
+          "name": "Exorcism",
+          "effect": "The attack deals 5 extra damage, and its damage becomes light.",
+          "tags": ["light"]
+        },
+        {
+          "name": "Seismic",
+          "effect": "The attack deals 5 extra damage, and its damage becomes earth.",
+          "tags": ["earth"]
+        },
+        {
+          "name": "Shadow",
+          "effect": "The attack deals 5 extra damage, and its damage becomes dark.",
+          "tags": ["dark"]
+        }
+      ]
+    },
+    {
+      "name": "infusions-superior",
+      "label": "",
+      "sub-labels": ["Superior"],
+      "columns": [
+        { "label": "Infusion", "field": "name", "class": "name" },
+        { "label": "Effect", "field": "effect", "class": "effect" }
+      ],
+      "grid-template-columns": "0.25fr 2fr 4fr 0.25fr",
+      "group-tags": ["attack", "inventory", "ip"],
+      "gadgets": [
+        {
+          "name": "Vampire",
+          "effect": "Choose one option: you recover an amount of HP equal to half the HP loss suffered by the target of the attack; or you recover an amount of MP equal to half the HP loss suffered by the target of the attack. This infusion can only be used if the attack targeted a single creature.",
+          "tags": ["hp", "mp"]
+        },
+        {
+          "name": "Venom",
+          "effect": "The attack deals 5 extra damage, its damage becomes poison, and each creature hit by the attack suffers poisoned.",
+          "tags": ["poison", "poisoned"]
+        }
+      ]
+    },
+    {
+      "name": "magitech",
+      "label": "Magitech",
+      "columns": [
+        { "label": "Magitech", "field": "name", "class": "name" },
+        { "label": "Summary", "field": "summary", "class": "summary" }
+      ],
+      "grid-template-columns": "0.25fr 2fr 4fr 0.25fr",
+      "group-tags": ["inventory", "ip"],
+      "gadgets": [
+        {
+          "name": "Magitech Override (Basic)",
+          "summary": "Turn a mindless construct or elemental enemy into an ally.",
+          "description": "During a conflict, you may use an action and spend 10 Mind Points to choose a construct or elemental enemy you can see that does not possess independent intelligence and is suffering from one or more status effects. If you do so, that enemy recovers from all status effects, then the Game Master reveals its entire profile and you may force it to immediately perform an action of your choice; during that action, the creature is treated as an ally of your group.",
+          "tags": ["construct", "elemental", "mp"]
+        },
+        {
+          "name": "Magicannon (Advanced)",
+          "summary": "Create and equip a magicannon that deals a chosen type of damage.",
+          "description": "You may perform the Inventory action and spend 2 Inventory Points to create a magicannon (see below) and destroy any magicannon you previously created. If you do so and both your hand slots are empty, you may immediately equip the newly created magicannon and perform a free attack with it. Whenever you create a magicannon, choose what type of damage it deals among air, bolt, earth, fire, ice, or physical. WEAPON: Magicannon | ACCURACY: (DEX + INS) +1 | DAMAGE: (HR + 10) Firearm • Two-handed • Ranged • Cannot have Qualities.",
+          "tags": ["inventory", "ip", "free-attack", "DEX", "INS", "firearm", "two-handed", "ranged", "air", "bolt", "earth", "fire", "ice", "physical"]
+        },
+        {
+          "name": "Magispheres (Superior)",
+          "summary": "Develop magispheres for Elementalist, Entropoist or Spiritist spells.",
+          "description": "You develop a magisphere for each of three spells from among those found in the Elementalist, Entropist, and Spiritist lists; these spells may come from the same list or from different lists (this does not count as “learning” or “knowing” these spells). You develop a new magisphere upon reaching level 20, and another upon reaching level 40 (the same applies if you already reached those levels). You may perform the Inventory action and spend 2 Inventory Points to perform the Spell action for free, casting one of the spells you have developed a magisphere for. The spell follows the normal rules (including MP costs and Magic Checks).",
+          "tags": ["elementalist", "entropist", "spiritist", "inventory", "ip", "spell", "free-spell", "mp"]
+        }
+      ]
+    }
+  ]
+}

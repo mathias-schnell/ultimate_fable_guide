@@ -67,7 +67,7 @@ function get_content_groups(array $data, string $key): string {
         $group_tags = $group['group-tags'] ?? [];
         $items = $group[$data_key] ?? [];
         $grid_style = !empty($grid_template) ? " style='grid-template-columns: {$grid_template};'" : "";
-        $show_header = ($cols !== $previous_cols) || !empty($group_label);
+        $show_header = ($cols !== $previous_cols) || !empty($group_label) || !empty($sub_labels);
         $previous_cols = $cols;
 
         if($i > 0 && $show_header):
@@ -147,11 +147,11 @@ function render_group_header(string $key, array $cols, string $group_label, arra
     endif;
     if(!empty($sub_labels)):
     ?>
-        <div class="<?= $key ?>-group-sub-labels">
+        <ul class="<?= $key ?>-group-sub-labels">
             <?php foreach ($sub_labels as $sub_label): ?>
-                <p><?= htmlspecialchars($sub_label) ?></p>
+                <li><?= htmlspecialchars($sub_label) ?></li>
             <?php endforeach; ?>
-        </div>
+        </ul>
     <?php
     endif;
     ?>
@@ -208,7 +208,7 @@ function render_article_description(string $key, string $id, array $entry, array
             <?php endif; ?>
 
             <div class="description">
-                <?= get_cell_data('description', $entry) ?>
+                <?= inject_element_symbols(get_cell_data('description', $entry)) ?>
             </div>
 
             <?php 
@@ -270,4 +270,14 @@ function slugify(string $text): string {
     $text = preg_replace('/[^a-z0-9\s-]/u', '', $text);
     $text = preg_replace('/[\s-]+/u', '-', $text);
     return trim($text, '-');
+}
+
+function inject_element_symbols(string $html): string {
+    $pattern = '/<[^>]+>(*SKIP)(*F)|\b(physical|air|bolt|ice|earth|fire|light|dark|poison)\b/i';
+
+    return preg_replace_callback($pattern, function ($matches) {
+        $word = $matches[0];
+        $type = strtolower($word);
+        return sprintf('%s (<i class="elem-icon elem-%s" aria-hidden="true"></i>)', $word,$type);
+    }, $html);
 }

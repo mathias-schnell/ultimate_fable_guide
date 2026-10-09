@@ -42,14 +42,14 @@
           "class": "Arcanist",
           "max-sl": 6,
           "description": "As long as you are in Crisis, the cost for summoning your Arcana is reduced by (SL × 5) Mind Points.",
-          "tags": ["arcanist", "crisis", "mp"]
+          "tags": ["arcanist", "crisis", "mp" ]
         },
         {
           "name": "Ritual Arcanism",
           "class": "Arcanist",
           "max-sl": 1,
           "description": "You may perform Rituals of the Arcanism discipline, as long as their effects fall within the domains of one or more Arcana you have bound (see next pages). Arcanism Rituals use (WLP + WLP) for the Magic Check.",
-          "tags": ["arcanist", "spell", "WLP"]
+          "tags": ["arcanist", "spell", "WLP", "ritual"]
         }
       ]
     },
@@ -90,7 +90,7 @@
           "class": "Chimerist",
           "max-sl": 1,
           "description": "You may perform Rituals whose effects fall within the Chimerism discipline. When you acquire this Skill, choose (INS + WLP) or (MIG + WLP). From now on, your Chimerism Rituals will use the chosen Attributes for the Magic Check.",
-          "tags": ["chimerist", "INS", "MIG", "spell", "WLP"]
+          "tags": ["chimerist", "INS", "MIG", "spell", "WLP", "ritual"]
         },
         {
           "name": "Spell Mimic",
@@ -186,7 +186,7 @@
           "class": "Elementalist",
           "max-sl": 1,
           "description": "You may perform Rituals whose effects fall within the Elementalism discipline. Elementalism Rituals use (INS + WLP) for the Magic Check.",
-          "tags": ["elementalist", "INS", "spell", "WLP"]
+          "tags": ["elementalist", "INS", "spell", "WLP", "ritual"]
         },
         {
           "name": "Spellblade",
@@ -234,7 +234,7 @@
           "class": "Entropist",
           "max-sl": 1,
           "description": "You may perform Rituals whose effects fall within the Entropism discipline. Entropism Rituals use (INS + WLP) for the Magic Check.",
-          "tags": ["entropist", "INS", "spell", "WLP"]
+          "tags": ["entropist", "INS", "spell", "WLP", "ritual"]
         },
         {
           "name": "Stolen Time",
@@ -556,7 +556,7 @@
           "class": "Spiritist",
           "max-sl": 1,
           "description": "You may perform Rituals whose effects fall within the Spiritism discipline. Spiritism Rituals use (INS + WLP) for the Magic Check.",
-          "tags": ["INS", "spell", "spiritist", "WLP"]
+          "tags": ["INS", "spell", "spiritist", "WLP", "ritual"]
         },
         {
           "name": "Spiritual Magic",
@@ -755,7 +755,7 @@
           "class": "Chanter",
           "max-sl": 1,
           "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create hearing-based illusions.",
-          "tags": ["spell"]
+          "tags": ["spell", "ritual"]
         },
         {
           "name": "Sound Barrier",
@@ -892,7 +892,7 @@
           "class": "Symbolist",
           "max-sl": 1,
           "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create sight-based illusions.",
-          "tags": ["spell"]
+          "tags": ["spell", "ritual"]
         },
         {
           "name": "Personal Touch",
@@ -961,7 +961,7 @@
           "class": "Floralist",
           "max-sl": 1,
           "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create, animate, and/or control vegetation, pollen, spores, and toxins (but you cannot create nor control plant-Species NPCs this way).",
-          "tags": []
+          "tags": ["ritual"]
         }
       ]
     },
@@ -1139,7 +1139,7 @@
           "class": "Esper",
           "max-sl": 1,
           "description": "You can communicate telepathically with any conscious ally within 1 travel day of you; you are able to hear each other for the sake of Skills and effects.\nYou gain the ability to perform Rituals of the Ritualism discipline. Additionally, you may use Ritualism to transport creatures in and out of the soul network, and to gain information and track entities while inside the soul network.",
-          "tags": ["skill", "travel"]
+          "tags": ["skill", "travel", "ritual"]
         },
         {
           "name": "Psychic Gifts",
@@ -1250,6 +1250,54 @@
           "max-sl": 1,
           "description": "When you perform an Accuracy Check with a weapon module, you may replace one of the Attributes with Might (such as (MIG + WLP) for an arcane module).",
           "tags": ["arcane", "MIG", "module"]
+        }
+      ]
+    },
+    {
+      "name": "necromancer",
+      "label": "Necromancer",
+      "sub-labels": ["Permanently increase your maximum Hit Points or Mind Points by 5 (your choice)."],
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
+      ],
+      "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+      "group-tags": ["fabula-ultima-bonus"],
+      "class-skills": [
+        {
+          "name": "Beyond the Realms of Death",
+          "class": "Necromancer",
+          "max-sl": 5,
+          "description": "When another creature you can see loses Hit Points while in Crisis, if they are not undead, you gain 1 Grave Point. You may never have more than (SL + 1) Grave Points. When you are reduced to 0 Hit Points, you lose all Grave Points; then, if you lost at least 1 Grave Point this way and this is the first time you are reduced to 0 HP during this scene, you do not Surrender nor Sacrifice yourself: instead, you recover an amount of HP equal to (SL, multiplied by the amount of Grave Points you lost this way).",
+          "tags": ["crisis", "hp", "undead"]
+        },
+        {
+          "name": "Children of the Grave",
+          "class": "Necromancer",
+          "max-sl": 1,
+          "description": "You can always communicate verbally with undead creatures. Once per scene, you may ask an undead a single question; they are compelled to answer truthfully.",
+          "tags": ["ask-question", "undead"]
+        },
+        {
+          "name": "Fear is the Key",
+          "class": "Necromancer",
+          "max-sl": 3,
+          "description": "After you cause one or more enemies to lose Hit Points, if you have acquired the Beyond the Realms of Death Skill and at least one of them is suffering from shaken and/or weak, you gain 1 Grave Point and recover (SL × 2) Hit Points and Mind Points.",
+          "tags": ["hp", "mp", "shaken", "weak"]
+        },
+        {
+          "name": "For Whom the Bell Tolls",
+          "class": "Necromancer",
+          "max-sl": 3,
+          "description": "When you deal damage to a creature with a spell, if that spell only deals damage to that creature, you may spend 1 Grave Point. If you do, choose one option: if that creature is suffering from one or more status effects, the spell deals extra damage equal to ((SL × 2) + the number of status effects on that creature); or if that creature is suffering from no status effects, they suffer shaken.",
+          "tags": ["shaken", "spell"]
+        },
+        {
+          "name": "Rondo of Nightmare",
+          "class": "Necromancer",
+          "max-sl": 1,
+          "description": "When you cast an offensive spell with a target of \"One creature\", you may spend 2 Grave Points to have it target all creatures you can see that are present on the scene (perform a single Magic Check and confront it with the Magic Defense of each target). If you do, all damage dealt by the spell becomes dark and its type cannot change.",
+          "tags": ["dark", "magic-defense", "multi", "spell"]
         }
       ]
     }

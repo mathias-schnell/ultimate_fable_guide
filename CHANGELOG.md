@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.7] - 2026-10-08
+
+### Added
+- Icons for each of the damage types appear next to the corresponding word.
+- 'Gadgets' content for Tinkerer.
+- Additional tags for existing content.
+
+---
+
 ## [0.6.6] - 2026-10-07
 
 ### Internal

@@ -1,11 +1,12 @@
 <?php
 
 $filter_tags = [
-    "Source Books" => [
-        "core"            => "Core",
-        "high-fantasy"    => "High Fantasy",
-        "natural-fantasy" => "Natural Fantasy",
-        "techno-fantasy"  => "Techno Fantasy",
+    "Source" => [
+        "core"                  => "Core",
+        "high-fantasy"          => "High Fantasy",
+        "natural-fantasy"       => "Natural Fantasy",
+        "techno-fantasy"        => "Techno Fantasy",
+        "fabula-ultima-bonus"   => "Fabula Ultima Bonus",
     ],
 
     "Classes" => [

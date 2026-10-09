@@ -326,7 +326,7 @@
           "requirements": ["Chimerist", "Elementalist", "Entropist", "Spiritist"],
           "summary": "Reduce the number of sections for Ritual Clocks in conflicts.",
           "description": "When you initiate a Ritual during a conflict scene, its Ritual Clock is created with <strong>two fewer sections</strong> than normal, to a minimum of <strong>four sections</strong>.",
-          "tags": ["chimerist", "clock", "elementalist", "entropist", "spiritist"]
+          "tags": ["chimerist", "clock", "elementalist", "entropist", "spiritist", "ritual"]
         },
         {
           "name": "Fleeting Moment",
@@ -399,7 +399,7 @@
           "requirements": ["Symbolist"],
           "summary": "Place Rituals into seals.",
           "description": "When you perform a Ritual outside a conflict scene, if that Ritual has a <strong>total cost equal to or lower than 60 Mind Points</strong>, you may stop the process immediately before the Magic Check and store the Ritual’s effect inside a <strong>Ritual seal</strong> placed on a surface you can touch. If you do, name a <strong>condition</strong> — this can be anything from “when I enter Crisis” to “as soon as I snap my fingers”. When that <strong>condition</strong> is met, the <strong>seal</strong> vanishes and the Ritual is unleashed at the <strong>seal</strong>’s location: you perform the Magic Check and resolve the effects as normal (even if you are unconscious or not present on the scene).\n\nYou may only have <strong>one Ritual seal</strong> active at the same time — if you die or create a new <strong>Ritual seal</strong>, the one you previously created will vanish.",
-          "tags": ["crisis", "mp", "symbol", "symbolist"]
+          "tags": ["crisis", "mp", "symbol", "symbolist", "ritual"]
         },
         {
           "name": "Showstopper",
@@ -524,7 +524,7 @@
           "requirements": ["Chimerist", "Darkblade", "Esper", "Fury", "Wayfarer"],
           "summary": "Use Might for Magic Checks, and treat weapons relying on Might as being arcane.",
           "description": "When you perform a <strong>Magic Check</strong> for a spell or Ritual, you may replace one of the <strong>Attributes</strong> with Might (such as (MIG + MIG) for a Chimerism Ritual).\n\nAs long as the <strong>Accuracy</strong> formula of a weapon you have equipped includes Might, you may treat that weapon as also belonging to the <strong>arcane</strong> Category for the purpose of Skills and effects that require it.",
-          "tags": ["arcane", "chimerist", "darkblade", "equipment", "esper", "fury", "MIG", "skill", "spell", "wayfarer"]
+          "tags": ["arcane", "chimerist", "darkblade", "equipment", "esper", "fury", "MIG", "skill", "spell", "wayfarer", "ritual"]
         },
         {
           "name": "For a Better Future",
@@ -750,6 +750,138 @@
           "summary": "Gain benefits when you cast spells on a personal vehicle.",
           "description": "After you cast the first spell of your turn during a conflict, if you are driving your <strong>personal vehicle</strong>, you may choose one option (after the spell has been resolved): choose one enabled module and <strong>disable</strong> it, then choose one disabled module and <strong>enable</strong> it; or the next spell you cast before the end of this scene that deals damage deals 5 extra damage; or the next spell you cast before the end of this scene that restores Hit Points to one or more creatures restores 10 additional Hit Points to each of those creatures.",
           "tags": ["damage", "hp", "module", "pilot", "spell", "vehicle"]
+        }
+      ]
+    },
+    {
+      "name": "fabula-ultima-bonus",
+      "label": "",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Requirements", "field": "requirements", "class": "requirements" },
+        { "label": "Summary", "field": "summary", "class": "summary" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 3fr 0.25fr",
+      "group-tags": ["fabula-ultima-bonus"],
+      "heroic-skills": [
+        {
+          "name": "Anatomist",
+          "requirements": ["Fury", "Loremaster", "Sharpshooter", "Weaponmaster"],
+          "summary": "You gain special benefits when fighting creatures that belong to certain Species.",
+          "description": "Whenever you acquire this Heroic Skill, choose two Species among beast, construct, demon, elemental, monster, plant, and undead.\n\nWhen you deal damage to a creature belonging to the humanoid Species or to a Species you have chosen for this Heroic Skill, you may choose one option: you deal 5 extra damage to that creature; or that creature becomes reeling until the end of the scene. When a reeling creature recovers Hit Points and/or Mind Points, instead that creature recovers half the normal amount of HP and/or MP and is no longer reeling.\n\nThis Heroic Skill can be acquired up to three times.",
+          "tags": ["fury", "loremaster", "sharpshooter", "weaponmaster", "species", "hp", "mp"]
+        },
+        {
+          "name": "Arcane Sacrifice",
+          "requirements": ["Arcanist", "Guardian"],
+          "summary": "Dismiss an Arcanum to protect your group.",
+          "description": "Once per scene, when you and/or one or more allies you can see are reduced to 0 Hit Points, if you are merged with an Arcanum, you may instead be reduced to exactly 1 Hit Point. If you do, you must immediately dismiss that Arcanum (without applying any dismiss effect), and cannot summon them again until the end of the scene.",
+          "tags": ["arcanist", "guardian", "arcana", "hp"]
+        },
+        {
+          "name": "Broken Wing Tactic",
+          "requirements": ["Commander", "Guardian"],
+          "summary": "Improve your enemies' attacks to deceive them.",
+          "description": "After an enemy you can see performs an Accuracy Check or a Magic Check for an offensive spell on their turn during a conflict, you may grant them a +3 bonus to the Result of the Check. If you do, choose one option: you and every ally who is able to hear you gain Resistance to all damage types until the end of this turn; or you and every ally who is able to hear you deal 5 extra damage until the end of this turn. Once you use this Skill, you cannot use it again until the start of your next turn.",
+          "tags": ["commander", "guardian", "spell", "resistance"]
+        },
+        {
+          "name": "Flow of Yin and Yang",
+          "requirements": ["Dancer", "Elementalist", "Esper", "Invoker"],
+          "summary": "Swap between damage of different elements to charge yin and yang energy.",
+          "description": "When you deal dark, earth, ice, or physical damage for the first time during a turn, you gain 1 Yin Point and, if you have at least 1 Yang Point, you deal 5 extra damage.\n\nWhen you deal air, bolt, fire, or light damage for the first time during a turn, you gain 1 Yang Point and, if you have at least 1 Yin Point, you deal 5 extra damage.\n\nAt the end of your turn, if you have 3 or more Yin and/or Yang points and have at least 1 point of each type, you lose all Yin and Yang Points and perform one of the following effects based on the points you lost (perform both in case of a tie):\n• Yin majority: every enemy present on the scene loses an amount of Mind Points equal to half your level.\n• Yang majority: one creature you can see that is present on the scene recovers an amount of Mind Points equal to your level.\n\nYou may gain and use Yin and Yang Points only during conflicts, and you lose all your Yin and Yang Points at the end of each scene.",
+          "tags": ["dancer", "elementalist", "esper", "invoker", "air", "bolt", "dark", "earth", "fire", "ice", "light", "physical", "mp"]
+        },
+        {
+          "name": "Great Cauldron's Secret",
+          "requirements": ["Tinkerer"],
+          "summary": "Choose the type of target when using alchemy.",
+          "description": "When you create a potion via alchemy, you may treat the die assigned to target as showing a value of 13 or 17 (even if that die shows a different number).",
+          "tags": ["tinkerer"]
+        },
+        {
+          "name": "Hunter's Trick",
+          "requirements": ["Sharpshooter", "Weaponmaster"],
+          "summary": "Boost the transformations of custom weapons.",
+          "description": "When you transform a transforming custom weapon on your turn, choose one option: if you have not performed any attacks during this turn, the next attack you perform with this weapon during this turn deals 5 extra damage; or if you hit one or more creatures with an attack using this weapon during this turn, you recover 5 Hit Points and 5 Mind Points.",
+          "tags": ["sharpshooter", "weaponmaster", "attack", "hp", "mp"]
+        },
+        {
+          "name": "Impaler Dragon",
+          "requirements": ["Commander", "Darkblade"],
+          "summary": "Use Charging Cavalry after Shadow Strike.",
+          "description": "When you use the Shadow Strike Skill, you may treat your High Roll as being equal to 0 when determining damage dealt by this attack. If you do, after the attack from Shadow Strike is resolved, you may immediately perform the Charging Cavalry Skill for free (paying the appropriate MP cost).",
+          "tags": ["commander", "darkblade", "skill", "attack", "mp"]
+        },
+        {
+          "name": "It Lives!",
+          "requirements": ["Loremaster", "Tinkerer", "Wayfarer"],
+          "summary": "Improve construct-Species Faithful Companions.",
+          "description": "Your companion's Affinity towards bolt damage becomes Absorption, and their maximum Hit Point score is increased by an amount equal to twice your Skill Level in Visionary.\n\nWhen your companion deals damage, if they have no weapons equipped, they deal extra damage equal to your Skill Level in Visionary.",
+          "tags": ["loremaster", "tinkerer", "wayfarer", "companion", "construct", "bolt", "absorption", "hp"]
+        },
+        {
+          "name": "Like an Open Book",
+          "requirements": ["Esper", "Loremaster", "Rogue"],
+          "summary": "Gain additional benefits when you successfully Soul Steal from an enemy.",
+          "description": "After you successfully use the Soul Steal Skill against one or more enemies, you may choose one of them. If you do, you immediately perform the Study action for free against that enemy: treat the Result and High Roll of this Open Check as being equal to the Result and High Roll of the Check you performed for Soul Steal (do not roll dice for this Open Check).\n\nWhen you deal damage to an elite or champion-rank enemy, if you stole that enemy's soul treasure during this scene, you deal extra damage equal to your Skill Level in Soul Steal to that enemy.",
+          "tags": ["esper", "loremaster", "rogue", "skill", "study"]
+        },
+        {
+          "name": "Nether Slash",
+          "requirements": ["Darkblade", "Elementalist", "Pilot"],
+          "summary": "Converts Shadow Strike into fire or ice.",
+          "description": "When you use the Shadow Strike Skill, you may choose fire or ice. If you do, all damage dealt by this attack becomes of the chosen type instead of dark (its damage type cannot change, as usual), and you gain Resistance to the damage type you did not choose until the start of your next turn.\n\nWhen you perform a free attack with a melee weapon as part of the Shadow Strike Skill, the attack may target enemies that can only be targeted by a ranged attack.",
+          "tags": ["darkblade", "elementalist", "pilot", "skill", "attack", "free-attack", "melee", "ranged", "fire", "ice", "dark", "resistance"]
+        },
+        {
+          "name": "Ofuda Mastery",
+          "requirements": ["Arcanist", "Merchant", "Symbolist", "Spiritist"],
+          "summary": "Use Mind Points instead of Inventory Points to create symbols during conflicts.",
+          "description": "When you use the Symbolism Skill during a conflict, you may spend 20 Mind Points to ignore the Skill's normal cost in Inventory Points.\n\nWhen you perform a free attack with a melee weapon as part of the Symbolism Skill, the attack may target enemies that can only be targeted by a ranged attack.",
+          "tags": ["arcanist", "merchant", "symbolist", "spiritist", "symbol", "skill", "attack", "free-attack", "melee", "ranged", "mp", "ip"]
+        },
+        {
+          "name": "Phagomagus",
+          "requirements": ["Chimerist", "Entropist", "Gourmet", "Mutant"],
+          "summary": "Devour the magic present on your foes.",
+          "description": "When you cast the Dispel spell, its MP cost becomes \"10 × T\" and its target becomes \"Up to three creatures\".\n\nWhen you cause one or more enemies to no longer be affected by one or more spells with a duration of \"Scene\", choose one option: you recover 20 Mind Points for each spell whose effects ended on at least one of those enemies this way; or for each spell whose effects ended on at least one of those enemies this way, apply a copy of that spell on yourself (if a spell allowed for choices upon casting it, you must retain the same choices that were made for this casting of the spell). This copying effect does not require actions, Mind Points, or Checks, and is not treated as \"casting a spell\".",
+          "tags": ["chimerist", "entropist", "gourmet", "mutant", "spell", "dispel-effect", "mp"]
+        },
+        {
+          "name": "Symbiotic Roots",
+          "requirements": ["Chimerist", "Floralist", "Mutant", "Wayfarer"],
+          "summary": "Share your strength with plant-Species Faithful Companions.",
+          "description": "When you recover Hit Points, you may choose to recover only half of that amount; if you do, your companion recovers that many Hit Points.\n\nAt the end of your turn during a conflict, if your companion's current Hit Points are equal to or higher than their maximum Hit Points and your companion has not performed actions or attacks during this turn, you may have your companion perform a free attack with one of their basic attacks.",
+          "tags": ["chimerist", "floralist", "mutant", "wayfarer", "companion", "plant", "free-attack", "hp"]
+        },
+        {
+          "name": "Witchvoice",
+          "requirements": ["Chanter", "Orator"],
+          "summary": "Draw enemy attacks using Condemn or verses.",
+          "description": "After one or more enemies suffer one or more status effects due to a verse you sung or due to your Condemn Skill, each of those enemies becomes bewitched (this effect does not apply to creatures that are immune or already suffering from all status effects inflicted this way). A creature you bewitched must include you among the targets of their attacks and offensive spells, if able, and stops being bewitched at the start of your next turn or as soon as it recovers from one or more status effects.",
+          "tags": ["chanter", "orator", "verse", "attack", "spell", "taunt"]
+        },
+        {
+          "name": "Birth of the Cruel",
+          "requirements": ["Necromancer"],
+          "summary": "Animate a dead non-Villain NPC into a loyal undead Minion by spending Grave Points and maximum HP and MP.",
+          "description": "When a non-Villain NPC you can see that belongs to the beast, humanoid, monster, or plant Species dies, you may spend 2 Grave Points and reduce your maximum Hit Points and Mind Points by an amount equal to that NPC's level. If you do, their corpse becomes a Minion who obeys your telepathic commands:\n• Its Species becomes undead and it receives all undead rules (see page 305 of the Core Rulebook). The new Affinities to dark, light, and poison damage overwrite any preexisting Affinity, but the original Species' rules are otherwise maintained.\n• Its Rank becomes soldier; if the original creature was an élite or champion, the GM must reduce the Minion's HP and MP accordingly (Skills are maintained).\n• The newly created Minion is a completely new creature and has full HP, full MP, and no status effects. It retains the original creature's equipment.\n• Your Minion takes its own turn during conflicts, and the Game Master must count it as an additional Player Character when designing a conflict.\n• When you rest, your Minion also gains the full benefits of resting.\n• If your Minion is reduced to 0 Hit Points, if you are more than 1 travel day away from it, or if you die or fall unconscious, your Minion is immediately destroyed.\n• You may also destroy your Minion at any time; if you want to create a new Minion, you must first destroy the current one.\n• If your Minion is destroyed, your maximum HP and MP scores return to normal.",
+          "tags": ["necromancer", "species", "beast", "humanoid", "monster", "plant", "undead", "hp", "mp", "dark", "light", "poison"]
+        },
+        {
+          "name": "Harvester of Sorrow",
+          "requirements": ["Entropist", "Necromancer"],
+          "summary": "Recover full HP or MP from Drain Spirit and Drain Vigor, and increase Drain Spirit's MP drain.",
+          "description": "When you cast the Drain Spirit or Drain Vigor spells, the amount of Mind Points or Hit Points you recover is equal to the MP or HP loss suffered by the target, respectively (instead of being halved).\n\nAdditionally, your Drain Spirit causes the target to lose (HR + 20) Mind Points if you are level 20 or higher, or (HR + 25) Mind Points if you are level 40 or higher, instead of the normal (HR + 15).",
+          "tags": ["entropist", "necromancer", "spell", "hp", "mp"]
+        },
+        {
+          "name": "Pulse of the Maggots",
+          "requirements": ["Necromancer"],
+          "summary": "Gain dark and poison Immunity, physical Resistance, and light Vulnerability while holding at least 1 Grave Point.",
+          "description": "As long as you have at least 1 Grave Point, you gain Immunity to dark and poison damage, Resistance to physical damage, and Vulnerability to light damage. These Affinities overwrite any other Affinity for those damage types, and cannot be altered in any way as long as you have at least 1 Grave Point.",
+          "tags": ["necromancer", "immunity", "resistance", "vulnerability", "dark", "poison", "physical", "light"]
         }
       ]
     }
