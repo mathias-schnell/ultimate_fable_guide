@@ -4,6 +4,7 @@
 
 ### Added
 - Icons for each of the damage types appear next to the corresponding word.
+- Bonus 'Arcana' content added.
 - 'Gadgets' content for Tinkerer.
 - Necromancer class added.
 - Necromancer 'Heroic Skills' added.
