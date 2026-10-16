@@ -41,8 +41,15 @@ const filter_click_actions = {
  */
 const filter_change_actions = {
     ".filter-tag-select.filter-cat"         : show_filter_subcat,
-    ".filter-tag-select.filter-subcat"      : filter_content,
-    ".filter-mode"                          : filter_content, 
+    ".filter-tag-select.filter-subcat"      : filter_content_by_tags,
+    ".filter-mode"                          : filter_content_by_tags, 
+};
+
+/** 
+ * Defining the actions that will happen in the filter area of the app when the search input changes 
+ */
+const filter_input_actions = {
+    ".filter-search"                        : debounce(filter_content_by_search),
 };
 
 /** 
@@ -128,13 +135,30 @@ function move_tab_right(target, ctx) {
 }
 
 /**
+ * Debounce a function to limit how often it can be called.
+ * 
+ * @param {Function} func
+ * @param {number} wait
+ * @returns {Function}
+ */
+function debounce(func, wait = 150) {
+    let timeout_id;
+    return function (...args) {
+        clearTimeout(timeout_id);
+        timeout_id = setTimeout(() => { func.apply(this, args); }, wait);
+    };
+}
+
+/**
  * Event bindings related to the Filter section of the app.
  */
 function bind_filter_events(ctx) {
     const filter_containers = ctx.content.querySelectorAll(".filter-container");
+
     filter_containers.forEach(container => {
         container.addEventListener("click", dispatcher(filter_click_actions, { nav : ctx.nav, content: ctx.content, filter: container }));
         container.addEventListener("change", dispatcher(filter_change_actions, { nav : ctx.nav, content: ctx.content, filter: container }));
+        container.addEventListener("input", dispatcher(filter_input_actions, { nav : ctx.nav, content: ctx.content, filter: container }));
     });
 }
 
@@ -199,12 +223,51 @@ function remove_filter_row(target, ctx = {}) {
 }
 
 /**
- * Collects selected values across all active filters and filters Heroic Skills using OR logic.
+ * Filters the content based on the search text input.
  * 
  * @param {HTMLElement|null} target
  * @param {AppContext} ctx
  */
-function filter_content(target, ctx = {}) {
+function filter_content_by_search(target, ctx = {}) {
+    if(!ctx || !ctx.content || !ctx.filter) return;
+    const search_input = ctx.filter.querySelector(".filter-search");
+    const search_term = search_input?.value.trim().toLowerCase() ?? "";
+    const filter_target = ctx.filter.dataset.filterFor;
+    if(search_term.length < 3) {
+        ctx.content.querySelectorAll(`.${filter_target} article`).forEach(article => {
+            article.classList.remove('filtered-out');
+        });
+        ctx.content.querySelectorAll(`.${filter_target} section[class*='-group']`).forEach(group => {
+            group.classList.toggle("hidden", group.querySelectorAll('article.filtered-out').length === group.querySelectorAll('article').length);
+        });
+        return;
+    };
+
+    const search_targets = ["name", "requirements", "summary", "description", "tag-list", "domains", "target", "targets", "duration", "effect", "status-effect", "attribute", "recovery", "event", "suggestions", "accuracy", "damage", "cost", "defense", "m-defense"];
+
+    ctx.content.querySelectorAll(`.${filter_target} article`).forEach(article => {
+        if (article.getAttribute("aria-pinned") === "true") return;
+        const is_match = search_targets.some(target => {
+            const target_element = article.querySelector(`[class*="${target}"]`);
+            if (!target_element) return false;
+            const target_text = target_element.textContent.trim().toLowerCase();
+            return target_text.includes(search_term);
+        });
+        article.classList.toggle('filtered-out', !is_match);
+    });
+
+    ctx.content.querySelectorAll(`.${filter_target} section[class*='-group']`).forEach(group => {
+        group.classList.toggle("hidden", group.querySelectorAll('article.filtered-out').length === group.querySelectorAll('article').length);
+    });
+}
+
+/**
+ * Filters content based on the tags selected.
+ * 
+ * @param {HTMLElement|null} target
+ * @param {AppContext} ctx
+ */
+function filter_content_by_tags(target, ctx = {}) {
     if(!ctx || !ctx.content || !ctx.filter) return;
 
     const selected_tags = new Set();
@@ -239,7 +302,7 @@ function filter_content(target, ctx = {}) {
         article.classList.toggle('filtered-out', !match);
     });
 
-    ctx.content.querySelectorAll("section[class*='-group']").forEach(group => {
+    ctx.content.querySelectorAll(`.${filter_target} section[class*='-group']`).forEach(group => {
         group.classList.toggle("hidden", group.querySelectorAll('article.filtered-out').length === group.querySelectorAll('article').length);
     });
 }

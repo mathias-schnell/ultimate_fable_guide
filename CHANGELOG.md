@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.8] - 2026-10-15
+
+### Changed
+- Changed filtering from a tag-based system to search-based.
+
+---
+
 ## [0.6.7] - 2026-10-08
 
 ### Added

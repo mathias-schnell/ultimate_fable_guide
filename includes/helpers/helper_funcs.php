@@ -100,12 +100,16 @@ function render_filter_section(array $data, string $key): void {
     $used_tags = extract_used_tags($data);
     ?>
     <section class="filter-container" data-filter-for="<?= $key ?>-container">
-        <select class="filter-mode" autocomplete="off">
+        <!--
+            <select class="filter-mode" autocomplete="off">
             <option value="" selected disabled>--- Filter Mode ---</option>
             <option value="0">Match at least one of...</option>
             <option value="1">Match at least all of...</option>
+        -->
         </select>
         <div class="filter-row">
+            Search: <input type="text" class="filter-search" placeholder="Search..." autocomplete="off">
+            <!--
             <select class="filter-tag-select filter-cat" autocomplete="off">
                 <option value="" selected>-- Select Tag Group --</option>
                 <?php 
@@ -134,6 +138,7 @@ function render_filter_section(array $data, string $key): void {
             </select>
             <button type="button" class="btn-add-filter-row" title="Add filter">&plus;</button>
             <button type="button" class="btn-remove-filter-row" title="Remove filter">&times;</button>
+            -->
         </div>
     </section>
     <?php
