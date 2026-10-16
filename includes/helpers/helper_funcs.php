@@ -108,7 +108,7 @@ function render_filter_section(array $data, string $key): void {
         -->
         </select>
         <div class="filter-row">
-            Search: <input type="text" class="filter-search" placeholder="Search..." autocomplete="off">
+            Search: <input type="text" class="filter-search" placeholder="3 letters minimum..." autocomplete="off">
             <!--
             <select class="filter-tag-select filter-cat" autocomplete="off">
                 <option value="" selected>-- Select Tag Group --</option>
@@ -167,13 +167,14 @@ function render_group_header(string $key, array $cols, string $group_label, arra
         <?php foreach ($cols as $col): ?>
             <div class="<?= $key ?>-col-sort" data-sort-by=<?= $key . "-" . $col['field'] ?>><?= htmlspecialchars($col['label']) ?></div>
         <?php endforeach; ?>
-        <div></div>
+        <div>Link</div>
     </div>
     <?php
 }
 
 function render_row_article(string $key, string $id, array $combined_tags, array $cols, array $entry, string $grid_style): void {
     $tags_str = htmlspecialchars(implode(', ', $combined_tags));
+    $url_params = http_build_query(['cat' => $key, 'search' => strtolower(get_cell_data('name', $entry)), 'open' => true]);
     ?>
     <article class="<?= $key ?>" data-slug="<?= slugify(get_cell_data('name', $entry)) ?>" data-tags="<?= $tags_str ?>">
         <div class="<?= $key ?>-row"<?= $grid_style ?>>
@@ -192,8 +193,14 @@ function render_row_article(string $key, string $id, array $combined_tags, array
                 </div>
             <?php endforeach; ?>
 
-            <div class="<?= $key ?>-pin">
-                <button class="<?= $key ?>-pin" title="Favorite" type="button" aria-checked="false"></button>
+            <div class="<?= $key ?>-url">
+                <button class="<?= $key ?>-link" type="button" title="Copy Link" data-link="<?= BASE_URL . "?" . $url_params ?>">
+                    <svg class="link-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                    </svg>
+                </button>
+                <!--<button class="<?= $key ?>-pin" title="Favorite" type="button" aria-checked="false"></button>-->
             </div>
         </div>
         

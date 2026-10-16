@@ -154,10 +154,22 @@
 }
 
 .content-container [class*="-group"] [class*="-row"] > [class*="-expand"],
+.content-container [class*="-group"] [class*="-row"] > [class*="-link"],
 .content-container [class*="-group"] [class*="-row"] > [class*="-pin"] {
     font-size: 125%;
     padding: 0;
     margin: 0;
+}
+
+.content-container [class*="-group"] [class*='-link'] {
+    color: #2a11d2;
+    position: relative;
+    transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.content-container [class*="-group"] [class*='-link'].is-copied {
+    transform: scale(1.15);
+    color: #d70f3e;
 }
 
 .content-container .magiseeds-description-container table {

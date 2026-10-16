@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0] - 2026-10-16
+
+### Added
+- New linking symbol and system that lets users create URLs directly to specific content categories and items.
+
+---
+
 ## [0.6.8] - 2026-10-15
 
 ### Changed

@@ -22,6 +22,7 @@ const nav_click_actions = {
  * Defining the actions that will happen in the content area of the app on click 
  */
 const content_click_actions = {
+    "[class*='-link']"           : copy_link,
     "[class*='-pin']"            : toggle_pin,
     "[class*='-toggle']"         : toggle_item,
     "[class*='-multitoggle']"    : toggle_all,
@@ -79,13 +80,53 @@ function initialize_app() {
     const ctx = {
         nav: container.querySelector('.page-header'),
         content: container.querySelector('.content-container'),
-        filter: "",
+        filter: container.querySelector('.content-container').querySelector('.filter-container'),
     }
 
     bind_navigation_events(ctx);
     bind_filter_events(ctx);
     bind_content_events(ctx);
-    toggle_nav_tab(ctx.nav.querySelector(".tab"), ctx);
+    process_url_params(ctx);
+}
+
+/**
+ * Check the URL parameters and apply them to the app's state on load.
+ * 
+ * @param {AppContext} ctx 
+ */
+function process_url_params(ctx) {
+    const params = get_url_params();
+    if(params.cat) {
+        const container = params.cat + "-container";
+        const tab = ctx.nav.querySelector(`.tab[aria-controls="${container}"]`);
+        if(tab) {
+            toggle_nav_tab(tab, ctx);
+            ctx.filter = ctx.content.querySelector("#" + container)?.querySelector('.filter-container');
+        } else { 
+            toggle_nav_tab(ctx.nav.querySelector(".tab"), ctx);
+        }
+    } else { 
+        toggle_nav_tab(ctx.nav.querySelector(".tab"), ctx);
+    }
+
+    if(params.search) {
+        const search_input = ctx.filter.querySelector(".filter-search");
+        if(search_input) {
+            search_input.value = params.search;
+            filter_content_by_search(search_input, ctx);
+        }
+    }
+
+    if(params.open) {
+        const slug = params.search.replace(/[^\w\s]/g, '').replaceAll(' ', '-').toLowerCase();
+        const article = ctx.content.querySelector("article[data-slug='" + slug + "']");
+        if(article) {
+            const toggle = article.querySelector("[class*='-toggle']");
+            if(toggle) toggle_item(toggle, ctx);
+        }
+        console.log(slug);
+        console.log(article);
+    }
 }
 
 /**
@@ -147,6 +188,20 @@ function debounce(func, wait = 150) {
         clearTimeout(timeout_id);
         timeout_id = setTimeout(() => { func.apply(this, args); }, wait);
     };
+}
+
+/**
+ * Retrieves the URL parameters as an object.
+ * 
+ * @returns {array}
+ */
+function get_url_params() {
+    const params = new URLSearchParams(window.location.search);
+    const result = {};
+    for (const [key, value] of params.entries()) {
+        result[key] = value;
+    }
+    return result;
 }
 
 /**
@@ -315,28 +370,47 @@ function filter_content_by_tags(target, ctx = {}) {
  */
 function toggle_all(target, ctx = {}) {
     if(!ctx || !ctx.content) return;
-    const key = "." + target.dataset.key + "-toggle";
-    const toggles = ctx.content.querySelectorAll(`.${target.className}`);
-    const rows = ctx.content.querySelectorAll(target.getAttribute("aria-controls"));
+    const key = target.dataset.key;
+    const group = target.closest('[class$="-group"]');
+    const rows = group.querySelectorAll(`article.${key}`);
     const is_expanded = target.getAttribute('aria-expanded') === 'true';
     const next_state = !is_expanded;
 
-    toggles.forEach(item => {
-        item.innerHTML = next_state ? "⊝" : "⊕";
-        item.setAttribute('aria-expanded', String(next_state));
-        if(next_state) {
-            item.setAttribute('title', 'Contract All');
-        } else {
-            item.setAttribute('title', 'Expand All');
-        }
-    });
+    target.innerHTML = next_state ? "⊝" : "⊕";
+    target.setAttribute('aria-expanded', String(next_state));
+    if(next_state) {
+        target.setAttribute('title', 'Contract All');
+    } else {
+        target.setAttribute('title', 'Expand All');
+    }
 
     rows.forEach(row => {
-        const toggle = row.querySelector(key);
+        const toggle = row.querySelector("[class*='-toggle']");
         if (!toggle || (toggle.getAttribute("aria-expanded") === "true") === next_state) return;
         toggle_item(toggle, ctx, !is_expanded, false);
     });
     scroll_to_element(target);
+}
+
+/**
+ * Copy the link of the selected article to the clipboard.
+ * 
+ * @param {HTMLElement|null} target 
+ * @param {AppContext} ctx 
+ */
+function copy_link(target, ctx) {
+    const link = target.closest("[class*='-link']");
+    if (!link || link.classList.contains("is-copied")) return;
+    const url = link.getAttribute("data-link");
+    if (!url) return;
+    navigator.clipboard.writeText(url.toString()).then(() => {
+        link.classList.add("is-copied");
+        setTimeout(() => {
+            link.classList.remove("is-copied");
+        }, 1500);
+    }).catch(err => {
+        console.error('Failed to copy link: ', err);
+    });
 }
 
 /**
