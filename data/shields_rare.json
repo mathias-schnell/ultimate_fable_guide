@@ -1,0 +1,240 @@
+{
+  "schema": {
+    "key": "shields-rare",
+    "title": "Shields (Rare)",
+    "universal-tags": ["defense", "magic-defense", "initiative"]
+  },
+  "groups": [
+    {
+      "name": "",
+      "label": "",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Defense", "field": "defense", "class": "defense" },
+        { "label": "M. Defense", "field": "m-defense", "class": "m-defense" },
+        { "label": "Initiative", "field": "initiative", "class": "initiative" }
+      ],
+      "grid-template-columns": "0.25fr 1.25fr 1fr 1.25fr 1.25fr 1.25fr 0.25fr",
+      "group-tags": ["shield"],
+      "shields-rare": [
+        {
+          "name": "Aegis, Fulgur",
+          "cost": "800 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "You gain Resistance to bolt damage.",
+          "tags": ["bolt", "core", "rare", "resistance"]
+        },
+        {
+          "name": "Aegis, Gelum",
+          "cost": "800 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "You gain Resistance to ice damage.",
+          "tags": ["core", "ice", "rare", "resistance"]
+        },
+        {
+          "name": "Aegis, Gorgonis",
+          "cost": "800 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "You gain Resistance to poison damage.",
+          "tags": ["core", "poison", "rare", "resistance"]
+        },
+        {
+          "name": "Aegis, Ignis",
+          "cost": "800 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "You gain Resistance to fire damage.",
+          "tags": ["core", "fire", "rare", "resistance"]
+        },
+        {
+          "name": "Aegis, Lux",
+          "cost": "800 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "You gain Resistance to light damage.",
+          "tags": ["core", "light", "rare", "resistance"]
+        },
+        {
+          "name": "Aegis, Terra",
+          "cost": "800 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "You gain Resistance to earth damage.",
+          "tags": ["core", "earth", "rare", "resistance"]
+        },
+        {
+          "name": "Aegis, Umbra",
+          "cost": "800 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "You gain Resistance to dark damage.",
+          "tags": ["core", "dark", "rare", "resistance"]
+        },
+        {
+          "name": "Aegis, Ventus",
+          "cost": "800 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "You gain Resistance to air damage.",
+          "tags": ["air", "core", "rare", "resistance"]
+        },
+        {
+          "name": "Demonshield 🟅",
+          "cost": "950 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "After a creature deals damage to you, if you are in Crisis, you may have that creature suffer shaken.",
+          "tags": ["core", "crisis", "martial", "rare", "shaken"]
+        },
+        {
+          "name": "Shield of Spring 🟅",
+          "cost": "1150 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "Whenever you recover Hit Points, you recover 5 additional Hit Points.",
+          "tags": ["core", "hp", "martial", "rare"]
+        },
+        {
+          "name": "Seraph Shield 🟅",
+          "cost": "2050 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "As long as you are in Crisis, you are immune to all status effects.",
+          "tags": ["core", "crisis", "dazed", "enraged", "immunity", "martial", "poisoned", "rare", "shaken", "slow", "weak"]
+        },
+        {
+          "name": "Adamantower 🟅",
+          "cost": "2500 z",
+          "defense": "+3",
+          "m-defense": "+3",
+          "initiative": "—",
+          "description": "You gain a +1 bonus to Defense and Magic Defense (already included).",
+          "tags": ["core", "defense", "magic-defense", "martial", "rare"]
+        },
+        {
+          "name": "Bag Shield",
+          "cost": "1000 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "When a Skill lets you regain Inventory Points, you regain 1 additional Inventory Point.",
+          "tags": ["high-fantasy", "ip", "rare", "skill"]
+        },
+        {
+          "name": "Drumshield",
+          "cost": "1700 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "If you have the Resonance Skill, consider your Skill Level in it increased by 2 (up to a maximum of SL 5).",
+          "tags": ["chanter", "high-fantasy", "rare", "skill"]
+        },
+        {
+          "name": "Argus 🟅",
+          "cost": "2000 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "When you use the King’s Castle and Bishop’s Edict Skills, you may exclude one creature you can see from their effects.",
+          "tags": ["commander", "high-fantasy", "martial", "rare", "skill"]
+        },
+        {
+          "name": "Shield of Blades 🟅",
+          "cost": "2000 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "When you attack with a weapon belonging to the heavy, spear, or sword Category, if the attack has the multi property, that attack deals 5 extra damage.",
+          "tags": ["attack", "heavy", "high-fantasy", "martial", "multi", "rare", "spear", "sword"]
+        },
+        {
+          "name": "Parry Shield 🟅",
+          "cost": "2500 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "If you have the Counterattack Skill, the Skill also triggers when the result of an enemy’s Accuracy Check is an odd number.",
+          "tags": ["high-fantasy", "martial", "rare", "skill", "weaponmaster"]
+        },
+        {
+          "name": "Plate Manica",
+          "cost": "800 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "As long as you have no martial armor and no other shield equipped, you may apply the effects of the Dodge Skill.",
+          "tags": ["armor", "natural-fantasy", "rare", "rogue", "shield", "skill"]
+        },
+        {
+          "name": "Lid Shield 🟅",
+          "cost": "1500 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "When you deal damage with a delicacy, you deal 5 extra damage.",
+          "tags": ["gourmet", "ingredient", "martial", "natural-fantasy", "rare"]
+        },
+        {
+          "name": "Lily Vambrace 🟅",
+          "cost": "2000 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "If you have the Battle Gardening Skill, you can use it when you plant a magiseed with the Graft Skill.",
+          "tags": ["floralist", "garden", "martial", "natural-fantasy", "rare", "skill"]
+        },
+        {
+          "name": "Icebreaker 🟅",
+          "cost": "700 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "All physical and fire damage you deal ignores Resistances.",
+          "tags": ["fire", "ignore", "martial", "physical", "rare", "resistance", "techno-fantasy"]
+        },
+        {
+          "name": "Ballistic Shield",
+          "cost": "800 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "You gain a +1 bonus to your Accuracy Check with ranged weapons.",
+          "tags": ["attack", "rare", "ranged", "techno-fantasy"]
+        },
+        {
+          "name": "Windshield 🟅",
+          "cost": "1000 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "While driving your personal vehicle, you gain Resistance to air and ice damage.",
+          "tags": ["air", "ice", "martial", "pilot", "rare", "resistance", "techno-fantasy", "vehicle"]
+        },
+        {
+          "name": "Hekat Shield 🟅",
+          "cost": "2000 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "You gain Resistance to damage dealt by spells. When a spell deals damage to you, you recover 5 Mind Points.",
+          "tags": ["martial", "mp", "rare", "resistance", "spell", "techno-fantasy"]
+        }
+      ]
+    }
+  ]
+}

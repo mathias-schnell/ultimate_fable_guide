@@ -1,0 +1,317 @@
+{
+  "schema": {
+    "key": "weapons-basic",
+    "title": "Weapons (Basic)",
+    "universal-tags": ["weapon"]
+  },
+  "groups": [
+    {
+      "name": "arcane",
+      "label": "Arcane",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["arcane"],
+      "weapons-basic": [
+        {
+          "name": "Staff",
+          "cost": "100 z",
+          "accuracy": "【WLP + WLP】",
+          "damage": "【HR + 6】 physical",
+          "description": "Two-handed • Melee • No Quality.",
+          "tags": ["core", "arcane", "basic", "two-handed", "melee", "physical", "WLP"]
+        },
+        {
+          "name": "Tome",
+          "cost": "100 z",
+          "accuracy": "【INS + INS】",
+          "damage": "【HR + 6】 physical",
+          "description": "Two-handed • Melee • No Quality.",
+          "tags": ["core", "arcane", "basic", "two-handed", "melee", "physical", "INS"]
+        }
+      ]
+    },
+    {
+      "name": "bow",
+      "label": "Bows",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["bow"],
+      "weapons-basic": [
+        {
+          "name": "Crossbow",
+          "cost": "150 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 8】 physical",
+          "description": "Two-handed • Ranged • No Quality.",
+          "tags": ["core", "bow", "basic", "two-handed", "ranged", "physical", "DEX", "INS"]
+        },
+        {
+          "name": "Shortbow",
+          "cost": "200 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 8】 physical",
+          "description": "Two-handed • Ranged • No Quality.",
+          "tags": ["core", "bow", "basic", "two-handed", "ranged", "physical", "DEX"]
+        }
+      ]
+    },
+    {
+      "name": "brawling",
+      "label": "Brawling",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["brawling"],
+      "weapons-basic": [
+        {
+          "name": "Unarmed Strike",
+          "cost": "—",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 0】 physical",
+          "description": "One-handed • Melee • Automatically equipped in each empty hand slot.",
+          "tags": ["core", "brawling", "basic", "one-handed", "melee", "physical", "DEX", "MIG"]
+        },
+        {
+          "name": "Improvised (Melee)",
+          "cost": "—",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 2】 physical",
+          "description": "One-handed • Melee • Breaks after the attack.",
+          "tags": ["core", "brawling", "basic", "one-handed", "melee", "physical", "DEX", "MIG", "improvised"]
+        },
+        {
+          "name": "Iron Knuckle",
+          "cost": "150 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 6】 physical",
+          "description": "One-handed • Melee • No Quality.",
+          "tags": ["core", "brawling", "basic", "one-handed", "melee", "physical", "DEX", "MIG"]
+        }
+      ]
+    },
+    {
+      "name": "dagger",
+      "label": "Daggers",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["dagger"],
+      "weapons-basic": [
+        {
+          "name": "Steel Dagger",
+          "cost": "150 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 4】 physical",
+          "description": "One-handed • Melee • No Quality.",
+          "tags": ["core", "dagger", "basic", "one-handed", "melee", "physical", "DEX", "INS"]
+        }
+      ]
+    },
+    {
+      "name": "firearm",
+      "label": "Firearms",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["firearm"],
+      "weapons-basic": [
+        {
+          "name": "Pistol 🟅",
+          "cost": "250 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 8】 physical",
+          "description": "One-handed • Ranged • No Quality.",
+          "tags": ["core", "firearm", "basic", "one-handed", "ranged", "physical", "DEX", "INS", "martial"]
+        }
+      ]
+    },
+    {
+      "name": "flail",
+      "label": "Flails",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["flail"],
+      "weapons-basic": [
+        {
+          "name": "Chain Whip",
+          "cost": "150 z",
+          "accuracy": "【DEX + DEX】",
+          "damage": "【HR + 8】 physical",
+          "description": "Two-handed • Melee • No Quality.",
+          "tags": ["core", "flail", "basic", "two-handed", "melee", "physical", "DEX"]
+        }
+      ]
+    },
+    {
+      "name": "heavy",
+      "label": "Heavy",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["heavy"],
+      "weapons-basic": [
+        {
+          "name": "Iron Hammer",
+          "cost": "200 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 6】 physical",
+          "description": "One-handed • Melee • No Quality.",
+          "tags": ["core", "heavy", "basic", "one-handed", "melee", "physical", "MIG"]
+        },
+        {
+          "name": "Broadaxe 🟅",
+          "cost": "250 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 10】 physical",
+          "description": "One-handed • Melee • No Quality.",
+          "tags": ["core", "heavy", "basic", "one-handed", "melee", "physical", "MIG", "martial"]
+        },
+        {
+          "name": "Waraxe 🟅",
+          "cost": "250 z",
+          "accuracy": "【MIG + MIG】",
+          "damage": "【HR + 14】 physical",
+          "description": "Two-handed • Melee • No Quality.",
+          "tags": ["core", "heavy", "basic", "two-handed", "melee", "physical", "MIG", "martial"]
+        }
+      ]
+    },
+    {
+      "name": "spear",
+      "label": "Spears",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["spear"],
+      "weapons-basic": [
+        {
+          "name": "Light Spear 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 8】 physical",
+          "description": "One-handed • Melee • No Quality.",
+          "tags": ["core", "spear", "basic", "one-handed", "melee", "physical", "DEX", "MIG", "martial"]
+        },
+        {
+          "name": "Heavy Spear 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 12】 physical",
+          "description": "Two-handed • Melee • No Quality.",
+          "tags": ["core", "spear", "basic", "two-handed", "melee", "physical", "DEX", "MIG", "martial"]
+        }
+      ]
+    },
+    {
+      "name": "sword",
+      "label": "Swords",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["sword"],
+      "weapons-basic": [
+        {
+          "name": "Bronze Sword 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 6】 physical",
+          "description": "One-handed • Melee • No Quality.",
+          "tags": ["core", "sword", "basic", "one-handed", "melee", "physical", "DEX", "MIG", "martial"]
+        },
+        {
+          "name": "Greatsword 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + MIG】 +1",
+          "damage": "【HR + 10】 physical",
+          "description": "Two-handed • Melee • No Quality.",
+          "tags": ["core", "sword", "basic", "two-handed", "melee", "physical", "DEX", "MIG", "martial"]
+        },
+        {
+          "name": "Katana 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 10】 physical",
+          "description": "Two-handed • Melee • No Quality.",
+          "tags": ["core", "sword", "basic", "two-handed", "melee", "physical", "DEX", "INS", "martial"]
+        },
+        {
+          "name": "Rapier 🟅",
+          "cost": "200 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 6】 physical",
+          "description": "One-handed • Melee • No Quality.",
+          "tags": ["core", "sword", "basic", "one-handed", "melee", "physical", "DEX", "INS", "martial"]
+        }
+      ]
+    },
+    {
+      "name": "thrown",
+      "label": "Thrown",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+      "group-tags": ["thrown"],
+      "weapons-basic": [
+        {
+          "name": "Improvised (Ranged)",
+          "cost": "—",
+          "accuracy": "【DEX + MIG】",
+          "damage": "【HR + 2】 physical",
+          "description": "One-handed • Ranged • Breaks after the attack.",
+          "tags": ["core", "thrown", "basic", "one-handed", "ranged", "physical", "DEX", "MIG", "improvised"]
+        },
+        {
+          "name": "Shuriken",
+          "cost": "150 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 4】 physical",
+          "description": "One-handed • Ranged • No Quality.",
+          "tags": ["core", "thrown", "basic", "one-handed", "ranged", "physical", "DEX", "INS"]
+        }
+      ]
+    }
+  ]
+}

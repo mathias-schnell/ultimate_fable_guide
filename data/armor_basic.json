@@ -1,0 +1,105 @@
+{
+  "schema": {
+    "key": "armor-basic",
+    "title": "Armor (Basic)",
+    "universal-tags": ["defense", "magic-defense", "initiative"]
+  },
+  "groups": [
+    {
+      "name": "",
+      "label": "",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Defense", "field": "defense", "class": "defense" },
+        { "label": "M. Defense", "field": "m-defense", "class": "m-defense" },
+        { "label": "Initiative", "field": "initiative", "class": "initiative" }
+      ],
+      "grid-template-columns": "0.25fr 1.25fr 1fr 1.25fr 1.25fr 1.25fr 0.25fr",
+      "group-tags": ["armor"],
+      "armor-basic": [
+        {
+          "name": "No Armor",
+          "cost": "—",
+          "defense": "DEX size",
+          "m-defense": "INS size",
+          "initiative": "—",
+          "description": "No Quality.",
+          "tags": ["basic", "core", "DEX", "INS"]
+        },
+        {
+          "name": "Silk Shirt",
+          "cost": "100 z",
+          "defense": "DEX size",
+          "m-defense": "INS size +2",
+          "initiative": "-1",
+          "description": "No Quality.",
+          "tags": ["basic", "core", "DEX", "INS"]
+        },
+        {
+          "name": "Travel Garb",
+          "cost": "100 z",
+          "defense": "DEX size +1",
+          "m-defense": "INS size +1",
+          "initiative": "-1",
+          "description": "No Quality.",
+          "tags": ["basic", "core", "DEX", "INS"]
+        },
+        {
+          "name": "Combat Tunic",
+          "cost": "150 z",
+          "defense": "DEX size +1",
+          "m-defense": "INS size +1",
+          "initiative": "—",
+          "description": "No Quality.",
+          "tags": ["basic", "core", "DEX", "INS"]
+        },
+        {
+          "name": "Sage Robe",
+          "cost": "200 z",
+          "defense": "DEX size +1",
+          "m-defense": "INS size +2",
+          "initiative": "-2",
+          "description": "No Quality.",
+          "tags": ["basic", "core", "DEX", "INS"]
+        },
+        {
+          "name": "Brigandine 🟅",
+          "cost": "150 z",
+          "defense": "10",
+          "m-defense": "INS size",
+          "initiative": "-2",
+          "description": "No Quality.",
+          "tags": ["basic", "core", "INS", "martial"]
+        },
+        {
+          "name": "Bronze Plate 🟅",
+          "cost": "200 z",
+          "defense": "11",
+          "m-defense": "INS size",
+          "initiative": "-3",
+          "description": "No Quality.",
+          "tags": ["basic", "core", "INS", "martial"]
+        },
+        {
+          "name": "Runic Plate 🟅",
+          "cost": "250 z",
+          "defense": "11",
+          "m-defense": "INS size +1",
+          "initiative": "-3",
+          "description": "No Quality.",
+          "tags": ["basic", "core", "INS", "martial"]
+        },
+        {
+          "name": "Steel Plate 🟅",
+          "cost": "300 z",
+          "defense": "12",
+          "m-defense": "INS size",
+          "initiative": "-4",
+          "description": "No Quality.",
+          "tags": ["basic", "core", "INS", "martial"]
+        }
+      ]
+    }
+  ]
+}

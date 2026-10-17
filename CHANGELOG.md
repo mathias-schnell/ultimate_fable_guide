@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.1] - 2026-10-16
+
+### Changed
+- Separated Basic and Rare equipment and modules into their own categories.
+- Expand/Contract All buttons will now expand/contract all within their subgroup rather than the entire category.
+
+---
+
 ## [0.7.0] - 2026-10-16
 
 ### Added

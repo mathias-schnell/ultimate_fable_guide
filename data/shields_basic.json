@@ -1,0 +1,42 @@
+{
+  "schema": {
+    "key": "shields-basic",
+    "title": "Shields (Basic)",
+    "universal-tags": ["defense", "magic-defense", "initiative"]
+  },
+  "groups": [
+    {
+      "name": "",
+      "label": "",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Cost", "field": "cost", "class": "cost" },
+        { "label": "Defense", "field": "defense", "class": "defense" },
+        { "label": "M. Defense", "field": "m-defense", "class": "m-defense" },
+        { "label": "Initiative", "field": "initiative", "class": "initiative" }
+      ],
+      "grid-template-columns": "0.25fr 1.25fr 1fr 1.25fr 1.25fr 1.25fr 0.25fr",
+      "group-tags": ["shield"],
+      "shields-basic": [
+        {
+          "name": "Bronze Shield",
+          "cost": "100 z",
+          "defense": "+2",
+          "m-defense": "—",
+          "initiative": "—",
+          "description": "No Quality.",
+          "tags": ["basic", "core"]
+        },
+        {
+          "name": "Runic Shield 🟅",
+          "cost": "150 z",
+          "defense": "+2",
+          "m-defense": "+2",
+          "initiative": "—",
+          "description": "No Quality.",
+          "tags": ["basic", "core", "martial"]
+        }
+      ]
+    }
+  ]
+}

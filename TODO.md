@@ -2,7 +2,6 @@
 
 - Add JSON data for Wayfarer's Companion options
 - Fix mobile styling
-- Separate Basic and Rare equipment into different categories
 - Add filtering options to enable/disable Fabula Ultima Bonus content
 - Add filtering options to enable/disable searching descriptions of items for matches
 - Redo pinned item logic

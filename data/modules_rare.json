@@ -1,0 +1,134 @@
+{
+  "schema": {
+    "key": "modules-rare",
+    "title": "Modules (Rare)",
+    "universal-tags": ["module", "pilot", "techno-fantasy"]
+  },
+  "groups": [
+    {
+      "name": "weapon-modules",
+      "label": "Weapon Modules",
+      "columns": [
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },
+        { "label": "Damage", "field": "damage", "class": "damage" }
+      ],
+      "grid-template-columns": "0.25fr 2.5fr 1.75fr 1.75fr 0.25fr",
+      "group-tags": [],
+      "modules-rare": [
+        {
+          "name": "Richter Grasp",
+          "cost": "800 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 12】 earth",
+          "description": "Brawling • Melee • No qualities. This weapon can be used to interact with the scene as if it was a normal free hand.",
+          "tags": ["brawling", "DEX", "earth", "INS", "melee", "rare"]
+        },
+        {
+          "name": "Scrapper",
+          "cost": "900 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 12】 physical",
+          "description": "Heavy • Melee • This weapon deals 5 extra damage to constructs.",
+          "tags": ["construct", "DEX", "heavy", "INS", "melee", "physical", "rare"]
+        },
+        {
+          "name": "Fimbulvetr Battery",
+          "cost": "1000 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 10】 ice",
+          "description": "Firearm • Ranged • Damage dealt by this weapon ignores Resistances.",
+          "tags": ["DEX", "firearm", "ice", "ignore", "INS", "ranged", "rare", "resistance"]
+        },
+        {
+          "name": "EMP Cannon",
+          "cost": "1100 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 14】 bolt",
+          "description": "Firearm • Ranged • Each construct hit by an attack with this weapon suffers dazed. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+          "tags": ["attack", "bolt", "construct", "dazed", "DEX", "firearm", "INS", "ranged", "rare"]
+        },
+        {
+          "name": "Vanguard Pike",
+          "cost": "1100 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 14】 physical",
+          "description": "Spear • Melee • This weapon deals 5 extra damage during the first round of each conflict. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+          "tags": ["DEX", "INS", "melee", "physical", "rare", "spear"]
+        },
+        {
+          "name": "Crescens",
+          "cost": "1200 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 12】 physical",
+          "description": "Sword • Melee • This weapon deals extra damage equal to your Skill Level in Personal Vehicle.",
+          "tags": ["DEX", "INS", "melee", "physical", "rare", "skill", "sword"]
+        },
+        {
+          "name": "Hookclaw",
+          "cost": "1200 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 10】 physical",
+          "description": "Flail • Melee • Attacks with this weapon can target flying creatures.",
+          "tags": ["attack", "DEX", "flail", "flying", "INS", "melee", "physical", "rare"]
+        },
+        {
+          "name": "Arbalest Mk II",
+          "cost": "1300 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 16】 physical",
+          "description": "Bow • Ranged • This weapon deals 5 extra damage to flying creatures or those who are in midair. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+          "tags": ["bow", "DEX", "flying", "INS", "physical", "ranged", "rare"]
+        },
+        {
+          "name": "Reactive Deflector",
+          "cost": "1500 z",
+          "accuracy": "—",
+          "damage": "—",
+          "description": "Shield • As long as you are driving your personal vehicle and you have a Counterstrike support module enabled, you can apply its effects even when one of the characters on board your personal vehicle is hit by a melee attack (rather than only against ranged attacks). This module has all the effects of a Shield module.",
+          "tags": ["melee", "ranged", "rare", "shield"]
+        },
+        {
+          "name": "Mercurialis",
+          "cost": "1600 z",
+          "accuracy": "【DEX + WLP】",
+          "damage": "【HR + 12】 fire",
+          "description": "Arcane • Melee • When a spell you cast deals damage to a single creature, it deals 5 extra damage to that target. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+          "tags": ["arcane", "DEX", "fire", "melee", "rare", "spell", "WLP"]
+        },
+        {
+          "name": "Morphshield",
+          "cost": "1800 z",
+          "accuracy": "—",
+          "damage": "—",
+          "description": "Shield • At the start of your turn during a conflict, you can disable this module to enable a different disabled weapon module of your choice. If you do, at the end of your turn you have to disable the chosen module and enable this one again. This module has all the effects of a Shield module.",
+          "tags": ["rare", "shield"]
+        },
+        {
+          "name": "Plasma Rifle",
+          "cost": "1800 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 14】 light",
+          "description": "Firearm • Ranged • Accuracy Checks with this weapon trigger a critical success if both dice show the same number (and it is not a fumble).",
+          "tags": ["attack", "critical", "DEX", "firearm", "fumble", "INS", "light", "ranged", "rare"]
+        },
+        {
+          "name": "Aerowitzer",
+          "cost": "2000 z",
+          "accuracy": "【DEX + INS】",
+          "damage": "【HR + 18】 air",
+          "description": "Firearm • Ranged • As long as you are driving your personal vehicle you gain a +2 bonus to your Defense. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+          "tags": ["air", "defense", "DEX", "firearm", "INS", "ranged", "rare"]
+        },
+        {
+          "name": "Warp Cannon",
+          "cost": "2800 z",
+          "accuracy": "【DEX + INS】 +1",
+          "damage": "【HR + 18】 dark",
+          "description": "Firearm • Ranged • Attacks with this weapon have multi (2). Additionally, all damage dealt by this weapon ignores Absorptions, Immunities, and Resistances. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+          "tags": ["absorption", "dark", "DEX", "firearm", "ignore", "immunity", "INS", "multi", "ranged", "rare", "resistance"]
+        }
+      ]
+    }
+  ]
+}
