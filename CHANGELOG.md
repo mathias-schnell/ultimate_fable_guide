@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.2] - 2026-10-20
+
+### Added
+- Checkbox that enables/disables 'Fabula Ultima Bonus' content.
+- Checkbox that enables/disables whether searching looks at the hidden descriptions and tags of content to find matches.
+
+---
+
 ## [0.7.1] - 2026-10-16
 
 ### Changed

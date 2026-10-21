@@ -1262,7 +1262,7 @@
         { "label": "Max SL", "field": "max-sl", "class": "max-sl" }
       ],
       "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-      "group-tags": ["fabula-ultima-bonus"],
+      "group-tags": ["fabula-ultima-bonus", "necromancer"],
       "class-skills": [
         {
           "name": "Beyond the Realms of Death",

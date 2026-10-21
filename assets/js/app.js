@@ -41,6 +41,8 @@ const filter_click_actions = {
  * Defining the actions that will happen in the filter area of the app when something changes 
  */
 const filter_change_actions = {
+    ".toggle-bonus-content"                 : toggle_bonus_content,
+    ".toggle-description-search"            : filter_content_by_search,
     ".filter-tag-select.filter-cat"         : show_filter_subcat,
     ".filter-tag-select.filter-subcat"      : filter_content_by_tags,
     ".filter-mode"                          : filter_content_by_tags, 
@@ -87,6 +89,7 @@ function initialize_app() {
     bind_filter_events(ctx);
     bind_content_events(ctx);
     process_url_params(ctx);
+    toggle_bonus_content(document.querySelector("input.toggle-bonus-content"), ctx);
 }
 
 /**
@@ -278,6 +281,23 @@ function remove_filter_row(target, ctx = {}) {
 }
 
 /**
+ * Toggles whether Fabula Ultima Bonus content is visible or not
+ * 
+ * @param {HTMLElement|null} target
+ * @param {AppContext} ctx
+ */
+function toggle_bonus_content (target, ctx = {}) {
+    if(!target || !ctx || !ctx.content | !ctx.filter) return;
+    const filter_target = ctx.filter.dataset.filterFor;
+    const bonus_content = ctx.content.querySelectorAll(`.${filter_target} article[data-tags*='fabula-ultima-bonus`);
+    bonus_content.forEach(article => {
+        if(target.checked) article.style.display = 'block';
+        else article.style.display = 'none';
+    });
+    filter_content_by_search(target, ctx);
+}
+
+/**
  * Filters the content based on the search text input.
  * 
  * @param {HTMLElement|null} target
@@ -293,12 +313,19 @@ function filter_content_by_search(target, ctx = {}) {
             article.classList.remove('filtered-out');
         });
         ctx.content.querySelectorAll(`.${filter_target} section[class*='-group']`).forEach(group => {
-            group.classList.toggle("hidden", group.querySelectorAll('article.filtered-out').length === group.querySelectorAll('article').length);
+            const filtered = group.querySelectorAll('article.filtered-out').length;
+            const off = group.querySelectorAll('article.toggled-off').length;
+            const total = group.querySelectorAll('article').length;
+            group.classList.toggle("hidden", filtered === total || off === total);
         });
         return;
     };
 
-    const search_targets = ["name", "requirements", "summary", "description", "tag-list", "domains", "target", "targets", "duration", "effect", "status-effect", "attribute", "recovery", "event", "suggestions", "accuracy", "damage", "cost", "defense", "m-defense"];
+    let search_targets = ["name", "requirements", "summary", "domains", "target", "targets", "duration", "effect", "status-effect", "attribute", "recovery", "event", "suggestions", "accuracy", "damage", "cost", "defense", "m-defense"];
+    if(ctx.filter.querySelector("input.toggle-description-search").checked) {
+        search_targets.push("description");
+        search_targets.push("tag-list");
+    }
 
     ctx.content.querySelectorAll(`.${filter_target} article`).forEach(article => {
         if (article.getAttribute("aria-pinned") === "true") return;
@@ -312,7 +339,10 @@ function filter_content_by_search(target, ctx = {}) {
     });
 
     ctx.content.querySelectorAll(`.${filter_target} section[class*='-group']`).forEach(group => {
-        group.classList.toggle("hidden", group.querySelectorAll('article.filtered-out').length === group.querySelectorAll('article').length);
+        const filtered = group.querySelectorAll('article.filtered-out').length;
+        const off = group.querySelectorAll('article.toggled-off').length;
+        const total = group.querySelectorAll('article').length;
+        group.classList.toggle("hidden", filtered === total || off === total);
     });
 }
 

@@ -185,6 +185,11 @@ h6 {
     padding: 0.5rem 0.5rem 0.1rem 0.5rem;
 }
 
+.filter-container .filter-basics {
+    display: grid;
+    gap: 0.25rem;
+}
+
 .filter-container .filter-row {
     display: flex;
     align-items: center;

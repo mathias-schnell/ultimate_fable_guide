@@ -171,6 +171,9 @@
     transform: scale(1.15);
     color: #d70f3e;
 }
+.content-container [data-tags*='fabula-ultima-bonus'] {
+    display: none;
+}
 
 .content-container .magiseeds-description-container table {
     width: 100%;

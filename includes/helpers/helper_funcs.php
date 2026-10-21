@@ -101,7 +101,15 @@ function render_filter_section(array $data, string $key): void {
     ?>
     <section class="filter-container" data-filter-for="<?= $key ?>-container">
         <div class="filter-basics">
-            Search: <input type="text" class="filter-search" placeholder="3 letters minimum..." autocomplete="off">
+            <div>
+                Search: <input type="text" class="filter-search" placeholder="3 letters minimum..." autocomplete="off">
+            </div>
+            <div>
+                <input type="checkbox" class="toggle-bonus-content" autocomplete="off" /> Enable 'Fabula Ultima Bonus' content
+            </div>
+            <div>
+                <input type="checkbox" class="toggle-description-search" autocomplete="off" checked=true /> Search hidden descriptions and tags
+            </div>
         </div>
         <!--
             <select class="filter-mode" autocomplete="off">
