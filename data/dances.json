@@ -6,8 +6,8 @@
   },
   "groups": [
     {
-      "name": "",
-      "label": "",
+      "name": "dances",
+      "label": "Dances",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Duration", "field": "duration", "class": "duration" }

@@ -6,8 +6,8 @@
   },
   "groups": [
     {
-      "name": "",
-      "label": "",
+      "name": "shields-basic",
+      "label": "Shields (Basic)",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Cost", "field": "cost", "class": "cost" },

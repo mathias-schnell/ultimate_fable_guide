@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.7.3] - 2026-10-22
+
+### Added
+- Quirks, Zero Powers and Technospheres content.
+- New headers for almost all content.
+
+### Internal
+- Refined the enabling/disabling of 'Fabula Ultima Bonus' content.
+
+---
+
 ## [0.7.2] - 2026-10-20
 
 ### Added

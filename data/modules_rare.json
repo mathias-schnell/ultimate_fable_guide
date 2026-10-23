@@ -7,7 +7,7 @@
   "groups": [
     {
       "name": "weapon-modules",
-      "label": "Weapon Modules",
+      "label": "Weapon Modules (Rare)",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Accuracy", "field": "accuracy", "class": "accuracy" },

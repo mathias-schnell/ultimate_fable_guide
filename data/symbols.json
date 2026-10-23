@@ -6,8 +6,8 @@
   },
   "groups": [
     {
-      "name": "",
-      "label": "",
+      "name": "symbols",
+      "label": "Symbols",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" }
       ],

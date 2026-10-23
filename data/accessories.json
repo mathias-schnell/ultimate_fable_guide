@@ -7,7 +7,7 @@
   "groups": [
     {
       "name": "accessories",
-      "label": "",
+      "label": "Accessories",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Cost", "field": "cost", "class": "cost" }

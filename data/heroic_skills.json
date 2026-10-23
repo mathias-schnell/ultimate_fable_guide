@@ -6,8 +6,8 @@
   },
   "groups": [
     {
-      "name": "",
-      "label": "",
+      "name": "heroic-skills",
+      "label": "Heroic Skills",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Requirements", "field": "requirements", "class": "requirements" },

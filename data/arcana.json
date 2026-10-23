@@ -6,8 +6,8 @@
   },
   "groups": [
     {
-      "name": "",
-      "label": "",
+      "name": "arcana",
+      "label": "Arcana",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Domains", "field": "domains", "class": "domains" }

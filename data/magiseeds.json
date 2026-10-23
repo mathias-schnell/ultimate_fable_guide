@@ -6,8 +6,8 @@
   },
   "groups": [
     {
-      "name": "",
-      "label": "",
+      "name": "magiseeds",
+      "label": "Magiseeds",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Summary", "field": "summary", "class": "summary" }

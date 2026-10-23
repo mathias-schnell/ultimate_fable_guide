@@ -6,8 +6,8 @@
   },
   "groups": [
     {
-      "name": "",
-      "label": "",
+      "name": "armor-rare",
+      "label": "Armor (Rare)",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Cost", "field": "cost", "class": "cost" },

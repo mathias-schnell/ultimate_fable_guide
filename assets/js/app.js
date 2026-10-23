@@ -41,7 +41,7 @@ const filter_click_actions = {
  * Defining the actions that will happen in the filter area of the app when something changes 
  */
 const filter_change_actions = {
-    ".toggle-bonus-content"                 : toggle_bonus_content,
+    ".toggle-bonus-content"                 : filter_content_by_search,
     ".toggle-description-search"            : filter_content_by_search,
     ".filter-tag-select.filter-cat"         : show_filter_subcat,
     ".filter-tag-select.filter-subcat"      : filter_content_by_tags,
@@ -89,7 +89,7 @@ function initialize_app() {
     bind_filter_events(ctx);
     bind_content_events(ctx);
     process_url_params(ctx);
-    toggle_bonus_content(document.querySelector("input.toggle-bonus-content"), ctx);
+    filter_content_by_search(null, ctx);
 }
 
 /**
@@ -281,23 +281,6 @@ function remove_filter_row(target, ctx = {}) {
 }
 
 /**
- * Toggles whether Fabula Ultima Bonus content is visible or not
- * 
- * @param {HTMLElement|null} target
- * @param {AppContext} ctx
- */
-function toggle_bonus_content (target, ctx = {}) {
-    if(!target || !ctx || !ctx.content | !ctx.filter) return;
-    const filter_target = ctx.filter.dataset.filterFor;
-    const bonus_content = ctx.content.querySelectorAll(`.${filter_target} article[data-tags*='fabula-ultima-bonus`);
-    bonus_content.forEach(article => {
-        if(target.checked) article.style.display = 'block';
-        else article.style.display = 'none';
-    });
-    filter_content_by_search(target, ctx);
-}
-
-/**
  * Filters the content based on the search text input.
  * 
  * @param {HTMLElement|null} target
@@ -308,15 +291,20 @@ function filter_content_by_search(target, ctx = {}) {
     const search_input = ctx.filter.querySelector(".filter-search");
     const search_term = search_input?.value.trim().toLowerCase() ?? "";
     const filter_target = ctx.filter.dataset.filterFor;
+    const bonus_toggle = ctx.filter.querySelector(".toggle-bonus-content").checked;
+
     if(search_term.length < 3) {
         ctx.content.querySelectorAll(`.${filter_target} article`).forEach(article => {
-            article.classList.remove('filtered-out');
+            if(!bonus_toggle && article.getAttribute('data-tags').includes('fabula-ultima-bonus')) {
+                article.classList.toggle('filtered-out', true);
+                return;
+            }
+            article.classList.toggle('filtered-out', false);
         });
         ctx.content.querySelectorAll(`.${filter_target} section[class*='-group']`).forEach(group => {
             const filtered = group.querySelectorAll('article.filtered-out').length;
-            const off = group.querySelectorAll('article.toggled-off').length;
             const total = group.querySelectorAll('article').length;
-            group.classList.toggle("hidden", filtered === total || off === total);
+            group.classList.toggle("hidden", filtered === total);
         });
         return;
     };
@@ -329,6 +317,11 @@ function filter_content_by_search(target, ctx = {}) {
 
     ctx.content.querySelectorAll(`.${filter_target} article`).forEach(article => {
         if (article.getAttribute("aria-pinned") === "true") return;
+        if(!bonus_toggle && article.getAttribute('data-tags').includes('fabula-ultima-bonus')) {
+            article.classList.toggle('filtered-out', true);
+            return;
+        }
+
         const is_match = search_targets.some(target => {
             const target_element = article.querySelector(`[class*="${target}"]`);
             if (!target_element) return false;
@@ -340,9 +333,8 @@ function filter_content_by_search(target, ctx = {}) {
 
     ctx.content.querySelectorAll(`.${filter_target} section[class*='-group']`).forEach(group => {
         const filtered = group.querySelectorAll('article.filtered-out').length;
-        const off = group.querySelectorAll('article.toggled-off').length;
         const total = group.querySelectorAll('article').length;
-        group.classList.toggle("hidden", filtered === total || off === total);
+        group.classList.toggle("hidden", filtered === total);
     });
 }
 

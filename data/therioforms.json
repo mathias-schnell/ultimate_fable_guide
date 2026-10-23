@@ -6,8 +6,8 @@
   },
   "groups": [
     {
-      "name": "",
-      "label": "",
+      "name": "therioforms",
+      "label": "Therioforms",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Suggestions", "field": "suggestions", "class": "suggestions" }

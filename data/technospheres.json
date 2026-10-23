@@ -1,0 +1,274 @@
+{
+  "schema": {
+    "key": "technospheres",
+    "title": "Technospheres",
+    "universal-tags": ["techno-fantasy"]
+  },
+  "groups": [
+    {
+      "name": "hoplospheres",
+      "label": "Hoplospheres",
+      "columns": [
+        { "label": "d66", "field": "d66", "class": "d66" },
+        { "label": "Name", "field": "name", "class": "name" },
+        { "label": "Weapons Only", "field": "weapons-only", "class": "weapons-only" }
+      ],
+      "grid-template-columns": "0.25fr 2fr 2fr 2fr 0.25fr",
+      "group-tags": [],
+      "technospheres": [
+        {
+          "d66": "11",
+          "name": "Agile",
+          "weapons-only": "",
+          "description": "You treat your Dexterity as if it were one die size higher (up to a maximum of d12).\n\nThis hoplosphere occupies 2 slots.",
+          "tags": ["DEX"]
+        },
+        {
+          "d66": "12",
+          "name": "Arctic",
+          "weapons-only": "",
+          "description": "You gain Resistance to ice damage. If this item is a weapon, all damage it deals becomes ice.\n• Coag. 2: you gain Immunity to ice damage.\n• Coag. 3: any ice damage you deal ignores Resistances. When you deal damage, you may change its type to ice.",
+          "tags": ["ice", "resistance", "immunity", "ignore"]
+        },
+        {
+          "d66": "13",
+          "name": "Blessed",
+          "weapons-only": "✔️",
+          "description": "This weapon deals 2 extra damage to undead.\n• Coag. 2: you gain a +1 bonus to Magic Defense.",
+          "tags": ["undead", "species", "magic-defense"]
+        },
+        {
+          "d66": "14",
+          "name": "Brave",
+          "weapons-only": "",
+          "description": "You treat your Willpower as if it were one die size higher (up to a maximum of d12).\n\nThis hoplosphere occupies 2 slots.",
+          "tags": ["WLP"]
+        },
+        {
+          "d66": "15",
+          "name": "Crystalline",
+          "weapons-only": "",
+          "description": "You are immune to dazed.\n• Coag. 2: you gain a +2 bonus to Open Checks made to examine creatures, items, and locations.",
+          "tags": ["dazed", "immunity"]
+        },
+        {
+          "d66": "16",
+          "name": "Cyclonic",
+          "weapons-only": "",
+          "description": "You gain Resistance to air damage. If this item is a weapon, all damage it deals becomes air.\n• Coag. 2: you gain Immunity to air damage.\n• Coag. 3: any air damage you deal ignores Resistances. When you deal damage, you may change its type to air.",
+          "tags": ["air", "resistance", "immunity", "ignore"]
+        },
+        {
+          "d66": "21",
+          "name": "Dark",
+          "weapons-only": "",
+          "description": "You gain Resistance to dark damage. If this item is a weapon, all damage it deals becomes dark.\n• Coag. 2: you gain Immunity to dark damage.\n• Coag. 3: any dark damage you deal ignores Resistances. When you deal damage, you may change its type to dark.",
+          "tags": ["dark", "resistance", "immunity", "ignore"]
+        },
+        {
+          "d66": "22",
+          "name": "Dazing",
+          "weapons-only": "✔️",
+          "description": "Each target hit by this weapon suffers dazed.\n\nThis hoplosphere occupies 2 slots.",
+          "tags": ["dazed"]
+        },
+        {
+          "d66": "23",
+          "name": "Disrupting",
+          "weapons-only": "✔️",
+          "description": "This weapon deals 2 extra damage to constructs.\n• Coag. 2: you gain a +1 bonus to Defense.",
+          "tags": ["construct", "species", "defense"]
+        },
+        {
+          "d66": "24",
+          "name": "Draining",
+          "weapons-only": "✔️",
+          "description": "When you hit one or more creatures with this weapon, you may recover 3 Hit Points and 3 Mind Points.",
+          "tags": ["hp", "mp"]
+        },
+        {
+          "d66": "25",
+          "name": "Energizing",
+          "weapons-only": "",
+          "description": "You are immune to weak.\n• Coag. 2: when you recover Hit Points, you recover 2 additional Hit Points.",
+          "tags": ["weak", "immunity", "hp"]
+        },
+        {
+          "d66": "26",
+          "name": "Expansive",
+          "weapons-only": "✔️",
+          "description": "Attacks with this weapon gain the multi (2) property.\n\nThis hoplosphere occupies 2 slots.",
+          "tags": ["multi"]
+        },
+        {
+          "d66": "31",
+          "name": "Ghastly",
+          "weapons-only": "✔️",
+          "description": "Each target hit by this weapon suffers shaken.\n\nThis hoplosphere occupies 2 slots.",
+          "tags": ["shaken"]
+        },
+        {
+          "d66": "32",
+          "name": "Gladiator",
+          "weapons-only": "✔️",
+          "description": "This weapon deals 2 extra damage to humanoids.\n• Coag. 2: you gain a +1 bonus to Defense.",
+          "tags": ["humanoid", "species", "defense"]
+        },
+        {
+          "d66": "33",
+          "name": "Knightly",
+          "weapons-only": "✔️",
+          "description": "This weapon deals 2 extra damage to monsters.\n• Coag. 2: you gain a +1 bonus to Magic Defense.",
+          "tags": ["monster", "species", "magic-defense"]
+        },
+        {
+          "d66": "34",
+          "name": "Medical",
+          "weapons-only": "",
+          "description": "When you cause one or more creatures to recover Hit Points and/or Mind Points with a potion, that potion causes them to recover 2 additional HP and/or MP, respectively.\n• Coag. 2: when you cause one or more creatures to recover Hit Points and/or Mind Points with a potion, that potion causes them to recover 1 additional HP and/or MP, respectively.",
+          "tags": ["hp", "mp", "potion"]
+        },
+        {
+          "d66": "35",
+          "name": "Mighty",
+          "weapons-only": "",
+          "description": "You treat your Might as if it were one die size higher (up to a maximum of d12).\n\nThis hoplosphere occupies 2 slots.",
+          "tags": ["MIG"]
+        },
+        {
+          "d66": "36",
+          "name": "Occult",
+          "weapons-only": "✔️",
+          "description": "This weapon deals 2 extra damage to elementals.\n• Coag. 2: you gain a +1 bonus to Magic Defense.",
+          "tags": ["elemental", "species", "magic-defense"]
+        },
+        {
+          "d66": "41",
+          "name": "Piercing",
+          "weapons-only": "✔️",
+          "description": "Damage dealt by this weapon ignores Resistances.\n• Coag. 2: damage dealt by this weapon ignores Resistances and Immunities.",
+          "tags": ["ignore", "resistance", "immunity"]
+        },
+        {
+          "d66": "42",
+          "name": "Poisonous",
+          "weapons-only": "",
+          "description": "You gain Resistance to poison damage. If this item is a weapon, all damage it deals becomes poison.\n• Coag. 2: you gain Immunity to poison damage.\n• Coag. 3: any poison damage you deal ignores Resistances. When you deal damage, you may change its type to poison.",
+          "tags": ["poison", "resistance", "immunity", "ignore"]
+        },
+        {
+          "d66": "43",
+          "name": "Predator",
+          "weapons-only": "✔️",
+          "description": "This weapon deals 2 extra damage to beasts.\n• Coag. 2: you gain a +1 bonus to Defense.",
+          "tags": ["beast", "species", "defense"]
+        },
+        {
+          "d66": "44",
+          "name": "Quick",
+          "weapons-only": "",
+          "description": "You are immune to slow.\n• Coag. 2: you gain a +2 bonus to your Initiative Modifier.",
+          "tags": ["slow", "immunity"]
+        },
+        {
+          "d66": "45",
+          "name": "Radiant",
+          "weapons-only": "",
+          "description": "You gain Resistance to light damage. If this item is a weapon, all damage it deals becomes light.\n• Coag. 2: you gain Immunity to light damage.\n• Coag. 3: any light damage you deal ignores Resistances. When you deal damage, you may change its type to light.",
+          "tags": ["light", "resistance", "immunity", "ignore"]
+        },
+        {
+          "d66": "46",
+          "name": "Reaping",
+          "weapons-only": "✔️",
+          "description": "This weapon deals 2 extra damage to plants.\n• Coag. 2: you gain a +1 bonus to Defense.",
+          "tags": ["plant", "species", "defense"]
+        },
+        {
+          "d66": "51",
+          "name": "Revealing",
+          "weapons-only": "",
+          "description": "You treat your Insight as if it were one die size higher (up to a maximum of d12).\n\nThis hoplosphere occupies 2 slots.",
+          "tags": ["INS"]
+        },
+        {
+          "d66": "52",
+          "name": "Sharpening",
+          "weapons-only": "✔️",
+          "description": "Accuracy Checks with this weapon gain a +1 bonus.\n• Coag. 2: this weapon deals 2 extra damage.",
+          "tags": ["accuracy", "attack"]
+        },
+        {
+          "d66": "53",
+          "name": "Scornful",
+          "weapons-only": "✔️",
+          "description": "Each target hit by this weapon suffers enraged.\n\nThis hoplosphere occupies 2 slots.",
+          "tags": ["enraged"]
+        },
+        {
+          "d66": "54",
+          "name": "Seismic",
+          "weapons-only": "",
+          "description": "You gain Resistance to earth damage. If this item is a weapon, all damage it deals becomes earth.\n• Coag. 2: you gain Immunity to earth damage.\n• Coag. 3: any earth damage you deal ignores Resistances. When you deal damage, you may change its type to earth.",
+          "tags": ["earth", "resistance", "immunity", "ignore"]
+        },
+        {
+          "d66": "55",
+          "name": "Skeptical",
+          "weapons-only": "✔️",
+          "description": "This weapon deals 2 extra damage to demons.\n• Coag. 2: you gain a +1 bonus to Magic Defense.",
+          "tags": ["demon", "species", "magic-defense"]
+        },
+        {
+          "d66": "56",
+          "name": "Snaring",
+          "weapons-only": "✔️",
+          "description": "Each target hit by this weapon suffers slow.\n\nThis hoplosphere occupies 2 slots.",
+          "tags": ["slow"]
+        },
+        {
+          "d66": "61",
+          "name": "Sorcerous",
+          "weapons-only": "✔️",
+          "description": "Attacks with this weapon target Magic Defense.\n• Coag. 2: spells you cast deal 2 extra damage, and spells you cast that cause creatures to recover Hit Points cause them to recover 2 additional Hit Points.",
+          "tags": ["magic-defense", "spell", "hp"]
+        },
+        {
+          "d66": "62",
+          "name": "Steadfast",
+          "weapons-only": "",
+          "description": "You are immune to shaken.\n• Coag. 2: when you recover Mind Points, you recover 2 additional Mind Points.",
+          "tags": ["shaken", "immunity", "mp"]
+        },
+        {
+          "d66": "63",
+          "name": "Tiring",
+          "weapons-only": "✔️",
+          "description": "Each target hit by this weapon suffers weak.\n\nThis hoplosphere occupies 2 slots.",
+          "tags": ["weak"]
+        },
+        {
+          "d66": "64",
+          "name": "Toxic",
+          "weapons-only": "✔️",
+          "description": "Each target hit by this weapon suffers poisoned.\n\nThis hoplosphere occupies 2 slots.",
+          "tags": ["poisoned"]
+        },
+        {
+          "d66": "65",
+          "name": "Volcanic",
+          "weapons-only": "",
+          "description": "You gain Resistance to fire damage. If this item is a weapon, all damage it deals becomes fire.\n• Coag. 2: you gain Immunity to fire damage.\n• Coag. 3: any fire damage you deal ignores Resistances. When you deal damage, you may change its type to fire.",
+          "tags": ["fire", "resistance", "immunity", "ignore"]
+        },
+        {
+          "d66": "66",
+          "name": "Voltaic",
+          "weapons-only": "",
+          "description": "You gain Resistance to bolt damage. If this item is a weapon, all damage it deals becomes bolt.\n• Coag. 2: you gain Immunity to bolt damage.\n• Coag. 3: any bolt damage you deal ignores Resistances. When you deal damage, you may change its type to bolt.",
+          "tags": ["bolt", "resistance", "immunity", "ignore"]
+        }
+      ]
+    }
+  ]
+}

@@ -183,10 +183,12 @@ function render_group_header(string $key, array $cols, string $group_label, arra
 }
 
 function render_row_article(string $key, string $id, array $combined_tags, array $cols, array $entry, string $grid_style): void {
+    $class_str = $key;
     $tags_str = htmlspecialchars(implode(', ', $combined_tags));
+    if(in_array("fabula-ultima-bonus", $combined_tags)) $class_str .= " filtered-out";
     $url_params = http_build_query(['cat' => $key, 'search' => strtolower(get_cell_data('name', $entry)), 'open' => true]);
     ?>
-    <article class="<?= $key ?>" data-slug="<?= slugify(get_cell_data('name', $entry)) ?>" data-tags="<?= $tags_str ?>">
+    <article class="<?= $class_str ?>" data-slug="<?= slugify(get_cell_data('name', $entry)) ?>" data-tags="<?= $tags_str ?>">
         <div class="<?= $key ?>-row"<?= $grid_style ?>>
             <div class="<?= $key ?>-expand">
                 <?php if(!empty($entry['description'])): ?>

@@ -22,4 +22,7 @@ $sections = [
     "armor-basic"       => "Armor (Basic)",
     "armor-rare"        => "Armor (Rare)",
     "accessories"       => "Accessories",
+    "quirks"            => "Quirks",
+    "zero-powers"       => "Zero Powers",
+    "technospheres"     => "Technospheres",
 ];

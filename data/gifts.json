@@ -6,8 +6,8 @@
   },
   "groups": [
     {
-      "name": "",
-      "label": "",
+      "name": "gifts",
+      "label": "Psychic Gifts",
       "columns": [
         { "label": "Name", "field": "name", "class": "name" },
         { "label": "Event", "field": "event", "class": "event" }
