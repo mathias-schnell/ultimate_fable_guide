@@ -1,0 +1,12 @@
+{
+  "icon": "",
+  "label": "Heroic Skills",
+  "sub-labels": "",
+  "order": [
+    "core",
+    "high-fantasy",
+    "natural-fantasy",
+    "techno-fantasy",
+    "bonus-content"
+  ]
+}

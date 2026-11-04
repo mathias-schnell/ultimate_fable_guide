@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.8.0] - 2026-11-03
+
+### Added
+- Major visual and data organization overhaul.
+- Lots of iconography added or changed.
+
+### Internal
+- Data has been reorganized so that categorization is handled mostly by the file structure and system, resulting in smaller individual data files.
+
+---
+
 ## [0.7.3] - 2026-10-22
 
 ### Added

@@ -1,0 +1,56 @@
+{
+  "icon": "raise-zombie",
+  "label": "Necromancer",
+  "sub-labels": ["Permanently increase your maximum Hit Points or Mind Points by 5 (your choice)."],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Max SL",
+      "field": "max-sl",
+      "class": "max-sl"
+    }
+  ],
+  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+  "group-tags": ["fabula-ultima-bonus", "necromancer"],
+  "data": [
+    {
+      "name": "Beyond the Realms of Death",
+      "class": "Necromancer",
+      "max-sl": 5,
+      "description": "When another creature you can see loses Hit Points while in Crisis, if they are not undead, you gain 1 Grave Point. You may never have more than (SL + 1) Grave Points. When you are reduced to 0 Hit Points, you lose all Grave Points; then, if you lost at least 1 Grave Point this way and this is the first time you are reduced to 0 HP during this scene, you do not Surrender nor Sacrifice yourself: instead, you recover an amount of HP equal to (SL, multiplied by the amount of Grave Points you lost this way).",
+      "tags": ["crisis", "hp", "undead"]
+    },
+    {
+      "name": "Children of the Grave",
+      "class": "Necromancer",
+      "max-sl": 1,
+      "description": "You can always communicate verbally with undead creatures. Once per scene, you may ask an undead a single question; they are compelled to answer truthfully.",
+      "tags": ["ask-question", "undead"]
+    },
+    {
+      "name": "Fear is the Key",
+      "class": "Necromancer",
+      "max-sl": 3,
+      "description": "After you cause one or more enemies to lose Hit Points, if you have acquired the Beyond the Realms of Death Skill and at least one of them is suffering from shaken and/or weak, you gain 1 Grave Point and recover (SL × 2) Hit Points and Mind Points.",
+      "tags": ["hp", "mp", "shaken", "weak"]
+    },
+    {
+      "name": "For Whom the Bell Tolls",
+      "class": "Necromancer",
+      "max-sl": 3,
+      "description": "When you deal damage to a creature with a spell, if that spell only deals damage to that creature, you may spend 1 Grave Point. If you do, choose one option: if that creature is suffering from one or more status effects, the spell deals extra damage equal to ((SL × 2) + the number of status effects on that creature); or if that creature is suffering from no status effects, they suffer shaken.",
+      "tags": ["shaken", "spell"]
+    },
+    {
+      "name": "Rondo of Nightmare",
+      "class": "Necromancer",
+      "max-sl": 1,
+      "description": "When you cast an offensive spell with a target of \"One creature\", you may spend 2 Grave Points to have it target all creatures you can see that are present on the scene (perform a single Magic Check and confront it with the Magic Defense of each target). If you do, all damage dealt by the spell becomes dark and its type cannot change.",
+      "tags": ["dark", "magic-defense", "multi", "spell"]
+    }
+  ]
+}

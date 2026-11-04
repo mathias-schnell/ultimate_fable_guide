@@ -1,0 +1,10 @@
+{
+  "icon": "",
+  "label": "Optional Rules",
+  "sub-labels": "",
+  "order": [
+    "zero-powers",
+    "quirks",
+    "technospheres"
+  ]
+}

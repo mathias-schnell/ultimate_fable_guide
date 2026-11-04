@@ -1,0 +1,50 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Arcane",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["arcane"],
+  "data": [
+    {
+      "name": "Staff",
+      "martial": false,
+      "cost": "100 z",
+      "accuracy": "【WLP + WLP】",
+      "damage": "【HR + 6】 physical",
+      "description": "Two-handed • Melee • No Quality.",
+      "tags": ["core", "arcane", "basic", "two-handed", "melee", "physical", "WLP"]
+    },
+    {
+      "name": "Tome",
+      "martial": false,
+      "cost": "100 z",
+      "accuracy": "【INS + INS】",
+      "damage": "【HR + 6】 physical",
+      "description": "Two-handed • Melee • No Quality.",
+      "tags": ["core", "arcane", "basic", "two-handed", "melee", "physical", "INS"]
+    }
+  ]
+}

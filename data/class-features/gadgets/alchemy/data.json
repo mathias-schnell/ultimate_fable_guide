@@ -1,0 +1,12 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "icon": "",
+  "label": "Alchemy",
+  "sub-labels": "",
+  "order": [
+    "mix",
+    "target",
+    "effect"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "always-expand": true,
+  "is-container": false,
+  "label": "",
+  "sub-labels": ["Effect"],
+  "columns": [
+    {
+      "label": "Die",
+      "field": "die",
+      "class": "die"
+    },
+    {
+      "label": "Each creature affected by the potion...",
+      "field": "effect",
+      "class": "effect"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+  "group-tags": ["gadgets", "inventory", "ip"],
+  "data": [
+      {
+        "die": "Any",
+        "effect": "... is dealt 20 poison damage. This amount increases to 30 damage if you are level 20 or higher, or to 40 damage if you are level 40 or higher.",
+        "tags": ["poison"]
+      },
+      {
+        "die": "Any",
+        "effect": "... recovers 30 Hit Points.",
+        "tags": ["hp"]
+      },
+      {
+        "die": "1",
+        "effect": "... treats their Dexterity and Might dice as if they were one size higher (up to a maximum of d12) until the end of your next turn.",
+        "tags": ["DEX", "MIG"]
+      },
+      {
+        "die": "2",
+        "effect": "As effect 1, but with Insight and Willpower.",
+        "tags": ["INS", "WLP"]
+      },
+      {
+        "die": "3",
+        "effect": "... is dealt 20 air damage. This amount increases to 30 damage if you are level 20 or higher, or to 40 damage if you are level 40 or higher.",
+        "tags": ["air"]
+      },
+      {
+        "die": "4",
+        "effect": "As effect 3, but with bolt damage.",
+        "tags": ["bolt"]
+      },
+      {
+        "die": "5",
+        "effect": "As effect 3, but with dark damage.",
+        "tags": ["dark"]
+      },
+      {
+        "die": "6",
+        "effect": "As effect 3, but with earth damage.",
+        "tags": ["earth"]
+      },
+      {
+        "die": "7",
+        "effect": "As effect 3, but with fire damage.",
+        "tags": ["fire"]
+      },
+      {
+        "die": "8",
+        "effect": "As effect 3, but with ice damage.",
+        "tags": ["ice"]
+      },
+      {
+        "die": "9",
+        "effect": "... gains Resistance to air and fire damage until the end of the scene.",
+        "tags": ["air", "fire", "resistance"]
+      },
+      {
+        "die": "10",
+        "effect": "As effect 9, but with bolt and ice damage.",
+        "tags": ["bolt", "ice", "resistance"]
+      },
+      {
+        "die": "11",
+        "effect": "As effect 9, but with dark and earth damage.",
+        "tags": ["dark", "earth", "resistance"]
+      },
+      {
+        "die": "12",
+        "effect": "... suffers enraged.",
+        "tags": ["enraged"]
+      },
+      {
+        "die": "13",
+        "effect": "... suffers poisoned.",
+        "tags": ["poisoned"]
+      },
+      {
+        "die": "14",
+        "effect": "... suffers dazed, shaken, slow and weak.",
+        "tags": ["dazed", "shaken", "slow", "weak"]
+      },
+      {
+        "die": "15",
+        "effect": "... recovers from all status effects.",
+        "tags": []
+      },
+      {
+        "die": "16-17",
+        "effect": "... recovers 50 Hit Points and 50 Mind Points.",
+        "tags": ["hp", "mp"]
+      },
+      {
+        "die": "18",
+        "effect": "... recovers 100 Hit Points.",
+        "tags": ["hp"]
+      },
+      {
+        "die": "19",
+        "effect": "... recovers 100 Mind Points.",
+        "tags": ["mp"]
+      },
+      {
+        "die": "20",
+        "effect": "... recovers 100 Hit Points and 100 Mind Points.",
+        "tags": ["hp", "mp"]
+      }
+  ]
+}

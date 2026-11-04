@@ -1,0 +1,56 @@
+{
+  "icon": "flame",
+  "label": "Elementalist",
+  "sub-labels": ["Permanently increase your maximum Mind Points by 5.", "You may perform Rituals whose effects fall within the Ritualism discipline."],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Max SL",
+      "field": "max-sl",
+      "class": "max-sl"
+    }
+  ],
+  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+  "group-tags": ["core", "elementalist"],
+  "data": [
+    {
+      "name": "Cataclysm",
+      "class": "Elementalist",
+      "max-sl": 3,
+      "description": "When you cast a spell with a duration of “Instantaneous”, if you have an arcane weapon equipped, you may increase the spell’s total MP cost by up to (SL × 10) Mind Points. If you do so, the spell deals 5 extra damage for every 10 Mind Points by which you increased its cost this way.",
+      "tags": ["arcane", "damage", "elementalist", "equipment", "mp", "spell"]
+    },
+    {
+      "name": "Elemental Magic",
+      "class": "Elementalist",
+      "max-sl": 10,
+      "description": "Each time you acquire this Skill, learn one Elementalist spell (see next two pages). Offensive (🗲) Elementalist spells use (INS + WLP) for the Magic Check.",
+      "tags": ["elementalist", "INS", "spell", "WLP"]
+    },
+    {
+      "name": "Magical Artillery",
+      "class": "Elementalist",
+      "max-sl": 3,
+      "description": "When you cast an offensive spell (🗲), if you have an arcane weapon equipped, you gain a bonus to your Magic Check equal to (SL × 2).",
+      "tags": ["arcane", "elementalist", "equipment", "spell"]
+    },
+    {
+      "name": "Ritual Elementalism",
+      "class": "Elementalist",
+      "max-sl": 1,
+      "description": "You may perform Rituals whose effects fall within the Elementalism discipline. Elementalism Rituals use (INS + WLP) for the Magic Check.",
+      "tags": ["elementalist", "INS", "spell", "WLP", "ritual"]
+    },
+    {
+      "name": "Spellblade",
+      "class": "Elementalist",
+      "max-sl": 3,
+      "description": "When you cast an offensive spell (🗲) targeting a single creature, if the spell has a total Mind Point cost of (SL × 20) or lower, you may choose one non-arcane weapon you have equipped. If you do, your Magic Check for the spell uses the chosen weapon’s Accuracy Check formula; if that formula includes Dexterity, the Magic Check also gains a bonus equal to (SL). For instance, casting an Elementalist spell through a bronze sword (page 131) when you have Skill Level 2 in Spellblade will cause the Magic Check to be (DEX + MIG).",
+      "tags": ["DEX", "elementalist", "equipment", "MIG", "mp", "spell"]
+    }
+  ]
+}

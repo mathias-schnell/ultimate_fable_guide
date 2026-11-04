@@ -1,0 +1,14 @@
+{
+  "icon": "",
+  "label": "Equipment",
+  "sub-labels": "",
+  "order": [
+    "weapons-basic",
+    "shields-basic",
+    "armor-basic",
+    "accessories",
+    "weapons-rare",
+    "shields-rare",
+    "armor-rare"
+  ]
+}

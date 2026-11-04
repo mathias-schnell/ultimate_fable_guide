@@ -1,50 +1,43 @@
-.content-container [class*="-pin"],
-.content-container [class*="-toggle"],
-.content-container [class*="-multitoggle"] {
-    font-size: var(--font-size-large);
-    height: 100%;
-    transform: rotate(0deg);
-    transition: transform 0.25s ease;
-    width: 100%;
-}
-
-.content-container [class*="-multitoggle"] {
-    font-size: var(--font-size-xl);
-}
-
-.content-container [class*="-pin"][aria-checked="false"]::before {
-    content: '☆';
-}
-
-.content-container [class*="-pin"][aria-checked="true"]::before {
-    content: '★';
-}
-
-.content-container [class*="-toggle"][aria-expanded="true"] {
-    transform: rotate(90deg);
-}
-
 .content-container [class*="-group"] {
     display: grid;
     overflow-x: auto;
     max-width: 100%;
     padding-top: 1rem;
+    white-space: normal;
     width: 100%;
 }
 
-.content-container [class*="-group"].hidden {
+.content-container [class*="-group"] [aria-hidden="true"] {
     display: none;
+}
+
+.content-container [class*="-group"] [class*="-expand"] [aria-expanded="true"] {
+    transform: rotate(90deg);
+}
+
+.content-container [class*="-group"] [class*="-pin"],
+.content-container [class*="-group"] [class*="-toggle"],
+.content-container [class*="-group"] [class*="-multitoggle"],
+.content-container [class*="-group"] [class*="-link"] {
+    transform: rotate(0deg);
+    transition: transform 0.25s ease;
 }
 
 .content-container [class*="-group-title"] {
     font-size: var(--font-size-xxl);
     font-weight: 600;
+    letter-spacing: var(--letter-spacing-medium);
+    overflow-x: hidden;
+    overflow-y: hidden;
     padding: 0 0.5rem 0 0.5rem;
 }
 
 .content-container [class*="-group-sub-labels"] {
     font-size: var(--font-size-large);
     font-weight: 400;
+    margin-bottom: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
     padding: 0 1rem 0 1rem;
 }
 
@@ -146,23 +139,15 @@
     color: #888888;
 }
 
-.content-container [class*="-description-container"].hidden {
+.content-container [class*="-description-container"] [aria-hidden="true"] {
     height: 0;
     margin: 0;
     opacity: 0;
     padding: 0;
 }
 
-.content-container [class*="-group"] [class*="-row"] > [class*="-expand"],
-.content-container [class*="-group"] [class*="-row"] > [class*="-link"],
-.content-container [class*="-group"] [class*="-row"] > [class*="-pin"] {
-    font-size: 125%;
-    padding: 0;
-    margin: 0;
-}
-
 .content-container [class*="-group"] [class*='-link'] {
-    color: #2a11d2;
+    color: var(--text-color);
     position: relative;
     transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease;
 }
@@ -172,13 +157,13 @@
     color: #d70f3e;
 }
 
-.content-container .magiseeds-description-container table {
+.content-container [class*='magiseeds-description-container'] table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.content-container .magiseeds-description-container th,
-.content-container .magiseeds-description-container td {
+.content-container [class*='magiseeds-description-container'] th,
+.content-container [class*='magiseeds-description-container'] td {
     padding: 0.5rem;
     text-align: left;
     vertical-align: top;
@@ -186,23 +171,23 @@
     border-left: 1px solid #AAAAAA;
 }
 
-.content-container .magiseeds-description-container th {
+.content-container [class*='magiseeds-description-container'] th {
     background-color: #964B00;
     color: #E8ECEF;
     font-weight: 600;
 }
 
-.content-container .magiseeds-description-container th:first-child {
+.content-container [class*='magiseeds-description-container'] th:first-child {
     text-align: center;
 }
 
-.content-container .magiseeds-description-container td:first-child {
+.content-container [class*='magiseeds-description-container'] td:first-child {
     background-color: #d2b48c;
     font-weight: 600;
 }
 
-.content-container .magiseeds-description-container th:first-child,
-.content-container .magiseeds-description-container td:first-child {
+.content-container [class*='magiseeds-description-container'] th:first-child,
+.content-container [class*='magiseeds-description-container'] td:first-child {
     white-space: nowrap;
     width: 1%;
 }

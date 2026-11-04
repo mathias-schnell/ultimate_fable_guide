@@ -1,0 +1,56 @@
+{
+  "icon": "sands-of-time",
+  "label": "Entropist",
+  "sub-labels": ["Permanently increase your maximum Mind Points by 5.", "You may perform Rituals whose effects fall within the Ritualism discipline."],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Max SL",
+      "field": "max-sl",
+      "class": "max-sl"
+    }
+  ],
+  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+  "group-tags": ["core", "entropist"],
+  "data": [
+    {
+      "name": "Absorb MP",
+      "class": "Entropist",
+      "max-sl": 5,
+      "description": "After you suffer damage, you may recover (SL × 2) Mind Points.",
+      "tags": ["damage", "entropist", "mp"]
+    },
+    {
+      "name": "Entropic Magic",
+      "class": "Entropist",
+      "max-sl": 10,
+      "description": "Each time you acquire this Skill, learn one Entropist spell (see next two pages). Offensive (🗲) Entropist spells use (INS + WLP) for the Magic Check.",
+      "tags": ["entropist", "INS", "spell", "WLP"]
+    },
+    {
+      "name": "Lucky Seven",
+      "class": "Entropist",
+      "max-sl": 1,
+      "description": "You have a lucky number; at the start of each session, that number is 7. Once per scene after you roll dice for a Check, you may replace the value shown on one of those dice with your lucky number (even if this would give an impossible value, such as a value of 7 on a d6). If you do, the replaced value becomes your new lucky number.",
+      "tags": ["entropist"]
+    },
+    {
+      "name": "Ritual Entropism",
+      "class": "Entropist",
+      "max-sl": 1,
+      "description": "You may perform Rituals whose effects fall within the Entropism discipline. Entropism Rituals use (INS + WLP) for the Magic Check.",
+      "tags": ["entropist", "INS", "spell", "WLP", "ritual"]
+    },
+    {
+      "name": "Stolen Time",
+      "class": "Entropist",
+      "max-sl": 4,
+      "description": "During a conflict, you may use an action to interfere with the flow of time by spending up to (SL × 5) Mind Points. For every 5 Mind Points you spend this way, choose one option: one creature you can see suffers slow; or one creature you can see recovers from slow; or one enemy you can see that is suffering from slow loses (10 + (SL × 5)) Hit Points; or one creature you can see may perform the Equipment action for free; or choose one ally you can see that has yet to take a turn during this round: that ally may take their turn immediately after yours during this round. Each option can only be chosen once per use of this Skill.",
+      "tags": ["entropist", "equipment", "hp", "mp", "status"]
+    }
+  ]
+}

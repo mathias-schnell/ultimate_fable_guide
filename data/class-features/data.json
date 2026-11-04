@@ -1,0 +1,19 @@
+{
+  "icon": "",
+  "label": "Class Features",
+  "sub-labels": [],
+  "order": [
+    "arcana",
+    "spells",
+    "gadgets",
+    "verses",
+    "dances",
+    "symbols",
+    "magiseeds",
+    "invocations",
+    "gifts",
+    "modules-basic",
+    "modules-rare",
+    "therioforms"
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Firearms",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["firearm", "rare"],
+  "data": [
+    {
+      "name": "Revolver",
+      "martial": true,
+      "cost": "300 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Ranged • No Quality.",
+      "tags": ["core", "firearm", "one-handed", "ranged", "physical", "DEX", "martial", "rare"]
+    },
+    {
+      "name": "Istinggar",
+      "martial": true,
+      "cost": "350 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 12】 physical",
+      "description": "Two-handed • Ranged • No Quality.",
+      "tags": ["core", "firearm", "two-handed", "ranged", "physical", "DEX", "INS", "martial", "rare"]
+    },
+    {
+      "name": "Spellshot",
+      "martial": true,
+      "cost": "400 z",
+      "accuracy": "【INS + INS】",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Ranged • Attacks with this weapon target Magic Defense.",
+      "tags": ["core", "firearm", "one-handed", "ranged", "physical", "INS", "martial", "rare", "mdef-target"]
+    },
+    {
+      "name": "Diamond Pistol",
+      "martial": true,
+      "cost": "650 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Ranged • This weapon deals 5 extra damage to constructs.",
+      "tags": ["core", "firearm", "one-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "construct"]
+    },
+    {
+      "name": "Headhunter",
+      "martial": true,
+      "cost": "800 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Ranged • This weapon deals 5 extra damage to targets you have a Bond of hatred towards.",
+      "tags": ["core", "firearm", "one-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "bond"]
+    },
+    {
+      "name": "Comet Gun",
+      "martial": true,
+      "cost": "950 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 8】 dark",
+      "description": "One-handed • Ranged • You are immune to dazed.",
+      "tags": ["core", "firearm", "one-handed", "ranged", "dark", "DEX", "INS", "martial", "rare", "immunity"]
+    },
+    {
+      "name": "Bunker Cannon",
+      "martial": true,
+      "cost": "1050 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 12】 physical",
+      "description": "Two-handed • Ranged • You gain a +1 bonus to Defense.",
+      "tags": ["core", "firearm", "two-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "def-bonus"]
+    },
+    {
+      "name": "Alchemusket",
+      "martial": true,
+      "cost": "1300 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 8】 poison",
+      "description": "One-handed • Ranged • Potions you create with your Inventory Points deal 5 extra damage and restore 5 additional Hit Points.",
+      "tags": ["core", "firearm", "one-handed", "ranged", "poison", "DEX", "INS", "martial", "rare", "potions"]
+    },
+    {
+      "name": "Calamity",
+      "martial": true,
+      "cost": "1550 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 16】 fire",
+      "description": "Two-handed • Ranged • Attacks with this weapon have multi (2).",
+      "tags": ["core", "firearm", "two-handed", "ranged", "fire", "DEX", "INS", "martial", "rare", "multi"]
+    },
+    {
+      "name": "Freezing Shot",
+      "martial": true,
+      "cost": "1850 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 8】 ice",
+      "description": "One-handed • Ranged • Each target hit by this weapon suffers slow.",
+      "tags": ["core", "firearm", "one-handed", "ranged", "ice", "DEX", "INS", "martial", "rare", "slow", "status"]
+    },
+    {
+      "name": "Quatermain",
+      "martial": true,
+      "cost": "2600 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 12】 air",
+      "description": "Two-handed • Ranged • This weapon deals extra damage equal to the difference between your current and maximum Inventory Points.",
+      "tags": ["core", "firearm", "two-handed", "ranged", "air", "DEX", "INS", "martial", "rare", "inventory-points"]
+    },
+    {
+      "name": "Ultimatum",
+      "martial": true,
+      "cost": "1800 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 12】 earth",
+      "description": "One-handed • Ranged • When a creature includes you among the targets of an attack or offensive spell (🗲), they must first spend 5 Mind Points. Otherwise, they cannot include you among the targets.",
+      "tags": ["high-fantasy", "rare", "martial", "firearm", "one-handed", "ranged", "earth", "DEX", "INS", "attack", "spell", "mp"]
+    },
+    {
+      "name": "Derringer",
+      "martial": false,
+      "cost": "800 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Ranged • The first attack you perform with this weapon during each scene deals 5 extra damage. Also, despite being based on the pistol’s profile, this isn’t considered a martial weapon.",
+      "tags": ["natural-fantasy", "rare", "firearm", "one-handed", "ranged", "physical", "DEX", "INS", "attack", "damage"]
+    },
+    {
+      "name": "Voltaic Hound",
+      "martial": true,
+      "cost": "1600 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 16】 bolt",
+      "description": "Two-handed • Ranged • After this weapon deals damage to one or more creatures, if at least one of those creatures is Vulnerable to bolt damage, you may deal 10 bolt damage to every enemy you can see.",
+      "tags": ["natural-fantasy", "rare", "martial", "firearm", "two-handed", "ranged", "bolt", "DEX", "INS", "damage", "vulnerability"]
+    },
+    {
+      "name": "Grenade Launcher",
+      "martial": true,
+      "cost": "1000 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 16】 physical",
+      "description": "Two-handed • Ranged • When you apply an infusion to an attack made with this weapon, that attack deals extra damage equal to your Skill Level in Gadgets.",
+      "tags": ["techno-fantasy", "rare", "martial", "firearm", "two-handed", "ranged", "physical", "DEX", "INS", "attack", "damage", "skill", "tinkerer"]
+    },
+    {
+      "name": "Sniper Rifle",
+      "martial": true,
+      "cost": "1800 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 16】 physical",
+      "description": "Two-handed • Ranged • If you have acquired the Hawkeye Skill, treat your Skill Level in it as if it were increased by 3 (up to a maximum of SL 8).",
+      "tags": ["techno-fantasy", "rare", "martial", "firearm", "two-handed", "ranged", "physical", "DEX", "INS", "skill", "sharpshooter"]
+    },
+    {
+      "name": "Thunder Vulcan",
+      "martial": true,
+      "cost": "3000 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 16】 bolt",
+      "description": "Two-handed • Ranged • You may perform the Skill action to perform up to three attacks with this weapon (against a single target or multiple targets). If you do, all of these attacks follow the two-weapon fighting rules.",
+      "tags": ["techno-fantasy", "rare", "martial", "firearm", "two-handed", "ranged", "bolt", "DEX", "INS", "skill", "attack"]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "always-expand": false,
+  "is-container": true,
+  "icon": "",
+  "label": "Zero Powers",
+  "sub-labels": [],
+  "order": ["zero-triggers", "zero-effects"]
+}

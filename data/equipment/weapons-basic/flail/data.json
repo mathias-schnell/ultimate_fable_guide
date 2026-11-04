@@ -1,0 +1,41 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Flail",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["core", "flail", "basic", "martial", "weapon"],
+  "data": [
+    {
+      "name": "Chain Whip",
+      "martial": false,
+      "cost": "150 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 8】 physical",
+      "description": "Two-handed • Melee • No Quality.",
+      "tags": ["two-handed", "melee", "physical", "DEX"]
+    }
+  ]
+}

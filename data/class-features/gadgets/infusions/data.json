@@ -1,0 +1,8 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "icon": "",
+  "label": "Infusions",
+  "sub-labels": [],
+  "order": ["basic", "advanced", "superior"]
+}

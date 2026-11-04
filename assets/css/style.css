@@ -264,12 +264,12 @@ h6 {
   width: 1rem;
 }
 
-.elem-physical.elem-icon { color: var(--elem-physical); mask-image: url('svg/physical.svg'); -webkit-mask-image: url('svg/physical.svg'); }
-.elem-air.elem-icon      { color: var(--elem-air); mask-image: url('svg/air.svg'); -webkit-mask-image: url('svg/air.svg'); }
-.elem-bolt.elem-icon     { color: var(--elem-bolt); mask-image: url('svg/bolt.svg'); -webkit-mask-image: url('svg/bolt.svg'); }
-.elem-ice.elem-icon      { color: var(--elem-ice); mask-image: url('svg/ice.svg'); -webkit-mask-image: url('svg/ice.svg'); }
-.elem-earth.elem-icon    { color: var(--elem-earth); mask-image: url('svg/earth.svg'); -webkit-mask-image: url('svg/earth.svg'); }
-.elem-fire.elem-icon     { color: var(--elem-fire); mask-image: url('svg/fire.svg'); -webkit-mask-image: url('svg/fire.svg'); }
-.elem-light.elem-icon    { color: var(--elem-light); mask-image: url('svg/light.svg'); -webkit-mask-image: url('svg/light.svg'); }
-.elem-dark.elem-icon     { color: var(--elem-dark); mask-image: url('svg/dark.svg'); -webkit-mask-image: url('svg/dark.svg'); }
-.elem-poison.elem-icon   { color: var(--elem-poison); mask-image: url('svg/poison.svg'); -webkit-mask-image: url('svg/poison.svg'); }
+.elem-physical.elem-icon { color: var(--elem-physical); mask-image: url('../icons/physical.icon'); -webkit-mask-image: url('../icons/physical.icon'); }
+.elem-air.elem-icon      { color: var(--elem-air); mask-image: url('../icons/air.icon'); -webkit-mask-image: url('../icons/air.icon'); }
+.elem-bolt.elem-icon     { color: var(--elem-bolt); mask-image: url('../icons/bolt.icon'); -webkit-mask-image: url('../icons/bolt.icon'); }
+.elem-ice.elem-icon      { color: var(--elem-ice); mask-image: url('../icons/ice.icon'); -webkit-mask-image: url('../icons/ice.icon'); }
+.elem-earth.elem-icon    { color: var(--elem-earth); mask-image: url('../icons/earth.icon'); -webkit-mask-image: url('../icons/earth.icon'); }
+.elem-fire.elem-icon     { color: var(--elem-fire); mask-image: url('../icons/fire.icon'); -webkit-mask-image: url('../icons/fire.icon'); }
+.elem-light.elem-icon    { color: var(--elem-light); mask-image: url('../icons/light.icon'); -webkit-mask-image: url('../icons/light.icon'); }
+.elem-dark.elem-icon     { color: var(--elem-dark); mask-image: url('../icons/dark.icon'); -webkit-mask-image: url('../icons/dark.icon'); }
+.elem-poison.elem-icon   { color: var(--elem-poison); mask-image: url('../icons/poison.icon'); -webkit-mask-image: url('../icons/poison.icon'); }

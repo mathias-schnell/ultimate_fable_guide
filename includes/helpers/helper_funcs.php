@@ -1,198 +1,183 @@
 <?php
 
-function extract_used_tags(array $data): array {
+function get_rand_class(): string {
+    global $title_icons;
+    return $title_icons[array_rand($title_icons)];
+}
+
+function scan_dir_tree(string $dir = DATA_PATH): array {
+    $result = [];
+    if (!is_dir($dir)) return $result;
+    $items = array_diff(scandir($dir), array('.', '..'));
+
+    foreach ($items as $item):
+        $path = $dir . '/' . $item;
+        if (is_dir($path)) {
+            $json_path = $path . '/data.json';
+            $meta = [];
+            
+            if (file_exists($json_path)) $meta = json_decode(file_get_contents($json_path), true) ?? [];
+            $children = scan_dir_tree($path);
+            $has_children = !empty($children);
+            $key = str_replace("+", "-", strtolower(urlencode($item)));
+            
+            $result[$key] = $meta;
+            $result[$key]['type'] = $has_children ? 'category' : 'leaf';
+            $result[$key]['path'] = $path;
+            $result[$key]['children'] = $children;
+        }
+    endforeach;
+    return $result;
+}
+
+function extract_used_tags(array $group): array {
     $used_tags = [];
-    $key = $data['schema']['key'] ?? '';
     
-    foreach ($data['groups'] as $group):
+    if (!empty($group['group-tags']) && is_array($group['group-tags'])):
         foreach ($group['group-tags'] as $tag):
             $used_tags[$tag] = true;
         endforeach;
+    endif;
 
-        foreach ($group[$key] as $item):
-            foreach ($item['tags'] as $tag):
-                $used_tags[$tag] = true;
-            endforeach;
+    if (!empty($group['data']) && is_array($group['data'])):
+        foreach ($group['data'] as $item):
+            if (!empty($item['tags']) && is_array($item['tags'])):
+                foreach ($item['tags'] as $tag):
+                    $used_tags[$tag] = true;
+                endforeach;
+            endif;
         endforeach;
-    endforeach;
+    endif;
 
     return array_keys($used_tags);
 }
 
-function get_nav_tabs(array $sections): string {
-    $tabs = "";
-    foreach($sections as $key => $label):
-        $file_key = str_replace("-", "_", $key);
-        if(file_exists(DATA_PATH . "/{$file_key}.json")):
-            $tabs .= "<button type='button' class='tab' id='tab-{$key}' aria-selected='false' aria-controls='{$key}-container'> {$label} </button>\n";
-        endif;
-    endforeach;
-    return $tabs;
-}
+function get_menu(array $nodes = [], int $level = 1, array $item_order = [], $combined_name = ''): string {
+    global $order;
+    if(empty($nodes)) $nodes = scan_dir_tree();
+    $keys = array_keys($nodes);
+    $list_class = $level === 1 ? 'menu-root' : 'menu-nested';
 
-function get_content(array $sections): string {
-    $content = "";
-    foreach($sections as $key => $label):
-        $file_key = str_replace("-", "_", $key);
-        $filepath = DATA_PATH . "/{$file_key}.json";
-        if (!file_exists($filepath)) continue;
-        $data = json_decode(file_get_contents($filepath), true) ?? [];
-
-        $content .= "<div id='{$key}-container' class='{$key}-container'>";
-        $content .= get_content_groups($data, $key);
-        $content .= "</div>";
-    endforeach;
-    return $content;
-}
-
-function get_content_groups(array $data, string $key): string {
-    ob_start();
-
-    render_filter_section($data, $key);
+    if ($level == 1) $keys = array_merge($order, array_diff(array_diff(scandir(DATA_PATH), array('.', '..')), $order));
+    if (!empty($item_order)) $keys = array_merge($item_order, array_diff($keys, $item_order));
     
-    $universal_tags = $data['schema']['universal-tags'] ?? [];
-    $data_key = $data['schema']['key'] ?? "";
-    $groups = $data['groups'] ?? [];
-    $entry_counter = 0;
-    $previous_cols = null;
+    ob_start();
     ?>
-    <section class="<?= $key ?>-group">
-    <?php
-    foreach ($groups as $i => $group):
-        $group_name = $group['name'] ?? '';
-        $group_label = $group['label'] ?? '';
-        $sub_labels = $group['sub-labels'] ?? [];
-        $cols = $group['columns'] ?? [];
-        $grid_template = $group['grid-template-columns'] ?? '';
-        $group_tags = $group['group-tags'] ?? [];
-        $items = $group[$data_key] ?? [];
-        $grid_style = !empty($grid_template) ? " style='grid-template-columns: {$grid_template};'" : "";
-        $show_header = ($cols !== $previous_cols) || !empty($group_label) || !empty($sub_labels);
-        $previous_cols = $cols;
-
-        if($i > 0 && $show_header):
+    <ul class="<?php echo $list_class; ?>" data-depth="<?php echo $level; ?>">
+        <?php 
+            foreach ($keys as $key):
+                $is_category = $nodes[$key]['type'] === 'category';
+                $label = htmlspecialchars($nodes[$key]['label']);
+                $name = $label ? preg_replace('/%[0-9a-fA-F]{2}/', '', str_replace("+", "-", strtolower(urlencode($label)))) : $key;
+                $name = $combined_name ? $combined_name . '-' . $name : $name;
+                $icon_file = $nodes[$key]['icon'] ?? '';
+                $always_expand = $nodes[$key]['always-expand'] ?? false;
+                $is_container = $nodes[$key]['is-container'] ?? true;
         ?>
-        </section>
-        <section class="<?= $key ?>-group">
-        <?php
-        endif;
+            <li class="menu-item <?= $is_container ? '' : 'no-container'; ?>">
+                <?php if ($is_category): ?>
+                    <div class="menu-header">
+                        <button type="button" class="menu-toggle" aria-controls="<?= $name ?>" aria-expanded="false" <?= $always_expand ? "style='display:none;'" : ''; ?>>
+                            <?php if(!$always_expand):?>
+                                <span class="menu-icon ui-icon active svg-expand"></span>
+                            <?php endif; ?>
+                            <span class="menu-label"><?php echo $label; ?></span>
+                            <?php if (!empty($icon_file)): ?>
+                                <span class="menu-icon ui-icon <?= "svg-" . str_replace(".svg", "", $icon_file); ?>"></span>
+                            <?php endif; ?>
+                        </button>
+                    </div>
+                    
+                    <div id="<?= $name ?>" class="menu-content" aria-hidden="<?= $always_expand ? 'false' : 'true' ?>">
+                        <?php echo get_menu($nodes[$key]['children'], $level + 1, $nodes[$key]['order'] ?? [], $name); ?>
+                    </div>
+                <?php else: ?>
+                    <button type="button" class="menu-toggle" aria-controls="<?= $name ?>-group" aria-expanded="false" <?= $always_expand ? "style='display:none;'" : ''; ?>>
+                        <?php if(!$always_expand):?>
+                                <span class="menu-icon ui-icon active svg-expand"></span>
+                            <?php endif; ?>
+                        <span class="menu-label"><?php echo $label; ?></span>
+                        <?php if (!empty($icon_file)): ?>
+                            <span class="menu-icon ui-icon <?= "svg-" . str_replace(".svg", "", $icon_file); ?>"></span>
+                        <?php endif; ?>
+                    </button>
 
-        if($show_header):
-            render_group_header($key, $cols, $group_label, $sub_labels,$grid_style);
-        endif;
-
-        foreach ($items as $entry):
-            $entry_counter++;
-            $combined_tags = array_unique(array_merge($universal_tags, $group_tags, $entry['tags'] ?? []));
-            sort($combined_tags);
-            $id = "{$key}-description-{$entry_counter}";
-            render_row_article($key, $id, $combined_tags, $cols, $entry, $grid_style);
-        endforeach;
-    endforeach;
-    ?>
-    </section>
-    <?php    
+                    <div id="<?= $name ?>-group" class="menu-content <?= $name ?>-group" aria-hidden="<?= $always_expand ? 'false' : 'true' ?>">
+                        <?php echo get_content($nodes[$key], $key, $name); ?>
+                    </div>
+                <?php endif; ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+    <?php
     return ob_get_clean();
 }
 
-function render_filter_section(array $data, string $key): void {
-    global $filter_tags;
-    $used_tags = extract_used_tags($data);
-    ?>
-    <section class="filter-container" data-filter-for="<?= $key ?>-container">
-        <div class="filter-basics">
-            <div>
-                Search: <input type="text" class="filter-search" placeholder="3 letters minimum..." autocomplete="off">
-            </div>
-            <div>
-                <input type="checkbox" class="toggle-bonus-content" autocomplete="off" /> Enable 'Fabula Ultima Bonus' content
-            </div>
-            <div>
-                <input type="checkbox" class="toggle-description-search" autocomplete="off" checked=true /> Search hidden descriptions and tags
-            </div>
-        </div>
-        <!--
-            <select class="filter-mode" autocomplete="off">
-            <option value="" selected disabled>--- Filter Mode ---</option>
-            <option value="0">Match at least one of...</option>
-            <option value="1">Match at least all of...</option>
-        -->
-        </select>
-        <div class="filter-row">
-            <!--
-            <select class="filter-tag-select filter-cat" autocomplete="off">
-                <option value="" selected>-- Select Tag Group --</option>
-                <?php 
-                    foreach ($filter_tags as $group_label => $tags):
-                        if (!array_intersect(array_keys($tags), $used_tags)) continue; 
-                    ?>
-                    <option value="<?= str_replace(" ", "-", strtolower($group_label)) ?>">
-                        <?= $group_label ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
-            <select class="filter-tag-select filter-subcat" autocomplete="off">
-                <option value="" selected>-- Select Tag --</option>
-                <?php foreach ($filter_tags as $group_label => $tags): ?>
-                    <?php
-                        foreach ($tags as $tag_key => $tag_name):
-                            if (!in_array($tag_key, $used_tags)) continue;
-                            $group_key = str_replace(" ", "-", strtolower($group_label));
-                            $datacat = $group_key; 
-                    ?>
-                        <option value="<?= htmlspecialchars($tag_key) ?>" data-filter-cat="<?=$datacat ?>" hidden=true>
-                            <?= htmlspecialchars($tag_name) ?>
-                        </option>
-                    <?php endforeach; ?>
-                <?php endforeach; ?>
-            </select>
-            <button type="button" class="btn-add-filter-row" title="Add filter">&plus;</button>
-            <button type="button" class="btn-remove-filter-row" title="Remove filter">&times;</button>
-            -->
-        </div>
-    </section>
-    <?php
+function get_content(array $entry, string $key, string $combined_name = ''): string {
+    ob_start();
+
+    $counter = 0;
+    $sub_labels = $entry['sub-labels'] ?? [];
+    $cols = $entry['columns'] ?? [];
+    $grid_template = $entry['grid-template-columns'] ?? '';
+    $group_tags = $entry['group-tags'] ?? [];
+    $items = $entry['data'] ?? [];
+    $grid_style = !empty($grid_template) ? " style='grid-template-columns: {$grid_template};'" : "";
+
+    render_group_header($key, $cols, $sub_labels, $grid_style, $combined_name);
+
+    foreach ($items as $item):
+        $counter++;
+        $combined_tags = array_unique(array_merge($group_tags, $item['tags'] ?? []));
+        sort($combined_tags);
+        render_row_article($key, $counter, $combined_tags, $cols, $item, $grid_style, $combined_name);
+    endforeach;
+    
+    return ob_get_clean();
 }
 
-function render_group_header(string $key, array $cols, string $group_label, array $sub_labels, string $grid_style): void {
-    if(!empty($group_label)):
+function render_group_header(string $key, array $cols, array $sub_labels, string $grid_style, string $name = ''): void {
+   if(!empty($sub_labels)):
     ?>
-        <h3 class="<?= $key ?>-group-title"><?= htmlspecialchars($group_label) ?></h3>
-    <?php
-    endif;
-    if(!empty($sub_labels)):
-    ?>
-        <ul class="<?= $key ?>-group-sub-labels">
+        <ul class="<?= $name ?>-group-sub-labels">
             <?php foreach ($sub_labels as $sub_label): ?>
                 <li><?= htmlspecialchars($sub_label) ?></li>
             <?php endforeach; ?>
         </ul>
     <?php
     endif;
+    if(!empty($cols)):
     ?>
-    <div class="<?= $key ?>-list-header"<?= $grid_style ?>>
+    <div class="<?= $name ?>-list-header"<?= $grid_style ?>>
         <div>
-            <button class="<?= $key ?>-multitoggle" type="button" title="Expand All" data-key="<?= $key ?>" aria-expanded="false" aria-controls="article.<?= $key ?>">⊕</button>
+            <button class="<?= $name ?>-multitoggle" type="button" data-key="<?= $key ?>" aria-expanded="false" aria-controls="article.<?= $name ?>"></button>
         </div>
         <?php foreach ($cols as $col): ?>
-            <div class="<?= $key ?>-col-sort" data-sort-by=<?= $key . "-" . $col['field'] ?>><?= htmlspecialchars($col['label']) ?></div>
+            <div class="<?= $name ?>-col-sort" data-sort-by=<?= $name . "-" . $col['field'] ?>><?= htmlspecialchars($col['label']) ?></div>
         <?php endforeach; ?>
-        <div>Link</div>
+        <div></div>
     </div>
     <?php
+    endif;
 }
 
-function render_row_article(string $key, string $id, array $combined_tags, array $cols, array $entry, string $grid_style): void {
+
+function render_row_article(string $key, int $counter, array $combined_tags, array $cols, array $entry, string $grid_style, string $name = ''): void {
+    $aria_str = "";
+    $name = $name ?? $key;
+    $row_id = "{$name}-row-{$counter}";
+    $desc_id = "{$name}-description-{$counter}";
     $class_str = $key;
     $tags_str = htmlspecialchars(implode(', ', $combined_tags));
-    if(in_array("fabula-ultima-bonus", $combined_tags)) $class_str .= " filtered-out";
     $url_params = http_build_query(['cat' => $key, 'search' => strtolower(get_cell_data('name', $entry)), 'open' => true]);
     ?>
-    <article class="<?= $class_str ?>" data-slug="<?= slugify(get_cell_data('name', $entry)) ?>" data-tags="<?= $tags_str ?>">
-        <div class="<?= $key ?>-row"<?= $grid_style ?>>
-            <div class="<?= $key ?>-expand">
+    <article id="<?= $row_id ?>" class="<?= $class_str ?>" <?= $aria_str ?> data-slug="<?= slugify(get_cell_data('name', $entry)) ?>" data-tags="<?= $tags_str ?>">
+        <div class="<?= $name ?>-row" <?= $grid_style ?>>
+            <div class="<?= $name ?>-expand">
                 <?php if(!empty($entry['description'])): ?>
-                    <button class="<?= $key ?>-toggle" type="button" title="Expand" aria-expanded="false" aria-controls="<?= $id ?>">▶</button>
+                    <button class="<?= $name ?>-toggle" type="button" aria-expanded="false" aria-controls="<?= $desc_id ?>">
+                        <span class="menu-icon ui-icon active svg-play-button"></span>
+                    </button>
                 <?php endif; ?>
             </div>
 
@@ -200,31 +185,30 @@ function render_row_article(string $key, string $id, array $combined_tags, array
                 $field_name = $col['field'] ?? $col['class'];
                 $cell_class = $col['class'] ?? $field_name;
             ?>
-                <div class="<?= $key . "-" . $cell_class ?>">
+                <div class="<?= $name . "-" . $cell_class ?>">
                     <?= get_cell_data($field_name, $entry) ?>
                 </div>
             <?php endforeach; ?>
 
-            <div class="<?= $key ?>-url">
-                <button class="<?= $key ?>-link" type="button" title="Copy Link" data-link="<?= BASE_URL . "?" . $url_params ?>">
-                    <svg class="link-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                    </svg>
+            <div class="<?= $name ?>-url">
+                <button class="<?= $name ?>-link" type="button" data-link="<?= BASE_URL . "?" . $url_params ?>">
+                    <span class="menu-icon ui-icon active svg-share"></span>
                 </button>
-                <!--<button class="<?= $key ?>-pin" title="Favorite" type="button" aria-checked="false"></button>-->
+                <!--<button class="<?= $name ?>-pin" title="Favorite" type="button" aria-checked="false"></button>-->
             </div>
         </div>
         
-        <?php render_article_description($key, $id, $entry, $combined_tags); ?>
+        <?php render_article_description($key, $counter, $entry, $combined_tags, $name); ?>
     </article>
     <?php
 }
 
-function render_article_description(string $key, string $id, array $entry, array $combined_tags): void {
+function render_article_description(string $key, int $counter, array $entry, array $combined_tags, string $name = ''): void {
     global $filter_tags;
+    $name = $name ?? $key;
+    $desc_id = "{$name}-description-{$counter}";
     if(!empty($entry['description'])): ?>
-        <div class="<?= $key ?>-description-container hidden" id="<?= $id ?>">
+        <div id="<?= $desc_id ?>" class="<?= $name ?>-description-container" aria-hidden="true">
             <?php if (!empty($entry['additional_requirements'])): ?>
                 <div class="additional-requirements">
                     <strong>Additional Requirements:</strong> <?= get_cell_data('additional_requirements', $entry) ?>
@@ -267,19 +251,58 @@ function render_article_description(string $key, string $id, array $entry, array
     <?php endif;
 }
 
-function render_unicode_symbols(string $text): string {
-    static $symbols = [
-        '🗲' => '<svg class="icon icon-spell" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" style="display:inline-block; vertical-align:-0.125em;" aria-label="Offensive Spell"><path d="M13 2L4.5 13.5H11L8.5 22L19.5 10.5H13L15.5 2Z"/></svg>',
-        '🟅' => '<svg class="icon icon-martial" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" style="display:inline-block; vertical-align:-0.125em;" aria-label="Martial"><path d="M12 2C12 7.5 16.5 12 22 12C16.5 12 12 16.5 12 22C12 16.5 7.5 12 2 12C7.5 12 12 7.5 12 2Z"/></svg>',
-    ];
-    return strtr($text, $symbols);
+function get_filter_section(): string {
+    ob_start();
+    ?>
+    <ul class="filter-root">
+        <li class="filter-item filter-basic">
+            <div class="search-wrapper">
+                <i class="ui-icon active svg-funnel"></i>
+                <input type="text" class="search-basic" placeholder="Three letters minimum..." autocomplete="off">
+                <i class="ui-icon svg-magnifying-glass"></i>
+            </div>
+        </li>
+            <!--<div>
+                <input type="checkbox" class="toggle-bonus-content" autocomplete="off" /> Enable 'Fabula Ultima Bonus' content
+            </div>
+            <div>
+                <input type="checkbox" class="toggle-description-search" autocomplete="off" checked=true /> Search hidden descriptions and tags
+            </div>-->
+        <!--
+            <select class="filter-mode" autocomplete="off">
+            <option value="" selected disabled>--- Filter Mode ---</option>
+            <option value="0">Match at least one of...</option>
+            <option value="1">Match at least all of...</option>
+            </select>
+                -->
+        <!--<div class="filter-row">
+            
+            <select class="filter-tag-select filter-cat" autocomplete="off">
+                                
+            </select>
+            <select class="filter-tag-select filter-subcat" autocomplete="off">
+                                
+            </select>
+            <button type="button" class="btn-add-filter-row" title="Add filter">&plus;</button>
+            <button type="button" class="btn-remove-filter-row" title="Remove filter">&times;</button>
+        </div>-->
+    </ul>
+    <?php
+
+    return ob_get_clean();
 }
 
 function get_cell_data(string $key, array $entry): string {
     if (!isset($entry[$key])) return "";
     $val = $entry[$key];
+
     if (is_array($val)) return empty($val) ? "—" : htmlspecialchars(implode(', ', $val));
-    return render_unicode_symbols((string)$val);
+    if ($key == 'weapons-only' && !empty($entry['weapons-only'])) return "<span class='ui-icon svg-check-mark'></span>";
+    if ($key == 'name'):
+        if (!empty($entry['offensive'])) return $val . " <span class='ui-icon svg-electric'></span>";
+        if (!empty($entry['martial'])) return $val . " <span class='ui-icon svg-diamonds'></span>";
+    endif;
+    return (string)$val;
 }
 
 function slugify(string $text): string {
@@ -302,6 +325,10 @@ function inject_element_symbols(string $html): string {
     return preg_replace_callback($pattern, function ($matches) {
         $word = $matches[0];
         $type = strtolower($word);
-        return sprintf('%s (<i class="elem-icon elem-%s" aria-hidden="true"></i>)', $word,$type);
+        return sprintf('%s (<i class="elem-icon elem-%s"></i>)', $word,$type);
     }, $html);
+}
+
+function debug_print($data) {
+    echo "<pre>" . print_r($data, true) . "</pre>";
 }

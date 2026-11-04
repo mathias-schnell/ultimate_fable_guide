@@ -1,0 +1,56 @@
+{
+  "icon": "pulse",
+  "label": "Symbolist",
+  "sub-labels": ["Permanently increase your maximum Inventory Points by 2."],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Max SL",
+      "field": "max-sl",
+      "class": "max-sl"
+    }
+  ],
+  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+  "group-tags": ["high-fantasy", "symbolist"],
+  "data": [
+    {
+      "name": "Magic Symbols",
+      "class": "Symbolist",
+      "max-sl": 3,
+      "description": "If an ally bears one of your symbols, that ally may perform the Spell action and destroy that symbol to cast a single spell among those you know, as long as it has a total Mind Point cost equal to or lower than (SL × 10) (that ally must still pay the MP cost).",
+      "tags": ["mp", "spell", "symbol"]
+    },
+    {
+      "name": "Mirage",
+      "class": "Symbolist",
+      "max-sl": 1,
+      "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create sight-based illusions.",
+      "tags": ["spell", "ritual"]
+    },
+    {
+      "name": "Personal Touch",
+      "class": "Symbolist",
+      "max-sl": 5,
+      "description": "When a creature you can see that is bearing one of your symbols suffers damage or recovers Hit Points and/or Mind Points, you may have that creature suffer (SL) extra damage or recover (SL) additional Hit Points and/or Mind Points, respectively.",
+      "tags": ["damage", "hp", "mp", "symbol"]
+    },
+    {
+      "name": "Symbolic Connection",
+      "class": "Symbolist",
+      "max-sl": 1,
+      "description": "You always know the exact direction in which to find any creature bearing one of your symbols, as long as that creature is within 2 travel days of your position.",
+      "tags": ["symbol", "travel"]
+    },
+    {
+      "name": "Symbolism",
+      "class": "Symbolist",
+      "max-sl": 5,
+      "description": "Each time you acquire this Skill, you learn two symbols (see next page).\nYou may have up to (SL + 1) symbols active at the same time; if you create more while at your limit, you must first choose and destroy some of your previous symbols.\nYou may perform the Inventory action and spend 2 Inventory Points to create a symbol you have learned and choose one option: apply that symbol to yourself; or apply that symbol to an ally you can see; or perform a free attack with a weapon you have equipped. This attack deals no damage, but you apply a copy of the chosen symbol to each enemy hit by the attack (each copy counts as a separate symbol towards your limit or (SL + 1) active symbols).",
+      "tags": ["attack", "damage", "equipment", "ip", "symbol"]
+    }
+  ]
+}

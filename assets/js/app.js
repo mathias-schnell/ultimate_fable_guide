@@ -52,7 +52,7 @@ const filter_change_actions = {
  * Defining the actions that will happen in the filter area of the app when the search input changes 
  */
 const filter_input_actions = {
-    ".filter-search"                        : debounce(filter_content_by_search),
+    ".search-basic"                        : debounce(filter_content_by_search),
 };
 
 /** 
@@ -82,14 +82,14 @@ function initialize_app() {
     const ctx = {
         nav: container.querySelector('.page-header'),
         content: container.querySelector('.content-container'),
-        filter: container.querySelector('.content-container').querySelector('.filter-container'),
+        filter: container.querySelector('.filter-container'),
     }
 
     bind_navigation_events(ctx);
     bind_filter_events(ctx);
     bind_content_events(ctx);
-    process_url_params(ctx);
-    filter_content_by_search(null, ctx);
+    //process_url_params(ctx);
+    //filter_content_by_search(null, ctx);
 }
 
 /**
@@ -127,8 +127,6 @@ function process_url_params(ctx) {
             const toggle = article.querySelector("[class*='-toggle']");
             if(toggle) toggle_item(toggle, ctx);
         }
-        console.log(slug);
-        console.log(article);
     }
 }
 
@@ -185,7 +183,7 @@ function move_tab_right(target, ctx) {
  * @param {number} wait
  * @returns {Function}
  */
-function debounce(func, wait = 150) {
+function debounce(func, wait = 250) {
     let timeout_id;
     return function (...args) {
         clearTimeout(timeout_id);
@@ -211,13 +209,9 @@ function get_url_params() {
  * Event bindings related to the Filter section of the app.
  */
 function bind_filter_events(ctx) {
-    const filter_containers = ctx.content.querySelectorAll(".filter-container");
-
-    filter_containers.forEach(container => {
-        container.addEventListener("click", dispatcher(filter_click_actions, { nav : ctx.nav, content: ctx.content, filter: container }));
-        container.addEventListener("change", dispatcher(filter_change_actions, { nav : ctx.nav, content: ctx.content, filter: container }));
-        container.addEventListener("input", dispatcher(filter_input_actions, { nav : ctx.nav, content: ctx.content, filter: container }));
-    });
+    ctx.filter.addEventListener("click", dispatcher(filter_click_actions, { nav : ctx.nav, content: ctx.content, filter: ctx.filter }));
+    ctx.filter.addEventListener("change", dispatcher(filter_change_actions, { nav : ctx.nav, content: ctx.content, filter: ctx.filter }));
+    ctx.filter.addEventListener("input", dispatcher(filter_input_actions, { nav : ctx.nav, content: ctx.content, filter: ctx.filter }));
 }
 
 /**
@@ -288,39 +282,48 @@ function remove_filter_row(target, ctx = {}) {
  */
 function filter_content_by_search(target, ctx = {}) {
     if(!ctx || !ctx.content || !ctx.filter) return;
-    const search_input = ctx.filter.querySelector(".filter-search");
+    const search_input = ctx.filter.querySelector(".filter-basic input[type='text']");
     const search_term = search_input?.value.trim().toLowerCase() ?? "";
-    const filter_target = ctx.filter.dataset.filterFor;
-    const bonus_toggle = ctx.filter.querySelector(".toggle-bonus-content").checked;
+    //const bonus_toggle = ctx.filter.querySelector(".toggle-bonus-content").checked;
 
     if(search_term.length < 3) {
-        ctx.content.querySelectorAll(`.${filter_target} article`).forEach(article => {
-            if(!bonus_toggle && article.getAttribute('data-tags').includes('fabula-ultima-bonus')) {
-                article.classList.toggle('filtered-out', true);
-                return;
-            }
-            article.classList.toggle('filtered-out', false);
-        });
-        ctx.content.querySelectorAll(`.${filter_target} section[class*='-group']`).forEach(group => {
-            const filtered = group.querySelectorAll('article.filtered-out').length;
-            const total = group.querySelectorAll('article').length;
-            group.classList.toggle("hidden", filtered === total);
+        let root_items = ctx.content.querySelectorAll("[data-depth='1'] > *");
+        for(let i = 2; i < 10; i++) {
+            if(root_items.length <= 0) break;
+            root_items.forEach(item => {
+                const toggle = item.querySelector('.menu-toggle');
+                toggle_item(toggle, ctx, false, false);
+                item.setAttribute("aria-hidden", false);
+            });
+            root_items = ctx.content.querySelectorAll("[data-depth='" + i + "'] > *");
+        }
+        
+        ctx.content.querySelectorAll("article").forEach(article => {
+            // if(!bonus_toggle && article.getAttribute('data-tags').includes('fabula-ultima-bonus')) {
+            //     article.classList.toggle('filtered-out', true);
+            //     return;
+            // }
+            article.setAttribute('aria-hidden', false);
+            article.closest('.menu-item').setAttribute('aria-hidden', false);
+            const article_toggle = article.querySelector("[class*='toggle']");
+            const menu_toggle = article.closest('.menu-item').querySelector('.menu-toggle');
+            toggle_item(article_toggle, ctx, false, false);
+            toggle_item(menu_toggle, ctx, false, false);
         });
         return;
     };
 
     let search_targets = ["name", "requirements", "summary", "domains", "target", "targets", "duration", "effect", "status-effect", "attribute", "recovery", "event", "suggestions", "accuracy", "damage", "cost", "defense", "m-defense"];
-    if(ctx.filter.querySelector("input.toggle-description-search").checked) {
-        search_targets.push("description");
-        search_targets.push("tag-list");
-    }
+    // if(ctx.filter.querySelector("input.toggle-description-search").checked) {
+    //     search_targets.push("description");
+    //     search_targets.push("tag-list");
+    // }
 
-    ctx.content.querySelectorAll(`.${filter_target} article`).forEach(article => {
-        if (article.getAttribute("aria-pinned") === "true") return;
-        if(!bonus_toggle && article.getAttribute('data-tags').includes('fabula-ultima-bonus')) {
-            article.classList.toggle('filtered-out', true);
-            return;
-        }
+    ctx.content.querySelectorAll("article").forEach(article => {
+        // if(!bonus_toggle && article.getAttribute('data-tags').includes('fabula-ultima-bonus')) {
+        //     article.classList.toggle('filtered-out', true);
+        //     return;
+        // }
 
         const is_match = search_targets.some(target => {
             const target_element = article.querySelector(`[class*="${target}"]`);
@@ -328,14 +331,31 @@ function filter_content_by_search(target, ctx = {}) {
             const target_text = target_element.textContent.trim().toLowerCase();
             return target_text.includes(search_term);
         });
-        article.classList.toggle('filtered-out', !is_match);
+        article.setAttribute('aria-hidden', !is_match);
+        if(is_match) {
+            const article_toggle = article.querySelector("[class*='toggle']");
+            const menu_toggle = article.closest('.menu-item').querySelector('.menu-toggle');
+            toggle_item(article_toggle, ctx, true, false);
+            toggle_item(menu_toggle, ctx, true, false);
+        }
     });
 
-    ctx.content.querySelectorAll(`.${filter_target} section[class*='-group']`).forEach(group => {
-        const filtered = group.querySelectorAll('article.filtered-out').length;
-        const total = group.querySelectorAll('article').length;
-        group.classList.toggle("hidden", filtered === total);
-    });
+    let root_items = ctx.content.querySelectorAll("[data-depth='1'] > *");
+    for(let i = 2; i < 10; i++) {
+        if(root_items.length <= 0) break;
+        root_items.forEach(item => {
+            const visible_items = item.querySelectorAll("article[aria-hidden='false']");
+            const has_visible_items = visible_items.length > 0;
+
+            if(has_visible_items) {
+                const toggle = item.querySelector('.menu-toggle');
+                toggle_item(toggle, ctx, true, false);
+            }
+
+            item.setAttribute("aria-hidden", !has_visible_items);
+        });
+        root_items = ctx.content.querySelectorAll("[data-depth='" + i + "'] > *");
+    }
 }
 
 /**
@@ -459,18 +479,30 @@ function toggle_pin(target, ctx) {
 function toggle_item(target, ctx = {}, forced_state = null, scroll_to = true) {
     if(!target || !ctx || !ctx.content) return;
     const target_id = target.getAttribute('aria-controls');
-    if(!target_id) return;
+    const icon = target.querySelector('.menu-icon');
+    if(!target_id || !icon) return;
     
     const is_expanded = target.getAttribute('aria-expanded') === 'true';
     const new_state = forced_state ?? !is_expanded;
+    const content_el = ctx.content.querySelector('#' + target_id);
 
     target.setAttribute('aria-expanded', String(new_state));
-    if(new_state) {
-        target.setAttribute('title', "Contract");
-    } else {
-        target.setAttribute('title', "Expand");
+
+    if(icon.classList.contains('svg-expand') || icon.classList.contains('svg-contract')) {
+        icon.classList.toggle('svg-expand', !new_state);
+        icon.classList.toggle('svg-contract', new_state);
     }
-    ctx.content.querySelector('#' + target_id)?.classList.toggle('hidden', !new_state);
+
+    if(content_el) {
+        if (new_state) {
+            content_el.removeAttribute('inert');
+            content_el.removeAttribute('aria-hidden');
+        } else {
+            content_el.setAttribute('inert', '');
+            content_el.setAttribute('aria-hidden', 'true');
+        }
+    }
+    
     if(scroll_to && new_state) scroll_to_element(target);
 }
 

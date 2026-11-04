@@ -1,0 +1,167 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Swords",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["sword", "rare"],
+  "data": [
+    {
+      "name": "Zweihänder",
+      "martial": true,
+      "cost": "400 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 14】 physical",
+      "description": "Two-handed • Melee • No Quality.",
+      "tags": ["core", "sword", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare"]
+    },
+    {
+      "name": "Falling Rain",
+      "martial": true,
+      "cost": "450 z",
+      "accuracy": "【DEX + DEX】 + 1",
+      "damage": "【HR + 10】 ice",
+      "description": "Two-handed • Melee • Attacks with this weapon target Magic Defense.",
+      "tags": ["core", "sword", "two-handed", "melee", "ice", "DEX", "martial", "rare", "mdef-target"]
+    },
+    {
+      "name": "Flamberge",
+      "martial": true,
+      "cost": "500 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 10】 fire",
+      "description": "One-handed • Melee • No Quality.",
+      "tags": ["core", "sword", "one-handed", "melee", "fire", "DEX", "MIG", "martial", "rare"]
+    },
+    {
+      "name": "Elegant Edge",
+      "martial": true,
+      "cost": "700 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 6】 physical",
+      "description": "One-handed • Melee • You are immune to enraged.",
+      "tags": ["core", "sword", "one-handed", "melee", "physical", "DEX", "INS", "martial", "rare", "immunity"]
+    },
+    {
+      "name": "Joyeuse",
+      "martial": true,
+      "cost": "900 z",
+      "accuracy": "【MIG + WLP】 + 1",
+      "damage": "【HR + 10】 physical",
+      "description": "One-handed • Melee • You are immune to shaken.",
+      "tags": ["core", "sword", "one-handed", "melee", "physical", "MIG", "WLP", "martial", "rare", "immunity"]
+    },
+    {
+      "name": "Deathblade",
+      "martial": true,
+      "cost": "1000 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 6】 dark",
+      "description": "One-handed • Melee • This weapon deals 5 extra damage if you are in Crisis.",
+      "tags": ["core", "sword", "one-handed", "melee", "dark", "DEX", "MIG", "martial", "rare", "crisis"]
+    },
+    {
+      "name": "Gunsword",
+      "martial": true,
+      "cost": "1000 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 10】 physical",
+      "description": "Two-handed • Melee • This weapon can target flying creatures.",
+      "tags": ["core", "sword", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "flying"]
+    },
+    {
+      "name": "Main Gauche",
+      "martial": true,
+      "cost": "1000 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 6】 physical",
+      "description": "One-handed • Melee • You gain a +1 bonus to Defense.",
+      "tags": ["core", "sword", "one-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "def-bonus"]
+    },
+    {
+      "name": "The Rikizo",
+      "martial": true,
+      "cost": "1200 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 10】 physical",
+      "description": "Two-handed • Melee • Deals 2 extra damage for each Class you have mastered.",
+      "tags": ["core", "sword", "two-handed", "melee", "physical", "DEX", "INS", "martial", "rare", "class-mastery"]
+    },
+    {
+      "name": "Flesh Eater",
+      "martial": true,
+      "cost": "1300 z",
+      "accuracy": "【MIG + MIG】",
+      "damage": "【HR + 10】 poison",
+      "description": "One-handed • Melee • This weapon deals 5 extra damage to weak targets.",
+      "tags": ["core", "sword", "one-handed", "melee", "poison", "MIG", "martial", "rare", "weak"]
+    },
+    {
+      "name": "Kusanagi",
+      "martial": true,
+      "cost": "1500 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 14】 air",
+      "description": "Two-handed • Melee • Attacks with this weapon have multi (2).",
+      "tags": ["core", "sword", "two-handed", "melee", "air", "DEX", "MIG", "martial", "rare", "multi"]
+    },
+    {
+      "name": "Excalibur",
+      "martial": true,
+      "cost": "2300 z",
+      "accuracy": "【MIG + WLP】 + 1",
+      "damage": "【HR + 10】 light",
+      "description": "Two-handed • Melee • You are immune to all status effects.",
+      "tags": ["core", "sword", "two-handed", "melee", "light", "MIG", "WLP", "martial", "rare", "immunity"]
+    },
+    {
+      "name": "Floating Edge",
+      "martial": true,
+      "cost": "1200 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 10】 air",
+      "description": "Two-handed • Melee • Damage dealt by spells you cast with a total MP cost equal to or lower than 20 ignores Immunities and Resistances.",
+      "tags": ["high-fantasy", "rare", "martial", "sword", "two-handed", "melee", "air", "DEX", "INS", "damage", "spell", "mp", "immunity", "resistance"]
+    },
+    {
+      "name": "Norimitsu",
+      "martial": true,
+      "cost": "1400 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 14】 physical",
+      "description": "Two-handed • Melee • Attacks with this weapon deal 6 extra damage to elite or champion-rank enemies.",
+      "tags": ["natural-fantasy", "rare", "martial", "sword", "two-handed", "melee", "physical", "DEX", "INS", "attack", "damage"]
+    },
+    {
+      "name": "Butterfly Dream",
+      "martial": true,
+      "cost": "1300 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 10】 air",
+      "description": "One-handed • Melee • When you hit one or more creatures with this weapon, if your Brainwave Clock has three or more filled sections, you can erase 1.",
+      "tags": ["techno-fantasy", "rare", "martial", "sword", "one-handed", "melee", "air", "DEX", "INS", "clock", "esper"]
+    }
+  ]
+}

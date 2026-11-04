@@ -1,0 +1,23 @@
+{
+  "always-expand": true,
+  "is-container": false,
+  "icon": "",
+  "label": "",
+  "sub-labels": ["Magicannon (Advanced)"],
+  "columns": [
+    {
+      "label": "Summary",
+      "field": "summary",
+      "class": "summary"
+    }
+  ],
+  "grid-template-columns": "0.25fr 6fr 0.25fr",
+  "group-tags": ["core", "tinkerer", "gadgets", "inventory", "ip"],
+  "data": [
+    {
+      "summary": "You may perform the Inventory action and spend 2 Inventory Points to create a magicannon.",
+      "description": "You may perform the Inventory action and spend 2 Inventory Points to create a magicannon (see below) and destroy any magicannon you previously created. If you do so and both your hand slots are empty, you may immediately equip the newly created magicannon and perform a free attack with it. Whenever you create a magicannon, choose what type of damage it deals among air, bolt, earth, fire, ice, or physical.",
+      "tags": ["air", "bolt", "earth", "fire", "ice", "physical"]
+    }
+  ]
+}

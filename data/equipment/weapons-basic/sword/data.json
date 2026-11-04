@@ -1,0 +1,68 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Sword",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["core", "sword", "basic", "martial", "weapon"],
+  "data": [
+    {
+      "name": "Bronze Sword",
+      "martial": true,
+      "cost": "200 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 6】 physical",
+      "description": "One-handed • Melee • No Quality.",
+      "tags": ["one-handed", "melee", "physical", "DEX", "MIG"]
+    },
+    {
+      "name": "Greatsword",
+      "martial": true,
+      "cost": "200 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 10】 physical",
+      "description": "Two-handed • Melee • No Quality.",
+      "tags": ["two-handed", "melee", "physical", "DEX", "MIG"]
+    },
+    {
+      "name": "Katana",
+      "martial": true,
+      "cost": "200 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 10】 physical",
+      "description": "Two-handed • Melee • No Quality.",
+      "tags": ["two-handed", "melee", "physical", "DEX", "INS"]
+    },
+    {
+      "name": "Rapier",
+      "martial": true,
+      "cost": "200 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 6】 physical",
+      "description": "One-handed • Melee • No Quality.",
+      "tags": ["one-handed", "melee", "physical", "DEX", "INS"]
+    }
+  ]
+}

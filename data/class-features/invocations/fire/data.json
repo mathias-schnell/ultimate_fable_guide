@@ -1,0 +1,42 @@
+{
+  "always-expand": true,
+  "is-container": false,
+  "label": "",
+  "sub-labels": ["Fire wellspring"],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Effect",
+      "field": "effect",
+      "class": "effect"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+  "group-tags": ["fire", "invoker", "invocation"],
+  "data": [
+    {
+      "name": "Pyro Blast",
+      "effect": "You deal 20 fire damage to the target.",
+      "tags": ["fire"]
+    },
+    {
+      "name": "Pyro Hex",
+      "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth and ice damage.",
+      "tags": ["earth", "ice"]
+    },
+    {
+      "name": "Burst",
+      "effect": "You deal 10 fire damage to the target, and they suffer shaken.",
+      "tags": ["fire", "shaken"]
+    },
+    {
+      "name": "Smoke",
+      "effect": "The target loses 20 Mind Points and also suffers weak.",
+      "tags": ["mp", "weak"]
+    }
+  ]
+}

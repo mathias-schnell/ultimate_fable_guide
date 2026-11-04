@@ -1,0 +1,167 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Bows",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["bow", "rare"],
+  "data": [
+    {
+      "name": "Hand Crossbow",
+      "martial": false,
+      "cost": "150 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 4】 physical",
+      "description": "One-handed • Ranged • No Quality.",
+      "tags": ["core", "bow", "one-handed", "ranged", "physical", "DEX", "INS", "rare"]
+    },
+    {
+      "name": "Composite Bow",
+      "martial": false,
+      "cost": "250 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 8】 physical",
+      "description": "Two-handed • Ranged • No Quality.",
+      "tags": ["core", "bow", "two-handed", "ranged", "physical", "DEX", "MIG", "rare"]
+    },
+    {
+      "name": "Siegebreaker",
+      "martial": true,
+      "cost": "750 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 12】 physical",
+      "description": "Two-handed • Ranged • Damage dealt by this weapon ignores Resistances.",
+      "tags": ["core", "bow", "two-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "ignore-resistance"]
+    },
+    {
+      "name": "Yoichi",
+      "martial": false,
+      "cost": "900 z",
+      "accuracy": "【DEX + DEX】 + 1",
+      "damage": "【HR + 8】 air",
+      "description": "Two-handed • Ranged • You are immune to shaken.",
+      "tags": ["core", "bow", "two-handed", "ranged", "air", "DEX", "rare", "immunity"]
+    },
+    {
+      "name": "Thundering Bow",
+      "martial": false,
+      "cost": "1000 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 8】 bolt",
+      "description": "Two-handed • Ranged • You gain Resistance to bolt damage.",
+      "tags": ["core", "bow", "two-handed", "ranged", "bolt", "DEX", "rare", "resistance"]
+    },
+    {
+      "name": "Looting Bow",
+      "martial": false,
+      "cost": "1250 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 8】 fire",
+      "description": "Two-handed • Ranged • When you reduce a creature to 0 Hit Points with this weapon, you may regain 2 Inventory Points.",
+      "tags": ["core", "bow", "two-handed", "ranged", "fire", "DEX", "INS", "rare", "inventory-points"]
+    },
+    {
+      "name": "Gatling Crossbow",
+      "martial": true,
+      "cost": "1350 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 12】 physical",
+      "description": "Two-handed • Ranged • Attacks with this weapon have multi (2).",
+      "tags": ["core", "bow", "two-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "multi"]
+    },
+    {
+      "name": "Dragontrap Bow",
+      "martial": true,
+      "cost": "1500 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 12】 earth",
+      "description": "Two-handed • Ranged • When you hit a flying target with this weapon, you may force that target to land immediately.",
+      "tags": ["core", "bow", "two-handed", "ranged", "earth", "DEX", "martial", "rare", "flying"]
+    },
+    {
+      "name": "Frozen Envy",
+      "martial": true,
+      "cost": "1500 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 12】 ice",
+      "description": "Two-handed • Ranged • When you hit one or more creatures with this weapon, if you have at least one Bond of inferiority, you may recover 5 MP.",
+      "tags": ["core", "bow", "two-handed", "ranged", "ice", "DEX", "martial", "rare", "bond", "mp-recovery"]
+    },
+    {
+      "name": "Gorgon Eye",
+      "martial": true,
+      "cost": "2000 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 12】 poison",
+      "description": "Two-handed • Ranged • Each target hit by this weapon suffers slow.",
+      "tags": ["core", "bow", "two-handed", "ranged", "poison", "DEX", "martial", "rare", "slow", "status"]
+    },
+    {
+      "name": "Artemis",
+      "martial": true,
+      "cost": "2100 z",
+      "accuracy": "【DEX + DEX】 + 1",
+      "damage": "【HR + 12】 light",
+      "description": "Two-handed • Ranged • You gain Immunity to dark damage.",
+      "tags": ["core", "bow", "two-handed", "ranged", "light", "DEX", "martial", "rare", "immunity"]
+    },
+    {
+      "name": "Tametomo",
+      "martial": true,
+      "cost": "1500 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 12】 ice",
+      "description": "Two-handed • Ranged • Attacks with this weapon deal 5 extra damage against creatures suffering from slow and/or shaken.",
+      "tags": ["high-fantasy", "rare", "martial", "bow", "two-handed", "ranged", "ice", "DEX", "attack", "damage", "status"]
+    },
+    {
+      "name": "Immernacht",
+      "martial": false,
+      "cost": "1800 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 8】 dark",
+      "description": "Two-handed • Ranged • When a creature includes you among the targets of an offensive spell (🗲), if you are in Crisis, that creature must spend Hit Points instead of Mind Points to cast the spell.",
+      "tags": ["high-fantasy", "rare", "bow", "two-handed", "ranged", "dark", "DEX", "spell", "crisis", "hp", "mp"]
+    },
+    {
+      "name": "Hirundo",
+      "martial": true,
+      "cost": "1800 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 12】 light",
+      "description": "Two-handed • Ranged • After resolving your Encourage Skill, you may perform a free attack with this weapon. If you do, treat your High Roll as 0 when calculating damage dealt by this attack.",
+      "tags": ["natural-fantasy", "rare", "martial", "bow", "two-handed", "ranged", "light", "DEX", "skill", "orator", "attack", "damage"]
+    },
+    {
+      "name": "Carbon Bow",
+      "martial": false,
+      "cost": "800 z",
+      "accuracy": "【DEX + DEX】 + 1",
+      "damage": "【HR + 8】 physical",
+      "description": "Two-handed • Ranged • Attacks with this weapon treat the Defense of each target as being equal to their current Dexterity die size.",
+      "tags": ["techno-fantasy", "rare", "bow", "two-handed", "ranged", "physical", "DEX", "attack", "defense"]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Firearm",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["core", "firearm", "basic", "martial", "weapon"],
+  "data": [
+    {
+      "name": "Pistol",
+      "martial": true,
+      "cost": "250 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Ranged • No Quality.",
+      "tags": ["one-handed", "ranged", "physical", "DEX", "INS"]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "always-expand": true,
+  "is-container": false,
+  "label": "",
+  "sub-labels": ["Tone"],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Effect",
+      "field": "effect",
+      "class": "effect"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+  "group-tags": ["chanter", "high-fantasy", "verse"],
+  "data": [
+    {
+      "name": "Calm",
+      "effect": "Each target recovers (key recovery) equal to (10 + twice your current Willpower die size). This amount increases by 10 if you are level 20 or higher, or by 20 if you are level 40 or higher. If this tone causes MP recovery, it has no effect on the character who sings it.",
+      "tags": ["WLP", "hp", "mp"]
+    },
+    {
+      "name": "Energetic",
+      "effect": "Until the start of your next turn, when a target succeeds on a Check that includes (key Attribute) and that Check allows them to advance or turn back a Clock, they may fill or erase an additional section of that Clock.",
+      "tags": ["clock"]
+    },
+    {
+      "name": "Frantic",
+      "effect": "You deal an amount of (key type) damage equal to twice your current Willpower die to each target. This tone deals 5 extra damage if you are level 20 or higher, or 10 extra damage if you are level 40 or higher.",
+      "tags": ["WLP"]
+    },
+    {
+      "name": "Haunting",
+      "effect": "Each target suffers (key status effect). Each target also loses Resistance to (key type) damage (if they have it) until the start of your next turn, and cannot gain Resistance to that damage type.",
+      "tags": ["resistance"]
+    },
+    {
+      "name": "Lively",
+      "effect": "Each target treats their (key Attribute) as being one die size higher (up to a maximum of d12) until the start of your next turn.",
+      "tags": ["DEX", "INS", "MIG", "WLP"]
+    },
+    {
+      "name": "Menacing",
+      "effect": "The first time each target suffers damage before the start of your next turn, that damage becomes (key type). This can trigger once for each target of the verse, separately.",
+      "tags": []
+    },
+    {
+      "name": "Solemn",
+      "effect": "Each target recovers from (key status effect). Each target also gains Resistance to (key type) damage until the start of your next turn.",
+      "tags": ["resistance", "dazed", "shaken", "slow", "weak", "enraged", "poisoned"]
+    }
+  ]
+}

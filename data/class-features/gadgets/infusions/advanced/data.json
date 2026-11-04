@@ -1,0 +1,43 @@
+{
+  "always-expand": true,
+  "is-container": false,
+  "icon": "",
+  "label": "",
+  "sub-labels": ["Advanced"],
+  "columns": [
+    {
+      "label": "Infusion",
+      "field": "infusion",
+      "class": "infusion"
+    },
+    {
+      "label": "Effect",
+      "field": "effect",
+      "class": "effect"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+  "group-tags": ["core", "tinkerer", "gadgets", "inventory", "ip"],
+  "data": [
+    {
+      "infusion": "Cyclone",
+      "effect": "The attack deals 5 extra damage, and its damage becomes air.",
+      "tags": ["air"]
+    },
+    {
+      "infusion": "Exorcism",
+      "effect": "The attack deals 5 extra damage, and its damage becomes light.",
+      "tags": ["light"]
+    },
+    {
+      "infusion": "Seismic",
+      "effect": "The attack deals 5 extra damage, and its damage becomes earth.",
+      "tags": ["earth"]
+    },
+    {
+      "infusion": "Shadow",
+      "effect": "The attack deals 5 extra damage, and its damage becomes dark.",
+      "tags": ["dark"]
+    }
+  ]
+}

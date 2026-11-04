@@ -1,0 +1,33 @@
+{
+  "always-expand": true,
+  "is-container": false,
+  "icon": "",
+  "label": "",
+  "sub-labels": ["Superior"],
+  "columns": [
+    {
+      "label": "Infusion",
+      "field": "infusion",
+      "class": "infusion"
+    },
+    {
+      "label": "Effect",
+      "field": "effect",
+      "class": "effect"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+  "group-tags": ["core", "tinkerer", "gadgets", "inventory", "ip"],
+  "data": [
+    {
+      "infusion": "Vampire",
+      "effect": "Choose one option: you recover an amount of HP equal to half the HP loss suffered by the target of the attack; or you recover an amount of MP equal to half the MP loss suffered by the target of the attack. This infusion can only be used if the attack targeted a single creature.",
+      "tags": ["hp", "mp"]
+    },
+    {
+      "infusion": "Venom",
+      "effect": "The attack deals 5 extra damage, its damage becomes poison, and each creature hit by the attack suffers poisoned.",
+      "tags": ["poison", "poisoned"]
+    }
+  ]
+}

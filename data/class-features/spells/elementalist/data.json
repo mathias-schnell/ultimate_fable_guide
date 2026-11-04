@@ -1,0 +1,149 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Elementalist",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "MP",
+      "field": "mp",
+      "class": "mp"
+    },
+    {
+      "label": "Target",
+      "field": "target",
+      "class": "target"
+    },
+    {
+      "label": "Duration",
+      "field": "duration",
+      "class": "duration"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["core", "elementalist", "spell"],
+  "data": [
+    {
+      "name": "Boulder",
+      "offensive": true,
+      "mp": "20",
+      "target": "One creature",
+      "duration": "Instantaneous",
+      "description": "You summon a colossal block of stone and send it straight towards your enemy. You deal (HR + 25) earth damage to the target; this damage ignores Resistances.",
+      "tags": ["earth", "ignore", "resistance"]
+    },
+    {
+      "name": "Elemental Shroud",
+      "offensive": false,
+      "mp": "5 × T",
+      "target": "Up to three creatures",
+      "duration": "Scene",
+      "description": "You weave magical energy and protect the targets from the fury of the elements. Choose a damage type: air, bolt, earth, fire or ice. Until this spell ends, each target gains Resistance to the chosen damage type.",
+      "tags": ["air", "bolt", "earth", "fire", "ice", "resistance"]
+    },
+    {
+      "name": "Elemental Weapon",
+      "offensive": false,
+      "mp": "10",
+      "target": "One equipped weapon",
+      "duration": "Scene",
+      "description": "You imbue a weapon with elemental energy. Choose a damage type: air, bolt, earth, fire, or ice. Until this spell ends, all damage dealt by the weapon becomes of the chosen damage type. If you have that weapon equipped while you cast this spell, you may perform a free attack with it as part of the same action.\nThis spell can only be cast on a weapon equipped by a willing creature.",
+      "tags": ["air", "bolt", "earth", "fire", "free-attack", "ice", "weapon"]
+    },
+    {
+      "name": "Flare",
+      "offensive": true,
+      "mp": "20",
+      "target": "One creature",
+      "duration": "Instantaneous",
+      "description": "You channel a single ray of fire towards your foe, its temperature so high that it will pierce through most defenses. You deal (HR + 25) fire damage to the target; this damage ignores Resistances.",
+      "tags": ["fire", "ignore", "resistance"]
+    },
+    {
+      "name": "Fulgur",
+      "offensive": true,
+      "mp": "10 × T",
+      "target": "Up to three creatures",
+      "duration": "Instantaneous",
+      "description": "You weave electricity into a wave of crackling bolts. You deal (HR + 15) bolt damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers dazed.",
+      "tags": ["bolt", "dazed", "multi"]
+    },
+    {
+      "name": "Glacies",
+      "offensive": true,
+      "mp": "10 × T",
+      "target": "Up to three creatures",
+      "duration": "Instantaneous",
+      "description": "You coat your foes under a thick layer of frost. You deal (HR + 15) ice damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers slow.",
+      "tags": ["ice", "slow"]
+    },
+    {
+      "name": "Iceberg",
+      "offensive": true,
+      "mp": "20",
+      "target": "One creature",
+      "duration": "Instantaneous",
+      "description": "A pillar of ice magic envelops your foe, dropping their temperature to critical levels. You deal (HR + 25) ice damage to the target; this damage ignores Resistances.",
+      "tags": ["ice", "ignore", "resistance"]
+    },
+    {
+      "name": "Ignis",
+      "offensive": true,
+      "mp": "10 × T",
+      "target": "Up to three creatures",
+      "duration": "Instantaneous",
+      "description": "You unleash a searing barrage against your foes, conjuring flames out of thin air. You deal (HR + 15) fire damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers shaken.",
+      "tags": ["fire", "shaken"]
+    },
+    {
+      "name": "Soaring Strike",
+      "offensive": false,
+      "mp": "10",
+      "target": "Self",
+      "duration": "Instantaneous",
+      "description": "The wind carries your strikes across the battlefield. You may perform a free attack with a melee weapon you have equipped; this attack may target creatures that cannot normally be targeted by melee attacks.\nIf you used a weapon belonging to the brawling, spear, or sword Category for this attack, it deals 5 extra damage.\nIf you hit a flying target with this attack, you may force them to land immediately.",
+      "tags": ["brawling", "flying", "free-attack", "melee", "spear", "sword"]
+    },
+    {
+      "name": "Terra",
+      "offensive": true,
+      "mp": "10 × T",
+      "target": "Up to three creatures",
+      "duration": "Instantaneous",
+      "description": "Spires of jagged rock erupt from the ground beneath your foes, closing around them. You deal (HR + 15) earth damage to each target hit by this spell. This spell cannot target creatures that are flying, floating, falling, or otherwise in mid-air.\nOpportunity: each target hit by this spell performs one fewer action on their next turn (to a minimum of 0 actions).",
+      "tags": ["earth", "fewer-actions", "flying", "multi"]
+    },
+    {
+      "name": "Thunderbolt",
+      "offensive": true,
+      "mp": "20",
+      "target": "One creature",
+      "duration": "Instantaneous",
+      "description": "You send an arrow of overcharged lightning striking at your foe. You deal (HR + 25) bolt damage to the target; this damage ignores Resistances.",
+      "tags": ["bolt", "ignore", "resistance"]
+    },
+    {
+      "name": "Ventus",
+      "offensive": true,
+      "mp": "10 × T",
+      "target": "Up to three creatures",
+      "duration": "Instantaneous",
+      "description": "You summon the power of winds against your enemy. You deal (HR + 15) air damage to each target hit by this spell.\nOpportunity: each flying target hit by this spell is forced to land immediately.",
+      "tags": ["air", "flying", "multi"]
+    },
+    {
+      "name": "Vortex",
+      "offensive": true,
+      "mp": "20",
+      "target": "One creature",
+      "duration": "Instantaneous",
+      "description": "You slash through your foe with high-pressure wind. You deal (HR + 25) air damage to the target; this damage ignores Resistances.",
+      "tags": ["air", "ignore", "resistance"]
+    }
+  ]
+}

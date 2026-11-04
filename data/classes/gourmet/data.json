@@ -1,0 +1,56 @@
+{
+  "icon": "knife-fork",
+  "label": "Gourmet",
+  "sub-labels": ["Permanently increase your maximum Inventory Points by 2.", "You may start Projects to create unique foods and drinks; they are always consumable and their area is based on the number and type of creatures you need to nourish."],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Max SL",
+      "field": "max-sl",
+      "class": "max-sl"
+    }
+  ],
+  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+  "group-tags": ["natural-fantasy", "gourmet"],
+  "data": [
+    {
+      "name": "Cooking",
+      "class": "Gourmet",
+      "max-sl": 5,
+      "description": "When you rest inside a settlement, you gain (SL) ingredients (see next page).\nYou may use an action and combine 2 or 3 ingredients to prepare a delicacy (see next page) and choose one option: you apply its effects to yourself or an ally you can see; or you perform a free attack with a weapon you have equipped. This attack deals no damage, but you apply the delicacy’s effects to each enemy hit by the attack.\nYou may carry up to 10 + (SL × 5) ingredients, and they will never spoil until you use them; if you take this Skill during character creation, you begin play with ten ingredients with random tastes.",
+      "tags": ["attack", "damage", "equipment", "ingredient"]
+    },
+    {
+      "name": "Knife and Fork",
+      "class": "Gourmet",
+      "max-sl": 1,
+      "description": "When you perform the free attack granted by the Cooking Skill, if you combined no more than 2 ingredients, you may have the attack deal damage as normal. If you do, you treat your High Roll (HR) as 0 when calculating damage dealt by this attack.",
+      "tags": ["attack", "damage", "ingredient", "skill"]
+    },
+    {
+      "name": "Made with Love",
+      "class": "Gourmet",
+      "max-sl": 3,
+      "description": "When you use the Cooking Skill and choose to apply the effects of the delicacy to yourself or an ally you can see, you may spend up to (SL × 10) MP. For every 10 MP you spend this way, apply the delicacy’s effects to an additional ally you can see.",
+      "tags": ["mp", "skill"]
+    },
+    {
+      "name": "Salt and Pepper",
+      "class": "Gourmet",
+      "max-sl": 1,
+      "description": "When you prepare a delicacy, you may spend 2 Inventory Points: if you do, change the taste of one ingredient to a different taste of your choice.",
+      "tags": ["ingredient", "ip"]
+    },
+    {
+      "name": "Traveling Cook",
+      "class": "Gourmet",
+      "max-sl": 3,
+      "description": "After each travel roll, if you acquired the Cooking Skill, you gain (SL × 2) ingredients.",
+      "tags": ["ingredient", "skill", "travel"]
+    }
+  ]
+}

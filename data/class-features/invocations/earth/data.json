@@ -1,0 +1,42 @@
+{
+  "always-expand": true,
+  "is-container": false,
+  "label": "",
+  "sub-labels": ["Earth wellspring"],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Effect",
+      "field": "effect",
+      "class": "effect"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+  "group-tags": ["earth", "invoker", "invocation"],
+  "data": [
+    {
+      "name": "Geo Blast",
+      "effect": "You deal 20 earth damage to the target.",
+      "tags": ["earth"]
+    },
+    {
+      "name": "Geo Hex",
+      "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air and ice damage.",
+      "tags": ["air", "ice"]
+    },
+    {
+      "name": "Growth",
+      "effect": "The target recovers 30 Hit Points.",
+      "tags": ["hp"]
+    },
+    {
+      "name": "Quicksand",
+      "effect": "You deal 10 earth damage to the target, and they suffer slow.",
+      "tags": ["earth", "slow"]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "icon": "checked-shield",
+  "label": "Guardian",
+  "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial armor and martial shields."],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Max SL",
+      "field": "max-sl",
+      "class": "max-sl"
+    }
+  ],
+  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+  "group-tags": ["core", "guardian"],
+  "data": [
+    {
+      "name": "Bodyguard",
+      "class": "Guardian",
+      "max-sl": 1,
+      "description": "If you perform the Guard action and choose to provide cover to an ally, that creature gains Resistance to all damage types until the start of your next turn.",
+      "tags": ["damage", "guard", "guardian", "resistance"]
+    },
+    {
+      "name": "Defensive Mastery",
+      "class": "Guardian",
+      "max-sl": 5,
+      "description": "As long as you have a shield or martial armor equipped, all damage you suffer is reduced by (SL) (applied before damage Affinities).",
+      "tags": ["damage", "equipment", "guardian"]
+    },
+    {
+      "name": "Dual Shieldbearer",
+      "class": "Guardian",
+      "max-sl": 1,
+      "description": "You may now equip a shield in your main hand slot. As long as you have two shields equipped, you gain the sub-labels of both items and may treat them as the following combined two-handed melee brawling weapon: Twin Shields (MIG + MIG) (HR + 5) physical. Deals extra damage equal to your (SL) in Defensive Mastery (above).",
+      "tags": ["brawling", "damage", "equipment", "guardian", "melee", "MIG", "physical", "two-handed"]
+    },
+    {
+      "name": "Fortress",
+      "class": "Guardian",
+      "max-sl": 5,
+      "description": "Permanently increase your maximum Hit Points by (SL × 3).",
+      "tags": ["guardian", "hp"]
+    },
+    {
+      "name": "Protect",
+      "class": "Guardian",
+      "max-sl": 1,
+      "description": "When another creature is threatened by an attack, spell or other danger, you may take their place (any Checks that are part of the danger will be performed against you; you may declare the use of this Skill before or after the Checks have been made). If the danger already affected you, it affects you twice (resolve both instances separately); you also cannot protect multiple creatures from the same danger. If you use this Skill during a conflict, you cannot use it again until the start of your next turn.",
+      "tags": ["attack", "guardian", "spell"]
+    }
+  ]
+}

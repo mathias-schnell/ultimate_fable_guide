@@ -1,0 +1,143 @@
+{
+  "label": "Weapon Modules",
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 2.5fr 1.75fr 1.75fr 0.25fr",
+  "group-tags": [],
+  "data": [
+    {
+      "name": "Arcane",
+      "accuracy": "【DEX + WLP】",
+      "damage": "【HR + 8】 physical",
+      "description": "Arcane • Melee • No Qualities.",
+      "tags": ["arcane", "DEX", "melee", "physical", "WLP"]
+    },
+    {
+      "name": "Axe",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 12】 physical",
+      "description": "Heavy • Melee • No Qualities.",
+      "tags": ["DEX", "heavy", "INS", "melee", "physical"]
+    },
+    {
+      "name": "Blade",
+      "accuracy": "【DEX + INS】 +1",
+      "damage": "【HR + 6】 physical",
+      "description": "Dagger • Melee • No Qualities.",
+      "tags": ["dagger", "DEX", "INS", "melee", "physical"]
+    },
+    {
+      "name": "Bow",
+      "accuracy": "【DEX + INS】 +1",
+      "damage": "【HR + 12】 physical",
+      "description": "Bow • Ranged • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+      "tags": ["bow", "DEX", "INS", "physical", "ranged"]
+    },
+    {
+      "name": "Cannon",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 14】 physical",
+      "description": "Firearm • Ranged • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+      "tags": ["DEX", "firearm", "INS", "physical", "ranged"]
+    },
+    {
+      "name": "Claw",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 8】 physical",
+      "description": "Brawling • Melee • No Qualities. This weapon can be used to interact with the scene as if it were a free hand.",
+      "tags": ["brawling", "DEX", "INS", "melee", "physical"]
+    },
+    {
+      "name": "Claymore",
+      "accuracy": "【DEX + INS】 +1",
+      "damage": "【HR + 14】 physical",
+      "description": "Sword • Melee • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+      "tags": ["DEX", "INS", "melee", "physical", "sword"]
+    },
+    {
+      "name": "Esoteric",
+      "accuracy": "【DEX + WLP】",
+      "damage": "【HR + 12】 physical",
+      "description": "Arcane • Melee • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+      "tags": ["arcane", "DEX", "melee", "physical", "WLP"]
+    },
+    {
+      "name": "Flail",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 10】 physical",
+      "description": "Flail • Melee • No Qualities.",
+      "tags": ["DEX", "flail", "INS", "melee", "physical"]
+    },
+    {
+      "name": "Flamer",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 8】 fire",
+      "description": "Firearm • Ranged • No Qualities.",
+      "tags": ["DEX", "fire", "firearm", "INS", "ranged"]
+    },
+    {
+      "name": "Machine Gun",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 10】 physical",
+      "description": "Firearm • Ranged • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled. Additionally, when you perform the Attack action and attack with this weapon module, you may perform two separate attacks instead of one (against the same target or against different targets). If you do, both attacks follow the rules for two-weapon fighting: each attack loses the multi property and cannot gain it, and you treat the High Roll of each Accuracy Check as being equal to 0 when determining damage.",
+      "tags": ["attack", "DEX", "firearm", "INS", "multi", "physical", "ranged"]
+    },
+    {
+      "name": "Rifle",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 10】 physical",
+      "description": "Firearm • Ranged • No Qualities.",
+      "tags": ["DEX", "firearm", "INS", "physical", "ranged"]
+    },
+    {
+      "name": "Scythe",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 16】 physical",
+      "description": "Heavy • Melee • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+      "tags": ["DEX", "heavy", "INS", "melee", "physical"]
+    },
+    {
+      "name": "Shield",
+      "accuracy": "—",
+      "damage": "—",
+      "description": "Shield • Exoskeleton and Mecha frames only. No Qualities. While driving this personal vehicle, you gain a +2 bonus to Defense and a +2 bonus to Magic Defense. Additionally, this weapon module does not count as a “weapon”: instead, it counts as an equipped shield. This module cannot be equipped in your main hand slot, unless you have acquired the Dual Shieldbearer Skill. If you have, your Twin Shields deal 2 extra damage (this is cumulative if you have two Shield modules enabled at the same time).",
+      "tags": ["defense", "guardian", "magic-defense", "shield", "skill"]
+    },
+    {
+      "name": "Spear",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 10】 physical",
+      "description": "Spear • Melee • No Qualities.",
+      "tags": ["DEX", "INS", "melee", "physical", "spear"]
+    },
+    {
+      "name": "Sword",
+      "accuracy": "【DEX + INS】 +1",
+      "damage": "【HR + 8】 physical",
+      "description": "Sword • Melee • No Qualities.",
+      "tags": ["DEX", "INS", "melee", "physical", "sword"]
+    },
+    {
+      "name": "Trident",
+      "accuracy": "【DEX + INS】 +1",
+      "damage": "【HR + 14】 physical",
+      "description": "Spear • Melee • No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
+      "tags": ["DEX", "INS", "melee", "physical", "spear"]
+    }
+  ]
+}

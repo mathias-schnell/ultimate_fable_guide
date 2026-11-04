@@ -1,0 +1,176 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Arcane",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["arcane", "rare"],
+  "data": [
+    {
+      "name": "Blessed Mace",
+      "martial": false,
+      "cost": "200 z",
+      "accuracy": "【WLP + WLP】",
+      "damage": "【HR + 2】 light",
+      "description": "One-handed • Melee • No Quality.",
+      "tags": ["core", "arcane", "one-handed", "melee", "light", "WLP", "rare"]
+    },
+    {
+      "name": "Encyclopedia",
+      "martial": false,
+      "cost": "600 z",
+      "accuracy": "【INS + INS】",
+      "damage": "【HR + 6】 physical",
+      "description": "Two-handed • Melee • You are immune to dazed.",
+      "tags": ["core", "arcane", "two-handed", "melee", "physical", "INS", "rare", "immunity"]
+    },
+    {
+      "name": "Ars Goetia",
+      "martial": false,
+      "cost": "800 z",
+      "accuracy": "【INS + INS】",
+      "damage": "【HR + 6】 light",
+      "description": "Two-handed • Melee • You gain a +2 bonus to Magic Checks against demons, as well as a +2 bonus to Opposed Checks against demons.",
+      "tags": ["core", "arcane", "two-handed", "melee", "light", "INS", "rare", "demon"]
+    },
+    {
+      "name": "Ferula",
+      "martial": false,
+      "cost": "1050 z",
+      "accuracy": "【INS + WLP】",
+      "damage": "【HR + 2】 physical",
+      "description": "One-handed • Melee • You gain a +1 bonus to your Magic Checks.",
+      "tags": ["core", "arcane", "one-handed", "melee", "physical", "INS", "WLP", "rare", "magic-check"]
+    },
+    {
+      "name": "Tyrant’s Scepter",
+      "martial": false,
+      "cost": "1200 z",
+      "accuracy": "【WLP + WLP】",
+      "damage": "【HR + 6】 dark",
+      "description": "Two-handed • Melee • Whenever you hit one or more creatures with this weapon, each of them loses 10 Mind Points.",
+      "tags": ["core", "arcane", "two-handed", "melee", "dark", "WLP", "rare", "mp-loss"]
+    },
+    {
+      "name": "Cultes des Ghoules",
+      "martial": false,
+      "cost": "1400 z",
+      "accuracy": "【INS + INS】",
+      "damage": "【HR + 6】 air",
+      "description": "One-handed • Melee • When you hit one or more creatures with this weapon, you may recover 5 Hit Points.",
+      "tags": ["core", "arcane", "one-handed", "melee", "air", "INS", "rare", "healing"]
+    },
+    {
+      "name": "Caduceus",
+      "martial": false,
+      "cost": "1600 z",
+      "accuracy": "【WLP + WLP】",
+      "damage": "【HR + 6】 physical",
+      "description": "Two-handed • Melee • Spells you cast whose effects restore Hit Points restore 5 additional Hit Points.",
+      "tags": ["core", "arcane", "two-handed", "melee", "physical", "WLP", "rare", "healing"]
+    },
+    {
+      "name": "Necronomicon",
+      "martial": false,
+      "cost": "1800 z",
+      "accuracy": "【INS + WLP】 + 1",
+      "damage": "【HR + 6】 dark",
+      "description": "Two-handed • Melee • When you hit one or more creatures with an offensive spell (🗲), each of them suffers shaken.",
+      "tags": ["core", "arcane", "two-handed", "melee", "dark", "INS", "WLP", "rare", "shaken", "status"]
+    },
+    {
+      "name": "Yellow Book",
+      "martial": false,
+      "cost": "2100 z",
+      "accuracy": "【INS + INS】",
+      "damage": "【HR + 6】 physical",
+      "description": "Two-handed • Melee • Spells you cast deal 5 extra damage.",
+      "tags": ["core", "arcane", "two-handed", "melee", "physical", "INS", "rare", "spell-damage"]
+    },
+    {
+      "name": "Rafflesia Staff",
+      "martial": false,
+      "cost": "2200 z",
+      "accuracy": "【WLP + WLP】",
+      "damage": "【HR + 6】 poison",
+      "description": "Two-handed • Melee • When you hit one or more creatures with an offensive spell (🗲), each of them suffers poisoned.",
+      "tags": ["core", "arcane", "two-handed", "melee", "poison", "WLP", "rare", "poisoned", "status"]
+    },
+    {
+      "name": "Bestiarium",
+      "martial": false,
+      "cost": "1200 z",
+      "accuracy": "【INS + INS】",
+      "damage": "【HR + 6】 light",
+      "description": "Two-handed • Melee • You gain a +2 bonus to Magic Checks targeting the Magic Defense of creatures of which you know two or more Traits. The bonus also applies to Opposed Check against those creatures.",
+      "tags": ["high-fantasy", "rare", "arcane", "two-handed", "melee", "light", "INS", "spell", "magic-defense"]
+    },
+    {
+      "name": "Chiaroscuro",
+      "martial": true,
+      "cost": "1200 z",
+      "accuracy": "【INS + WLP】",
+      "damage": "【HR + 10】 physical",
+      "description": "Two-handed • Melee • When you apply a symbol to one or more creatures, you may choose one: each of those creatures recovers 5 Hit Points, or each of those creatures loses 5 Hit Points.",
+      "tags": ["high-fantasy", "rare", "martial", "arcane", "two-handed", "melee", "physical", "INS", "WLP", "symbol", "hp"]
+    },
+    {
+      "name": "Camera Obscura",
+      "martial": false,
+      "cost": "600 z",
+      "accuracy": "【INS + INS】",
+      "damage": "【HR + 6】 dark",
+      "description": "Two-handed • Melee • When you obtain a result of 13 or higher in a Check made to examine the profile of one or more enemies that you can see, if you have acquired the Spell Mimic Skill, you can choose one of those enemies. If the chosen enemy knows one or more spells you may learn one of them as a Chimerist spell.",
+      "tags": ["natural-fantasy", "rare", "arcane", "two-handed", "melee", "dark", "INS", "skill", "spell", "chimerist"]
+    },
+    {
+      "name": "Bronze Libra",
+      "martial": false,
+      "cost": "900 z",
+      "accuracy": "【INS + INS】",
+      "damage": "【HR + 6】 earth",
+      "description": "Two-handed • Melee • After you perform a Magic Check, if the value of one die is a multiple of the value of the other, you regain Inventory Points equal to (half your Skill Level in Winds of Trade).",
+      "tags": ["natural-fantasy", "rare", "arcane", "two-handed", "melee", "earth", "INS", "spell", "ip", "merchant", "skill"]
+    },
+    {
+      "name": "Pinwheel Rod",
+      "martial": false,
+      "cost": "1600 z",
+      "accuracy": "【WLP + WLP】",
+      "damage": "【HR + 6】 air",
+      "description": "Two-handed • Melee • As long as one of your spells or invocations deals air damage, it deals 10 extra damage.",
+      "tags": ["natural-fantasy", "rare", "arcane", "two-handed", "melee", "air", "WLP", "spell", "invocation", "damage"]
+    },
+    {
+      "name": "Interface Ring",
+      "martial": false,
+      "cost": "1000 z",
+      "accuracy": "【WLP + WLP】",
+      "damage": "【HR + 6】 physical",
+      "description": "One-handed • Melee • You halve the Mind Point cost of all Rituals tied to the soul network that you perform through the Cognitive Ghost Quirk or the Navigator Skill.",
+      "tags": ["techno-fantasy", "rare", "arcane", "one-handed", "melee", "physical", "WLP", "mp", "spell", "skill", "esper"]
+    }
+  ]
+}

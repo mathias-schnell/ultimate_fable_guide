@@ -1,0 +1,8 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "icon": "",
+  "label": "Magitech",
+  "sub-labels": [],
+  "order": ["basic", "advanced", "superior"]
+}

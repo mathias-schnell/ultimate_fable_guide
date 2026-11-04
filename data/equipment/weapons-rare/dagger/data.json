@@ -1,0 +1,158 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Daggers",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["dagger", "rare"],
+  "data": [
+    {
+      "name": "Latrodectus",
+      "martial": false,
+      "cost": "250 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 4】 poison",
+      "description": "One-handed • Melee • No Quality.",
+      "tags": ["core", "dagger", "one-handed", "melee", "poison", "DEX", "INS", "rare"]
+    },
+    {
+      "name": "Heart Knife",
+      "martial": false,
+      "cost": "550 z",
+      "accuracy": "【DEX + WLP】",
+      "damage": "【HR + 4】 light",
+      "description": "One-handed • Melee • This weapon deals 5 extra damage to demons.",
+      "tags": ["core", "dagger", "one-handed", "melee", "light", "DEX", "WLP", "rare", "demon"]
+    },
+    {
+      "name": "Atom Slicer",
+      "martial": false,
+      "cost": "600 z",
+      "accuracy": "【DEX + DEX】 + 1",
+      "damage": "【HR + 4】 physical",
+      "description": "One-handed • Melee • Damage dealt by this weapon ignores Resistances.",
+      "tags": ["core", "dagger", "one-handed", "melee", "physical", "DEX", "rare", "ignore-resistance"]
+    },
+    {
+      "name": "Silent Edge",
+      "martial": false,
+      "cost": "700 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 4】 air",
+      "description": "One-handed • Melee • You are immune to slow.",
+      "tags": ["core", "dagger", "one-handed", "melee", "air", "DEX", "rare", "immunity"]
+    },
+    {
+      "name": "Spell Sever",
+      "martial": false,
+      "cost": "850 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 4】 dark",
+      "description": "One-handed • Melee • When you hit a creature with this weapon, if the attack had a single target, you may choose a single spell with a duration of “Scene” affecting the target and end its effects on that creature.",
+      "tags": ["core", "dagger", "one-handed", "melee", "dark", "DEX", "INS", "rare", "dispell"]
+    },
+    {
+      "name": "Assassin’s Blade",
+      "martial": false,
+      "cost": "1000 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 4】 physical",
+      "description": "One-handed • Melee • This weapon deals 5 extra damage to enemies in Crisis.",
+      "tags": ["core", "dagger", "one-handed", "melee", "physical", "DEX", "INS", "rare", "crisis"]
+    },
+    {
+      "name": "Gourmet Cutter",
+      "martial": false,
+      "cost": "1350 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Melee • When you hit one or more creatures with this weapon, you may recover 5 Hit Points.",
+      "tags": ["core", "dagger", "one-handed", "melee", "physical", "DEX", "INS", "rare", "healing"]
+    },
+    {
+      "name": "Barbed Knife",
+      "martial": false,
+      "cost": "1650 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 4】 physical",
+      "description": "One-handed • Melee • Each target hit by this weapon suffers shaken.",
+      "tags": ["core", "dagger", "one-handed", "melee", "physical", "DEX", "INS", "rare", "shaken", "status"]
+    },
+    {
+      "name": "Cold Finger",
+      "martial": false,
+      "cost": "1950 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 8】 ice",
+      "description": "One-handed • Melee • Each target hit by this weapon suffers weak.",
+      "tags": ["core", "dagger", "one-handed", "melee", "ice", "DEX", "INS", "rare", "weak", "status"]
+    },
+    {
+      "name": "Hornet",
+      "martial": false,
+      "cost": "2200 z",
+      "accuracy": "【DEX + DEX】 + 1",
+      "damage": "【HR + 4】 physical",
+      "description": "One-handed • Melee • Attacks with this weapon have multi (3).",
+      "tags": ["core", "dagger", "one-handed", "melee", "physical", "DEX", "rare", "multi"]
+    },
+    {
+      "name": "Frantic Nail",
+      "martial": false,
+      "cost": "2450 z",
+      "accuracy": "【INS + INS】 + 1",
+      "damage": "【HR + 8】 fire",
+      "description": "One-handed • Melee • Each target hit by this weapon suffers enraged.",
+      "tags": ["core", "dagger", "one-handed", "melee", "fire", "INS", "rare", "enraged", "status"]
+    },
+    {
+      "name": "Midas",
+      "martial": false,
+      "cost": "900 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 4】 dark",
+      "description": "One-handed • Melee • When you use the Soul Steal Skill successfully against an elite or champion rank creature, the value of their soul treasure increases by 100 zenit.",
+      "tags": ["high-fantasy", "rare", "dagger", "one-handed", "melee", "dark", "DEX", "INS", "skill", "rogue", "zenit"]
+    },
+    {
+      "name": "Viper Bone",
+      "martial": false,
+      "cost": "1200 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 8】 poison",
+      "description": "One-handed • Melee • Attacks with this weapon deal 5 extra damage as long as it’s not your turn.",
+      "tags": ["natural-fantasy", "rare", "dagger", "one-handed", "melee", "poison", "DEX", "INS", "attack", "damage"]
+    },
+    {
+      "name": "Azotophore",
+      "martial": false,
+      "cost": "1400 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 8】 ice",
+      "description": "One-handed • Melee • Spells you cast that deal ice damage will deal 5 extra damage.",
+      "tags": ["techno-fantasy", "rare", "dagger", "one-handed", "melee", "ice", "DEX", "INS", "spell", "damage"]
+    }
+  ]
+}

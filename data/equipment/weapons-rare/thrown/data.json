@@ -1,0 +1,167 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Thrown",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["thrown", "rare"],
+  "data": [
+    {
+      "name": "Crescent Edge",
+      "martial": false,
+      "cost": "350 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 4】 light",
+      "description": "One-handed • Ranged • Attacks with this weapon target Magic Defense.",
+      "tags": ["core", "thrown", "one-handed", "ranged", "light", "DEX", "INS", "rare", "mdef-target"]
+    },
+    {
+      "name": "Meteor Star",
+      "martial": false,
+      "cost": "350 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 4】 fire",
+      "description": "One-handed • Ranged • No Quality.",
+      "tags": ["core", "thrown", "one-handed", "ranged", "fire", "DEX", "INS", "rare"]
+    },
+    {
+      "name": "Throwing Axe",
+      "martial": false,
+      "cost": "350 z",
+      "accuracy": "【DEX + MIG】",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Ranged • No Quality.",
+      "tags": ["core", "thrown", "one-handed", "ranged", "physical", "DEX", "MIG", "rare"]
+    },
+    {
+      "name": "Boomerang",
+      "martial": false,
+      "cost": "750 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 4】 physical",
+      "description": "One-handed • Ranged • This weapon deals 5 extra damage to beasts and monsters.",
+      "tags": ["core", "thrown", "one-handed", "ranged", "physical", "DEX", "MIG", "rare", "beast", "monster"]
+    },
+    {
+      "name": "Wind Dancer",
+      "martial": false,
+      "cost": "850 z",
+      "accuracy": "【DEX + WLP】",
+      "damage": "【HR + 8】 air",
+      "description": "One-handed • Ranged • Damage dealt by this weapon ignores Resistances.",
+      "tags": ["core", "thrown", "one-handed", "ranged", "air", "DEX", "WLP", "rare", "ignore-resistance"]
+    },
+    {
+      "name": "Acupuncturer",
+      "martial": false,
+      "cost": "950 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Ranged • You are immune to poisoned.",
+      "tags": ["core", "thrown", "one-handed", "ranged", "physical", "DEX", "INS", "rare", "immunity"]
+    },
+    {
+      "name": "Blue Pinwheel",
+      "martial": false,
+      "cost": "950 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 4】 ice",
+      "description": "One-handed • Ranged • You gain Resistance to ice damage.",
+      "tags": ["core", "thrown", "one-handed", "ranged", "ice", "DEX", "INS", "rare", "resistance"]
+    },
+    {
+      "name": "Crone’s Needle",
+      "martial": false,
+      "cost": "1050 z",
+      "accuracy": "【DEX + INS】 + 1",
+      "damage": "【HR + 4】 earth",
+      "description": "One-handed • Ranged • You gain Resistance to dark damage.",
+      "tags": ["core", "thrown", "one-handed", "ranged", "earth", "DEX", "INS", "rare", "resistance"]
+    },
+    {
+      "name": "Chakram",
+      "martial": false,
+      "cost": "1250 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 4】 physical",
+      "description": "One-handed • Ranged • Attacks with this weapon have multi (2).",
+      "tags": ["core", "thrown", "one-handed", "ranged", "physical", "DEX", "MIG", "rare", "multi"]
+    },
+    {
+      "name": "Vajra",
+      "martial": false,
+      "cost": "2050 z",
+      "accuracy": "【DEX + WLP】 + 1",
+      "damage": "【HR + 8】 bolt",
+      "description": "One-handed • Ranged • Each target hit by this weapon suffers shaken.",
+      "tags": ["core", "thrown", "one-handed", "ranged", "bolt", "DEX", "WLP", "rare", "shaken", "status"]
+    },
+    {
+      "name": "Dark Orbit",
+      "martial": false,
+      "cost": "2250 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 4】 dark",
+      "description": "One-handed • Ranged • You gain a +1 bonus to Defense and Magic Defense.",
+      "tags": ["core", "thrown", "one-handed", "ranged", "dark", "DEX", "INS", "rare", "def-bonus", "mdef-bonus"]
+    },
+    {
+      "name": "Hive Dart",
+      "martial": false,
+      "cost": "2300 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 4】 poison",
+      "description": "One-handed • Ranged • Each target hit by this weapon suffers poisoned.",
+      "tags": ["core", "thrown", "one-handed", "ranged", "poison", "DEX", "rare", "poisoned", "status"]
+    },
+    {
+      "name": "Major Arcana",
+      "martial": false,
+      "cost": "900 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 4】 physical",
+      "description": "One-handed • Ranged • While you are merged with an Arcanum, your Accuracy Checks with this weapon trigger a critical success if both dice show the same number (and it is not a fumble).",
+      "tags": ["high-fantasy", "rare", "thrown", "one-handed", "ranged", "physical", "DEX", "INS", "arcana", "critical", "fumble", "attack"]
+    },
+    {
+      "name": "Ladle",
+      "martial": false,
+      "cost": "500 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Ranged • If you have acquired the Made with Love Skill, treat your Skill Level in it as if it were increased by 1 (up to a maximum of SL 4).",
+      "tags": ["natural-fantasy", "rare", "thrown", "one-handed", "ranged", "physical", "DEX", "INS", "skill", "gourmet"]
+    },
+    {
+      "name": "RNGenerator",
+      "martial": false,
+      "cost": "1200 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 8】 dark",
+      "description": "One-handed • Ranged • When you cast the Gamble spell, if you have the Lucky Seven Skill, you can use it to replace one of the dice you have rolled. This counts as the use of Lucky Seven for the scene.",
+      "tags": ["techno-fantasy", "rare", "thrown", "one-handed", "ranged", "dark", "DEX", "INS", "spell", "skill", "entropist"]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Thrown",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["core", "thrown", "basic", "weapon"],
+  "data": [
+    {
+      "name": "Improvised (Ranged)",
+      "martial": false,
+      "cost": "-",
+      "accuracy": "【DEX + MIG】",
+      "damage": "【HR + 2】 physical",
+      "description": "One-handed • Ranged • Breaks after the attack.",
+      "tags": ["one-handed", "ranged", "physical", "DEX", "MIG"]
+    },
+    {
+      "name": "Shuriken",
+      "martial": false,
+      "cost": "150 z",
+      "accuracy": "【DEX + INS】",
+      "damage": "【HR + 4】 physical",
+      "description": "One-handed • Ranged • No Quality.",
+      "tags": ["one-handed", "ranged", "physical", "DEX", "INS"]
+    }
+  ]
+}

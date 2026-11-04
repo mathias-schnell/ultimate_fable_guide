@@ -1,0 +1,149 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Flails",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["flail", "rare"],
+  "data": [
+    {
+      "name": "Old Whip",
+      "martial": false,
+      "cost": "650 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 8】 physical",
+      "description": "Two-handed • Melee • This weapon deals 5 extra damage to beasts and monsters.",
+      "tags": ["core", "flail", "two-handed", "melee", "physical", "DEX", "rare", "beast", "monster"]
+    },
+    {
+      "name": "Dusk Star",
+      "martial": false,
+      "cost": "750 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 4】 dark",
+      "description": "One-handed • Melee • You are immune to shaken.",
+      "tags": ["core", "flail", "one-handed", "melee", "dark", "DEX", "rare", "immunity"]
+    },
+    {
+      "name": "Witchbane",
+      "martial": false,
+      "cost": "800 z",
+      "accuracy": "【DEX + DEX】 + 1",
+      "damage": "【HR + 8】 physical",
+      "description": "Two-handed • Melee • Damage dealt by this weapon reduces the target’s Mind Points instead of their Hit Points. If the target’s Mind Points reach 0, any excess loss is applied to their Hit Points as normal.",
+      "tags": ["core", "flail", "two-handed", "melee", "physical", "DEX", "rare", "mp-damage"]
+    },
+    {
+      "name": "Salamander",
+      "martial": false,
+      "cost": "1000 z",
+      "accuracy": "【DEX + MIG】",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Melee • You gain Resistance to fire damage.",
+      "tags": ["core", "flail", "one-handed", "melee", "physical", "DEX", "MIG", "rare", "resistance"]
+    },
+    {
+      "name": "Nunchaku",
+      "martial": false,
+      "cost": "1100 z",
+      "accuracy": "【DEX + MIG】",
+      "damage": "【HR + 8】 physical",
+      "description": "One-handed • Melee • You gain a +1 bonus to Defense.",
+      "tags": ["core", "flail", "one-handed", "melee", "physical", "DEX", "MIG", "rare", "def-bonus"]
+    },
+    {
+      "name": "Dominatrix",
+      "martial": false,
+      "cost": "1200 z",
+      "accuracy": "【DEX + WLP】",
+      "damage": "【HR + 8】 fire",
+      "description": "One-handed • Melee • You gain a +2 bonus to Accuracy Checks and Magic Checks against enraged targets.",
+      "tags": ["core", "flail", "one-handed", "melee", "fire", "DEX", "WLP", "rare", "enraged"]
+    },
+    {
+      "name": "Whipblade",
+      "martial": true,
+      "cost": "1400 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 12】 physical",
+      "description": "Two-handed • Melee • Attacks with this weapon have multi (2).",
+      "tags": ["core", "flail", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "multi"]
+    },
+    {
+      "name": "Silk Wire",
+      "martial": true,
+      "cost": "1450 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 12】 physical",
+      "description": "Two-handed • Melee • You gain Resistance to physical damage.",
+      "tags": ["core", "flail", "two-handed", "melee", "physical", "DEX", "martial", "rare", "resistance"]
+    },
+    {
+      "name": "Kusarigama",
+      "martial": false,
+      "cost": "1650 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 8】 physical",
+      "description": "Two-handed • Melee • Each target hit by this weapon suffers slow.",
+      "tags": ["core", "flail", "two-handed", "melee", "physical", "DEX", "rare", "slow", "status"]
+    },
+    {
+      "name": "Jormungand",
+      "martial": true,
+      "cost": "2400 z",
+      "accuracy": "【DEX + MIG】",
+      "damage": "【HR + 12】 dark",
+      "description": "Two-handed • Melee • Attacks with this weapon have multi (3).",
+      "tags": ["core", "flail", "two-handed", "melee", "dark", "DEX", "MIG", "martial", "rare", "multi"]
+    },
+    {
+      "name": "Koi Whisker",
+      "martial": true,
+      "cost": "2800 z",
+      "accuracy": "【DEX + WLP】",
+      "damage": "【HR + 12】 physical",
+      "description": "Two-handed • Melee • You gain Immunity to dark and light damage.",
+      "tags": ["core", "flail", "two-handed", "melee", "physical", "DEX", "WLP", "martial", "rare", "immunity"]
+    },
+    {
+      "name": "Chimera Tail",
+      "martial": true,
+      "cost": "900 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 12】 physical",
+      "description": "Two-handed • Melee • Attacks with this weapon deal 1 extra damage for every different creature Species among those you learned your known Chimerist spells from. Spells learned and later forgotten do not count.",
+      "tags": ["high-fantasy", "rare", "martial", "flail", "two-handed", "melee", "physical", "DEX", "damage", "chimerist", "spell"]
+    },
+    {
+      "name": "Connector",
+      "martial": false,
+      "cost": "600 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 8】 physical",
+      "description": "Two-handed • Melee • You may ignore the MP cost of the Magitech Override Skill.",
+      "tags": ["techno-fantasy", "rare", "flail", "two-handed", "melee", "physical", "DEX", "mp", "skill", "tinkerer"]
+    }
+  ]
+}

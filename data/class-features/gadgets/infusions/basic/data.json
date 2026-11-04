@@ -1,0 +1,38 @@
+{
+  "always-expand": true,
+  "is-container": false,
+  "icon": "",
+  "label": "",
+  "sub-labels": ["Basic"],
+  "columns": [
+    {
+      "label": "Infusion",
+      "field": "infusion",
+      "class": "infusion"
+    },
+    {
+      "label": "Effect",
+      "field": "effect",
+      "class": "effect"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+  "group-tags": ["core", "tinkerer","gadgets", "inventory", "ip"],
+  "data": [
+    {
+      "infusion": "Cryo",
+      "effect": "The attack deals 5 extra damage, and its damage becomes ice.",
+      "tags": ["ice"]
+    },
+    {
+      "infusion": "Pyro",
+      "effect": "The attack deals 5 extra damage, and its damage becomes fire.",
+      "tags": ["fire"]
+    },
+    {
+      "infusion": "Volt",
+      "effect": "The attack deals 5 extra damage, and its damage becomes bolt.",
+      "tags": ["bolt"]
+    }
+  ]
+}

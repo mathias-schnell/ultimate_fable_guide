@@ -1,0 +1,163 @@
+{
+  "label": "Quirks",
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Summary",
+      "field": "summary",
+      "class": "summary"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+  "group-tags": ["natural-fantasy"],
+  "data": [
+    {
+      "name": "Ancient Weapon",
+      "summary": "Start with a unique rare custom weapon worth up to 1200 zenit that cannot be lost or destroyed without your permission.",
+      "description": "Together with the rest of your group, create a rare custom weapon worth 1200 zenit or less. This weapon should have an especially unusual and technological appearance; it can be a good idea to make it a firearm weapon and determine that similar items are rare and mysterious in your world.\n\nOnce per session (approximately four hours of play), the Game Master may give you 1 Fabula Point in order to have sudden complications arise due to the unique nature of the weapon (such as strange machines reacting to its presence, or monsters drawn to the special energy it emits). However, the weapon cannot be destroyed, damaged, lost or stolen without your permission as a Player.",
+      "tags": ["equipment", "weapon", "rare", "fabula-point", "natural-fantasy"]
+    },
+    {
+      "name": "Arboreal",
+      "summary": "Sentient plant creature immune to one status effect, vulnerable to one element, with a sunlight-discounted NPC spell.",
+      "description": "Choose a status effect: dazed, enraged, or shaken. You are immune to the chosen status effect. However, you also gain Vulnerability to a damage type of your choice: air, bolt, earth, fire, or ice.\n\nYou also learn one NPC spell (you cannot choose Devastation; if a Magic Check is required, use INS + WLP): customize the spell as needed (name, damage type, status effects etc.). When you cast this spell while in sunlight, its total MP cost is reduced by 5 (to a minimum of 0 Mind Points).",
+      "tags": ["plant", "species", "immunity", "vulnerability", "dazed", "enraged", "shaken", "air", "bolt", "earth", "fire", "ice", "spell", "INS", "WLP", "mp", "natural-fantasy"]
+    },
+    {
+      "name": "Big Bro",
+      "summary": "Gain or expand access to Camp Activities, allowing you to perform two activities or duplicate one during Rests.",
+      "description": "If your group's campaign does not make use of the optional rule Camp Activities, your character still gains access to it.\n\nYour character gains access to three Camp Activities instead of only two. If your character gains this Quirk during a campaign that already makes use of Camp Activities, you simply gain access to a single new Camp Activity of your choice.\n\nWhen you choose to perform Camp Activities during a Rest, choose one option: you perform two different Camp Activities, whose effects cannot be applied to the same creature; or you perform the same Camp Activity twice, applying its effects to two different creatures.",
+      "tags": ["travel", "natural-fantasy"]
+    },
+    {
+      "name": "Cursed",
+      "summary": "Trigger fumbles intentionally for extra Fabula Points and gain a Heroic Skill once the curse threat is resolved.",
+      "description": "When you acquire this Quirk, describe the nature of your curse and tie it to one of the threats present in your world. Once this threat is resolved, you will finally have a chance to break free from the curse - describe how you expect this to happen.\n\nWhen you are about to perform a Check, you may instead describe how your curse gets in the way and automatically roll a fumble (both dice are treated as if you had rolled a 1 on them). If you do, you receive 2 Fabula Points instead of 1, and generate an opportunity as normal.\n\nIf you ever manage to break the curse, immediately gain a Heroic Skill of your choice (you may even choose a Heroic Skill whose requirements you do not satisfy, unless they include a Skill you don't have). This includes choosing a Heroic Skill for a Class you do not have.",
+      "tags": ["fumble", "fabula-point", "natural-fantasy"]
+    },
+    {
+      "name": "Elemental Soul",
+      "summary": "Gain elemental Resistance, matching damage conversion, and the ability to perform elemental Rituals.",
+      "description": "Choose your elemental damage type: air, bolt, earth, fire, or ice. You gain Resistance to the chosen damage type; additionally, whenever you deal damage, you may change its type so that it matches your elemental damage type. However, you also gain Vulnerability to a different damage type chosen among those five.\n\nYou also gain the ability to perform Rituals of the Elementalism discipline, but only if those Rituals manipulate your chosen element (respectively air, electricity, earth/rock, fire, and ice/water).",
+      "tags": ["air", "bolt", "earth", "fire", "ice", "resistance", "vulnerability", "ritual", "natural-fantasy"]
+    },
+    {
+      "name": "Flight",
+      "summary": "Fly to avoid melee attacks and target airborne foes, lost while in Crisis or hit by air, bolt, or ice damage.",
+      "description": "You are able to fly. In addition to the obvious advantage in mobility, your melee attacks can target flying creatures and you cannot be targeted by melee attacks unless the attacker is flying or is somehow able to reach flying targets.\n\nWhile in Crisis or unable to fly freely (such as when you're inside a vehicle designed for human-sized creatures or in a narrow corridor), you lose all benefits granted by this Quirk. Additionally, when you suffer air, bolt or ice damage during a conflict scene, you lose the benefits of this Quirk until the start of your next turn.",
+      "tags": ["flying", "melee", "crisis", "air", "bolt", "ice", "natural-fantasy"]
+    },
+    {
+      "name": "Mysterious Grimoire",
+      "summary": "Consult an indestructible grimoire for travel answers, eventually gaining an NPC spellcaster or a powerful Heroic Skill.",
+      "description": "As long as you have this Quirk, your grimoire is an indestructible artifact that cannot be lost or stolen unless as a consequence of Surrender.\n\nWhen your group stumbles upon a danger or discovery after a travel roll, you may ask the Game Master a single question concerning that danger or discovery (you may ask it immediately or save it for later); the Game Master answers truthfully and describes how the answer appears on your grimoire.\n\nOnce your grimoire has answered 10 questions, it almost shared all of its knowledge with you: choose one of the following options:\n- Awakened Consciousness: you lose this Quirk and the grimoire turns into a Non-Player Character. They do not take part in Checks or conflicts, but learn two spells from the Elementalist, Entropist, or Spiritist lists and cast one per conflict at round end for 0 MP.\n- Hidden Magic: you lose this Quirk, but acquire a Heroic Skill of your choice among Comet, Extra Spells, Hope, and Volcano (ignoring requirements).\n\nWhatever your choice, the grimoire reveals key clues regarding a threat in your world.",
+      "tags": ["ask-question", "travel", "spell", "mp", "natural-fantasy"]
+    },
+    {
+      "name": "Outcast Fairy",
+      "summary": "Talk to animals, elementals, and plants, cast a magic spell, perform fairy Rituals, and gain FP from a unique weakness.",
+      "description": "You may always communicate with any creature belonging to the beast, elemental, and plant Species.\n\nYou learn one spell of your choice among those found in the Elementalist, Entropist, and Spiritist lists; additionally, you gain the ability to perform Rituals whose effects fall within the Ritualism discipline, and you may use these Rituals to transport creatures in and out of the Realm of Fairies.\n\nHowever, you also possess a unique weakness typical of fairies: decide it together with your group. Once per session (approximately four hours of play), the Game Master may give you 1 Fabula Point in order to have sudden complications arise due to this weakness or have you automatically fail a Check (they must do so before the Check is performed; the Check's Result and High Roll are both treated as being 0).",
+      "tags": ["beast", "elemental", "plant", "species", "spell", "ritual", "fabula-point", "natural-fantasy"]
+    },
+    {
+      "name": "Robot",
+      "summary": "Construct body with poison Immunity, earth Resistance, machine Check bonuses, and no need to breathe or eat.",
+      "description": "You are not considered a living creature and gain Immunity to poison damage and Resistance to earth damage. You are also immune to the poisoned status effect.\n\nYou do not need to breathe, eat or drink, but you still follow the normal rules for resting; you also recover Hit Points and recover from status effects as normal.\n\nYou gain a +2 bonus to all Checks you perform to examine or interact with machines, technology and constructs (except for Accuracy Checks and Magic Checks).",
+      "tags": ["construct", "species", "immunity", "resistance", "poison", "earth", "poisoned", "hp", "natural-fantasy"]
+    },
+    {
+      "name": "Stubborn Scion",
+      "summary": "Start with +1000 bonus zenit and two loyal bodyguards who can halve damage, answer questions, or boost elemental shards.",
+      "description": "If you choose this Quirk during character creation, increase your initial savings by 1000 zenit.\n\nAdditionally, you are accompanied by two fiercely loyal bodyguards. They offer the following benefits:\n- Be careful! When you suffer damage, you may halve it.\n- Here is the information you previously requested. During a Rest, you may ask the Game Master one question; they will answer truthfully.\n- Stay down, I'll take care of this! When you create an elemental shard, you may have it deal extra damage equal to (5 + half your level).\n\nWhenever you make use of one of these benefits, your bodyguards suffer 1d6 Fatigue Points; as long as they have 10 or more Fatigue Points, you cannot rely on them. Fatigue is shared between bodyguards. At the end of each session, your bodyguards recover from 1d6 Fatigue Points (to a minimum of zero).",
+      "tags": ["zenit", "ask-question", "natural-fantasy"]
+    },
+    {
+      "name": "Survivor",
+      "summary": "Gain +5 max HP and MP, plus martial gear proficiency, a new spell, or +2 max IP.",
+      "description": "Permanently increase your maximum Hit Points and maximum Mind Points by 5.\n\nChoose one option: gain the ability to equip martial melee and ranged weapons, martial armor, and martial shields; or learn any one spell from the Elementalist or Spiritist lists; or permanently increase your maximum Inventory Points by 2.",
+      "tags": ["hp", "mp", "ip", "martial", "weapon", "armor", "shield", "spell", "natural-fantasy"]
+    },
+    {
+      "name": "The Beast Who Spoke",
+      "summary": "Unarmored beast character with +2 Defense/Magic Defense, unable to equip standard items, with custom choices.",
+      "description": "You may not equip any items, with the exception of accessories and weapon and armor modules. However, as long as your armor slot is empty, you gain a +2 bonus to Defense and a +2 bonus to Magic Defense.\n\nYou also gain two benefits of your choice among the following:\n- You may also equip custom weapons.\n- You learn one NPC spell (you cannot choose the spell Devastation; if a Magic Check is required, use MIG + WLP).\n- Your attacks with unarmed strikes deal 6 extra damage. This amount increases to 10 extra damage if you are level 30 or higher.",
+      "tags": ["accessory", "module", "defense", "magic-defense", "weapon", "spell", "MIG", "WLP", "attack", "natural-fantasy"]
+    },
+    {
+      "name": "The Long Dream",
+      "summary": "Ignore HP, MP, or FP costs, but advance toward a permanent natural farewell after repeated uses.",
+      "description": "At the end of each session (approximately four hours of play), before assigning XP, roll 2d20. If you roll a number equal to or lower than your current character level, the last farewell approaches.\n\nWhen a rule or ability requires you to spend Hit Points, Mind Points, or Fabula Points, you may instead ignore that cost. If you do, the last farewell approaches.\n\nAt the end of a scene where you ignored a cost as described above, if the last farewell has approached at least 10 times already, the moment has come for you to leave the world of humans. You shall forever return to your original form as a natural and inanimate object. A character whose last farewell has come is considered dead in game terms, and cannot be brought back. However, from now on all Player Characters in the campaign will receive 1 additional Fabula Point at the start of each session.",
+      "tags": ["hp", "mp", "fabula-point", "natural-fantasy"]
+    },
+    {
+      "name": "Traveling Workshop",
+      "summary": "Requires Gourmet or Tinkerer; grants a group land vehicle and the ability to find project materials with flaws.",
+      "description": "You may only choose this Quirk if your character has acquired one or more Classes among Gourmet and Tinkerer.\n\nYou obtain a land vehicle. This vehicle is big enough to accommodate you and the rest of your group, plus two or three guests, but unfit for combat.\n\nIf a Project requires a special ingredient or material, you may spend 1 Fabula Point to suddenly stumble upon something similar in your workshop; if you do, the invention must have a terrible flaw.",
+      "tags": ["gourmet", "tinkerer", "vehicle", "fabula-point", "natural-fantasy"]
+    },
+    {
+      "name": "Underchild",
+      "summary": "Once per Rest, ignore HP, MP, or IP costs up to 100 during conflicts; uncover answers about ancient tech.",
+      "description": "When a rule or ability requires you to spend 100 or fewer Hit Points, Mind Points, or Inventory Points during a conflict, you may instead ignore that cost. If you do, you cannot ignore a cost this way again until the end of your next Rest. Describe where this intense but ephemeral energy stems from!\n\nAdditionally, when you encounter a contraption or creature connected to ancient technology or to a ruins' past, you may choose one option: ask the Game Master its purpose; or ask the Game Master what can activate it; or ask the Game Master what can deactivate it. The Game Master answers truthfully and you describe a brief flashback that reveals the answer.\n\nAfter you receive an answer this way for the sixth time, you remember the real reason why you had been left dormant underground, and gain key clues regarding threats in your world.",
+      "tags": ["hp", "mp", "ip", "ask-question", "natural-fantasy"]
+    },
+    {
+      "name": "Fallen Angel",
+      "summary": "Fallen celestial dwelling among monsters, resistant to dark and light damage with special angelic quirks and item or spell options.",
+      "description": "You once dwelled among celestial spheres, basking in the glory of light... but now, you find yourself in this realm of monsters and darkness. Are you here for atonement, to bring light among shadows, or to spy on those who conspire against Heaven? Since your arrival, which of your prejudices were put to the test? Towards which other character have you begun experiencing unexpected feelings?\n\nYou are Resistant to dark and light damage.\n\nChoose an option: you gain a rare item worth 1000 zenit or less; or you learn a single Spiritist spell of your choice; or you permanently increase your Mind Points by 10.\n\nOnce per session (approximately four hours of play), the Game Master can give you 1 Fabula Point to introduce unexpected complications caused by your angelic nature (for instance, some creatures or artifacts could react in strange ways to your presence, and you might draw the ire of infernal creatures).",
+      "tags": ["resistance", "dark", "light", "fabula-point", "mp", "spiritist", "fabula-ultima-bonus"]
+    },
+    {
+      "name": "Monster Gang",
+      "summary": "Play as a collective group of monsters led by a designated leader with unique swarm combat rules and vulnerabilities.",
+      "description": "There are demon overlords; there are aeons-old mummies, powerful vampires, and even fallen angels; there are less notorious fiends, but still, respected. And then there's a bunch of... you. You're not that great, honestly, and all look kinda... samey? But there's really a LOT of you. Why are you at the bottom of the food chain? What's your common cause? Who is your leader, and how can someone easily tell them apart?\n\nYour Player Character is not a single entity, but rather a group of monsters led by a leader who usually speaks for everyone. You're still treated as a single creature and follow all the normal rules, with some exceptions:\n- Hit Points: when you lose HP, describe how members of the gang are defeated or slain; when you recover them, describe how they rejoin the battle or gather new recruits. When you Surrender, you may describe the leader's death and explain which member of the gang replaces them; if you Sacrifice yourself, the gang will disband forever, but shall be remembered with great respect.\n- All for One: when you deal damage to a creature, if that creature is not a swarm, you deal 5 extra damage to that creature.\n- One for All: you are Resistant to damage dealt by sources that deal damage only to you, but you are Vulnerable to damage dealt by sources that also deal damage to one or more other creatures at the same time. Damage with no type ignores these Affinities as normal.",
+      "tags": ["resistance", "vulnerability", "hp", "fabula-ultima-bonus"]
+    },
+    {
+      "name": "Nether Delinquent",
+      "summary": "Kind-hearted student at the Infernal Academy accumulating Delinquency Points through good deeds to unlock rewards or expulsion.",
+      "description": "You attend the prestigious Infernal Academy, where the most promising evil minds are nurtured in an atmosphere of constant chaos. However, you represent a dreadful stain on the institution's reputation: you are... good. Detestably kind, well-mannered, you show up to lessons on time, and with your homework done. Why are you like this? Do you simply wish to stand out from the other students, or did you make a promise to someone? What dark side of your personality have you kept hidden?\n\nAfter you rest in a location, choose one option: describe how you made it better (such as picking up garbage in the park, helping an old lady or joining a charity campaign) and obtain 1d6 Delinquency Points; or describe how you indulge in a moment of selfishness, gain 1 Fabula Point and lose all accumulated Delinquency Points.\n\nWhen you deal damage to a Villain or suffer damage from a Villain, you deal or suffer extra damage equal to your current Delinquency Points, respectively.\n\nWhen you cause one or more allies to recover Hit Points and/or Mind Points, each of those allies recovers additional Hit Points and/or Mind Points equal to your current Delinquency Points, respectively.\n\nAt the end of each session (approximately four hours of play), if you have 10 or more Delinquency Points, you receive a Demerit and lose all accumulated Delinquency Points; then, if you have received 3 or more total Demerits, you are expelled from the Academy: you lose this Quirk, gain 3 Fabula Points, and receive a Heroic Skill of your choice (you may even choose a Heroic Skill whose requirements you do not satisfy, unless they include a Skill you don't have). This includes choosing a Heroic Skill for a Class you do not have.",
+      "tags": ["fabula-point", "hp", "mp", "fabula-ultima-bonus"]
+    },
+    {
+      "name": "Overthrown Monarch",
+      "summary": "Displaced heir to the Demon Monarch throne dealing extra damage to soldiers, possessing a secret weakness tied to insecurities.",
+      "description": "You were destined to inherit the role of Demon Monarch, but things didn't go as planned. More specifically, looks like there's at least a dozen self-proclaimed heirs, almost all of them stronger and more influential than you are. How do you intend to reclaim your throne? Who stayed at your side, and who betrayed you? Is anyone aware of your secret weakness? How does said weakness represent your insecurities?\n\nYou deal 5 extra damage to soldier-rank enemies. Additionally, when you perform an Opposed Check against an elite or champion-rank enemy, you trigger a critical success if both dice show the same number (and it is not a fumble).\n\nHowever, you possess a secret weakness: decide what it is together with your group, and connect it to a past event your character is ashamed of or has yet to confront, process, and overcome.\n\nWhenever you fail a Check while your secret weakness is present on the scene, you must automatically reveal it to everyone around you, and treat both dice as if they showed a value of 1, thus triggering a fumble (this also means the dice cannot be rerolled and you will immediately gain 1 Fabula Point).\n\nIf you confront and process the event at the root of your secret weakness, you lose the penalty to Checks described above; additionally, from now on the strength of your Bonds is always treated as being 1 point higher.",
+      "tags": ["demon", "critical", "fumble", "fabula-point", "bond", "fabula-ultima-bonus"]
+    },
+    {
+      "name": "Scion of Witchcraft",
+      "summary": "Heir to an ancient witch lineage with elemental Absorption, type-locked damage conversion, and specialized ritualism.",
+      "description": "You belong to an ancient lineage of witches, tied to a particular power source and regarded with fear and suspicion by humans. How does your lineage manifest in you? What trouble did it cause? Who wishes to exploit your power?\n\nChoose one damage type among air, bolt, dark, earth, fire, ice, and poison. You gain Absorption to the chosen damage type; additionally, whenever you deal damage of a type other than physical, that damage automatically becomes of the chosen type and its damage type cannot be changed nor lost (this effect has priority over any other rule in the game). However, you are also Vulnerable to a different damage type based on the one you have chosen.\n\nYou also gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to manipulate the element corresponding to the chosen damage type, provided it is present on the scene.",
+      "tags": ["absorption", "vulnerability", "ritual", "fabula-ultima-bonus"]
+    },
+    {
+      "name": "Stubborn Skeptic",
+      "summary": "Disbelieving skeptic rolling dice to ignore game effects controlled by others while accumulating Suspicion Points toward awakening.",
+      "description": "This tale of monsters, demons, and magicks sounds like videogame nonsense. You're probably dreaming, or someone hypnotized you. Maybe it's a prank! Surely it won't turn out you're a wandering soul from Purgatory, or that you stumbled into a magical portal. You gotta admit though, your memories are a fair bit jumbled.\n\nIf you are about to receive the effects of an attack, a spell, a Skill, or any other game effect controlled by another creature (be it a beneficial effect, or a negative effect), you must roll 1d6:\n- 1-4: the effects apply as normal, and you gain 1 Suspicion Point.\n- 5-6: you disbelieve the effects, and thus do not receive them.\n\nAt the end of each session (approximately four hours of play), before assigning XP, roll 2d20. If you roll equal to or lower than your current character level, you gain 1 Suspicion Point. Then, if you have 20 or more Suspicion Points, you remember how you arrived here and the Game Master chooses one option: you remember a key clue regarding a threat that is present in your world; or you remember the existence of a new threat and receive a key clue about it.\n\nWhen you regain your memories, a strange power awakens within you: you lose this Quirk and receive a Heroic Skill of your choice.",
+      "tags": ["fabula-ultima-bonus"]
+    },
+    {
+      "name": "Superboss (Supposedly)",
+      "summary": "Transform into a terrifying Second Form and Final Form during crisis moments, gaining massive combat boosts and multi attacks.",
+      "description": "You can transform into a colossus capable of turning entire cities to ash and strike terror in the hearts of all gamers. Or at least, this is what you say. Where do you come from? What do your transformations look like? Which aspect of your Final Form™ embarrasses you to the point you can't ever bring yourself to use it?\n\nWhen you enter Crisis for the first time during a conflict scene, you may take on your Second Form™ until the end of the scene. While in your Second Form™, you gain all of the following benefits:\n- Your attacks gain the multi (2) property.\n- On your turn, you treat all HP and MP costs as being reduced by 5 (minimum 0).\n\nWhen you fall to 0 Hit Points, if you are in your Second Form™ and have one or more Bonds with a strength of 3 or higher, you may erase 2 emotions from one of those Bonds. If you do, you recover 999 Hit Points and 999 Mind Points and enter your Final Form™ until the end of the scene. While in your Final Form™, you keep all benefits of your Second Form™, as well as the following benefits and penalties:\n- You gain a +4 bonus to Opposed Checks based on brute force, and you deal 5 extra damage to creatures belonging to the humanoid and demon species.\n- If you fall to 0 Hit Points again and can Sacrifice yourself, you must do so.",
+      "tags": ["crisis", "multi", "hp", "mp", "bond", "humanoid", "demon", "fabula-ultima-bonus"]
+    },
+    {
+      "name": "The Promise That Binds You",
+      "summary": "Entity of untold power bound by a promise not to use true strength, able to break it to obliterate targets and retire as a Supreme Villain.",
+      "description": "You were once an entity of untold power, who could sow death and destruction with a snap of fingers. But you made a promise: you shall never again use your true strength. Who did you give your word to? Are they still alive? What terrible tragedy were you unable to prevent due to this promise?\n\nYou may only choose this Quirk if your character's Theme is Guilt or Duty, and your Theme cannot change as long as you still have this Quirk.\n\nYou permanently increase your maximum Hit Points and maximum Mind Points by 5, and also learn a spell of your choice among Cursed Breath, Life Theft, and Mind Theft.\n\nWhen you deal damage to one or more creatures, you may choose to break your promise: you deal exactly 999 damage to each of them and have that damage ignore Resistance, Immunity, and Absorption; if one or more Villains are among those creatures, they are no longer Villains and lose all Ultima Points. Once you break your promise, your Player Character becomes a Supreme Villain and you create a new character.",
+      "tags": ["hp", "mp", "spell", "resistance", "immunity", "absorption", "fabula-ultima-bonus"]
+    },
+    {
+      "name": "(Un?)faithful Servant",
+      "summary": "Dedicated right-hand to another player character liege, offering automatic support checks and accumulating Reliance Points toward challenge or betrayal.",
+      "description": "You are the right arm to another character, someone who could be destined to great things but is in dire need of your help, as well as showing a frequent lack of common sense. Which promise, debt, or oath binds you? What is your disposition towards them? What do you think is their most significant flaw? Have you ever thought you might be the one who deserves that spot? What secret have you kept from them?\n\nWhen you gain this Quirk, choose another Player Character: that character becomes your liege. You both create a Bond towards each other; your Bond has one emotion chosen between loyalty and mistrust, and your liege's Bond towards you has one emotion chosen among admiration, inferiority, or mistrust.\n\nWhen your liege performs a Check, if you are present on the scene, you may offer your help: you will use the rules for Group Checks, but you automatically succeed on your Support Check. If this happens during a conflict scene, you do not lose your turn in the current round.\n\nWhenever your liege accepts your help in a Group Check, you gain 1 Reliance Points. At the end of each session, roll 2d20; if you roll equal to or lower than your character level, you gain 1 Reliance Point. If you reach 20 or more, choose Challenge or Betrayal.",
+      "tags": ["bond", "fabula-ultima-bonus"]
+    }
+  ]
+}

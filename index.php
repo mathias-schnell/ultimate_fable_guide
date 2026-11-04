@@ -1,13 +1,14 @@
 <?php
     require_once __DIR__ . '/includes/config/app_conf.php';
-    require_once __DIR__ . '/includes/config/data_conf.php';
     require_once __DIR__ . '/includes/config/tags_conf.php';
     require_once __DIR__ . '/includes/helpers/helper_funcs.php';
 
-    $cachebust = "?" . time();
-    $stylesheets = "<link rel='stylesheet' href='" . CSS_URL . "/reset.css{$cachebust}'>\n
-                    <link rel='stylesheet' href='" . CSS_URL . "/style.css{$cachebust}'>\n
-                    <link rel='stylesheet' href='" . CSS_URL . "/content.css{$cachebust}'>\n";
+    $stylesheets = "";
+    foreach($css_files as $css):
+        $file = CSS_PATH . '/' . $css . '.css';
+        $cachebust = file_exists($file) ? '?v=' . filemtime($file) : '';
+        $stylesheets .= "<link rel='stylesheet' href='" . CSS_URL . "/{$css}.css{$cachebust}'>";
+    endforeach;
 ?>
 
 <!DOCTYPE html>
@@ -21,15 +22,15 @@
 </head>
 <body>
     <main id="main-container" class="container">
-        <header class="page-header">
-            <button type='button' title='Previous' class='nav-left-arrow'>◀</button>
-            <nav class="tab-nav">
-                <?=get_nav_tabs($sections); ?>
-            </nav>
-            <button type='button' title='Next' class='nav-right-arrow'>▶</button>
-        </header>
+        <section class="title-container">
+            <span class="title-icon ui-icon <?= get_rand_class(); ?>"></span>
+            <h1 class="app-title">Ultimate Fable Guide</h1>
+        </section>
+        <section class="filter-container">
+            <?php echo get_filter_section(); ?>
+        </section>
         <section class="content-container">
-            <?=get_content($sections); ?>
+            <?php echo get_menu(); ?>
         </section>
     </main>
 </body>

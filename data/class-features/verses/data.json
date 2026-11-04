@@ -1,0 +1,8 @@
+{
+  "always-expand": false,
+  "is-container": true,
+  "icon": "",
+  "label": "Verses",
+  "sub-labels": "",
+  "order": ["volume", "key", "tone"]
+}

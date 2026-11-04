@@ -1,0 +1,56 @@
+{
+  "icon": "daisy",
+  "label": "Floralist",
+  "sub-labels": ["Permanently increase your maximum Hit Points or Mind Points by 5 (your choice)."],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Max SL",
+      "field": "max-sl",
+      "class": "max-sl"
+    }
+  ],
+  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+  "group-tags": ["natural-fantasy", "floralist"],
+  "data": [
+    {
+      "name": "Battle Gardening",
+      "class": "Floralist",
+      "max-sl": 3,
+      "description": "After you plant a magiseed through the Chloromancy Skill (not when using Graft), you may choose one option: perform a free attack with an equipped weapon; or perform the Spell action for free, casting a spell with a total Mind Point cost equal to or lower than (5 + (SL × 5)) (you must still pay its MP cost). Treat the High Roll (HR) of your Accuracy Check or Magic Check as being equal to 0 when determining damage dealt by this attack or spell.",
+      "tags": ["attack", "damage", "equipment", "garden", "mp", "skill", "spell"]
+    },
+    {
+      "name": "Chloromancy",
+      "class": "Floralist",
+      "max-sl": 10,
+      "description": "Each time you acquire this Skill, you discover a new type of magiseed from the list found in the next pages.\nDuring a conflict, if there are no magiseeds in your garden, you may use an action and spend 20 Mind Points to plant a magiseed of a type you have discovered. The rules for the garden and for magiseed growth can be found in the next pages.",
+      "tags": ["garden", "mp", "skill"]
+    },
+    {
+      "name": "Graft",
+      "class": "Floralist",
+      "max-sl": 1,
+      "description": "As long as there is a magiseed in your garden and 1 or more sections of your Growth Clock are filled, you may use an action to remove that magiseed from your garden: if you do, plant a different magiseed among those you have discovered (keep the current filled sections of your Growth Clock unchanged).",
+      "tags": ["clock", "garden"]
+    },
+    {
+      "name": "Tree of Life",
+      "class": "Floralist",
+      "max-sl": 5,
+      "description": "When a magiseed is removed from your garden, you may choose one creature you can see: if that creature is in Crisis, they recover (5 + (SL × 5)) Hit Points.",
+      "tags": ["crisis", "garden", "hp"]
+    },
+    {
+      "name": "Verdant Sway",
+      "class": "Floralist",
+      "max-sl": 1,
+      "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create, animate, and/or control vegetation, pollen, spores, and toxins (but you cannot create nor control plant-Species NPCs this way).",
+      "tags": ["ritual"]
+    }
+  ]
+}

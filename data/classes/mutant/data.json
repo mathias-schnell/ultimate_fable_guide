@@ -1,0 +1,56 @@
+{
+  "icon": "dna1",
+  "label": "Mutant",
+  "sub-labels": ["Permanently increase your maximum Hit Points by 5."],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Max SL",
+      "field": "max-sl",
+      "class": "max-sl"
+    }
+  ],
+  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+  "group-tags": ["techno-fantasy", "mutant"],
+  "data": [
+    {
+      "name": "Akromorphosis",
+      "class": "Mutant",
+      "max-sl": 3,
+      "description": "Your unarmed strikes deal (6 + (SL × 2)) extra damage, and you gain a bonus equal to (SL) to your Accuracy Checks with them.\nAt the start of your turn during a conflict, you may choose a weapon Category other than brawling. If you do, your unarmed strikes now belong to the chosen Category. If you choose bow, firearm or thrown, they become ranged weapons instead of melee. If you choose dagger or sword, they cannot be used with Triple Slash (High Fantasy Atlas, page 161). These changes last until the start of your next turn.",
+      "tags": ["bow", "brawling", "dagger", "damage", "firearm", "melee", "ranged", "sword", "thrown"]
+    },
+    {
+      "name": "Biophagy",
+      "class": "Mutant",
+      "max-sl": 4,
+      "description": "After one of your attacks or offensive spells (🗲) causes one or more enemies to lose Hit Points, if you are in Crisis, you may recover (SL × 5) Hit Points.",
+      "tags": ["attack", "crisis", "hp", "spell"]
+    },
+    {
+      "name": "Ecdysis",
+      "class": "Mutant",
+      "max-sl": 1,
+      "description": "After you lose Hit Points due to damage, if that damage had a type other than physical, you may spend 10 Hit Points to gain Resistance to that damage type until you use this Skill again.",
+      "tags": ["damage", "hp", "physical", "resistance"]
+    },
+    {
+      "name": "Genoclepsis",
+      "class": "Mutant",
+      "max-sl": 2,
+      "description": "When you deal damage to one or more NPCs, you learn their Species and the GM chooses (SL) therioforms appropriate to those NPCs (see next page): if you have acquired the Theriomorphosis Skill, you may immediately pay its HP cost and use it to manifest those therioforms (even if they are not among those you have learned).",
+      "tags": ["damage", "hp", "skill", "therioform"]
+    },
+    {
+      "name": "Theriomorphosis",
+      "class": "Mutant",
+      "max-sl": 6,
+      "description": "Each time you acquire this Skill, you learn a therioform (see next page).\nYou may use an action and spend one third of your current Hit Points (rounded down) to manifest the effects of up to two therioforms from those you have learned. The details of this transformation are explained on the next page.",
+      "tags": ["hp", "skill", "therioform"]
+    }
+  ]
+}

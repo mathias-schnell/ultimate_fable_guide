@@ -1,0 +1,42 @@
+{
+  "always-expand": true,
+  "is-container": false,
+  "label": "",
+  "sub-labels": ["Target"],
+  "columns": [
+    {
+      "label": "Die",
+      "field": "die",
+      "class": "die"
+    },
+    {
+      "label": "The potion affects...",
+      "field": "target",
+      "class": "target"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+  "group-tags": ["gadgets", "inventory", "ip"],
+  "data": [
+      {
+        "die": "1-6",
+        "target": "... you or one ally you can see that is present on the scene.",
+        "tags": []
+      },
+      {
+        "die": "7-11",
+        "target": "... one enemy you can see that is present on the scene.",
+        "tags": []
+      },
+      {
+        "die": "12-16",
+        "target": "... you and every ally present on the scene.",
+        "tags": ["multi"]
+      },
+      {
+        "die": "17-20",
+        "target": "... every enemy present on the scene.",
+        "tags": ["multi"]
+      }
+  ]
+}

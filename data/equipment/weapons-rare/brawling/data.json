@@ -1,0 +1,176 @@
+{
+  "always-expand": false,
+  "is-container": false,
+  "label": "Brawling",
+  "sub-labels": [],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Cost",
+      "field": "cost",
+      "class": "cost"
+    },
+    {
+      "label": "Accuracy",
+      "field": "accuracy",
+      "class": "accuracy"
+    },
+    {
+      "label": "Damage",
+      "field": "damage",
+      "class": "damage"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+  "group-tags": ["brawling", "rare"],
+  "data": [
+    {
+      "name": "Nekode",
+      "martial": false,
+      "cost": "250 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 6】 physical",
+      "description": "One-handed • Melee • No Quality.",
+      "tags": ["core", "brawling", "one-handed", "melee", "physical", "DEX", "MIG", "rare"]
+    },
+    {
+      "name": "Hellfist",
+      "martial": false,
+      "cost": "350 z",
+      "accuracy": "【DEX + MIG】",
+      "damage": "【HR + 6】 dark",
+      "description": "One-handed • Melee • Attacks with this weapon target Magic Defense.",
+      "tags": ["core", "brawling", "one-handed", "melee", "dark", "DEX", "MIG", "rare", "mdef-target"]
+    },
+    {
+      "name": "Frozen Grasp",
+      "martial": false,
+      "cost": "750 z",
+      "accuracy": "【DEX + MIG】",
+      "damage": "【HR + 6】 ice",
+      "description": "One-handed • Melee • You are immune to enraged.",
+      "tags": ["core", "brawling", "one-handed", "melee", "ice", "DEX", "MIG", "rare", "immunity"]
+    },
+    {
+      "name": "Bear Paw",
+      "martial": true,
+      "cost": "850 z",
+      "accuracy": "【DEX + MIG】",
+      "damage": "【HR + 10】 physical",
+      "description": "One-handed • Melee • You are immune to weak.",
+      "tags": ["core", "brawling", "one-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "immunity"]
+    },
+    {
+      "name": "Fuel Knuckle",
+      "martial": false,
+      "cost": "950 z",
+      "accuracy": "【DEX + MIG】",
+      "damage": "【HR + 6】 fire",
+      "description": "One-handed • Melee • You gain Resistance to fire damage.",
+      "tags": ["core", "brawling", "one-handed", "melee", "fire", "DEX", "MIG", "rare", "resistance"]
+    },
+    {
+      "name": "Silver Talon",
+      "martial": false,
+      "cost": "1100 z",
+      "accuracy": "【DEX + DEX】",
+      "damage": "【HR + 6】 light",
+      "description": "One-handed • Melee • You gain a +1 bonus to Magic Defense.",
+      "tags": ["core", "brawling", "one-handed", "melee", "light", "DEX", "rare", "mdef-bonus"]
+    },
+    {
+      "name": "Old Bandages",
+      "martial": false,
+      "cost": "1250 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 6】 physical",
+      "description": "One-handed • Melee • You gain Resistance to dark and poison damage.",
+      "tags": ["core", "brawling", "one-handed", "melee", "physical", "DEX", "MIG", "rare", "resistance"]
+    },
+    {
+      "name": "Storm Fist",
+      "martial": false,
+      "cost": "1300 z",
+      "accuracy": "【MIG + MIG】",
+      "damage": "【HR + 6】 bolt",
+      "description": "One-handed • Melee • Attacks with this weapon have multi (2).",
+      "tags": ["core", "brawling", "one-handed", "melee", "bolt", "MIG", "rare", "multi"]
+    },
+    {
+      "name": "Lobster Claw",
+      "martial": true,
+      "cost": "1950 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 10】 physical",
+      "description": "One-handed • Melee • Each target hit by this weapon suffers slow.",
+      "tags": ["core", "brawling", "one-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "slow", "status"]
+    },
+    {
+      "name": "Dozer Glove",
+      "martial": true,
+      "cost": "2000 z",
+      "accuracy": "【MIG + MIG】",
+      "damage": "【HR + 10】 earth",
+      "description": "One-handed • Melee • Each target hit by this weapon suffers dazed.",
+      "tags": ["core", "brawling", "one-handed", "melee", "earth", "MIG", "martial", "rare", "dazed", "status"]
+    },
+    {
+      "name": "Venom Claw",
+      "martial": false,
+      "cost": "2250 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 6】 physical",
+      "description": "One-handed • Melee • Each target hit by this weapon suffers poisoned.",
+      "tags": ["core", "brawling", "one-handed", "melee", "physical", "DEX", "MIG", "rare", "poisoned", "status"]
+    },
+    {
+      "name": "God Hand",
+      "martial": true,
+      "cost": "2550 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 10】 light",
+      "description": "One-handed • Melee • Damage dealt by this weapon ignores Affinities.",
+      "tags": ["core", "brawling", "one-handed", "melee", "light", "DEX", "MIG", "martial", "rare", "ignore-affinities"]
+    },
+    {
+      "name": "Bringer of Justice",
+      "martial": false,
+      "cost": "600 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 6】 physical",
+      "description": "One-handed • Melee • When you use the Provoke Skill against a creature whose current Hit Points are higher than yours, the Skill is automatically successful (no Check required).",
+      "tags": ["high-fantasy", "rare", "brawling", "one-handed", "melee", "physical", "DEX", "MIG", "skill", "hp"]
+    },
+    {
+      "name": "Blazing Fan",
+      "martial": false,
+      "cost": "800 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 6】 fire",
+      "description": "One-handed • Melee • Your invocations that target two or more creatures deal extra damage equal to your Skill Level in Linked Invocations.",
+      "tags": ["natural-fantasy", "rare", "brawling", "one-handed", "melee", "fire", "DEX", "MIG", "invocation", "invoker", "damage"]
+    },
+    {
+      "name": "Therion Ripper",
+      "martial": true,
+      "cost": "700 z",
+      "accuracy": "【DEX + MIG】 + 1",
+      "damage": "【HR + 10】 physical",
+      "description": "One-handed • Melee • This weapon deals extra damage equal to your Skill Level in Akromorphosis and its Category is always identical to that of your unarmed strikes. It also benefits from the Greater Akromorphosis Heroic Skill as if it was an unarmed strike.",
+      "tags": ["techno-fantasy", "rare", "martial", "brawling", "one-handed", "melee", "physical", "DEX", "MIG", "damage", "skill", "mutant"]
+    },
+    {
+      "name": "Steady Knuckles",
+      "martial": true,
+      "cost": "1200 z",
+      "accuracy": "【DEX + MIG】",
+      "damage": "【HR + 10】 physical",
+      "description": "One-handed • Melee • As long as the current die size of one of your Attributes is higher than its base die size, your attacks with this weapon deal extra damage equal to your Skill Level in Withstand.",
+      "tags": ["techno-fantasy", "rare", "martial", "brawling", "one-handed", "melee", "physical", "DEX", "MIG", "attack", "damage", "skill", "fury"]
+    }
+  ]
+}

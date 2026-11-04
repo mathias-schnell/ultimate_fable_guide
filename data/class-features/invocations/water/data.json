@@ -1,0 +1,42 @@
+{
+  "always-expand": true,
+  "is-container": false,
+  "label": "",
+  "sub-labels": ["Water wellspring"],
+  "columns": [
+    {
+      "label": "Name",
+      "field": "name",
+      "class": "name"
+    },
+    {
+      "label": "Effect",
+      "field": "effect",
+      "class": "effect"
+    }
+  ],
+  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+  "group-tags": ["ice", "invoker", "invocation"],
+  "data": [
+    {
+      "name": "Hydro Blast",
+      "effect": "You deal 20 ice damage to the target.",
+      "tags": ["ice"]
+    },
+    {
+      "name": "Hydro Hex",
+      "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air and bolt damage.",
+      "tags": ["air", "bolt"]
+    },
+    {
+      "name": "Chill",
+      "effect": "The target loses 20 Mind Points and also suffers shaken.",
+      "tags": ["mp", "shaken"]
+    },
+    {
+      "name": "Frostbite",
+      "effect": "You deal 10 ice damage to the target, and they suffer weak.",
+      "tags": ["ice", "weak"]
+    }
+  ]
+}
