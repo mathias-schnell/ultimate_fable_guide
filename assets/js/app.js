@@ -25,6 +25,7 @@ const content_click_actions = {
     "[class*='-link']"           : copy_link,
     "[class*='-pin']"            : toggle_pin,
     "[class*='-toggle']"         : toggle_item,
+    "[class*='-row'] > *"        : toggle_item,
     "[class*='-multitoggle']"    : toggle_all,
     "[class*='-col-sort']"       : toggle_col_sort,
 };
@@ -478,9 +479,12 @@ function toggle_pin(target, ctx) {
  */
 function toggle_item(target, ctx = {}, forced_state = null, scroll_to = true) {
     if(!target || !ctx || !ctx.content) return;
-    const target_id = target.getAttribute('aria-controls');
-    const icon = target.querySelector('.menu-icon');
-    if(!target_id || !icon) return;
+    let target_id = target.getAttribute('aria-controls');
+    if(!target_id) {
+        target = target.closest("[class*='row']")?.querySelector("[class*='toggle']");
+        target_id = target?.getAttribute('aria-controls');
+    }
+    if(!target_id) return;
     
     const is_expanded = target.getAttribute('aria-expanded') === 'true';
     const new_state = forced_state ?? !is_expanded;
@@ -488,7 +492,8 @@ function toggle_item(target, ctx = {}, forced_state = null, scroll_to = true) {
 
     target.setAttribute('aria-expanded', String(new_state));
 
-    if(icon.classList.contains('svg-expand') || icon.classList.contains('svg-contract')) {
+    const icon = target.querySelector('.menu-icon');
+    if(icon && (icon.classList.contains('svg-expand') || icon.classList.contains('svg-contract'))) {
         icon.classList.toggle('svg-expand', !new_state);
         icon.classList.toggle('svg-contract', new_state);
     }

@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.8.1] - 2026-11-04
+
+### Changed
+- Search bar will now stick to the top of the screen when scrolling.
+- Title should better scale with screen size.
+- Title now has one icon as part of the branding instead of it changing randomly.
+- Entire rows for entries can now be clicked to reveal their full description.
+- "Accessories" has been changed to "Accessories (Rare)".
+- "Zero Effects", "Zero Triggers" and "Weapons" are now permanently expanded.
+
+---
+
 ## [0.8.0] - 2026-11-03
 
 ### Added

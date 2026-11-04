@@ -23,7 +23,7 @@
 
     $css_files = [
         "reset",
-        "style2",
+        "style",
         "icons",
         "content"
     ];
@@ -37,40 +37,5 @@
     ];
 
     $title_icons = [
-        'svg-all-for-one',
-        'svg-batwing-emblem',
-        'svg-beech',
-        'svg-caldera',
-        'svg-compass',
-        'svg-crossed-swords',
-        'svg-crystal-growth',
-        'svg-crystal-shine',
-        'svg-cultist',
-        'svg-daisy',
-        'svg-embrassed-energy',
-        'svg-emerald',
-        'svg-ermine',
-        'svg-great-pyramid',
-        'svg-griffin-symbol',
-        'svg-heron',
-        'svg-lightning-dissipation',
-        'svg-lotus',
-        'svg-oak',
-        'svg-octogonal-eye',
-        'svg-ostrich',
-        'svg-peaks',
-        'svg-physical',
-        'svg-pick-of-destiny',
-        'svg-poison',
-        'svg-processor',
-        'svg-pyromaniac',
-        'svg-rolling-dices',
-        'svg-rupee',
-        'svg-saphir',
-        'svg-sea-dragon',
-        'svg-spark-spirit',
-        'svg-spiked-dragon-head',
-        'svg-sword-in-stone',
-        'svg-warlord-helmet',
-        'svg-wolf-howl'
+        'svg-emerald'
     ];

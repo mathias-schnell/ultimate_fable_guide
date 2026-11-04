@@ -1,5 +1,5 @@
 {
-  "always-expand": false,
+  "always-expand": true,
   "is-container": false,
   "label": "Thrown",
   "sub-labels": [],
