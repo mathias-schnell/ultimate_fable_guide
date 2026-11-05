@@ -2,7 +2,7 @@
   "always-expand": true,
   "is-container": false,
   "label": "Arcane",
-  "sub-labels": [],
+  "sub-labels": ["Arcane"],
   "columns": [
     {
       "label": "Name",

@@ -2,7 +2,7 @@
   "always-expand": true,
   "is-container": false,
   "label": "Thrown",
-  "sub-labels": [],
+  "sub-labels": ["Thrown"],
   "columns": [
     {
       "label": "Name",

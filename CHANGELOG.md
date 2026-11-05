@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.8.2] - 2026-11-04
+
+### Changed
+- Fixed some missing/wrong labeling throughout the app.
+- Reviewed and editted some icons.
+- Moved all 'Fabula Ultima Bonus' content into its own category under 'Optonal Rules'.
+- All 'Heroic Skills' now display as a single continuous list instead of being separated by rulebook.
+
+---
+
 ## [0.8.1] - 2026-11-04
 
 ### Changed

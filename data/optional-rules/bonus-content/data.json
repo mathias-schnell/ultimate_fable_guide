@@ -1,0 +1,10 @@
+{
+  "icon": "",
+  "label": "Bonus Content",
+  "sub-labels": "",
+  "order": [
+    "necromancer",
+    "heroic-skills",
+    "quirks"
+  ]
+}

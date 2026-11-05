@@ -1,5 +1,5 @@
 {
-  "icon": "health-normal",
+  "icon": "hospital-cross",
   "label": "Spiritist",
   "sub-labels": ["Permanently increase your maximum Mind Points by 5.", "You may perform Rituals whose effects fall within the Ritualism discipline."],
   "columns": [

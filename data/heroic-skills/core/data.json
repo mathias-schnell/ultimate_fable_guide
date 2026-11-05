@@ -1,4 +1,7 @@
 {
+  "always-expand": true,
+  "is-container": false,
+  "show-headers": true,
   "label": "Core Rulebook",
   "columns": [
     {

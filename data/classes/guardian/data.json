@@ -1,5 +1,5 @@
 {
-  "icon": "checked-shield",
+  "icon": "crenulated-shield",
   "label": "Guardian",
   "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial armor and martial shields."],
   "columns": [

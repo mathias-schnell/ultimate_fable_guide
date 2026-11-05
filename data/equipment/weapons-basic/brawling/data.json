@@ -2,7 +2,7 @@
   "always-expand": true,
   "is-container": false,
   "label": "Brawling",
-  "sub-labels": [],
+  "sub-labels": ["Brawling"],
   "columns": [
     {
       "label": "Name",

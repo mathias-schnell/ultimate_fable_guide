@@ -1,0 +1,12 @@
+{
+  "icon": "",
+  "label": "Equipment (Rare)",
+  "sub-labels": "",
+  "order": [
+    "accessories",
+    "weapons-rare",
+    "shields-rare",
+    "armor-rare",
+    "modules-rare"
+  ]
+}

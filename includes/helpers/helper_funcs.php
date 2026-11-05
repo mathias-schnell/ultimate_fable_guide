@@ -73,6 +73,7 @@ function get_menu(array $nodes = [], int $level = 1, array $item_order = [], $co
                 $icon_file = $nodes[$key]['icon'] ?? '';
                 $always_expand = $nodes[$key]['always-expand'] ?? false;
                 $is_container = $nodes[$key]['is-container'] ?? true;
+                $show_headers = $nodes[$key]['show-headers'] ?? true;
         ?>
             <li class="menu-item <?= $is_container ? '' : 'no-container'; ?>">
                 <?php if ($is_category): ?>
@@ -103,7 +104,7 @@ function get_menu(array $nodes = [], int $level = 1, array $item_order = [], $co
                     </button>
 
                     <div id="<?= $name ?>-group" class="menu-content <?= $name ?>-group" aria-hidden="<?= $always_expand ? 'false' : 'true' ?>">
-                        <?php echo get_content($nodes[$key], $key, $name); ?>
+                        <?php echo get_content($nodes[$key], $key, $name, $show_headers); ?>
                     </div>
                 <?php endif; ?>
             </li>
@@ -113,7 +114,7 @@ function get_menu(array $nodes = [], int $level = 1, array $item_order = [], $co
     return ob_get_clean();
 }
 
-function get_content(array $entry, string $key, string $combined_name = ''): string {
+function get_content(array $entry, string $key, string $combined_name = '', bool $show_headers = true): string {
     ob_start();
 
     $counter = 0;
@@ -124,7 +125,9 @@ function get_content(array $entry, string $key, string $combined_name = ''): str
     $items = $entry['data'] ?? [];
     $grid_style = !empty($grid_template) ? " style='grid-template-columns: {$grid_template};'" : "";
 
-    render_group_header($key, $cols, $sub_labels, $grid_style, $combined_name);
+    if($show_headers):
+        render_group_header($key, $cols, $sub_labels, $grid_style, $combined_name);
+    endif;
 
     foreach ($items as $item):
         $counter++;

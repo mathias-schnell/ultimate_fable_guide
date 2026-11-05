@@ -3,7 +3,7 @@
   "is-container": false,
   "icon": "",
   "label": "Zero Triggers",
-  "sub-labels": [],
+  "sub-labels": ["Zero Triggers"],
   "columns": [
     {
       "label": "Name",

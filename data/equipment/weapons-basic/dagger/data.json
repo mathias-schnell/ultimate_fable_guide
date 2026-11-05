@@ -2,7 +2,7 @@
   "always-expand": true,
   "is-container": false,
   "label": "Dagger",
-  "sub-labels": [],
+  "sub-labels": ["Dagger"],
   "columns": [
     {
       "label": "Name",

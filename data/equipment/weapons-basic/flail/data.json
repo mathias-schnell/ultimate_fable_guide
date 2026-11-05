@@ -2,7 +2,7 @@
   "always-expand": true,
   "is-container": false,
   "label": "Flail",
-  "sub-labels": [],
+  "sub-labels": ["Flail"],
   "columns": [
     {
       "label": "Name",

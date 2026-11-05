@@ -2,7 +2,7 @@
   "always-expand": true,
   "is-container": false,
   "label": "Firearm",
-  "sub-labels": [],
+  "sub-labels": ["Firearm"],
   "columns": [
     {
       "label": "Name",

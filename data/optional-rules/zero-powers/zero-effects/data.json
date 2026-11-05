@@ -3,7 +3,7 @@
   "is-container": false,
   "icon": "",
   "label": "Zero Effects",
-  "sub-labels": [],
+  "sub-labels": ["Zero Effects"],
   "columns": [
     {
       "label": "Name",

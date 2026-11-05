@@ -2,7 +2,7 @@
   "always-expand": true,
   "is-container": false,
   "label": "Heavy",
-  "sub-labels": [],
+  "sub-labels": ["Heavy"],
   "columns": [
     {
       "label": "Name",

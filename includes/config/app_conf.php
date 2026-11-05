@@ -33,6 +33,7 @@
         "class-features",
         "heroic-skills", 
         "equipment",
+        "equipment-rare",
         "optional-rules"
     ];
 

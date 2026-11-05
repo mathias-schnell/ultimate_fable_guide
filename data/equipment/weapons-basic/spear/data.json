@@ -2,7 +2,7 @@
   "always-expand": true,
   "is-container": false,
   "label": "Spear",
-  "sub-labels": [],
+  "sub-labels": ["Spear"],
   "columns": [
     {
       "label": "Name",

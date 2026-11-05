@@ -1,4 +1,6 @@
 {
+  "always-expand": false,
+  "is-container": true,
   "icon": "",
   "label": "Heroic Skills",
   "sub-labels": "",
@@ -6,7 +8,6 @@
     "core",
     "high-fantasy",
     "natural-fantasy",
-    "techno-fantasy",
-    "bonus-content"
+    "techno-fantasy"
   ]
 }
