@@ -1,18 +1,26 @@
 {
-  "icon": "",
-  "label": "Class Features",
-  "sub-labels": [],
-  "order": [
-    "arcana",
-    "spells",
-    "gadgets",
-    "verses",
-    "dances",
-    "symbols",
-    "magiseeds",
-    "invocations",
-    "gifts",
-    "modules-basic",
-    "therioforms"
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features",
+    "label": "Class Features",
+    "sub-labels": [],
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "arcana",
+        "spells",
+        "gadgets",
+        "verses",
+        "dances",
+        "symbols",
+        "magiseeds",
+        "invocations",
+        "gifts",
+        "modules-basic",
+        "therioforms"
+    ]
 }

@@ -1,59 +1,84 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "Brawling",
-  "sub-labels": ["Brawling"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Accuracy",
-      "field": "accuracy",
-      "class": "accuracy"
-    },
-    {
-      "label": "Damage",
-      "field": "damage",
-      "class": "damage"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "brawling", "basic", "weapon"],
-  "data": [
-    {
-      "name": "Unarmed Strike",
-      "martial": false,
-      "cost": "-",
-      "accuracy": "【DEX + MIG】",
-      "damage": "【HR + 0】 physical",
-      "description": "One-handed • Melee • Automatically equipped in each empty hand slot.",
-      "tags": ["one-handed", "melee", "physical", "DEX", "MIG"]
-    },
-    {
-      "name": "Improvised (Melee)",
-      "martial": false,
-      "cost": "-",
-      "accuracy": "【DEX + MIG】",
-      "damage": "【HR + 2】 physical",
-      "description": "One-handed • Melee • Breaks after the attack.",
-      "tags": ["one-handed", "melee", "physical", "DEX", "MIG"]
-    },
-    {
-      "name": "Iron Knuckle",
-      "martial": false,
-      "cost": "150 z",
-      "accuracy": "【DEX + MIG】",
-      "damage": "【HR + 6】 physical",
-      "description": "One-handed • Melee • No Quality.",
-      "tags": ["one-handed", "melee", "physical", "DEX", "MIG"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-weapons-basic-brawling",
+    "label": "Brawling",
+    "sub-labels": [
+        "Brawling"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Accuracy",
+            "key": "accuracy"
+        },
+        {
+            "label": "Damage",
+            "key": "damage"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "brawling",
+        "basic",
+        "weapon"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Unarmed Strike",
+            "slug": "equipment-weapons-basic-brawling-unarmed-strike",
+            "description": "One-handed \u2022 Melee \u2022 Automatically equipped in each empty hand slot.",
+            "tags": [
+                "melee",
+                "one-handed"
+            ],
+            "accuracy": "\u3010DEX + MIG\u3011",
+            "cost": "-",
+            "damage": "\u3010HR + 0\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Improvised (Melee)",
+            "slug": "equipment-weapons-basic-brawling-improvised-melee",
+            "description": "One-handed \u2022 Melee \u2022 Breaks after the attack.",
+            "tags": [
+                "attack",
+                "melee",
+                "one-handed"
+            ],
+            "accuracy": "\u3010DEX + MIG\u3011",
+            "cost": "-",
+            "damage": "\u3010HR + 2\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Iron Knuckle",
+            "slug": "equipment-weapons-basic-brawling-iron-knuckle",
+            "description": "One-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "one-handed"
+            ],
+            "accuracy": "\u3010DEX + MIG\u3011",
+            "cost": "150 z",
+            "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": false
+        }
+    ]
 }

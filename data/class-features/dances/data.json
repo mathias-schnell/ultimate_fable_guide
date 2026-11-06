@@ -1,122 +1,222 @@
 {
-  "label": "Dances",
-  "sub-labels": [],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Duration",
-      "field": "duration",
-      "class": "duration"
-    }
-  ],
-  "grid-template-columns": "0.25fr 2fr 4fr 0.25fr",
-  "group-tags": ["dances"],
-  "data": [
-    {
-      "name": "Angel Dance",
-      "duration": "Until the start of your next turn",
-      "description": "Choose one option: you gain Resistance to light damage; or all damage dealt by your attacks and spells becomes light.",
-      "tags": ["attack", "light", "resistance", "spell"]
-    },
-    {
-      "name": "Banshee Dance",
-      "duration": "Instantaneous",
-      "description": "Choose another creature that is able to see you. If that creature is suffering from slow, they suffer shaken.",
-      "tags": ["shaken", "slow"]
-    },
-    {
-      "name": "Bat Dance",
-      "duration": "Until the start of your next turn",
-      "description": "Choose one option: you gain Resistance to dark damage; or all damage dealt by your attacks and spells becomes dark.",
-      "tags": ["attack", "dark", "resistance", "spell"]
-    },
-    {
-      "name": "Golem Dance",
-      "duration": "Until the start of your next turn",
-      "description": "Choose one option: you gain Resistance to bolt damage; or all damage dealt by your attacks and spells becomes bolt.",
-      "tags": ["attack", "bolt", "resistance", "spell"]
-    },
-    {
-      "name": "Griffin Dance",
-      "duration": "Until the start of your next turn",
-      "description": "Choose one option: you gain Resistance to air damage; or all damage dealt by your attacks and spells becomes air.",
-      "tags": ["air", "attack", "resistance", "spell"]
-    },
-    {
-      "name": "Hydra Dance",
-      "duration": "Until the start of your next turn",
-      "description": "After you suffer damage, choose one option: you recover 5 Hit Points, or you recover 5 Mind Points.",
-      "tags": ["hp", "mp"]
-    },
-    {
-      "name": "Kraken Dance",
-      "duration": "Instantaneous",
-      "description": "Choose another creature that is able to see you. If that creature is suffering from dazed, they suffer slow.",
-      "tags": ["dazed", "slow"]
-    },
-    {
-      "name": "Lion Dance",
-      "duration": "Instantaneous",
-      "description": "You recover from a single status effect of your choice.",
-      "tags": ["dazed", "enraged", "poisoned", "shaken", "slow", "weak"]
-    },
-    {
-      "name": "Maenad Dance",
-      "duration": "Instantaneous",
-      "description": "Choose another creature that is able to see you. That creature loses an amount of Mind Points equal to your current Dexterity die size.",
-      "tags": ["DEX", "mp"]
-    },
-    {
-      "name": "Myrmidon Dance",
-      "duration": "Until the start of your next turn",
-      "description": "Choose one option: you gain Resistance to earth damage; or all damage dealt by your attacks and spells becomes earth.",
-      "tags": ["attack", "earth", "resistance", "spell"]
-    },
-    {
-      "name": "Nightmare Dance",
-      "duration": "Instantaneous",
-      "description": "Choose another creature that is able to see you. If that creature is suffering from shaken, they suffer weak.",
-      "tags": ["shaken", "weak"]
-    },
-    {
-      "name": "Ouroboros Dance",
-      "duration": "Instantaneous",
-      "description": "Choose one ally you can see who has yet to take a turn during this round. That ally may take their turn immediately after yours during this round.",
-      "tags": ["take-turn"]
-    },
-    {
-      "name": "Peacock Dance",
-      "duration": "Instantaneous",
-      "description": "Choose another creature that is able to see you. The next time that creature performs an attack or casts an offensive spell (🗲) during this scene, that attack or spell must include you among its targets if possible.",
-      "tags": ["attack", "spell", "taunt"]
-    },
-    {
-      "name": "Phoenix Dance",
-      "duration": "Until the start of your next turn",
-      "description": "Choose one option: you gain Resistance to fire damage; or all damage dealt by your attacks and spells becomes fire.",
-      "tags": ["attack", "fire", "resistance", "spell"]
-    },
-    {
-      "name": "Satyr Dance",
-      "duration": "Instantaneous",
-      "description": "Choose another creature that is able to see you. If that creature is suffering from weak, they suffer dazed.",
-      "tags": ["dazed", "weak"]
-    },
-    {
-      "name": "Unicorn Dance",
-      "duration": "Instantaneous",
-      "description": "Choose an ally that is able to see you and has a Bond towards you: you and that ally both recover an amount of Hit Points equal to your current Dexterity die size. The restored amount increases by 5 Hit Points if you are level 20 or higher, or by 10 Hit Points if you are level 40 or higher.",
-      "tags": ["bond", "DEX", "hp"]
-    },
-    {
-      "name": "Yeti Dance",
-      "duration": "Until the start of your next turn",
-      "description": "Choose one option: you gain Resistance to ice damage; or all damage dealt by your attacks and spells becomes ice.",
-      "tags": ["attack", "ice", "resistance", "spell"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-dances",
+    "label": "Dances",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Duration",
+            "key": "duration"
+        }
+    ],
+    "grid-template-columns": "0.25fr 2fr 4fr 0.25fr",
+    "group-tags": [
+        "dances"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Angel Dance",
+            "slug": "class-features-dances-angel-dance",
+            "description": "Choose one option: you gain Resistance to light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage; or all damage dealt by your attacks and spells becomes light (<i class=\"ui-icon elem-light svg-sun\"></i>).",
+            "tags": [
+                "light",
+                "resistance"
+            ],
+            "duration": "Until the start of your next turn"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Banshee Dance",
+            "slug": "class-features-dances-banshee-dance",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from slow, they suffer shaken.",
+            "tags": [
+                "shaken",
+                "slow"
+            ],
+            "duration": "Instantaneous"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Bat Dance",
+            "slug": "class-features-dances-bat-dance",
+            "description": "Choose one option: you gain Resistance to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage; or all damage dealt by your attacks and spells becomes dark (<i class=\"ui-icon elem-dark svg-dark\"></i>).",
+            "tags": [
+                "dark",
+                "resistance"
+            ],
+            "duration": "Until the start of your next turn"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Golem Dance",
+            "slug": "class-features-dances-golem-dance",
+            "description": "Choose one option: you gain Resistance to bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage; or all damage dealt by your attacks and spells becomes bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>).",
+            "tags": [
+                "bolt",
+                "resistance"
+            ],
+            "duration": "Until the start of your next turn"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Griffin Dance",
+            "slug": "class-features-dances-griffin-dance",
+            "description": "Choose one option: you gain Resistance to air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage; or all damage dealt by your attacks and spells becomes air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>).",
+            "tags": [
+                "air",
+                "resistance"
+            ],
+            "duration": "Until the start of your next turn"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Hydra Dance",
+            "slug": "class-features-dances-hydra-dance",
+            "description": "After you suffer damage, choose one option: you recover 5 Hit Points, or you recover 5 Mind Points.",
+            "tags": [
+                "hp",
+                "mp"
+            ],
+            "duration": "Until the start of your next turn"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Kraken Dance",
+            "slug": "class-features-dances-kraken-dance",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from dazed, they suffer slow.",
+            "tags": [
+                "dazed",
+                "slow"
+            ],
+            "duration": "Instantaneous"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Lion Dance",
+            "slug": "class-features-dances-lion-dance",
+            "description": "You recover from a single status effect of your choice.",
+            "tags": [],
+            "duration": "Instantaneous"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Maenad Dance",
+            "slug": "class-features-dances-maenad-dance",
+            "description": "Choose another creature that is able to see you. That creature loses an amount of Mind Points equal to your current Dexterity die size.",
+            "tags": [
+                "mp"
+            ],
+            "duration": "Instantaneous"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Myrmidon Dance",
+            "slug": "class-features-dances-myrmidon-dance",
+            "description": "Choose one option: you gain Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage; or all damage dealt by your attacks and spells becomes earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>).",
+            "tags": [
+                "earth",
+                "resistance"
+            ],
+            "duration": "Until the start of your next turn"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Nightmare Dance",
+            "slug": "class-features-dances-nightmare-dance",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from shaken, they suffer weak.",
+            "tags": [
+                "shaken",
+                "weak"
+            ],
+            "duration": "Instantaneous"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ouroboros Dance",
+            "slug": "class-features-dances-ouroboros-dance",
+            "description": "Choose one ally you can see who has yet to take a turn during this round. That ally may take their turn immediately after yours during this round.",
+            "tags": [],
+            "duration": "Instantaneous"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Peacock Dance",
+            "slug": "class-features-dances-peacock-dance",
+            "description": "Choose another creature that is able to see you. The next time that creature performs an attack or casts an offensive spell (\ud83d\uddf2) during this scene, that attack or spell must include you among its targets if possible.",
+            "tags": [
+                "attack",
+                "spell"
+            ],
+            "duration": "Instantaneous"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Phoenix Dance",
+            "slug": "class-features-dances-phoenix-dance",
+            "description": "Choose one option: you gain Resistance to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage; or all damage dealt by your attacks and spells becomes fire (<i class=\"ui-icon elem-fire svg-fire\"></i>).",
+            "tags": [
+                "fire",
+                "resistance"
+            ],
+            "duration": "Until the start of your next turn"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Satyr Dance",
+            "slug": "class-features-dances-satyr-dance",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from weak, they suffer dazed.",
+            "tags": [
+                "dazed",
+                "weak"
+            ],
+            "duration": "Instantaneous"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Unicorn Dance",
+            "slug": "class-features-dances-unicorn-dance",
+            "description": "Choose an ally that is able to see you and has a Bond towards you: you and that ally both recover an amount of Hit Points equal to your current Dexterity die size. The restored amount increases by 5 Hit Points if you are level 20 or higher, or by 10 Hit Points if you are level 40 or higher.",
+            "tags": [
+                "bond",
+                "hp"
+            ],
+            "duration": "Instantaneous"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Yeti Dance",
+            "slug": "class-features-dances-yeti-dance",
+            "description": "Choose one option: you gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage; or all damage dealt by your attacks and spells becomes ice (<i class=\"ui-icon elem-ice svg-ice\"></i>).",
+            "tags": [
+                "ice",
+                "resistance"
+            ],
+            "duration": "Until the start of your next turn"
+        }
+    ]
 }

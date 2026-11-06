@@ -1,56 +1,95 @@
 {
-  "icon": "chess-queen",
-  "label": "Commander",
-  "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial melee weapons and martial ranged weapons."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["high-fantasy", "commander"],
-  "data": [
-    {
-      "name": "Bishop’s Edict",
-      "class": "Commander",
-      "max-sl": 5,
-      "description": "During a conflict, you may use an action and spend 10 Mind Points to choose one option: all MP costs are doubled; or all sources of damage deal (SL × 3) extra damage. The chosen effect lasts until the start of your next turn.",
-      "tags": ["damage", "mp"]
-    },
-    {
-      "name": "Charging Cavalry",
-      "class": "Commander",
-      "max-sl": 5,
-      "description": "During a conflict, you may use an action and spend 10 MP to choose one ally that can hear you. That ally may perform a free attack with a weapon they have equipped (or with a basic attack if they are an NPC). They gain a bonus equal to (SL) to the Accuracy Check, but treat their High Roll as 0 when calculating damage.",
-      "tags": ["attack", "damage", "equipment", "mp"]
-    },
-    {
-      "name": "Crushing Chariot",
-      "class": "Commander",
-      "max-sl": 1,
-      "description": "After you use Bishop’s Edict, Charging Cavalry or King’s Castle, you may choose another Player Character that can hear you who has yet to take a turn during this round. That character may take their turn immediately after yours during this round.",
-      "tags": []
-    },
-    {
-      "name": "King’s Castle",
-      "class": "Commander",
-      "max-sl": 4,
-      "description": "During a conflict, you may use an action and spend 10 Mind Points to choose one option: no creature can recover Hit Points or Mind Points; or all effects that restore Mind Points restore (SL × 5) additional Mind Points. The chosen effect lasts until the start of your next turn.",
-      "tags": ["hp", "mp"]
-    },
-    {
-      "name": "Queen’s Gambit",
-      "class": "Commander",
-      "max-sl": 6,
-      "description": "During a conflict, you may use an action to perform a free attack with a weapon you have equipped, treating your High Roll as 0 when calculating damage. After this attack has been resolved, you may choose one option: one ally who is able to hear you recovers (5 + (SL × 5)) Hit Points; or you use a Skill you acquired among Bishop’s Edict, Charging Cavalry or King’s Castle for free (spending the appropriate MP).",
-      "tags": ["attack", "damage", "equipment", "hp", "mp"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "chess-knight",
+    "slug": "classes-commander",
+    "label": "Commander",
+    "sub-labels": [
+        "Permanently increase your maximum Hit Points by 5.",
+        "Gain the ability to equip martial melee weapons and martial ranged weapons."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "high-fantasy",
+        "commander"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Bishop\u2019s Edict",
+            "slug": "classes-commander-bishop-s-edict",
+            "description": "During a conflict, you may use an action and spend 10 Mind Points to choose one option: all MP costs are doubled; or all sources of damage deal (SL \u00d7 3) extra damage. The chosen effect lasts until the start of your next turn.",
+            "tags": [
+                "mp"
+            ],
+            "class": "Commander",
+            "max-sl": 5
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Charging Cavalry",
+            "slug": "classes-commander-charging-cavalry",
+            "description": "During a conflict, you may use an action and spend 10 MP to choose one ally that can hear you. That ally may perform a free attack with a weapon they have equipped (or with a basic attack if they are an NPC). They gain a bonus equal to (SL) to the Accuracy Check, but treat their High Roll as 0 when calculating damage.",
+            "tags": [
+                "attack",
+                "basic",
+                "free-attack",
+                "weapon"
+            ],
+            "class": "Commander",
+            "max-sl": 5
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Crushing Chariot",
+            "slug": "classes-commander-crushing-chariot",
+            "description": "After you use Bishop\u2019s Edict, Charging Cavalry or King\u2019s Castle, you may choose another Player Character that can hear you who has yet to take a turn during this round. That character may take their turn immediately after yours during this round.",
+            "tags": [],
+            "class": "Commander",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "King\u2019s Castle",
+            "slug": "classes-commander-king-s-castle",
+            "description": "During a conflict, you may use an action and spend 10 Mind Points to choose one option: no creature can recover Hit Points or Mind Points; or all effects that restore Mind Points restore (SL \u00d7 5) additional Mind Points. The chosen effect lasts until the start of your next turn.",
+            "tags": [
+                "hp",
+                "mp"
+            ],
+            "class": "Commander",
+            "max-sl": 4
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Queen\u2019s Gambit",
+            "slug": "classes-commander-queen-s-gambit",
+            "description": "During a conflict, you may use an action to perform a free attack with a weapon you have equipped, treating your High Roll as 0 when calculating damage. After this attack has been resolved, you may choose one option: one ally who is able to hear you recovers (5 + (SL \u00d7 5)) Hit Points; or you use a Skill you acquired among Bishop\u2019s Edict, Charging Cavalry or King\u2019s Castle for free (spending the appropriate MP).",
+            "tags": [
+                "attack",
+                "free-attack",
+                "hp",
+                "skill",
+                "weapon"
+            ],
+            "class": "Commander",
+            "max-sl": 6
+        }
+    ]
 }

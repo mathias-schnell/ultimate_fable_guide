@@ -1,5 +1,43 @@
 <?php
 
+$css_files = [
+    "reset",
+    "style",
+    "icons",
+    "content"
+];
+
+$order = [
+    "classes", 
+    "class-features",
+    "heroic-skills", 
+    "equipment",
+    "equipment-rare",
+    "optional-rules"
+];
+
+$elem_icons = [
+    "physical" => "svg-physical",
+    "air" => "svg-fluffy-trefoil",
+    "bolt" => "svg-bolt",
+    "ice" => "svg-ice",
+    "earth" => "svg-stone-block",
+    "fire" => "svg-fire",
+    "light" => "svg-sun",
+    "dark" => "svg-dark",
+    "poison" => "svg-poison"
+];
+
+$global_icons = [
+    "martial" => "svg-diamonds",
+    "offensive" => "svg-electric",
+    "weapons-only" => "svg-check-mark"
+];
+
+$title_icons = [
+    'svg-emerald'
+];
+
 $filter_tags = [
     "Source" => [
         "core"                  => "Core",

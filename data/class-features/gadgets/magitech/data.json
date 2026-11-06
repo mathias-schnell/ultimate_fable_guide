@@ -1,8 +1,18 @@
 {
-  "always-expand": false,
-  "is-container": false,
-  "icon": "",
-  "label": "Magitech",
-  "sub-labels": [],
-  "order": ["basic", "advanced", "superior"]
+    "always-expand": false,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-gadgets-magitech",
+    "label": "Magitech",
+    "sub-labels": [],
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "basic",
+        "advanced",
+        "superior"
+    ]
 }

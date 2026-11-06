@@ -1,10 +1,20 @@
 {
-  "icon": "",
-  "label": "Bonus Content",
-  "sub-labels": "",
-  "order": [
-    "necromancer",
-    "heroic-skills",
-    "quirks"
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "optional-rules-bonus-content",
+    "label": "Bonus Content",
+    "sub-labels": "",
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "ace-of-cards",
+        "necromancer",
+        "arcana",
+        "heroic-skills",
+        "quirks"
+    ]
 }

@@ -1,54 +1,63 @@
 {
-  "label": "Shields",
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Defense",
-      "field": "defense",
-      "class": "defense"
-    },
-    {
-      "label": "M. Defense",
-      "field": "m-defense",
-      "class": "m-defense"
-    },
-    {
-      "label": "Initiative",
-      "field": "initiative",
-      "class": "initiative"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.25fr 1fr 1.25fr 1.25fr 1.25fr 0.25fr",
-  "group-tags": ["shield"],
-  "data": [
-    {
-      "name": "Bronze Shield",
-      "martial": false,
-      "cost": "100 z",
-      "defense": "+2",
-      "m-defense": "—",
-      "initiative": "—",
-      "description": "No Quality.",
-      "tags": ["basic", "core"]
-    },
-    {
-      "name": "Runic Shield",
-      "martial": true,
-      "cost": "150 z",
-      "defense": "+2",
-      "m-defense": "+2",
-      "initiative": "—",
-      "description": "No Quality.",
-      "tags": ["basic", "core", "martial"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-shields-basic",
+    "label": "Shields",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Defense",
+            "key": "defense"
+        },
+        {
+            "label": "M. Defense",
+            "key": "m-defense"
+        },
+        {
+            "label": "Initiative",
+            "key": "initiative"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.25fr 1fr 1.25fr 1.25fr 1.25fr 0.25fr",
+    "group-tags": [
+        "shield"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Bronze Shield",
+            "slug": "equipment-shields-basic-bronze-shield",
+            "description": "No Quality.",
+            "tags": [],
+            "cost": "100 z",
+            "defense": "+2",
+            "initiative": "\u2014",
+            "m-defense": "\u2014",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Runic Shield <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-shields-basic-runic-shield",
+            "description": "No Quality.",
+            "tags": [],
+            "cost": "150 z",
+            "defense": "+2",
+            "initiative": "\u2014",
+            "m-defense": "+2",
+            "martial": true
+        }
+    ]
 }

@@ -26,8 +26,7 @@ const content_click_actions = {
     "[class*='-pin']"            : toggle_pin,
     "[class*='-toggle']"         : toggle_item,
     "[class*='-row'] > *"        : toggle_item,
-    "[class*='-multitoggle']"    : toggle_all,
-    "[class*='-col-sort']"       : toggle_col_sort,
+    "[class*='-multitoggle']"    : toggle_all
 };
 
 /** 
@@ -484,7 +483,7 @@ function toggle_item(target, ctx = {}, forced_state = null, scroll_to = true) {
         target = target.closest("[class*='row']")?.querySelector("[class*='toggle']");
         target_id = target?.getAttribute('aria-controls');
     }
-    if(!target_id) return;
+    if(!target_id || target.hasAttribute('disabled')) return;
     
     const is_expanded = target.getAttribute('aria-expanded') === 'true';
     const new_state = forced_state ?? !is_expanded;
@@ -539,37 +538,4 @@ function scroll_to_element(element, offset = 50, delay = 350) {
         const offset_pos = ele_pos + window.scrollY - offset;
         window.scrollTo({ top: offset_pos, behavior: 'smooth'});
     }, delay);
-}
-
-/**
- * Toggle the sort order of the content based on the clicked column header.
- * 
- * @param {HTMLElement} target 
- * @param {AppContext} ctx
- */
-function toggle_col_sort(target, ctx) {
-    if(!target || !ctx) return;
-    const sort_by = target.dataset.sortBy;
-    if(!sort_by) return;
-
-    const new_sort_order = target.dataset.sortDesc !== "true";
-    const active_tab = ctx.nav.querySelector(".tab.active");
-    if(!active_tab) return;
-
-    const container = ctx.content.querySelector("." + active_tab.getAttribute("aria-controls"));
-    if(!container) return;
-
-    const groups = container.querySelectorAll("[class$='-group']");
-    groups.forEach(group => {
-        const columns = group.querySelectorAll("[class$='-col-sort']");
-        columns.forEach(col => col.dataset.sortDesc = (col.dataset.sortBy === sort_by) ? String(new_sort_order) : "");
-        const articles = Array.from(group.querySelectorAll("article"));
-        articles.sort((a, b) => {
-            const str_a = a.querySelector("." + sort_by)?.textContent.trim() ?? '';
-            const str_b = b.querySelector("." + sort_by)?.textContent.trim() ?? '';
-            const comp = str_a.localeCompare(str_b, undefined, { numeric: true, sensitivity: 'base' });
-            return new_sort_order ? -comp : comp;
-        });
-        articles.forEach(article => group.appendChild(article));
-    });
 }

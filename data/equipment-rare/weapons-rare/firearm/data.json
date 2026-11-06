@@ -1,185 +1,321 @@
 {
-  "always-expand": false,
-  "is-container": false,
-  "label": "Firearms",
-  "sub-labels": [],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Accuracy",
-      "field": "accuracy",
-      "class": "accuracy"
-    },
-    {
-      "label": "Damage",
-      "field": "damage",
-      "class": "damage"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
-  "group-tags": ["firearm", "rare"],
-  "data": [
-    {
-      "name": "Revolver",
-      "martial": true,
-      "cost": "300 z",
-      "accuracy": "【DEX + DEX】",
-      "damage": "【HR + 8】 physical",
-      "description": "One-handed • Ranged • No Quality.",
-      "tags": ["core", "firearm", "one-handed", "ranged", "physical", "DEX", "martial", "rare"]
-    },
-    {
-      "name": "Istinggar",
-      "martial": true,
-      "cost": "350 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 12】 physical",
-      "description": "Two-handed • Ranged • No Quality.",
-      "tags": ["core", "firearm", "two-handed", "ranged", "physical", "DEX", "INS", "martial", "rare"]
-    },
-    {
-      "name": "Spellshot",
-      "martial": true,
-      "cost": "400 z",
-      "accuracy": "【INS + INS】",
-      "damage": "【HR + 8】 physical",
-      "description": "One-handed • Ranged • Attacks with this weapon target Magic Defense.",
-      "tags": ["core", "firearm", "one-handed", "ranged", "physical", "INS", "martial", "rare", "mdef-target"]
-    },
-    {
-      "name": "Diamond Pistol",
-      "martial": true,
-      "cost": "650 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 8】 physical",
-      "description": "One-handed • Ranged • This weapon deals 5 extra damage to constructs.",
-      "tags": ["core", "firearm", "one-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "construct"]
-    },
-    {
-      "name": "Headhunter",
-      "martial": true,
-      "cost": "800 z",
-      "accuracy": "【DEX + INS】",
-      "damage": "【HR + 8】 physical",
-      "description": "One-handed • Ranged • This weapon deals 5 extra damage to targets you have a Bond of hatred towards.",
-      "tags": ["core", "firearm", "one-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "bond"]
-    },
-    {
-      "name": "Comet Gun",
-      "martial": true,
-      "cost": "950 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 8】 dark",
-      "description": "One-handed • Ranged • You are immune to dazed.",
-      "tags": ["core", "firearm", "one-handed", "ranged", "dark", "DEX", "INS", "martial", "rare", "immunity"]
-    },
-    {
-      "name": "Bunker Cannon",
-      "martial": true,
-      "cost": "1050 z",
-      "accuracy": "【DEX + INS】",
-      "damage": "【HR + 12】 physical",
-      "description": "Two-handed • Ranged • You gain a +1 bonus to Defense.",
-      "tags": ["core", "firearm", "two-handed", "ranged", "physical", "DEX", "INS", "martial", "rare", "def-bonus"]
-    },
-    {
-      "name": "Alchemusket",
-      "martial": true,
-      "cost": "1300 z",
-      "accuracy": "【DEX + INS】",
-      "damage": "【HR + 8】 poison",
-      "description": "One-handed • Ranged • Potions you create with your Inventory Points deal 5 extra damage and restore 5 additional Hit Points.",
-      "tags": ["core", "firearm", "one-handed", "ranged", "poison", "DEX", "INS", "martial", "rare", "potions"]
-    },
-    {
-      "name": "Calamity",
-      "martial": true,
-      "cost": "1550 z",
-      "accuracy": "【DEX + INS】",
-      "damage": "【HR + 16】 fire",
-      "description": "Two-handed • Ranged • Attacks with this weapon have multi (2).",
-      "tags": ["core", "firearm", "two-handed", "ranged", "fire", "DEX", "INS", "martial", "rare", "multi"]
-    },
-    {
-      "name": "Freezing Shot",
-      "martial": true,
-      "cost": "1850 z",
-      "accuracy": "【DEX + INS】",
-      "damage": "【HR + 8】 ice",
-      "description": "One-handed • Ranged • Each target hit by this weapon suffers slow.",
-      "tags": ["core", "firearm", "one-handed", "ranged", "ice", "DEX", "INS", "martial", "rare", "slow", "status"]
-    },
-    {
-      "name": "Quatermain",
-      "martial": true,
-      "cost": "2600 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 12】 air",
-      "description": "Two-handed • Ranged • This weapon deals extra damage equal to the difference between your current and maximum Inventory Points.",
-      "tags": ["core", "firearm", "two-handed", "ranged", "air", "DEX", "INS", "martial", "rare", "inventory-points"]
-    },
-    {
-      "name": "Ultimatum",
-      "martial": true,
-      "cost": "1800 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 12】 earth",
-      "description": "One-handed • Ranged • When a creature includes you among the targets of an attack or offensive spell (🗲), they must first spend 5 Mind Points. Otherwise, they cannot include you among the targets.",
-      "tags": ["high-fantasy", "rare", "martial", "firearm", "one-handed", "ranged", "earth", "DEX", "INS", "attack", "spell", "mp"]
-    },
-    {
-      "name": "Derringer",
-      "martial": false,
-      "cost": "800 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 8】 physical",
-      "description": "One-handed • Ranged • The first attack you perform with this weapon during each scene deals 5 extra damage. Also, despite being based on the pistol’s profile, this isn’t considered a martial weapon.",
-      "tags": ["natural-fantasy", "rare", "firearm", "one-handed", "ranged", "physical", "DEX", "INS", "attack", "damage"]
-    },
-    {
-      "name": "Voltaic Hound",
-      "martial": true,
-      "cost": "1600 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 16】 bolt",
-      "description": "Two-handed • Ranged • After this weapon deals damage to one or more creatures, if at least one of those creatures is Vulnerable to bolt damage, you may deal 10 bolt damage to every enemy you can see.",
-      "tags": ["natural-fantasy", "rare", "martial", "firearm", "two-handed", "ranged", "bolt", "DEX", "INS", "damage", "vulnerability"]
-    },
-    {
-      "name": "Grenade Launcher",
-      "martial": true,
-      "cost": "1000 z",
-      "accuracy": "【DEX + INS】",
-      "damage": "【HR + 16】 physical",
-      "description": "Two-handed • Ranged • When you apply an infusion to an attack made with this weapon, that attack deals extra damage equal to your Skill Level in Gadgets.",
-      "tags": ["techno-fantasy", "rare", "martial", "firearm", "two-handed", "ranged", "physical", "DEX", "INS", "attack", "damage", "skill", "tinkerer"]
-    },
-    {
-      "name": "Sniper Rifle",
-      "martial": true,
-      "cost": "1800 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 16】 physical",
-      "description": "Two-handed • Ranged • If you have acquired the Hawkeye Skill, treat your Skill Level in it as if it were increased by 3 (up to a maximum of SL 8).",
-      "tags": ["techno-fantasy", "rare", "martial", "firearm", "two-handed", "ranged", "physical", "DEX", "INS", "skill", "sharpshooter"]
-    },
-    {
-      "name": "Thunder Vulcan",
-      "martial": true,
-      "cost": "3000 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 16】 bolt",
-      "description": "Two-handed • Ranged • You may perform the Skill action to perform up to three attacks with this weapon (against a single target or multiple targets). If you do, all of these attacks follow the two-weapon fighting rules.",
-      "tags": ["techno-fantasy", "rare", "martial", "firearm", "two-handed", "ranged", "bolt", "DEX", "INS", "skill", "attack"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-rare-weapons-rare-firearm",
+    "label": "Firearms",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Accuracy",
+            "key": "accuracy"
+        },
+        {
+            "label": "Damage",
+            "key": "damage"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "firearm",
+        "rare"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Revolver <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-revolver",
+            "description": "One-handed \u2022 Ranged \u2022 No Quality.",
+            "tags": [
+                "one-handed",
+                "ranged"
+            ],
+            "accuracy": "\u3010DEX + DEX\u3011",
+            "cost": "300 z",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Istinggar <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-istinggar",
+            "description": "Two-handed \u2022 Ranged \u2022 No Quality.",
+            "tags": [
+                "ranged",
+                "two-handed"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "350 z",
+            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Spellshot <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-spellshot",
+            "description": "One-handed \u2022 Ranged \u2022 Attacks with this weapon target Magic Defense.",
+            "tags": [
+                "defense",
+                "magic-defense",
+                "one-handed",
+                "ranged",
+                "weapon"
+            ],
+            "accuracy": "\u3010INS + INS\u3011",
+            "cost": "400 z",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Diamond Pistol <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-diamond-pistol",
+            "description": "One-handed \u2022 Ranged \u2022 This weapon deals 5 extra damage to constructs.",
+            "tags": [
+                "one-handed",
+                "ranged",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "650 z",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Headhunter <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-headhunter",
+            "description": "One-handed \u2022 Ranged \u2022 This weapon deals 5 extra damage to targets you have a Bond of hatred towards.",
+            "tags": [
+                "bond",
+                "one-handed",
+                "ranged",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011",
+            "cost": "800 z",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Comet Gun <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-comet-gun",
+            "description": "One-handed \u2022 Ranged \u2022 You are immune to dazed.",
+            "tags": [
+                "dazed",
+                "one-handed",
+                "ranged"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "950 z",
+            "damage": "\u3010HR + 8\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Bunker Cannon <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-bunker-cannon",
+            "description": "Two-handed \u2022 Ranged \u2022 You gain a +1 bonus to Defense.",
+            "tags": [
+                "defense",
+                "ranged",
+                "two-handed"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011",
+            "cost": "1050 z",
+            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Alchemusket <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-alchemusket",
+            "description": "One-handed \u2022 Ranged \u2022 Potions you create with your Inventory Points deal 5 extra damage and restore 5 additional Hit Points.",
+            "tags": [
+                "hp",
+                "inventory",
+                "ip",
+                "one-handed",
+                "ranged"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011",
+            "cost": "1300 z",
+            "damage": "\u3010HR + 8\u3011 poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Calamity <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-calamity",
+            "description": "Two-handed \u2022 Ranged \u2022 Attacks with this weapon have multi (2).",
+            "tags": [
+                "multi",
+                "ranged",
+                "two-handed",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011",
+            "cost": "1550 z",
+            "damage": "\u3010HR + 16\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Freezing Shot <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-freezing-shot",
+            "description": "One-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers slow.",
+            "tags": [
+                "one-handed",
+                "ranged",
+                "slow",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011",
+            "cost": "1850 z",
+            "damage": "\u3010HR + 8\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Quatermain <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-quatermain",
+            "description": "Two-handed \u2022 Ranged \u2022 This weapon deals extra damage equal to the difference between your current and maximum Inventory Points.",
+            "tags": [
+                "inventory",
+                "ip",
+                "ranged",
+                "two-handed",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "2600 z",
+            "damage": "\u3010HR + 12\u3011 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ultimatum <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-ultimatum",
+            "description": "One-handed \u2022 Ranged \u2022 When a creature includes you among the targets of an attack or offensive spell (\ud83d\uddf2), they must first spend 5 Mind Points. Otherwise, they cannot include you among the targets.",
+            "tags": [
+                "attack",
+                "mp",
+                "one-handed",
+                "ranged",
+                "spell"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "1800 z",
+            "damage": "\u3010HR + 12\u3011 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Derringer",
+            "slug": "equipment-rare-weapons-rare-firearm-derringer",
+            "description": "One-handed \u2022 Ranged \u2022 The first attack you perform with this weapon during each scene deals 5 extra damage. Also, despite being based on the pistol\u2019s profile, this isn\u2019t considered a martial weapon.",
+            "tags": [
+                "attack",
+                "martial",
+                "one-handed",
+                "ranged",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "800 z",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Voltaic Hound <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-voltaic-hound",
+            "description": "Two-handed \u2022 Ranged \u2022 After this weapon deals damage to one or more creatures, if at least one of those creatures is Vulnerable to bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage, you may deal 10 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to every enemy you can see.",
+            "tags": [
+                "bolt",
+                "ranged",
+                "two-handed",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "1600 z",
+            "damage": "\u3010HR + 16\u3011 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Grenade Launcher <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-grenade-launcher",
+            "description": "Two-handed \u2022 Ranged \u2022 When you apply an infusion to an attack made with this weapon, that attack deals extra damage equal to your Skill Level in Gadgets.",
+            "tags": [
+                "attack",
+                "ranged",
+                "skill",
+                "two-handed",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011",
+            "cost": "1000 z",
+            "damage": "\u3010HR + 16\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Sniper Rifle <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-sniper-rifle",
+            "description": "Two-handed \u2022 Ranged \u2022 If you have acquired the Hawkeye Skill, treat your Skill Level in it as if it were increased by 3 (up to a maximum of SL 8).",
+            "tags": [
+                "ranged",
+                "skill",
+                "two-handed"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "1800 z",
+            "damage": "\u3010HR + 16\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Thunder Vulcan <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-firearm-thunder-vulcan",
+            "description": "Two-handed \u2022 Ranged \u2022 You may perform the Skill action to perform up to three attacks with this weapon (against a single target or multiple targets). If you do, all of these attacks follow the two-weapon fighting rules.",
+            "tags": [
+                "ranged",
+                "skill",
+                "two-handed",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "3000 z",
+            "damage": "\u3010HR + 16\u3011 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>)",
+            "martial": true
+        }
+    ]
 }

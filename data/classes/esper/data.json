@@ -1,56 +1,101 @@
 {
-  "icon": "psychic-waves",
-  "label": "Esper",
-  "sub-labels": ["Permanently increase your maximum Mind Points by 5."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["techno-fantasy", "esper"],
-  "data": [
-    {
-      "name": "Cognitive Focus",
-      "class": "Esper",
-      "max-sl": 5,
-      "description": "At the start of your turn during a conflict, you may choose one ally who is able to hear you or one enemy you can see that is suffering from dazed, enraged, and/or shaken. Until the start of your next turn, the chosen creature becomes your focus.\nYou gain a bonus equal to (SL) to Checks you perform to examine your focus, as well as to your Accuracy Checks and Magic Checks for attacks and offensive spells (🗲) that include your focus among the targets. When you cause your focus to recover Hit Points and/or Mind Points, they recover (SL × 2) additional HP and/or MP, respectively.",
-      "tags": ["attack", "hp", "mp", "spell", "status"]
-    },
-    {
-      "name": "Hypercognition",
-      "class": "Esper",
-      "max-sl": 5,
-      "description": "The Mind Point cost of your spells and verses (High Fantasy Atlas, page 138) that include your focus among their targets is reduced by (SL), or by (SL × 2) if your focus is the only target (to a minimum cost of 0 Mind Points).",
-      "tags": ["mp", "spell", "verse"]
-    },
-    {
-      "name": "Navigator",
-      "class": "Esper",
-      "max-sl": 1,
-      "description": "You can communicate telepathically with any conscious ally within 1 travel day of you; you are able to hear each other for the sake of Skills and effects.\nYou gain the ability to perform Rituals of the Ritualism discipline. Additionally, you may use Ritualism to transport creatures in and out of the soul network, and to gain information and track entities while inside the soul network.",
-      "tags": ["skill", "travel", "ritual"]
-    },
-    {
-      "name": "Psychic Gifts",
-      "class": "Esper",
-      "max-sl": 5,
-      "description": "Each time you take this Skill, you gain a gift. The rules for gifts and for the Brainwave Clock can be found on the next page.",
-      "tags": ["clock", "gift", "skill"]
-    },
-    {
-      "name": "Psychokinesis",
-      "class": "Esper",
-      "max-sl": 1,
-      "description": "When you perform an Accuracy Check, you may replace one of the Attribute dice with Willpower (such as (DEX + WLP) for a shortbow). Additionally, your melee attacks with weapons belonging to the arcane or sword Categories may target flying creatures.",
-      "tags": ["arcane", "attack", "melee", "sword", "WLP"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "psychic-waves",
+    "slug": "classes-esper",
+    "label": "Esper",
+    "sub-labels": [
+        "Permanently increase your maximum Mind Points by 5."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "techno-fantasy",
+        "esper"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Cognitive Focus",
+            "slug": "classes-esper-cognitive-focus",
+            "description": "At the start of your turn during a conflict, you may choose one ally who is able to hear you or one enemy you can see that is suffering from dazed, enraged, and/or shaken. Until the start of your next turn, the chosen creature becomes your focus.\nYou gain a bonus equal to (SL) to Checks you perform to examine your focus, as well as to your Accuracy Checks and Magic Checks for attacks and offensive spells (\ud83d\uddf2) that include your focus among the targets. When you cause your focus to recover Hit Points and/or Mind Points, they recover (SL \u00d7 2) additional HP and/or MP, respectively.",
+            "tags": [
+                "dazed",
+                "enraged",
+                "focus",
+                "hp",
+                "mp",
+                "shaken"
+            ],
+            "class": "Esper",
+            "max-sl": 5
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Hypercognition",
+            "slug": "classes-esper-hypercognition",
+            "description": "The Mind Point cost of your spells and verses (High Fantasy Atlas, page 138) that include your focus among their targets is reduced by (SL), or by (SL \u00d7 2) if your focus is the only target (to a minimum cost of 0 Mind Points).",
+            "tags": [
+                "focus",
+                "high-fantasy",
+                "mp",
+                "verse"
+            ],
+            "class": "Esper",
+            "max-sl": 5
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Navigator",
+            "slug": "classes-esper-navigator",
+            "description": "You can communicate telepathically with any conscious ally within 1 travel day of you; you are able to hear each other for the sake of Skills and effects.\nYou gain the ability to perform Rituals of the Ritualism discipline. Additionally, you may use Ritualism to transport creatures in and out of the soul network, and to gain information and track entities while inside the soul network.",
+            "tags": [
+                "travel"
+            ],
+            "class": "Esper",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Psychic Gifts",
+            "slug": "classes-esper-psychic-gifts",
+            "description": "Each time you take this Skill, you gain a gift. The rules for gifts and for the Brainwave Clock can be found on the next page.",
+            "tags": [
+                "clock",
+                "gift",
+                "skill"
+            ],
+            "class": "Esper",
+            "max-sl": 5
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Psychokinesis",
+            "slug": "classes-esper-psychokinesis",
+            "description": "When you perform an Accuracy Check, you may replace one of the Attribute dice with Willpower (such as (DEX + WLP) for a shortbow). Additionally, your melee attacks with weapons belonging to the arcane or sword Categories may target flying creatures.",
+            "tags": [
+                "arcane",
+                "flying",
+                "melee",
+                "sword"
+            ],
+            "class": "Esper",
+            "max-sl": 1
+        }
+    ]
 }

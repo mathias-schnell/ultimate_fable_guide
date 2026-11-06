@@ -1,42 +1,65 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "",
-  "sub-labels": ["Air wellspring"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Effect",
-      "field": "effect",
-      "class": "effect"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
-  "group-tags": ["air", "invoker", "invocation"],
-  "data": [
-    {
-      "name": "Aero Blast",
-      "effect": "You deal 20 air damage to the target.",
-      "tags": ["air"]
-    },
-    {
-      "name": "Aero Hex",
-      "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal bolt and fire damage.",
-      "tags": ["bolt", "fire"]
-    },
-    {
-      "name": "Breeze",
-      "effect": "The target recovers 30 Hit Points.",
-      "tags": ["hp"]
-    },
-    {
-      "name": "Twister",
-      "effect": "You deal 10 air damage to the target, and they suffer dazed.",
-      "tags": ["air", "dazed"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-invocations-air",
+    "label": "",
+    "sub-labels": [
+        "Air wellspring"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Effect",
+            "key": "effect"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+    "group-tags": [
+        "air",
+        "invoker",
+        "invocation"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Aero Blast",
+            "slug": "class-features-invocations-air-aero-blast",
+            "description": "",
+            "tags": [],
+            "effect": "You deal 20 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage to the target."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Aero Hex",
+            "slug": "class-features-invocations-air-aero-hex",
+            "description": "",
+            "tags": [],
+            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) and fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Breeze",
+            "slug": "class-features-invocations-air-breeze",
+            "description": "",
+            "tags": [],
+            "effect": "The target recovers 30 Hit Points."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Twister",
+            "slug": "class-features-invocations-air-twister",
+            "description": "",
+            "tags": [],
+            "effect": "You deal 10 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage to the target, and they suffer dazed."
+        }
+    ]
 }

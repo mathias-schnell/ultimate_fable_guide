@@ -1,59 +1,84 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "Heavy",
-  "sub-labels": ["Heavy"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Accuracy",
-      "field": "accuracy",
-      "class": "accuracy"
-    },
-    {
-      "label": "Damage",
-      "field": "damage",
-      "class": "damage"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "heavy", "basic", "martial", "weapon"],
-  "data": [
-    {
-      "name": "Iron Hammer",
-      "martial": false,
-      "cost": "200 z",
-      "accuracy": "【MIG + MIG】",
-      "damage": "【HR + 6】 physical",
-      "description": "One-handed • Melee • No Quality.",
-      "tags": ["one-handed", "melee", "physical", "MIG"]
-    },
-    {
-      "name": "Broadaxe",
-      "martial": true,
-      "cost": "250 z",
-      "accuracy": "【MIG + MIG】",
-      "damage": "【HR + 10】 physical",
-      "description": "One-handed • Melee • No Quality.",
-      "tags": ["one-handed", "melee", "physical", "MIG"]
-    },
-    {
-      "name": "Waraxe",
-      "martial": true,
-      "cost": "250 z",
-      "accuracy": "【MIG + MIG】",
-      "damage": "【HR + 14】 physical",
-      "description": "Two-handed • Melee • No Quality.",
-      "tags": ["two-handed", "melee", "physical", "MIG"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-weapons-basic-heavy",
+    "label": "Heavy",
+    "sub-labels": [
+        "Heavy"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Accuracy",
+            "key": "accuracy"
+        },
+        {
+            "label": "Damage",
+            "key": "damage"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "heavy",
+        "basic",
+        "martial",
+        "weapon"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Iron Hammer",
+            "slug": "equipment-weapons-basic-heavy-iron-hammer",
+            "description": "One-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "one-handed"
+            ],
+            "accuracy": "\u3010MIG + MIG\u3011",
+            "cost": "200 z",
+            "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Broadaxe <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-weapons-basic-heavy-broadaxe",
+            "description": "One-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "one-handed"
+            ],
+            "accuracy": "\u3010MIG + MIG\u3011",
+            "cost": "250 z",
+            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Waraxe <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-weapons-basic-heavy-waraxe",
+            "description": "Two-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "two-handed"
+            ],
+            "accuracy": "\u3010MIG + MIG\u3011",
+            "cost": "250 z",
+            "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        }
+    ]
 }

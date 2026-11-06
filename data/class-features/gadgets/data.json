@@ -1,8 +1,14 @@
 {
-  "always-expand": false,
-  "is-container": true,
-  "icon": "",
-  "label": "Gadgets",
-  "sub-labels": [],
-  "order": []
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-gadgets",
+    "label": "Gadgets",
+    "sub-labels": [],
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": []
 }

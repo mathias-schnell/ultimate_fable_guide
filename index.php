@@ -1,6 +1,6 @@
 <?php
     require_once __DIR__ . '/includes/config/app_conf.php';
-    require_once __DIR__ . '/includes/config/tags_conf.php';
+    require_once __DIR__ . '/includes/config/data_conf.php';
     require_once __DIR__ . '/includes/helpers/helper_funcs.php';
 
     $stylesheets = "";
@@ -23,7 +23,7 @@
 <body>
     <main id="main-container" class="container">
         <section class="title-container">
-            <span class="title-icon ui-icon <?= get_rand_class(); ?>"></span>
+            <span class="title-icon ui-icon <?= $title_icons[0]; ?>"></span>
             <h1 class="app-title">Ultimate Fable Guide</h1>
         </section>
         <section class="filter-container">

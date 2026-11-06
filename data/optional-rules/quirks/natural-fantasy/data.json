@@ -1,0 +1,261 @@
+{
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": false,
+    "icon": "",
+    "slug": "optional-rules-quirks-natural-fantasy",
+    "label": "Quirks",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Summary",
+            "key": "summary"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+    "group-tags": [
+        "natural-fantasy"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ancient Weapon",
+            "slug": "optional-rules-quirks-natural-fantasy-ancient-weapon",
+            "description": "<p>Together with the rest of your group, create a rare custom weapon (see page 112) worth 1200 zenit or less. This weapon should have an especially unusual and technological appearance; it can be a good idea to make it a firearm weapon and determine that similar items are rare and mysterious in your world.</p><p>Once per session (approximately four hours of play), the Game Master may give you 1 Fabula Point in order to have sudden complications arise due to the unique nature of the weapon (such as strange machines reacting to its presence, or monsters drawn to the special energy it emits). However, the weapon cannot be destroyed, damaged, lost or stolen without your permission as a Player.</p>",
+            "tags": [
+                "fabula-point",
+                "firearm",
+                "rare",
+                "weapon",
+                "zenit"
+            ],
+            "summary": "Start with a unique rare custom weapon worth up to 1200 zenit that cannot be lost or destroyed without your permission."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Arboreal",
+            "slug": "optional-rules-quirks-natural-fantasy-arboreal",
+            "description": "<p>Choose a status effect: dazed, enraged, or shaken. You are immune to the chosen status effect. However, you also gain Vulnerability to a damage type of your choice: air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), or ice (<i class=\"ui-icon elem-ice svg-ice\"></i>).</p><p>You also learn one NPC spell (pages 310-311 of the Core Rulebook; you cannot choose Devastation; if a Magic Check is required, use (INS + WLP)): customize the spell as needed (name, damage type, status effects etc.). When you cast this spell while in sunlight, its total MP cost is reduced by 5 (to a minimum of 0 Mind Points).</p>",
+            "tags": [
+                "air",
+                "bolt",
+                "core",
+                "dazed",
+                "earth",
+                "enraged",
+                "fire",
+                "ice",
+                "mp",
+                "shaken",
+                "spell",
+                "vulnerability"
+            ],
+            "summary": "Sentient plant creature immune to one status effect with a sunlight spell-cost discount, but vulnerable to an element."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Big Bro",
+            "slug": "optional-rules-quirks-natural-fantasy-big-bro",
+            "description": "<p>If your group&rsquo;s campaign does not make use of the optional rule Camp Activities (see page 130), your character still gains access to it.</p><p>Your character gains access to three Camp Activities instead of only two. If your character gains this Quirk during a campaign that already makes use of Camp Activities, you simply gain access to a single new Camp Activity of your choice.</p><p>When you choose to perform Camp Activities during a Rest, choose one option: you perform two different Camp Activities, whose effects cannot be applied to the same creature; or you perform the same Camp Activity twice, applying its effects to two different creatures.</p>",
+            "tags": [],
+            "summary": "Gain or expand access to Camp Activities, allowing you to perform two activities or duplicate one during Rests."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Cursed",
+            "slug": "optional-rules-quirks-natural-fantasy-cursed",
+            "description": "<p>When you acquire this Quirk, describe the nature of your curse and tie it to one of the threats present in your world. Once this threat is resolved, you will finally have a chance to break free from the curse - describe how you expect this to happen.</p><p>When you are about to perform a Check, you may instead describe how your curse gets in the way and automatically roll a fumble (both dice are treated as if you had rolled a 1 on them). If you do, you receive 2 Fabula Points instead of 1, and generate an opportunity as normal.</p><p>If you ever manage to break the curse, immediately gain a Heroic Skill of your choice (you may even choose a Heroic Skill whose requirements you do not satisfy, unless they include a Skill you don&rsquo;t have). This includes choosing a Heroic Skill for a Class you do not have.</p>",
+            "tags": [
+                "fabula-point",
+                "fumble",
+                "skill"
+            ],
+            "summary": "Trigger fumbles intentionally for extra Fabula Points and gain a Heroic Skill once your world threat is resolved."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Elemental Soul",
+            "slug": "optional-rules-quirks-natural-fantasy-elemental-soul",
+            "description": "<p>Choose your elemental damage type: air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), or ice (<i class=\"ui-icon elem-ice svg-ice\"></i>). You gain Resistance to the chosen damage type; additionally, whenever you deal damage, you may change its type so that it matches your elemental damage type. However, you also gain Vulnerability to a different damage type chosen among those five.</p><p>You also gain the ability to perform Rituals of the Elementalism discipline, but only if those Rituals manipulate your chosen element (respectively air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), electricity, earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>)/rock, fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)/water).</p>",
+            "tags": [
+                "air",
+                "bolt",
+                "earth",
+                "elemental",
+                "fire",
+                "ice",
+                "resistance",
+                "vulnerability"
+            ],
+            "summary": "Gain elemental Resistance, matching damage conversion, and discipline-locked elemental Ritual access."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Flight",
+            "slug": "optional-rules-quirks-natural-fantasy-flight",
+            "description": "<p>You are able to fly. In addition to the obvious advantage in mobility, your melee attacks can target flying creatures and you cannot be targeted by melee attacks unless the attacker is flying or is somehow able to reach flying targets.</p><p>While in Crisis or unable to fly freely (such as when you&rsquo;re inside a vehicle designed for human-sized creatures or in a narrow corridor), you lose all benefits granted by this Quirk. Additionally, when you suffer air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) or ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage during a conflict scene, you lose the benefits of this Quirk until the start of your next turn.</p>",
+            "tags": [
+                "air",
+                "bolt",
+                "crisis",
+                "flying",
+                "ice",
+                "melee"
+            ],
+            "summary": "Hover above ground to bypass melee restrictions, though vulnerable to suppression from Crisis or elemental damage."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Mysterious Grimoire",
+            "slug": "optional-rules-quirks-natural-fantasy-mysterious-grimoire",
+            "description": "<p>As long as you have this Quirk, your grimoire is an indestructible artifact that cannot be lost or stolen unless as a consequence of Surrender.</p><p>When your group stumbles upon a danger or discovery after a travel roll, you may ask the Game Master a single question concerning that danger or discovery (you may ask it immediately or save it for later); the Game Master answers truthfully and describes how the answer appears on your grimoire.</p><p>Once your grimoire has answered 10 questions, it almost shared all of its knowledge with you: choose one of the following options: Awakened Consciousness (turns into an NPC who casts an element/entropist/spiritist spell per conflict for 0 MP) or Hidden Magic (acquire a powerful Heroic Skill).</p>",
+            "tags": [
+                "elementalist",
+                "entropist",
+                "skill",
+                "spell",
+                "spiritist",
+                "travel"
+            ],
+            "summary": "Consult an indestructible grimoire for travel answers, eventually gaining an NPC spellcaster helper or a powerful Heroic Skill."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Outcast Fairy",
+            "slug": "optional-rules-quirks-natural-fantasy-outcast-fairy",
+            "description": "<p>You may always communicate with any creature belonging to the beast, elemental, and plant Species.</p><p>You learn one spell of your choice among those found in the Elementalist, Entropist, and Spiritist lists; additionally, you gain the ability to perform Rituals whose effects fall within the Ritualism discipline, and you may use these Rituals to transport creatures in and out of the Realm of Fairies.</p><p>However, you also possess a unique weakness typical of fairies: decide it together with your group. Once per session (approximately four hours of play), the Game Master may give you 1 Fabula Point in order to have sudden complications arise due to this weakness or have you automatically fail a Check.</p>",
+            "tags": [
+                "beast",
+                "elemental",
+                "elementalist",
+                "entropist",
+                "fabula-point",
+                "plant",
+                "species",
+                "spell",
+                "spiritist"
+            ],
+            "summary": "Talk to animals, elementals, and plants, cast a magic spell, perform fairy Rituals, and gain FP from a unique weakness."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Robot",
+            "slug": "optional-rules-quirks-natural-fantasy-robot",
+            "description": "<p>You are not considered a living creature and gain Immunity to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage. You are also immune to the poisoned status effect.</p><p>You do not need to breathe, eat or drink, but you still follow the normal rules for resting; you also recover Hit Points and recover from status effects as normal.</p><p>You gain a +2 bonus to all Checks you perform to examine or interact with machines, technology and constructs (except for Accuracy Checks and Magic Checks).</p>",
+            "tags": [
+                "earth",
+                "hp",
+                "immunity",
+                "poison",
+                "poisoned",
+                "resistance"
+            ],
+            "summary": "Construct body with poison immunity, earth resistance, tech interaction bonuses, and no biological needs."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Stubborn Scion",
+            "slug": "optional-rules-quirks-natural-fantasy-stubborn-scion",
+            "description": "<p>If you choose this Quirk during character creation, increase your initial savings by 1000 zenit.</p><p>Additionally, you are accompanied by two fiercely loyal bodyguards who never take part in Checks or conflicts but offer three active benefits: halve damage suffered, ask the GM one truth per Rest, or add extra damage to elemental shards (5 + half your level). Each use inflicts 1d6 Fatigue Points on your bodyguards; at 10+ fatigue, they cannot help until they recover at session end.</p>",
+            "tags": [
+                "elemental",
+                "zenit"
+            ],
+            "summary": "Start with extra wealth and two loyal bodyguards who mitigate damage or boost elemental shards at the cost of fatigue."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Survivor",
+            "slug": "optional-rules-quirks-natural-fantasy-survivor",
+            "description": "<p>Permanently increase your maximum Hit Points and maximum Mind Points by 5.</p><p>Choose one option: gain the ability to equip martial melee and ranged weapons, martial armor, and martial shields; or learn any one spell from the Elementalist or Spiritist lists; or permanently increase your maximum Inventory Points by 2.</p>",
+            "tags": [
+                "armor",
+                "elementalist",
+                "hp",
+                "inventory",
+                "ip",
+                "martial",
+                "melee",
+                "mp",
+                "ranged",
+                "spell",
+                "spiritist"
+            ],
+            "summary": "Gain a permanent health/mind boost plus your choice of martial equipment access, an extra spell, or extra Inventory Points."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "The Beast Who Spoke",
+            "slug": "optional-rules-quirks-natural-fantasy-the-beast-who-spoke",
+            "description": "<p>You may not equip any items, with the exception of accessories and weapon and armor modules. However, as long as your armor slot is empty, you gain a +2 bonus to Defense and a +2 bonus to Magic Defense.</p><p>You also gain two benefits of your choice: equip custom weapons; learn an NPC spell (using MIG + WLP); or deal 6 extra damage with unarmed strikes (increasing to 10 at level 30+).</p>",
+            "tags": [
+                "armor",
+                "defense",
+                "magic-defense",
+                "module",
+                "spell",
+                "weapon"
+            ],
+            "summary": "Forego standard armor for defense bonuses and choose two feral enhancements like custom weapons, magic, or boosted unarmed strikes."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "The Long Dream",
+            "slug": "optional-rules-quirks-natural-fantasy-the-long-dream",
+            "description": "<p>At the end of each session, roll 2d20; if you roll equal to or lower than your level, the last farewell approaches. When a rule requires you to spend Hit Points, Mind Points, or Fabula Points, you may instead ignore that cost, which also advances the last farewell.</p><p>Once the last farewell has approached 10 times, you permanently leave the world of humans to become an inanimate natural object. While considered dead, all other party members receive 1 additional Fabula Point at the start of each session.</p>",
+            "tags": [
+                "fabula-point",
+                "hp",
+                "ignore",
+                "mp"
+            ],
+            "summary": "Nature spirit in human form who can bypass resource costs, eventually transforming into a landmark that empowers party members."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Traveling Workshop",
+            "slug": "optional-rules-quirks-natural-fantasy-traveling-workshop",
+            "description": "<p>You may only choose this Quirk if your character has acquired one or more Classes among Gourmet and Tinkerer. You obtain a land vehicle large enough to accommodate your group plus guests, but unfit for combat.</p><p>If a Project requires a special ingredient or material, you may spend 1 Fabula Point to suddenly stumble upon something similar in your workshop; if you do, the invention must have a terrible flaw.</p>",
+            "tags": [
+                "fabula-point",
+                "gourmet",
+                "tinkerer",
+                "vehicle"
+            ],
+            "summary": "Own a mobile workshop vehicle and spend Fabula Points to source crafting materials with built-in flaws."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Underchild",
+            "slug": "optional-rules-quirks-natural-fantasy-underchild",
+            "description": "<p>When a rule or ability requires you to spend 100 or fewer Hit Points, Mind Points, or Inventory Points during a conflict, you may instead ignore that cost (usable once per Rest). Additionally, when you encounter ancient technology or ruins, you may ask the GM its purpose, how to activate it, or how to deactivate it.</p><p>After receiving answers 6 times, you recover your memories of why you were left dormant, triggering a key world revelation from the GM while keeping all ongoing Quirk benefits.</p>",
+            "tags": [
+                "hp",
+                "ignore",
+                "inventory",
+                "ip",
+                "mp"
+            ],
+            "summary": "Attuned to ancient tech with the ability to periodically ignore resource costs and interrogate ruins for vital clues."
+        }
+    ]
+}

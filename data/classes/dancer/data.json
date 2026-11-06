@@ -1,56 +1,97 @@
 {
-  "icon": "wooden-clogs",
-  "label": "Dancer",
-  "sub-labels": ["Permanently increase your maximum Hit Points or Mind Points by 5 (your choice)."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["high-fantasy", "dancer"],
-  "data": [
-    {
-      "name": "Dance",
-      "class": "Dancer",
-      "max-sl": 10,
-      "description": "Each time you take this Skill, you learn a dance (see next page).\nOn your turn during a conflict scene, if you have no martial armor equipped, you may spend 10 Mind Points to perform a dance you have learned. This doesn’t require an action, but it can only be done once per turn, while no other effect is being resolved.\nIf you already performed a different dance during your previous turn in this scene, the cost of the new dance is reduced to 5 Mind Points.\nSome dances are instantaneous and resolve immediately, while others have effects that last until the start of your next turn.",
-      "tags": ["dance", "mp"]
-    },
-    {
-      "name": "Follow My Lead",
-      "class": "Dancer",
-      "max-sl": 1,
-      "description": "When you perform a dance with a duration of “Until the start of your next turn”, you may spend 10 Mind Points. If you do, choose one ally you can see towards whom you have a Bond of affection: apply the sub-labels of the dance to that ally as well as yourself (the sub-labels still last until the start of your next turn).",
-      "tags": ["bond", "dance", "mp"]
-    },
-    {
-      "name": "Frenetic Footwork",
-      "class": "Dancer",
-      "max-sl": 2,
-      "description": "After you perform a dance with a duration of “Until the start of your next turn”, you gain a bonus equal to (SL × 2) to all Opposed Checks that rely on acrobatics, coordination or speed until the start of your next turn.",
-      "tags": ["dance"]
-    },
-    {
-      "name": "Quick-Change",
-      "class": "Dancer",
-      "max-sl": 1,
-      "description": "After you perform a dance, you may perform the Equipment action for free.",
-      "tags": ["dance", "equipment"]
-    },
-    {
-      "name": "Wardancer",
-      "class": "Dancer",
-      "max-sl": 5,
-      "description": "After you perform a dance, your attacks with brawling, dagger, flail, sword, and thrown weapons deal (SL) extra damage until the start of your next turn. If you have an arcane weapon equipped, offensive spells (🗲) you cast also deal (SL) extra damage until the start of your next turn.",
-      "tags": ["arcane", "brawling", "dagger", "dance", "damage", "equipment", "flail", "spell", "sword", "thrown"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "body-balance",
+    "slug": "classes-dancer",
+    "label": "Dancer",
+    "sub-labels": [
+        "Permanently increase your maximum Hit Points or Mind Points by 5 (your choice)."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "high-fantasy",
+        "dancer"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Dance",
+            "slug": "classes-dancer-dance",
+            "description": "Each time you take this Skill, you learn a dance (see next page).\nOn your turn during a conflict scene, if you have no martial armor equipped, you may spend 10 Mind Points to perform a dance you have learned. This doesn\u2019t require an action, but it can only be done once per turn, while no other effect is being resolved.\nIf you already performed a different dance during your previous turn in this scene, the cost of the new dance is reduced to 5 Mind Points.\nSome dances are instantaneous and resolve immediately, while others have effects that last until the start of your next turn.",
+            "tags": [
+                "armor",
+                "dance",
+                "martial",
+                "mp",
+                "skill"
+            ],
+            "class": "Dancer",
+            "max-sl": 10
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Follow My Lead",
+            "slug": "classes-dancer-follow-my-lead",
+            "description": "When you perform a dance with a duration of \u201cUntil the start of your next turn\u201d, you may spend 10 Mind Points. If you do, choose one ally you can see towards whom you have a Bond of affection: apply the sub-labels of the dance to that ally as well as yourself (the sub-labels still last until the start of your next turn).",
+            "tags": [
+                "bond",
+                "mp"
+            ],
+            "class": "Dancer",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Frenetic Footwork",
+            "slug": "classes-dancer-frenetic-footwork",
+            "description": "After you perform a dance with a duration of \u201cUntil the start of your next turn\u201d, you gain a bonus equal to (SL \u00d7 2) to all Opposed Checks that rely on acrobatics, coordination or speed until the start of your next turn.",
+            "tags": [],
+            "class": "Dancer",
+            "max-sl": 2
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Quick-Change",
+            "slug": "classes-dancer-quick-change",
+            "description": "After you perform a dance, you may perform the Equipment action for free.",
+            "tags": [
+                "equipment"
+            ],
+            "class": "Dancer",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Wardancer",
+            "slug": "classes-dancer-wardancer",
+            "description": "After you perform a dance, your attacks with brawling, dagger, flail, sword, and thrown weapons deal (SL) extra damage until the start of your next turn. If you have an arcane weapon equipped, offensive spells (\ud83d\uddf2) you cast also deal (SL) extra damage until the start of your next turn.",
+            "tags": [
+                "arcane",
+                "brawling",
+                "dagger",
+                "flail",
+                "sword",
+                "thrown",
+                "weapon"
+            ],
+            "class": "Dancer",
+            "max-sl": 5
+        }
+    ]
 }

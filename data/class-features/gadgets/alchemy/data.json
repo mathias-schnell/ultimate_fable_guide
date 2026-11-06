@@ -1,12 +1,18 @@
 {
-  "always-expand": false,
-  "is-container": false,
-  "icon": "",
-  "label": "Alchemy",
-  "sub-labels": "",
-  "order": [
-    "mix",
-    "target",
-    "effect"
-  ]
+    "always-expand": false,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-gadgets-alchemy",
+    "label": "Alchemy",
+    "sub-labels": "",
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "mix",
+        "target",
+        "effect"
+    ]
 }

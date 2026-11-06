@@ -1,50 +1,69 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "Bow",
-  "sub-labels": ["Bow"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Accuracy",
-      "field": "accuracy",
-      "class": "accuracy"
-    },
-    {
-      "label": "Damage",
-      "field": "damage",
-      "class": "damage"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "bow", "basic", "martial", "weapon"],
-  "data": [
-    {
-      "name": "Crossbow",
-      "martial": false,
-      "cost": "150 z",
-      "accuracy": "【DEX + INS】",
-      "damage": "【HR + 8】 physical",
-      "description": "Two-handed • Ranged • No Quality.",
-      "tags": ["two-handed", "ranged", "physical", "DEX", "INS"]
-    },
-    {
-      "name": "Shortbow",
-      "martial": false,
-      "cost": "200 z",
-      "accuracy": "【DEX + DEX】",
-      "damage": "【HR + 8】 physical",
-      "description": "Two-handed • Ranged • No Quality.",
-      "tags": ["two-handed", "ranged", "physical", "DEX"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-weapons-basic-bow",
+    "label": "Bow",
+    "sub-labels": [
+        "Bow"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Accuracy",
+            "key": "accuracy"
+        },
+        {
+            "label": "Damage",
+            "key": "damage"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "bow",
+        "basic",
+        "martial",
+        "weapon"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Crossbow",
+            "slug": "equipment-weapons-basic-bow-crossbow",
+            "description": "Two-handed \u2022 Ranged \u2022 No Quality.",
+            "tags": [
+                "ranged",
+                "two-handed"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011",
+            "cost": "150 z",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Shortbow",
+            "slug": "equipment-weapons-basic-bow-shortbow",
+            "description": "Two-handed \u2022 Ranged \u2022 No Quality.",
+            "tags": [
+                "ranged",
+                "two-handed"
+            ],
+            "accuracy": "\u3010DEX + DEX\u3011",
+            "cost": "200 z",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": false
+        }
+    ]
 }

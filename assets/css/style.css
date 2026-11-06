@@ -347,7 +347,6 @@ h6 { font-size: var(--font-size-mediumlarge); }
     width: var(--font-size-xxl);
 }
 
-.elem-icon,
 .ui-icon {
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
@@ -370,12 +369,12 @@ h6 { font-size: var(--font-size-mediumlarge); }
     color: var(--text-gold);
 }
 
-.elem-physical.elem-icon { color: var(--elem-physical); mask-image: url('../icons/physical.svg'); -webkit-mask-image: url('../icons/physical.svg'); }
-.elem-air.elem-icon      { color: var(--elem-air); mask-image: url('../icons/fluffy-trefoil.svg'); -webkit-mask-image: url('../icons/fluffy-trefoil.svg'); }
-.elem-bolt.elem-icon     { color: var(--elem-bolt); mask-image: url('../icons/bolt.svg'); -webkit-mask-image: url('../icons/bolt.svg'); }
-.elem-ice.elem-icon      { color: var(--elem-ice); mask-image: url('../icons/ice.svg'); -webkit-mask-image: url('../icons/ice.svg'); }
-.elem-earth.elem-icon    { color: var(--elem-earth); mask-image: url('../icons/stone-block.svg'); -webkit-mask-image: url('../icons/stone-block.svg'); }
-.elem-fire.elem-icon     { color: var(--elem-fire); mask-image: url('../icons/fire.svg'); -webkit-mask-image: url('../icons/fire.svg'); }
-.elem-light.elem-icon    { color: var(--elem-light); mask-image: url('../icons/sun.svg'); -webkit-mask-image: url('../icons/sun.svg'); }
-.elem-dark.elem-icon     { color: var(--elem-dark); mask-image: url('../icons/dark.svg'); -webkit-mask-image: url('../icons/dark.svg'); }
-.elem-poison.elem-icon   { color: var(--elem-poison); mask-image: url('../icons/poison.svg'); -webkit-mask-image: url('../icons/poison.svg'); }
+.elem-physical { color: var(--elem-physical); }
+.elem-air      { color: var(--elem-air); }
+.elem-bolt     { color: var(--elem-bolt); }
+.elem-ice      { color: var(--elem-ice); }
+.elem-earth    { color: var(--elem-earth); }
+.elem-fire     { color: var(--elem-fire); }
+.elem-light    { color: var(--elem-light); }
+.elem-dark     { color: var(--elem-dark); }
+.elem-poison   { color: var(--elem-poison); }

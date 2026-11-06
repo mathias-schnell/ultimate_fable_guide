@@ -1,77 +1,112 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "icon": "",
-  "label": "Zero Triggers",
-  "sub-labels": ["Zero Triggers"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Filled Sections",
-      "field": "filled-sections",
-      "class": "filled-sections"
-    },
-    {
-      "label": "Summary",
-      "field": "summary",
-      "class": "summary"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1fr 1fr 4fr 0.25fr",
-  "group-tags": [],
-  "data": [
-    {
-      "name": "Compassion",
-      "filled-sections": "1 per trigger",
-      "summary": "Fills 1 section when you restore HP or MP to one or more allies.",
-      "description": "This trigger activates when you restore the Hit Points and/or Mind Points of one or more allies (this only triggers with effects that autonomously restore Hit Points or Mind Points, not those that increase recovery caused by a different effect).",
-      "tags": ["hp", "mp"]
-    },
-    {
-      "name": "Defiance",
-      "filled-sections": "1 per trigger",
-      "summary": "Fills 1 section at the start of your turn if a Villain or champion enemy is present.",
-      "description": "This trigger activates at the start of your turn during a conflict, provided one or more Villains and/or champion-Rank enemies are present on the scene.",
-      "tags": ["take-turn"]
-    },
-    {
-      "name": "Love",
-      "filled-sections": "1 per trigger",
-      "summary": "Fills 1 section when the PC you love loses HP or surrenders; fills clock on Sacrifice.",
-      "description": "Special rule: when you choose this trigger for your Zero Power, tie it to another Player Character you have fallen in love with (the feeling doesn't have to be reciprocal, but make sure everyone in the group is comfortable with this dynamic).\n\nThis trigger activates when the character you love loses Hit Points (unless that HP loss was self-inflicted) and/or Surrenders, provided you are able to see them.\n\nIf the character you love Sacrifices themselves and you witness their Sacrifice, fill your Zero Clock; at the end of the scene, choose a different trigger for your Zero Power.",
-      "tags": ["hp"]
-    },
-    {
-      "name": "Revenge",
-      "filled-sections": "3 per trigger",
-      "summary": "Fills 3 sections when you enter Crisis for the first time in a scene.",
-      "description": "This trigger activates when you enter Crisis for the first time during a scene.",
-      "tags": ["crisis"]
-    },
-    {
-      "name": "Sequence",
-      "filled-sections": "2 per trigger",
-      "summary": "Fills 2 sections when an ally you can see unleashes their zero effect.",
-      "description": "This trigger activates when an ally you can see unleashes their zero effect.",
-      "tags": []
-    },
-    {
-      "name": "Strategy",
-      "filled-sections": "1 per trigger",
-      "summary": "Fills 1 section at turn end if enemies suffer from two or more total status effects.",
-      "description": "This trigger activates at the end of your turn during a conflict, provided one or more enemies present on the scene are suffering from a total of two or more different status effects (such as one dazed and weak enemy, or one slow enemy and another enraged enemy).",
-      "tags": ["dazed", "enraged", "shaken", "slow", "weak", "poisoned"]
-    },
-    {
-      "name": "Synergy",
-      "filled-sections": "varies",
-      "summary": "Fills 1 section for each creature hit that was Vulnerable to your damage type.",
-      "description": "This trigger activates when you deal damage to one or more creatures, filling 1 section for each creature that was Vulnerable to the type of damage dealt.",
-      "tags": ["vulnerability"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "optional-rules-zero-powers-zero-triggers",
+    "label": "Zero Triggers",
+    "sub-labels": [
+        "Zero Triggers"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Filled Sections",
+            "key": "filled-sections"
+        },
+        {
+            "label": "Summary",
+            "key": "summary"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1fr 1fr 4fr 0.25fr",
+    "group-tags": [],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Compassion",
+            "slug": "optional-rules-zero-powers-zero-triggers-compassion",
+            "description": "This trigger activates when you restore the Hit Points and/or Mind Points of one or more allies (this only triggers with effects that autonomously restore Hit Points or Mind Points, not those that increase recovery caused by a different effect).",
+            "tags": [
+                "hp",
+                "mp"
+            ],
+            "filled-sections": "1 per trigger",
+            "summary": "Fills 1 section when you restore HP or MP to one or more allies."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Defiance",
+            "slug": "optional-rules-zero-powers-zero-triggers-defiance",
+            "description": "This trigger activates at the start of your turn during a conflict, provided one or more Villains and/or champion-Rank enemies are present on the scene.",
+            "tags": [],
+            "filled-sections": "1 per trigger",
+            "summary": "Fills 1 section at the start of your turn if a Villain or champion enemy is present."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Love",
+            "slug": "optional-rules-zero-powers-zero-triggers-love",
+            "description": "Special rule: when you choose this trigger for your Zero Power, tie it to another Player Character you have fallen in love with (the feeling doesn't have to be reciprocal, but make sure everyone in the group is comfortable with this dynamic).\n\nThis trigger activates when the character you love loses Hit Points (unless that HP loss was self-inflicted) and/or Surrenders, provided you are able to see them.\n\nIf the character you love Sacrifices themselves and you witness their Sacrifice, fill your Zero Clock; at the end of the scene, choose a different trigger for your Zero Power.",
+            "tags": [
+                "clock",
+                "hp"
+            ],
+            "filled-sections": "1 per trigger",
+            "summary": "Fills 1 section when the PC you love loses HP or surrenders; fills clock on Sacrifice."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Revenge",
+            "slug": "optional-rules-zero-powers-zero-triggers-revenge",
+            "description": "This trigger activates when you enter Crisis for the first time during a scene.",
+            "tags": [
+                "crisis"
+            ],
+            "filled-sections": "3 per trigger",
+            "summary": "Fills 3 sections when you enter Crisis for the first time in a scene."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Sequence",
+            "slug": "optional-rules-zero-powers-zero-triggers-sequence",
+            "description": "This trigger activates when an ally you can see unleashes their zero effect.",
+            "tags": [],
+            "filled-sections": "2 per trigger",
+            "summary": "Fills 2 sections when an ally you can see unleashes their zero effect."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Strategy",
+            "slug": "optional-rules-zero-powers-zero-triggers-strategy",
+            "description": "This trigger activates at the end of your turn during a conflict, provided one or more enemies present on the scene are suffering from a total of two or more different status effects (such as one dazed and weak enemy, or one slow enemy and another enraged enemy).",
+            "tags": [
+                "dazed",
+                "enraged",
+                "slow",
+                "weak"
+            ],
+            "filled-sections": "1 per trigger",
+            "summary": "Fills 1 section at turn end if enemies suffer from two or more total status effects."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Synergy",
+            "slug": "optional-rules-zero-powers-zero-triggers-synergy",
+            "description": "This trigger activates when you deal damage to one or more creatures, filling 1 section for each creature that was Vulnerable to the type of damage dealt.",
+            "tags": [],
+            "filled-sections": "varies",
+            "summary": "Fills 1 section for each creature hit that was Vulnerable to your damage type."
+        }
+    ]
 }

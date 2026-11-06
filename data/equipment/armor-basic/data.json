@@ -1,124 +1,154 @@
 {
-  "label": "Armor",
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Defense",
-      "field": "defense",
-      "class": "defense"
-    },
-    {
-      "label": "M. Defense",
-      "field": "m-defense",
-      "class": "m-defense"
-    },
-    {
-      "label": "Initiative",
-      "field": "initiative",
-      "class": "initiative"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.25fr 1fr 1.25fr 1.25fr 1.25fr 0.25fr",
-  "group-tags": ["armor"],
-  "data": [
-    {
-      "name": "No Armor",
-      "martial": false,
-      "cost": "—",
-      "defense": "DEX size",
-      "m-defense": "INS size",
-      "initiative": "—",
-      "description": "No Quality.",
-      "tags": ["basic", "core", "DEX", "INS"]
-    },
-    {
-      "name": "Silk Shirt",
-      "martial": false,
-      "cost": "100 z",
-      "defense": "DEX size",
-      "m-defense": "INS size +2",
-      "initiative": "-1",
-      "description": "No Quality.",
-      "tags": ["basic", "core", "DEX", "INS"]
-    },
-    {
-      "name": "Travel Garb",
-      "martial": false,
-      "cost": "100 z",
-      "defense": "DEX size +1",
-      "m-defense": "INS size +1",
-      "initiative": "-1",
-      "description": "No Quality.",
-      "tags": ["basic", "core", "DEX", "INS"]
-    },
-    {
-      "name": "Combat Tunic",
-      "martial": false,
-      "cost": "150 z",
-      "defense": "DEX size +1",
-      "m-defense": "INS size +1",
-      "initiative": "—",
-      "description": "No Quality.",
-      "tags": ["basic", "core", "DEX", "INS"]
-    },
-    {
-      "name": "Sage Robe",
-      "martial": false,
-      "cost": "200 z",
-      "defense": "DEX size +1",
-      "m-defense": "INS size +2",
-      "initiative": "-2",
-      "description": "No Quality.",
-      "tags": ["basic", "core", "DEX", "INS"]
-    },
-    {
-      "name": "Brigandine",
-      "martial": true,
-      "cost": "150 z",
-      "defense": "10",
-      "m-defense": "INS size",
-      "initiative": "-2",
-      "description": "No Quality.",
-      "tags": ["basic", "core", "INS", "martial"]
-    },
-    {
-      "name": "Bronze Plate",
-      "martial": true,
-      "cost": "200 z",
-      "defense": "11",
-      "m-defense": "INS size",
-      "initiative": "-3",
-      "description": "No Quality.",
-      "tags": ["basic", "core", "INS", "martial"]
-    },
-    {
-      "name": "Runic Plate",
-      "martial": true,
-      "cost": "250 z",
-      "defense": "11",
-      "m-defense": "INS size +1",
-      "initiative": "-3",
-      "description": "No Quality.",
-      "tags": ["basic", "core", "INS", "martial"]
-    },
-    {
-      "name": "Steel Plate",
-      "martial": true,
-      "cost": "300 z",
-      "defense": "12",
-      "m-defense": "INS size",
-      "initiative": "-4",
-      "description": "No Quality.",
-      "tags": ["basic", "core", "INS", "martial"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-armor-basic",
+    "label": "Armor",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Defense",
+            "key": "defense"
+        },
+        {
+            "label": "M. Defense",
+            "key": "m-defense"
+        },
+        {
+            "label": "Initiative",
+            "key": "initiative"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.25fr 1fr 1.25fr 1.25fr 1.25fr 0.25fr",
+    "group-tags": [
+        "armor"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "No Armor",
+            "slug": "equipment-armor-basic-no-armor",
+            "description": "No Quality.",
+            "tags": [],
+            "cost": "\u2014",
+            "defense": "DEX size",
+            "initiative": "\u2014",
+            "m-defense": "INS size",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Silk Shirt",
+            "slug": "equipment-armor-basic-silk-shirt",
+            "description": "No Quality.",
+            "tags": [],
+            "cost": "100 z",
+            "defense": "DEX size",
+            "initiative": "-1",
+            "m-defense": "INS size +2",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Travel Garb",
+            "slug": "equipment-armor-basic-travel-garb",
+            "description": "No Quality.",
+            "tags": [],
+            "cost": "100 z",
+            "defense": "DEX size +1",
+            "initiative": "-1",
+            "m-defense": "INS size +1",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Combat Tunic",
+            "slug": "equipment-armor-basic-combat-tunic",
+            "description": "No Quality.",
+            "tags": [],
+            "cost": "150 z",
+            "defense": "DEX size +1",
+            "initiative": "\u2014",
+            "m-defense": "INS size +1",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Sage Robe",
+            "slug": "equipment-armor-basic-sage-robe",
+            "description": "No Quality.",
+            "tags": [],
+            "cost": "200 z",
+            "defense": "DEX size +1",
+            "initiative": "-2",
+            "m-defense": "INS size +2",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Brigandine <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-armor-basic-brigandine",
+            "description": "No Quality.",
+            "tags": [],
+            "cost": "150 z",
+            "defense": "10",
+            "initiative": "-2",
+            "m-defense": "INS size",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Bronze Plate <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-armor-basic-bronze-plate",
+            "description": "No Quality.",
+            "tags": [],
+            "cost": "200 z",
+            "defense": "11",
+            "initiative": "-3",
+            "m-defense": "INS size",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Runic Plate <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-armor-basic-runic-plate",
+            "description": "No Quality.",
+            "tags": [],
+            "cost": "250 z",
+            "defense": "11",
+            "initiative": "-3",
+            "m-defense": "INS size +1",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Steel Plate <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-armor-basic-steel-plate",
+            "description": "No Quality.",
+            "tags": [],
+            "cost": "300 z",
+            "defense": "12",
+            "initiative": "-4",
+            "m-defense": "INS size",
+            "martial": true
+        }
+    ]
 }

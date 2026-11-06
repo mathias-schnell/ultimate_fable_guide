@@ -1,56 +1,97 @@
 {
-  "icon": "hospital-cross",
-  "label": "Spiritist",
-  "sub-labels": ["Permanently increase your maximum Mind Points by 5.", "You may perform Rituals whose effects fall within the Ritualism discipline."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "spiritist"],
-  "data": [
-    {
-      "name": "Healing Power",
-      "class": "Spiritist",
-      "max-sl": 2,
-      "description": "When you cast a spell that targets one or more allies, if you have an arcane weapon equipped, you may have each of those allies recover an amount of Hit Points equal to (3 + (SL, multiplied by the number of Bonds you have)). This healing is separate from any healing caused by the effects of the spell.",
-      "tags": ["arcane", "bond", "equipment", "hp", "spell", "spiritist"]
-    },
-    {
-      "name": "Ritual Spiritism",
-      "class": "Spiritist",
-      "max-sl": 1,
-      "description": "You may perform Rituals whose effects fall within the Spiritism discipline. Spiritism Rituals use (INS + WLP) for the Magic Check.",
-      "tags": ["INS", "spell", "spiritist", "WLP", "ritual"]
-    },
-    {
-      "name": "Spiritual Magic",
-      "class": "Spiritist",
-      "max-sl": 10,
-      "description": "Each time you acquire this Skill, learn one Spiritist spell (see next two pages). Offensive (🗲) Spiritist spells use (INS + WLP) for the Magic Check.",
-      "tags": ["INS", "spell", "spiritist", "WLP"]
-    },
-    {
-      "name": "Support Magic",
-      "class": "Spiritist",
-      "max-sl": 1,
-      "description": "When you cast a spell that targets one or more allies, if you have an arcane weapon equipped, you may choose one of those allies you have a Bond towards. If you do, that ally gains a bonus to the next Check they perform during the current scene; this bonus is equal to the strength of your Bond towards them.",
-      "tags": ["arcane", "bond", "equipment", "spell", "spiritist"]
-    },
-    {
-      "name": "Vismagus",
-      "class": "Spiritist",
-      "max-sl": 1,
-      "description": "When you cast a spell, if you don’t have enough Mind Points to pay for its total cost, you may choose to spend an amount of Hit Points equal to (10 + the spell’s total MP cost) instead. If a spell cast this way would cause you to recover Hit Points, you instead recover no Hit Points (the spell functions normally on any other target).",
-      "tags": ["hp", "mp", "spell", "spiritist"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "health-normal",
+    "slug": "classes-spiritist",
+    "label": "Spiritist",
+    "sub-labels": [
+        "Permanently increase your maximum Mind Points by 5.",
+        "You may perform Rituals whose effects fall within the Ritualism discipline."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "spiritist"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Healing Power",
+            "slug": "classes-spiritist-healing-power",
+            "description": "When you cast a spell that targets one or more allies, if you have an arcane weapon equipped, you may have each of those allies recover an amount of Hit Points equal to (3 + (SL, multiplied by the number of Bonds you have)). This healing is separate from any healing caused by the effects of the spell.",
+            "tags": [
+                "arcane",
+                "hp",
+                "spell",
+                "weapon"
+            ],
+            "class": "Spiritist",
+            "max-sl": 2
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ritual Spiritism",
+            "slug": "classes-spiritist-ritual-spiritism",
+            "description": "You may perform Rituals whose effects fall within the Spiritism discipline. Spiritism Rituals use (INS + WLP) for the Magic Check.",
+            "tags": [],
+            "class": "Spiritist",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Spiritual Magic",
+            "slug": "classes-spiritist-spiritual-magic",
+            "description": "Each time you acquire this Skill, learn one Spiritist spell (see next two pages). Offensive (\ud83d\uddf2) Spiritist spells use (INS + WLP) for the Magic Check.",
+            "tags": [
+                "skill",
+                "spell",
+                "spiritist"
+            ],
+            "class": "Spiritist",
+            "max-sl": 10
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Support Magic",
+            "slug": "classes-spiritist-support-magic",
+            "description": "When you cast a spell that targets one or more allies, if you have an arcane weapon equipped, you may choose one of those allies you have a Bond towards. If you do, that ally gains a bonus to the next Check they perform during the current scene; this bonus is equal to the strength of your Bond towards them.",
+            "tags": [
+                "arcane",
+                "bond",
+                "spell",
+                "weapon"
+            ],
+            "class": "Spiritist",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Vismagus",
+            "slug": "classes-spiritist-vismagus",
+            "description": "When you cast a spell, if you don\u2019t have enough Mind Points to pay for its total cost, you may choose to spend an amount of Hit Points equal to (10 + the spell\u2019s total MP cost) instead. If a spell cast this way would cause you to recover Hit Points, you instead recover no Hit Points (the spell functions normally on any other target).",
+            "tags": [
+                "hp",
+                "mp",
+                "spell"
+            ],
+            "class": "Spiritist",
+            "max-sl": 1
+        }
+    ]
 }

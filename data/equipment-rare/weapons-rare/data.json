@@ -1,8 +1,14 @@
 {
-  "always-expand": false,
-  "is-container": true,
-  "icon": "",
-  "label": "Weapons",
-  "sub-labels": "",
-  "order": []
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-rare-weapons-rare",
+    "label": "Weapons",
+    "sub-labels": "",
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": []
 }

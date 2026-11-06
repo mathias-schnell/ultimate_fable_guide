@@ -1,0 +1,19 @@
+{
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "optional-rules-classic-characters",
+    "label": "Classic Characters",
+    "sub-labels": [],
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "core",
+        "high-fantasy",
+        "natural-fantasy",
+        "techno-fantasy"
+    ]
+}

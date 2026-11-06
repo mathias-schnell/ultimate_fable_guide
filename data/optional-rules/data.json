@@ -1,11 +1,21 @@
 {
-  "icon": "",
-  "label": "Optional Rules",
-  "sub-labels": "",
-  "order": [
-    "zero-powers",
-    "quirks",
-    "technospheres",
-    "bonus-content"
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "optional-rules",
+    "label": "Optional Rules",
+    "sub-labels": "",
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "classic-characters",
+        "advancement",
+        "zero-powers",
+        "quirks",
+        "technospheres",
+        "bonus-content"
+    ]
 }

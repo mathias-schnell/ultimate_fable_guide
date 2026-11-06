@@ -1,56 +1,97 @@
 {
-  "icon": "lyre",
-  "label": "Orator",
-  "sub-labels": ["Permanently increase your maximum Mind Points by 5."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "orator"],
-  "data": [
-    {
-      "name": "Condemn",
-      "class": "Orator",
-      "max-sl": 6,
-      "description": "You may use an action and spend 5 Mind Points to perform an Opposed (INS + WLP) Check against an enemy that can hear and understand you. If you succeed, that enemy loses (SL × 5) Mind Points, suffers a status effect of your choice between dazed and shaken, and all sources deal (SL) extra damage to them until the start of your next turn. You gain a bonus equal to (SL) to your (INS + WLP) Checks for this Skill.",
-      "tags": ["damage", "INS", "mp", "orator", "status", "WLP"]
-    },
-    {
-      "name": "Encourage",
-      "class": "Orator",
-      "max-sl": 6,
-      "description": "You may use an action and spend 5 Mind Points to choose an ally that can hear and understand you. That ally recovers (SL × 10) Hit Points and chooses Dexterity, Insight, Might, or Willpower: they treat the chosen Attribute as being one die size higher (up to a maximum of d12) until the start of your next turn.",
-      "tags": ["DEX", "hp", "INS", "MIG", "mp", "orator", "WLP"]
-    },
-    {
-      "name": "My Trust in You",
-      "class": "Orator",
-      "max-sl": 2,
-      "description": "When another Player Character who is able to hear you rolls dice for a Check, you may spend 1 Fabula Point and invoke one of their Traits or Bonds in order to let them reroll dice or improve the Result of the Check (following the normal rules). Then, if you have a Bond towards that character, they recover (SL × 10) Mind Points.",
-      "tags": ["bond", "fabula-point", "mp", "orator"]
-    },
-    {
-      "name": "Persuasive",
-      "class": "Orator",
-      "max-sl": 2,
-      "description": "When you successfully perform a Check to fill or erase sections of a Clock, if your approach relied on charm, diplomacy, deception or intimidation, you may spend up to (SL × 20) Mind Points. If you do, fill or erase an additional section of that Clock for every 20 Mind Points you spend this way.",
-      "tags": ["clock", "mp", "orator"]
-    },
-    {
-      "name": "Unexpected Ally",
-      "class": "Orator",
-      "max-sl": 1,
-      "description": "You may use an action and spend 1 Fabula Point to choose a non-hostile creature able to hear and understand you. If you do, that creature becomes helpful towards you so long as you are kind and respectful to them and your requests are reasonable.",
-      "tags": ["fabula-point", "orator"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "lyre",
+    "slug": "classes-orator",
+    "label": "Orator",
+    "sub-labels": [
+        "Permanently increase your maximum Mind Points by 5."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "orator"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Condemn",
+            "slug": "classes-orator-condemn",
+            "description": "You may use an action and spend 5 Mind Points to perform an Opposed (INS + WLP) Check against an enemy that can hear and understand you. If you succeed, that enemy loses (SL \u00d7 5) Mind Points, suffers a status effect of your choice between dazed and shaken, and all sources deal (SL) extra damage to them until the start of your next turn. You gain a bonus equal to (SL) to your (INS + WLP) Checks for this Skill.",
+            "tags": [
+                "dazed",
+                "mp",
+                "shaken",
+                "skill"
+            ],
+            "class": "Orator",
+            "max-sl": 6
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Encourage",
+            "slug": "classes-orator-encourage",
+            "description": "You may use an action and spend 5 Mind Points to choose an ally that can hear and understand you. That ally recovers (SL \u00d7 10) Hit Points and chooses Dexterity, Insight, Might, or Willpower: they treat the chosen Attribute as being one die size higher (up to a maximum of d12) until the start of your next turn.",
+            "tags": [
+                "hp",
+                "mp"
+            ],
+            "class": "Orator",
+            "max-sl": 6
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "My Trust in You",
+            "slug": "classes-orator-my-trust-in-you",
+            "description": "When another Player Character who is able to hear you rolls dice for a Check, you may spend 1 Fabula Point and invoke one of their Traits or Bonds in order to let them reroll dice or improve the Result of the Check (following the normal rules). Then, if you have a Bond towards that character, they recover (SL \u00d7 10) Mind Points.",
+            "tags": [
+                "bond",
+                "fabula-point",
+                "mp",
+                "reroll",
+                "traits"
+            ],
+            "class": "Orator",
+            "max-sl": 2
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Persuasive",
+            "slug": "classes-orator-persuasive",
+            "description": "When you successfully perform a Check to fill or erase sections of a Clock, if your approach relied on charm, diplomacy, deception or intimidation, you may spend up to (SL \u00d7 20) Mind Points. If you do, fill or erase an additional section of that Clock for every 20 Mind Points you spend this way.",
+            "tags": [
+                "clock",
+                "mp"
+            ],
+            "class": "Orator",
+            "max-sl": 2
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Unexpected Ally",
+            "slug": "classes-orator-unexpected-ally",
+            "description": "You may use an action and spend 1 Fabula Point to choose a non-hostile creature able to hear and understand you. If you do, that creature becomes helpful towards you so long as you are kind and respectful to them and your requests are reasonable.",
+            "tags": [
+                "fabula-point"
+            ],
+            "class": "Orator",
+            "max-sl": 1
+        }
+    ]
 }

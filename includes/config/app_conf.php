@@ -20,23 +20,3 @@
     define('FONTS_URL',     BASE_URL . 'assets/fonts');
     define('ICONS_URL',     BASE_URL . 'assets/icons');
     define('JS_URL',        BASE_URL . 'assets/js');
-
-    $css_files = [
-        "reset",
-        "style",
-        "icons",
-        "content"
-    ];
-    
-    $order = [
-        "classes", 
-        "class-features",
-        "heroic-skills", 
-        "equipment",
-        "equipment-rare",
-        "optional-rules"
-    ];
-
-    $title_icons = [
-        'svg-emerald'
-    ];

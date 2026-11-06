@@ -1,167 +1,276 @@
 {
-  "always-expand": false,
-  "is-container": false,
-  "label": "Swords",
-  "sub-labels": [],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Accuracy",
-      "field": "accuracy",
-      "class": "accuracy"
-    },
-    {
-      "label": "Damage",
-      "field": "damage",
-      "class": "damage"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
-  "group-tags": ["sword", "rare"],
-  "data": [
-    {
-      "name": "Zweihänder",
-      "martial": true,
-      "cost": "400 z",
-      "accuracy": "【DEX + MIG】 + 1",
-      "damage": "【HR + 14】 physical",
-      "description": "Two-handed • Melee • No Quality.",
-      "tags": ["core", "sword", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare"]
-    },
-    {
-      "name": "Falling Rain",
-      "martial": true,
-      "cost": "450 z",
-      "accuracy": "【DEX + DEX】 + 1",
-      "damage": "【HR + 10】 ice",
-      "description": "Two-handed • Melee • Attacks with this weapon target Magic Defense.",
-      "tags": ["core", "sword", "two-handed", "melee", "ice", "DEX", "martial", "rare", "mdef-target"]
-    },
-    {
-      "name": "Flamberge",
-      "martial": true,
-      "cost": "500 z",
-      "accuracy": "【DEX + MIG】 + 1",
-      "damage": "【HR + 10】 fire",
-      "description": "One-handed • Melee • No Quality.",
-      "tags": ["core", "sword", "one-handed", "melee", "fire", "DEX", "MIG", "martial", "rare"]
-    },
-    {
-      "name": "Elegant Edge",
-      "martial": true,
-      "cost": "700 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 6】 physical",
-      "description": "One-handed • Melee • You are immune to enraged.",
-      "tags": ["core", "sword", "one-handed", "melee", "physical", "DEX", "INS", "martial", "rare", "immunity"]
-    },
-    {
-      "name": "Joyeuse",
-      "martial": true,
-      "cost": "900 z",
-      "accuracy": "【MIG + WLP】 + 1",
-      "damage": "【HR + 10】 physical",
-      "description": "One-handed • Melee • You are immune to shaken.",
-      "tags": ["core", "sword", "one-handed", "melee", "physical", "MIG", "WLP", "martial", "rare", "immunity"]
-    },
-    {
-      "name": "Deathblade",
-      "martial": true,
-      "cost": "1000 z",
-      "accuracy": "【DEX + MIG】 + 1",
-      "damage": "【HR + 6】 dark",
-      "description": "One-handed • Melee • This weapon deals 5 extra damage if you are in Crisis.",
-      "tags": ["core", "sword", "one-handed", "melee", "dark", "DEX", "MIG", "martial", "rare", "crisis"]
-    },
-    {
-      "name": "Gunsword",
-      "martial": true,
-      "cost": "1000 z",
-      "accuracy": "【DEX + MIG】 + 1",
-      "damage": "【HR + 10】 physical",
-      "description": "Two-handed • Melee • This weapon can target flying creatures.",
-      "tags": ["core", "sword", "two-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "flying"]
-    },
-    {
-      "name": "Main Gauche",
-      "martial": true,
-      "cost": "1000 z",
-      "accuracy": "【DEX + MIG】 + 1",
-      "damage": "【HR + 6】 physical",
-      "description": "One-handed • Melee • You gain a +1 bonus to Defense.",
-      "tags": ["core", "sword", "one-handed", "melee", "physical", "DEX", "MIG", "martial", "rare", "def-bonus"]
-    },
-    {
-      "name": "The Rikizo",
-      "martial": true,
-      "cost": "1200 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 10】 physical",
-      "description": "Two-handed • Melee • Deals 2 extra damage for each Class you have mastered.",
-      "tags": ["core", "sword", "two-handed", "melee", "physical", "DEX", "INS", "martial", "rare", "class-mastery"]
-    },
-    {
-      "name": "Flesh Eater",
-      "martial": true,
-      "cost": "1300 z",
-      "accuracy": "【MIG + MIG】",
-      "damage": "【HR + 10】 poison",
-      "description": "One-handed • Melee • This weapon deals 5 extra damage to weak targets.",
-      "tags": ["core", "sword", "one-handed", "melee", "poison", "MIG", "martial", "rare", "weak"]
-    },
-    {
-      "name": "Kusanagi",
-      "martial": true,
-      "cost": "1500 z",
-      "accuracy": "【DEX + MIG】 + 1",
-      "damage": "【HR + 14】 air",
-      "description": "Two-handed • Melee • Attacks with this weapon have multi (2).",
-      "tags": ["core", "sword", "two-handed", "melee", "air", "DEX", "MIG", "martial", "rare", "multi"]
-    },
-    {
-      "name": "Excalibur",
-      "martial": true,
-      "cost": "2300 z",
-      "accuracy": "【MIG + WLP】 + 1",
-      "damage": "【HR + 10】 light",
-      "description": "Two-handed • Melee • You are immune to all status effects.",
-      "tags": ["core", "sword", "two-handed", "melee", "light", "MIG", "WLP", "martial", "rare", "immunity"]
-    },
-    {
-      "name": "Floating Edge",
-      "martial": true,
-      "cost": "1200 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 10】 air",
-      "description": "Two-handed • Melee • Damage dealt by spells you cast with a total MP cost equal to or lower than 20 ignores Immunities and Resistances.",
-      "tags": ["high-fantasy", "rare", "martial", "sword", "two-handed", "melee", "air", "DEX", "INS", "damage", "spell", "mp", "immunity", "resistance"]
-    },
-    {
-      "name": "Norimitsu",
-      "martial": true,
-      "cost": "1400 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 14】 physical",
-      "description": "Two-handed • Melee • Attacks with this weapon deal 6 extra damage to elite or champion-rank enemies.",
-      "tags": ["natural-fantasy", "rare", "martial", "sword", "two-handed", "melee", "physical", "DEX", "INS", "attack", "damage"]
-    },
-    {
-      "name": "Butterfly Dream",
-      "martial": true,
-      "cost": "1300 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 10】 air",
-      "description": "One-handed • Melee • When you hit one or more creatures with this weapon, if your Brainwave Clock has three or more filled sections, you can erase 1.",
-      "tags": ["techno-fantasy", "rare", "martial", "sword", "one-handed", "melee", "air", "DEX", "INS", "clock", "esper"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-rare-weapons-rare-sword",
+    "label": "Swords",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Accuracy",
+            "key": "accuracy"
+        },
+        {
+            "label": "Damage",
+            "key": "damage"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "sword",
+        "rare"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Zweih\u00e4nder <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-zweih-nder",
+            "description": "Two-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "two-handed"
+            ],
+            "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "cost": "400 z",
+            "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Falling Rain <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-falling-rain",
+            "description": "Two-handed \u2022 Melee \u2022 Attacks with this weapon target Magic Defense.",
+            "tags": [
+                "defense",
+                "magic-defense",
+                "melee",
+                "two-handed",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + DEX\u3011 + 1",
+            "cost": "450 z",
+            "damage": "\u3010HR + 10\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Flamberge <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-flamberge",
+            "description": "One-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "one-handed"
+            ],
+            "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "cost": "500 z",
+            "damage": "\u3010HR + 10\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Elegant Edge <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-elegant-edge",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to enraged.",
+            "tags": [
+                "enraged",
+                "melee",
+                "one-handed"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "700 z",
+            "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Joyeuse <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-joyeuse",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to shaken.",
+            "tags": [
+                "melee",
+                "one-handed",
+                "shaken"
+            ],
+            "accuracy": "\u3010MIG + WLP\u3011 + 1",
+            "cost": "900 z",
+            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Deathblade <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-deathblade",
+            "description": "One-handed \u2022 Melee \u2022 This weapon deals 5 extra damage if you are in Crisis.",
+            "tags": [
+                "crisis",
+                "melee",
+                "one-handed",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "cost": "1000 z",
+            "damage": "\u3010HR + 6\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Gunsword <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-gunsword",
+            "description": "Two-handed \u2022 Melee \u2022 This weapon can target flying creatures.",
+            "tags": [
+                "flying",
+                "melee",
+                "two-handed",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "cost": "1000 z",
+            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Main Gauche <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-main-gauche",
+            "description": "One-handed \u2022 Melee \u2022 You gain a +1 bonus to Defense.",
+            "tags": [
+                "defense",
+                "melee",
+                "one-handed"
+            ],
+            "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "cost": "1000 z",
+            "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "The Rikizo <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-the-rikizo",
+            "description": "Two-handed \u2022 Melee \u2022 Deals 2 extra damage for each Class you have mastered.",
+            "tags": [
+                "melee",
+                "two-handed"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "1200 z",
+            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Flesh Eater <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-flesh-eater",
+            "description": "One-handed \u2022 Melee \u2022 This weapon deals 5 extra damage to weak targets.",
+            "tags": [
+                "melee",
+                "one-handed",
+                "weak",
+                "weapon"
+            ],
+            "accuracy": "\u3010MIG + MIG\u3011",
+            "cost": "1300 z",
+            "damage": "\u3010HR + 10\u3011 poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Kusanagi <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-kusanagi",
+            "description": "Two-handed \u2022 Melee \u2022 Attacks with this weapon have multi (2).",
+            "tags": [
+                "melee",
+                "multi",
+                "two-handed",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "cost": "1500 z",
+            "damage": "\u3010HR + 14\u3011 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Excalibur <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-excalibur",
+            "description": "Two-handed \u2022 Melee \u2022 You are immune to all status effects.",
+            "tags": [
+                "melee",
+                "two-handed"
+            ],
+            "accuracy": "\u3010MIG + WLP\u3011 + 1",
+            "cost": "2300 z",
+            "damage": "\u3010HR + 10\u3011 light (<i class=\"ui-icon elem-light svg-sun\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Floating Edge <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-floating-edge",
+            "description": "Two-handed \u2022 Melee \u2022 Damage dealt by spells you cast with a total MP cost equal to or lower than 20 ignores Immunities and Resistances.",
+            "tags": [
+                "melee",
+                "two-handed"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "1200 z",
+            "damage": "\u3010HR + 10\u3011 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Norimitsu <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-norimitsu",
+            "description": "Two-handed \u2022 Melee \u2022 Attacks with this weapon deal 6 extra damage to elite or champion-rank enemies.",
+            "tags": [
+                "melee",
+                "two-handed",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "1400 z",
+            "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Butterfly Dream <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-rare-weapons-rare-sword-butterfly-dream",
+            "description": "One-handed \u2022 Melee \u2022 When you hit one or more creatures with this weapon, if your Brainwave Clock has three or more filled sections, you can erase 1.",
+            "tags": [
+                "clock",
+                "melee",
+                "one-handed",
+                "weapon"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "1300 z",
+            "damage": "\u3010HR + 10\u3011 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>)",
+            "martial": true
+        }
+    ]
 }

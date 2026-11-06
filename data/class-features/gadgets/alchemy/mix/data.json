@@ -1,45 +1,61 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "",
-  "sub-labels": [],
-  "columns": [
-    {
-      "label": "Mix",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "IP Cost",
-      "field": "ip-cost",
-      "class": "ip-cost"
-    },
-    {
-      "label": "Effect",
-      "field": "effect",
-      "class": "effect"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1fr 3.5fr 0.25fr",
-  "group-tags": ["gadgets", "inventory", "ip"],
-  "data": [
-      {
-        "name": "Basic",
-        "ip-cost": "3",
-        "effect": "Roll two d20s and assign one to target and one to effect.",
-        "tags": []
-      },
-      {
-        "name": "Advanced",
-        "ip-cost": "4",
-        "effect": "Roll three d20s and assign one to target and one to effect.",
-        "tags": []
-      },
-      {
-        "name": "Superior",
-        "ip-cost": "5",
-        "effect": "Roll four d20s and assign one to target and one to effect.",
-        "tags": []
-      }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-gadgets-alchemy-mix",
+    "label": "",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Mix",
+            "key": "name"
+        },
+        {
+            "label": "IP Cost",
+            "key": "ip-cost"
+        },
+        {
+            "label": "Effect",
+            "key": "effect"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1fr 3.5fr 0.25fr",
+    "group-tags": [
+        "gadgets",
+        "inventory",
+        "ip"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Basic",
+            "slug": "class-features-gadgets-alchemy-mix-basic",
+            "description": "",
+            "tags": [],
+            "effect": "Roll two d20s and assign one to target and one to effect.",
+            "ip-cost": "3"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Advanced",
+            "slug": "class-features-gadgets-alchemy-mix-advanced",
+            "description": "",
+            "tags": [],
+            "effect": "Roll three d20s and assign one to target and one to effect.",
+            "ip-cost": "4"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Superior",
+            "slug": "class-features-gadgets-alchemy-mix-superior",
+            "description": "",
+            "tags": [],
+            "effect": "Roll four d20s and assign one to target and one to effect.",
+            "ip-cost": "5"
+        }
+    ]
 }

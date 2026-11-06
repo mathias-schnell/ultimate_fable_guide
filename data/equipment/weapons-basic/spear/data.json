@@ -1,50 +1,69 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "Spear",
-  "sub-labels": ["Spear"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Accuracy",
-      "field": "accuracy",
-      "class": "accuracy"
-    },
-    {
-      "label": "Damage",
-      "field": "damage",
-      "class": "damage"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "spear", "basic", "martial", "weapon"],
-  "data": [
-    {
-      "name": "Light Spear",
-      "martial": true,
-      "cost": "200 z",
-      "accuracy": "【DEX + MIG】",
-      "damage": "【HR + 8】 physical",
-      "description": "One-handed • Melee • No Quality.",
-      "tags": ["one-handed", "melee", "physical", "DEX", "MIG"]
-    },
-    {
-      "name": "Heavy Spear",
-      "martial": true,
-      "cost": "200 z",
-      "accuracy": "【DEX + MIG】",
-      "damage": "【HR + 12】 physical",
-      "description": "Two-handed • Melee • No Quality.",
-      "tags": ["two-handed", "melee", "physical", "DEX", "MIG"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-weapons-basic-spear",
+    "label": "Spear",
+    "sub-labels": [
+        "Spear"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Accuracy",
+            "key": "accuracy"
+        },
+        {
+            "label": "Damage",
+            "key": "damage"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "spear",
+        "basic",
+        "martial",
+        "weapon"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Light Spear <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-weapons-basic-spear-light-spear",
+            "description": "One-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "one-handed"
+            ],
+            "accuracy": "\u3010DEX + MIG\u3011",
+            "cost": "200 z",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Heavy Spear <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-weapons-basic-spear-heavy-spear",
+            "description": "Two-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "two-handed"
+            ],
+            "accuracy": "\u3010DEX + MIG\u3011",
+            "cost": "200 z",
+            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        }
+    ]
 }

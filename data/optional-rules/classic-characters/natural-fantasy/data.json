@@ -1,0 +1,318 @@
+{
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": false,
+    "icon": "",
+    "slug": "optional-rules-classic-characters-natural-fantasy",
+    "label": "Classic Characters",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        }
+    ],
+    "grid-template-columns": "0.25fr 6fr 0.25fr",
+    "group-tags": [],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Elemental Acrobat",
+            "slug": "optional-rules-classic-characters-natural-fantasy-elemental-acrobat",
+            "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d6, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Fury (1 level): Indomitable Spirit</li><li>Invoker (3 levels): Invocation (SL 2), Ripples</li><li>Sharpshooter (1 level): Barrage</li></ul><p><strong>Equipment:</strong> Giant chakram (custom weapon, (DEX + MIG), thrown, ranged, accurate, defense boost, powerful), combat tunic, 120 zenit.</p>",
+            "tags": [
+                "defense",
+                "elemental",
+                "fury",
+                "invoker",
+                "ranged",
+                "sharpshooter",
+                "thrown",
+                "weapon",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Flutist Monk",
+            "slug": "optional-rules-classic-characters-natural-fantasy-flutist-monk",
+            "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d8, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Invoker (3 levels): Invocation, Wellspring Expansion (SL 2)</li><li>Spiritist (2 levels): Ritual Spiritism, Spiritual Magic (Cleanse)</li></ul><p><strong>Equipment:</strong> Staff (described as a magic flute!), sage robe, 270 zenit.</p>",
+            "tags": [
+                "equipment",
+                "invoker",
+                "ritual",
+                "spiritist",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Frontier Researcher",
+            "slug": "optional-rules-classic-characters-natural-fantasy-frontier-researcher",
+            "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d10, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Loremaster (1 level): Quick Assessment</li><li>Merchant (2 levels): I\u2019ve Heard of It!, Winds of Trade</li><li>Sharpshooter (2 levels): Crossfire, Warning Shot</li></ul><p><strong>Equipment:</strong> Twin pocket pistols (custom weapon, (DEX + INS), firearm, ranged, accurate, quick), travel garb, 170 zenit.</p>",
+            "tags": [
+                "firearm",
+                "loremaster",
+                "merchant",
+                "ranged",
+                "sharpshooter",
+                "travel",
+                "weapon",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Grinning Veteran",
+            "slug": "optional-rules-classic-characters-natural-fantasy-grinning-veteran",
+            "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Gourmet (3 levels): Cooking, Knife and Fork, Traveling Cook</li><li>Guardian (1 level): Protect</li><li>Weaponmaster (1 level): Bladestorm</li></ul><p><strong>Equipment:</strong> Waraxe, runic plate, 70 zenit.</p>",
+            "tags": [
+                "gourmet",
+                "guardian",
+                "weaponmaster",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Keeper of the Sacred Tree",
+            "slug": "optional-rules-classic-characters-natural-fantasy-keeper-of-the-sacred-tree",
+            "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d6, Might d10, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Arcanist (3 levels): Bind and Summon (Oak), Emergency Arcanum (SL 2)</li><li>Invoker (2 levels): Invocation, Linked Invocation</li></ul><p><strong>Equipment:</strong> Staff, travel garb, 370 zenit.</p>",
+            "tags": [
+                "arcanist",
+                "invoker",
+                "travel",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Lotus Duelist",
+            "slug": "optional-rules-classic-characters-natural-fantasy-lotus-duelist",
+            "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Elementalist (2 levels): Elemental Magic (Ventus), Spellblade</li><li>Floralist (2 levels): Battle Gardening, Chloromancy (Ocean Lotus)</li><li>Weaponmaster (1 level): Counterattack</li></ul><p><strong>Equipment:</strong> Water lily blade (custom weapon, (DEX + INS), sword, melee, accurate, elemental (<i class=\"ui-icon elem-ice svg-ice\"></i>), magic defense boost), sage robe, 70 zenit.</p>",
+            "tags": [
+                "defense",
+                "elemental",
+                "elementalist",
+                "floralist",
+                "ice",
+                "magic-defense",
+                "melee",
+                "sword",
+                "weapon",
+                "weaponmaster",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Shy Apothecary",
+            "slug": "optional-rules-classic-characters-natural-fantasy-shy-apothecary",
+            "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d10, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Merchant (1 level): Expiration Date</li><li>Tinkerer (4 levels): Potion Rain (SL 2), Visionary (SL 2)</li></ul><p><strong>Equipment:</strong> Tome, sage robe, 270 zenit.</p>",
+            "tags": [
+                "equipment",
+                "merchant",
+                "tinkerer",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Small Merchant",
+            "slug": "optional-rules-classic-characters-natural-fantasy-small-merchant",
+            "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d10, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Merchant (2 levels): Real Treasure, Winds of Trade</li><li>Wayfarer (3 levels): Faithful Companion (SL 3; a massive and cuddly creature who can tap into the PCs\u2019 Trade Points to either negate all damage suffered by another creature, or deal elemental damage)</li></ul><p><strong>Equipment:</strong> Tome (described as an abacus!), silk shirt, 370 zenit.</p>",
+            "tags": [
+                "companion",
+                "elemental",
+                "equipment",
+                "merchant",
+                "trade-point",
+                "wayfarer",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Troublemaker Rogue",
+            "slug": "optional-rules-classic-characters-natural-fantasy-troublemaker-rogue",
+            "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Gourmet (2 levels): Cooking, Knife and Fork</li><li>Rogue (1 level): High Speed</li><li>Sharpshooter (2 levels): Barrage, Warning Shot</li></ul><p><strong>Equipment:</strong> Shortbow (described as a sling!), travel garb, 270 zenit. This character\u2019s delicacies take the form of sling bullets with strange effects!</p>",
+            "tags": [
+                "gourmet",
+                "rogue",
+                "sharpshooter",
+                "travel",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Twilight Witch",
+            "slug": "optional-rules-classic-characters-natural-fantasy-twilight-witch",
+            "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d10, Might d6, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Entropist (2 levels): Entropic Magic (SL 2: Dispel, Mirror)</li><li>Floralist (3 levels): Battle Gardening, Chloromancy (Star Peony), Verdant Sway</li></ul><p><strong>Equipment:</strong> Tome, sage robe, 270 zenit.</p>",
+            "tags": [
+                "entropist",
+                "floralist",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Childhood Friends: We Have a Long Journey Ahead",
+            "slug": "optional-rules-classic-characters-natural-fantasy-childhood-friends-we-have-a-long-journey-ahead",
+            "description": "<p>Three young heroes accompany a mysterious elf on a pilgrimage to discover the meaning of the sudden visions that plague her. The upbeat squire and the young herbalist are flexible characters, capable of dealing damage as well as supporting their allies with magiseeds and the Breach and Encourage Skills. The rowdy miner hits hard but, above all else, she is of great help during travel and can get useful information everywhere she goes!</p>",
+            "tags": [
+                "travel"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Mysterious Elf",
+            "slug": "optional-rules-classic-characters-natural-fantasy-mysterious-elf",
+            "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d10, Might d6, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Chimerist (1 level): Feral Speech</li><li>Loremaster (2 levels): Flash of Insight (SL 2)</li><li>Sharpshooter (2 levels): Barrage, Warning Shot</li></ul><p><strong>Equipment:</strong> Shortbow, sage robe, 170 zenit.</p>",
+            "tags": [
+                "chimerist",
+                "loremaster",
+                "sharpshooter",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Rowdy Miner",
+            "slug": "optional-rules-classic-characters-natural-fantasy-rowdy-miner",
+            "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Fury (1 level): Provoke</li><li>Merchant (1 level): Winds of Trade</li><li>Wayfarer (3 levels): Tavern Talk, Treasure Hunter, Well-Traveled</li></ul><p><strong>Equipment:</strong> Waraxe (described as a pickaxe!), bronze plate, 120 zenit.</p>",
+            "tags": [
+                "fury",
+                "merchant",
+                "wayfarer",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Upbeat Squire",
+            "slug": "optional-rules-classic-characters-natural-fantasy-upbeat-squire",
+            "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d6, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Orator (2 levels): Encourage (SL 2)</li><li>Weaponmaster (3 levels): Bone Crusher, Breach, Melee Weapon Mastery</li></ul><p><strong>Equipment:</strong> Bronze sword, travel garb, runic shield, 120 zenit.</p>",
+            "tags": [
+                "melee",
+                "orator",
+                "shield",
+                "sword",
+                "travel",
+                "weapon",
+                "weaponmaster",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Young Herbalist",
+            "slug": "optional-rules-classic-characters-natural-fantasy-young-herbalist",
+            "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d8, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Elementalist (2 levels): Elemental Magic (Terra), Magical Artillery</li><li>Floralist (3 levels): Chloromancy (SL 2: Prancing Dandelion, Remedy Lily), Graft</li></ul><p><strong>Equipment:</strong> Staff, sage robe, 270 zenit.</p>",
+            "tags": [
+                "elemental",
+                "elementalist",
+                "floralist",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "The Kitchen Brigade: I\u2019ve Come Up With a New Recipe!",
+            "slug": "optional-rules-classic-characters-natural-fantasy-the-kitchen-brigade-i-ve-come-up-with-a-new-recipe",
+            "description": "<p>This group explores the Gourmet Class in many different ways: since each character\u2019s cookbook sheet is personal and independent, the same combinations yield different results depending on who uses them!</p>",
+            "tags": [
+                "gourmet"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Deep-Fry Artist",
+            "slug": "optional-rules-classic-characters-natural-fantasy-deep-fry-artist",
+            "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d10, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Fury (1 level): Withstand</li><li>Gourmet (2 levels): Cooking, Salt and Pepper</li><li>Guardian (2 levels): Bodyguard, Protect</li></ul><p><strong>Equipment:</strong> Wok shield (custom weapon, (DEX + MIG), brawling, melee, defense boost, elemental (<i class=\"ui-icon elem-fire svg-fire\"></i>), magic defense boost), bronze plate, 70 zenit.</p>",
+            "tags": [
+                "brawling",
+                "defense",
+                "elemental",
+                "fire",
+                "fury",
+                "gourmet",
+                "guardian",
+                "magic-defense",
+                "melee",
+                "shield",
+                "weapon",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Infusion Master",
+            "slug": "optional-rules-classic-characters-natural-fantasy-infusion-master",
+            "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Gourmet (2 levels): Cooking, Knife and Fork</li><li>Sharpshooter (2 levels): Barrage, Ranged Weapon Mastery</li><li>Tinkerer (1 level): Gadgets (Basic Infusions)</li></ul><p><strong>Equipment:</strong> Kettle (custom weapon, (DEX + INS), firearm, ranged, accurate, magic defense boost, powerful), silk shirt, 170 zenit.</p>",
+            "tags": [
+                "basic",
+                "defense",
+                "equipment",
+                "firearm",
+                "gourmet",
+                "magic-defense",
+                "ranged",
+                "sharpshooter",
+                "tinkerer",
+                "weapon",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pickler",
+            "slug": "optional-rules-classic-characters-natural-fantasy-pickler",
+            "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d10, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Entropist (1 level): Entropic Magic (Stop)</li><li>Gourmet (2 levels): Cooking, Traveling Cook</li><li>Merchant (2 levels): Private Stock, Winds of Trade</li></ul><p><strong>Equipment:</strong> Blast chiller (custom weapon, (DEX + INS), dagger, melee, accurate, defense boost, elemental (<i class=\"ui-icon elem-ice svg-ice\"></i>)), sage robe, 70 zenit.</p>",
+            "tags": [
+                "dagger",
+                "defense",
+                "elemental",
+                "entropist",
+                "gourmet",
+                "ice",
+                "melee",
+                "merchant",
+                "weapon",
+                "zenit"
+            ]
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Street Cook",
+            "slug": "optional-rules-classic-characters-natural-fantasy-street-cook",
+            "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d6, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Gourmet (2 levels): Cooking, Made with Love</li><li>Orator (2 levels): My Trust in You, Unexpected Ally</li><li>Wayfarer (1 level): Tavern Talk</li></ul><p><strong>Equipment:</strong> Staff (described as a fan!), sage robe, 270 zenit.</p>",
+            "tags": [
+                "gourmet",
+                "orator",
+                "wayfarer",
+                "zenit"
+            ]
+        }
+    ]
+}

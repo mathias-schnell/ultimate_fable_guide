@@ -1,23 +1,47 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "icon": "",
-  "label": "",
-  "sub-labels": ["Magicannon (Advanced)"],
-  "columns": [
-    {
-      "label": "Summary",
-      "field": "summary",
-      "class": "summary"
-    }
-  ],
-  "grid-template-columns": "0.25fr 6fr 0.25fr",
-  "group-tags": ["core", "tinkerer", "gadgets", "inventory", "ip"],
-  "data": [
-    {
-      "summary": "You may perform the Inventory action and spend 2 Inventory Points to create a magicannon.",
-      "description": "You may perform the Inventory action and spend 2 Inventory Points to create a magicannon (see below) and destroy any magicannon you previously created. If you do so and both your hand slots are empty, you may immediately equip the newly created magicannon and perform a free attack with it. Whenever you create a magicannon, choose what type of damage it deals among air, bolt, earth, fire, ice, or physical.",
-      "tags": ["air", "bolt", "earth", "fire", "ice", "physical"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-gadgets-magitech-advanced",
+    "label": "",
+    "sub-labels": [
+        "Magicannon (Advanced)"
+    ],
+    "columns": [
+        {
+            "label": "Summary",
+            "key": "summary"
+        }
+    ],
+    "grid-template-columns": "0.25fr 6fr 0.25fr",
+    "group-tags": [
+        "core",
+        "tinkerer",
+        "gadgets",
+        "inventory",
+        "ip"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "",
+            "slug": "",
+            "description": "You may perform the Inventory action and spend 2 Inventory Points to create a magicannon (see below) and destroy any magicannon you previously created. If you do so and both your hand slots are empty, you may immediately equip the newly created magicannon and perform a free attack with it. Whenever you create a magicannon, choose what type of damage it deals among air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), ice (<i class=\"ui-icon elem-ice svg-ice\"></i>), or physical (<i class=\"ui-icon elem-physical svg-physical\"></i>).",
+            "tags": [
+                "air",
+                "attack",
+                "bolt",
+                "earth",
+                "fire",
+                "free-attack",
+                "ice",
+                "inventory",
+                "ip",
+                "physical"
+            ],
+            "summary": "You may perform the Inventory action and spend 2 Inventory Points to create a magicannon."
+        }
+    ]
 }

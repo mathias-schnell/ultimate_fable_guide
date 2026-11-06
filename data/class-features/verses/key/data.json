@@ -1,101 +1,137 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "",
-  "sub-labels": ["Key"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Type",
-      "field": "type",
-      "class": "type"
-    },
-    {
-      "label": "Status Effect",
-      "field": "status-effect",
-      "class": "status-effect"
-    },
-    {
-      "label": "Attribute",
-      "field": "attribute",
-      "class": "attribute"
-    },
-    {
-      "label": "Recovery",
-      "field": "recovery",
-      "class": "recovery"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.25fr 1fr 1.25fr 1.25fr 1.25fr 0.25fr",
-  "group-tags": ["chanter", "high-fantasy", "verse"],
-  "data": [
-    {
-      "name": "Flame",
-      "type": "fire",
-      "status-effect": "shaken",
-      "attribute": "Might",
-      "recovery": "Hit Points",
-      "tags": ["fire", "shaken", "MIG", "hp"]
-    },
-    {
-      "name": "Frost",
-      "type": "ice",
-      "status-effect": "weak",
-      "attribute": "Willpower",
-      "recovery": "Mind Points",
-      "tags": ["ice", "weak", "WLP", "mp"]
-    },
-    {
-      "name": "Iron",
-      "type": "physical",
-      "status-effect": "slow",
-      "attribute": "Willpower",
-      "recovery": "Mind Points",
-      "tags": ["physical", "slow", "WLP", "mp"]
-    },
-    {
-      "name": "Radiance",
-      "type": "light",
-      "status-effect": "dazed",
-      "attribute": "Insight",
-      "recovery": "Hit Points",
-      "tags": ["light", "dazed", "INS", "hp"]
-    },
-    {
-      "name": "Shadow",
-      "type": "dark",
-      "status-effect": "weak",
-      "attribute": "Dexterity",
-      "recovery": "Mind Points",
-      "tags": ["dark", "weak", "DEX", "mp"]
-    },
-    {
-      "name": "Stone",
-      "type": "earth",
-      "status-effect": "dazed",
-      "attribute": "Might",
-      "recovery": "Hit Points",
-      "tags": ["earth", "dazed", "MIG", "hp"]
-    },
-    {
-      "name": "Thunder",
-      "type": "bolt",
-      "status-effect": "shaken",
-      "attribute": "Dexterity",
-      "recovery": "Hit Points",
-      "tags": ["bolt", "shaken", "DEX", "hp"]
-    },
-    {
-      "name": "Wind",
-      "type": "air",
-      "status-effect": "slow",
-      "attribute": "Insight",
-      "recovery": "Mind Points",
-      "tags": ["air", "slow", "INS", "mp"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-verses-key",
+    "label": "",
+    "sub-labels": [
+        "Key"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Type",
+            "key": "type"
+        },
+        {
+            "label": "Status Effect",
+            "key": "status-effect"
+        },
+        {
+            "label": "Attribute",
+            "key": "attribute"
+        },
+        {
+            "label": "Recovery",
+            "key": "recovery"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.25fr 1fr 1.25fr 1.25fr 1.25fr 0.25fr",
+    "group-tags": [
+        "chanter",
+        "high-fantasy",
+        "verse"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Flame",
+            "slug": "class-features-verses-key-flame",
+            "description": "",
+            "tags": [],
+            "attribute": "Might",
+            "recovery": "Hit Points",
+            "status-effect": "shaken",
+            "type": "fire"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Frost",
+            "slug": "class-features-verses-key-frost",
+            "description": "",
+            "tags": [],
+            "attribute": "Willpower",
+            "recovery": "Mind Points",
+            "status-effect": "weak",
+            "type": "ice"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Iron",
+            "slug": "class-features-verses-key-iron",
+            "description": "",
+            "tags": [],
+            "attribute": "Willpower",
+            "recovery": "Mind Points",
+            "status-effect": "slow",
+            "type": "physical"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Radiance",
+            "slug": "class-features-verses-key-radiance",
+            "description": "",
+            "tags": [],
+            "attribute": "Insight",
+            "recovery": "Hit Points",
+            "status-effect": "dazed",
+            "type": "light"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Shadow",
+            "slug": "class-features-verses-key-shadow",
+            "description": "",
+            "tags": [],
+            "attribute": "Dexterity",
+            "recovery": "Mind Points",
+            "status-effect": "weak",
+            "type": "dark"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Stone",
+            "slug": "class-features-verses-key-stone",
+            "description": "",
+            "tags": [],
+            "attribute": "Might",
+            "recovery": "Hit Points",
+            "status-effect": "dazed",
+            "type": "earth"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Thunder",
+            "slug": "class-features-verses-key-thunder",
+            "description": "",
+            "tags": [],
+            "attribute": "Dexterity",
+            "recovery": "Hit Points",
+            "status-effect": "shaken",
+            "type": "bolt"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Wind",
+            "slug": "class-features-verses-key-wind",
+            "description": "",
+            "tags": [],
+            "attribute": "Insight",
+            "recovery": "Mind Points",
+            "status-effect": "slow",
+            "type": "air"
+        }
+    ]
 }

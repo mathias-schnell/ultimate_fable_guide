@@ -1,337 +1,631 @@
 {
-  "label": "Accessories",
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4fr 2fr 0.25fr",
-  "group-tags": [],
-  "data": [
-    {
-      "name": "Explorer’s Belt",
-      "cost": "500 z",
-      "description": "You gain a +4 bonus to your Initiative modifier.",
-      "tags": ["core", "initiative"]
-    },
-    {
-      "name": "Gloves, Elegant",
-      "cost": "500 z",
-      "description": "You are immune to dazed.",
-      "tags": ["core", "dazed", "immunity"]
-    },
-    {
-      "name": "Gloves, Rough",
-      "cost": "500 z",
-      "description": "You are immune to weak.",
-      "tags": ["core", "immunity", "weak"]
-    },
-    {
-      "name": "Gloves, Silky",
-      "cost": "500 z",
-      "description": "You are immune to slow.",
-      "tags": ["core", "immunity", "slow"]
-    },
-    {
-      "name": "Gloves, Warm",
-      "cost": "500 z",
-      "description": "You are immune to shaken.",
-      "tags": ["core", "immunity", "shaken"]
-    },
-    {
-      "name": "Rookie’s Boots",
-      "cost": "600 z",
-      "description": "When you roll a fumble, if you have less than 10 Experience Points, you may gain 1 Experience Point.",
-      "tags": ["core", "fumble"]
-    },
-    {
-      "name": "Han’nya Mask",
-      "cost": "700 z",
-      "description": "All damage you deal to shaken creatures ignores Resistances.",
-      "tags": ["core", "ignore", "resistance", "shaken"]
-    },
-    {
-      "name": "Pendant, Amber",
-      "cost": "700 z",
-      "description": "You gain Resistance to earth damage.",
-      "tags": ["core", "earth", "resistance"]
-    },
-    {
-      "name": "Pendant, Amethyst",
-      "cost": "700 z",
-      "description": "You gain Resistance to dark damage.",
-      "tags": ["core", "dark", "resistance"]
-    },
-    {
-      "name": "Pendant, Diamond",
-      "cost": "700 z",
-      "description": "You gain Resistance to light damage.",
-      "tags": ["core", "light", "resistance"]
-    },
-    {
-      "name": "Pendant, Emerald",
-      "cost": "700 z",
-      "description": "You gain Resistance to poison damage.",
-      "tags": ["core", "poison", "resistance"]
-    },
-    {
-      "name": "Pendant, Opal",
-      "cost": "700 z",
-      "description": "You gain Resistance to air damage.",
-      "tags": ["air", "core", "resistance"]
-    },
-    {
-      "name": "Pendant, Ruby",
-      "cost": "700 z",
-      "description": "You gain Resistance to fire damage.",
-      "tags": ["core", "fire", "resistance"]
-    },
-    {
-      "name": "Pendant, Sapphire",
-      "cost": "700 z",
-      "description": "You gain Resistance to ice damage.",
-      "tags": ["core", "ice", "resistance"]
-    },
-    {
-      "name": "Pendant, Topaz",
-      "cost": "700 z",
-      "description": "You gain Resistance to bolt damage.",
-      "tags": ["bolt", "core", "resistance"]
-    },
-    {
-      "name": "Ring of Sorcery",
-      "cost": "800 z",
-      "description": "You gain a +1 bonus to Magic Defense.",
-      "tags": ["core", "magic-defense"]
-    },
-    {
-      "name": "Wanderer’s Boots",
-      "cost": "900 z",
-      "description": "When your group makes a discovery while traveling, you may gain 1 Fabula Point.",
-      "tags": ["core", "fabula-point", "travel"]
-    },
-    {
-      "name": "Crested Helm",
-      "cost": "1000 z",
-      "description": "You gain a +1 bonus to your Accuracy Checks.",
-      "tags": ["attack", "core"]
-    },
-    {
-      "name": "Gloves, Crimson",
-      "cost": "1000 z",
-      "description": "When you perform an attack with multi, you gain a +2 bonus to your Accuracy Check.",
-      "tags": ["attack", "core", "multi"]
-    },
-    {
-      "name": "Pointy Yellow Hat",
-      "cost": "1000 z",
-      "description": "You gain a +1 bonus to your Magic Checks.",
-      "tags": ["core", "spell"]
-    },
-    {
-      "name": "Ring of the Lion",
-      "cost": "1500 z",
-      "description": "You gain a +2 bonus to Opposed Checks that rely on Willpower.",
-      "tags": ["core", "WLP"]
-    },
-    {
-      "name": "Ring of the Owl",
-      "cost": "1500 z",
-      "description": "You gain a +2 bonus to Opposed Checks that rely on Insight.",
-      "tags": ["core", "INS"]
-    },
-    {
-      "name": "Ring of the Pupil",
-      "cost": "1500 z",
-      "description": "As long as you have at least two Bonds of admiration, you gain a +1 bonus to both your Defense and Magic Defense.",
-      "tags": ["bond", "core", "defense", "magic-defense"]
-    },
-    {
-      "name": "Ring of Tales",
-      "cost": "1500 z",
-      "description": "When you roll a critical success, you may spend that opportunity to gain 1 Fabula Point.",
-      "tags": ["core", "critical", "fabula-point"]
-    },
-    {
-      "name": "Gloves, Multigroa Skin",
-      "cost": "2000 z",
-      "description": "You are immune to all status effects.",
-      "tags": ["core", "dazed", "enraged", "immunity", "poisoned", "shaken", "slow", "weak"]
-    },
-    {
-      "name": "Ring of Onions",
-      "cost": "2000 z",
-      "description": "As long as you have this accessory equipped, increase your maximum Hit Points and maximum Mind Points by 2 for each different Class you have.",
-      "tags": ["core", "hp", "mp"]
-    },
-    {
-      "name": "Ring of Frost",
-      "cost": "2500 z",
-      "description": "You gain Absorption to ice damage and Vulnerability to fire damage.",
-      "tags": ["absorption", "core", "fire", "ice", "vulnerability"]
-    },
-    {
-      "name": "Ring of Magma",
-      "cost": "2500 z",
-      "description": "You gain Absorption to fire damage and Vulnerability to ice damage.",
-      "tags": ["absorption", "core", "fire", "ice", "vulnerability"]
-    },
-    {
-      "name": "Ring of the Egg",
-      "cost": "3000 z",
-      "description": "When reduced to 0 Hit Points, you may instead choose to resist with exactly 1 Hit Point. If you do, this effect cannot be used until after you rest.",
-      "tags": ["core", "death-save", "hp"]
-    },
-    {
-      "name": "Ring of Denial",
-      "cost": "600 z",
-      "description": "When you cast the Dispel spell, its MP cost becomes “10 × T” and its target becomes “Up to three creatures”.",
-      "tags": ["dispel-effect", "high-fantasy", "mp", "multi", "spell"]
-    },
-    {
-      "name": "Ring of the Occultist",
-      "cost": "600 z",
-      "description": "Spells you cast with a target of “Up to three creatures” instead have a target of “Up to four creatures” (you must still spend additional Mind Points for the fourth target).",
-      "tags": ["high-fantasy", "mp", "multi", "spell"]
-    },
-    {
-      "name": "Ivory Ring",
-      "cost": "700 z",
-      "description": "When your Faithful Companion loses Hit Points, you may choose to lose an equal amount of Hit Points in their stead.",
-      "tags": ["companion", "high-fantasy", "hp", "wayfarer"]
-    },
-    {
-      "name": "Magic Palette",
-      "cost": "700 z",
-      "description": "When you deal damage to a creature bearing one of your symbols, that damage ignores Resistances.",
-      "tags": ["high-fantasy", "ignore", "resistance", "symbol", "symbolist"]
-    },
-    {
-      "name": "Tactician’s Diadem",
-      "cost": "800 z",
-      "description": "When an ally takes their turn immediately after yours in the same round of conflict (such as due to Crushing Chariot, Ouroboros Dance, or Stolen Time), that ally recovers 5 Mind Points at the start of that turn.",
-      "tags": ["high-fantasy", "mp", "take-turn"]
-    },
-    {
-      "name": "Alchemist’s Bag",
-      "cost": "1000 z",
-      "description": "When you create a potion with the Gadgets (Alchemy) Skill, you may roll an additional d20.",
-      "tags": ["high-fantasy", "skill", "tinkerer"]
-    },
-    {
-      "name": "Sorcerer’s Pendant",
-      "cost": "1200 z",
-      "description": "If you have acquired the Cheap Shot Skill, its extra damage also applies to any offensive spells (🗲) you cast that only target one creature, so long as that creature is suffering from at least one status effect.",
-      "tags": ["dazed", "enraged", "high-fantasy", "poisoned", "rogue", "shaken", "skill", "slow", "spell", "weak"]
-    },
-    {
-      "name": "Dancing Ribbon",
-      "cost": "2000 z",
-      "description": "While equipped with this accessory, your Dexterity is increased by one die size (up to a maximum of d12).",
-      "tags": ["DEX", "high-fantasy"]
-    },
-    {
-      "name": "Watering Can",
-      "cost": "500 z",
-      "description": "When you perform a water invocation, you may fill 1 section of the Growth Clock of a Player Character you can see.",
-      "tags": ["clock", "floralist", "garden", "invocation", "invoker", "natural-fantasy"]
-    },
-    {
-      "name": "Spicy Powder",
-      "cost": "600 z",
-      "description": "When you deal damage using a delicacy or potion, you may change its type to fire. This effect may change the damage type dealt by the Expiration Date Skill.",
-      "tags": ["fire", "gourmet", "ingredient", "merchant", "natural-fantasy", "skill"]
-    },
-    {
-      "name": "Dandelion Obi",
-      "cost": "700 z",
-      "description": "When you perform an air invocation, you may recover from a single status effect of your choice.",
-      "tags": ["air", "dazed", "enraged", "invocation", "invoker", "natural-fantasy", "poisoned", "shaken", "slow", "weak"]
-    },
-    {
-      "name": "Clockwork Heart",
-      "cost": "800 z",
-      "description": "You are Resistant to bolt and fire damage. If you enter Crisis, the effect of this accessory ceases until your next rest.",
-      "tags": ["bolt", "crisis", "fire", "natural-fantasy", "resistance"]
-    },
-    {
-      "name": "Needlefrog Mantle",
-      "cost": "900 z",
-      "description": "When you deal poison damage to one or more creatures during a conflict, each of those creatures who loses Hit Points this way cannot recover Hit Points until the start of your next turn.",
-      "tags": ["hp", "natural-fantasy", "poison"]
-    },
-    {
-      "name": "Handmade Scarf",
-      "cost": "1000 z",
-      "description": "When you gain one or more Trade Points via the Real Treasure Skill, you also gain 1 Fabula Point.",
-      "tags": ["fabula-point", "merchant", "natural-fantasy", "skill", "trade-point"]
-    },
-    {
-      "name": "Fallen Leaf Amulet",
-      "cost": "1500 z",
-      "description": "When you use the Tree of Life Skill, if you are in Crisis and choose an ally you can see who is in Crisis, you and that ally both benefit from the Hit Point recovery granted by the Skill.",
-      "tags": ["crisis", "floralist", "hp", "natural-fantasy", "skill"]
-    },
-    {
-      "name": "Eccentric’s Cookbook",
-      "cost": "1600 z",
-      "description": "Once per rest, you may choose a single combination of two tastes whose effect you already discovered. If you do, roll again to determine the effect of the combination, replacing the previous effect.",
-      "tags": ["gourmet", "ingredient", "natural-fantasy", "reroll"]
-    },
-    {
-      "name": "Spare Magazine",
-      "cost": "600 z",
-      "description": "Once per scene, after rolling an Accuracy Check with a Firearm, you may reroll one of the dice for that Check.",
-      "tags": ["attack", "firearm", "reroll", "techno-fantasy"]
-    },
-    {
-      "name": "Flashbang Grenades",
-      "cost": "800 z",
-      "description": "When you deal damage to a creature using an elemental shard, that creature also suffers dazed.",
-      "tags": ["dazed", "techno-fantasy"]
-    },
-    {
-      "name": "Gas Mask",
-      "cost": "900 z",
-      "description": "You gain Resistance to poison damage and are immune to poisoned.",
-      "tags": ["immunity", "poison", "poisoned", "resistance", "techno-fantasy"]
-    },
-    {
-      "name": "Maverick Helmet",
-      "cost": "1000 z",
-      "description": "At the start of your turn during a conflict, if you are in Crisis and driving your personal vehicle, you may recover from a single status effect of your choice.",
-      "tags": ["crisis", "dazed", "enraged", "pilot", "poisoned", "shaken", "slow", "techno-fantasy", "vehicle", "weak"]
-    },
-    {
-      "name": "Ego Mask",
-      "cost": "1500 z",
-      "description": "After summoning an Arcanum on your turn during a conflict, you may perform a free attack with a weapon you have equipped. If you do, treat your High Roll as 0 when calculating damage dealt by this attack and you cannot willingly dismiss your Arcanum during this turn.",
-      "tags": ["arcana", "arcanist", "free-attack", "techno-fantasy"]
-    },
-    {
-      "name": "Medikit",
-      "cost": "1500 z",
-      "description": "When you cause one or more creatures to recover Hit Points with a potion or spell, if at least one of those creatures is in Crisis, each of them recovers 5 additional Hit Points.",
-      "tags": ["crisis", "hp", "spell", "techno-fantasy"]
-    },
-    {
-      "name": "Portable Assembler",
-      "cost": "1500 z",
-      "description": "Once per scene, when you have to pay an Inventory Point cost, you may halve that cost instead.",
-      "tags": ["ip", "techno-fantasy"]
-    },
-    {
-      "name": "Omnidex",
-      "cost": "2000 z",
-      "description": "When you perform a Check to examine an NPC’s profile, treat any Result of 12 or lower as being 13, unless it is a fumble.",
-      "tags": ["fumble", "study", "techno-fantasy"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-rare-accessories",
+    "label": "Accessories",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4fr 2fr 0.25fr",
+    "group-tags": [],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Explorer\u2019s Belt",
+            "slug": "equipment-rare-accessories-explorer-s-belt",
+            "description": "You gain a +4 bonus to your Initiative modifier.",
+            "tags": [
+                "initiative"
+            ],
+            "cost": "500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Gloves, Elegant",
+            "slug": "equipment-rare-accessories-gloves-elegant",
+            "description": "You are immune to dazed.",
+            "tags": [
+                "dazed"
+            ],
+            "cost": "500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Gloves, Rough",
+            "slug": "equipment-rare-accessories-gloves-rough",
+            "description": "You are immune to weak.",
+            "tags": [
+                "weak"
+            ],
+            "cost": "500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Gloves, Silky",
+            "slug": "equipment-rare-accessories-gloves-silky",
+            "description": "You are immune to slow.",
+            "tags": [
+                "slow"
+            ],
+            "cost": "500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Gloves, Warm",
+            "slug": "equipment-rare-accessories-gloves-warm",
+            "description": "You are immune to shaken.",
+            "tags": [
+                "shaken"
+            ],
+            "cost": "500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Rookie\u2019s Boots",
+            "slug": "equipment-rare-accessories-rookie-s-boots",
+            "description": "When you roll a fumble, if you have less than 10 Experience Points, you may gain 1 Experience Point.",
+            "tags": [
+                "fumble"
+            ],
+            "cost": "600 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Han\u2019nya Mask",
+            "slug": "equipment-rare-accessories-han-nya-mask",
+            "description": "All damage you deal to shaken creatures ignores Resistances.",
+            "tags": [
+                "shaken"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pendant, Amber",
+            "slug": "equipment-rare-accessories-pendant-amber",
+            "description": "You gain Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage.",
+            "tags": [
+                "earth",
+                "resistance"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pendant, Amethyst",
+            "slug": "equipment-rare-accessories-pendant-amethyst",
+            "description": "You gain Resistance to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage.",
+            "tags": [
+                "dark",
+                "resistance"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pendant, Diamond",
+            "slug": "equipment-rare-accessories-pendant-diamond",
+            "description": "You gain Resistance to light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage.",
+            "tags": [
+                "light",
+                "resistance"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pendant, Emerald",
+            "slug": "equipment-rare-accessories-pendant-emerald",
+            "description": "You gain Resistance to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage.",
+            "tags": [
+                "poison",
+                "resistance"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pendant, Opal",
+            "slug": "equipment-rare-accessories-pendant-opal",
+            "description": "You gain Resistance to air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage.",
+            "tags": [
+                "air",
+                "resistance"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pendant, Ruby",
+            "slug": "equipment-rare-accessories-pendant-ruby",
+            "description": "You gain Resistance to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage.",
+            "tags": [
+                "fire",
+                "resistance"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pendant, Sapphire",
+            "slug": "equipment-rare-accessories-pendant-sapphire",
+            "description": "You gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.",
+            "tags": [
+                "ice",
+                "resistance"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pendant, Topaz",
+            "slug": "equipment-rare-accessories-pendant-topaz",
+            "description": "You gain Resistance to bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage.",
+            "tags": [
+                "bolt",
+                "resistance"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ring of Sorcery",
+            "slug": "equipment-rare-accessories-ring-of-sorcery",
+            "description": "You gain a +1 bonus to Magic Defense.",
+            "tags": [
+                "defense",
+                "magic-defense"
+            ],
+            "cost": "800 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Wanderer\u2019s Boots",
+            "slug": "equipment-rare-accessories-wanderer-s-boots",
+            "description": "When your group makes a discovery while traveling, you may gain 1 Fabula Point.",
+            "tags": [
+                "fabula-point"
+            ],
+            "cost": "900 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Crested Helm",
+            "slug": "equipment-rare-accessories-crested-helm",
+            "description": "You gain a +1 bonus to your Accuracy Checks.",
+            "tags": [],
+            "cost": "1000 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Gloves, Crimson",
+            "slug": "equipment-rare-accessories-gloves-crimson",
+            "description": "When you perform an attack with multi, you gain a +2 bonus to your Accuracy Check.",
+            "tags": [
+                "attack",
+                "multi"
+            ],
+            "cost": "1000 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pointy Yellow Hat",
+            "slug": "equipment-rare-accessories-pointy-yellow-hat",
+            "description": "You gain a +1 bonus to your Magic Checks.",
+            "tags": [],
+            "cost": "1000 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ring of the Lion",
+            "slug": "equipment-rare-accessories-ring-of-the-lion",
+            "description": "You gain a +2 bonus to Opposed Checks that rely on Willpower.",
+            "tags": [],
+            "cost": "1500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ring of the Owl",
+            "slug": "equipment-rare-accessories-ring-of-the-owl",
+            "description": "You gain a +2 bonus to Opposed Checks that rely on Insight.",
+            "tags": [],
+            "cost": "1500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ring of the Pupil",
+            "slug": "equipment-rare-accessories-ring-of-the-pupil",
+            "description": "As long as you have at least two Bonds of admiration, you gain a +1 bonus to both your Defense and Magic Defense.",
+            "tags": [
+                "defense",
+                "magic-defense"
+            ],
+            "cost": "1500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ring of Tales",
+            "slug": "equipment-rare-accessories-ring-of-tales",
+            "description": "When you roll a critical success, you may spend that opportunity to gain 1 Fabula Point.",
+            "tags": [
+                "critical",
+                "fabula-point"
+            ],
+            "cost": "1500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Gloves, Multigroa Skin",
+            "slug": "equipment-rare-accessories-gloves-multigroa-skin",
+            "description": "You are immune to all status effects.",
+            "tags": [],
+            "cost": "2000 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ring of Onions",
+            "slug": "equipment-rare-accessories-ring-of-onions",
+            "description": "As long as you have this accessory equipped, increase your maximum Hit Points and maximum Mind Points by 2 for each different Class you have.",
+            "tags": [
+                "accessory",
+                "hp",
+                "mp"
+            ],
+            "cost": "2000 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ring of Frost",
+            "slug": "equipment-rare-accessories-ring-of-frost",
+            "description": "You gain Absorption to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage and Vulnerability to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage.",
+            "tags": [
+                "absorption",
+                "fire",
+                "ice",
+                "vulnerability"
+            ],
+            "cost": "2500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ring of Magma",
+            "slug": "equipment-rare-accessories-ring-of-magma",
+            "description": "You gain Absorption to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage and Vulnerability to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.",
+            "tags": [
+                "absorption",
+                "fire",
+                "ice",
+                "vulnerability"
+            ],
+            "cost": "2500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ring of the Egg",
+            "slug": "equipment-rare-accessories-ring-of-the-egg",
+            "description": "When reduced to 0 Hit Points, you may instead choose to resist with exactly 1 Hit Point. If you do, this effect cannot be used until after you rest.",
+            "tags": [
+                "hp"
+            ],
+            "cost": "3000 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ring of Denial",
+            "slug": "equipment-rare-accessories-ring-of-denial",
+            "description": "When you cast the Dispel spell, its MP cost becomes \u201c10 \u00d7 T\u201d and its target becomes \u201cUp to three creatures\u201d.",
+            "tags": [
+                "spell"
+            ],
+            "cost": "600 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ring of the Occultist",
+            "slug": "equipment-rare-accessories-ring-of-the-occultist",
+            "description": "Spells you cast with a target of \u201cUp to three creatures\u201d instead have a target of \u201cUp to four creatures\u201d (you must still spend additional Mind Points for the fourth target).",
+            "tags": [
+                "mp"
+            ],
+            "cost": "600 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ivory Ring",
+            "slug": "equipment-rare-accessories-ivory-ring",
+            "description": "When your Faithful Companion loses Hit Points, you may choose to lose an equal amount of Hit Points in their stead.",
+            "tags": [
+                "companion",
+                "hp"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Magic Palette",
+            "slug": "equipment-rare-accessories-magic-palette",
+            "description": "When you deal damage to a creature bearing one of your symbols, that damage ignores Resistances.",
+            "tags": [
+                "symbol"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Tactician\u2019s Diadem",
+            "slug": "equipment-rare-accessories-tactician-s-diadem",
+            "description": "When an ally takes their turn immediately after yours in the same round of conflict (such as due to Crushing Chariot, Ouroboros Dance, or Stolen Time), that ally recovers 5 Mind Points at the start of that turn.",
+            "tags": [
+                "mp"
+            ],
+            "cost": "800 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Alchemist\u2019s Bag",
+            "slug": "equipment-rare-accessories-alchemist-s-bag",
+            "description": "When you create a potion with the Gadgets (Alchemy) Skill, you may roll an additional d20.",
+            "tags": [
+                "skill"
+            ],
+            "cost": "1000 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Sorcerer\u2019s Pendant",
+            "slug": "equipment-rare-accessories-sorcerer-s-pendant",
+            "description": "If you have acquired the Cheap Shot Skill, its extra damage also applies to any offensive spells (\ud83d\uddf2) you cast that only target one creature, so long as that creature is suffering from at least one status effect.",
+            "tags": [
+                "skill"
+            ],
+            "cost": "1200 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Dancing Ribbon",
+            "slug": "equipment-rare-accessories-dancing-ribbon",
+            "description": "While equipped with this accessory, your Dexterity is increased by one die size (up to a maximum of d12).",
+            "tags": [
+                "accessory"
+            ],
+            "cost": "2000 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Watering Can",
+            "slug": "equipment-rare-accessories-watering-can",
+            "description": "When you perform a water invocation, you may fill 1 section of the Growth Clock of a Player Character you can see.",
+            "tags": [
+                "clock"
+            ],
+            "cost": "500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Spicy Powder",
+            "slug": "equipment-rare-accessories-spicy-powder",
+            "description": "When you deal damage using a delicacy or potion, you may change its type to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>). This effect may change the damage type dealt by the Expiration Date Skill.",
+            "tags": [
+                "fire",
+                "skill"
+            ],
+            "cost": "600 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Dandelion Obi",
+            "slug": "equipment-rare-accessories-dandelion-obi",
+            "description": "When you perform an air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) invocation, you may recover from a single status effect of your choice.",
+            "tags": [
+                "air"
+            ],
+            "cost": "700 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Clockwork Heart",
+            "slug": "equipment-rare-accessories-clockwork-heart",
+            "description": "You are Resistant to bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) and fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage. If you enter Crisis, the effect of this accessory ceases until your next rest.",
+            "tags": [
+                "accessory",
+                "bolt",
+                "crisis",
+                "fire"
+            ],
+            "cost": "800 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Needlefrog Mantle",
+            "slug": "equipment-rare-accessories-needlefrog-mantle",
+            "description": "When you deal poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage to one or more creatures during a conflict, each of those creatures who loses Hit Points this way cannot recover Hit Points until the start of your next turn.",
+            "tags": [
+                "hp",
+                "poison"
+            ],
+            "cost": "900 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Handmade Scarf",
+            "slug": "equipment-rare-accessories-handmade-scarf",
+            "description": "When you gain one or more Trade Points via the Real Treasure Skill, you also gain 1 Fabula Point.",
+            "tags": [
+                "fabula-point",
+                "skill",
+                "trade-point"
+            ],
+            "cost": "1000 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Fallen Leaf Amulet",
+            "slug": "equipment-rare-accessories-fallen-leaf-amulet",
+            "description": "When you use the Tree of Life Skill, if you are in Crisis and choose an ally you can see who is in Crisis, you and that ally both benefit from the Hit Point recovery granted by the Skill.",
+            "tags": [
+                "crisis",
+                "skill"
+            ],
+            "cost": "1500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Eccentric\u2019s Cookbook",
+            "slug": "equipment-rare-accessories-eccentric-s-cookbook",
+            "description": "Once per rest, you may choose a single combination of two tastes whose effect you already discovered. If you do, roll again to determine the effect of the combination, replacing the previous effect.",
+            "tags": [],
+            "cost": "1600 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Spare Magazine",
+            "slug": "equipment-rare-accessories-spare-magazine",
+            "description": "Once per scene, after rolling an Accuracy Check with a Firearm, you may reroll one of the dice for that Check.",
+            "tags": [
+                "firearm",
+                "reroll"
+            ],
+            "cost": "600 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Flashbang Grenades",
+            "slug": "equipment-rare-accessories-flashbang-grenades",
+            "description": "When you deal damage to a creature using an elemental shard, that creature also suffers dazed.",
+            "tags": [
+                "dazed",
+                "elemental"
+            ],
+            "cost": "800 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Gas Mask",
+            "slug": "equipment-rare-accessories-gas-mask",
+            "description": "You gain Resistance to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and are immune to poisoned.",
+            "tags": [
+                "poison",
+                "poisoned",
+                "resistance"
+            ],
+            "cost": "900 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Maverick Helmet",
+            "slug": "equipment-rare-accessories-maverick-helmet",
+            "description": "At the start of your turn during a conflict, if you are in Crisis and driving your personal vehicle, you may recover from a single status effect of your choice.",
+            "tags": [
+                "crisis"
+            ],
+            "cost": "1000 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ego Mask",
+            "slug": "equipment-rare-accessories-ego-mask",
+            "description": "After summoning an Arcanum on your turn during a conflict, you may perform a free attack with a weapon you have equipped. If you do, treat your High Roll as 0 when calculating damage dealt by this attack and you cannot willingly dismiss your Arcanum during this turn.",
+            "tags": [
+                "attack",
+                "free-attack",
+                "weapon"
+            ],
+            "cost": "1500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Medikit",
+            "slug": "equipment-rare-accessories-medikit",
+            "description": "When you cause one or more creatures to recover Hit Points with a potion or spell, if at least one of those creatures is in Crisis, each of them recovers 5 additional Hit Points.",
+            "tags": [
+                "crisis",
+                "hp",
+                "spell"
+            ],
+            "cost": "1500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Portable Assembler",
+            "slug": "equipment-rare-accessories-portable-assembler",
+            "description": "Once per scene, when you have to pay an Inventory Point cost, you may halve that cost instead.",
+            "tags": [
+                "inventory"
+            ],
+            "cost": "1500 z"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Omnidex",
+            "slug": "equipment-rare-accessories-omnidex",
+            "description": "When you perform a Check to examine an NPC\u2019s profile, treat any Result of 12 or lower as being 13, unless it is a fumble.",
+            "tags": [
+                "fumble"
+            ],
+            "cost": "2000 z"
+        }
+    ]
 }

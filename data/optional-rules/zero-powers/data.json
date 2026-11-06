@@ -1,8 +1,17 @@
 {
-  "always-expand": false,
-  "is-container": true,
-  "icon": "",
-  "label": "Zero Powers",
-  "sub-labels": [],
-  "order": ["zero-triggers", "zero-effects"]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "optional-rules-zero-powers",
+    "label": "Zero Powers",
+    "sub-labels": [],
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "zero-triggers",
+        "zero-effects"
+    ]
 }

@@ -1,8 +1,14 @@
 {
-  "always-expand": false,
-  "is-container": true,
-  "icon": "",
-  "label": "Invocations",
-  "sub-labels": "",
-  "order": []
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-invocations",
+    "label": "Invocations",
+    "sub-labels": "",
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": []
 }

@@ -1,56 +1,105 @@
 {
-  "icon": "human-soul",
-  "label": "Invoker",
-  "sub-labels": ["Permanently increase your maximum Hit Points or Mind Points by 5 (your choice)."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["natural-fantasy", "invoker"],
-  "data": [
-    {
-      "name": "Elemental Harmony",
-      "class": "Invoker",
-      "max-sl": 2,
-      "description": "You may always communicate with creatures of the elemental Species.\nWhen you restore a creature’s Hit Points with an invocation or spell, if an elemental is present on the scene, the restored amount is increased by (SL × 5).",
-      "tags": ["hp", "invocation", "spell"]
-    },
-    {
-      "name": "Invocation",
-      "class": "Invoker",
-      "max-sl": 3,
-      "description": "You may use an action and spend 5 Mind Points to perform an invocation, drawing energy from one of the wellsprings present on the scene (see next page). Your (SL) in this Skill determines which invocations you have access to.",
-      "tags": ["invocation", "mp", "skill"]
-    },
-    {
-      "name": "Linked Invocation",
-      "class": "Invoker",
-      "max-sl": 3,
-      "description": "When you perform an invocation, you may spend up to (SL × 10) additional Mind Points. For every 10 Mind Points you spend this way, the invocation may target an additional creature you can see.",
-      "tags": ["invocation", "mp"]
-    },
-    {
-      "name": "Ripples",
-      "class": "Invoker",
-      "max-sl": 5,
-      "description": "After an enemy you can see loses Hit Points due to damage dealt by one of your allies, if that damage was increased by one or more of your “hex” invocations, you may perform a free attack with a weapon you have equipped. This attack may only target that enemy, and receives a bonus equal to (SL) to its Accuracy Check; if it is successful, all its damage becomes of the same type dealt by your ally, and all “hex” invocations present on its target end immediately after the attack has been resolved.\nIf two or more enemies trigger this Skill at the same time, you can perform a free attack against each of them, in whatever order you prefer.",
-      "tags": ["attack", "damage", "equipment", "hp", "invocation", "skill"]
-    },
-    {
-      "name": "Wellspring Expansion",
-      "class": "Invoker",
-      "max-sl": 5,
-      "description": "As long as you have a weapon belonging to the arcane, bow, brawling, flail, sword, or thrown Category equipped, your “blast” invocations deal (SL) extra damage, and the extra damage granted by your “hex” invocations is increased by (SL).",
-      "tags": ["arcane", "bow", "brawling", "damage", "flail", "invocation", "sword", "thrown"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "human-soul",
+    "slug": "classes-invoker",
+    "label": "Invoker",
+    "sub-labels": [
+        "Permanently increase your maximum Hit Points or Mind Points by 5 (your choice)."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "natural-fantasy",
+        "invoker"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Elemental Harmony",
+            "slug": "classes-invoker-elemental-harmony",
+            "description": "You may always communicate with creatures of the elemental Species.\nWhen you restore a creature\u2019s Hit Points with an invocation or spell, if an elemental is present on the scene, the restored amount is increased by (SL \u00d7 5).",
+            "tags": [
+                "elemental",
+                "hp",
+                "species",
+                "spell"
+            ],
+            "class": "Invoker",
+            "max-sl": 2
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Invocation",
+            "slug": "classes-invoker-invocation",
+            "description": "You may use an action and spend 5 Mind Points to perform an invocation, drawing energy from one of the wellsprings present on the scene (see next page). Your (SL) in this Skill determines which invocations you have access to.",
+            "tags": [
+                "invocation",
+                "mp",
+                "skill"
+            ],
+            "class": "Invoker",
+            "max-sl": 3
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Linked Invocation",
+            "slug": "classes-invoker-linked-invocation",
+            "description": "When you perform an invocation, you may spend up to (SL \u00d7 10) additional Mind Points. For every 10 Mind Points you spend this way, the invocation may target an additional creature you can see.",
+            "tags": [
+                "mp"
+            ],
+            "class": "Invoker",
+            "max-sl": 3
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ripples",
+            "slug": "classes-invoker-ripples",
+            "description": "After an enemy you can see loses Hit Points due to damage dealt by one of your allies, if that damage was increased by one or more of your \u201chex\u201d invocations, you may perform a free attack with a weapon you have equipped. This attack may only target that enemy, and receives a bonus equal to (SL) to its Accuracy Check; if it is successful, all its damage becomes of the same type dealt by your ally, and all \u201chex\u201d invocations present on its target end immediately after the attack has been resolved.\nIf two or more enemies trigger this Skill at the same time, you can perform a free attack against each of them, in whatever order you prefer.",
+            "tags": [
+                "attack",
+                "free-attack",
+                "hp",
+                "invocation",
+                "skill",
+                "weapon"
+            ],
+            "class": "Invoker",
+            "max-sl": 5
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Wellspring Expansion",
+            "slug": "classes-invoker-wellspring-expansion",
+            "description": "As long as you have a weapon belonging to the arcane, bow, brawling, flail, sword, or thrown Category equipped, your \u201cblast\u201d invocations deal (SL) extra damage, and the extra damage granted by your \u201chex\u201d invocations is increased by (SL).",
+            "tags": [
+                "arcane",
+                "bow",
+                "brawling",
+                "flail",
+                "invocation",
+                "sword",
+                "thrown",
+                "weapon"
+            ],
+            "class": "Invoker",
+            "max-sl": 5
+        }
+    ]
 }

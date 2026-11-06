@@ -1,42 +1,65 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "",
-  "sub-labels": ["Earth wellspring"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Effect",
-      "field": "effect",
-      "class": "effect"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
-  "group-tags": ["earth", "invoker", "invocation"],
-  "data": [
-    {
-      "name": "Geo Blast",
-      "effect": "You deal 20 earth damage to the target.",
-      "tags": ["earth"]
-    },
-    {
-      "name": "Geo Hex",
-      "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air and ice damage.",
-      "tags": ["air", "ice"]
-    },
-    {
-      "name": "Growth",
-      "effect": "The target recovers 30 Hit Points.",
-      "tags": ["hp"]
-    },
-    {
-      "name": "Quicksand",
-      "effect": "You deal 10 earth damage to the target, and they suffer slow.",
-      "tags": ["earth", "slow"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-invocations-earth",
+    "label": "",
+    "sub-labels": [
+        "Earth wellspring"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Effect",
+            "key": "effect"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+    "group-tags": [
+        "earth",
+        "invoker",
+        "invocation"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Geo Blast",
+            "slug": "class-features-invocations-earth-geo-blast",
+            "description": "",
+            "tags": [],
+            "effect": "You deal 20 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage to the target."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Geo Hex",
+            "slug": "class-features-invocations-earth-geo-hex",
+            "description": "",
+            "tags": [],
+            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Growth",
+            "slug": "class-features-invocations-earth-growth",
+            "description": "",
+            "tags": [],
+            "effect": "The target recovers 30 Hit Points."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Quicksand",
+            "slug": "class-features-invocations-earth-quicksand",
+            "description": "",
+            "tags": [],
+            "effect": "You deal 10 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage to the target, and they suffer slow."
+        }
+    ]
 }

@@ -1,0 +1,265 @@
+{
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": false,
+    "icon": "",
+    "slug": "optional-rules-quirks-techno-fantasy",
+    "label": "Quirks",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Summary",
+            "key": "summary"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+    "group-tags": [
+        "techno-fantasy"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Agitator",
+            "slug": "optional-rules-quirks-techno-fantasy-agitator",
+            "description": "<p>When you rest inside or near a settlement, you may choose one option: you learn what the locals are mainly angry about or afraid of, or you create a contact that lives and operates in this area &ndash; give them a name and specialization, and the Game Master tells you what they ask of you (they might request a payment or need help).</p>",
+            "tags": [],
+            "summary": "Uncover local grievances or establish operational contacts whenever you rest near settlements."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Cognitive Ghost",
+            "slug": "optional-rules-quirks-techno-fantasy-cognitive-ghost",
+            "description": "<p>Choose two damage types from air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), ice (<i class=\"ui-icon elem-ice svg-ice\"></i>), and light (<i class=\"ui-icon elem-light svg-sun\"></i>). You gain Resistance to the chosen damage types. However, you also gain Vulnerability to a third damage type chosen from the list above.</p><p>You gain the ability to perform Rituals of the Ritualism discipline, and you may use these Rituals to transport creatures in and out of the soul network, as well as to gain information and track entities while inside the soul network.</p>",
+            "tags": [
+                "air",
+                "bolt",
+                "dark",
+                "earth",
+                "fire",
+                "ice",
+                "light",
+                "resistance",
+                "vulnerability"
+            ],
+            "summary": "Soul network entity with double damage Resistance, single Vulnerability, and specialized Ritualism access."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Diabolist",
+            "slug": "optional-rules-quirks-techno-fantasy-diabolist",
+            "description": "<p>Together with your group, create your familiar: a level 5 NPC belonging to the demon Species. This creature has no initiative score, does not level up, can have up to two basic attacks, gains a +3 bonus to Accuracy and Magic Checks, and max HP equal to (5 &times; base Might die size + half your level).</p><p>Your familiar acts on your turn when you spend an action. When a demon NPC falls to 0 HP, you may spend 20 MP to replace one of your familiar's Skills with one of theirs. Familiar reforms with HP equal to its Crisis score at the start of the next scene if reduced to 0 HP.</p>",
+            "tags": [
+                "basic",
+                "crisis",
+                "demon",
+                "hp",
+                "initiative",
+                "mp",
+                "species"
+            ],
+            "summary": "Command a customizable demonic familiar that scales with you and can absorb Skills from defeated demon foes."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Enigmatic Relic",
+            "slug": "optional-rules-quirks-techno-fantasy-enigmatic-relic",
+            "description": "<p>Together with your group, create a relic: a rare custom weapon worth 1200 zenit or less. The relic may only be destroyed through a PC's Sacrifice and only lost/stolen due to Surrender.</p><p>Wielders can use the Skill action to manifest powers: ask the GM a truth, halve MP costs for a chosen magic discipline for the scene, or grant +5 damage, pierce all defenses, and trigger a free attack. Manifesting powers generates Paradox Points; reaching 10+ Paradox Points renders the relic inert or triggers a major campaign event.</p>",
+            "tags": [
+                "attack",
+                "fabula-point",
+                "free-attack",
+                "rare",
+                "skill",
+                "weapon",
+                "zenit"
+            ],
+            "summary": "Wield a powerful custom weapon artifact that grants immense magical or combat benefits at the risk of building Paradox Points."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "From a Distant World",
+            "slug": "optional-rules-quirks-techno-fantasy-from-a-distant-world",
+            "description": "<p>When you participate in a conflict scene, you automatically gain 1 Fabula Point. Additionally, you can invoke a Trait to reroll dice even if you fumbled your Check (if you do so, you do not receive a Fabula Point for the fumble).</p>",
+            "tags": [
+                "fabula-point",
+                "fumble",
+                "reroll"
+            ],
+            "summary": "Gain a free Fabula Point per conflict scene and bypass fumbles when rerolling via Traits."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Fugitive Experiment",
+            "slug": "optional-rules-quirks-techno-fantasy-fugitive-experiment",
+            "description": "<p>When a rule or ability requires you to spend 100 or fewer Hit Points, Mind Points, or Inventory Points, you may suffer 1d8 Instability Points to ignore that cost. At the end of each session, you lose 1d6 Instability Points.</p><p>If your Instability Points ever reach 10 or more, you are immediately reduced to 0 Hit Points, must Surrender with narrative loss of control, and lose all Instability Points.</p>",
+            "tags": [
+                "hp",
+                "ignore",
+                "inventory",
+                "ip",
+                "mp"
+            ],
+            "summary": "Accumulate Instability Points to bypass resource costs, risking sudden collapse if your instability peaks."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Hundred Faces",
+            "slug": "optional-rules-quirks-techno-fantasy-hundred-faces",
+            "description": "<p>If you are away from prying eyes, you may use the Skill action and spend 1 Fabula Point to disguise yourself as another creature of humanoid size and shape, including matching their voice and mannerisms if you've met them.</p><p>Fool normal soldiers easily, though elites and champions may see through it. Villains can spend 1 Ultima Point to instantly expose your true identity.</p>",
+            "tags": [
+                "fabula-point",
+                "humanoid",
+                "skill"
+            ],
+            "summary": "Spend a Fabula Point away from prying eyes to adopt the exact appearance and voice of any humanoid you know."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Inventor Prodigy",
+            "slug": "optional-rules-quirks-techno-fantasy-inventor-prodigy",
+            "description": "<p>Once per conflict scene, if you need to spend Inventory Points, you can instead ignore that cost.</p><p>You may initiate Projects. If a Project requires a special ingredient or material, you may spend 1 Fabula Point to declare you have that item with you (the resulting invention must have a terrible flaw).</p>",
+            "tags": [
+                "fabula-point",
+                "ignore",
+                "inventory",
+                "ip",
+                "tinkerer"
+            ],
+            "summary": "Ignore Inventory Point costs once per conflict and spend Fabula Points to instantly source crafting materials with built-in flaws."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Neo-Human",
+            "slug": "optional-rules-quirks-techno-fantasy-neo-human",
+            "description": "<p>When you acquire this Quirk, choose Dexterity, Insight, Might, or Willpower. When you join a conflict scene, you may choose to increase that Attribute by one die size (up to d12) or treat a d12 base size as d20 during Checks. The GM gains an opportunity to showcase unexpected collateral effects.</p>",
+            "tags": [],
+            "summary": "Temporarily elevate one of your core attributes or unlock d20 scaling at the cost of GM narrative opportunities."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Planet Oracle",
+            "slug": "optional-rules-quirks-techno-fantasy-planet-oracle",
+            "description": "<p>When you cause one or more allies to recover Hit Points and/or Mind Points, each of those allies recovers 5 additional HP/MP (increasing to 10 at level 30+) and clears a status effect of your choice among dazed, enraged, poisoned, shaken, slow, and weak.</p><p>You also gain the ability to perform Rituals of the Spiritism discipline.</p>",
+            "tags": [
+                "dazed",
+                "enraged",
+                "hp",
+                "mp",
+                "poisoned",
+                "shaken",
+                "slow",
+                "spiritist",
+                "weak"
+            ],
+            "summary": "Enhance ally healing with bonus HP/MP recovery, status cleansing, and gain access to Spiritism Rituals."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Repentant Enforcer",
+            "slug": "optional-rules-quirks-techno-fantasy-repentant-enforcer",
+            "description": "<p>Requires Theme to be Doubt or Guilt. Name an oppressive organization, its leading Villain, and three strategies to establish a world threat. You start with a stolen rare item worth 1000 zenit or less.</p><p>Gain Subversion Points by hindering the organization's goals, which can be spent in place of Fabula Points. Once the leader surrenders, lose the Quirk, gain +10 max HP/MP, and change Theme to Belonging, Duty, or Justice.</p>",
+            "tags": [
+                "hp",
+                "mp",
+                "rare",
+                "zenit"
+            ],
+            "summary": "Defect from an oppressive faction, build Subversion Points by fighting their plans, and ultimately transform your Theme."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Robot",
+            "slug": "optional-rules-quirks-techno-fantasy-robot",
+            "description": "<p>You are not considered a living creature and gain Immunity to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage. You are also immune to the poisoned status effect.</p><p>You do not need to breathe, eat or drink, but you still follow the normal rules for resting. You also recover Hit Points and recover from status effects as normal.</p><p>You gain a +2 bonus to all Checks you perform to examine or interact with machines, technology and constructs (except for Accuracy Checks and Magic Checks).</p>",
+            "tags": [
+                "earth",
+                "hp",
+                "immunity",
+                "poison",
+                "poisoned",
+                "resistance"
+            ],
+            "summary": "Construct body with poison immunity, earth resistance, tech interaction bonuses, and no biological needs."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Stolen Transport",
+            "slug": "optional-rules-quirks-techno-fantasy-stolen-transport",
+            "description": "<p>You obtain a medium or large transport (such as a vehicle or spaceship) equipped with armaments for vehicle combat that can accommodate your group and a dozen guests.</p><p>Once per session, the Game Master can give you 2 Fabula Points to introduce a narrative complication related to the transport or its original owner. The transport can never be destroyed without your permission.</p>",
+            "tags": [
+                "fabula-point",
+                "vehicle"
+            ],
+            "summary": "Own a heavily armed party-sized spaceship or vehicle with a vengeful original owner tied to narrative complications."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Survivor",
+            "slug": "optional-rules-quirks-techno-fantasy-survivor",
+            "description": "<p>Permanently increase your maximum Hit Points and maximum Mind Points by 5.</p><p>Choose one option: gain the ability to equip martial melee and ranged weapons, martial armor, and martial shields; or learn any one spell from the Elementalist or Spiritist lists; or permanently increase your maximum Inventory Points by 2.</p>",
+            "tags": [
+                "armor",
+                "elementalist",
+                "hp",
+                "inventory",
+                "ip",
+                "martial",
+                "melee",
+                "mp",
+                "ranged",
+                "spell",
+                "spiritist"
+            ],
+            "summary": "Gain a permanent health/mind boost plus your choice of martial equipment access, an extra spell, or extra Inventory Points."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "The Beast Who Spoke",
+            "slug": "optional-rules-quirks-techno-fantasy-the-beast-who-spoke",
+            "description": "<p>You may not equip any items, with the exception of accessories and weapon and armor modules. However, as long as your armor slot is empty, you gain a +2 bonus to Defense and a +2 bonus to Magic Defense.</p><p>You also gain two benefits of your choice: equip custom weapons; learn an NPC spell (using MIG + WLP); or deal 6 extra damage with unarmed strikes (increasing to 10 at level 30+).</p>",
+            "tags": [
+                "armor",
+                "defense",
+                "magic-defense",
+                "module",
+                "spell",
+                "weapon"
+            ],
+            "summary": "Forego standard armor for defense bonuses and choose two feral enhancements like custom weapons, magic, or boosted unarmed strikes."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Xiphosymbiosis",
+            "slug": "optional-rules-quirks-techno-fantasy-xiphosymbiosis",
+            "description": "<p>Your physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) body manifestation is tied to a core custom weapon wielded by another PC. You share a Bond with them, and all your excess HP damage is taken by your wielder regardless of distance.</p><p>When your wielder surrenders, you become dormant. When they sacrifice themselves, you can trigger an Awakening to take a physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) body, transfer to a new wielder, or shatter to save them. Trigger Awakening when Bond strength reaches 10+ upon leveling.</p>",
+            "tags": [
+                "bond",
+                "core",
+                "hp",
+                "physical",
+                "weapon"
+            ],
+            "summary": "Exist as a spirit bound to a custom weapon wielded by an ally, sharing damage and capable of miraculous revival."
+        }
+    ]
+}

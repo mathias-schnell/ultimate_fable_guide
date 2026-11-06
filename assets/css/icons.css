@@ -6,9 +6,11 @@
 .ui-icon.svg-all-for-one {    mask-image: url('../icons/all-for-one.svg');    -webkit-mask-image: url('../icons/all-for-one.svg');}
 .ui-icon.svg-archive-research {    mask-image: url('../icons/archive-research.svg');    -webkit-mask-image: url('../icons/archive-research.svg');}
 .ui-icon.svg-ballerina-shoes {    mask-image: url('../icons/ballerina-shoes.svg');    -webkit-mask-image: url('../icons/ballerina-shoes.svg');}
+.ui-icon.svg-battle-axe {    mask-image: url('../icons/battle-axe.svg');    -webkit-mask-image: url('../icons/battle-axe.svg');}
 .ui-icon.svg-batwing-emblem {    mask-image: url('../icons/batwing-emblem.svg');    -webkit-mask-image: url('../icons/batwing-emblem.svg');}
 .ui-icon.svg-beech {    mask-image: url('../icons/beech.svg');    -webkit-mask-image: url('../icons/beech.svg');}
 .ui-icon.svg-black-book {    mask-image: url('../icons/black-book.svg');    -webkit-mask-image: url('../icons/black-book.svg');}
+.ui-icon.svg-body-balance {    mask-image: url('../icons/body-balance.svg');    -webkit-mask-image: url('../icons/body-balance.svg');}
 .ui-icon.svg-bolt {    mask-image: url('../icons/bolt.svg');    -webkit-mask-image: url('../icons/bolt.svg');}
 .ui-icon.svg-book-pile {    mask-image: url('../icons/book-pile.svg');    -webkit-mask-image: url('../icons/book-pile.svg');}
 .ui-icon.svg-bookmark {    mask-image: url('../icons/bookmark.svg');    -webkit-mask-image: url('../icons/bookmark.svg');}
@@ -23,6 +25,7 @@
 .ui-icon.svg-checked-shield {    mask-image: url('../icons/checked-shield.svg');    -webkit-mask-image: url('../icons/checked-shield.svg');}
 .ui-icon.svg-cheese-wedge {    mask-image: url('../icons/cheese-wedge.svg');    -webkit-mask-image: url('../icons/cheese-wedge.svg');}
 .ui-icon.svg-chef-toque {    mask-image: url('../icons/chef-toque.svg');    -webkit-mask-image: url('../icons/chef-toque.svg');}
+.ui-icon.svg-chess-knight {    mask-image: url('../icons/chess-knight.svg');    -webkit-mask-image: url('../icons/chess-knight.svg');}
 .ui-icon.svg-chess-queen {    mask-image: url('../icons/chess-queen.svg');    -webkit-mask-image: url('../icons/chess-queen.svg');}
 .ui-icon.svg-cloak-dagger {    mask-image: url('../icons/cloak-dagger.svg');    -webkit-mask-image: url('../icons/cloak-dagger.svg');}
 .ui-icon.svg-cog {    mask-image: url('../icons/cog.svg');    -webkit-mask-image: url('../icons/cog.svg');}
@@ -50,6 +53,7 @@
 .ui-icon.svg-drill {    mask-image: url('../icons/drill.svg');    -webkit-mask-image: url('../icons/drill.svg');}
 .ui-icon.svg-earth {    mask-image: url('../icons/earth.svg');    -webkit-mask-image: url('../icons/earth.svg');}
 .ui-icon.svg-eclipse {    mask-image: url('../icons/eclipse.svg');    -webkit-mask-image: url('../icons/eclipse.svg');}
+.ui-icon.svg-edged-shield {    mask-image: url('../icons/edged-shield.svg');    -webkit-mask-image: url('../icons/edged-shield.svg');}
 .ui-icon.svg-electric {    mask-image: url('../icons/electric.svg');    -webkit-mask-image: url('../icons/electric.svg');}
 .ui-icon.svg-embrassed-energy {    mask-image: url('../icons/embrassed-energy.svg');    -webkit-mask-image: url('../icons/embrassed-energy.svg');}
 .ui-icon.svg-emerald {    mask-image: url('../icons/emerald.svg');    -webkit-mask-image: url('../icons/emerald.svg');}
@@ -58,6 +62,7 @@
 .ui-icon.svg-expand {    mask-image: url('../icons/expand.svg');    -webkit-mask-image: url('../icons/expand.svg');}
 .ui-icon.svg-expander {    mask-image: url('../icons/expander.svg');    -webkit-mask-image: url('../icons/expander.svg');}
 .ui-icon.svg-eye-target {    mask-image: url('../icons/eye-target.svg');    -webkit-mask-image: url('../icons/eye-target.svg');}
+.ui-icon.svg-eyepatch {    mask-image: url('../icons/eyepatch.svg');    -webkit-mask-image: url('../icons/eyepatch.svg');}
 .ui-icon.svg-fast-forward-button {    mask-image: url('../icons/fast-forward-button.svg');    -webkit-mask-image: url('../icons/fast-forward-button.svg');}
 .ui-icon.svg-fire {    mask-image: url('../icons/fire.svg');    -webkit-mask-image: url('../icons/fire.svg');}
 .ui-icon.svg-flame {    mask-image: url('../icons/flame.svg');    -webkit-mask-image: url('../icons/flame.svg');}

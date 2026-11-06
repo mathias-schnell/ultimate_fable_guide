@@ -1,41 +1,54 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "Flail",
-  "sub-labels": ["Flail"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Accuracy",
-      "field": "accuracy",
-      "class": "accuracy"
-    },
-    {
-      "label": "Damage",
-      "field": "damage",
-      "class": "damage"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "flail", "basic", "martial", "weapon"],
-  "data": [
-    {
-      "name": "Chain Whip",
-      "martial": false,
-      "cost": "150 z",
-      "accuracy": "【DEX + DEX】",
-      "damage": "【HR + 8】 physical",
-      "description": "Two-handed • Melee • No Quality.",
-      "tags": ["two-handed", "melee", "physical", "DEX"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-weapons-basic-flail",
+    "label": "Flail",
+    "sub-labels": [
+        "Flail"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Accuracy",
+            "key": "accuracy"
+        },
+        {
+            "label": "Damage",
+            "key": "damage"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "flail",
+        "basic",
+        "martial",
+        "weapon"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Chain Whip",
+            "slug": "equipment-weapons-basic-flail-chain-whip",
+            "description": "Two-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "two-handed"
+            ],
+            "accuracy": "\u3010DEX + DEX\u3011",
+            "cost": "150 z",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": false
+        }
+    ]
 }

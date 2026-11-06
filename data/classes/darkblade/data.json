@@ -1,56 +1,102 @@
 {
-  "icon": "batwing-emblem",
-  "label": "Darkblade",
-  "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial melee weapons and martial armor."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "darkblade"],
-  "data": [
-    {
-      "name": "Agony",
-      "class": "Darkblade",
-      "max-sl": 5,
-      "description": "Once per turn (including other creatures’ turns), after you deal damage to one or more enemies you have a Bond towards, you may recover (SL × 2) Hit Points and (SL × 2) Mind Points.",
-      "tags": ["bond", "damage", "darkblade", "hp", "mp"]
-    },
-    {
-      "name": "Dark Blood",
-      "class": "Darkblade",
-      "max-sl": 1,
-      "description": "As long as you are in Crisis, you gain Resistance to dark damage and poison damage.",
-      "tags": ["crisis", "damage", "dark", "darkblade", "poison", "resistance"]
-    },
-    {
-      "name": "Heart of Darkness",
-      "class": "Darkblade",
-      "max-sl": 1,
-      "description": "Once per scene, when you enter Crisis, you may choose a specific creature you can see that you don’t have a Bond towards. If you do, create a Bond of hatred towards that creature.",
-      "tags": ["bond", "crisis", "darkblade"]
-    },
-    {
-      "name": "Painful Lesson",
-      "class": "Darkblade",
-      "max-sl": 3,
-      "description": "After another creature causes you to lose Hit Points (with an attack, a spell or any other method), you may immediately perform the Study action on that creature (page 74) for free. If you do, gain a bonus equal to (SL) to your Check. Remember, you can study the same aspect of a creature only once.",
-      "tags": ["attack", "darkblade", "hp", "spell", "study"]
-    },
-    {
-      "name": "Shadow Strike",
-      "class": "Darkblade",
-      "max-sl": 5,
-      "description": "You have learned to channel your vital force into your attacks. You may use an action to perform a Shadow Strike: roll your current Might die and lose an amount of Hit Points equal to (the number rolled on your Might die). If this didn’t reduce your Hit Points to 0, you may perform a free attack with a weapon you have equipped: if this attack hits one or more targets, it deals extra damage equal to (SL + the number rolled on your Might die). However, all damage dealt by this attack becomes dark and its damage type cannot be changed.",
-      "tags": ["attack", "damage", "dark", "darkblade", "equipment", "hp", "MIG"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "batwing-emblem",
+    "slug": "classes-darkblade",
+    "label": "Darkblade",
+    "sub-labels": [
+        "Permanently increase your maximum Hit Points by 5.",
+        "Gain the ability to equip martial melee weapons and martial armor."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "darkblade"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Agony",
+            "slug": "classes-darkblade-agony",
+            "description": "Once per turn (including other creatures\u2019 turns), after you deal damage to one or more enemies you have a Bond towards, you may recover (SL \u00d7 2) Hit Points and (SL \u00d7 2) Mind Points.",
+            "tags": [
+                "bond",
+                "hp",
+                "mp"
+            ],
+            "class": "Darkblade",
+            "max-sl": 5
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Dark Blood",
+            "slug": "classes-darkblade-dark-blood",
+            "description": "As long as you are in Crisis, you gain Resistance to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage and poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage.",
+            "tags": [
+                "crisis",
+                "dark",
+                "poison",
+                "resistance"
+            ],
+            "class": "Darkblade",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Heart of Darkness",
+            "slug": "classes-darkblade-heart-of-darkness",
+            "description": "Once per scene, when you enter Crisis, you may choose a specific creature you can see that you don\u2019t have a Bond towards. If you do, create a Bond of hatred towards that creature.",
+            "tags": [
+                "bond",
+                "crisis"
+            ],
+            "class": "Darkblade",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Painful Lesson",
+            "slug": "classes-darkblade-painful-lesson",
+            "description": "After another creature causes you to lose Hit Points (with an attack, a spell or any other method), you may immediately perform the Study action on that creature (page 74) for free. If you do, gain a bonus equal to (SL) to your Check. Remember, you can study the same aspect of a creature only once.",
+            "tags": [
+                "attack",
+                "hp",
+                "spell",
+                "study"
+            ],
+            "class": "Darkblade",
+            "max-sl": 3
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Shadow Strike",
+            "slug": "classes-darkblade-shadow-strike",
+            "description": "You have learned to channel your vital force into your attacks. You may use an action to perform a Shadow Strike: roll your current Might die and lose an amount of Hit Points equal to (the number rolled on your Might die). If this didn\u2019t reduce your Hit Points to 0, you may perform a free attack with a weapon you have equipped: if this attack hits one or more targets, it deals extra damage equal to (SL + the number rolled on your Might die). However, all damage dealt by this attack becomes dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) and its damage type cannot be changed.",
+            "tags": [
+                "attack",
+                "dark",
+                "free-attack",
+                "hp",
+                "weapon"
+            ],
+            "class": "Darkblade",
+            "max-sl": 5
+        }
+    ]
 }

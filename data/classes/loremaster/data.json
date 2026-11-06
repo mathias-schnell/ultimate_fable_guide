@@ -1,56 +1,88 @@
 {
-  "icon": "bookmarklet",
-  "label": "Loremaster",
-  "sub-labels": ["Permanently increase your maximum Mind Points by 5."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "loremaster"],
-  "data": [
-    {
-      "name": "Flash of Insight",
-      "class": "Loremaster",
-      "max-sl": 3,
-      "description": "When you get a Result of 13 or higher on a Check performed to investigate a creature, item or location — this includes using the Study action during a conflict — you may ask the Game Master up to (SL) questions concerning the subject of your investigation. You may ask these questions immediately or save them for later; whenever you ask one of these questions, the Game Master will answer truthfully and you will describe your character’s deductive process. This Skill may only be used once on the same creature, item or location.",
-      "tags": ["loremaster", "study"]
-    },
-    {
-      "name": "Focused",
-      "class": "Loremaster",
-      "max-sl": 5,
-      "description": "Permanently increase your maximum Mind Points by (SL × 3). When you perform an Open Check using (INS + INS), you gain a bonus equal to (SL) on that Check (this only applies to Open Checks).",
-      "tags": ["INS", "loremaster", "mp"]
-    },
-    {
-      "name": "Knowledge Is Power",
-      "class": "Loremaster",
-      "max-sl": 1,
-      "description": "When you perform an Accuracy Check, you may replace one of the Attribute dice with Insight (such as (INS + INS) for a pistol or (INS + MIG) for a waraxe).",
-      "tags": ["INS", "loremaster", "MIG"]
-    },
-    {
-      "name": "Quick Assessment",
-      "class": "Loremaster",
-      "max-sl": 6,
-      "description": "At the start of a conflict, you may spend up to (SL × 5) Mind Points. For every 5 Mind Points you spend this way, choose one option: choose a creature you can see and the GM reveals one of their Traits; or name a damage type and choose a creature you can see, and the GM reveals that creature’s Affinity towards that damage type.",
-      "tags": ["damage", "loremaster", "mp"]
-    },
-    {
-      "name": "Trained Memory",
-      "class": "Loremaster",
-      "max-sl": 1,
-      "description": "You may perfectly recall the details of any scene you have visited within the past week. You can “go back in time” within your mind in order to examine and investigate such scenes again — your Flash of Insight Skill will apply to these memories as well.",
-      "tags": ["loremaster", "study"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "bookmarklet",
+    "slug": "classes-loremaster",
+    "label": "Loremaster",
+    "sub-labels": [
+        "Permanently increase your maximum Mind Points by 5."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "loremaster"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Flash of Insight",
+            "slug": "classes-loremaster-flash-of-insight",
+            "description": "When you get a Result of 13 or higher on a Check performed to investigate a creature, item or location \u2014 this includes using the Study action during a conflict \u2014 you may ask the Game Master up to (SL) questions concerning the subject of your investigation. You may ask these questions immediately or save them for later; whenever you ask one of these questions, the Game Master will answer truthfully and you will describe your character\u2019s deductive process. This Skill may only be used once on the same creature, item or location.",
+            "tags": [
+                "skill",
+                "study"
+            ],
+            "class": "Loremaster",
+            "max-sl": 3
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Focused",
+            "slug": "classes-loremaster-focused",
+            "description": "Permanently increase your maximum Mind Points by (SL \u00d7 3). When you perform an Open Check using (INS + INS), you gain a bonus equal to (SL) on that Check (this only applies to Open Checks).",
+            "tags": [
+                "mp"
+            ],
+            "class": "Loremaster",
+            "max-sl": 5
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Knowledge Is Power",
+            "slug": "classes-loremaster-knowledge-is-power",
+            "description": "When you perform an Accuracy Check, you may replace one of the Attribute dice with Insight (such as (INS + INS) for a pistol or (INS + MIG) for a waraxe).",
+            "tags": [],
+            "class": "Loremaster",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Quick Assessment",
+            "slug": "classes-loremaster-quick-assessment",
+            "description": "At the start of a conflict, you may spend up to (SL \u00d7 5) Mind Points. For every 5 Mind Points you spend this way, choose one option: choose a creature you can see and the GM reveals one of their Traits; or name a damage type and choose a creature you can see, and the GM reveals that creature\u2019s Affinity towards that damage type.",
+            "tags": [
+                "mp",
+                "traits"
+            ],
+            "class": "Loremaster",
+            "max-sl": 6
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Trained Memory",
+            "slug": "classes-loremaster-trained-memory",
+            "description": "You may perfectly recall the details of any scene you have visited within the past week. You can \u201cgo back in time\u201d within your mind in order to examine and investigate such scenes again \u2014 your Flash of Insight Skill will apply to these memories as well.",
+            "tags": [
+                "skill"
+            ],
+            "class": "Loremaster",
+            "max-sl": 1
+        }
+    ]
 }

@@ -1,149 +1,243 @@
 {
-  "always-expand": false,
-  "is-container": false,
-  "label": "Spiritist",
-  "sub-labels": [],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "MP",
-      "field": "mp",
-      "class": "mp"
-    },
-    {
-      "label": "Target",
-      "field": "target",
-      "class": "target"
-    },
-    {
-      "label": "Duration",
-      "field": "duration",
-      "class": "duration"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "spiritist", "spell"],
-  "data": [
-    {
-      "name": "Aura",
-      "offensive": false,
-      "mp": "5 × T",
-      "target": "Up to three creatures",
-      "duration": "Scene",
-      "description": "You project your soul outside your body and direct it to surround the targets, shielding them from dangerous magic. Until this spell ends, each target may treat their Magic Defense as being equal to 12 against any effects that target it (they are still free to use their normal Defense score if higher than 12). This value increases to 13 if you are level 20 or higher, or to 14 if you are level 40 or higher.",
-      "tags": ["magic-defense"]
-    },
-    {
-      "name": "Awaken",
-      "offensive": false,
-      "mp": "20",
-      "target": "One creature",
-      "duration": "Scene",
-      "description": "You allow a creature to focus their vital energy into accomplishing what they previously could not. Choose one Attribute: Dexterity, Insight, Might, or Willpower. Until this spell ends, the target treats the chosen Attribute as if it were one die size higher (up to a maximum of d12).",
-      "tags": ["DEX", "INS", "MIG", "WLP"]
-    },
-    {
-      "name": "Barrier",
-      "offensive": false,
-      "mp": "5 × T",
-      "target": "Up to three creatures",
-      "duration": "Scene",
-      "description": "You project your soul outside your body and weave it into a barrier to protect the targets from attacks. Until this spell ends, each target may treat their Defense as being equal to 12 against any effects that target it (they are still free to use their normal Defense score if higher than 12). This value increases to 13 if you are level 20 or higher, or to 14 if you are level 40 or higher.",
-      "tags": ["defense"]
-    },
-    {
-      "name": "Cleanse",
-      "offensive": false,
-      "mp": "5 × T",
-      "target": "Up to three creatures",
-      "duration": "Instantaneous",
-      "description": "You strengthen and purify the soul energy coursing through your companions. Each target recovers from all status effects.",
-      "tags": ["dazed", "shaken", "slow", "weak", "enraged", "poisoned"]
-    },
-    {
-      "name": "Enrage",
-      "offensive": true,
-      "mp": "10",
-      "target": "One creature",
-      "duration": "Instantaneous",
-      "description": "You cause a creature to lose any semblance of temper and act brazenly. The target suffers enraged and cannot perform the Guard or Spell actions until the end of their next turn.",
-      "tags": ["enraged", "guard"]
-    },
-    {
-      "name": "Hallucination",
-      "offensive": true,
-      "mp": "5 × T",
-      "target": "Up to three creatures",
-      "duration": "Instantaneous",
-      "description": "You alter the senses of your enemies, causing them to experience bizarre or frightening hallucinations. Choose dazed or shaken: you inflict the chosen status effect on each target hit by this spell.",
-      "tags": ["dazed", "shaken"]
-    },
-    {
-      "name": "Heal",
-      "offensive": false,
-      "mp": "10 × T",
-      "target": "Up to three creatures",
-      "duration": "Instantaneous",
-      "description": "You invigorate your companions, soothing their pain and healing their fatigue. Each target recovers 40 Hit Points. This amount increases to 50 Hit Points if you are level 20 or higher, or to 60 Hit Points if you are level 40 or higher.",
-      "tags": ["hp"]
-    },
-    {
-      "name": "Lux",
-      "offensive": true,
-      "mp": "10 × T",
-      "target": "Up to three creatures",
-      "duration": "Instantaneous",
-      "description": "You focus your inner energy into a barrage of blinding soul rays. You deal (HR + 15) light damage to each target hit by this spell. Opportunity: each target hit by this spell suffers dazed.",
-      "tags": ["light", "dazed"]
-    },
-    {
-      "name": "Mercy",
-      "offensive": false,
-      "mp": "20",
-      "target": "One creature",
-      "duration": "Scene",
-      "description": "You strengthen the heart of a creature against suffering and despair. Until this spell ends, if the target would be reduced to 0 Hit Points, they are instead left standing with exactly 1 Hit Point. Once that happens, this spell ends.",
-      "tags": ["hp"]
-    },
-    {
-      "name": "Reinforce",
-      "offensive": false,
-      "mp": "5 × T",
-      "target": "Up to three creatures",
-      "duration": "Scene",
-      "description": "You protect the targets from attacks that would corrupt their body and spirit. Choose dazed, enraged, poisoned, shaken, slow, or weak. Until this spell ends, each target is immune to the chosen status effect.",
-      "tags": ["immunity", "dazed", "enraged", "poisoned", "shaken", "slow", "weak"]
-    },
-    {
-      "name": "Soul Shroud",
-      "offensive": false,
-      "mp": "5 × T",
-      "target": "Up to three creatures",
-      "duration": "Scene",
-      "description": "You weave energy to safeguard the targets. Choose a damage type: dark, light, or poison. Until this spell ends, each target gains Resistance to the chosen damage type.",
-      "tags": ["resistance", "dark", "light", "poison"]
-    },
-    {
-      "name": "Soul Weapon",
-      "offensive": false,
-      "mp": "5",
-      "target": "One equipped weapon",
-      "duration": "Scene",
-      "description": "You imbue a weapon with the cleansing energy of your spirit. Until this spell ends, all damage dealt by the weapon becomes light. If you have that weapon equipped while you cast this spell, you may perform a free attack with it as part of the same action. This spell can only be cast on a weapon equipped by a willing creature.",
-      "tags": ["light", "free-attack", "weapon"]
-    },
-    {
-      "name": "Torpor",
-      "offensive": true,
-      "mp": "5 × T",
-      "target": "Up to three creatures",
-      "duration": "Instantaneous",
-      "description": "You smother the soul energy coursing through the bodies of your foes, hindering their movements. Choose slow or weak: you inflict the chosen status effect on each target hit by this spell.",
-      "tags": ["slow", "weak"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-spells-spiritist",
+    "label": "Spiritist",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "MP",
+            "key": "mp"
+        },
+        {
+            "label": "Target",
+            "key": "target"
+        },
+        {
+            "label": "Duration",
+            "key": "duration"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "spiritist",
+        "spell"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Aura",
+            "slug": "class-features-spells-spiritist-aura",
+            "description": "You project your soul outside your body and direct it to surround the targets, shielding them from dangerous magic. Until this spell ends, each target may treat their Magic Defense as being equal to 12 against any effects that target it (they are still free to use their normal Defense score if higher than 12). This value increases to 13 if you are level 20 or higher, or to 14 if you are level 40 or higher.",
+            "tags": [
+                "defense",
+                "magic-defense",
+                "spell"
+            ],
+            "duration": "Scene",
+            "mp": "5 \u00d7 T",
+            "offensive": false,
+            "target": "Up to three creatures"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Awaken",
+            "slug": "class-features-spells-spiritist-awaken",
+            "description": "You allow a creature to focus their vital energy into accomplishing what they previously could not. Choose one Attribute: Dexterity, Insight, Might, or Willpower. Until this spell ends, the target treats the chosen Attribute as if it were one die size higher (up to a maximum of d12).",
+            "tags": [
+                "focus",
+                "spell"
+            ],
+            "duration": "Scene",
+            "mp": "20",
+            "offensive": false,
+            "target": "One creature"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Barrier",
+            "slug": "class-features-spells-spiritist-barrier",
+            "description": "You project your soul outside your body and weave it into a barrier to protect the targets from attacks. Until this spell ends, each target may treat their Defense as being equal to 12 against any effects that target it (they are still free to use their normal Defense score if higher than 12). This value increases to 13 if you are level 20 or higher, or to 14 if you are level 40 or higher.",
+            "tags": [
+                "defense",
+                "spell"
+            ],
+            "duration": "Scene",
+            "mp": "5 \u00d7 T",
+            "offensive": false,
+            "target": "Up to three creatures"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Cleanse",
+            "slug": "class-features-spells-spiritist-cleanse",
+            "description": "You strengthen and purify the soul energy coursing through your companions. Each target recovers from all status effects.",
+            "tags": [],
+            "duration": "Instantaneous",
+            "mp": "5 \u00d7 T",
+            "offensive": false,
+            "target": "Up to three creatures"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Enrage <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "slug": "class-features-spells-spiritist-enrage",
+            "description": "You cause a creature to lose any semblance of temper and act brazenly. The target suffers enraged and cannot perform the Guard or Spell actions until the end of their next turn.",
+            "tags": [
+                "enraged",
+                "guard",
+                "spell"
+            ],
+            "duration": "Instantaneous",
+            "mp": "10",
+            "offensive": true,
+            "target": "One creature"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Hallucination <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "slug": "class-features-spells-spiritist-hallucination",
+            "description": "You alter the senses of your enemies, causing them to experience bizarre or frightening hallucinations. Choose dazed or shaken: you inflict the chosen status effect on each target hit by this spell.",
+            "tags": [
+                "dazed",
+                "shaken",
+                "spell"
+            ],
+            "duration": "Instantaneous",
+            "mp": "5 \u00d7 T",
+            "offensive": true,
+            "target": "Up to three creatures"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Heal",
+            "slug": "class-features-spells-spiritist-heal",
+            "description": "You invigorate your companions, soothing their pain and healing their fatigue. Each target recovers 40 Hit Points. This amount increases to 50 Hit Points if you are level 20 or higher, or to 60 Hit Points if you are level 40 or higher.",
+            "tags": [
+                "hp"
+            ],
+            "duration": "Instantaneous",
+            "mp": "10 \u00d7 T",
+            "offensive": false,
+            "target": "Up to three creatures"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Lux <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "slug": "class-features-spells-spiritist-lux",
+            "description": "You focus your inner energy into a barrage of blinding soul rays. You deal (HR + 15) light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage to each target hit by this spell. Opportunity: each target hit by this spell suffers dazed.",
+            "tags": [
+                "dazed",
+                "focus",
+                "light",
+                "spell"
+            ],
+            "duration": "Instantaneous",
+            "mp": "10 \u00d7 T",
+            "offensive": true,
+            "target": "Up to three creatures"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Mercy",
+            "slug": "class-features-spells-spiritist-mercy",
+            "description": "You strengthen the heart of a creature against suffering and despair. Until this spell ends, if the target would be reduced to 0 Hit Points, they are instead left standing with exactly 1 Hit Point. Once that happens, this spell ends.",
+            "tags": [
+                "hp",
+                "spell"
+            ],
+            "duration": "Scene",
+            "mp": "20",
+            "offensive": false,
+            "target": "One creature"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Reinforce",
+            "slug": "class-features-spells-spiritist-reinforce",
+            "description": "You protect the targets from attacks that would corrupt their body and spirit. Choose dazed, enraged, poisoned, shaken, slow, or weak. Until this spell ends, each target is immune to the chosen status effect.",
+            "tags": [
+                "dazed",
+                "enraged",
+                "poisoned",
+                "shaken",
+                "slow",
+                "spell",
+                "weak"
+            ],
+            "duration": "Scene",
+            "mp": "5 \u00d7 T",
+            "offensive": false,
+            "target": "Up to three creatures"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Soul Shroud",
+            "slug": "class-features-spells-spiritist-soul-shroud",
+            "description": "You weave energy to safeguard the targets. Choose a damage type: dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), light (<i class=\"ui-icon elem-light svg-sun\"></i>), or poison (<i class=\"ui-icon elem-poison svg-poison\"></i>). Until this spell ends, each target gains Resistance to the chosen damage type.",
+            "tags": [
+                "dark",
+                "light",
+                "poison",
+                "resistance",
+                "spell"
+            ],
+            "duration": "Scene",
+            "mp": "5 \u00d7 T",
+            "offensive": false,
+            "target": "Up to three creatures"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Soul Weapon",
+            "slug": "class-features-spells-spiritist-soul-weapon",
+            "description": "You imbue a weapon with the cleansing energy of your spirit. Until this spell ends, all damage dealt by the weapon becomes light (<i class=\"ui-icon elem-light svg-sun\"></i>). If you have that weapon equipped while you cast this spell, you may perform a free attack with it as part of the same action. This spell can only be cast on a weapon equipped by a willing creature.",
+            "tags": [
+                "attack",
+                "free-attack",
+                "light",
+                "spell",
+                "weapon"
+            ],
+            "duration": "Scene",
+            "mp": "5",
+            "offensive": false,
+            "target": "One equipped weapon"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Torpor <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "slug": "class-features-spells-spiritist-torpor",
+            "description": "You smother the soul energy coursing through the bodies of your foes, hindering their movements. Choose slow or weak: you inflict the chosen status effect on each target hit by this spell.",
+            "tags": [
+                "slow",
+                "spell",
+                "weak"
+            ],
+            "duration": "Instantaneous",
+            "mp": "5 \u00d7 T",
+            "offensive": true,
+            "target": "Up to three creatures"
+        }
+    ]
 }

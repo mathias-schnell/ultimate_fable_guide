@@ -1,0 +1,61 @@
+{
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "optional-rules-advancement",
+    "label": "Advancement",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Summary",
+            "key": "summary"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+    "group-tags": [],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Blitz",
+            "slug": "optional-rules-advancement-blitz",
+            "description": "Player Characters will gain additional Experience at the end of each battle in which all enemies fled or were reduced to 0 Hit Points. The amount gained by each character will be equal to (5 minus the number of rounds elapsed during the battle); this means that any battle concluded during the sixth round will grant no additional Experience, while a battle that was completed during the first round will award five XP to each participant.\n\nThese additional Experience Points are gained by all characters who took part in the battle (even if they surrendered or fled at a certain point).\n\nCombine this with Superiority Points for a highly tactical game!\n\nIt\u2019s good if: You like your battles to be intensely tactical, and you\u2019re okay with your campaign mostly revolving around combat. If you choose this optional rule, the Game Master will have to spend some more time making sure each encounter is challenging but also allows for clever strategies.",
+            "tags": [
+                "hp"
+            ],
+            "summary": "Gain bonus Experience based on how quickly you conclude battles."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Booster",
+            "slug": "optional-rules-advancement-booster",
+            "description": "Each Player Character will automatically gain a level at the end of each session (in addition to normal advancement).\n\nIt\u2019s good if: Your campaign will be relatively short, if the Players like to have plenty of new tricks every session, and if you don\u2019t mind turning your game into a quickly escalating spiral of mayhem.",
+            "tags": [],
+            "summary": "Characters automatically gain a level at the end of each session."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Embodiment",
+            "slug": "optional-rules-advancement-embodiment",
+            "description": "The group will vote for the Player who better embodied their character\u2019s Identity and/or Theme during the session \u2014 the chosen Player\u2019s character gains an additional 2 XP. If two or more Players are tied, they will each gain this bonus Experience!\n\nA few rules apply however: you cannot be awarded this bonus XP twice in a row, and you cannot vote for yourself or for the Game Master.\n\nIf you are using this optional rule as well as MVP, the two rewards must go to different Players. Vote for Embodiment before you vote for MVP.\n\nIt\u2019s good if: You like to roleplay intense scenes and you don\u2019t run the risk of a single person outshining everyone else or making things uncomfortable by stealing the spotlight all the time. If you see this happening, you should stop using this option.",
+            "tags": [],
+            "summary": "The group votes for the player who best embodied their character's Identity or Theme to grant them 2 extra XP."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "MVP",
+            "slug": "optional-rules-advancement-mvp",
+            "description": "The group will vote for a Most Valuable Player at the end of each session \u2014 the chosen Player\u2019s character gains an additional 2 XP. If two or more Players are tied, they will each gain this bonus Experience!\n\nJust like with Embodiment, you cannot be awarded this bonus XP twice in a row, and you cannot vote for yourself or the Game Master.\n\nIf you are using this optional rule as well as Embodiment, the two rewards must go to different Players. Vote for Embodiment before you vote for MVP.\n\nIt\u2019s good if: Your group wants to reward proactive Players who take a hit for the team or turn the tables on their adversaries.",
+            "tags": [],
+            "summary": "The group votes for a Most Valuable Player at the end of each session to award them 2 extra XP."
+        }
+    ]
+}

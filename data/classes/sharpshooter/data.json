@@ -1,56 +1,106 @@
 {
-  "icon": "crosshair-simple",
-  "label": "Sharpshooter",
-  "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial ranged weapons and martial shields."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "sharpshooter"],
-  "data": [
-    {
-      "name": "Barrage",
-      "class": "Sharpshooter",
-      "max-sl": 1,
-      "description": "When you perform a ranged attack, you may spend 10 Mind Points to choose one option: the attack gains multi (2); or you increase the attack’s multi property by one, up to a maximum of multi (3).",
-      "tags": ["attack", "mp", "multi", "ranged", "sharpshooter"]
-    },
-    {
-      "name": "Crossfire",
-      "class": "Sharpshooter",
-      "max-sl": 1,
-      "description": "After a creature you can see performs a ranged attack, you may spend an amount of Mind Points equal to (5 + the Result of their Accuracy Check) to have the attack automatically miss all targets. You can only use this Skill if you have a ranged weapon equipped, and it has no effect if the Accuracy Check was a critical success.",
-      "tags": ["attack", "critical", "equipment", "mp", "ranged", "sharpshooter"]
-    },
-    {
-      "name": "Hawkeye",
-      "class": "Sharpshooter",
-      "max-sl": 5,
-      "description": "When you perform the Guard action, if you choose not to provide cover to another creature, you may choose one option: the next ranged attack you perform before the end of the current scene will deal (SL × 3) extra damage; or you may perform a free attack with a bow or firearm you have equipped, treating your High Roll as 0 when calculating damage dealt by this attack.",
-      "tags": ["attack", "bow", "damage", "equipment", "firearm", "guard", "ranged", "sharpshooter"]
-    },
-    {
-      "name": "Ranged Weapon Mastery",
-      "class": "Sharpshooter",
-      "max-sl": 4,
-      "description": "You gain a bonus equal to (SL) to all Accuracy Checks with ranged weapons.",
-      "tags": ["ranged", "sharpshooter"]
-    },
-    {
-      "name": "Warning Shot",
-      "class": "Sharpshooter",
-      "max-sl": 4,
-      "description": "When you hit one or more targets with a ranged attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict shaken on each target hit by the attack; or inflict slow on each target hit by the attack; or each target hit by the attack loses (SL × 10) Mind Points. Describe your maneuver!",
-      "tags": ["attack", "damage", "mp", "ranged", "sharpshooter", "status"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "crosshair-simple",
+    "slug": "classes-sharpshooter",
+    "label": "Sharpshooter",
+    "sub-labels": [
+        "Permanently increase your maximum Hit Points by 5.",
+        "Gain the ability to equip martial ranged weapons and martial shields."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "sharpshooter"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Barrage",
+            "slug": "classes-sharpshooter-barrage",
+            "description": "When you perform a ranged attack, you may spend 10 Mind Points to choose one option: the attack gains multi (2); or you increase the attack\u2019s multi property by one, up to a maximum of multi (3).",
+            "tags": [
+                "attack",
+                "mp",
+                "multi",
+                "ranged"
+            ],
+            "class": "Sharpshooter",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Crossfire",
+            "slug": "classes-sharpshooter-crossfire",
+            "description": "After a creature you can see performs a ranged attack, you may spend an amount of Mind Points equal to (5 + the Result of their Accuracy Check) to have the attack automatically miss all targets. You can only use this Skill if you have a ranged weapon equipped, and it has no effect if the Accuracy Check was a critical success.",
+            "tags": [
+                "attack",
+                "critical",
+                "mp",
+                "ranged",
+                "skill",
+                "weapon"
+            ],
+            "class": "Sharpshooter",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Hawkeye",
+            "slug": "classes-sharpshooter-hawkeye",
+            "description": "When you perform the Guard action, if you choose not to provide cover to another creature, you may choose one option: the next ranged attack you perform before the end of the current scene will deal (SL \u00d7 3) extra damage; or you may perform a free attack with a bow or firearm you have equipped, treating your High Roll as 0 when calculating damage dealt by this attack.",
+            "tags": [
+                "attack",
+                "bow",
+                "firearm",
+                "free-attack",
+                "guard",
+                "ranged"
+            ],
+            "class": "Sharpshooter",
+            "max-sl": 5
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ranged Weapon Mastery",
+            "slug": "classes-sharpshooter-ranged-weapon-mastery",
+            "description": "You gain a bonus equal to (SL) to all Accuracy Checks with ranged weapons.",
+            "tags": [
+                "ranged"
+            ],
+            "class": "Sharpshooter",
+            "max-sl": 4
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Warning Shot",
+            "slug": "classes-sharpshooter-warning-shot",
+            "description": "When you hit one or more targets with a ranged attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict shaken on each target hit by the attack; or inflict slow on each target hit by the attack; or each target hit by the attack loses (SL \u00d7 10) Mind Points. Describe your maneuver!",
+            "tags": [
+                "attack",
+                "mp",
+                "ranged",
+                "shaken",
+                "slow"
+            ],
+            "class": "Sharpshooter",
+            "max-sl": 4
+        }
+    ]
 }

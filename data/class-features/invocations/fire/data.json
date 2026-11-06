@@ -1,42 +1,65 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "",
-  "sub-labels": ["Fire wellspring"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Effect",
-      "field": "effect",
-      "class": "effect"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
-  "group-tags": ["fire", "invoker", "invocation"],
-  "data": [
-    {
-      "name": "Pyro Blast",
-      "effect": "You deal 20 fire damage to the target.",
-      "tags": ["fire"]
-    },
-    {
-      "name": "Pyro Hex",
-      "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth and ice damage.",
-      "tags": ["earth", "ice"]
-    },
-    {
-      "name": "Burst",
-      "effect": "You deal 10 fire damage to the target, and they suffer shaken.",
-      "tags": ["fire", "shaken"]
-    },
-    {
-      "name": "Smoke",
-      "effect": "The target loses 20 Mind Points and also suffers weak.",
-      "tags": ["mp", "weak"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-invocations-fire",
+    "label": "",
+    "sub-labels": [
+        "Fire wellspring"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Effect",
+            "key": "effect"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+    "group-tags": [
+        "fire",
+        "invoker",
+        "invocation"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pyro Blast",
+            "slug": "class-features-invocations-fire-pyro-blast",
+            "description": "",
+            "tags": [],
+            "effect": "You deal 20 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to the target."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pyro Hex",
+            "slug": "class-features-invocations-fire-pyro-hex",
+            "description": "",
+            "tags": [],
+            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Burst",
+            "slug": "class-features-invocations-fire-burst",
+            "description": "",
+            "tags": [],
+            "effect": "You deal 10 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to the target, and they suffer shaken."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Smoke",
+            "slug": "class-features-invocations-fire-smoke",
+            "description": "",
+            "tags": [],
+            "effect": "The target loses 20 Mind Points and also suffers weak."
+        }
+    ]
 }

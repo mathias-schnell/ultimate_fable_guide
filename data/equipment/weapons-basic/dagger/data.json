@@ -1,41 +1,53 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "Dagger",
-  "sub-labels": ["Dagger"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Accuracy",
-      "field": "accuracy",
-      "class": "accuracy"
-    },
-    {
-      "label": "Damage",
-      "field": "damage",
-      "class": "damage"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "dagger", "basic", "weapon"],
-  "data": [
-    {
-      "name": "Steel Dagger",
-      "martial": false,
-      "cost": "150 z",
-      "accuracy": "【DEX + INS】 + 1",
-      "damage": "【HR + 4】 physical",
-      "description": "One-handed • Melee • No Quality.",
-      "tags": ["one-handed", "melee", "physical", "DEX", "INS"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-weapons-basic-dagger",
+    "label": "Dagger",
+    "sub-labels": [
+        "Dagger"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Accuracy",
+            "key": "accuracy"
+        },
+        {
+            "label": "Damage",
+            "key": "damage"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "dagger",
+        "basic",
+        "weapon"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Steel Dagger",
+            "slug": "equipment-weapons-basic-dagger-steel-dagger",
+            "description": "One-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "one-handed"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "cost": "150 z",
+            "damage": "\u3010HR + 4\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": false
+        }
+    ]
 }

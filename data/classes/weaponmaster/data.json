@@ -1,56 +1,104 @@
 {
-  "icon": "crossed-swords",
-  "label": "Weaponmaster",
-  "sub-labels": ["Permanently increase your maximum Hit Points by 5.", "Gain the ability to equip martial ranged weapons and martial shields."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "weaponmaster"],
-  "data": [
-    {
-      "name": "Bladestorm",
-      "class": "Weaponmaster",
-      "max-sl": 1,
-      "description": "When you perform a melee attack, you may spend 10 Mind Points to choose one option: the attack gains multi (2); or you increase the attack’s multi property by one, up to a maximum of multi (3).",
-      "tags": ["attack", "melee", "mp", "multi", "weaponmaster"]
-    },
-    {
-      "name": "Bone Crusher",
-      "class": "Weaponmaster",
-      "max-sl": 4,
-      "description": "When you hit one or more targets with a melee attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict dazed on each target hit by the attack; or inflict weak on each target hit by the attack; or each target hit by the attack loses (SL × 10) Mind Points. Describe your maneuver!",
-      "tags": ["attack", "damage", "melee", "mp", "status", "weaponmaster"]
-    },
-    {
-      "name": "Breach",
-      "class": "Weaponmaster",
-      "max-sl": 3,
-      "description": "You may use an action and spend 5 Mind Points to perform a free attack with a melee weapon you have equipped. This attack must target a single creature. If the attack is successful, it deals no damage and you choose one option: you destroy one shield equipped by the target; or you destroy the target’s equipped armor; or all sources deal (SL × 2) extra damage to the target until the start of your next turn.",
-      "tags": ["attack", "damage", "equipment", "melee", "mp", "weaponmaster"]
-    },
-    {
-      "name": "Counterattack",
-      "class": "Weaponmaster",
-      "max-sl": 1,
-      "description": "After an enemy hits or misses you with a melee attack, if the Result of their Accuracy Check was an even number, you may perform a free attack against that enemy (after their attack has been fully resolved). This attack must be a melee attack and must have that enemy as its only target; treat your High Roll as 0 when calculating damage dealt by this attack.",
-      "tags": ["attack", "damage", "melee", "weaponmaster"]
-    },
-    {
-      "name": "Melee Weapon Mastery",
-      "class": "Weaponmaster",
-      "max-sl": 4,
-      "description": "You gain a bonus equal to (SL) to all Accuracy Checks with melee weapons.",
-      "tags": ["melee", "weaponmaster"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "crossed-swords",
+    "slug": "classes-weaponmaster",
+    "label": "Weaponmaster",
+    "sub-labels": [
+        "Permanently increase your maximum Hit Points by 5.",
+        "Gain the ability to equip martial ranged weapons and martial shields."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "weaponmaster"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Bladestorm",
+            "slug": "classes-weaponmaster-bladestorm",
+            "description": "When you perform a melee attack, you may spend 10 Mind Points to choose one option: the attack gains multi (2); or you increase the attack\u2019s multi property by one, up to a maximum of multi (3).",
+            "tags": [
+                "attack",
+                "melee",
+                "mp",
+                "multi"
+            ],
+            "class": "Weaponmaster",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Bone Crusher",
+            "slug": "classes-weaponmaster-bone-crusher",
+            "description": "When you hit one or more targets with a melee attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict dazed on each target hit by the attack; or inflict weak on each target hit by the attack; or each target hit by the attack loses (SL \u00d7 10) Mind Points. Describe your maneuver!",
+            "tags": [
+                "attack",
+                "dazed",
+                "melee",
+                "mp",
+                "weak"
+            ],
+            "class": "Weaponmaster",
+            "max-sl": 4
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Breach",
+            "slug": "classes-weaponmaster-breach",
+            "description": "You may use an action and spend 5 Mind Points to perform a free attack with a melee weapon you have equipped. This attack must target a single creature. If the attack is successful, it deals no damage and you choose one option: you destroy one shield equipped by the target; or you destroy the target\u2019s equipped armor; or all sources deal (SL \u00d7 2) extra damage to the target until the start of your next turn.",
+            "tags": [
+                "armor",
+                "attack",
+                "free-attack",
+                "melee",
+                "mp",
+                "shield",
+                "weapon"
+            ],
+            "class": "Weaponmaster",
+            "max-sl": 3
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Counterattack",
+            "slug": "classes-weaponmaster-counterattack",
+            "description": "After an enemy hits or misses you with a melee attack, if the Result of their Accuracy Check was an even number, you may perform a free attack against that enemy (after their attack has been fully resolved). This attack must be a melee attack and must have that enemy as its only target; treat your High Roll as 0 when calculating damage dealt by this attack.",
+            "tags": [
+                "attack",
+                "free-attack",
+                "melee"
+            ],
+            "class": "Weaponmaster",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Melee Weapon Mastery",
+            "slug": "classes-weaponmaster-melee-weapon-mastery",
+            "description": "You gain a bonus equal to (SL) to all Accuracy Checks with melee weapons.",
+            "tags": [
+                "melee"
+            ],
+            "class": "Weaponmaster",
+            "max-sl": 4
+        }
+    ]
 }

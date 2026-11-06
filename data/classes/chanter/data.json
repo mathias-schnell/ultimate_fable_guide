@@ -1,56 +1,91 @@
 {
-  "icon": "music-spell",
-  "label": "Chanter",
-  "sub-labels": ["Permanently increase your maximum Mind Points by 5."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["high-fantasy", "chanter"],
-  "data": [
-    {
-      "name": "Magichant",
-      "class": "Chanter",
-      "max-sl": 10,
-      "description": "On your turn during a conflict scene, you may use an action and spend a variable amount of MP to weave voice and music into a magical effect known as a verse.\nYou may only sing one verse per turn, even if you have access to multiple actions; the full rules for verses can be found starting on the next page.\nWhen you first acquire this Skill, you learn all three volumes, plus one key and one tone (see next page). Whenever you acquire this Skill again, you may learn one key or one tone (your choice).",
-      "tags": ["mp", "verse"]
-    },
-    {
-      "name": "Resonance",
-      "class": "Chanter",
-      "max-sl": 3,
-      "description": "After you affect one or more enemies with a verse, if you have an arcane weapon equipped, you may choose one option: until the start of your next turn, your allies deal (SL) extra damage to those enemies; or until the start of your next turn, you recover (SL) Mind Points every time one of those enemies suffers damage (if the same source deals damage to two or more of those enemies at the same time, you recover (SL) MP for each damaged enemy).",
-      "tags": ["arcane", "damage", "equipment", "mp", "verse"]
-    },
-    {
-      "name": "Siren’s Song",
-      "class": "Chanter",
-      "max-sl": 1,
-      "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create hearing-based illusions.",
-      "tags": ["spell", "ritual"]
-    },
-    {
-      "name": "Sound Barrier",
-      "class": "Chanter",
-      "max-sl": 5,
-      "description": "After you sing a verse with medium or high volume, all physical damage you suffer until the start of your next turn is reduced by (SL) (applied before Affinities).",
-      "tags": ["damage", "physical", "verse"]
-    },
-    {
-      "name": "Vibrato",
-      "class": "Chanter",
-      "max-sl": 1,
-      "description": "After you sing a verse with low or medium volume, you may perform a free attack with a weapon you have equipped; treat your High Roll (HR) as 0 when calculating damage dealt by this attack.",
-      "tags": ["attack", "damage", "equipment", "verse"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "music-spell",
+    "slug": "classes-chanter",
+    "label": "Chanter",
+    "sub-labels": [
+        "Permanently increase your maximum Mind Points by 5."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "high-fantasy",
+        "chanter"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Magichant",
+            "slug": "classes-chanter-magichant",
+            "description": "On your turn during a conflict scene, you may use an action and spend a variable amount of MP to weave voice and music into a magical effect known as a verse.\nYou may only sing one verse per turn, even if you have access to multiple actions; the full rules for verses can be found starting on the next page.\nWhen you first acquire this Skill, you learn all three volumes, plus one key and one tone (see next page). Whenever you acquire this Skill again, you may learn one key or one tone (your choice).",
+            "tags": [
+                "skill",
+                "verse"
+            ],
+            "class": "Chanter",
+            "max-sl": 10
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Resonance",
+            "slug": "classes-chanter-resonance",
+            "description": "After you affect one or more enemies with a verse, if you have an arcane weapon equipped, you may choose one option: until the start of your next turn, your allies deal (SL) extra damage to those enemies; or until the start of your next turn, you recover (SL) Mind Points every time one of those enemies suffers damage (if the same source deals damage to two or more of those enemies at the same time, you recover (SL) MP for each damaged enemy).",
+            "tags": [
+                "arcane",
+                "mp",
+                "weapon"
+            ],
+            "class": "Chanter",
+            "max-sl": 3
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Siren\u2019s Song",
+            "slug": "classes-chanter-siren-s-song",
+            "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create hearing-based illusions.",
+            "tags": [],
+            "class": "Chanter",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Sound Barrier",
+            "slug": "classes-chanter-sound-barrier",
+            "description": "After you sing a verse with medium or high volume, all physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage you suffer until the start of your next turn is reduced by (SL) (applied before Affinities).",
+            "tags": [
+                "physical"
+            ],
+            "class": "Chanter",
+            "max-sl": 5
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Vibrato",
+            "slug": "classes-chanter-vibrato",
+            "description": "After you sing a verse with low or medium volume, you may perform a free attack with a weapon you have equipped; treat your High Roll (HR) as 0 when calculating damage dealt by this attack.",
+            "tags": [
+                "attack",
+                "free-attack",
+                "weapon"
+            ],
+            "class": "Chanter",
+            "max-sl": 1
+        }
+    ]
 }

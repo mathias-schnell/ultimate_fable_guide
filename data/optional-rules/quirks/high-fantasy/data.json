@@ -1,0 +1,254 @@
+{
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "optional-rules-quirks-high-fantasy",
+    "label": "Quirks",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Summary",
+            "key": "summary"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+    "group-tags": [
+        "high-fantasy"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Arboreal",
+            "slug": "optional-rules-quirks-high-fantasy-arboreal",
+            "description": "<p>Choose a status effect: dazed, enraged, or shaken. You are immune to the chosen status effect. However, you also gain Vulnerability to a damage type of your choice: air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), or ice (<i class=\"ui-icon elem-ice svg-ice\"></i>).</p><p>You also learn one NPC spell (pages 310-311 of the Core Rulebook), but you cannot choose Devastation. If a Magic Check is required, use (INS + WLP). Customize the spell as needed (name, damage type, status effects etc.). When you cast this spell while in sunlight, its total MP cost is reduced by 5 (to a minimum of 0 Mind Points).</p>",
+            "tags": [
+                "air",
+                "bolt",
+                "core",
+                "dazed",
+                "earth",
+                "enraged",
+                "fire",
+                "ice",
+                "mp",
+                "shaken",
+                "spell",
+                "vulnerability"
+            ],
+            "summary": "Sentient plant immune to one status effect with a sunlight spell-cost discount, but vulnerable to an element."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Cursed",
+            "slug": "optional-rules-quirks-high-fantasy-cursed",
+            "description": "<p>When you acquire this Quirk, describe the nature of your curse and tie it to one of the threats present in your world. Once this threat is resolved, you will finally have a chance to break free from the curse &ndash; describe how you expect this to happen.</p><p>When you are about to perform a Check, you may instead describe how your curse gets in the way and automatically roll a fumble (both dice are treated as if you had rolled a 1 on them). If you do, you receive 2 Fabula Points instead of 1, and generate an opportunity as normal.</p><p>If you ever manage to break the curse, immediately gain a Heroic Skill of your choice (you may even choose a Heroic Skill whose requirements you do not satisfy, unless they include a Skill you don&rsquo;t have). This includes choosing a Heroic Skill for a Class you do not have.</p>",
+            "tags": [
+                "fabula-point",
+                "fumble",
+                "skill"
+            ],
+            "summary": "Intentionally fumble Checks for extra Fabula Points and earn a powerful Heroic Skill once your world threat is resolved."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Elemental Soul",
+            "slug": "optional-rules-quirks-high-fantasy-elemental-soul",
+            "description": "<p>Choose your elemental damage type: air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), or ice (<i class=\"ui-icon elem-ice svg-ice\"></i>). You gain Resistance to the chosen damage type. Additionally, whenever you deal damage, you may change its type so that it matches your elemental damage type. However, you also gain Vulnerability to a different damage type chosen among those five.</p><p>You also gain the ability to perform Rituals of the Elementalism discipline, but only if those Rituals manipulate your chosen element (respectively air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), electricity, earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>)/rock, fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)/water).</p>",
+            "tags": [
+                "air",
+                "bolt",
+                "earth",
+                "elemental",
+                "fire",
+                "ice",
+                "resistance",
+                "vulnerability"
+            ],
+            "summary": "Gain elemental Resistance, matching damage conversion, and discipline-locked elemental Ritual access."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Empty Hands",
+            "slug": "optional-rules-quirks-high-fantasy-empty-hands",
+            "description": "<p>Your attacks with unarmed strikes deal 6 extra damage. This amount increases to 10 extra damage if you are level 30 or higher.</p><p>Additionally, while you have no weapons or shields equipped (aside for unarmed strikes), you gain a +1 bonus to Defense and a +1 bonus to Magic Defense.</p>",
+            "tags": [
+                "defense",
+                "magic-defense"
+            ],
+            "summary": "Boost unarmed strike damage and gain bonuses to Defense and Magic Defense while completely unequipped."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Fettered Heart",
+            "slug": "optional-rules-quirks-high-fantasy-fettered-heart",
+            "description": "<p>You may acquire this Quirk only if your character&rsquo;s Theme is Doubt, and your Theme cannot be changed in any way as long as you have this Quirk.</p><p>When you acquire this Quirk, create a Bond towards the Non-Player Character or institution that shaped your life up to now. This Bond begins with three emotions of your choice, and cannot be lost or erased in any way as long as you have this Quirk (you can still reassign its emotions during resting scenes). Additionally, create three commandments that are crucial to that NPC or institution: each commandment must be something you must always do or something you must never do.</p><p>The first time you break a commandment during each scene, you suffer shaken and weak, and lose half your current Hit Points and Mind Points (rounded down), but also gain 2 Fabula Points.</p><p>Upon your 7th violation, you lose this Quirk and change your Theme to Belonging, Guilt, Justice or Vengeance, gain a Heroic Skill, fully recover, and permanently increase Bond strength by 1.</p>",
+            "tags": [
+                "bond",
+                "fabula-point",
+                "hp",
+                "mp",
+                "shaken",
+                "skill",
+                "weak"
+            ],
+            "summary": "Bound by strict commandments under the Doubt theme; break them for Fabula Points until breaking free into a new path."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Flight",
+            "slug": "optional-rules-quirks-high-fantasy-flight",
+            "description": "<p>You are able to fly. In addition to the obvious advantage in mobility, your melee attacks can target flying creatures and you cannot be targeted by melee attacks unless the attacker is flying or is somehow able to reach flying targets.</p><p>While in Crisis or unable to fly freely (such as when you&rsquo;re inside a vehicle designed for human-sized creatures or in a narrow corridor), you lose all benefits granted by this Quirk. Additionally, when you suffer air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) or ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage during a conflict scene, you lose the benefits of this Quirk until the start of your next turn.</p>",
+            "tags": [
+                "air",
+                "bolt",
+                "crisis",
+                "flying",
+                "ice",
+                "melee"
+            ],
+            "summary": "Hover above ground to bypass melee restrictions, though vulnerable to suppression from Crisis or elemental damage."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "From a Distant World",
+            "slug": "optional-rules-quirks-high-fantasy-from-a-distant-world",
+            "description": "<p>When you participate in a conflict scene, you automatically gain 1 Fabula Point. Additionally, you can invoke a Trait to reroll dice even if you fumbled your Check (if you do so, you do not receive a Fabula Point for the fumble).</p>",
+            "tags": [
+                "fabula-point",
+                "fumble",
+                "reroll"
+            ],
+            "summary": "Gain a free Fabula Point per conflict scene and bypass fumbles when rerolling via Traits."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Glorious Fate",
+            "slug": "optional-rules-quirks-high-fantasy-glorious-fate",
+            "description": "<p>When you acquire this Quirk, write down the prophecy, and what it foretold. Do this with the collaboration of everyone else in the group, tie it to a known threat or emergency in your world, and describe what sign or omen marks you as the person supposedly destined to fulfill that prophecy.</p><p>At the end of each session, choose one of five options based on your actions: fulfill the prophecy (lose Quirk, recover fully, gain Heroic Skill), act in accordance (recover fully), act neutral (nothing), act against (gain 1 FP), or rule it impossible (lose Quirk, gain 6 FP, gain Heroic Skill).</p>",
+            "tags": [
+                "fabula-point",
+                "hp",
+                "mp",
+                "skill"
+            ],
+            "summary": "Center your character around a grand prophecy that grants session-end bonuses or special rewards upon its fulfillment."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Heirloom",
+            "slug": "optional-rules-quirks-high-fantasy-heirloom",
+            "description": "<p>You obtain a single rare item worth 1200 zenit or less, or two rare items worth up to 800 zenit each. You may choose these items from the available lists or design them together with the rest of your group.</p><p>Once per session (approximately four hours of play), the Game Master may give you 1 Fabula Point in order to have sudden complications arise due to the unique nature of the item(s) you carry (such as rival duelists or strange monsters drawn by its magic).</p><p>Items acquired through this Quirk cannot be destroyed, damaged, lost or stolen without your permission as a Player.</p>",
+            "tags": [
+                "fabula-point",
+                "rare",
+                "zenit"
+            ],
+            "summary": "Start with protected rare equipment worth up to 1200 zenit that introduces occasional story complications for Fabula Points."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Old Transport",
+            "slug": "optional-rules-quirks-high-fantasy-old-transport",
+            "description": "<p>You obtain a transport of your choice from the Core Rulebook (page 125), such as a land vehicle, a ship, or even an airship. The size of this transport is enough to accommodate you and the rest of your group, plus two or three guests, but it is unfit for combat.</p><p>Once per session (approximately four hours of play), the Game Master can give you 2 Fabula Points in order to make the transport&rsquo;s engines fail, cause an enemy missile to damage its hull, or introduce similar story-based complications. However, the transport can never be destroyed without your permission.</p>",
+            "tags": [
+                "core",
+                "fabula-point",
+                "vehicle"
+            ],
+            "summary": "Own a party-sized non-combat vehicle that yields narrative complications in exchange for Fabula Points."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Revenant",
+            "slug": "optional-rules-quirks-high-fantasy-revenant",
+            "description": "<p>You are not considered a living creature and gain Immunity to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage and poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage, but gain Vulnerability to light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage. You are also immune to poisoned.</p><p>You do not need to breathe, eat or drink, but you still follow the normal rules for resting. You also recover Hit Points and recover from status effects as normal (contrary to undead creatures, effects that restore HP cannot be used to harm you).</p><p>Finally, whenever you deal damage, you may change its type to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>). Additionally, all dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage you deal ignores Immunities and Resistances.</p>",
+            "tags": [
+                "dark",
+                "hp",
+                "immunity",
+                "light",
+                "poison",
+                "poisoned",
+                "undead",
+                "vulnerability"
+            ],
+            "summary": "Undead-like entity immune to dark/poison, capable of converting and piercing damage resistances with dark energy."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Rival Prodigies",
+            "slug": "optional-rules-quirks-high-fantasy-rival-prodigies",
+            "description": "<p>When you acquire this Quirk, choose what you specialize in: Rituals, Skills, or spells. Then, say who your eternal rival is: this Non-Player Character becomes a minor Villain (5 Ultima Points), and you create a Bond towards them, with 1 emotion chosen between admiration and inferiority.</p><p>When a rule or ability pertaining to your specialization requires you to spend Hit Points or Mind Points, you may spend 1 Fabula Point instead to completely ignore that cost. However, while your rival is present on the scene and has 1 or more Ultima Points left, any Check you fail is automatically treated as a fumble.</p>",
+            "tags": [
+                "bond",
+                "fabula-point",
+                "fumble",
+                "hp",
+                "ignore",
+                "mp"
+            ],
+            "summary": "Trade HP/MP costs for Fabula Points in your chosen specialty, tied to a dangerous NPC rival who causes fumbles."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Robot",
+            "slug": "optional-rules-quirks-high-fantasy-robot",
+            "description": "<p>You are not considered a living creature and gain Immunity to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage. You are also immune to the poisoned status effect.</p><p>You do not need to breathe, eat or drink, but you still follow the normal rules for resting. You also recover Hit Points and recover from status effects as normal.</p><p>You gain a +2 bonus to all Checks you perform to examine or interact with machines, technology and constructs (except for Accuracy Checks and Magic Checks).</p>",
+            "tags": [
+                "earth",
+                "hp",
+                "immunity",
+                "poison",
+                "poisoned",
+                "resistance"
+            ],
+            "summary": "Construct body with poison immunity, earth resistance, tech interaction bonuses, and no biological needs."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ruinbringer",
+            "slug": "optional-rules-quirks-high-fantasy-ruinbringer",
+            "description": "<p>When you acquire this Quirk, say which ruin you are supposed to bring into the world: that ruin immediately becomes one of your world&rsquo;s threats.</p><p>When a rule or ability requires you to spend Hit Points, Mind Points, or Fabula Points, you may instead let your ruin advance to completely ignore that cost. At the end of each session, roll 2d20; if you roll equal to or lower than your level, your ruin advances.</p><p>When your ruin advances for the 9th time, you lose this Quirk and your ruin manifests as a supreme Villain (15 Ultima Points), but you gain a Heroic Skill.</p>",
+            "tags": [
+                "fabula-point",
+                "hp",
+                "ignore",
+                "mp",
+                "skill"
+            ],
+            "summary": "Advance an impending world-ending doom to bypass resource costs, culminating in a supreme boss fight."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Souls Entwined",
+            "slug": "optional-rules-quirks-high-fantasy-souls-entwined",
+            "description": "<p>When you acquire this Quirk, choose another Player Character to act as a host body for your soul. You both create a Bond towards each other with an emotion chosen from admiration, affection, and loyalty.</p><p>You and your host may communicate telepathically and you can inhabit their body outside conflicts or enter/leave freely at the start of your turn. While inside, you are imperceptible and invulnerable to the outside world, though souls can be sensed.</p><p>If your host sacrifices themselves, you can either survive by exiting the body (losing the Quirk, dropping to 0 HP, surrendering, and gaining +10 max HP/MP) or perform a Final Farewell to sacrifice yourself in their place.</p>",
+            "tags": [
+                "bond",
+                "hp",
+                "mp"
+            ],
+            "summary": "Dwell inside another player character's body as a linked soul with unique stealth and sacrifice mechanics."
+        }
+    ]
+}

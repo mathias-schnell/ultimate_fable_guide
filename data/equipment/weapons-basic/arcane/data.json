@@ -1,50 +1,65 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "Arcane",
-  "sub-labels": ["Arcane"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Accuracy",
-      "field": "accuracy",
-      "class": "accuracy"
-    },
-    {
-      "label": "Damage",
-      "field": "damage",
-      "class": "damage"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
-  "group-tags": ["arcane"],
-  "data": [
-    {
-      "name": "Staff",
-      "martial": false,
-      "cost": "100 z",
-      "accuracy": "【WLP + WLP】",
-      "damage": "【HR + 6】 physical",
-      "description": "Two-handed • Melee • No Quality.",
-      "tags": ["core", "arcane", "basic", "two-handed", "melee", "physical", "WLP"]
-    },
-    {
-      "name": "Tome",
-      "martial": false,
-      "cost": "100 z",
-      "accuracy": "【INS + INS】",
-      "damage": "【HR + 6】 physical",
-      "description": "Two-handed • Melee • No Quality.",
-      "tags": ["core", "arcane", "basic", "two-handed", "melee", "physical", "INS"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-weapons-basic-arcane",
+    "label": "Arcane",
+    "sub-labels": [
+        "Arcane"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Accuracy",
+            "key": "accuracy"
+        },
+        {
+            "label": "Damage",
+            "key": "damage"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "arcane"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Staff",
+            "slug": "equipment-weapons-basic-arcane-staff",
+            "description": "Two-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "two-handed"
+            ],
+            "accuracy": "\u3010WLP + WLP\u3011",
+            "cost": "100 z",
+            "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": false
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Tome",
+            "slug": "equipment-weapons-basic-arcane-tome",
+            "description": "Two-handed \u2022 Melee \u2022 No Quality.",
+            "tags": [
+                "melee",
+                "two-handed"
+            ],
+            "accuracy": "\u3010INS + INS\u3011",
+            "cost": "100 z",
+            "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": false
+        }
+    ]
 }

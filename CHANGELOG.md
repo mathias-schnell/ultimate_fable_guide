@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.8.3] - 2026-11-05
+
+### Added
+- (Re)Added all Quirks content.
+- Added the "Classic Characters" templates from multiple rulebooks into "Optional Rules".
+- Added "Advancement" rules into "Optional Rules".
+
+### Changed
+- Reviewed and editted some icons.
+- Moved some "Arcana" into "Bonus Content".
+
+### Internal
+- All data has been standardized, organized and sorted for consistency.
+- Lots of code has been cleaned and deleted due to being obsolete after the revamp and data standardization.
+- Fixed a bug with content disappearing after searching and then deleting the search terms.
+- Changed "tag_conf.php" to "data_conf.php" and moved all global PHP variables into this file.
+
+---
+
 ## [0.8.2] - 2026-11-04
 
 ### Changed

@@ -1,38 +1,61 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "icon": "",
-  "label": "",
-  "sub-labels": ["Basic"],
-  "columns": [
-    {
-      "label": "Infusion",
-      "field": "infusion",
-      "class": "infusion"
-    },
-    {
-      "label": "Effect",
-      "field": "effect",
-      "class": "effect"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
-  "group-tags": ["core", "tinkerer","gadgets", "inventory", "ip"],
-  "data": [
-    {
-      "infusion": "Cryo",
-      "effect": "The attack deals 5 extra damage, and its damage becomes ice.",
-      "tags": ["ice"]
-    },
-    {
-      "infusion": "Pyro",
-      "effect": "The attack deals 5 extra damage, and its damage becomes fire.",
-      "tags": ["fire"]
-    },
-    {
-      "infusion": "Volt",
-      "effect": "The attack deals 5 extra damage, and its damage becomes bolt.",
-      "tags": ["bolt"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-gadgets-infusions-basic",
+    "label": "",
+    "sub-labels": [
+        "Basic"
+    ],
+    "columns": [
+        {
+            "label": "Infusion",
+            "key": "infusion"
+        },
+        {
+            "label": "Effect",
+            "key": "effect"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "tinkerer",
+        "gadgets",
+        "inventory",
+        "ip"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "",
+            "slug": "",
+            "description": "",
+            "tags": [],
+            "effect": "The attack deals 5 extra damage, and its damage becomes ice (<i class=\"ui-icon elem-ice svg-ice\"></i>).",
+            "infusion": "Cryo"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "",
+            "slug": "",
+            "description": "",
+            "tags": [],
+            "effect": "The attack deals 5 extra damage, and its damage becomes fire (<i class=\"ui-icon elem-fire svg-fire\"></i>).",
+            "infusion": "Pyro"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "",
+            "slug": "",
+            "description": "",
+            "tags": [],
+            "effect": "The attack deals 5 extra damage, and its damage becomes bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>).",
+            "infusion": "Volt"
+        }
+    ]
 }

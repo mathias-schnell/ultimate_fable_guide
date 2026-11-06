@@ -1,0 +1,185 @@
+{
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "optional-rules-bonus-content-arcana",
+    "label": "Arcana",
+    "sub-labels": [],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Domains",
+            "key": "domains"
+        }
+    ],
+    "grid-template-columns": "0.25fr 3fr 3fr 0.25fr",
+    "group-tags": [
+        "arcanist",
+        "arcana",
+        "fabula-ultima-bonus"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Airmid",
+            "slug": "optional-rules-bonus-content-arcana-airmid",
+            "description": "<h4>Merge \u2014 Herbalist's Favor</h4><p>When you summon this Arcanum, you gain 3 Medicine Points. When this Arcanum is dismissed, you lose all Medicine Points.<br>Once per turn during a conflict, you may use an action and spend 1 Medicine Point to choose one ally you can see. If you do, that ally recovers an amount of Hit Points equal to your Crisis score and heals from a single status effect of your choice.</p><h4>Dismiss \u2014 Cleansing Roots</h4><p>You deal 20 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage to every enemy present on the scene, or 30 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage if you had no Medicine Points left when you dismiss this Arcanum. Then, if one or more enemies who lost Hit Points this way are affected by one or more spells with a duration of \"Scene\", instead they are no longer affected by any of those spells.</p>",
+            "tags": [
+                "crisis",
+                "earth",
+                "hp"
+            ],
+            "domains": "Exorcism, Healing, Plants"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Baihu",
+            "slug": "optional-rules-bonus-content-arcana-baihu",
+            "description": "<h4>Merge \u2014 Presence of the Great Tiger</h4><p>When you deal damage, you may change its type to air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) or physical (<i class=\"ui-icon elem-physical svg-physical\"></i>).<br>When you deal damage for the first time on your turn during a conflict, as long as that damage is air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) or physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) and your Defense score is equal to or higher than 12, you deal 5 extra damage and that damage ignores Resistances.</p><h4>Dismiss \u2014 Wind and Steel</h4><p>Choose one option: you deal 30 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage to every enemy present on the scene; or until the end of the current scene, you and every ally present on the scene may treat your Defense score as being equal to 12 (you may use the normal score if better). This score increases to 13 if you are level 20 or higher, or to 14 if you are level 40 or higher.</p>",
+            "tags": [
+                "air",
+                "defense",
+                "physical"
+            ],
+            "domains": "Beasts, Metal, Wind"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Damocles",
+            "slug": "optional-rules-bonus-content-arcana-damocles",
+            "description": "<h4>Merge \u2014 Impending Judgment</h4><p>You have Resistance to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) and light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage.<br>Once per turn during a conflict, you may use an action to choose one enemy you can see and choose one action among the following: Attack, Guard, Objective, and Spell. If you do, until the start of your next turn that enemy loses 10 Hit Points whenever they perform the chosen action (after the action has been resolved). This amount increases to 20 Hit Points if you are level 30 or higher.</p><h4>Dismiss \u2014 Rain of Swords</h4><p>You deal 30 light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage to every enemy present on the scene. Each creature who loses Hit Points due to this damage suffers shaken.</p>",
+            "tags": [
+                "attack",
+                "dark",
+                "guard",
+                "hp",
+                "light",
+                "objective",
+                "resistance",
+                "shaken",
+                "spell"
+            ],
+            "domains": "Dread, Hesitation, Punishment"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Fafnir",
+            "slug": "optional-rules-bonus-content-arcana-fafnir",
+            "description": "<h4>Merge \u2014 Scales of the Ardent Sovereign</h4><p>You have Resistance to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage. Additionally, as long as you are not in Crisis, you also have Resistance to physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage.<br>All damage you deal becomes fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), its type cannot change, and it ignores Resistances; as long as you are in Crisis, it also ignores Immunities.<br>When you deal damage with a spell, if that spell deals damage to only one creature, it deals 10 extra damage.</p><h4>Dismiss \u2014 Molten Gold</h4><p>You deal 20 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to every enemy present on the scene, or 30 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage if you are in Crisis; this damage ignores Immunities and Resistances. Then, you and every ally present on the scene regain 2 Inventory Points for every enemy reduced to 0 Hit Points by this damage.</p>",
+            "tags": [
+                "crisis",
+                "fire",
+                "hp",
+                "inventory",
+                "ip",
+                "physical",
+                "resistance",
+                "spell"
+            ],
+            "domains": "Fire, Protection, Wealth"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Huginn & Muninn",
+            "slug": "optional-rules-bonus-content-arcana-huginn-muninn",
+            "description": "<h4>Merge \u2014 Winged Messengers</h4><p>You have Resistance to air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) and bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage; additionally, you are immune to dazed.<br>At the end of your turn during a conflict, you may choose one creature you can see. If you do, choose one option: the Game Master reveals one of that creature's Traits; or, the Game Master reveals that creature's Affinity to one damage type of your choice.</p><h4>Dismiss \u2014 Stormborn Twins</h4><p>Choose air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) or bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>). You deal 20 damage of the chosen type to one creature you can see; then, you deal 20 damage of the other type to one creature you can see (the same or a different one). Damage dealt by this effect ignores Resistances; additionally, it ignores the Immunites of any creature you know two or more Traits of.</p>",
+            "tags": [
+                "air",
+                "bolt",
+                "dazed",
+                "resistance",
+                "traits"
+            ],
+            "domains": "Knowledge, Memory, Storms"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Lady Higanbana",
+            "slug": "optional-rules-bonus-content-arcana-lady-higanbana",
+            "description": "<h4>Merge \u2014 Scarlet Blossoms</h4><p>If you have the Counterattack Skill (see Core Rulebook, page 219), it also applies to enemy ranged attacks.<br>During conflict scenes, as long as you are merged with this Arcanum and it is not your turn, your attacks deal 5 extra damage, or 10 extra damage if you are also in Crisis.</p><h4>Dismiss \u2014 Sepulchral Shroud</h4><p>You deal 40 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage to one creature you can see; damage dealt by this effect ignores Immunities and Resistances. If a creature loses Hit Points this way, they cannot recover Hit Points until the start of your next turn.</p>",
+            "tags": [
+                "core",
+                "crisis",
+                "dark",
+                "hp",
+                "ranged",
+                "skill"
+            ],
+            "domains": "Death, Isolation, Melancholy"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Maneki-Neko",
+            "slug": "optional-rules-bonus-content-arcana-maneki-neko",
+            "description": "<h4>Merge \u2014 Paw Slap</h4><p>After you perform a Magic Check or Accuracy Check, you may choose one of the numbers shown by the dice rolled in the Check: that number becomes your meowgic nyamber and replaces any meowgic nyamber you previously obtained.<br>After a creature you can see performs a Check, if you have a meowgic nyamber, you may expend it to replace the number shown by one of the dice with that number. If you do, that Check cannot generate a new meowgic nyamber.<br>When this Arcanum is dismissed, if you have a meowgic nyamber, you lose it.</p><h4>Dismiss \u2014 Coin Cascade</h4><p>You deal 30 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage to every enemy present on the scene. If you lost a meowgic nyamber by dismissing this Arcanum, the type of this damage changes based on the number you lost: air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) (1 and 6), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) (2 and 7), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) (3 and 8), ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) (4 and 9), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) (5 and 10), dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) (11 or higher).</p>",
+            "tags": [
+                "air",
+                "bolt",
+                "dark",
+                "earth",
+                "fire",
+                "ice",
+                "physical"
+            ],
+            "domains": "Coincidences, Prosperity, Unforeseen Events"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Marchosias",
+            "slug": "optional-rules-bonus-content-arcana-marchosias",
+            "description": "<h4>Merge \u2014 Glyphclaws</h4><p>You are immune to shaken and weak.<br>Once per turn during a conflict, you may use an action to deal an amount of physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage equal to \u301010 + twice the number of Heroic Skills you have acquired\u3011 to each of up to two enemies you can see; if you do and at least one of those enemies loses Hit Points due to this damage, you gain 1 Glyph Point.<br>When this Arcanum is dismissed, you lose all Glyph Points.</p><h4>Dismiss \u2014 Seal of Fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)</h4><p>You deal 30 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to one enemy you can see; this damage ignores Immunities and Resistances. If you lost 3 or more Glyph Points by dismissing this Arcanum, choose one option for this effect: it deals 10 extra damage; or it deals damage to each of up to two enemies you can see (instead of only one enemy).</p>",
+            "tags": [
+                "fire",
+                "hp",
+                "physical",
+                "shaken",
+                "weak"
+            ],
+            "domains": "Fire, Loyalty, Vigor"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Rangda",
+            "slug": "optional-rules-bonus-content-arcana-rangda",
+            "description": "<h4>Merge \u2014 Haunting Dance</h4><p>After you and/or one or more allies you can see lose Hit Points, you gain 1 Sorcery Point.<br>All damage you deal becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), its type cannot change, and you deal extra damage equal to your current Sorcery Points.<br>When this Arcanum is dismissed, you lose all Sorcery Points.</p><h4>Dismiss \u2014 Feast of Body and Soul</h4><p>You deal an amount of poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage equal to \u3010the amount of Sorcery Points you lost by dismissing this Arcanum, multiplied by 5\u3011 to one enemy you can see. If this damage reduces that enemy to 0 Hit Points, you and every ally you can see recover an amount of HP and MP equal to that enemy's Crisis score.</p>",
+            "tags": [
+                "crisis",
+                "hp",
+                "poison"
+            ],
+            "domains": "Medicine, Poisons, Witchcraft"
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Tiamat",
+            "slug": "optional-rules-bonus-content-arcana-tiamat",
+            "description": "<h4>Merge \u2014 Supreme Serpent</h4><p>You have Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.<br>When you deal damage, as long as that damage is ice (<i class=\"ui-icon elem-ice svg-ice\"></i>), you deal 5 extra damage and all that damage ignores Resistances.<br>Once per turn during a conflict, you may use an action to perform a free attack with a weapon you have equipped. If you do, all damage dealt by the attack becomes ice (<i class=\"ui-icon elem-ice svg-ice\"></i>), its type cannot change, and every creature who loses Hit Points due to that damage suffers slow.</p><h4>Dismiss \u2014 Tides of an Endless Ocean</h4><p>Choose one option: fill 2 sections of every Clock present on the scene; or erase 2 sections of every Clock present on the scene; or you force every soldier-rank enemy present on the scene who is in Crisis and is also not a Villain to immediately leave the scene.<br>Once you use it, this dismiss effect is no longer available until next dawn.</p>",
+            "tags": [
+                "attack",
+                "clock",
+                "crisis",
+                "free-attack",
+                "hp",
+                "ice",
+                "resistance",
+                "slow",
+                "weapon"
+            ],
+            "domains": "Chaos, Saltwater, Serpents"
+        }
+    ]
+}

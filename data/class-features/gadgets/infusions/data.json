@@ -1,8 +1,18 @@
 {
-  "always-expand": false,
-  "is-container": false,
-  "icon": "",
-  "label": "Infusions",
-  "sub-labels": [],
-  "order": ["basic", "advanced", "superior"]
+    "always-expand": false,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-gadgets-infusions",
+    "label": "Infusions",
+    "sub-labels": [],
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "basic",
+        "advanced",
+        "superior"
+    ]
 }

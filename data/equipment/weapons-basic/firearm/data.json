@@ -1,41 +1,54 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "Firearm",
-  "sub-labels": ["Firearm"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Cost",
-      "field": "cost",
-      "class": "cost"
-    },
-    {
-      "label": "Accuracy",
-      "field": "accuracy",
-      "class": "accuracy"
-    },
-    {
-      "label": "Damage",
-      "field": "damage",
-      "class": "damage"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "firearm", "basic", "martial", "weapon"],
-  "data": [
-    {
-      "name": "Pistol",
-      "martial": true,
-      "cost": "250 z",
-      "accuracy": "【DEX + INS】",
-      "damage": "【HR + 8】 physical",
-      "description": "One-handed • Ranged • No Quality.",
-      "tags": ["one-handed", "ranged", "physical", "DEX", "INS"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-weapons-basic-firearm",
+    "label": "Firearm",
+    "sub-labels": [
+        "Firearm"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Cost",
+            "key": "cost"
+        },
+        {
+            "label": "Accuracy",
+            "key": "accuracy"
+        },
+        {
+            "label": "Damage",
+            "key": "damage"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1.5fr 1.5fr 1.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "firearm",
+        "basic",
+        "martial",
+        "weapon"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Pistol <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "slug": "equipment-weapons-basic-firearm-pistol",
+            "description": "One-handed \u2022 Ranged \u2022 No Quality.",
+            "tags": [
+                "one-handed",
+                "ranged"
+            ],
+            "accuracy": "\u3010DEX + INS\u3011",
+            "cost": "250 z",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "martial": true
+        }
+    ]
 }

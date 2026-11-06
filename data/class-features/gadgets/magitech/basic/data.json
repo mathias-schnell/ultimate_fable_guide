@@ -1,23 +1,40 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "icon": "",
-  "label": "",
-  "sub-labels": ["Magitech Override (Basic)"],
-  "columns": [
-    {
-      "label": "Summary",
-      "field": "summary",
-      "class": "summary"
-    }
-  ],
-  "grid-template-columns": "0.25fr 6fr 0.25fr",
-  "group-tags": ["core", "tinkerer", "gadgets", "inventory", "ip"],
-  "data": [
-    {
-      "summary": "Take control of a construct or elemental enemy suffering from status effects.",
-      "description": "During a conflict, you may use an action and spend 10 Mind Points to choose a construct or elemental enemy you can see that does not possess independent intelligence and is suffering from one or more status effects. If you do so, that enemy recovers from all status effects, then the Game Master reveals its entire profile and you may force it to immediately perform an action of your choice; during that action, the creature is treated as an ally of your group.",
-      "tags": ["mp"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-gadgets-magitech-basic",
+    "label": "",
+    "sub-labels": [
+        "Magitech Override (Basic)"
+    ],
+    "columns": [
+        {
+            "label": "Summary",
+            "key": "summary"
+        }
+    ],
+    "grid-template-columns": "0.25fr 6fr 0.25fr",
+    "group-tags": [
+        "core",
+        "tinkerer",
+        "gadgets",
+        "inventory",
+        "ip"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "",
+            "slug": "",
+            "description": "During a conflict, you may use an action and spend 10 Mind Points to choose a construct or elemental enemy you can see that does not possess independent intelligence and is suffering from one or more status effects. If you do so, that enemy recovers from all status effects, then the Game Master reveals its entire profile and you may force it to immediately perform an action of your choice; during that action, the creature is treated as an ally of your group.",
+            "tags": [
+                "construct",
+                "elemental",
+                "mp"
+            ],
+            "summary": "Take control of a construct or elemental enemy suffering from status effects."
+        }
+    ]
 }

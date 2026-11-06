@@ -1,10 +1,18 @@
 {
-  "icon": "",
-  "label": "Equipment",
-  "sub-labels": "",
-  "order": [
-    "weapons-basic",
-    "shields-basic",
-    "armor-basic"
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment",
+    "label": "Equipment",
+    "sub-labels": "",
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "weapons-basic",
+        "shields-basic",
+        "armor-basic"
+    ]
 }

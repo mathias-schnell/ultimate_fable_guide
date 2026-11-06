@@ -1,8 +1,18 @@
 {
-  "always-expand": false,
-  "is-container": true,
-  "icon": "",
-  "label": "Verses",
-  "sub-labels": "",
-  "order": ["volume", "key", "tone"]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-verses",
+    "label": "Verses",
+    "sub-labels": "",
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "volume",
+        "key",
+        "tone"
+    ]
 }

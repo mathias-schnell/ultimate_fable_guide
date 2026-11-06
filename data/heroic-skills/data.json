@@ -1,13 +1,19 @@
 {
-  "always-expand": false,
-  "is-container": true,
-  "icon": "",
-  "label": "Heroic Skills",
-  "sub-labels": "",
-  "order": [
-    "core",
-    "high-fantasy",
-    "natural-fantasy",
-    "techno-fantasy"
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "heroic-skills",
+    "label": "Heroic Skills",
+    "sub-labels": "",
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "core",
+        "high-fantasy",
+        "natural-fantasy",
+        "techno-fantasy"
+    ]
 }

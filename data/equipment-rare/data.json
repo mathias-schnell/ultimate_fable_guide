@@ -1,12 +1,20 @@
 {
-  "icon": "",
-  "label": "Equipment (Rare)",
-  "sub-labels": "",
-  "order": [
-    "accessories",
-    "weapons-rare",
-    "shields-rare",
-    "armor-rare",
-    "modules-rare"
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "equipment-rare",
+    "label": "Equipment (Rare)",
+    "sub-labels": "",
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": [
+        "accessories",
+        "weapons-rare",
+        "shields-rare",
+        "armor-rare",
+        "modules-rare"
+    ]
 }

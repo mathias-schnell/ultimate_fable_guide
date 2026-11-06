@@ -1,42 +1,65 @@
 {
-  "always-expand": true,
-  "is-container": false,
-  "label": "",
-  "sub-labels": ["Lightning wellspring"],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Effect",
-      "field": "effect",
-      "class": "effect"
-    }
-  ],
-  "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
-  "group-tags": ["bolt", "invoker", "invocation"],
-  "data": [
-    {
-      "name": "Electro Blast",
-      "effect": "You deal 20 bolt damage to the target.",
-      "tags": ["bolt"]
-    },
-    {
-      "name": "Electro Hex",
-      "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth and fire damage.",
-      "tags": ["earth", "fire"]
-    },
-    {
-      "name": "Static",
-      "effect": "You deal 10 bolt damage to the target, and they suffer slow.",
-      "tags": ["bolt", "slow"]
-    },
-    {
-      "name": "Thunder",
-      "effect": "The target loses 20 Mind Points and also suffers dazed.",
-      "tags": ["mp", "dazed"]
-    }
-  ]
+    "always-expand": true,
+    "is-container": false,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-invocations-lightning",
+    "label": "",
+    "sub-labels": [
+        "Lightning wellspring"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Effect",
+            "key": "effect"
+        }
+    ],
+    "grid-template-columns": "0.25fr 1fr 5fr 0.25fr",
+    "group-tags": [
+        "bolt",
+        "invoker",
+        "invocation"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Electro Blast",
+            "slug": "class-features-invocations-lightning-electro-blast",
+            "description": "",
+            "tags": [],
+            "effect": "You deal 20 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to the target."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Electro Hex",
+            "slug": "class-features-invocations-lightning-electro-hex",
+            "description": "",
+            "tags": [],
+            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) and fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Static",
+            "slug": "class-features-invocations-lightning-static",
+            "description": "",
+            "tags": [],
+            "effect": "You deal 10 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to the target, and they suffer slow."
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Thunder",
+            "slug": "class-features-invocations-lightning-thunder",
+            "description": "",
+            "tags": [],
+            "effect": "The target loses 20 Mind Points and also suffers dazed."
+        }
+    ]
 }

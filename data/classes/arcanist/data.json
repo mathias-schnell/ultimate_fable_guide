@@ -1,56 +1,94 @@
 {
-  "icon": "pentacle",
-  "label": "Arcanist",
-  "sub-labels": ["Permanently increase your maximum Mind Points by 5."],
-  "columns": [
-    {
-      "label": "Name",
-      "field": "name",
-      "class": "name"
-    },
-    {
-      "label": "Max SL",
-      "field": "max-sl",
-      "class": "max-sl"
-    }
-  ],
-  "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
-  "group-tags": ["core", "arcanist"],
-  "data": [
-    {
-      "name": "Arcane Circle",
-      "class": "Arcanist",
-      "max-sl": 4,
-      "description": "After you willingly dismiss an Arcanum on your turn during a conflict (see next page), if that Arcanum had not been summoned during this same turn and you have an arcane weapon equipped, you may perform the Spell action for free (after resolving the dismiss effect). The spell you cast this way must have a total Mind Point cost of (SL × 5) or lower (you must still pay the spell’s MP cost).",
-      "tags": ["arcane", "arcanist", "mp", "spell"]
-    },
-    {
-      "name": "Arcane Regeneration",
-      "class": "Arcanist",
-      "max-sl": 2,
-      "description": "When you summon an Arcanum, you recover (SL × 5) Hit Points.",
-      "tags": ["arcanist", "hp"]
-    },
-    {
-      "name": "Bind and Summon",
-      "class": "Arcanist",
-      "max-sl": 1,
-      "description": "You may bind Arcana to your soul and summon them later. The Game Master will tell you the details of each binding process when you first encounter the Arcanum in question. You may use an action and spend 40 Mind Points to summon an Arcanum you have bound: the details of this process are explained on the next page. If you take this Skill at character creation, you begin play with one Arcanum of your choice already bound to you, chosen from the list on the next pages. Other than that, you may only obtain new Arcana through exploration and story progression.",
-      "tags": ["arcanist", "mp"]
-    },
-    {
-      "name": "Emergency Arcanum",
-      "class": "Arcanist",
-      "max-sl": 6,
-      "description": "As long as you are in Crisis, the cost for summoning your Arcana is reduced by (SL × 5) Mind Points.",
-      "tags": ["arcanist", "crisis", "mp"]
-    },
-    {
-      "name": "Ritual Arcanism",
-      "class": "Arcanist",
-      "max-sl": 1,
-      "description": "You may perform Rituals of the Arcanism discipline, as long as their effects fall within the domains of one or more Arcana you have bound (see next pages). Arcanism Rituals use (WLP + WLP) for the Magic Check.",
-      "tags": ["arcanist", "spell", "WLP", "ritual"]
-    }
-  ]
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "pentacle",
+    "slug": "classes-arcanist",
+    "label": "Arcanist",
+    "sub-labels": [
+        "Permanently increase your maximum Mind Points by 5."
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "key": "label"
+        },
+        {
+            "label": "Max SL",
+            "key": "max-sl"
+        }
+    ],
+    "grid-template-columns": "0.25fr 4.5fr 1.5fr 0.25fr",
+    "group-tags": [
+        "core",
+        "arcanist"
+    ],
+    "data": [
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Arcane Circle",
+            "slug": "classes-arcanist-arcane-circle",
+            "description": "After you willingly dismiss an Arcanum on your turn during a conflict (see next page), if that Arcanum had not been summoned during this same turn and you have an arcane weapon equipped, you may perform the Spell action for free (after resolving the dismiss effect). The spell you cast this way must have a total Mind Point cost of (SL \u00d7 5) or lower (you must still pay the spell\u2019s MP cost).",
+            "tags": [
+                "arcane",
+                "spell",
+                "weapon"
+            ],
+            "class": "Arcanist",
+            "max-sl": 4
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Arcane Regeneration",
+            "slug": "classes-arcanist-arcane-regeneration",
+            "description": "When you summon an Arcanum, you recover (SL \u00d7 5) Hit Points.",
+            "tags": [
+                "hp"
+            ],
+            "class": "Arcanist",
+            "max-sl": 2
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Bind and Summon",
+            "slug": "classes-arcanist-bind-and-summon",
+            "description": "You may bind Arcana to your soul and summon them later. The Game Master will tell you the details of each binding process when you first encounter the Arcanum in question. You may use an action and spend 40 Mind Points to summon an Arcanum you have bound: the details of this process are explained on the next page. If you take this Skill at character creation, you begin play with one Arcanum of your choice already bound to you, chosen from the list on the next pages. Other than that, you may only obtain new Arcana through exploration and story progression.",
+            "tags": [
+                "arcana",
+                "mp",
+                "skill"
+            ],
+            "class": "Arcanist",
+            "max-sl": 1
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Emergency Arcanum",
+            "slug": "classes-arcanist-emergency-arcanum",
+            "description": "As long as you are in Crisis, the cost for summoning your Arcana is reduced by (SL \u00d7 5) Mind Points.",
+            "tags": [
+                "arcana",
+                "crisis",
+                "mp"
+            ],
+            "class": "Arcanist",
+            "max-sl": 6
+        },
+        {
+            "always-expand": false,
+            "is-container": true,
+            "label": "Ritual Arcanism",
+            "slug": "classes-arcanist-ritual-arcanism",
+            "description": "You may perform Rituals of the Arcanism discipline, as long as their effects fall within the domains of one or more Arcana you have bound (see next pages). Arcanism Rituals use (WLP + WLP) for the Magic Check.",
+            "tags": [
+                "arcana"
+            ],
+            "class": "Arcanist",
+            "max-sl": 1
+        }
+    ]
 }

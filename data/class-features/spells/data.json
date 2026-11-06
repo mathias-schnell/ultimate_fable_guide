@@ -1,8 +1,14 @@
 {
-  "always-expand": false,
-  "is-container": true,
-  "icon": "",
-  "label": "Spells",
-  "sub-labels": "",
-  "order": []
+    "always-expand": false,
+    "is-container": true,
+    "show-headers": true,
+    "icon": "",
+    "slug": "class-features-spells",
+    "label": "Spells",
+    "sub-labels": "",
+    "columns": [],
+    "grid-template-columns": "",
+    "group-tags": [],
+    "data": [],
+    "order": []
 }
