@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": false,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "optional-rules-quirks-natural-fantasy",
     "label": "Quirks",
     "sub-labels": [],
@@ -30,10 +32,14 @@
             "tags": [
                 "fabula-point",
                 "firearm",
+                "natural-fantasy",
                 "rare",
                 "weapon",
                 "zenit"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Start with a unique rare custom weapon worth up to 1200 zenit that cannot be lost or destroyed without your permission."
         },
         {
@@ -41,7 +47,7 @@
             "is-container": true,
             "label": "Arboreal",
             "slug": "optional-rules-quirks-natural-fantasy-arboreal",
-            "description": "<p>Choose a status effect: dazed, enraged, or shaken. You are immune to the chosen status effect. However, you also gain Vulnerability to a damage type of your choice: air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), or ice (<i class=\"ui-icon elem-ice svg-ice\"></i>).</p><p>You also learn one NPC spell (pages 310-311 of the Core Rulebook; you cannot choose Devastation; if a Magic Check is required, use (INS + WLP)): customize the spell as needed (name, damage type, status effects etc.). When you cast this spell while in sunlight, its total MP cost is reduced by 5 (to a minimum of 0 Mind Points).</p>",
+            "description": "<p>Choose a status effect: dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>), or shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>). You are immune to the chosen status effect. However, you also gain Vulnerability to a damage type of your choice: air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), or ice (<i class=\"ui-icon elem-ice svg-ice\"></i>).</p><p>You also learn one NPC spell (pages 310-311 of the Core Rulebook; you cannot choose Devastation; if a Magic Check is required, use (INS + WLP)): customize the spell as needed (name, damage type, status effects etc.). When you cast this spell while in sunlight, its total MP cost is reduced by 5 (to a minimum of 0 Mind Points).</p>",
             "tags": [
                 "air",
                 "bolt",
@@ -52,10 +58,15 @@
                 "fire",
                 "ice",
                 "mp",
+                "natural-fantasy",
+                "plant",
                 "shaken",
                 "spell",
                 "vulnerability"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Sentient plant creature immune to one status effect with a sunlight spell-cost discount, but vulnerable to an element."
         },
         {
@@ -64,7 +75,12 @@
             "label": "Big Bro",
             "slug": "optional-rules-quirks-natural-fantasy-big-bro",
             "description": "<p>If your group&rsquo;s campaign does not make use of the optional rule Camp Activities (see page 130), your character still gains access to it.</p><p>Your character gains access to three Camp Activities instead of only two. If your character gains this Quirk during a campaign that already makes use of Camp Activities, you simply gain access to a single new Camp Activity of your choice.</p><p>When you choose to perform Camp Activities during a Rest, choose one option: you perform two different Camp Activities, whose effects cannot be applied to the same creature; or you perform the same Camp Activity twice, applying its effects to two different creatures.</p>",
-            "tags": [],
+            "tags": [
+                "natural-fantasy"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Gain or expand access to Camp Activities, allowing you to perform two activities or duplicate one during Rests."
         },
         {
@@ -76,8 +92,12 @@
             "tags": [
                 "fabula-point",
                 "fumble",
+                "natural-fantasy",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Trigger fumbles intentionally for extra Fabula Points and gain a Heroic Skill once your world threat is resolved."
         },
         {
@@ -93,9 +113,14 @@
                 "elemental",
                 "fire",
                 "ice",
+                "natural-fantasy",
                 "resistance",
+                "ritual",
                 "vulnerability"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Gain elemental Resistance, matching damage conversion, and discipline-locked elemental Ritual access."
         },
         {
@@ -108,10 +133,16 @@
                 "air",
                 "bolt",
                 "crisis",
+                "elemental",
                 "flying",
                 "ice",
-                "melee"
+                "melee",
+                "natural-fantasy",
+                "vehicle"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Hover above ground to bypass melee restrictions, though vulnerable to suppression from Crisis or elemental damage."
         },
         {
@@ -123,11 +154,15 @@
             "tags": [
                 "elementalist",
                 "entropist",
+                "natural-fantasy",
                 "skill",
                 "spell",
                 "spiritist",
                 "travel"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Consult an indestructible grimoire for travel answers, eventually gaining an NPC spellcaster helper or a powerful Heroic Skill."
         },
         {
@@ -142,11 +177,15 @@
                 "elementalist",
                 "entropist",
                 "fabula-point",
+                "natural-fantasy",
                 "plant",
                 "species",
                 "spell",
                 "spiritist"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Talk to animals, elementals, and plants, cast a magic spell, perform fairy Rituals, and gain FP from a unique weakness."
         },
         {
@@ -154,15 +193,20 @@
             "is-container": true,
             "label": "Robot",
             "slug": "optional-rules-quirks-natural-fantasy-robot",
-            "description": "<p>You are not considered a living creature and gain Immunity to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage. You are also immune to the poisoned status effect.</p><p>You do not need to breathe, eat or drink, but you still follow the normal rules for resting; you also recover Hit Points and recover from status effects as normal.</p><p>You gain a +2 bonus to all Checks you perform to examine or interact with machines, technology and constructs (except for Accuracy Checks and Magic Checks).</p>",
+            "description": "<p>You are not considered a living creature and gain Immunity to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage. You are also immune to the poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>) status effect.</p><p>You do not need to breathe, eat or drink, but you still follow the normal rules for resting; you also recover Hit Points and recover from status effects as normal.</p><p>You gain a +2 bonus to all Checks you perform to examine or interact with machines, technology and constructs (except for Accuracy Checks and Magic Checks).</p>",
             "tags": [
+                "construct",
                 "earth",
                 "hp",
                 "immunity",
+                "natural-fantasy",
                 "poison",
                 "poisoned",
                 "resistance"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Construct body with poison immunity, earth resistance, tech interaction bonuses, and no biological needs."
         },
         {
@@ -173,8 +217,12 @@
             "description": "<p>If you choose this Quirk during character creation, increase your initial savings by 1000 zenit.</p><p>Additionally, you are accompanied by two fiercely loyal bodyguards who never take part in Checks or conflicts but offer three active benefits: halve damage suffered, ask the GM one truth per Rest, or add extra damage to elemental shards (5 + half your level). Each use inflicts 1d6 Fatigue Points on your bodyguards; at 10+ fatigue, they cannot help until they recover at session end.</p>",
             "tags": [
                 "elemental",
+                "natural-fantasy",
                 "zenit"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Start with extra wealth and two loyal bodyguards who mitigate damage or boost elemental shards at the cost of fatigue."
         },
         {
@@ -186,16 +234,21 @@
             "tags": [
                 "armor",
                 "elementalist",
+                "equipment",
                 "hp",
                 "inventory",
                 "ip",
                 "martial",
                 "melee",
                 "mp",
+                "natural-fantasy",
                 "ranged",
                 "spell",
                 "spiritist"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Gain a permanent health/mind boost plus your choice of martial equipment access, an extra spell, or extra Inventory Points."
         },
         {
@@ -205,13 +258,19 @@
             "slug": "optional-rules-quirks-natural-fantasy-the-beast-who-spoke",
             "description": "<p>You may not equip any items, with the exception of accessories and weapon and armor modules. However, as long as your armor slot is empty, you gain a +2 bonus to Defense and a +2 bonus to Magic Defense.</p><p>You also gain two benefits of your choice: equip custom weapons; learn an NPC spell (using MIG + WLP); or deal 6 extra damage with unarmed strikes (increasing to 10 at level 30+).</p>",
             "tags": [
+                "MIG",
                 "armor",
+                "beast",
                 "defense",
                 "magic-defense",
                 "module",
+                "natural-fantasy",
                 "spell",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Forego standard armor for defense bonuses and choose two feral enhancements like custom weapons, magic, or boosted unarmed strikes."
         },
         {
@@ -224,8 +283,12 @@
                 "fabula-point",
                 "hp",
                 "ignore",
-                "mp"
+                "mp",
+                "natural-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Nature spirit in human form who can bypass resource costs, eventually transforming into a landmark that empowers party members."
         },
         {
@@ -237,9 +300,14 @@
             "tags": [
                 "fabula-point",
                 "gourmet",
+                "ingredient",
+                "natural-fantasy",
                 "tinkerer",
                 "vehicle"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Own a mobile workshop vehicle and spend Fabula Points to source crafting materials with built-in flaws."
         },
         {
@@ -253,9 +321,14 @@
                 "ignore",
                 "inventory",
                 "ip",
-                "mp"
+                "mp",
+                "natural-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Attuned to ancient tech with the ability to periodically ignore resource costs and interrogate ruins for vital clues."
         }
-    ]
+    ],
+    "order": []
 }

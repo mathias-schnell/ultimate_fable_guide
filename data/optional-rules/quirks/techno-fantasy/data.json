@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": false,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "optional-rules-quirks-techno-fantasy",
     "label": "Quirks",
     "sub-labels": [],
@@ -27,7 +29,12 @@
             "label": "Agitator",
             "slug": "optional-rules-quirks-techno-fantasy-agitator",
             "description": "<p>When you rest inside or near a settlement, you may choose one option: you learn what the locals are mainly angry about or afraid of, or you create a contact that lives and operates in this area &ndash; give them a name and specialization, and the Game Master tells you what they ask of you (they might request a payment or need help).</p>",
-            "tags": [],
+            "tags": [
+                "techno-fantasy"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Uncover local grievances or establish operational contacts whenever you rest near settlements."
         },
         {
@@ -45,8 +52,12 @@
                 "ice",
                 "light",
                 "resistance",
+                "techno-fantasy",
                 "vulnerability"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Soul network entity with double damage Resistance, single Vulnerability, and specialized Ritualism access."
         },
         {
@@ -62,8 +73,12 @@
                 "hp",
                 "initiative",
                 "mp",
-                "species"
+                "species",
+                "techno-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Command a customizable demonic familiar that scales with you and can absorb Skills from defeated demon foes."
         },
         {
@@ -76,11 +91,16 @@
                 "attack",
                 "fabula-point",
                 "free-attack",
+                "mp",
                 "rare",
                 "skill",
+                "techno-fantasy",
                 "weapon",
                 "zenit"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Wield a powerful custom weapon artifact that grants immense magical or combat benefits at the risk of building Paradox Points."
         },
         {
@@ -92,8 +112,12 @@
             "tags": [
                 "fabula-point",
                 "fumble",
-                "reroll"
+                "reroll",
+                "techno-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Gain a free Fabula Point per conflict scene and bypass fumbles when rerolling via Traits."
         },
         {
@@ -107,8 +131,12 @@
                 "ignore",
                 "inventory",
                 "ip",
-                "mp"
+                "mp",
+                "techno-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Accumulate Instability Points to bypass resource costs, risking sudden collapse if your instability peaks."
         },
         {
@@ -120,8 +148,12 @@
             "tags": [
                 "fabula-point",
                 "humanoid",
-                "skill"
+                "skill",
+                "techno-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Spend a Fabula Point away from prying eyes to adopt the exact appearance and voice of any humanoid you know."
         },
         {
@@ -133,10 +165,15 @@
             "tags": [
                 "fabula-point",
                 "ignore",
+                "ingredient",
                 "inventory",
                 "ip",
+                "techno-fantasy",
                 "tinkerer"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Ignore Inventory Point costs once per conflict and spend Fabula Points to instantly source crafting materials with built-in flaws."
         },
         {
@@ -145,7 +182,13 @@
             "label": "Neo-Human",
             "slug": "optional-rules-quirks-techno-fantasy-neo-human",
             "description": "<p>When you acquire this Quirk, choose Dexterity, Insight, Might, or Willpower. When you join a conflict scene, you may choose to increase that Attribute by one die size (up to d12) or treat a d12 base size as d20 during Checks. The GM gains an opportunity to showcase unexpected collateral effects.</p>",
-            "tags": [],
+            "tags": [
+                "core",
+                "techno-fantasy"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Temporarily elevate one of your core attributes or unlock d20 scaling at the cost of GM narrative opportunities."
         },
         {
@@ -153,7 +196,7 @@
             "is-container": true,
             "label": "Planet Oracle",
             "slug": "optional-rules-quirks-techno-fantasy-planet-oracle",
-            "description": "<p>When you cause one or more allies to recover Hit Points and/or Mind Points, each of those allies recovers 5 additional HP/MP (increasing to 10 at level 30+) and clears a status effect of your choice among dazed, enraged, poisoned, shaken, slow, and weak.</p><p>You also gain the ability to perform Rituals of the Spiritism discipline.</p>",
+            "description": "<p>When you cause one or more allies to recover Hit Points and/or Mind Points, each of those allies recovers 5 additional HP/MP (increasing to 10 at level 30+) and clears a status effect of your choice among dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>), poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>), shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</p><p>You also gain the ability to perform Rituals of the Spiritism discipline.</p>",
             "tags": [
                 "dazed",
                 "enraged",
@@ -163,8 +206,12 @@
                 "shaken",
                 "slow",
                 "spiritist",
+                "techno-fantasy",
                 "weak"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Enhance ally healing with bonus HP/MP recovery, status cleansing, and gain access to Spiritism Rituals."
         },
         {
@@ -177,8 +224,12 @@
                 "hp",
                 "mp",
                 "rare",
+                "techno-fantasy",
                 "zenit"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Defect from an oppressive faction, build Subversion Points by fighting their plans, and ultimately transform your Theme."
         },
         {
@@ -186,15 +237,20 @@
             "is-container": true,
             "label": "Robot",
             "slug": "optional-rules-quirks-techno-fantasy-robot",
-            "description": "<p>You are not considered a living creature and gain Immunity to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage. You are also immune to the poisoned status effect.</p><p>You do not need to breathe, eat or drink, but you still follow the normal rules for resting. You also recover Hit Points and recover from status effects as normal.</p><p>You gain a +2 bonus to all Checks you perform to examine or interact with machines, technology and constructs (except for Accuracy Checks and Magic Checks).</p>",
+            "description": "<p>You are not considered a living creature and gain Immunity to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage. You are also immune to the poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>) status effect.</p><p>You do not need to breathe, eat or drink, but you still follow the normal rules for resting. You also recover Hit Points and recover from status effects as normal.</p><p>You gain a +2 bonus to all Checks you perform to examine or interact with machines, technology and constructs (except for Accuracy Checks and Magic Checks).</p>",
             "tags": [
+                "construct",
                 "earth",
                 "hp",
                 "immunity",
                 "poison",
                 "poisoned",
-                "resistance"
+                "resistance",
+                "techno-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Construct body with poison immunity, earth resistance, tech interaction bonuses, and no biological needs."
         },
         {
@@ -205,8 +261,12 @@
             "description": "<p>You obtain a medium or large transport (such as a vehicle or spaceship) equipped with armaments for vehicle combat that can accommodate your group and a dozen guests.</p><p>Once per session, the Game Master can give you 2 Fabula Points to introduce a narrative complication related to the transport or its original owner. The transport can never be destroyed without your permission.</p>",
             "tags": [
                 "fabula-point",
+                "techno-fantasy",
                 "vehicle"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Own a heavily armed party-sized spaceship or vehicle with a vengeful original owner tied to narrative complications."
         },
         {
@@ -218,6 +278,7 @@
             "tags": [
                 "armor",
                 "elementalist",
+                "equipment",
                 "hp",
                 "inventory",
                 "ip",
@@ -226,8 +287,12 @@
                 "mp",
                 "ranged",
                 "spell",
-                "spiritist"
+                "spiritist",
+                "techno-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Gain a permanent health/mind boost plus your choice of martial equipment access, an extra spell, or extra Inventory Points."
         },
         {
@@ -237,13 +302,19 @@
             "slug": "optional-rules-quirks-techno-fantasy-the-beast-who-spoke",
             "description": "<p>You may not equip any items, with the exception of accessories and weapon and armor modules. However, as long as your armor slot is empty, you gain a +2 bonus to Defense and a +2 bonus to Magic Defense.</p><p>You also gain two benefits of your choice: equip custom weapons; learn an NPC spell (using MIG + WLP); or deal 6 extra damage with unarmed strikes (increasing to 10 at level 30+).</p>",
             "tags": [
+                "MIG",
                 "armor",
+                "beast",
                 "defense",
                 "magic-defense",
                 "module",
                 "spell",
+                "techno-fantasy",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Forego standard armor for defense bonuses and choose two feral enhancements like custom weapons, magic, or boosted unarmed strikes."
         },
         {
@@ -257,9 +328,14 @@
                 "core",
                 "hp",
                 "physical",
+                "techno-fantasy",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Exist as a spirit bound to a custom weapon wielded by an ally, sharing damage and capable of miraculous revival."
         }
-    ]
+    ],
+    "order": []
 }

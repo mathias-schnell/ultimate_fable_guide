@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": false,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "optional-rules-classic-characters-techno-fantasy",
     "label": "Classic Characters",
     "sub-labels": [],
@@ -27,9 +29,13 @@
                 "mutant",
                 "ranged",
                 "sharpshooter",
+                "techno-fantasy",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -47,9 +53,13 @@
                 "mutant",
                 "ranged",
                 "sharpshooter",
+                "techno-fantasy",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -64,8 +74,13 @@
                 "fire",
                 "ice",
                 "pilot",
+                "techno-fantasy",
+                "vehicle",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -85,9 +100,13 @@
                 "ice",
                 "loremaster",
                 "ranged",
+                "techno-fantasy",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -100,8 +119,12 @@
                 "esper",
                 "gift",
                 "guardian",
+                "techno-fantasy",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -116,11 +139,16 @@
                 "rogue",
                 "shield",
                 "spear",
+                "techno-fantasy",
                 "travel",
+                "vehicle",
                 "weapon",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -136,11 +164,15 @@
                 "gift",
                 "melee",
                 "sword",
+                "techno-fantasy",
                 "travel",
                 "weapon",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -154,10 +186,15 @@
                 "equipment",
                 "esper",
                 "gift",
+                "hp",
+                "techno-fantasy",
                 "tinkerer",
                 "wayfarer",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -171,8 +208,12 @@
                 "fury",
                 "mutant",
                 "spell",
+                "techno-fantasy",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -184,9 +225,14 @@
                 "basic",
                 "pilot",
                 "shield",
+                "techno-fantasy",
                 "tinkerer",
+                "vehicle",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -194,7 +240,12 @@
             "label": "The Rebel Cell: Brave Revolutionaries",
             "slug": "optional-rules-classic-characters-techno-fantasy-the-rebel-cell-brave-revolutionaries",
             "description": "<p>The MagSec Defector uses his turn to fortify himself, protects his allies, and breaks enemy defenses; the Courageous Mystic heals her allies and shares her Fabula Points with My Trust in You; and the Fierce Brawler fills many roles, alternating quick and powerful strikes, as well as taking advantage of status effects and Atmokinesis to inflict massive amounts of damage in a short time.</p>",
-            "tags": []
+            "tags": [
+                "techno-fantasy"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -216,9 +267,13 @@
                 "orator",
                 "ritual",
                 "spiritist",
+                "techno-fantasy",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -234,11 +289,15 @@
                 "gift",
                 "melee",
                 "rogue",
+                "techno-fantasy",
                 "travel",
                 "weapon",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -256,10 +315,14 @@
                 "guardian",
                 "melee",
                 "sword",
+                "techno-fantasy",
                 "weapon",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -269,8 +332,12 @@
             "description": "<p>Having escaped Orbital Project Miraris following the Central Government\u2019s attack, four young recruits are caught in the struggle of civil war at the helms of their mechas. What will they choose to fight for? Can these dreadful machines protect life, or are they only fit to extinguish it? What happened to the pilot of Miraris 004?</p>",
             "tags": [
                 "attack",
-                "pilot"
-            ]
+                "pilot",
+                "techno-fantasy"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -285,9 +352,14 @@
                 "sharpshooter",
                 "shield",
                 "sword",
+                "techno-fantasy",
+                "vehicle",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -299,9 +371,14 @@
                 "guardian",
                 "heavy",
                 "pilot",
+                "techno-fantasy",
+                "vehicle",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -318,9 +395,14 @@
                 "melee",
                 "pilot",
                 "rogue",
+                "techno-fantasy",
+                "vehicle",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -334,9 +416,15 @@
                 "equipment",
                 "pilot",
                 "spiritist",
+                "techno-fantasy",
                 "travel",
+                "vehicle",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

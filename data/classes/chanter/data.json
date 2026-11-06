@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "music-spell",
+    "menu-icon": "music-spell",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-chanter",
     "label": "Chanter",
     "sub-labels": [
@@ -31,11 +33,17 @@
             "slug": "classes-chanter-magichant",
             "description": "On your turn during a conflict scene, you may use an action and spend a variable amount of MP to weave voice and music into a magical effect known as a verse.\nYou may only sing one verse per turn, even if you have access to multiple actions; the full rules for verses can be found starting on the next page.\nWhen you first acquire this Skill, you learn all three volumes, plus one key and one tone (see next page). Whenever you acquire this Skill again, you may learn one key or one tone (your choice).",
             "tags": [
+                "chanter",
+                "high-fantasy",
+                "mp",
                 "skill",
                 "verse"
             ],
             "class": "Chanter",
-            "max-sl": 10
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 10,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -45,11 +53,16 @@
             "description": "After you affect one or more enemies with a verse, if you have an arcane weapon equipped, you may choose one option: until the start of your next turn, your allies deal (SL) extra damage to those enemies; or until the start of your next turn, you recover (SL) Mind Points every time one of those enemies suffers damage (if the same source deals damage to two or more of those enemies at the same time, you recover (SL) MP for each damaged enemy).",
             "tags": [
                 "arcane",
+                "chanter",
+                "high-fantasy",
                 "mp",
                 "weapon"
             ],
             "class": "Chanter",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -57,9 +70,15 @@
             "label": "Siren\u2019s Song",
             "slug": "classes-chanter-siren-s-song",
             "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create hearing-based illusions.",
-            "tags": [],
+            "tags": [
+                "chanter",
+                "high-fantasy"
+            ],
             "class": "Chanter",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -68,10 +87,16 @@
             "slug": "classes-chanter-sound-barrier",
             "description": "After you sing a verse with medium or high volume, all physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage you suffer until the start of your next turn is reduced by (SL) (applied before Affinities).",
             "tags": [
-                "physical"
+                "chanter",
+                "high-fantasy",
+                "physical",
+                "verse"
             ],
             "class": "Chanter",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -81,11 +106,18 @@
             "description": "After you sing a verse with low or medium volume, you may perform a free attack with a weapon you have equipped; treat your High Roll (HR) as 0 when calculating damage dealt by this attack.",
             "tags": [
                 "attack",
+                "chanter",
                 "free-attack",
+                "high-fantasy",
+                "verse",
                 "weapon"
             ],
             "class": "Chanter",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

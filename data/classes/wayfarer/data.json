@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "hiking",
+    "menu-icon": "hiking",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-wayfarer",
     "label": "Wayfarer",
     "sub-labels": [
@@ -35,14 +37,19 @@
                 "beast",
                 "companion",
                 "construct",
+                "core",
                 "crisis",
                 "elemental",
                 "hp",
                 "initiative",
-                "plant"
+                "plant",
+                "wayfarer"
             ],
             "class": "Wayfarer",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -51,12 +58,17 @@
             "slug": "classes-wayfarer-resourceful",
             "description": "You regain (SL) Inventory Points after each travel roll (page 106).",
             "tags": [
+                "core",
                 "inventory",
                 "ip",
-                "travel"
+                "travel",
+                "wayfarer"
             ],
             "class": "Wayfarer",
-            "max-sl": 4
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 4,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -64,9 +76,15 @@
             "label": "Tavern Talk",
             "slug": "classes-wayfarer-tavern-talk",
             "description": "When you rest inside an inn or tavern, you may ask the Game Master up to (SL) questions about your surroundings and the people who live here; the Game Master will answer truthfully and you describe how you gathered the information.",
-            "tags": [],
+            "tags": [
+                "core",
+                "wayfarer"
+            ],
             "class": "Wayfarer",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -75,10 +93,15 @@
             "slug": "classes-wayfarer-treasure-hunter",
             "description": "When your group journeys on the world map, you will make a discovery on a roll of (SL + 1) or lower on the travel roll (instead of only on a 1).",
             "tags": [
-                "travel"
+                "core",
+                "travel",
+                "wayfarer"
             ],
             "class": "Wayfarer",
-            "max-sl": 2
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 2,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -87,11 +110,17 @@
             "slug": "classes-wayfarer-well-traveled",
             "description": "You reduce the die rolled for your travel rolls by one size (to a minimum of d6). If multiple characters have this Skill, the effects are not cumulative.",
             "tags": [
+                "core",
                 "skill",
-                "travel"
+                "travel",
+                "wayfarer"
             ],
             "class": "Wayfarer",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

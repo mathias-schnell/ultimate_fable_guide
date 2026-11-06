@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": false,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "heroic-skills-techno-fantasy",
     "label": "Techno Fantasy",
     "sub-labels": [],
@@ -32,13 +34,21 @@
             "slug": "heroic-skills-techno-fantasy-arcane-soldier",
             "description": "You may use an action to perform a <strong>free attack</strong> with a weapon you have equipped. This attack <strong>must</strong> target <strong>a single enemy</strong>. If the attack is successful, treat your High Roll as 0 when determining damage dealt by it. After the attack has been resolved, if it was successful, you may perform the Spell action <strong>for free</strong>: the spell you cast this way <strong>must</strong> be an offensive spell (\ud83d\uddf2) with a total MP cost <strong>equal to or lower than 20</strong>, and it may <strong>only</strong> target the enemy you attacked (you <strong>must</strong> still spend the appropriate Mind Points and perform the <strong>Magic Check</strong>). Treat your <strong>Magic Check</strong>\u2019s High Roll as 0 when determining damage or other effects caused by this spell.",
             "tags": [
+                "arcane",
                 "attack",
+                "elementalist",
                 "free-attack",
                 "mp",
+                "sharpshooter",
                 "spell",
-                "weapon"
+                "techno-fantasy",
+                "weapon",
+                "weaponmaster"
             ],
             "additional_requirements": "You must know at least two offensive spells (\ud83d\uddf2).",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Elementalist",
                 "Sharpshooter",
@@ -54,8 +64,13 @@
             "description": "While your <strong>Brainwave Clock</strong> is <strong>full</strong>, you may use an action to erase all of its sections. If you do, you may choose one option: you deal 20 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage to every enemy that is present on the scene, or you deal 30 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage to <strong>a single enemy</strong> you can see. This amount increases by 10 if you are level 20 or higher, or by 20 if you are level 40 or higher.",
             "tags": [
                 "clock",
-                "physical"
+                "esper",
+                "physical",
+                "techno-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Esper"
             ],
@@ -69,10 +84,16 @@
             "description": "You gain a bonus to your Initiative modifier equal to (your SL in Dodge + your SL in Stolen Time).\n\nAs long as you have no shields and no martial armor equipped, all damage you suffer is reduced by an amount equal to (your SL in Dodge) (applied before damage Affinities) and you deal extra damage equal to (your SL in Stolen Time).",
             "tags": [
                 "armor",
+                "entropist",
                 "initiative",
-                "martial"
+                "martial",
+                "rogue",
+                "techno-fantasy"
             ],
             "additional_requirements": "You must have acquired one or more Skills among Dodge and Stolen Time.",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Entropist",
                 "Rogue"
@@ -92,10 +113,15 @@
                 "free-attack",
                 "hp",
                 "mp",
+                "sharpshooter",
                 "skill",
+                "techno-fantasy",
                 "weapon"
             ],
             "additional_requirements": "You must have acquired the Hawkeye Skill.",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Sharpshooter"
             ],
@@ -110,12 +136,18 @@
             "tags": [
                 "attack",
                 "bond",
+                "darkblade",
+                "esper",
                 "focus",
                 "mp",
                 "skill",
                 "sword",
+                "techno-fantasy",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Darkblade",
                 "Esper"
@@ -132,8 +164,15 @@
                 "attack",
                 "bond",
                 "free-attack",
+                "module",
+                "pilot",
+                "techno-fantasy",
+                "vehicle",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Pilot"
             ],
@@ -158,13 +197,18 @@
                 "flying",
                 "heavy",
                 "martial",
+                "mutant",
                 "shield",
                 "skill",
                 "spear",
                 "sword",
+                "techno-fantasy",
                 "thrown"
             ],
             "additional_requirements": "You must have acquired the Akromorphosis Skill.",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Mutant"
             ],
@@ -177,8 +221,13 @@
             "slug": "heroic-skills-techno-fantasy-greater-ecdysis",
             "description": "When you use the <strong>Ecdysis</strong> Skill, you may also choose one or both options: you recover from all status effects, <strong>and/or</strong> if you are affected by one or more <strong>spells</strong> with a duration of \u201cScene\u201d, you are no longer affected by any of those <strong>spells</strong>.",
             "tags": [
-                "skill"
+                "mutant",
+                "skill",
+                "techno-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Mutant"
             ],
@@ -192,9 +241,14 @@
             "description": "When you use the <strong>Theriomorphosis</strong> Skill on your turn during a conflict, if this <strong>did not</strong> happen through the <strong>Genoclepsis</strong> Skill, you may manifest the effects of <strong>up to three therioforms</strong> from those you have learned (instead of two). Then, you may perform an additional action. This additional action cannot be used for the <strong>Theriomorphosis</strong> Skill.",
             "tags": [
                 "add-action",
+                "mutant",
                 "skill",
+                "techno-fantasy",
                 "therioform"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Mutant"
             ],
@@ -205,23 +259,29 @@
             "is-container": true,
             "label": "Hit the Nerve",
             "slug": "heroic-skills-techno-fantasy-hit-the-nerve",
-            "description": "When you successfully use the Condemn Skill against an enemy you know <strong>one or more Traits of</strong>, you recover an amount of Mind Points equal to half the amount of MP lost by the target, and you may have them suffer enraged instead of the normal status effects.\n\nAdditionally, when you perform an <strong>Opposed Check</strong> against an enraged creature, or an <strong>Accuracy Check</strong> or <strong>Magic Check</strong> for an attack or offensive spell (\ud83d\uddf2) that includes one or more enraged creatures among its targets, you trigger a critical success when both dice show the same number (as long as the Check is not a fumble).",
+            "description": "When you successfully use the Condemn Skill against an enemy you know <strong>one or more Traits of</strong>, you recover an amount of Mind Points equal to half the amount of MP lost by the target, and you may have them suffer enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) instead of the normal status effects.\n\nAdditionally, when you perform an <strong>Opposed Check</strong> against an enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) creature, or an <strong>Accuracy Check</strong> or <strong>Magic Check</strong> for an attack or offensive spell (\ud83d\uddf2) that includes one or more enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) creatures among its targets, you trigger a critical success when both dice show the same number (as long as the Check is not a fumble).",
             "tags": [
                 "attack",
+                "chanter",
                 "critical",
                 "enraged",
                 "fumble",
                 "mp",
+                "orator",
                 "skill",
                 "spell",
+                "techno-fantasy",
                 "traits"
             ],
             "additional_requirements": "You must have acquired the Condemn Skill.",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Chanter",
                 "Orator"
             ],
-            "summary": "Use Condemn to inflict enraged and gain benefits against enraged creatures."
+            "summary": "Use Condemn to inflict enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) and gain benefits against enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) creatures."
         },
         {
             "always-expand": false,
@@ -231,11 +291,17 @@
             "description": "Before you perform an <strong>Accuracy Check</strong>, you may declare \u201cmake it or break it!\u201d. If you do, the Check\u2019s High Roll is <strong>doubled</strong> when determining damage, but if the Result is an even number, you apply the following penalties after the attack is resolved:\n\n\u2022 If the weapon you used is <strong>transforming</strong>, it <strong>immediately changes form</strong> and <strong>it cannot change form again</strong> until the end of the scene.\n\u2022 If the weapon you used <strong>is not transforming</strong>, or if it is a <strong>transforming</strong> weapon that <strong>cannot change form</strong> (see above), it is <strong>placed inside your backpack</strong> and <strong>cannot be equipped</strong> until the end of the scene; however, you may <strong>immediately</strong> perform the <strong>Equipment</strong> action <strong>for free</strong>.\n\nThis Heroic Skill does not apply to attacks with <strong>unarmed strikes</strong>, <strong>improvised weapons</strong>, <strong>weapon modules</strong>, or <strong>Twin Shields</strong>.",
             "tags": [
                 "attack",
+                "darkblade",
                 "equipment",
+                "fury",
                 "module",
                 "skill",
+                "techno-fantasy",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Darkblade",
                 "Fury"
@@ -250,11 +316,16 @@
             "description": "When you use the <strong>Genoclepsis</strong> Skill on an NPC, if that NPC\u2019s Species is among those you can learn <strong>spells</strong> from with the <strong>Spell Mimic</strong> Skill, the Game Master <strong>must</strong> reveal all <strong>spells</strong> known by that NPC. Then, if that NPC knows one or more <strong>spells</strong>, you may learn <strong>one of those spells</strong> as a Chimerist spell of your own.",
             "tags": [
                 "chimerist",
+                "mutant",
                 "skill",
                 "species",
-                "spell"
+                "spell",
+                "techno-fantasy"
             ],
             "additional_requirements": "You must have acquired both the Genoclepsis and Spell Mimic Skills.",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Chimerist",
                 "Mutant"
@@ -271,9 +342,14 @@
                 "elemental",
                 "hp",
                 "mp",
-                "skill"
+                "skill",
+                "techno-fantasy",
+                "tinkerer"
             ],
             "additional_requirements": "You must have acquired the advanced Alchemy benefit from the Gadget Skill.",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Tinkerer"
             ],
@@ -294,9 +370,15 @@
                 "hp",
                 "ice",
                 "light",
-                "skill"
+                "pilot",
+                "skill",
+                "techno-fantasy",
+                "vehicle"
             ],
             "additional_requirements": "You must have acquired the Compression Tech skill.",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Pilot"
             ],
@@ -311,10 +393,15 @@
             "tags": [
                 "clock",
                 "defense",
+                "esper",
                 "gift",
                 "magic-defense",
-                "shield"
+                "shield",
+                "techno-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Esper"
             ],
@@ -329,10 +416,16 @@
             "tags": [
                 "attack",
                 "ignore",
+                "ip",
                 "multi",
+                "techno-fantasy",
+                "tinkerer",
                 "weapon"
             ],
             "additional_requirements": "You must have acquired the advanced Magitech benefit from the Gadget Skill.",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Tinkerer"
             ],
@@ -345,9 +438,14 @@
             "slug": "heroic-skills-techno-fantasy-quick-scan",
             "description": "When you perform the <strong>Study</strong> action during a conflict, you may examine the <strong>profiles</strong> of <strong>all enemies</strong> you can see. If you do, you perform a single (INS + INS) Open Check and apply the result <strong>separately</strong> to each enemy. However, if you have acquired the <strong>Flash of Insight</strong> Skill, this Check cannot trigger it.",
             "tags": [
+                "loremaster",
                 "skill",
-                "study"
+                "study",
+                "techno-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Loremaster"
             ],
@@ -361,12 +459,19 @@
             "description": "After you cast the first spell of your turn during a conflict, if you are driving your <strong>personal vehicle</strong>, you may choose one option (after the spell has been resolved): choose one enabled module and <strong>disable</strong> it, then choose one disabled module and <strong>enable</strong> it; or the next spell you cast before the end of this scene that deals damage deals 5 extra damage; or the next spell you cast before the end of this scene that restores Hit Points to one or more creatures restores 10 additional Hit Points to each of those creatures.",
             "tags": [
                 "hp",
-                "spell"
+                "module",
+                "pilot",
+                "spell",
+                "techno-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Pilot"
             ],
             "summary": "Gain benefits when you cast spells on a personal vehicle."
         }
-    ]
+    ],
+    "order": []
 }

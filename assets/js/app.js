@@ -284,7 +284,6 @@ function filter_content_by_search(target, ctx = {}) {
     if(!ctx || !ctx.content || !ctx.filter) return;
     const search_input = ctx.filter.querySelector(".filter-basic input[type='text']");
     const search_term = search_input?.value.trim().toLowerCase() ?? "";
-    //const bonus_toggle = ctx.filter.querySelector(".toggle-bonus-content").checked;
 
     if(search_term.length < 3) {
         let root_items = ctx.content.querySelectorAll("[data-depth='1'] > *");
@@ -299,10 +298,6 @@ function filter_content_by_search(target, ctx = {}) {
         }
         
         ctx.content.querySelectorAll("article").forEach(article => {
-            // if(!bonus_toggle && article.getAttribute('data-tags').includes('fabula-ultima-bonus')) {
-            //     article.classList.toggle('filtered-out', true);
-            //     return;
-            // }
             article.setAttribute('aria-hidden', false);
             article.closest('.menu-item').setAttribute('aria-hidden', false);
             const article_toggle = article.querySelector("[class*='toggle']");
@@ -316,15 +311,10 @@ function filter_content_by_search(target, ctx = {}) {
     let search_targets = ["name", "requirements", "summary", "domains", "target", "targets", "duration", "effect", "status-effect", "attribute", "recovery", "event", "suggestions", "accuracy", "damage", "cost", "defense", "m-defense"];
     // if(ctx.filter.querySelector("input.toggle-description-search").checked) {
     //     search_targets.push("description");
-    //     search_targets.push("tag-list");
+         search_targets.push("tag-list");
     // }
 
     ctx.content.querySelectorAll("article").forEach(article => {
-        // if(!bonus_toggle && article.getAttribute('data-tags').includes('fabula-ultima-bonus')) {
-        //     article.classList.toggle('filtered-out', true);
-        //     return;
-        // }
-
         const is_match = search_targets.some(target => {
             const target_element = article.querySelector(`[class*="${target}"]`);
             if (!target_element) return false;
@@ -491,11 +481,15 @@ function toggle_item(target, ctx = {}, forced_state = null, scroll_to = true) {
 
     target.setAttribute('aria-expanded', String(new_state));
 
-    const icon = target.querySelector('.menu-icon');
-    if(icon && (icon.classList.contains('svg-expand') || icon.classList.contains('svg-contract'))) {
-        icon.classList.toggle('svg-expand', !new_state);
-        icon.classList.toggle('svg-contract', new_state);
+    const icon = target.querySelector('.expand-contract-icon');
+    if(icon && icon.dataset.expandIcon && icon.dataset.contractIcon) {
+        icon.classList.toggle('svg-' + icon.dataset.expandIcon, !new_state);
+        icon.classList.toggle('svg-' + icon.dataset.contractIcon, new_state);
     }
+
+    console.log(icon);
+    console.log(icon.dataset.expandIcon);
+    console.log(icon.dataset.contractIcon);
 
     if(content_el) {
         if (new_state) {
@@ -531,7 +525,7 @@ function show_content(container, content) {
  * @param {number} offset 
  * @returns 
  */
-function scroll_to_element(element, offset = 50, delay = 350) {
+function scroll_to_element(element, offset = 75, delay = 350) {
     if (!element) return;
     setTimeout(() => {
         const ele_pos = element.getBoundingClientRect().top;

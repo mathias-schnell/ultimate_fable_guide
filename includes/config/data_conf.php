@@ -17,21 +17,30 @@ $order = [
 ];
 
 $elem_icons = [
-    "physical" => "svg-physical",
-    "air" => "svg-fluffy-trefoil",
-    "bolt" => "svg-bolt",
-    "ice" => "svg-ice",
-    "earth" => "svg-stone-block",
-    "fire" => "svg-fire",
-    "light" => "svg-sun",
-    "dark" => "svg-dark",
-    "poison" => "svg-poison"
+    "physical" => "physical",
+    "air" => "fluffy-trefoil",
+    "bolt" => "bolt",
+    "ice" => "ice",
+    "earth" => "stone-block",
+    "fire" => "fire",
+    "light" => "sun",
+    "dark" => "dark",
+    "poison" => "poison"
+];
+
+$status_icons = [
+    "dazed" => "star-swirl",
+    "shaken" => "kneeling",
+    "slow" => "tortoise",
+    "weak" => "hand-bandage",
+    "enraged" => "burning-skull",
+    "poisoned" => "radioactive"
 ];
 
 $global_icons = [
-    "martial" => "svg-diamonds",
-    "offensive" => "svg-electric",
-    "weapons-only" => "svg-check-mark"
+    "martial" => "diamonds",
+    "offensive" => "electric",
+    "weapons-only" => "check-mark"
 ];
 
 $title_icons = [

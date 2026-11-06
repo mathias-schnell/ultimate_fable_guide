@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "crossed-swords",
+    "menu-icon": "crossed-swords",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-weaponmaster",
     "label": "Weaponmaster",
     "sub-labels": [
@@ -33,28 +35,38 @@
             "description": "When you perform a melee attack, you may spend 10 Mind Points to choose one option: the attack gains multi (2); or you increase the attack\u2019s multi property by one, up to a maximum of multi (3).",
             "tags": [
                 "attack",
+                "core",
                 "melee",
                 "mp",
-                "multi"
+                "multi",
+                "weaponmaster"
             ],
             "class": "Weaponmaster",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Bone Crusher",
             "slug": "classes-weaponmaster-bone-crusher",
-            "description": "When you hit one or more targets with a melee attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict dazed on each target hit by the attack; or inflict weak on each target hit by the attack; or each target hit by the attack loses (SL \u00d7 10) Mind Points. Describe your maneuver!",
+            "description": "When you hit one or more targets with a melee attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>) on each target hit by the attack; or inflict weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>) on each target hit by the attack; or each target hit by the attack loses (SL \u00d7 10) Mind Points. Describe your maneuver!",
             "tags": [
                 "attack",
+                "core",
                 "dazed",
                 "melee",
                 "mp",
-                "weak"
+                "weak",
+                "weaponmaster"
             ],
             "class": "Weaponmaster",
-            "max-sl": 4
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 4,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -65,14 +77,19 @@
             "tags": [
                 "armor",
                 "attack",
+                "core",
                 "free-attack",
                 "melee",
                 "mp",
                 "shield",
-                "weapon"
+                "weapon",
+                "weaponmaster"
             ],
             "class": "Weaponmaster",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -82,11 +99,16 @@
             "description": "After an enemy hits or misses you with a melee attack, if the Result of their Accuracy Check was an even number, you may perform a free attack against that enemy (after their attack has been fully resolved). This attack must be a melee attack and must have that enemy as its only target; treat your High Roll as 0 when calculating damage dealt by this attack.",
             "tags": [
                 "attack",
+                "core",
                 "free-attack",
-                "melee"
+                "melee",
+                "weaponmaster"
             ],
             "class": "Weaponmaster",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -95,10 +117,17 @@
             "slug": "classes-weaponmaster-melee-weapon-mastery",
             "description": "You gain a bonus equal to (SL) to all Accuracy Checks with melee weapons.",
             "tags": [
-                "melee"
+                "core",
+                "melee",
+                "weapon",
+                "weaponmaster"
             ],
             "class": "Weaponmaster",
-            "max-sl": 4
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 4,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-rare-modules-rare",
     "label": "Weapon Modules",
     "sub-labels": [],
@@ -31,12 +33,19 @@
             "description": "Brawling \u2022 Melee \u2022 No qualities. This weapon can be used to interact with the scene as if it was a normal free hand.",
             "tags": [
                 "brawling",
+                "earth",
+                "equipment",
                 "melee",
+                "module",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "800 z",
-            "damage": "\u3010HR + 12\u3011 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>)"
+            "damage": "\u3010HR + 12\u3011 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -45,13 +54,20 @@
             "slug": "equipment-rare-modules-rare-scrapper",
             "description": "Heavy \u2022 Melee \u2022 This weapon deals 5 extra damage to constructs.",
             "tags": [
+                "equipment",
                 "heavy",
                 "melee",
+                "module",
+                "physical",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 +1",
+            "contract-icon": "minus",
             "cost": "900 z",
-            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -60,31 +76,46 @@
             "slug": "equipment-rare-modules-rare-fimbulvetr-battery",
             "description": "Firearm \u2022 Ranged \u2022 Damage dealt by this weapon ignores Resistances.",
             "tags": [
+                "equipment",
                 "firearm",
+                "ice",
+                "module",
                 "ranged",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "1000 z",
-            "damage": "\u3010HR + 10\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)"
+            "damage": "\u3010HR + 10\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "EMP Cannon",
             "slug": "equipment-rare-modules-rare-emp-cannon",
-            "description": "Firearm \u2022 Ranged \u2022 Each construct hit by an attack with this weapon suffers dazed. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+            "description": "Firearm \u2022 Ranged \u2022 Each construct hit by an attack with this weapon suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>). A personal vehicle with this module enabled cannot have any other weapon module enabled.",
             "tags": [
                 "attack",
+                "bolt",
                 "construct",
                 "dazed",
+                "equipment",
                 "firearm",
+                "module",
                 "ranged",
+                "rare",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "1100 z",
-            "damage": "\u3010HR + 14\u3011 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>)"
+            "damage": "\u3010HR + 14\u3011 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -93,13 +124,21 @@
             "slug": "equipment-rare-modules-rare-vanguard-pike",
             "description": "Spear \u2022 Melee \u2022 This weapon deals 5 extra damage during the first round of each conflict. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
             "tags": [
+                "equipment",
                 "melee",
+                "module",
+                "physical",
+                "rare",
                 "spear",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 +1",
+            "contract-icon": "minus",
             "cost": "1100 z",
-            "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -108,14 +147,21 @@
             "slug": "equipment-rare-modules-rare-crescens",
             "description": "Sword \u2022 Melee \u2022 This weapon deals extra damage equal to your Skill Level in Personal Vehicle.",
             "tags": [
+                "equipment",
                 "melee",
+                "module",
+                "physical",
+                "rare",
                 "skill",
                 "sword",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 +1",
+            "contract-icon": "minus",
             "cost": "1200 z",
-            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -124,14 +170,21 @@
             "slug": "equipment-rare-modules-rare-hookclaw",
             "description": "Flail \u2022 Melee \u2022 Attacks with this weapon can target flying creatures.",
             "tags": [
+                "equipment",
                 "flail",
                 "flying",
                 "melee",
+                "module",
+                "physical",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "1200 z",
-            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -141,13 +194,21 @@
             "description": "Bow \u2022 Ranged \u2022 This weapon deals 5 extra damage to flying creatures or those who are in midair. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
             "tags": [
                 "bow",
+                "equipment",
                 "flying",
+                "module",
+                "physical",
                 "ranged",
+                "rare",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 +1",
+            "contract-icon": "minus",
             "cost": "1300 z",
-            "damage": "\u3010HR + 16\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "damage": "\u3010HR + 16\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -157,13 +218,20 @@
             "description": "Shield \u2022 As long as you are driving your personal vehicle and you have a Counterstrike support module enabled, you can apply its effects even when one of the characters on board your personal vehicle is hit by a melee attack (rather than only against ranged attacks). This module has all the effects of a Shield module.",
             "tags": [
                 "attack",
+                "equipment",
                 "melee",
+                "module",
                 "ranged",
-                "shield"
+                "rare",
+                "shield",
+                "vehicle"
             ],
             "accuracy": "\u2014",
+            "contract-icon": "minus",
             "cost": "1500 z",
-            "damage": "\u2014"
+            "damage": "\u2014",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -173,13 +241,21 @@
             "description": "Arcane \u2022 Melee \u2022 When a spell you cast deals damage to a single creature, it deals 5 extra damage to that target. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
             "tags": [
                 "arcane",
+                "equipment",
+                "fire",
                 "melee",
+                "module",
+                "rare",
                 "spell",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + WLP\u3011",
+            "contract-icon": "minus",
             "cost": "1600 z",
-            "damage": "\u3010HR + 12\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)"
+            "damage": "\u3010HR + 12\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -188,12 +264,18 @@
             "slug": "equipment-rare-modules-rare-morphshield",
             "description": "Shield \u2022 At the start of your turn during a conflict, you can disable this module to enable a different disabled weapon module of your choice. If you do, at the end of your turn you have to disable the chosen module and enable this one again. This module has all the effects of a Shield module.",
             "tags": [
+                "equipment",
+                "module",
+                "rare",
                 "shield",
                 "weapon"
             ],
             "accuracy": "\u2014",
+            "contract-icon": "minus",
             "cost": "1800 z",
-            "damage": "\u2014"
+            "damage": "\u2014",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -203,14 +285,21 @@
             "description": "Firearm \u2022 Ranged \u2022 Accuracy Checks with this weapon trigger a critical success if both dice show the same number (and it is not a fumble).",
             "tags": [
                 "critical",
+                "equipment",
                 "firearm",
                 "fumble",
+                "light",
+                "module",
                 "ranged",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 +1",
+            "contract-icon": "minus",
             "cost": "1800 z",
-            "damage": "\u3010HR + 14\u3011 light (<i class=\"ui-icon elem-light svg-sun\"></i>)"
+            "damage": "\u3010HR + 14\u3011 light (<i class=\"ui-icon elem-light svg-sun\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -219,14 +308,22 @@
             "slug": "equipment-rare-modules-rare-aerowitzer",
             "description": "Firearm \u2022 Ranged \u2022 As long as you are driving your personal vehicle you gain a +2 bonus to your Defense. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
             "tags": [
+                "air",
                 "defense",
+                "equipment",
                 "firearm",
+                "module",
                 "ranged",
+                "rare",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "2000 z",
-            "damage": "\u3010HR + 18\u3011 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>)"
+            "damage": "\u3010HR + 18\u3011 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -235,14 +332,23 @@
             "slug": "equipment-rare-modules-rare-warp-cannon",
             "description": "Firearm \u2022 Ranged \u2022 Attacks with this weapon have multi (2). Additionally, all damage dealt by this weapon ignores Absorptions, Immunities, and Resistances. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
             "tags": [
+                "dark",
+                "equipment",
                 "firearm",
+                "module",
                 "multi",
                 "ranged",
+                "rare",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 +1",
+            "contract-icon": "minus",
             "cost": "2800 z",
-            "damage": "\u3010HR + 18\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)"
+            "damage": "\u3010HR + 18\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

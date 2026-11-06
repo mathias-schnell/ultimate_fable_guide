@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": false,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "optional-rules-classic-characters-natural-fantasy",
     "label": "Classic Characters",
     "sub-labels": [],
@@ -25,13 +27,18 @@
                 "defense",
                 "elemental",
                 "fury",
+                "invocation",
                 "invoker",
+                "natural-fantasy",
                 "ranged",
                 "sharpshooter",
                 "thrown",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -42,10 +49,14 @@
             "tags": [
                 "equipment",
                 "invoker",
+                "natural-fantasy",
                 "ritual",
                 "spiritist",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -57,12 +68,16 @@
                 "firearm",
                 "loremaster",
                 "merchant",
+                "natural-fantasy",
                 "ranged",
                 "sharpshooter",
                 "travel",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -73,9 +88,13 @@
             "tags": [
                 "gourmet",
                 "guardian",
+                "natural-fantasy",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -86,9 +105,13 @@
             "tags": [
                 "arcanist",
                 "invoker",
+                "natural-fantasy",
                 "travel",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -104,11 +127,15 @@
                 "ice",
                 "magic-defense",
                 "melee",
+                "natural-fantasy",
                 "sword",
                 "weapon",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -119,9 +146,13 @@
             "tags": [
                 "equipment",
                 "merchant",
+                "natural-fantasy",
                 "tinkerer",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -134,10 +165,14 @@
                 "elemental",
                 "equipment",
                 "merchant",
+                "natural-fantasy",
                 "trade-point",
                 "wayfarer",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -147,11 +182,15 @@
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Gourmet (2 levels): Cooking, Knife and Fork</li><li>Rogue (1 level): High Speed</li><li>Sharpshooter (2 levels): Barrage, Warning Shot</li></ul><p><strong>Equipment:</strong> Shortbow (described as a sling!), travel garb, 270 zenit. This character\u2019s delicacies take the form of sling bullets with strange effects!</p>",
             "tags": [
                 "gourmet",
+                "natural-fantasy",
                 "rogue",
                 "sharpshooter",
                 "travel",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -162,8 +201,12 @@
             "tags": [
                 "entropist",
                 "floralist",
+                "natural-fantasy",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -172,8 +215,12 @@
             "slug": "optional-rules-classic-characters-natural-fantasy-childhood-friends-we-have-a-long-journey-ahead",
             "description": "<p>Three young heroes accompany a mysterious elf on a pilgrimage to discover the meaning of the sudden visions that plague her. The upbeat squire and the young herbalist are flexible characters, capable of dealing damage as well as supporting their allies with magiseeds and the Breach and Encourage Skills. The rowdy miner hits hard but, above all else, she is of great help during travel and can get useful information everywhere she goes!</p>",
             "tags": [
+                "natural-fantasy",
                 "travel"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -184,9 +231,13 @@
             "tags": [
                 "chimerist",
                 "loremaster",
+                "natural-fantasy",
                 "sharpshooter",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -197,9 +248,13 @@
             "tags": [
                 "fury",
                 "merchant",
+                "natural-fantasy",
                 "wayfarer",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -209,6 +264,7 @@
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d6, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Orator (2 levels): Encourage (SL 2)</li><li>Weaponmaster (3 levels): Bone Crusher, Breach, Melee Weapon Mastery</li></ul><p><strong>Equipment:</strong> Bronze sword, travel garb, runic shield, 120 zenit.</p>",
             "tags": [
                 "melee",
+                "natural-fantasy",
                 "orator",
                 "shield",
                 "sword",
@@ -216,7 +272,10 @@
                 "weapon",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -228,8 +287,12 @@
                 "elemental",
                 "elementalist",
                 "floralist",
+                "natural-fantasy",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -238,8 +301,12 @@
             "slug": "optional-rules-classic-characters-natural-fantasy-the-kitchen-brigade-i-ve-come-up-with-a-new-recipe",
             "description": "<p>This group explores the Gourmet Class in many different ways: since each character\u2019s cookbook sheet is personal and independent, the same combinations yield different results depending on who uses them!</p>",
             "tags": [
-                "gourmet"
-            ]
+                "gourmet",
+                "natural-fantasy"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -257,10 +324,14 @@
                 "guardian",
                 "magic-defense",
                 "melee",
+                "natural-fantasy",
                 "shield",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -275,12 +346,16 @@
                 "firearm",
                 "gourmet",
                 "magic-defense",
+                "natural-fantasy",
                 "ranged",
                 "sharpshooter",
                 "tinkerer",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -297,9 +372,13 @@
                 "ice",
                 "melee",
                 "merchant",
+                "natural-fantasy",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -309,10 +388,15 @@
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d6, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Gourmet (2 levels): Cooking, Made with Love</li><li>Orator (2 levels): My Trust in You, Unexpected Ally</li><li>Wayfarer (1 level): Tavern Talk</li></ul><p><strong>Equipment:</strong> Staff (described as a fan!), sage robe, 270 zenit.</p>",
             "tags": [
                 "gourmet",
+                "natural-fantasy",
                 "orator",
                 "wayfarer",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

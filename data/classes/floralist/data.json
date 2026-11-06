@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "jasmine",
+    "menu-icon": "jasmine",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-floralist",
     "label": "Floralist",
     "sub-labels": [
@@ -32,14 +34,20 @@
             "description": "After you plant a magiseed through the Chloromancy Skill (not when using Graft), you may choose one option: perform a free attack with an equipped weapon; or perform the Spell action for free, casting a spell with a total Mind Point cost equal to or lower than (5 + (SL \u00d7 5)) (you must still pay its MP cost). Treat the High Roll (HR) of your Accuracy Check or Magic Check as being equal to 0 when determining damage dealt by this attack or spell.",
             "tags": [
                 "attack",
+                "floralist",
                 "free-attack",
+                "mp",
+                "natural-fantasy",
                 "plant",
                 "skill",
                 "spell",
                 "weapon"
             ],
             "class": "Floralist",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -48,13 +56,18 @@
             "slug": "classes-floralist-chloromancy",
             "description": "Each time you acquire this Skill, you discover a new type of magiseed from the list found in the next pages.\nDuring a conflict, if there are no magiseeds in your garden, you may use an action and spend 20 Mind Points to plant a magiseed of a type you have discovered. The rules for the garden and for magiseed growth can be found in the next pages.",
             "tags": [
+                "floralist",
                 "garden",
                 "mp",
+                "natural-fantasy",
                 "plant",
                 "skill"
             ],
             "class": "Floralist",
-            "max-sl": 10
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 10,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -64,11 +77,16 @@
             "description": "As long as there is a magiseed in your garden and 1 or more sections of your Growth Clock are filled, you may use an action to remove that magiseed from your garden: if you do, plant a different magiseed among those you have discovered (keep the current filled sections of your Growth Clock unchanged).",
             "tags": [
                 "clock",
+                "floralist",
                 "garden",
+                "natural-fantasy",
                 "plant"
             ],
             "class": "Floralist",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -78,11 +96,16 @@
             "description": "When a magiseed is removed from your garden, you may choose one creature you can see: if that creature is in Crisis, they recover (5 + (SL \u00d7 5)) Hit Points.",
             "tags": [
                 "crisis",
+                "floralist",
                 "garden",
-                "hp"
+                "hp",
+                "natural-fantasy"
             ],
             "class": "Floralist",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -91,11 +114,17 @@
             "slug": "classes-floralist-verdant-sway",
             "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create, animate, and/or control vegetation, pollen, spores, and toxins (but you cannot create nor control plant-Species NPCs this way).",
             "tags": [
+                "floralist",
+                "natural-fantasy",
                 "plant",
                 "species"
             ],
             "class": "Floralist",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

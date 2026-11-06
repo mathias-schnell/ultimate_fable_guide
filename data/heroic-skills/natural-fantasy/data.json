@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": false,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "heroic-skills-natural-fantasy",
     "label": "Natural Fantasy",
     "sub-labels": [],
@@ -32,9 +34,14 @@
             "slug": "heroic-skills-natural-fantasy-all-you-can-eat",
             "description": "Once per scene when you use the <strong>Cooking</strong> Skill, you may combine <strong>four ingredients into a delicacy</strong> (thus ignoring the normal limit of three ingredients). Other than that, the <strong>delicacy</strong> follows the normal rules.",
             "tags": [
+                "gourmet",
                 "ingredient",
+                "natural-fantasy",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Gourmet"
             ],
@@ -48,14 +55,19 @@
             "description": "Choose a damage type among <strong>air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>)</strong>, <strong>bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>)</strong>, earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), <strong>fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)</strong>, <strong>ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)</strong>, and <strong>light (<i class=\"ui-icon elem-light svg-sun\"></i>)</strong>.\n\nWhen an enemy you can see deals damage to one or more creatures who are affected by an <strong>Aura</strong> and/or <strong>Barrier</strong> spell you cast, the damage suffered by each of those creatures is reduced by an amount equal to (<strong>half</strong> your level in the Spiritist Class) or to (your level, divided by 10) (use whichever value is <strong>higher</strong>; this reduction is applied <strong>before</strong> damage Affinities). Then, you may deal an amount of damage of the chosen type equal to (<strong>half</strong> your level) to that enemy. If you do, you <strong>cannot</strong> deal damage this way until the start of your next turn.",
             "tags": [
                 "air",
+                "arcanist",
                 "bolt",
                 "earth",
                 "fire",
                 "ice",
                 "light",
+                "natural-fantasy",
                 "spell",
                 "spiritist"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Arcanist",
                 "Spiritist"
@@ -69,10 +81,19 @@
             "slug": "heroic-skills-natural-fantasy-bend-magic",
             "description": "After an enemy you can see <strong>hits or misses you with an offensive spell</strong> (\ud83d\uddf2), if the Result of their <strong>Magic Check</strong> was an <strong>even number</strong>, you may <strong>immediately</strong> use the <strong>Invocation</strong> Skill for free (after the spell has been fully resolved) to perform an <strong>invocation</strong> you have access to against that enemy, without spending Mind Points. This <strong>invocation</strong> must not be a \u201c<strong>hex</strong>\u201d, and it may target only that enemy (you <strong>cannot</strong> use the <strong>Linked Invocation</strong> Skill with it).",
             "tags": [
+                "elementalist",
+                "entropist",
+                "invocation",
+                "invoker",
                 "mp",
+                "natural-fantasy",
                 "skill",
-                "spell"
+                "spell",
+                "symbolist"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Elementalist",
                 "Entropist",
@@ -92,12 +113,18 @@
                 "clock",
                 "crisis",
                 "dark",
+                "darkblade",
+                "floralist",
                 "garden",
                 "hp",
                 "light",
+                "natural-fantasy",
                 "poison",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Darkblade",
                 "Floralist"
@@ -112,15 +139,24 @@
             "description": "When you use the <strong>Bone Crusher</strong> Skill, if your attack targets <strong>only one creature</strong> and you have a shield equipped, you may <strong>challenge</strong> that creature until the end of your next turn. The <strong>challenge</strong> also ends if that creature is <strong>challenged</strong> by someone else, or if you <strong>challenge</strong> another creature.\n\nThe creature you are <strong>challenging</strong> must include you among the targets of their attacks and offensive spells (\ud83d\uddf2), if able; additionally, once per turn (including other creatures\u2019 turns), when you deal damage to the creature you are <strong>challenging</strong> with a <strong>free attack</strong> using a <strong>one-handed melee</strong> weapon, or with a custom weapon belonging to the <strong>dagger</strong> or <strong>sword</strong> Category, you may deal 5 extra damage to that creature.",
             "tags": [
                 "attack",
+                "commander",
                 "dagger",
                 "free-attack",
+                "fury",
+                "guardian",
                 "melee",
+                "natural-fantasy",
                 "one-handed",
+                "pilot",
                 "shield",
                 "skill",
                 "sword",
-                "weapon"
+                "weapon",
+                "weaponmaster"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Commander",
                 "Fury",
@@ -136,7 +172,15 @@
             "label": "Cheer Up!",
             "slug": "heroic-skills-natural-fantasy-cheer-up",
             "description": "When you use My Trust in You on another Player Character, that character chooses Dexterity, Insight, Might, or Willpower: they treat the chosen Attribute as being increased by one die size (up to a maximum of d12) until the end of the scene or until you use My Trust in You on them again.",
-            "tags": [],
+            "tags": [
+                "chanter",
+                "esper",
+                "natural-fantasy",
+                "orator"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Chanter",
                 "Esper",
@@ -164,6 +208,8 @@
                 "ice",
                 "light",
                 "monster",
+                "mutant",
+                "natural-fantasy",
                 "plant",
                 "poison",
                 "resistance",
@@ -171,6 +217,9 @@
                 "spell",
                 "undead"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Chimerist",
                 "Mutant"
@@ -182,18 +231,24 @@
             "is-container": true,
             "label": "Cleansing Moonlight",
             "slug": "heroic-skills-natural-fantasy-cleansing-moonlight",
-            "description": "When you hit one or more creatures with an offensive spell (\ud83d\uddf2), if you have an <strong>arcane</strong> weapon equipped and the <strong>High Roll</strong> of your <strong>Magic Check</strong> is <strong>8 or higher</strong>, you may have each of those creatures no longer be affected by all spells with a <strong>duration</strong> of \u201cScene\u201d that are currently affecting them.\n\nWhen you cast a spell targeting one or more allies, if you have an <strong>arcane</strong> weapon equipped, you may choose one status effect among dazed, <strong>enraged</strong>, <strong>poisoned</strong>, shaken, slow, and weak: if you do, each target recovers from the chosen status effect.",
+            "description": "When you hit one or more creatures with an offensive spell (\ud83d\uddf2), if you have an <strong>arcane</strong> weapon equipped and the <strong>High Roll</strong> of your <strong>Magic Check</strong> is <strong>8 or higher</strong>, you may have each of those creatures no longer be affected by all spells with a <strong>duration</strong> of \u201cScene\u201d that are currently affecting them.\n\nWhen you cast a spell targeting one or more allies, if you have an <strong>arcane</strong> weapon equipped, you may choose one status effect among dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), <strong>enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>)</strong>, <strong>poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>)</strong>, shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>): if you do, each target recovers from the chosen status effect.",
             "tags": [
                 "arcane",
                 "dazed",
                 "enraged",
+                "entropist",
+                "natural-fantasy",
                 "poisoned",
                 "shaken",
                 "slow",
                 "spell",
+                "spiritist",
                 "weak",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Entropist",
                 "Spiritist"
@@ -208,10 +263,19 @@
             "description": "When you cast the <strong>Hallucination</strong> or <strong>Torpor</strong> spells, you may apply <strong>both</strong> status effects to each target hit by the spell.\n\nDuring a conflict, you may use an action and spend up to 20 Mind Points. For every 10 Mind Points spent this way, you may choose a different enemy you can see who is suffering from <strong>two or more status effects</strong>. Every enemy chosen this way recovers from all status effects and loses an amount of Hit Points equal to (<strong>half</strong> your level + (the number of status effects that enemy recovered from this way, multiplied by 10)).\n\nThen, you recover 20 Mind Points for each of those enemies that entered Crisis or was reduced to 0 Hit Points by this effect.",
             "tags": [
                 "crisis",
+                "dancer",
+                "esper",
                 "hp",
                 "mp",
-                "spell"
+                "natural-fantasy",
+                "rogue",
+                "spell",
+                "spiritist",
+                "symbolist"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Dancer",
                 "Esper",
@@ -229,10 +293,19 @@
             "description": "When you perform a <strong>Magic Check</strong> for a spell or Ritual, you may replace one of the <strong>Attributes</strong> with Might (such as (MIG + MIG) for a Chimerism Ritual).\n\nAs long as the <strong>Accuracy</strong> formula of a weapon you have equipped includes Might, you may treat that weapon as also belonging to the <strong>arcane</strong> Category for the purpose of Skills and effects that require it.",
             "tags": [
                 "arcane",
+                "chimerist",
+                "darkblade",
+                "esper",
+                "fury",
+                "natural-fantasy",
                 "ritual",
                 "spell",
+                "wayfarer",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Chimerist",
                 "Darkblade",
@@ -249,11 +322,16 @@
             "slug": "heroic-skills-natural-fantasy-for-a-better-future",
             "description": "When you need to spend one or more Fabula Points, if you are not spending them to <strong>alter the story</strong>, you may spend that many <strong>Trade Points</strong> instead. Describe which memories of your trades and journeys give you strength!\n\nAdditionally, when you gain two or more <strong>Trade Points</strong> through the <strong>Real Treasure</strong> or <strong>Winds of Trade</strong> Skills, you may choose to gain exactly 1 <strong>Trade Point</strong> instead. If you do, choose a settlement within <strong>1 travel day</strong> of your position and increase its <strong>prosperity</strong> by an amount equal to (your Skill Level in <strong>Winds of Trade</strong> + your Skill Level in <strong>Real Treasure</strong>); a settlement\u2019s <strong>prosperity</strong> starts at 0 and has no upper limit.\n\nThe chart below indicates the effects of your donations on the settlement and on anything within <strong>1 travel day</strong> of it.\n\nProsperity Effects within <strong>1 travel day</strong> of the settlement\n10 or more: When you or an ally need to pay a cost in zenit, whatever the reason, that cost is <strong>halved</strong>.\n15 or more: People gladly accommodate you and your allies: while in this area, you can always <strong>rest</strong> freely, without spending zenit. Furthermore, any <strong>travel rolls</strong> made in this area never use a die greater than d8.\n20 or more: When a Villain in this area spends Ultima Points, they must spend twice as many Ultima Points.",
             "tags": [
+                "merchant",
+                "natural-fantasy",
                 "skill",
                 "trade-point",
                 "travel",
                 "zenit"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Merchant"
             ],
@@ -267,12 +345,17 @@
             "description": "Once per turn when a <strong>magiseed</strong> leaves your <strong>garden</strong>, if that <strong>magiseed</strong> has one or more \u201c<strong>at the end</strong> of your turn\u201d effects, you may spend 20 Mind Points. If you do, reproduce one of those effects (you may also choose an effect that doesn\u2019t match the current sections of your <strong>Growth Clock</strong>).\n\nAdditionally, if you have acquired the <strong>Verdant Sway</strong> Skill, your Rituals can now also influence and control soldier-Rank creatures belonging to the <strong>plant</strong> <strong>Species</strong> (but you are still unable to create them).",
             "tags": [
                 "clock",
+                "floralist",
                 "garden",
                 "mp",
+                "natural-fantasy",
                 "plant",
                 "skill",
                 "species"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Floralist"
             ],
@@ -285,8 +368,13 @@
             "slug": "heroic-skills-natural-fantasy-green-thumb",
             "description": "When <strong>you fill 1 or more sections of your Growth Clock</strong>, you may choose one option: you fill <strong>1 additional section</strong> of your <strong>Growth Clock</strong>; or you fill <strong>1 fewer section</strong> of your <strong>Growth Clock</strong> (to a minimum of 0 sections filled). If you do, you <strong>cannot</strong> use this effect again until after your <strong>Growth Clock</strong> has become completely empty.\n\nAdditionally, damage dealt by your <strong>magiseeds</strong> ignores Resistances.",
             "tags": [
-                "clock"
+                "clock",
+                "floralist",
+                "natural-fantasy"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Floralist"
             ],
@@ -301,10 +389,16 @@
             "tags": [
                 "air",
                 "earth",
+                "elemental",
                 "fire",
+                "invoker",
+                "natural-fantasy",
                 "resistance",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Invoker"
             ],
@@ -322,10 +416,16 @@
                 "guardian",
                 "hp",
                 "magic-defense",
+                "merchant",
                 "mp",
+                "natural-fantasy",
                 "skill",
-                "spell"
+                "spell",
+                "wayfarer"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Guardian",
                 "Merchant",
@@ -343,10 +443,15 @@
                 "companion",
                 "fabula-point",
                 "mp",
+                "natural-fantasy",
                 "reroll",
                 "skill",
-                "traits"
+                "traits",
+                "wayfarer"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Wayfarer"
             ],
@@ -362,11 +467,18 @@
                 "attack",
                 "bow",
                 "free-attack",
+                "natural-fantasy",
+                "rogue",
+                "sharpshooter",
                 "skill",
                 "spear",
                 "thrown",
-                "weapon"
+                "weapon",
+                "weaponmaster"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Rogue",
                 "Sharpshooter",
@@ -381,9 +493,17 @@
             "slug": "heroic-skills-natural-fantasy-skillful-dosage",
             "description": "<strong>Potions</strong> and <strong>delicacies</strong> you create, as well as spells you cast, can now cause creatures to recover Hit Points and Mind Points beyond their <strong>maximum HP and MP</strong> scores. This <strong>cannot</strong> cause a creature\u2019s <strong>current Hit Points and/or Mind Points</strong> to go above 150% of the respective maximum scores; <strong>at the end</strong> of each scene, if the <strong>current Hit Points and/or Mind Points</strong> of a creature are still above their maximum scores, they become equal to the maximum score.",
             "tags": [
+                "gourmet",
                 "hp",
-                "mp"
+                "loremaster",
+                "merchant",
+                "mp",
+                "natural-fantasy",
+                "tinkerer"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Gourmet",
                 "Loremaster",
@@ -397,17 +517,19 @@
             "is-container": true,
             "label": "Specialty of the House",
             "slug": "heroic-skills-natural-fantasy-specialty-of-the-house",
-            "description": "When you acquire this Heroic Skill, choose <strong>three different tastes</strong> among <strong>bitter</strong>, <strong>salty</strong>, <strong>sour</strong>, <strong>sweet</strong>, and <strong>umami</strong>. Then, choose <strong>three different effects</strong> among the following:\n\n\u2022 You deal 20 <strong>(choose one: dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), light (<i class=\"ui-icon elem-light svg-sun\"></i>))</strong> damage to each of this <strong>delicacy</strong>\u2019s targets. This amount increases to 30 damage if you are <strong>level 30 or higher</strong>. Choose the type of this effect when you acquire this Heroic Skill.\n\u2022 During the next turn of each of this <strong>delicacy</strong>\u2019s targets, all damage they deal becomes <strong>(choose one: dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), light (<i class=\"ui-icon elem-light svg-sun\"></i>))</strong> and its type <strong>cannot</strong> change. Choose the type of this effect when you acquire this Heroic Skill.\n\u2022 For each of this <strong>delicacy</strong>\u2019s targets, if they are affected by one or more spells with a <strong>duration</strong> of \u201cScene\u201d, instead they are no longer affected by any of those spells.\n\u2022 Choose yourself or an ally you can see. For each of this <strong>delicacy</strong>\u2019s targets, the next time that target performs an attack or cast an offensive spell (\ud83d\uddf2) <strong>before</strong> the end of this scene, they must include the chosen creature among the targets of that attack or spell (if able).\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets suffers <strong>enraged</strong>.\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets suffers <strong>poisoned</strong>.\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets recovers 30 Hit Points and 30 Mind Points, or 40 Hit Points and 40 Mind Points if you are <strong>level 30 or higher</strong>.\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets recovers from a single status of their choice.\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets recovers from dazed, <strong>enraged</strong>, and shaken.\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets recovers from <strong>poisoned</strong>, slow, and weak.\n\nWhen you create a <strong>delicacy</strong> using <strong>exactly 3 ingredients</strong> during a conflict, if each ingredient matches a different taste among those chosen when you acquired this Heroic Skill, you may ignore all of that <strong>delicacy</strong>\u2019s normal effects. If you do, you may instead apply one, two, or all the effects you chose when you acquired this Heroic Skill.",
+            "description": "When you acquire this Heroic Skill, choose <strong>three different tastes</strong> among <strong>bitter</strong>, <strong>salty</strong>, <strong>sour</strong>, <strong>sweet</strong>, and <strong>umami</strong>. Then, choose <strong>three different effects</strong> among the following:\n\n\u2022 You deal 20 <strong>(choose one: dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), light (<i class=\"ui-icon elem-light svg-sun\"></i>))</strong> damage to each of this <strong>delicacy</strong>\u2019s targets. This amount increases to 30 damage if you are <strong>level 30 or higher</strong>. Choose the type of this effect when you acquire this Heroic Skill.\n\u2022 During the next turn of each of this <strong>delicacy</strong>\u2019s targets, all damage they deal becomes <strong>(choose one: dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), light (<i class=\"ui-icon elem-light svg-sun\"></i>))</strong> and its type <strong>cannot</strong> change. Choose the type of this effect when you acquire this Heroic Skill.\n\u2022 For each of this <strong>delicacy</strong>\u2019s targets, if they are affected by one or more spells with a <strong>duration</strong> of \u201cScene\u201d, instead they are no longer affected by any of those spells.\n\u2022 Choose yourself or an ally you can see. For each of this <strong>delicacy</strong>\u2019s targets, the next time that target performs an attack or cast an offensive spell (\ud83d\uddf2) <strong>before</strong> the end of this scene, they must include the chosen creature among the targets of that attack or spell (if able).\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets suffers <strong>enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>)</strong>.\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets suffers <strong>poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>)</strong>.\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets recovers 30 Hit Points and 30 Mind Points, or 40 Hit Points and 40 Mind Points if you are <strong>level 30 or higher</strong>.\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets recovers from a single status of their choice.\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets recovers from dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), <strong>enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>)</strong>, and shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).\n\u2022 Each of this <strong>delicacy</strong>\u2019s targets recovers from <strong>poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>)</strong>, slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).\n\nWhen you create a <strong>delicacy</strong> using <strong>exactly 3 ingredients</strong> during a conflict, if each ingredient matches a different taste among those chosen when you acquired this Heroic Skill, you may ignore all of that <strong>delicacy</strong>\u2019s normal effects. If you do, you may instead apply one, two, or all the effects you chose when you acquired this Heroic Skill.",
             "tags": [
                 "attack",
                 "dark",
                 "dazed",
                 "enraged",
+                "gourmet",
                 "hp",
                 "ignore",
                 "ingredient",
                 "light",
                 "mp",
+                "natural-fantasy",
                 "poisoned",
                 "shaken",
                 "skill",
@@ -415,6 +537,9 @@
                 "spell",
                 "weak"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Gourmet"
             ],
@@ -430,8 +555,14 @@
                 "air",
                 "earth",
                 "fire",
+                "invocation",
+                "invoker",
+                "natural-fantasy",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Invoker"
             ],
@@ -442,18 +573,25 @@
             "is-container": true,
             "label": "Wise Counsel",
             "slug": "heroic-skills-natural-fantasy-wise-counsel",
-            "description": "When you perform a <strong>Support Check</strong>, if the <strong>leader</strong> of the Group Check can hear and understand you, you may use (INS + INS), (INS + WLP), or (WLP + WLP) instead of the normal <strong>Attributes</strong> required by the <strong>Support Check</strong>.\n\nDescribe how you offer your advice!\n\nAdditionally, when you use the <strong>teamwork</strong> option to support another Player Character\u2019s Check during their turn in a conflict scene, you may spend 10 Mind Points. If you do, choose <strong>up to two</strong> of the following benefits:\n\n\u2022 That character recovers 20 Mind Points.\n\u2022 That character recovers from dazed, <strong>enraged</strong> and shaken.\n\u2022 <strong>At the end</strong> of that character\u2019s turn, choose one option: perform a <strong>free attack</strong> with a weapon you have equipped; or perform the Spell action for free, casting a spell whose total MP cost is <strong>equal to or lower than 20</strong>.\n\u2022 If that character succeeds on their Check and the Check allows them to fill or erase one or more sections of a Clock, they may fill or erase <strong>1 additional section</strong> of it.",
+            "description": "When you perform a <strong>Support Check</strong>, if the <strong>leader</strong> of the Group Check can hear and understand you, you may use (INS + INS), (INS + WLP), or (WLP + WLP) instead of the normal <strong>Attributes</strong> required by the <strong>Support Check</strong>.\n\nDescribe how you offer your advice!\n\nAdditionally, when you use the <strong>teamwork</strong> option to support another Player Character\u2019s Check during their turn in a conflict scene, you may spend 10 Mind Points. If you do, choose <strong>up to two</strong> of the following benefits:\n\n\u2022 That character recovers 20 Mind Points.\n\u2022 That character recovers from dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), <strong>enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>)</strong> and shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).\n\u2022 <strong>At the end</strong> of that character\u2019s turn, choose one option: perform a <strong>free attack</strong> with a weapon you have equipped; or perform the Spell action for free, casting a spell whose total MP cost is <strong>equal to or lower than 20</strong>.\n\u2022 If that character succeeds on their Check and the Check allows them to fill or erase one or more sections of a Clock, they may fill or erase <strong>1 additional section</strong> of it.",
             "tags": [
                 "attack",
                 "clock",
+                "commander",
                 "dazed",
                 "enraged",
                 "free-attack",
+                "loremaster",
                 "mp",
+                "natural-fantasy",
+                "orator",
                 "shaken",
                 "spell",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Commander",
                 "Loremaster",
@@ -461,5 +599,6 @@
             ],
             "summary": "Your Support Checks grant extra benefits to the leader."
         }
-    ]
+    ],
+    "order": []
 }

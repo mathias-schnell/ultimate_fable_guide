@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-invocations-fire",
     "label": "",
     "sub-labels": [
@@ -31,8 +33,15 @@
             "label": "Pyro Blast",
             "slug": "class-features-invocations-fire-pyro-blast",
             "description": "",
-            "tags": [],
-            "effect": "You deal 20 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to the target."
+            "tags": [
+                "fire",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "You deal 20 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to the target.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -40,8 +49,17 @@
             "label": "Pyro Hex",
             "slug": "class-features-invocations-fire-pyro-hex",
             "description": "",
-            "tags": [],
-            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage."
+            "tags": [
+                "earth",
+                "fire",
+                "ice",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -49,8 +67,16 @@
             "label": "Burst",
             "slug": "class-features-invocations-fire-burst",
             "description": "",
-            "tags": [],
-            "effect": "You deal 10 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to the target, and they suffer shaken."
+            "tags": [
+                "fire",
+                "invocation",
+                "invoker",
+                "shaken"
+            ],
+            "contract-icon": "minus",
+            "effect": "You deal 10 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to the target, and they suffer shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -58,8 +84,18 @@
             "label": "Smoke",
             "slug": "class-features-invocations-fire-smoke",
             "description": "",
-            "tags": [],
-            "effect": "The target loses 20 Mind Points and also suffers weak."
+            "tags": [
+                "fire",
+                "invocation",
+                "invoker",
+                "mp",
+                "weak"
+            ],
+            "contract-icon": "minus",
+            "effect": "The target loses 20 Mind Points and also suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

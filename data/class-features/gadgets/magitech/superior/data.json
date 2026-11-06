@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-gadgets-magitech-superior",
     "label": "",
     "sub-labels": [
@@ -30,14 +32,21 @@
             "slug": "",
             "description": "You develop a magisphere for each of three spells from among those found in the Elementalist, Entropist, and Spiritist lists; these spells may come from the same list or from different lists (this does not count as \u201clearning\u201d or \u201cknowing\u201d these spells).<br /><br />You develop a new magisphere upon reaching level 20, and another upon reaching level 40 (the same applies if you already reached those levels).<br /><br />You may perform the Inventory action and spend 2 Inventory Points to perform the Spell action for free, casting one of the spells you have developed a magisphere for. The spell follows the normal rules (including MP costs and Magic Checks).",
             "tags": [
+                "core",
                 "elementalist",
                 "entropist",
                 "inventory",
                 "ip",
+                "mp",
                 "spell",
-                "spiritist"
+                "spiritist",
+                "tinkerer"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "You develop a magisphere for each of three spells from among those found in the Elementalist, Entropist, and Spiritist lists."
         }
-    ]
+    ],
+    "order": []
 }

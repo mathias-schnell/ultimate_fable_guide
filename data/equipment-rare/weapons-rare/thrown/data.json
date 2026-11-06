@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-rare-weapons-rare-thrown",
     "label": "Thrown",
     "sub-labels": [],
@@ -38,15 +40,22 @@
             "description": "One-handed \u2022 Ranged \u2022 Attacks with this weapon target Magic Defense.",
             "tags": [
                 "defense",
+                "equipment",
+                "light",
                 "magic-defense",
                 "one-handed",
                 "ranged",
+                "rare",
+                "thrown",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "350 z",
             "damage": "\u3010HR + 4\u3011 light (<i class=\"ui-icon elem-light svg-sun\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -55,13 +64,20 @@
             "slug": "equipment-rare-weapons-rare-thrown-meteor-star",
             "description": "One-handed \u2022 Ranged \u2022 No Quality.",
             "tags": [
+                "equipment",
+                "fire",
                 "one-handed",
-                "ranged"
+                "ranged",
+                "rare",
+                "thrown"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "350 z",
             "damage": "\u3010HR + 4\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -70,13 +86,20 @@
             "slug": "equipment-rare-weapons-rare-thrown-throwing-axe",
             "description": "One-handed \u2022 Ranged \u2022 No Quality.",
             "tags": [
+                "equipment",
                 "one-handed",
-                "ranged"
+                "physical",
+                "ranged",
+                "rare",
+                "thrown"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "350 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -85,14 +108,21 @@
             "slug": "equipment-rare-weapons-rare-thrown-boomerang",
             "description": "One-handed \u2022 Ranged \u2022 This weapon deals 5 extra damage to beasts and monsters.",
             "tags": [
+                "equipment",
                 "one-handed",
+                "physical",
                 "ranged",
+                "rare",
+                "thrown",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "750 z",
             "damage": "\u3010HR + 4\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -101,30 +131,45 @@
             "slug": "equipment-rare-weapons-rare-thrown-wind-dancer",
             "description": "One-handed \u2022 Ranged \u2022 Damage dealt by this weapon ignores Resistances.",
             "tags": [
+                "air",
+                "dancer",
+                "equipment",
                 "one-handed",
                 "ranged",
+                "rare",
+                "thrown",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + WLP\u3011",
+            "contract-icon": "minus",
             "cost": "850 z",
             "damage": "\u3010HR + 8\u3011 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Acupuncturer",
             "slug": "equipment-rare-weapons-rare-thrown-acupuncturer",
-            "description": "One-handed \u2022 Ranged \u2022 You are immune to poisoned.",
+            "description": "One-handed \u2022 Ranged \u2022 You are immune to poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
             "tags": [
+                "equipment",
                 "one-handed",
+                "physical",
                 "poisoned",
-                "ranged"
+                "ranged",
+                "rare",
+                "thrown"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "950 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -133,15 +178,21 @@
             "slug": "equipment-rare-weapons-rare-thrown-blue-pinwheel",
             "description": "One-handed \u2022 Ranged \u2022 You gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.",
             "tags": [
+                "equipment",
                 "ice",
                 "one-handed",
                 "ranged",
-                "resistance"
+                "rare",
+                "resistance",
+                "thrown"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "950 z",
             "damage": "\u3010HR + 4\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -151,14 +202,21 @@
             "description": "One-handed \u2022 Ranged \u2022 You gain Resistance to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage.",
             "tags": [
                 "dark",
+                "earth",
+                "equipment",
                 "one-handed",
                 "ranged",
-                "resistance"
+                "rare",
+                "resistance",
+                "thrown"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1050 z",
             "damage": "\u3010HR + 4\u3011 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -167,32 +225,46 @@
             "slug": "equipment-rare-weapons-rare-thrown-chakram",
             "description": "One-handed \u2022 Ranged \u2022 Attacks with this weapon have multi (2).",
             "tags": [
+                "equipment",
                 "multi",
                 "one-handed",
+                "physical",
                 "ranged",
+                "rare",
+                "thrown",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1250 z",
             "damage": "\u3010HR + 4\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Vajra",
             "slug": "equipment-rare-weapons-rare-thrown-vajra",
-            "description": "One-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers shaken.",
+            "description": "One-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
             "tags": [
+                "bolt",
+                "equipment",
                 "one-handed",
                 "ranged",
+                "rare",
                 "shaken",
+                "thrown",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + WLP\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "2050 z",
             "damage": "\u3010HR + 8\u3011 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -201,32 +273,46 @@
             "slug": "equipment-rare-weapons-rare-thrown-dark-orbit",
             "description": "One-handed \u2022 Ranged \u2022 You gain a +1 bonus to Defense and Magic Defense.",
             "tags": [
+                "dark",
                 "defense",
+                "equipment",
                 "magic-defense",
                 "one-handed",
-                "ranged"
+                "ranged",
+                "rare",
+                "thrown"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "2250 z",
             "damage": "\u3010HR + 4\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Hive Dart",
             "slug": "equipment-rare-weapons-rare-thrown-hive-dart",
-            "description": "One-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers poisoned.",
+            "description": "One-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
             "tags": [
+                "equipment",
                 "one-handed",
+                "poison",
                 "poisoned",
                 "ranged",
+                "rare",
+                "thrown",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "2300 z",
             "damage": "\u3010HR + 4\u3011 poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -235,16 +321,24 @@
             "slug": "equipment-rare-weapons-rare-thrown-major-arcana",
             "description": "One-handed \u2022 Ranged \u2022 While you are merged with an Arcanum, your Accuracy Checks with this weapon trigger a critical success if both dice show the same number (and it is not a fumble).",
             "tags": [
+                "arcana",
                 "critical",
+                "equipment",
                 "fumble",
                 "one-handed",
+                "physical",
                 "ranged",
+                "rare",
+                "thrown",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "900 z",
             "damage": "\u3010HR + 4\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -253,14 +347,21 @@
             "slug": "equipment-rare-weapons-rare-thrown-ladle",
             "description": "One-handed \u2022 Ranged \u2022 If you have acquired the Made with Love Skill, treat your Skill Level in it as if it were increased by 1 (up to a maximum of SL 4).",
             "tags": [
+                "equipment",
                 "one-handed",
+                "physical",
                 "ranged",
-                "skill"
+                "rare",
+                "skill",
+                "thrown"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "500 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -269,15 +370,23 @@
             "slug": "equipment-rare-weapons-rare-thrown-rngenerator",
             "description": "One-handed \u2022 Ranged \u2022 When you cast the Gamble spell, if you have the Lucky Seven Skill, you can use it to replace one of the dice you have rolled. This counts as the use of Lucky Seven for the scene.",
             "tags": [
+                "dark",
+                "equipment",
                 "one-handed",
                 "ranged",
+                "rare",
                 "skill",
-                "spell"
+                "spell",
+                "thrown"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "1200 z",
             "damage": "\u3010HR + 8\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

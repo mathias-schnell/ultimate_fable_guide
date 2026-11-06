@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "heroic-skills-core",
     "label": "Core Rulebook",
     "sub-labels": [],
@@ -33,6 +35,7 @@
             "description": "You may apply the benefits of <strong>two-weapon fighting</strong> to <strong>weapons</strong> belonging to different Categories, even if one is a <strong>melee</strong> weapon and the other is a <strong>ranged</strong> weapon (such as a <strong>dagger</strong> and a <strong>firearm</strong>, for instance).\n\nAs long as you have <strong>exactly two weapons equipped</strong> and they <strong>share no Categories with each other</strong>, you gain a +2 bonus to Defense and the <strong>second attack</strong> you perform during each of your turns deals 5 extra damage.",
             "tags": [
                 "attack",
+                "core",
                 "dagger",
                 "defense",
                 "firearm",
@@ -40,6 +43,9 @@
                 "ranged",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [],
             "summary": "Fight with two weapons of different categories."
         },
@@ -50,8 +56,12 @@
             "slug": "heroic-skills-core-extra-hp",
             "description": "Permanently increase your maximum Hit Points by 10. The amount of additional HP increases to 20 if you are <strong>level 40 or higher</strong>.",
             "tags": [
+                "core",
                 "hp"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [],
             "summary": "Increase your maximum Hit Points."
         },
@@ -62,9 +72,13 @@
             "slug": "heroic-skills-core-extra-ip",
             "description": "Permanently increase your maximum Inventory Points by 4.",
             "tags": [
+                "core",
                 "inventory",
                 "ip"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [],
             "summary": "Increase your maximum Inventory Points."
         },
@@ -75,8 +89,12 @@
             "slug": "heroic-skills-core-extra-mp",
             "description": "Permanently increase your maximum Mind Points by 10. The amount of additional MP increases to 20 if you are <strong>level 40 or higher</strong>.",
             "tags": [
+                "core",
                 "mp"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [],
             "summary": "Increase your maximum Mind Points."
         },
@@ -87,11 +105,15 @@
             "slug": "heroic-skills-core-extra-spells",
             "description": "When you acquire this <strong>Skill</strong>, learn any <strong>two</strong> spells from one of the following lists: <strong>Elementalist</strong>, <strong>Entropist</strong>, or <strong>Spiritist</strong>. Both spells chosen this way must come from the same list, and they follow the standard rules for casting spells of that Class.",
             "tags": [
+                "core",
                 "elementalist",
                 "entropist",
                 "skill",
                 "spiritist"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [],
             "summary": "Learn two spells from a Class of your choice."
         },
@@ -102,8 +124,13 @@
             "slug": "heroic-skills-core-adversity",
             "description": "As long as you are suffering from one or more status effects, you gain a +1 bonus on all Checks for every status effect you are suffering from, and you deal 2 extra damage for every status effect you are suffering from (be it with attacks, spells, Arcana, items or any other method).",
             "tags": [
-                "arcana"
+                "arcana",
+                "core",
+                "darkblade"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Darkblade"
             ],
@@ -117,8 +144,14 @@
             "description": "When you successfully perform a Check to fill or erase one or more sections of a Clock, if the <strong>domains</strong> of one or more Arcana you have bound are applicable to the Check in question, you may fill or erase an additional section of that Clock.\n\nThe Game Master has final say on whether a given domain applies or not.",
             "tags": [
                 "arcana",
-                "clock"
+                "arcane",
+                "arcanist",
+                "clock",
+                "core"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Arcanist"
             ],
@@ -133,6 +166,7 @@
             "tags": [
                 "chimerist",
                 "construct",
+                "core",
                 "demon",
                 "elemental",
                 "skill",
@@ -140,6 +174,9 @@
                 "spell",
                 "undead"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Chimerist"
             ],
@@ -152,9 +189,13 @@
             "slug": "heroic-skills-core-comet",
             "description": "You learn the ultimate <strong>Entropist</strong> spell: <strong>Comet</strong>.",
             "tags": [
+                "core",
                 "entropist",
                 "spell"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Entropist"
             ],
@@ -174,8 +215,13 @@
             "slug": "heroic-skills-core-deep-pockets",
             "description": "You reduce Inventory Point costs by 1 (to a minimum of 1).",
             "tags": [
-                "inventory"
+                "core",
+                "inventory",
+                "tinkerer"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Tinkerer"
             ],
@@ -186,12 +232,17 @@
             "is-container": true,
             "label": "Disarming Rhetoric",
             "slug": "heroic-skills-core-disarming-rhetoric",
-            "description": "During a conflict scene, you may use an action and choose a <strong>soldier</strong>-rank creature that can hear and understand you (the Game Master must tell you who is a valid <strong>target</strong>). If that creature is <strong>shaken</strong> or in <strong>Crisis</strong>, you may spend an amount of Mind Points equal to (20 + half that creature\u2019s level) to have them peacefully leave the conflict.\n\nDescribe how you convince them to desist.",
+            "description": "During a conflict scene, you may use an action and choose a <strong>soldier</strong>-rank creature that can hear and understand you (the Game Master must tell you who is a valid <strong>target</strong>). If that creature is <strong>shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>)</strong> or in <strong>Crisis</strong>, you may spend an amount of Mind Points equal to (20 + half that creature\u2019s level) to have them peacefully leave the conflict.\n\nDescribe how you convince them to desist.",
             "tags": [
+                "core",
                 "crisis",
                 "mp",
+                "orator",
                 "shaken"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Orator"
             ],
@@ -206,9 +257,14 @@
             "tags": [
                 "attack",
                 "bond",
+                "core",
+                "darkblade",
                 "hp",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Darkblade"
             ],
@@ -222,10 +278,15 @@
             "description": "You gain the following benefits:\n\n\u2022 The companion\u2019s maximum Hit Points increase by 10.\n\u2022 The companion deals 5 extra damage.\n\u2022 Choose one of the companion\u2019s Attributes: <strong>Dexterity</strong>, <strong>Insight</strong>, <strong>Might</strong>, or <strong>Willpower</strong>. The chosen Attribute is permanently increased by one die size (up to a maximum size of <strong>d12</strong>).\n\u2022 The companion gains an additional <strong>Skill</strong>. When you reach <strong>level 40</strong>, or if you have already reached it, the companion gains an additional <strong>Skill</strong>. Make sure to discuss your <strong>Skill</strong> choices with the Game Master and the other Players.",
             "tags": [
                 "companion",
+                "core",
                 "hp",
-                "skill"
+                "skill",
+                "wayfarer"
             ],
             "additional_requirements": "You must have have acquired the Faithful Companion Skill.",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Wayfarer"
             ],
@@ -238,9 +299,14 @@
             "slug": "heroic-skills-core-hope",
             "description": "You learn the ultimate <strong>Spiritist</strong> spell: <strong>Hope</strong>.",
             "tags": [
+                "core",
+                "hp",
                 "spell",
                 "spiritist"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Spiritist"
             ],
@@ -260,10 +326,15 @@
             "slug": "heroic-skills-core-mathemagic",
             "description": "When you cast a spell with a <strong>target</strong> of \u201cOne creature\u201d, you may choose an Attribute (<strong>Dexterity</strong>, <strong>Insight</strong>, <strong>Might</strong>, or <strong>Willpower</strong>) and a die size (<strong>d6</strong>, <strong>d8</strong>, <strong>d10</strong>, or <strong>d12</strong>). If you do, the spell\u2019s <strong>target</strong> becomes \u201cEvery creature present on the scene whose <strong>current</strong> die size in that Attribute matches your choice\u201d and its <strong>total Mind Point cost is doubled</strong>. Additionally, all mentions of \u201cthe <strong>target</strong>\u201d in the spell\u2019s text are replaced with \u201ceach <strong>target</strong>\u201d; or they are replaced with \u201cone or more <strong>target</strong>s\u201d if the spell is <strong>Anomaly</strong>, <strong>Dispel</strong>, <strong>Mercy</strong>, or <strong>Mirror</strong>. When the spell ends on one or more of its <strong>target</strong>s, it automatically ends on all its <strong>target</strong>s.\n\nIf you cast an offensive spell (\ud83d\uddf2) this way, you perform a single Magic Check and confront it with the Magic Defense of each <strong>target</strong>.",
             "tags": [
+                "core",
                 "defense",
+                "loremaster",
                 "magic-defense",
                 "spell"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Loremaster"
             ],
@@ -277,13 +348,18 @@
             "description": "You may now equip <strong>two-handed</strong> <strong>weapons</strong> belonging to the <strong>flail</strong>, <strong>heavy</strong>, <strong>spear</strong>, and <strong>sword</strong> Categories within a single hand slot.\n\nAdditionally, the <strong>first</strong> attack you perform with a <strong>two-handed</strong> weapon during each turn deals 5 extra damage, and its damage ignores Resistances.",
             "tags": [
                 "attack",
+                "core",
                 "flail",
+                "fury",
                 "heavy",
                 "spear",
                 "sword",
                 "two-handed",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Fury"
             ],
@@ -294,16 +370,21 @@
             "is-container": true,
             "label": "Perfect Aim",
             "slug": "heroic-skills-core-perfect-aim",
-            "description": "When you hit one or more creatures with a <strong>ranged</strong> attack and choose to deal no damage in order to gain the benefits of the <strong>Warning Shot</strong> <strong>Skill</strong>, you may choose <strong>two</strong> options instead of one (for instance, you could inflict both <strong>shaken</strong> and <strong>slow</strong> on each creature, or inflict a status effect on each creature while also lowering their Mind Points).",
+            "description": "When you hit one or more creatures with a <strong>ranged</strong> attack and choose to deal no damage in order to gain the benefits of the <strong>Warning Shot</strong> <strong>Skill</strong>, you may choose <strong>two</strong> options instead of one (for instance, you could inflict both <strong>shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>)</strong> and <strong>slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>)</strong> on each creature, or inflict a status effect on each creature while also lowering their Mind Points).",
             "tags": [
                 "attack",
+                "core",
                 "mp",
                 "ranged",
                 "shaken",
+                "sharpshooter",
                 "skill",
                 "slow"
             ],
             "additional_requirements": "You must have acquired the Warning Shot Skill.",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Sharpshooter"
             ],
@@ -316,11 +397,16 @@
             "slug": "heroic-skills-core-pillage",
             "description": "When you use the <strong>Soul Steal</strong> <strong>Skill</strong>, you may <strong>target</strong> any number of creatures at the same time (you perform a single Check and compare it to the Magic Defense of each creature you are attempting to steal from).",
             "tags": [
+                "core",
                 "defense",
                 "magic-defense",
+                "rogue",
                 "skill"
             ],
             "additional_requirements": "You must have acquired the Soul Steal skill.",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Rogue"
             ],
@@ -333,8 +419,13 @@
             "slug": "heroic-skills-core-powerful-shot",
             "description": "Your <strong>ranged</strong> attacks deal 5 extra damage. The amount of extra damage increases to 10 if you are <strong>level 40 or higher</strong>.",
             "tags": [
-                "ranged"
+                "core",
+                "ranged",
+                "sharpshooter"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Sharpshooter"
             ],
@@ -346,7 +437,17 @@
             "label": "Powerful Spell",
             "slug": "heroic-skills-core-powerful-spell",
             "description": "Spells you cast deal 5 extra damage. The amount of extra damage increases to 10 if you are <strong>level 40 or higher</strong>.",
-            "tags": [],
+            "tags": [
+                "chimerist",
+                "core",
+                "elementalist",
+                "entropist",
+                "spell",
+                "spiritist"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Chimerist",
                 "Elementalist",
@@ -362,8 +463,14 @@
             "slug": "heroic-skills-core-powerful-strike",
             "description": "Your <strong>melee</strong> attacks deal 5 extra damage. The amount of extra damage increases to 10 if you are <strong>level 40 or higher</strong>.",
             "tags": [
-                "melee"
+                "core",
+                "fury",
+                "melee",
+                "weaponmaster"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Fury",
                 "Weaponmaster"
@@ -378,13 +485,18 @@
             "description": "During a conflict, you may use an action and spend 20 Mind Points to anticipate the upcoming moves of a creature you can see, as long as you know <strong>two or more</strong> of that creature\u2019s <strong>Traits</strong>. If you do so, choose one type of action among the following: <strong>Attack</strong>, <strong>Guard</strong>, <strong>Objective</strong>, <strong>Spell</strong>, or <strong>Skill</strong>. Until the start of your next turn, the creature must spend 20 Mind Points whenever they wish to perform that action. If they can\u2019t, they must perform a different action.",
             "tags": [
                 "attack",
+                "core",
                 "guard",
+                "loremaster",
                 "mp",
                 "objective",
                 "skill",
                 "spell",
                 "traits"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Loremaster"
             ],
@@ -397,8 +509,13 @@
             "slug": "heroic-skills-core-rampart",
             "description": "During the <strong>first</strong> round of each conflict scene, you gain Resistance to all damage types and cannot suffer status effects (you <strong>do not</strong> recover from preexisting status effects, however). These benefits <strong>only</strong> last until the end of the <strong>first</strong> round.",
             "tags": [
+                "core",
+                "guardian",
                 "resistance"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Guardian"
             ],
@@ -411,8 +528,13 @@
             "slug": "heroic-skills-core-repetition",
             "description": "Once per turn during a conflict, after you use the <strong>Condemn</strong> <strong>Skill</strong> or the <strong>Encourage</strong> <strong>Skill</strong>, you may perform that same <strong>Skill</strong> again (on the same <strong>target</strong> or a different one). You must still pay the Mind Point cost for the second use of the <strong>Skill</strong>.",
             "tags": [
+                "core",
+                "orator",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Orator"
             ],
@@ -426,8 +548,13 @@
             "description": "You make contact with an unknown Arcanum and bind it to your soul. This Arcanum must be something you design together with the rest of the group; as long as you live, no one else in your world will be able to bind that Arcanum.\n\nOnce per scene while you are <strong>merged</strong> with an Arcanum, you may use an action and spend 2 Fabula Points to <strong>trigger</strong> that Arcanum\u2019s <strong>dismiss</strong> effect (if any) without <strong>dismiss</strong>ing them. Doing so <strong>does not</strong> <strong>trigger</strong> the <strong>Arcane Circle</strong> <strong>Skill</strong>.",
             "tags": [
                 "arcane",
+                "arcanist",
+                "core",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Arcanist"
             ],
@@ -439,7 +566,15 @@
             "label": "Status Immunity",
             "slug": "heroic-skills-core-status-immunity",
             "description": "You are permanently immune to a single status effect of your choice.",
-            "tags": [],
+            "tags": [
+                "core",
+                "ignore",
+                "immunity",
+                "wayfarer"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Wayfarer"
             ],
@@ -452,8 +587,13 @@
             "slug": "heroic-skills-core-unbreakable",
             "description": "Once per scene when you are about to be reduced to 0 Hit Points, you may instead choose to withstand the pain and be reduced to exactly 1 Hit Point.",
             "tags": [
+                "core",
+                "guardian",
                 "hp"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Guardian"
             ],
@@ -467,9 +607,15 @@
             "description": "When you rest, you may choose any number of <strong>weapons</strong>, <strong>armor</strong>, and/or <strong>shields</strong> among those owned by your group. For each item chosen this way, you may either <strong>add a Quality</strong> to it (if it doesn\u2019t have one) or <strong>replace its current Quality</strong> with a different one. These new Qualities must come from the list of default Qualities available for items of that type, and must have an associated cost modifier of <strong>+1000 zenit or lower</strong>. At the end of the rest, you must pay an amount of zenit equal to the total sum of those cost modifiers, reduced by (your <strong>Skill</strong> Level in Visionary, multiplied by 100). If you do, the items will be modified according to your choices.",
             "tags": [
                 "armor",
+                "core",
+                "equipment",
                 "skill",
+                "tinkerer",
                 "zenit"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Tinkerer"
             ],
@@ -483,9 +629,14 @@
             "description": "When you perform a <strong>melee</strong> attack with the <strong>multi</strong> property, you gain a bonus to your Accuracy Check equal to the value of that <strong>multi</strong> property, and the attack deals 5 extra damage. If the attack targets <strong>only one creature</strong>, it deals another 5 extra damage.",
             "tags": [
                 "attack",
+                "core",
                 "melee",
-                "multi"
+                "multi",
+                "weaponmaster"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Weaponmaster"
             ],
@@ -499,9 +650,14 @@
             "description": "When you hit one or more creatures with an attack or offensive spell (\ud83d\uddf2), you may spend 1 Fabula Point. If you do, each of those creatures becomes unable to see you until the start of your next turn.",
             "tags": [
                 "attack",
+                "core",
                 "fabula-point",
+                "rogue",
                 "spell"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Rogue"
             ],
@@ -516,11 +672,17 @@
             "tags": [
                 "air",
                 "bolt",
+                "core",
                 "earth",
                 "elementalist",
+                "fire",
+                "fury",
                 "ice",
                 "spell"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "requirements": [
                 "Elementalist"
             ],
@@ -533,5 +695,6 @@
             },
             "summary": "Learn the Volcano spell."
         }
-    ]
+    ],
+    "order": []
 }

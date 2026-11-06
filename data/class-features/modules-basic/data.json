@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-modules-basic",
     "label": "Weapon Modules",
     "sub-labels": [],
@@ -31,10 +33,16 @@
             "description": "Arcane \u2022 Melee \u2022 No Qualities.",
             "tags": [
                 "arcane",
-                "melee"
+                "basic",
+                "melee",
+                "module",
+                "physical"
             ],
             "accuracy": "\u3010DEX + WLP\u3011",
-            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -43,11 +51,17 @@
             "slug": "class-features-modules-basic-axe",
             "description": "Heavy \u2022 Melee \u2022 No Qualities.",
             "tags": [
+                "basic",
                 "heavy",
-                "melee"
+                "melee",
+                "module",
+                "physical"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
-            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -56,11 +70,17 @@
             "slug": "class-features-modules-basic-blade",
             "description": "Dagger \u2022 Melee \u2022 No Qualities.",
             "tags": [
+                "basic",
                 "dagger",
-                "melee"
+                "melee",
+                "module",
+                "physical"
             ],
             "accuracy": "\u3010DEX + INS\u3011 +1",
-            "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -69,13 +89,19 @@
             "slug": "class-features-modules-basic-bow",
             "description": "Bow \u2022 Ranged \u2022 No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
             "tags": [
+                "basic",
                 "bow",
                 "module",
+                "physical",
                 "ranged",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 +1",
-            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -84,13 +110,19 @@
             "slug": "class-features-modules-basic-cannon",
             "description": "Firearm \u2022 Ranged \u2022 No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
             "tags": [
+                "basic",
                 "firearm",
                 "module",
+                "physical",
                 "ranged",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
-            "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -99,12 +131,18 @@
             "slug": "class-features-modules-basic-claw",
             "description": "Brawling \u2022 Melee \u2022 No Qualities. This weapon can be used to interact with the scene as if it were a free hand.",
             "tags": [
+                "basic",
                 "brawling",
                 "melee",
+                "module",
+                "physical",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
-            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -113,13 +151,19 @@
             "slug": "class-features-modules-basic-claymore",
             "description": "Sword \u2022 Melee \u2022 No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
             "tags": [
+                "basic",
                 "melee",
                 "module",
+                "physical",
                 "sword",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 +1",
-            "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -129,12 +173,18 @@
             "description": "Arcane \u2022 Melee \u2022 No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
             "tags": [
                 "arcane",
+                "basic",
                 "melee",
                 "module",
+                "physical",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + WLP\u3011",
-            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -143,11 +193,17 @@
             "slug": "class-features-modules-basic-flail",
             "description": "Flail \u2022 Melee \u2022 No Qualities.",
             "tags": [
+                "basic",
                 "flail",
-                "melee"
+                "melee",
+                "module",
+                "physical"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
-            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -156,11 +212,17 @@
             "slug": "class-features-modules-basic-flamer",
             "description": "Firearm \u2022 Ranged \u2022 No Qualities.",
             "tags": [
+                "basic",
+                "fire",
                 "firearm",
+                "module",
                 "ranged"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
-            "damage": "\u3010HR + 8\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 8\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -170,14 +232,20 @@
             "description": "Firearm \u2022 Ranged \u2022 No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled. Additionally, when you perform the Attack action and attack with this weapon module, you may perform two separate attacks instead of one (against the same target or against different targets). If you do, both attacks follow the rules for two-weapon fighting: each attack loses the multi property and cannot gain it, and you treat the High Roll of each Accuracy Check as being equal to 0 when determining damage.",
             "tags": [
                 "attack",
+                "basic",
                 "firearm",
                 "module",
                 "multi",
+                "physical",
                 "ranged",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
-            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -186,11 +254,17 @@
             "slug": "class-features-modules-basic-rifle",
             "description": "Firearm \u2022 Ranged \u2022 No Qualities.",
             "tags": [
+                "basic",
                 "firearm",
+                "module",
+                "physical",
                 "ranged"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
-            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -199,13 +273,19 @@
             "slug": "class-features-modules-basic-scythe",
             "description": "Heavy \u2022 Melee \u2022 No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
             "tags": [
+                "basic",
                 "heavy",
                 "melee",
                 "module",
+                "physical",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
-            "damage": "\u3010HR + 16\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 16\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -214,6 +294,7 @@
             "slug": "class-features-modules-basic-shield",
             "description": "Shield \u2022 Exoskeleton and Mecha frames only. No Qualities. While driving this personal vehicle, you gain a +2 bonus to Defense and a +2 bonus to Magic Defense. Additionally, this weapon module does not count as a \u201cweapon\u201d: instead, it counts as an equipped shield. This module cannot be equipped in your main hand slot, unless you have acquired the Dual Shieldbearer Skill. If you have, your Twin Shields deal 2 extra damage (this is cumulative if you have two Shield modules enabled at the same time).",
             "tags": [
+                "basic",
                 "defense",
                 "magic-defense",
                 "module",
@@ -222,7 +303,10 @@
                 "weapon"
             ],
             "accuracy": "\u2014",
-            "damage": "\u2014"
+            "contract-icon": "minus",
+            "damage": "\u2014",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -231,11 +315,17 @@
             "slug": "class-features-modules-basic-spear",
             "description": "Spear \u2022 Melee \u2022 No Qualities.",
             "tags": [
+                "basic",
                 "melee",
+                "module",
+                "physical",
                 "spear"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
-            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -244,11 +334,17 @@
             "slug": "class-features-modules-basic-sword",
             "description": "Sword \u2022 Melee \u2022 No Qualities.",
             "tags": [
+                "basic",
                 "melee",
+                "module",
+                "physical",
                 "sword"
             ],
             "accuracy": "\u3010DEX + INS\u3011 +1",
-            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -257,13 +353,20 @@
             "slug": "class-features-modules-basic-trident",
             "description": "Spear \u2022 Melee \u2022 No Qualities. A personal vehicle with this module enabled cannot have any other weapon modules enabled.",
             "tags": [
+                "basic",
                 "melee",
                 "module",
+                "physical",
                 "spear",
+                "vehicle",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 +1",
-            "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)"
+            "contract-icon": "minus",
+            "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

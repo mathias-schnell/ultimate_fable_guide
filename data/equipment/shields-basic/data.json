@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-shields-basic",
     "label": "Shields",
     "sub-labels": [],
@@ -39,25 +41,40 @@
             "label": "Bronze Shield",
             "slug": "equipment-shields-basic-bronze-shield",
             "description": "No Quality.",
-            "tags": [],
+            "tags": [
+                "basic",
+                "equipment",
+                "shield"
+            ],
+            "contract-icon": "minus",
             "cost": "100 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Runic Shield <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Runic Shield <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-shields-basic-runic-shield",
             "description": "No Quality.",
-            "tags": [],
+            "tags": [
+                "basic",
+                "equipment",
+                "shield"
+            ],
+            "contract-icon": "minus",
             "cost": "150 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

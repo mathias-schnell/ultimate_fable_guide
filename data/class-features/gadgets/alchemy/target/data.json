@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-gadgets-alchemy-target",
     "label": "",
     "sub-labels": [
@@ -31,8 +33,14 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "1-6",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "target": "... you or one ally you can see that is present on the scene."
         },
         {
@@ -41,8 +49,14 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "7-11",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "target": "... one enemy you can see that is present on the scene."
         },
         {
@@ -51,8 +65,14 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "12-16",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "target": "... you and every ally present on the scene."
         },
         {
@@ -61,9 +81,16 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "17-20",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "target": "... every enemy present on the scene."
         }
-    ]
+    ],
+    "order": []
 }

@@ -1,7 +1,3 @@
-/* ==========================================
-   Auto-generated Icon CSS (Do not edit manually)
-   ========================================== */
-
 .ui-icon.svg-air {    mask-image: url('../icons/air.svg');    -webkit-mask-image: url('../icons/air.svg');}
 .ui-icon.svg-all-for-one {    mask-image: url('../icons/all-for-one.svg');    -webkit-mask-image: url('../icons/all-for-one.svg');}
 .ui-icon.svg-archive-research {    mask-image: url('../icons/archive-research.svg');    -webkit-mask-image: url('../icons/archive-research.svg');}
@@ -17,8 +13,10 @@
 .ui-icon.svg-bookmarklet {    mask-image: url('../icons/bookmarklet.svg');    -webkit-mask-image: url('../icons/bookmarklet.svg');}
 .ui-icon.svg-brain {    mask-image: url('../icons/brain.svg');    -webkit-mask-image: url('../icons/brain.svg');}
 .ui-icon.svg-brass-knuckles {    mask-image: url('../icons/brass-knuckles.svg');    -webkit-mask-image: url('../icons/brass-knuckles.svg');}
+.ui-icon.svg-broken-bone {    mask-image: url('../icons/broken-bone.svg');    -webkit-mask-image: url('../icons/broken-bone.svg');}
 .ui-icon.svg-bullseye {    mask-image: url('../icons/bullseye.svg');    -webkit-mask-image: url('../icons/bullseye.svg');}
 .ui-icon.svg-burning-meteor {    mask-image: url('../icons/burning-meteor.svg');    -webkit-mask-image: url('../icons/burning-meteor.svg');}
+.ui-icon.svg-burning-skull {    mask-image: url('../icons/burning-skull.svg');    -webkit-mask-image: url('../icons/burning-skull.svg');}
 .ui-icon.svg-caldera {    mask-image: url('../icons/caldera.svg');    -webkit-mask-image: url('../icons/caldera.svg');}
 .ui-icon.svg-camp-cooking-pot {    mask-image: url('../icons/camp-cooking-pot.svg');    -webkit-mask-image: url('../icons/camp-cooking-pot.svg');}
 .ui-icon.svg-check-mark {    mask-image: url('../icons/check-mark.svg');    -webkit-mask-image: url('../icons/check-mark.svg');}
@@ -64,6 +62,7 @@
 .ui-icon.svg-eye-target {    mask-image: url('../icons/eye-target.svg');    -webkit-mask-image: url('../icons/eye-target.svg');}
 .ui-icon.svg-eyepatch {    mask-image: url('../icons/eyepatch.svg');    -webkit-mask-image: url('../icons/eyepatch.svg');}
 .ui-icon.svg-fast-forward-button {    mask-image: url('../icons/fast-forward-button.svg');    -webkit-mask-image: url('../icons/fast-forward-button.svg');}
+.ui-icon.svg-fire-silhouette {    mask-image: url('../icons/fire-silhouette.svg');    -webkit-mask-image: url('../icons/fire-silhouette.svg');}
 .ui-icon.svg-fire {    mask-image: url('../icons/fire.svg');    -webkit-mask-image: url('../icons/fire.svg');}
 .ui-icon.svg-flame {    mask-image: url('../icons/flame.svg');    -webkit-mask-image: url('../icons/flame.svg');}
 .ui-icon.svg-flat-paw-print {    mask-image: url('../icons/flat-paw-print.svg');    -webkit-mask-image: url('../icons/flat-paw-print.svg');}
@@ -75,6 +74,7 @@
 .ui-icon.svg-great-pyramid {    mask-image: url('../icons/great-pyramid.svg');    -webkit-mask-image: url('../icons/great-pyramid.svg');}
 .ui-icon.svg-griffin-symbol {    mask-image: url('../icons/griffin-symbol.svg');    -webkit-mask-image: url('../icons/griffin-symbol.svg');}
 .ui-icon.svg-grim-reaper {    mask-image: url('../icons/grim-reaper.svg');    -webkit-mask-image: url('../icons/grim-reaper.svg');}
+.ui-icon.svg-hand-bandage {    mask-image: url('../icons/hand-bandage.svg');    -webkit-mask-image: url('../icons/hand-bandage.svg');}
 .ui-icon.svg-health-normal {    mask-image: url('../icons/health-normal.svg');    -webkit-mask-image: url('../icons/health-normal.svg');}
 .ui-icon.svg-heron {    mask-image: url('../icons/heron.svg');    -webkit-mask-image: url('../icons/heron.svg');}
 .ui-icon.svg-high-shot {    mask-image: url('../icons/high-shot.svg');    -webkit-mask-image: url('../icons/high-shot.svg');}
@@ -83,8 +83,11 @@
 .ui-icon.svg-hospital-cross {    mask-image: url('../icons/hospital-cross.svg');    -webkit-mask-image: url('../icons/hospital-cross.svg');}
 .ui-icon.svg-human-soul {    mask-image: url('../icons/human-soul.svg');    -webkit-mask-image: url('../icons/human-soul.svg');}
 .ui-icon.svg-ice {    mask-image: url('../icons/ice.svg');    -webkit-mask-image: url('../icons/ice.svg');}
+.ui-icon.svg-info {    mask-image: url('../icons/info.svg');    -webkit-mask-image: url('../icons/info.svg');}
 .ui-icon.svg-jasmine {    mask-image: url('../icons/jasmine.svg');    -webkit-mask-image: url('../icons/jasmine.svg');}
+.ui-icon.svg-kneeling {    mask-image: url('../icons/kneeling.svg');    -webkit-mask-image: url('../icons/kneeling.svg');}
 .ui-icon.svg-knife-fork {    mask-image: url('../icons/knife-fork.svg');    -webkit-mask-image: url('../icons/knife-fork.svg');}
+.ui-icon.svg-knockout {    mask-image: url('../icons/knockout.svg');    -webkit-mask-image: url('../icons/knockout.svg');}
 .ui-icon.svg-light {    mask-image: url('../icons/light.svg');    -webkit-mask-image: url('../icons/light.svg');}
 .ui-icon.svg-lightning-dissipation {    mask-image: url('../icons/lightning-dissipation.svg');    -webkit-mask-image: url('../icons/lightning-dissipation.svg');}
 .ui-icon.svg-lotus {    mask-image: url('../icons/lotus.svg');    -webkit-mask-image: url('../icons/lotus.svg');}
@@ -93,6 +96,7 @@
 .ui-icon.svg-mailed-fist {    mask-image: url('../icons/mailed-fist.svg');    -webkit-mask-image: url('../icons/mailed-fist.svg');}
 .ui-icon.svg-meat {    mask-image: url('../icons/meat.svg');    -webkit-mask-image: url('../icons/meat.svg');}
 .ui-icon.svg-microphone {    mask-image: url('../icons/microphone.svg');    -webkit-mask-image: url('../icons/microphone.svg');}
+.ui-icon.svg-minus {    mask-image: url('../icons/minus.svg');    -webkit-mask-image: url('../icons/minus.svg');}
 .ui-icon.svg-monster-grasp {    mask-image: url('../icons/monster-grasp.svg');    -webkit-mask-image: url('../icons/monster-grasp.svg');}
 .ui-icon.svg-music-spell {    mask-image: url('../icons/music-spell.svg');    -webkit-mask-image: url('../icons/music-spell.svg');}
 .ui-icon.svg-ninja-head {    mask-image: url('../icons/ninja-head.svg');    -webkit-mask-image: url('../icons/ninja-head.svg');}
@@ -107,11 +111,15 @@
 .ui-icon.svg-physical {    mask-image: url('../icons/physical.svg');    -webkit-mask-image: url('../icons/physical.svg');}
 .ui-icon.svg-pick-of-destiny {    mask-image: url('../icons/pick-of-destiny.svg');    -webkit-mask-image: url('../icons/pick-of-destiny.svg');}
 .ui-icon.svg-play-button {    mask-image: url('../icons/play-button.svg');    -webkit-mask-image: url('../icons/play-button.svg');}
+.ui-icon.svg-plus {    mask-image: url('../icons/plus.svg');    -webkit-mask-image: url('../icons/plus.svg');}
+.ui-icon.svg-poison-bottle {    mask-image: url('../icons/poison-bottle.svg');    -webkit-mask-image: url('../icons/poison-bottle.svg');}
+.ui-icon.svg-poison-gas {    mask-image: url('../icons/poison-gas.svg');    -webkit-mask-image: url('../icons/poison-gas.svg');}
 .ui-icon.svg-poison {    mask-image: url('../icons/poison.svg');    -webkit-mask-image: url('../icons/poison.svg');}
 .ui-icon.svg-processor {    mask-image: url('../icons/processor.svg');    -webkit-mask-image: url('../icons/processor.svg');}
 .ui-icon.svg-psychic-waves {    mask-image: url('../icons/psychic-waves.svg');    -webkit-mask-image: url('../icons/psychic-waves.svg');}
 .ui-icon.svg-pulse {    mask-image: url('../icons/pulse.svg');    -webkit-mask-image: url('../icons/pulse.svg');}
 .ui-icon.svg-pyromaniac {    mask-image: url('../icons/pyromaniac.svg');    -webkit-mask-image: url('../icons/pyromaniac.svg');}
+.ui-icon.svg-radioactive {    mask-image: url('../icons/radioactive.svg');    -webkit-mask-image: url('../icons/radioactive.svg');}
 .ui-icon.svg-raise-zombie {    mask-image: url('../icons/raise-zombie.svg');    -webkit-mask-image: url('../icons/raise-zombie.svg');}
 .ui-icon.svg-reticule {    mask-image: url('../icons/reticule.svg');    -webkit-mask-image: url('../icons/reticule.svg');}
 .ui-icon.svg-robot-golem {    mask-image: url('../icons/robot-golem.svg');    -webkit-mask-image: url('../icons/robot-golem.svg');}
@@ -128,15 +136,18 @@
 .ui-icon.svg-share {    mask-image: url('../icons/share.svg');    -webkit-mask-image: url('../icons/share.svg');}
 .ui-icon.svg-sheikah-eye {    mask-image: url('../icons/sheikah-eye.svg');    -webkit-mask-image: url('../icons/sheikah-eye.svg');}
 .ui-icon.svg-small-fire {    mask-image: url('../icons/small-fire.svg');    -webkit-mask-image: url('../icons/small-fire.svg');}
+.ui-icon.svg-snail {    mask-image: url('../icons/snail.svg');    -webkit-mask-image: url('../icons/snail.svg');}
 .ui-icon.svg-sonic-shout {    mask-image: url('../icons/sonic-shout.svg');    -webkit-mask-image: url('../icons/sonic-shout.svg');}
 .ui-icon.svg-spanner {    mask-image: url('../icons/spanner.svg');    -webkit-mask-image: url('../icons/spanner.svg');}
 .ui-icon.svg-spark-spirit {    mask-image: url('../icons/spark-spirit.svg');    -webkit-mask-image: url('../icons/spark-spirit.svg');}
 .ui-icon.svg-spiked-dragon-head {    mask-image: url('../icons/spiked-dragon-head.svg');    -webkit-mask-image: url('../icons/spiked-dragon-head.svg');}
+.ui-icon.svg-star-swirl {    mask-image: url('../icons/star-swirl.svg');    -webkit-mask-image: url('../icons/star-swirl.svg');}
 .ui-icon.svg-stone-block {    mask-image: url('../icons/stone-block.svg');    -webkit-mask-image: url('../icons/stone-block.svg');}
 .ui-icon.svg-sun {    mask-image: url('../icons/sun.svg');    -webkit-mask-image: url('../icons/sun.svg');}
 .ui-icon.svg-sword-altar {    mask-image: url('../icons/sword-altar.svg');    -webkit-mask-image: url('../icons/sword-altar.svg');}
 .ui-icon.svg-sword-in-stone {    mask-image: url('../icons/sword-in-stone.svg');    -webkit-mask-image: url('../icons/sword-in-stone.svg');}
 .ui-icon.svg-tornado {    mask-image: url('../icons/tornado.svg');    -webkit-mask-image: url('../icons/tornado.svg');}
+.ui-icon.svg-tortoise {    mask-image: url('../icons/tortoise.svg');    -webkit-mask-image: url('../icons/tortoise.svg');}
 .ui-icon.svg-treasure-map {    mask-image: url('../icons/treasure-map.svg');    -webkit-mask-image: url('../icons/treasure-map.svg');}
 .ui-icon.svg-triforce {    mask-image: url('../icons/triforce.svg');    -webkit-mask-image: url('../icons/triforce.svg');}
 .ui-icon.svg-triorb {    mask-image: url('../icons/triorb.svg');    -webkit-mask-image: url('../icons/triorb.svg');}

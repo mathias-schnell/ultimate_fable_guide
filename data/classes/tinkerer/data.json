@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "spanner",
+    "menu-icon": "spanner",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-tinkerer",
     "label": "Tinkerer",
     "sub-labels": [
@@ -33,11 +35,16 @@
             "description": "Once per conflict scene, if you are in Crisis, you may perform an additional action on your turn. This action must be the Inventory action.",
             "tags": [
                 "add-action",
+                "core",
                 "crisis",
-                "inventory"
+                "inventory",
+                "tinkerer"
             ],
             "class": "Tinkerer",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -47,10 +54,15 @@
             "description": "When you first acquire this Skill, choose a gadget type: alchemy, infusions or magitech (see next four pages). You gain its basic sub-labels. Whenever you take this Skill again, choose one option: you gain the basic sub-labels of a new gadget type; or you gain the advanced sub-labels of a gadget type whose basic sub-labels you already obtained; or you gain the superior sub-labels of a gadget type whose advanced sub-labels you already obtained.",
             "tags": [
                 "basic",
-                "skill"
+                "core",
+                "skill",
+                "tinkerer"
             ],
             "class": "Tinkerer",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -58,9 +70,17 @@
             "label": "Potion Rain",
             "slug": "classes-tinkerer-potion-rain",
             "description": "When you create a potion that restores a single creature\u2019s HP and/or MP, you may have it affect up to (SL) additional creatures. If you do, the potion only restores half the normal amount of HP and MP to each creature.",
-            "tags": [],
+            "tags": [
+                "core",
+                "hp",
+                "mp",
+                "tinkerer"
+            ],
             "class": "Tinkerer",
-            "max-sl": 2
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 2,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -69,10 +89,17 @@
             "slug": "classes-tinkerer-secret-formula",
             "description": "Magispheres and potions you create that restore HP and/or MP restore (SL \u00d7 5) additional HP and/or MP, respectively. Elemental shards, magispheres, and potions you create deal (SL) extra damage.",
             "tags": [
-                "elemental"
+                "core",
+                "elemental",
+                "hp",
+                "mp",
+                "tinkerer"
             ],
             "class": "Tinkerer",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -81,11 +108,17 @@
             "slug": "classes-tinkerer-visionary",
             "description": "When you work on a Project, up to (SL \u00d7 100) zenit of material costs are automatically paid; additionally, you generate an additional (SL) progress every day. If multiple characters with this Skill work on the same Project, the effects will be cumulative.",
             "tags": [
+                "core",
                 "skill",
+                "tinkerer",
                 "zenit"
             ],
             "class": "Tinkerer",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

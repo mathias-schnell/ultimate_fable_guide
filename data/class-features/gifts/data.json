@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-gifts",
     "label": "Gifts",
     "sub-labels": [],
@@ -30,9 +32,13 @@
             "tags": [
                 "air",
                 "bolt",
-                "clock"
+                "clock",
+                "gift"
             ],
-            "event": "When you deal damage"
+            "contract-icon": "minus",
+            "event": "When you deal damage",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -40,8 +46,15 @@
             "label": "Clairvoyance",
             "slug": "class-features-gifts-clairvoyance",
             "description": "Ask the Game Master a single question about that NPC, which the Game Master must answer truthfully. Then, describe what sensation revealed this information to you. You may use this gift only once on each NPC.",
-            "tags": [],
-            "event": "When an NPC becomes your focus or when you create a Bond towards an NPC"
+            "tags": [
+                "bond",
+                "focus",
+                "gift"
+            ],
+            "contract-icon": "minus",
+            "event": "When an NPC becomes your focus or when you create a Bond towards an NPC",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -53,9 +66,13 @@
                 "clock",
                 "earth",
                 "flying",
+                "gift",
                 "physical"
             ],
-            "event": "When you deal damage"
+            "contract-icon": "minus",
+            "event": "When you deal damage",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -67,9 +84,13 @@
                 "clock",
                 "crisis",
                 "focus",
+                "gift",
                 "hp"
             ],
-            "event": "When you cause one or more enemies to lose HP"
+            "contract-icon": "minus",
+            "event": "When you cause one or more enemies to lose HP",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -80,23 +101,32 @@
             "tags": [
                 "clock",
                 "dark",
+                "gift",
                 "light"
             ],
-            "event": "When you deal damage"
+            "contract-icon": "minus",
+            "event": "When you deal damage",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Psychic Backlash",
             "slug": "class-features-gifts-psychic-backlash",
-            "description": "That enemy loses an amount of Mind Points equal to (5 + (the number of filled sections in your Brainwave Clock, multiplied by 5)). Then, choose one option: that enemy suffers dazed, or that enemy suffers shaken.",
+            "description": "That enemy loses an amount of Mind Points equal to (5 + (the number of filled sections in your Brainwave Clock, multiplied by 5)). Then, choose one option: that enemy suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), or that enemy suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
             "tags": [
                 "clock",
                 "dazed",
+                "gift",
+                "hp",
                 "mp",
                 "shaken"
             ],
-            "event": "After an enemy succeeds on an Opposed Check against you or causes you to lose Hit Points"
+            "contract-icon": "minus",
+            "event": "After an enemy succeeds on an Opposed Check against you or causes you to lose Hit Points",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -107,25 +137,35 @@
             "tags": [
                 "clock",
                 "defense",
-                "magic-defense"
+                "gift",
+                "magic-defense",
+                "shield"
             ],
-            "event": "After an enemy you can see performs an Accuracy Check or a Magic Check"
+            "contract-icon": "minus",
+            "event": "After an enemy you can see performs an Accuracy Check or a Magic Check",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Reassuring Presence",
             "slug": "class-features-gifts-reassuring-presence",
-            "description": "That ally recovers an amount of Mind Points equal to (10 + (the number of filled sections in your Brainwave Clock, multiplied by 5)). If that ally is your focus, they recover from a single status effect of their choice out of dazed, enraged, and shaken.",
+            "description": "That ally recovers an amount of Mind Points equal to (10 + (the number of filled sections in your Brainwave Clock, multiplied by 5)). If that ally is your focus, they recover from a single status effect of their choice out of dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>), and shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
             "tags": [
                 "clock",
                 "dazed",
                 "enraged",
                 "focus",
+                "gift",
+                "guard",
                 "mp",
                 "shaken"
             ],
-            "event": "After you cover an ally with the Guard action"
+            "contract-icon": "minus",
+            "event": "After you cover an ally with the Guard action",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -136,9 +176,14 @@
             "tags": [
                 "clock",
                 "fire",
+                "gift",
                 "ice"
             ],
-            "event": "When you deal damage"
+            "contract-icon": "minus",
+            "event": "When you deal damage",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

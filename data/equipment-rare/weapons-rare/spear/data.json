@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-rare-weapons-rare-spear",
     "label": "Spears",
     "sub-labels": [],
@@ -33,274 +35,387 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Dragontongue <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Dragontongue <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-dragontongue",
             "description": "Two-handed \u2022 Melee \u2022 Attacks with this weapon target Magic Defense.",
             "tags": [
                 "defense",
+                "equipment",
+                "fire",
                 "magic-defense",
                 "melee",
+                "rare",
+                "spear",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "500 z",
             "damage": "\u3010HR + 12\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Rocinante <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Rocinante <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-rocinante",
             "description": "One-handed \u2022 Melee \u2022 This weapon deals 1 extra damage per status effect you have.",
             "tags": [
+                "equipment",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
+                "spear",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "500 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Serpent Spear <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Serpent Spear <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-serpent-spear",
             "description": "Two-handed \u2022 Melee \u2022 Damage dealt by this weapon ignores Resistances.",
             "tags": [
+                "equipment",
                 "melee",
+                "physical",
+                "rare",
+                "spear",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "800 z",
             "damage": "\u3010HR + 16\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Halberd <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Halberd <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-halberd",
             "description": "Two-handed \u2022 Melee \u2022 You gain a +1 bonus to Defense.",
             "tags": [
                 "defense",
+                "equipment",
                 "melee",
+                "physical",
+                "rare",
+                "spear",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1000 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Narwhalhorn <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Narwhalhorn <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-narwhalhorn",
             "description": "One-handed \u2022 Melee \u2022 You gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.",
             "tags": [
+                "equipment",
                 "ice",
                 "melee",
                 "one-handed",
-                "resistance"
+                "rare",
+                "resistance",
+                "spear"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1200 z",
             "damage": "\u3010HR + 12\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Brave Glaive <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Brave Glaive <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-brave-glaive",
             "description": "Two-handed \u2022 Melee \u2022 As long as you have at least three Bonds of loyalty or affection, you gain a +1 bonus to Defense and Magic Defense.",
             "tags": [
                 "defense",
+                "earth",
+                "equipment",
                 "magic-defense",
                 "melee",
+                "rare",
+                "spear",
                 "two-handed"
             ],
             "accuracy": "\u3010MIG + WLP\u3011",
+            "contract-icon": "minus",
             "cost": "1300 z",
             "damage": "\u3010HR + 12\u3011 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Morrigan <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Morrigan <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-morrigan",
             "description": "Two-handed \u2022 Melee \u2022 When you hit one or more creatures with this weapon, you may recover 10 Mind Points.",
             "tags": [
+                "dark",
+                "equipment",
                 "melee",
                 "mp",
+                "rare",
+                "spear",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1400 z",
             "damage": "\u3010HR + 12\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Gae Bolg <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Gae Bolg <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-gae-bolg",
             "description": "Two-handed \u2022 Melee \u2022 If you roll a critical success on an Accuracy Check with this weapon, you may spend that opportunity to deal 10 extra damage.",
             "tags": [
                 "critical",
+                "equipment",
                 "melee",
+                "physical",
+                "rare",
+                "spear",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1800 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Longinus <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Longinus <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-longinus",
-            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers weak.",
+            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
             "tags": [
+                "equipment",
                 "melee",
+                "physical",
+                "rare",
+                "spear",
                 "two-handed",
                 "weak",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "2000 z",
             "damage": "\u3010HR + 16\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Nine-teeth Rake <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Nine-teeth Rake <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-nine-teeth-rake",
             "description": "Two-handed \u2022 Melee \u2022 You Absorb poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage.",
             "tags": [
+                "equipment",
                 "melee",
                 "poison",
+                "rare",
+                "spear",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "2500 z",
             "damage": "\u3010HR + 16\u3011 poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Gungnir <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Gungnir <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-gungnir",
             "description": "Two-handed \u2022 Melee \u2022 You gain Immunity to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.",
             "tags": [
+                "equipment",
                 "fire",
                 "ice",
                 "immunity",
+                "light",
                 "melee",
+                "rare",
+                "spear",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "3000 z",
             "damage": "\u3010HR + 16\u3011 light (<i class=\"ui-icon elem-light svg-sun\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Achilles <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Achilles <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-achilles",
             "description": "One-handed \u2022 Melee \u2022 As long as your current Hit Points are equal to or greater than your maximum Hit Points, you are immune to all status effects.",
             "tags": [
+                "equipment",
                 "hp",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "physical",
+                "rare",
+                "spear"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1000 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Grim Waltz <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Grim Waltz <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-grim-waltz",
             "description": "Two-handed \u2022 Melee \u2022 After you reduce a creature\u2019s Hit Points to 0 with this weapon, you may perform a dance with a duration of \u201cInstantaneous\u201d among those you have learned; the MP cost of a dance performed this way can never be lower than 10.",
             "tags": [
+                "dance",
+                "equipment",
                 "hp",
                 "melee",
+                "mp",
+                "physical",
+                "rare",
+                "spear",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1200 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Memorialis <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Memorialis <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-memorialis",
             "description": "Two-handed \u2022 Melee \u2022 When you use the Ripples Skill, you recover 5 Mind Points.",
             "tags": [
+                "equipment",
                 "melee",
                 "mp",
+                "physical",
+                "rare",
                 "skill",
+                "spear",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "700 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Giant Fork <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Giant Fork <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-giant-fork",
             "description": "Two-handed \u2022 Melee \u2022 When you use this weapon with the Knife and Fork Skill, you may add the High Roll to the attack\u2019s damage (you don\u2019t have to treat it as being equal to 0).",
             "tags": [
                 "attack",
+                "equipment",
                 "melee",
+                "physical",
+                "rare",
                 "skill",
+                "spear",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1000 z",
             "damage": "\u3010HR + 16\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Ignition Spear <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Ignition Spear <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-ignition-spear",
             "description": "Two-handed \u2022 Melee \u2022 When you use the Compression Tech Skill to summon your personal vehicle, you can pay 10 Mind Points to do so instead of the normal cost in Inventory Points.",
             "tags": [
+                "equipment",
+                "fire",
                 "inventory",
                 "ip",
                 "melee",
                 "mp",
+                "rare",
                 "skill",
+                "spear",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1000 z",
             "damage": "\u3010HR + 16\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

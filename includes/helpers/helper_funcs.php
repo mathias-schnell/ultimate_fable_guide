@@ -43,7 +43,9 @@ function get_menu(array $nodes = [], int $level = 1, array $item_order = []): st
                 $is_category = $nodes[$key]['type'] === 'category';
                 $label = $nodes[$key]['label'];
                 $slug = $nodes[$key]['slug'];
-                $icon_file = $nodes[$key]['icon'];
+                $expand_icon = $nodes[$key]['expand-icon'];
+                $contract_icon = $nodes[$key]['contract-icon'];
+                $menu_icon = $nodes[$key]['menu-icon'];
                 $always_expand = $nodes[$key]['always-expand'];
                 $is_container = $nodes[$key]['is-container'];
                 $show_headers = $nodes[$key]['show-headers'];
@@ -53,11 +55,12 @@ function get_menu(array $nodes = [], int $level = 1, array $item_order = []): st
                     <div class="menu-header">
                         <button type="button" class="menu-toggle" aria-controls="<?= $slug ?>" aria-expanded="false" <?= $always_expand ? "style='display:none;' disabled='disabled'" : ''; ?>>
                             <?php if(!$always_expand):?>
-                                <span class="menu-icon ui-icon active svg-expand"></span>
+                                <span class="expand-contract-icon ui-icon active svg-<?= $expand_icon; ?>" data-expand-icon="<?= $expand_icon; ?>" data-contract-icon="<?= $contract_icon; ?>"></span>
+                                <span class="ui-icon inactive svg-<?= $contract_icon ?>"></span>
                             <?php endif; ?>
                             <span class="menu-label"><?php echo $label; ?></span>
-                            <?php if (!empty($icon_file)): ?>
-                                <span class="menu-icon ui-icon <?= "svg-" . str_replace(".svg", "", $icon_file); ?>"></span>
+                            <?php if (!empty($menu_icon)): ?>
+                                <span class="menu-icon ui-icon svg-<?= $menu_icon; ?>"></span>
                             <?php endif; ?>
                         </button>
                     </div>
@@ -68,11 +71,12 @@ function get_menu(array $nodes = [], int $level = 1, array $item_order = []): st
                 <?php else: ?>
                     <button type="button" class="menu-toggle" aria-controls="<?= $slug ?>-group" aria-expanded="false" <?= $always_expand ? "style='display:none;' disabled='disabled'" : ''; ?>>
                         <?php if(!$always_expand):?>
-                                <span class="menu-icon ui-icon active svg-expand"></span>
+                                <span class="expand-contract-icon ui-icon active svg-<?= $expand_icon; ?>" data-expand-icon="<?= $expand_icon; ?>" data-contract-icon="<?= $contract_icon; ?>"></span>
+                                <span class="ui-icon inactive svg-<?= $contract_icon ?>"></span>
                             <?php endif; ?>
                         <span class="menu-label"><?php echo $label; ?></span>
-                        <?php if (!empty($icon_file)): ?>
-                            <span class="menu-icon ui-icon <?= "svg-" . str_replace(".svg", "", $icon_file); ?>"></span>
+                        <?php if (!empty($menu_icon)): ?>
+                            <span class="menu-icon ui-icon svg-<?= $menu_icon; ?>"></span>
                         <?php endif; ?>
                     </button>
 
@@ -125,9 +129,7 @@ function render_group_header(array $data, string $key): void {
     if(!empty($cols)):
     ?>
     <div class="<?= $slug ?>-list-header"<?= $grid_style ?>>
-        <div>
-            <button class="<?= $slug ?>-multitoggle" type="button" data-key="<?= $key ?>" aria-expanded="false" aria-controls="article.<?= $slug ?>"></button>
-        </div>
+        <div></div>
         <?php foreach ($cols as $col): ?>
             <div class="<?= $slug ?>-col-sort" data-sort-by=<?= $slug . "-" . $col['key'] ?>><?= htmlspecialchars($col['label']) ?></div>
         <?php endforeach; ?>
@@ -143,13 +145,16 @@ function render_row_article(array $item, array $combined_tags, array $cols, stri
     $row_id = "{$slug}-row";
     $desc_id = "{$slug}-description";
     $tags_str = htmlspecialchars(implode(', ', $combined_tags));
+    $expand_icon = $item['expand-icon'];
+    $contract_icon = $item['contract-icon'];
     ?>
     <article id="<?= $row_id ?>" class="<?= $slug ?>-row" data-slug="<?= $slug ?>" data-tags="<?= $tags_str ?>">
         <div class="<?= $slug ?>-row" <?= $grid_style ?>>
             <div class="<?= $slug ?>-expand">
                 <?php if(!empty($item['description'])): ?>
                     <button class="<?= $slug ?>-toggle" type="button" aria-expanded="false" aria-controls="<?= $desc_id ?>">
-                        <span class="menu-icon ui-icon active svg-play-button"></span>
+                        <span class="expand-contract-icon ui-icon active svg-<?= $expand_icon ?>" data-expand-icon="<?= $expand_icon ?>" data-contract-icon="<?= $contract_icon ?>"></span>
+                        <span class="ui-icon inactive svg-<?= $contract_icon ?>"></span>
                     </button>
                 <?php endif; ?>
             </div>

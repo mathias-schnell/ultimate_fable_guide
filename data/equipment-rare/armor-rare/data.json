@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-rare-armor-rare",
     "label": "Armor",
     "sub-labels": [],
@@ -38,30 +40,46 @@
             "is-container": true,
             "label": "Slimy Jacket",
             "slug": "equipment-rare-armor-rare-slimy-jacket",
-            "description": "You are immune to poisoned.",
+            "description": "You are immune to poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
             "tags": [
-                "poisoned"
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "poisoned",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "600 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-1",
             "m-defense": "INS size +1",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Fox Garb",
             "slug": "equipment-rare-armor-rare-fox-garb",
-            "description": "You are immune to slow.",
+            "description": "You are immune to slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
             "tags": [
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "rare",
                 "slow"
             ],
+            "contract-icon": "minus",
             "cost": "650 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "INS size +1",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -70,13 +88,21 @@
             "slug": "equipment-rare-armor-rare-shadow-tunic",
             "description": "You gain a +4 bonus to your Initiative modifier (already included).",
             "tags": [
-                "initiative"
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "initiative",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "650 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "+4",
             "m-defense": "INS size +1",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -85,14 +111,23 @@
             "slug": "equipment-rare-armor-rare-desperado-coat",
             "description": "When you use the Barrage Skill (see Sharpshooter Class, page 205), the MP cost is halved.",
             "tags": [
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "mp",
+                "rare",
                 "sharpshooter",
                 "skill"
             ],
+            "contract-icon": "minus",
             "cost": "750 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-1",
             "m-defense": "INS size +1",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -101,13 +136,21 @@
             "slug": "equipment-rare-armor-rare-butler-uniform",
             "description": "When a potion or magisphere you created restores Hit Points, it restores 5 additional Hit Points.",
             "tags": [
-                "hp"
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "hp",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-2",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -116,13 +159,21 @@
             "slug": "equipment-rare-armor-rare-maid-uniform",
             "description": "When a potion or magisphere you created restores Mind Points, it restores 5 additional Mind Points.",
             "tags": [
-                "mp"
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "mp",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-2",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -130,57 +181,90 @@
             "label": "Bandit Jacket",
             "slug": "equipment-rare-armor-rare-bandit-jacket",
             "description": "You gain a +1 bonus to Accuracy Checks with daggers.",
-            "tags": [],
+            "tags": [
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "rare"
+            ],
+            "contract-icon": "minus",
             "cost": "900 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-1",
             "m-defense": "INS size +1",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Crystal Plate <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Crystal Plate <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-crystal-plate",
             "description": "You gain Resistance to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage.",
             "tags": [
+                "INS",
+                "armor",
                 "dark",
+                "equipment",
+                "rare",
                 "resistance"
             ],
+            "contract-icon": "minus",
             "cost": "900 z",
             "defense": "11",
+            "expand-icon": "plus",
             "initiative": "-3",
             "m-defense": "INS size",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Valkyrie Wings <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Valkyrie Wings <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-valkyrie-wings",
             "description": "When you cast the Soaring Strike spell (see Elementalist Class, page 189), the MP cost is halved.",
             "tags": [
+                "INS",
+                "armor",
                 "elementalist",
+                "equipment",
+                "mp",
+                "rare",
                 "spell"
             ],
+            "contract-icon": "minus",
             "cost": "900 z",
             "defense": "11",
+            "expand-icon": "plus",
             "initiative": "-3",
             "m-defense": "INS size +1",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Armor of Heroes <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Armor of Heroes <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-armor-of-heroes",
             "description": "Critical successes rolled on Accuracy Checks and Magic Checks for attacks and offensive spells (\ud83d\uddf2) that include you among their targets do not generate opportunities.",
-            "tags": [],
+            "tags": [
+                "INS",
+                "armor",
+                "critical",
+                "equipment",
+                "rare"
+            ],
+            "contract-icon": "minus",
             "cost": "1000 z",
             "defense": "12",
+            "expand-icon": "plus",
             "initiative": "-4",
             "m-defense": "INS size",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -189,13 +273,21 @@
             "slug": "equipment-rare-armor-rare-black-belt",
             "description": "Your attacks with brawling weapons deal 5 extra damage.",
             "tags": [
-                "brawling"
+                "DEX",
+                "INS",
+                "armor",
+                "brawling",
+                "equipment",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "1000 z",
             "defense": "DEX size",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "INS size",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -204,13 +296,21 @@
             "slug": "equipment-rare-armor-rare-meditation-robe",
             "description": "Whenever you recover Mind Points, you recover 5 additional Mind Points.",
             "tags": [
-                "mp"
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "mp",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "1000 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-2",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -218,93 +318,138 @@
             "label": "Archmage Robe",
             "slug": "equipment-rare-armor-rare-archmage-robe",
             "description": "You gain a +1 bonus to your Magic Checks.",
-            "tags": [],
+            "tags": [
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "rare"
+            ],
+            "contract-icon": "minus",
             "cost": "1200 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-2",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Automaton Suit <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Automaton Suit <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-automaton-suit",
             "description": "You gain Immunity to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) and poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage, but Vulnerability to bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage.",
             "tags": [
+                "INS",
+                "armor",
                 "bolt",
                 "earth",
+                "equipment",
                 "immunity",
                 "poison",
+                "rare",
                 "vulnerability"
             ],
+            "contract-icon": "minus",
             "cost": "1250 z",
             "defense": "11",
+            "expand-icon": "plus",
             "initiative": "-3",
             "m-defense": "INS size +1",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Adamantorso <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Adamantorso <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-adamantorso",
             "description": "You gain Resistance to physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage.",
             "tags": [
+                "INS",
+                "armor",
+                "equipment",
                 "physical",
+                "rare",
                 "resistance"
             ],
+            "contract-icon": "minus",
             "cost": "1300 z",
             "defense": "12",
+            "expand-icon": "plus",
             "initiative": "-4",
             "m-defense": "INS size",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Ardent Yoroi <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Ardent Yoroi <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-ardent-yoroi",
             "description": "You gain a +1 bonus to your Accuracy Checks.",
-            "tags": [],
+            "tags": [
+                "INS",
+                "armor",
+                "equipment",
+                "rare"
+            ],
+            "contract-icon": "minus",
             "cost": "1300 z",
             "defense": "12",
+            "expand-icon": "plus",
             "initiative": "-4",
             "m-defense": "INS size",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Demongrin <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Demongrin <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-demongrin",
             "description": "After a creature hits you with a melee attack, you deal 5 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to that creature (after the attack has been resolved).",
             "tags": [
+                "INS",
+                "armor",
                 "attack",
+                "equipment",
                 "fire",
-                "melee"
+                "melee",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "1500 z",
             "defense": "12",
+            "expand-icon": "plus",
             "initiative": "-4",
             "m-defense": "INS size",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Bio Plate <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Bio Plate <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-bio-plate",
             "description": "You gain Immunity to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage.",
             "tags": [
+                "INS",
+                "armor",
+                "equipment",
                 "immunity",
-                "poison"
+                "poison",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "1700 z",
             "defense": "11",
+            "expand-icon": "plus",
             "initiative": "-3",
             "m-defense": "INS size",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -313,13 +458,21 @@
             "slug": "equipment-rare-armor-rare-white-tunic",
             "description": "Spells you cast whose effects restore Hit Points restore 5 additional Hit Points.",
             "tags": [
-                "hp"
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "hp",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "1700 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-2",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -327,12 +480,21 @@
             "label": "Granny Vest",
             "slug": "equipment-rare-armor-rare-granny-vest",
             "description": "You treat your Willpower as if it were one die size higher (up to a maximum of d12).",
-            "tags": [],
+            "tags": [
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "rare"
+            ],
+            "contract-icon": "minus",
             "cost": "2000 z",
             "defense": "DEX size",
+            "expand-icon": "plus",
             "initiative": "-1",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -340,12 +502,21 @@
             "label": "Black Tunic",
             "slug": "equipment-rare-armor-rare-black-tunic",
             "description": "Spells you cast deal 5 extra damage.",
-            "tags": [],
+            "tags": [
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "rare"
+            ],
+            "contract-icon": "minus",
             "cost": "2200 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-2",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -354,14 +525,22 @@
             "slug": "equipment-rare-armor-rare-red-tunic",
             "description": "You are treated as having an arcane weapon equipped for the sake of Skills that require it.",
             "tags": [
+                "DEX",
+                "INS",
                 "arcane",
+                "armor",
+                "equipment",
+                "rare",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "cost": "2500 z",
             "defense": "DEX size",
+            "expand-icon": "plus",
             "initiative": "-1",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -369,12 +548,22 @@
             "label": "Dancing Dress",
             "slug": "equipment-rare-armor-rare-dancing-dress",
             "description": "When you perform a dance with a duration of \u201cUntil the start of your next turn\u201d, you may recover from a single status effect of your choice.",
-            "tags": [],
+            "tags": [
+                "DEX",
+                "INS",
+                "armor",
+                "dance",
+                "equipment",
+                "rare"
+            ],
+            "contract-icon": "minus",
             "cost": "1000 z",
             "defense": "DEX size",
+            "expand-icon": "plus",
             "initiative": "-1",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -383,51 +572,74 @@
             "slug": "equipment-rare-armor-rare-elemental-robe",
             "description": "While you are in Crisis, spells you cast that deal air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), ice (<i class=\"ui-icon elem-ice svg-ice\"></i>), or earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage deal 5 extra damage.",
             "tags": [
+                "DEX",
+                "INS",
                 "air",
+                "armor",
                 "bolt",
                 "crisis",
                 "earth",
+                "elemental",
+                "equipment",
                 "fire",
-                "ice"
+                "ice",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "1800 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-2",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Orichalcum <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Orichalcum <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-orichalcum",
             "description": "As long as you have this armor equipped, increase your maximum HP by 10. This armor cannot be destroyed.",
             "tags": [
-                "armor"
+                "INS",
+                "armor",
+                "equipment",
+                "hp",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "2500 z",
             "defense": "12",
+            "expand-icon": "plus",
             "initiative": "-4",
             "m-defense": "INS size",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Woolly Cuirass <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Woolly Cuirass <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-woolly-cuirass",
-            "description": "As long as you\u2019re not in Crisis, you gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage and are immune to weak.",
+            "description": "As long as you\u2019re not in Crisis, you gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage and are immune to weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
             "tags": [
+                "INS",
+                "armor",
                 "crisis",
+                "equipment",
                 "ice",
+                "rare",
                 "resistance",
                 "weak"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "11",
+            "expand-icon": "plus",
             "initiative": "-3",
             "m-defense": "INS size",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -436,13 +648,21 @@
             "slug": "equipment-rare-armor-rare-engineer-jacket",
             "description": "When you use an elemental shard, you may deal its damage to each of up to three creatures you can see. Additionally, when you deal damage with an elemental shard, you deal 5 extra damage.",
             "tags": [
-                "elemental"
+                "DEX",
+                "INS",
+                "armor",
+                "elemental",
+                "equipment",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "1000 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-1",
             "m-defense": "INS size +1",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -451,15 +671,23 @@
             "slug": "equipment-rare-armor-rare-noble-dress",
             "description": "When an ally who is able to see you causes you to recover Hit Points, if you are in Crisis, that ally recovers 5 Mind Points.",
             "tags": [
+                "DEX",
+                "INS",
+                "armor",
                 "crisis",
+                "equipment",
                 "hp",
-                "mp"
+                "mp",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "1600 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "INS size +1",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -468,13 +696,21 @@
             "slug": "equipment-rare-armor-rare-apothecary-robes",
             "description": "When you use the Potion Rain Skill, the restoring effect is not halved.",
             "tags": [
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "rare",
                 "skill"
             ],
+            "contract-icon": "minus",
             "cost": "1800 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-2",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -483,14 +719,22 @@
             "slug": "equipment-rare-armor-rare-fairy-tunic",
             "description": "As long as you are affected by one or more spells with a duration of \u201cScene\u201d, you gain a +2 bonus to Magic Defense.",
             "tags": [
+                "DEX",
+                "INS",
+                "armor",
                 "defense",
-                "magic-defense"
+                "equipment",
+                "magic-defense",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "2000 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-2",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -499,14 +743,22 @@
             "slug": "equipment-rare-armor-rare-misdirector",
             "description": "As long as you have no shield equipped, you are Resistant to physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage.",
             "tags": [
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
                 "physical",
+                "rare",
                 "shield"
             ],
+            "contract-icon": "minus",
             "cost": "1000 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-1",
             "m-defense": "INS size +1",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -515,13 +767,21 @@
             "slug": "equipment-rare-armor-rare-lab-coat",
             "description": "If you have acquired the Secret Formula Skill, treat your Skill Level in it as if it were increased by 2 (up to a maximum of SL 7).",
             "tags": [
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
+                "rare",
                 "skill"
             ],
+            "contract-icon": "minus",
             "cost": "1500 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "-2",
             "m-defense": "INS size +2",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -530,30 +790,46 @@
             "slug": "equipment-rare-armor-rare-biocloak",
             "description": "When you use a Skill that requires you to spend Hit Points, like Ecdysis or Vismagus, you halve that cost.",
             "tags": [
+                "DEX",
+                "INS",
+                "armor",
+                "equipment",
                 "hp",
+                "rare",
                 "skill"
             ],
+            "contract-icon": "minus",
             "cost": "1800 z",
             "defense": "DEX size +1",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "INS size +1",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Psyskeleton <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Psyskeleton <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-psyskeleton",
             "description": "After you perform the Guard action, if your Brainwave Clock is full, you can erase it completely.",
             "tags": [
+                "INS",
+                "armor",
                 "clock",
-                "guard"
+                "equipment",
+                "guard",
+                "rare"
             ],
+            "contract-icon": "minus",
             "cost": "2000 z",
             "defense": "11",
+            "expand-icon": "plus",
             "initiative": "-3",
             "m-defense": "INS size +1",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

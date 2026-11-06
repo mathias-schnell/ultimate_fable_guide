@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-gadgets-alchemy-mix",
     "label": "",
     "sub-labels": [],
@@ -33,9 +35,16 @@
             "label": "Basic",
             "slug": "class-features-gadgets-alchemy-mix-basic",
             "description": "",
-            "tags": [],
+            "tags": [
+                "basic",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "effect": "Roll two d20s and assign one to target and one to effect.",
-            "ip-cost": "3"
+            "expand-icon": "plus",
+            "ip-cost": "3",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -43,9 +52,15 @@
             "label": "Advanced",
             "slug": "class-features-gadgets-alchemy-mix-advanced",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "effect": "Roll three d20s and assign one to target and one to effect.",
-            "ip-cost": "4"
+            "expand-icon": "plus",
+            "ip-cost": "4",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -53,9 +68,16 @@
             "label": "Superior",
             "slug": "class-features-gadgets-alchemy-mix-superior",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "effect": "Roll four d20s and assign one to target and one to effect.",
-            "ip-cost": "5"
+            "expand-icon": "plus",
+            "ip-cost": "5",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

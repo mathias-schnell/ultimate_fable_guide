@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-gadgets-infusions-advanced",
     "label": "",
     "sub-labels": [
@@ -33,9 +35,19 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "air",
+                "attack",
+                "core",
+                "inventory",
+                "ip",
+                "tinkerer"
+            ],
+            "contract-icon": "minus",
             "effect": "The attack deals 5 extra damage, and its damage becomes air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>).",
-            "infusion": "Cyclone"
+            "expand-icon": "plus",
+            "infusion": "Cyclone",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -43,9 +55,19 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "attack",
+                "core",
+                "inventory",
+                "ip",
+                "light",
+                "tinkerer"
+            ],
+            "contract-icon": "minus",
             "effect": "The attack deals 5 extra damage, and its damage becomes light (<i class=\"ui-icon elem-light svg-sun\"></i>).",
-            "infusion": "Exorcism"
+            "expand-icon": "plus",
+            "infusion": "Exorcism",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -53,9 +75,19 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "attack",
+                "core",
+                "earth",
+                "inventory",
+                "ip",
+                "tinkerer"
+            ],
+            "contract-icon": "minus",
             "effect": "The attack deals 5 extra damage, and its damage becomes earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>).",
-            "infusion": "Seismic"
+            "expand-icon": "plus",
+            "infusion": "Seismic",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -63,9 +95,20 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "attack",
+                "core",
+                "dark",
+                "inventory",
+                "ip",
+                "tinkerer"
+            ],
+            "contract-icon": "minus",
             "effect": "The attack deals 5 extra damage, and its damage becomes dark (<i class=\"ui-icon elem-dark svg-dark\"></i>).",
-            "infusion": "Shadow"
+            "expand-icon": "plus",
+            "infusion": "Shadow",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

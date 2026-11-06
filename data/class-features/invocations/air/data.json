@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-invocations-air",
     "label": "",
     "sub-labels": [
@@ -31,8 +33,15 @@
             "label": "Aero Blast",
             "slug": "class-features-invocations-air-aero-blast",
             "description": "",
-            "tags": [],
-            "effect": "You deal 20 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage to the target."
+            "tags": [
+                "air",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "You deal 20 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage to the target.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -40,8 +49,17 @@
             "label": "Aero Hex",
             "slug": "class-features-invocations-air-aero-hex",
             "description": "",
-            "tags": [],
-            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) and fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage."
+            "tags": [
+                "air",
+                "bolt",
+                "fire",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) and fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -49,8 +67,15 @@
             "label": "Breeze",
             "slug": "class-features-invocations-air-breeze",
             "description": "",
-            "tags": [],
-            "effect": "The target recovers 30 Hit Points."
+            "tags": [
+                "air",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "The target recovers 30 Hit Points.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -58,8 +83,17 @@
             "label": "Twister",
             "slug": "class-features-invocations-air-twister",
             "description": "",
-            "tags": [],
-            "effect": "You deal 10 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage to the target, and they suffer dazed."
+            "tags": [
+                "air",
+                "dazed",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "You deal 10 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage to the target, and they suffer dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

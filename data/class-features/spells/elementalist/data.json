@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-spells-elementalist",
     "label": "Elementalist",
     "sub-labels": [],
@@ -34,13 +36,19 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Boulder <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Boulder <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-boulder",
             "description": "You summon a colossal block of stone and send it straight towards your enemy. You deal (HR + 25) earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage to the target; this damage ignores Resistances.",
             "tags": [
-                "earth"
+                "core",
+                "earth",
+                "elementalist",
+                "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "20",
             "offensive": true,
             "target": "One creature"
@@ -54,14 +62,20 @@
             "tags": [
                 "air",
                 "bolt",
+                "core",
                 "earth",
+                "elemental",
+                "elementalist",
                 "fire",
                 "fury",
                 "ice",
                 "resistance",
                 "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "5 \u00d7 T",
             "offensive": false,
             "target": "Up to three creatures"
@@ -76,15 +90,20 @@
                 "air",
                 "attack",
                 "bolt",
+                "core",
                 "earth",
                 "elemental",
+                "elementalist",
                 "fire",
                 "free-attack",
                 "ice",
                 "spell",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10",
             "offensive": false,
             "target": "One equipped weapon"
@@ -92,13 +111,19 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Flare <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Flare <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-flare",
             "description": "You channel a single ray of fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) towards your foe, its temperature so high that it will pierce through most defenses. You deal (HR + 25) fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to the target; this damage ignores Resistances.",
             "tags": [
-                "fire"
+                "core",
+                "elementalist",
+                "fire",
+                "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "20",
             "offensive": true,
             "target": "One creature"
@@ -106,15 +131,20 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Fulgur <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Fulgur <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-fulgur",
-            "description": "You weave electricity into a wave of crackling bolts. You deal (HR + 15) bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers dazed.",
+            "description": "You weave electricity into a wave of crackling bolts. You deal (HR + 15) bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
             "tags": [
                 "bolt",
+                "core",
                 "dazed",
+                "elementalist",
                 "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10 \u00d7 T",
             "offensive": true,
             "target": "Up to three creatures"
@@ -122,15 +152,20 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Glacies <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Glacies <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-glacies",
-            "description": "You coat your foes under a thick layer of frost. You deal (HR + 15) ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers slow.",
+            "description": "You coat your foes under a thick layer of frost. You deal (HR + 15) ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
             "tags": [
+                "core",
+                "elementalist",
                 "ice",
                 "slow",
                 "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10 \u00d7 T",
             "offensive": true,
             "target": "Up to three creatures"
@@ -138,13 +173,20 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Iceberg <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Iceberg <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-iceberg",
             "description": "A pillar of ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) magic envelops your foe, dropping their temperature to critical levels. You deal (HR + 25) ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to the target; this damage ignores Resistances.",
             "tags": [
-                "ice"
+                "core",
+                "critical",
+                "elementalist",
+                "ice",
+                "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "20",
             "offensive": true,
             "target": "One creature"
@@ -152,16 +194,21 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Ignis <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Ignis <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-ignis",
-            "description": "You unleash a searing barrage against your foes, conjuring flames out of thin air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>). You deal (HR + 15) fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers shaken.",
+            "description": "You unleash a searing barrage against your foes, conjuring flames out of thin air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>). You deal (HR + 15) fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
             "tags": [
                 "air",
+                "core",
+                "elementalist",
                 "fire",
                 "shaken",
                 "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10 \u00d7 T",
             "offensive": true,
             "target": "Up to three creatures"
@@ -175,14 +222,20 @@
             "tags": [
                 "attack",
                 "brawling",
+                "core",
+                "elementalist",
                 "flying",
                 "free-attack",
                 "melee",
                 "spear",
+                "spell",
                 "sword",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10",
             "offensive": false,
             "target": "Self"
@@ -190,16 +243,21 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Terra <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Terra <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-terra",
             "description": "Spires of jagged rock erupt from the ground beneath your foes, closing around them. You deal (HR + 15) earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage to each target hit by this spell. This spell cannot target creatures that are flying, floating, falling, or otherwise in mid-air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>).\nOpportunity: each target hit by this spell performs one fewer action on their next turn (to a minimum of 0 actions).",
             "tags": [
                 "air",
+                "core",
                 "earth",
+                "elementalist",
                 "flying",
                 "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10 \u00d7 T",
             "offensive": true,
             "target": "Up to three creatures"
@@ -207,13 +265,19 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Thunderbolt <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Thunderbolt <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-thunderbolt",
             "description": "You send an arrow of overcharged lightning striking at your foe. You deal (HR + 25) bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to the target; this damage ignores Resistances.",
             "tags": [
-                "bolt"
+                "bolt",
+                "core",
+                "elementalist",
+                "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "20",
             "offensive": true,
             "target": "One creature"
@@ -221,15 +285,20 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Ventus <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Ventus <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-ventus",
             "description": "You summon the power of winds against your enemy. You deal (HR + 15) air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage to each target hit by this spell.\nOpportunity: each flying target hit by this spell is forced to land immediately.",
             "tags": [
                 "air",
+                "core",
+                "elementalist",
                 "flying",
                 "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10 \u00d7 T",
             "offensive": true,
             "target": "Up to three creatures"
@@ -237,16 +306,23 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Vortex <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Vortex <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-vortex",
             "description": "You slash through your foe with high-pressure wind. You deal (HR + 25) air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage to the target; this damage ignores Resistances.",
             "tags": [
-                "air"
+                "air",
+                "core",
+                "elementalist",
+                "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "20",
             "offensive": true,
             "target": "One creature"
         }
-    ]
+    ],
+    "order": []
 }

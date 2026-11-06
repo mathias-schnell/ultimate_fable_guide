@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-verses-tone",
     "label": "",
     "sub-labels": [
@@ -31,8 +33,16 @@
             "label": "Calm",
             "slug": "class-features-verses-tone-calm",
             "description": "",
-            "tags": [],
-            "effect": "Each target recovers (key recovery) equal to (10 + twice your current Willpower die size). This amount increases by 10 if you are level 20 or higher, or by 20 if you are level 40 or higher. If this tone causes MP recovery, it has no effect on the character who sings it."
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "mp",
+                "verse"
+            ],
+            "contract-icon": "minus",
+            "effect": "Each target recovers (key recovery) equal to (10 + twice your current Willpower die size). This amount increases by 10 if you are level 20 or higher, or by 20 if you are level 40 or higher. If this tone causes MP recovery, it has no effect on the character who sings it.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -40,8 +50,15 @@
             "label": "Energetic",
             "slug": "class-features-verses-tone-energetic",
             "description": "",
-            "tags": [],
-            "effect": "Until the start of your next turn, when a target succeeds on a Check that includes (key Attribute) and that Check allows them to advance or turn back a Clock, they may fill or erase an additional section of that Clock."
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "verse"
+            ],
+            "contract-icon": "minus",
+            "effect": "Until the start of your next turn, when a target succeeds on a Check that includes (key Attribute) and that Check allows them to advance or turn back a Clock, they may fill or erase an additional section of that Clock.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -49,8 +66,15 @@
             "label": "Frantic",
             "slug": "class-features-verses-tone-frantic",
             "description": "",
-            "tags": [],
-            "effect": "You deal an amount of (key type) damage equal to twice your current Willpower die to each target. This tone deals 5 extra damage if you are level 20 or higher, or 10 extra damage if you are level 40 or higher."
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "verse"
+            ],
+            "contract-icon": "minus",
+            "effect": "You deal an amount of (key type) damage equal to twice your current Willpower die to each target. This tone deals 5 extra damage if you are level 20 or higher, or 10 extra damage if you are level 40 or higher.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -58,8 +82,16 @@
             "label": "Haunting",
             "slug": "class-features-verses-tone-haunting",
             "description": "",
-            "tags": [],
-            "effect": "Each target suffers (key status effect). Each target also loses Resistance to (key type) damage (if they have it) until the start of your next turn, and cannot gain Resistance to that damage type."
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "resistance",
+                "verse"
+            ],
+            "contract-icon": "minus",
+            "effect": "Each target suffers (key status effect). Each target also loses Resistance to (key type) damage (if they have it) until the start of your next turn, and cannot gain Resistance to that damage type.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -67,8 +99,15 @@
             "label": "Lively",
             "slug": "class-features-verses-tone-lively",
             "description": "",
-            "tags": [],
-            "effect": "Each target treats their (key Attribute) as being one die size higher (up to a maximum of d12) until the start of your next turn."
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "verse"
+            ],
+            "contract-icon": "minus",
+            "effect": "Each target treats their (key Attribute) as being one die size higher (up to a maximum of d12) until the start of your next turn.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -76,8 +115,15 @@
             "label": "Menacing",
             "slug": "class-features-verses-tone-menacing",
             "description": "",
-            "tags": [],
-            "effect": "The first time each target suffers damage before the start of your next turn, that damage becomes (key type). This can trigger once for each target of the verse, separately."
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "verse"
+            ],
+            "contract-icon": "minus",
+            "effect": "The first time each target suffers damage before the start of your next turn, that damage becomes (key type). This can trigger once for each target of the verse, separately.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -85,8 +131,17 @@
             "label": "Solemn",
             "slug": "class-features-verses-tone-solemn",
             "description": "",
-            "tags": [],
-            "effect": "Each target recovers from (key status effect). Each target also gains Resistance to (key type) damage until the start of your next turn."
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "resistance",
+                "verse"
+            ],
+            "contract-icon": "minus",
+            "effect": "Each target recovers from (key status effect). Each target also gains Resistance to (key type) damage until the start of your next turn.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

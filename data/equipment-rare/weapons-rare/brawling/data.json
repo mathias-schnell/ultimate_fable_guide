@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-rare-weapons-rare-brawling",
     "label": "Brawling",
     "sub-labels": [],
@@ -37,13 +39,20 @@
             "slug": "equipment-rare-weapons-rare-brawling-nekode",
             "description": "One-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "brawling",
+                "equipment",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "physical",
+                "rare"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "250 z",
             "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -52,48 +61,69 @@
             "slug": "equipment-rare-weapons-rare-brawling-hellfist",
             "description": "One-handed \u2022 Melee \u2022 Attacks with this weapon target Magic Defense.",
             "tags": [
+                "brawling",
+                "dark",
                 "defense",
+                "equipment",
                 "magic-defense",
                 "melee",
                 "one-handed",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "350 z",
             "damage": "\u3010HR + 6\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Frozen Grasp",
             "slug": "equipment-rare-weapons-rare-brawling-frozen-grasp",
-            "description": "One-handed \u2022 Melee \u2022 You are immune to enraged.",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>).",
             "tags": [
+                "brawling",
                 "enraged",
+                "equipment",
+                "ice",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "rare"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "750 z",
             "damage": "\u3010HR + 6\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Bear Paw <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Bear Paw <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-brawling-bear-paw",
-            "description": "One-handed \u2022 Melee \u2022 You are immune to weak.",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
             "tags": [
+                "brawling",
+                "equipment",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "weak"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "850 z",
             "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -102,15 +132,21 @@
             "slug": "equipment-rare-weapons-rare-brawling-fuel-knuckle",
             "description": "One-handed \u2022 Melee \u2022 You gain Resistance to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage.",
             "tags": [
+                "brawling",
+                "equipment",
                 "fire",
                 "melee",
                 "one-handed",
+                "rare",
                 "resistance"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "950 z",
             "damage": "\u3010HR + 6\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -119,15 +155,22 @@
             "slug": "equipment-rare-weapons-rare-brawling-silver-talon",
             "description": "One-handed \u2022 Melee \u2022 You gain a +1 bonus to Magic Defense.",
             "tags": [
+                "brawling",
                 "defense",
+                "equipment",
+                "light",
                 "magic-defense",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "rare"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "1100 z",
             "damage": "\u3010HR + 6\u3011 light (<i class=\"ui-icon elem-light svg-sun\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -136,16 +179,23 @@
             "slug": "equipment-rare-weapons-rare-brawling-old-bandages",
             "description": "One-handed \u2022 Melee \u2022 You gain Resistance to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) and poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage.",
             "tags": [
+                "brawling",
                 "dark",
+                "equipment",
                 "melee",
                 "one-handed",
+                "physical",
                 "poison",
+                "rare",
                 "resistance"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1250 z",
             "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -154,82 +204,117 @@
             "slug": "equipment-rare-weapons-rare-brawling-storm-fist",
             "description": "One-handed \u2022 Melee \u2022 Attacks with this weapon have multi (2).",
             "tags": [
+                "bolt",
+                "brawling",
+                "equipment",
                 "melee",
                 "multi",
                 "one-handed",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1300 z",
             "damage": "\u3010HR + 6\u3011 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Lobster Claw <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Lobster Claw <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-brawling-lobster-claw",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow.",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
             "tags": [
+                "brawling",
+                "equipment",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "slow",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1950 z",
             "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Dozer Glove <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Dozer Glove <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-brawling-dozer-glove",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers dazed.",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
             "tags": [
+                "brawling",
                 "dazed",
+                "earth",
+                "equipment",
                 "melee",
                 "one-handed",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "2000 z",
             "damage": "\u3010HR + 10\u3011 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Venom Claw",
             "slug": "equipment-rare-weapons-rare-brawling-venom-claw",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers poisoned.",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
             "tags": [
+                "brawling",
+                "equipment",
                 "melee",
                 "one-handed",
+                "physical",
                 "poisoned",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "2250 z",
             "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "God Hand <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "God Hand <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-brawling-god-hand",
             "description": "One-handed \u2022 Melee \u2022 Damage dealt by this weapon ignores Affinities.",
             "tags": [
+                "brawling",
+                "equipment",
+                "light",
                 "melee",
                 "one-handed",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "2550 z",
             "damage": "\u3010HR + 10\u3011 light (<i class=\"ui-icon elem-light svg-sun\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -238,15 +323,22 @@
             "slug": "equipment-rare-weapons-rare-brawling-bringer-of-justice",
             "description": "One-handed \u2022 Melee \u2022 When you use the Provoke Skill against a creature whose current Hit Points are higher than yours, the Skill is automatically successful (no Check required).",
             "tags": [
+                "brawling",
+                "equipment",
                 "hp",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "skill"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "600 z",
             "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -255,49 +347,71 @@
             "slug": "equipment-rare-weapons-rare-brawling-blazing-fan",
             "description": "One-handed \u2022 Melee \u2022 Your invocations that target two or more creatures deal extra damage equal to your Skill Level in Linked Invocations.",
             "tags": [
+                "brawling",
+                "equipment",
+                "fire",
                 "invocation",
                 "melee",
                 "one-handed",
+                "rare",
                 "skill"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "800 z",
             "damage": "\u3010HR + 6\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Therion Ripper <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Therion Ripper <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-brawling-therion-ripper",
             "description": "One-handed \u2022 Melee \u2022 This weapon deals extra damage equal to your Skill Level in Akromorphosis and its Category is always identical to that of your unarmed strikes. It also benefits from the Greater Akromorphosis Heroic Skill as if it was an unarmed strike.",
             "tags": [
+                "brawling",
+                "equipment",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "skill",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "700 z",
             "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Steady Knuckles <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Steady Knuckles <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-brawling-steady-knuckles",
             "description": "One-handed \u2022 Melee \u2022 As long as the current die size of one of your Attributes is higher than its base die size, your attacks with this weapon deal extra damage equal to your Skill Level in Withstand.",
             "tags": [
+                "brawling",
+                "equipment",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "skill",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1200 z",
             "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "knife-fork",
+    "menu-icon": "knife-fork",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-gourmet",
     "label": "Gourmet",
     "sub-labels": [
@@ -34,12 +36,17 @@
             "tags": [
                 "attack",
                 "free-attack",
+                "gourmet",
                 "ingredient",
+                "natural-fantasy",
                 "skill",
                 "weapon"
             ],
             "class": "Gourmet",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -50,11 +57,16 @@
             "tags": [
                 "attack",
                 "free-attack",
+                "gourmet",
                 "ingredient",
+                "natural-fantasy",
                 "skill"
             ],
             "class": "Gourmet",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -63,10 +75,16 @@
             "slug": "classes-gourmet-made-with-love",
             "description": "When you use the Cooking Skill and choose to apply the effects of the delicacy to yourself or an ally you can see, you may spend up to (SL \u00d7 10) MP. For every 10 MP you spend this way, apply the delicacy\u2019s effects to an additional ally you can see.",
             "tags": [
+                "gourmet",
+                "mp",
+                "natural-fantasy",
                 "skill"
             ],
             "class": "Gourmet",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -75,11 +93,17 @@
             "slug": "classes-gourmet-salt-and-pepper",
             "description": "When you prepare a delicacy, you may spend 2 Inventory Points: if you do, change the taste of one ingredient to a different taste of your choice.",
             "tags": [
+                "gourmet",
+                "ingredient",
                 "inventory",
-                "ip"
+                "ip",
+                "natural-fantasy"
             ],
             "class": "Gourmet",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -88,12 +112,18 @@
             "slug": "classes-gourmet-traveling-cook",
             "description": "After each travel roll, if you acquired the Cooking Skill, you gain (SL \u00d7 2) ingredients.",
             "tags": [
+                "gourmet",
                 "ingredient",
+                "natural-fantasy",
                 "skill",
                 "travel"
             ],
             "class": "Gourmet",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

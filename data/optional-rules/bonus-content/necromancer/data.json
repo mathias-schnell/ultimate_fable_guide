@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "raise-zombie",
+    "menu-icon": "raise-zombie",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "optional-rules-bonus-content-necromancer",
     "label": "Necromancer",
     "sub-labels": [
@@ -32,11 +34,15 @@
             "description": "When another creature you can see loses Hit Points while in Crisis, if they are not undead, you gain 1 Grave Point. You may never have more than (SL + 1) Grave Points. When you are reduced to 0 Hit Points, you lose all Grave Points; then, if you lost at least 1 Grave Point this way and this is the first time you are reduced to 0 HP during this scene, you do not Surrender nor Sacrifice yourself: instead, you recover an amount of HP equal to (SL, multiplied by the amount of Grave Points you lost this way).",
             "tags": [
                 "crisis",
+                "fabula-ultima-bonus",
                 "hp",
                 "undead"
             ],
             "class": "Necromancer",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -45,18 +51,23 @@
             "slug": "optional-rules-bonus-content-necromancer-children-of-the-grave",
             "description": "You can always communicate verbally with undead creatures. Once per scene, you may ask an undead a single question; they are compelled to answer truthfully.",
             "tags": [
+                "fabula-ultima-bonus",
                 "undead"
             ],
             "class": "Necromancer",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Fear is the Key",
             "slug": "optional-rules-bonus-content-necromancer-fear-is-the-key",
-            "description": "After you cause one or more enemies to lose Hit Points, if you have acquired the Beyond the Realms of Death Skill and at least one of them is suffering from shaken and/or weak, you gain 1 Grave Point and recover (SL \u00d7 2) Hit Points and Mind Points.",
+            "description": "After you cause one or more enemies to lose Hit Points, if you have acquired the Beyond the Realms of Death Skill and at least one of them is suffering from shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>) and/or weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>), you gain 1 Grave Point and recover (SL \u00d7 2) Hit Points and Mind Points.",
             "tags": [
+                "fabula-ultima-bonus",
                 "hp",
                 "mp",
                 "shaken",
@@ -64,20 +75,27 @@
                 "weak"
             ],
             "class": "Necromancer",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "For Whom the Bell Tolls",
             "slug": "optional-rules-bonus-content-necromancer-for-whom-the-bell-tolls",
-            "description": "When you deal damage to a creature with a spell, if that spell only deals damage to that creature, you may spend 1 Grave Point. If you do, choose one option: if that creature is suffering from one or more status effects, the spell deals extra damage equal to ((SL \u00d7 2) + the number of status effects on that creature); or if that creature is suffering from no status effects, they suffer shaken.",
+            "description": "When you deal damage to a creature with a spell, if that spell only deals damage to that creature, you may spend 1 Grave Point. If you do, choose one option: if that creature is suffering from one or more status effects, the spell deals extra damage equal to ((SL \u00d7 2) + the number of status effects on that creature); or if that creature is suffering from no status effects, they suffer shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
             "tags": [
+                "fabula-ultima-bonus",
                 "shaken",
                 "spell"
             ],
             "class": "Necromancer",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -88,11 +106,16 @@
             "tags": [
                 "dark",
                 "defense",
+                "fabula-ultima-bonus",
                 "magic-defense",
                 "spell"
             ],
             "class": "Necromancer",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

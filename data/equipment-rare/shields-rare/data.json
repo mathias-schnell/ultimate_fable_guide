@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-rare-shields-rare",
     "label": "Shields",
     "sub-labels": [],
@@ -41,13 +43,19 @@
             "description": "You gain Resistance to bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage.",
             "tags": [
                 "bolt",
-                "resistance"
+                "equipment",
+                "rare",
+                "resistance",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -56,14 +64,20 @@
             "slug": "equipment-rare-shields-rare-aegis-gelum",
             "description": "You gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.",
             "tags": [
+                "equipment",
                 "ice",
-                "resistance"
+                "rare",
+                "resistance",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -72,14 +86,20 @@
             "slug": "equipment-rare-shields-rare-aegis-gorgonis",
             "description": "You gain Resistance to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage.",
             "tags": [
+                "equipment",
                 "poison",
-                "resistance"
+                "rare",
+                "resistance",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -88,14 +108,20 @@
             "slug": "equipment-rare-shields-rare-aegis-ignis",
             "description": "You gain Resistance to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage.",
             "tags": [
+                "equipment",
                 "fire",
-                "resistance"
+                "rare",
+                "resistance",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -104,14 +130,20 @@
             "slug": "equipment-rare-shields-rare-aegis-lux",
             "description": "You gain Resistance to light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage.",
             "tags": [
+                "equipment",
                 "light",
-                "resistance"
+                "rare",
+                "resistance",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -121,13 +153,19 @@
             "description": "You gain Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage.",
             "tags": [
                 "earth",
-                "resistance"
+                "equipment",
+                "rare",
+                "resistance",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -137,13 +175,19 @@
             "description": "You gain Resistance to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage.",
             "tags": [
                 "dark",
-                "resistance"
+                "equipment",
+                "rare",
+                "resistance",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -153,75 +197,105 @@
             "description": "You gain Resistance to air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage.",
             "tags": [
                 "air",
-                "resistance"
+                "equipment",
+                "rare",
+                "resistance",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Demonshield <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Demonshield <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-demonshield",
-            "description": "After a creature deals damage to you, if you are in Crisis, you may have that creature suffer shaken.",
+            "description": "After a creature deals damage to you, if you are in Crisis, you may have that creature suffer shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
             "tags": [
                 "crisis",
-                "shaken"
+                "equipment",
+                "rare",
+                "shaken",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "950 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Shield of Spring <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Shield of Spring <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-shield-of-spring",
             "description": "Whenever you recover Hit Points, you recover 5 additional Hit Points.",
             "tags": [
-                "hp"
+                "equipment",
+                "hp",
+                "rare",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "1150 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Seraph Shield <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Seraph Shield <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-seraph-shield",
             "description": "As long as you are in Crisis, you are immune to all status effects.",
             "tags": [
-                "crisis"
+                "crisis",
+                "equipment",
+                "rare",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "2050 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Adamantower <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Adamantower <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-adamantower",
             "description": "You gain a +1 bonus to Defense and Magic Defense (already included).",
             "tags": [
                 "defense",
-                "magic-defense"
+                "equipment",
+                "magic-defense",
+                "rare",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "2500 z",
             "defense": "+3",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+3",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -230,15 +304,21 @@
             "slug": "equipment-rare-shields-rare-bag-shield",
             "description": "When a Skill lets you regain Inventory Points, you regain 1 additional Inventory Point.",
             "tags": [
+                "equipment",
                 "inventory",
                 "ip",
+                "rare",
+                "shield",
                 "skill"
             ],
+            "contract-icon": "minus",
             "cost": "1000 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -247,61 +327,86 @@
             "slug": "equipment-rare-shields-rare-drumshield",
             "description": "If you have the Resonance Skill, consider your Skill Level in it increased by 2 (up to a maximum of SL 5).",
             "tags": [
+                "equipment",
+                "rare",
+                "shield",
                 "skill"
             ],
+            "contract-icon": "minus",
             "cost": "1700 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Argus <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Argus <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-argus",
             "description": "When you use the King\u2019s Castle and Bishop\u2019s Edict Skills, you may exclude one creature you can see from their effects.",
-            "tags": [],
+            "tags": [
+                "equipment",
+                "rare",
+                "shield"
+            ],
+            "contract-icon": "minus",
             "cost": "2000 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Shield of Blades <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Shield of Blades <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-shield-of-blades",
             "description": "When you attack with a weapon belonging to the heavy, spear, or sword Category, if the attack has the multi property, that attack deals 5 extra damage.",
             "tags": [
                 "attack",
+                "equipment",
                 "heavy",
                 "multi",
+                "rare",
+                "shield",
                 "spear",
                 "sword",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "cost": "2000 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Parry Shield <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Parry Shield <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-parry-shield",
             "description": "If you have the Counterattack Skill, the Skill also triggers when the result of an enemy\u2019s Accuracy Check is an odd number.",
             "tags": [
+                "equipment",
+                "rare",
+                "shield",
                 "skill"
             ],
+            "contract-icon": "minus",
             "cost": "2500 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -311,60 +416,84 @@
             "description": "As long as you have no martial armor and no other shield equipped, you may apply the effects of the Dodge Skill.",
             "tags": [
                 "armor",
+                "equipment",
                 "martial",
+                "rare",
                 "shield",
                 "skill"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Lid Shield <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Lid Shield <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-lid-shield",
             "description": "When you deal damage with a delicacy, you deal 5 extra damage.",
-            "tags": [],
+            "tags": [
+                "equipment",
+                "rare",
+                "shield"
+            ],
+            "contract-icon": "minus",
             "cost": "1500 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Lily Vambrace <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Lily Vambrace <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-lily-vambrace",
             "description": "If you have the Battle Gardening Skill, you can use it when you plant a magiseed with the Graft Skill.",
             "tags": [
+                "equipment",
                 "plant",
+                "rare",
+                "shield",
                 "skill"
             ],
+            "contract-icon": "minus",
             "cost": "2000 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Icebreaker <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Icebreaker <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-icebreaker",
             "description": "All physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) and fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage you deal ignores Resistances.",
             "tags": [
+                "equipment",
                 "fire",
-                "physical"
+                "physical",
+                "rare",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "700 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -373,47 +502,66 @@
             "slug": "equipment-rare-shields-rare-ballistic-shield",
             "description": "You gain a +1 bonus to your Accuracy Check with ranged weapons.",
             "tags": [
-                "ranged"
+                "equipment",
+                "ranged",
+                "rare",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "800 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "\u2014",
-            "martial": false
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Windshield <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Windshield <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-windshield",
             "description": "While driving your personal vehicle, you gain Resistance to air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.",
             "tags": [
                 "air",
+                "equipment",
                 "ice",
-                "resistance"
+                "rare",
+                "resistance",
+                "shield"
             ],
+            "contract-icon": "minus",
             "cost": "1000 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Hekat Shield <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Hekat Shield <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-hekat-shield",
             "description": "You gain Resistance to damage dealt by spells. When a spell deals damage to you, you recover 5 Mind Points.",
             "tags": [
+                "equipment",
                 "mp",
+                "rare",
                 "resistance",
+                "shield",
                 "spell"
             ],
+            "contract-icon": "minus",
             "cost": "2000 z",
             "defense": "+2",
+            "expand-icon": "plus",
             "initiative": "\u2014",
             "m-defense": "+2",
-            "martial": true
+            "martial": true,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

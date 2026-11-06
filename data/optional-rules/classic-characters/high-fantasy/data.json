@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": false,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "optional-rules-classic-characters-high-fantasy",
     "label": "Classic Characters",
     "sub-labels": [],
@@ -22,11 +24,16 @@
             "slug": "optional-rules-classic-characters-high-fantasy-acrobat",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Dancer (3 levels): Dance (SL 2: Phoenix, Ouroboros), Wardancer</li><li>Fury (1 level): Frenzy</li><li>Sharpshooter (1 level): Warning Shot</li></ul><p><strong>Equipment:</strong> Shuriken (\u00d72), sage robe, 170 zenit.</p>",
             "tags": [
+                "dance",
                 "dancer",
                 "fury",
+                "high-fantasy",
                 "sharpshooter",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -35,13 +42,18 @@
             "slug": "optional-rules-classic-characters-high-fantasy-dancing-witch",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d8, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Dancer (3 levels): Dance (SL 2: Griffin, Yeti), Wardancer</li><li>Elementalist (1 level): Magical Artillery</li><li>Entropist (1 level): Entropic Magic (Drain Vigor)</li></ul><p><strong>Equipment:</strong> Tome, travel garb, 270 zenit.</p>",
             "tags": [
+                "dance",
                 "dancer",
                 "elementalist",
                 "entropist",
                 "equipment",
+                "high-fantasy",
                 "travel",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -51,13 +63,17 @@
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Sharpshooter (2 levels): Hawkeye, Ranged Weapon Mastery</li><li>Spiritist (1 level): Soul Weapon</li><li>Symbolist (2 levels): Symbolic Connection, Symbolism (Binding, Truth)</li></ul><p><strong>Equipment:</strong> Shortbow, sage robe, 170 zenit.</p>",
             "tags": [
                 "equipment",
+                "high-fantasy",
                 "ranged",
                 "sharpshooter",
                 "spiritist",
                 "symbolist",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -66,12 +82,17 @@
             "slug": "optional-rules-classic-characters-high-fantasy-fencer",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d6, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Dancer (2 levels): Dance (SL 2: Kraken, Peacock)</li><li>Rogue (1 level): Cheap Shot</li><li>Weaponmaster (2 levels): Counterattack, Bone Crusher</li></ul><p><strong>Equipment:</strong> Rapier, combat tunic, runic shield, 70 zenit.</p>",
             "tags": [
+                "dance",
                 "dancer",
+                "high-fantasy",
                 "rogue",
                 "shield",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -82,9 +103,13 @@
             "tags": [
                 "chanter",
                 "fire",
+                "high-fantasy",
                 "orator",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -96,9 +121,13 @@
                 "bolt",
                 "chanter",
                 "fury",
+                "high-fantasy",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -109,12 +138,16 @@
             "tags": [
                 "arcanist",
                 "equipment",
+                "high-fantasy",
                 "ritual",
                 "shield",
                 "symbolist",
                 "travel",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -125,10 +158,14 @@
             "tags": [
                 "commander",
                 "fury",
+                "high-fantasy",
                 "shield",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -139,11 +176,15 @@
             "tags": [
                 "commander",
                 "firearm",
+                "high-fantasy",
                 "loremaster",
                 "shield",
                 "travel",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -152,10 +193,14 @@
             "slug": "optional-rules-classic-characters-high-fantasy-traveling-artist",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d10, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Symbolist (3 levels): Mirage, Symbolism (SL 2: Elements, Growth, Protection, Rebellion)</li><li>Wayfarer (2 levels): Tavern Talk, Resourceful</li></ul><p><strong>Equipment:</strong> Tome (described as a sketchbook!), sage robe, 270 zenit.</p>",
             "tags": [
+                "high-fantasy",
                 "symbolist",
                 "wayfarer",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -164,8 +209,12 @@
             "slug": "optional-rules-classic-characters-high-fantasy-a-company-of-heroes-ready-for-adventure",
             "description": "<p>Each group member plays a specific role: the Valiant Knight leads charges and protects allies; the Heartthrob Thief gathers items and info, weakens enemies, and strikes with abandon; the Na\u00efve Chosen heals and supports allies; the Young Sage is a keen observer who knows mighty elemental spells.</p>",
             "tags": [
-                "elemental"
-            ]
+                "elemental",
+                "high-fantasy"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -175,13 +224,17 @@
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Rogue (3 levels): Cheap Shot, Dodge, Soul Steal</li><li>Wayfarer (1 level): Tavern Talk</li><li>Weaponmaster (1 level): Bone Crusher</li></ul><p><strong>Equipment:</strong> Twin dagger (custom weapon, (DEX + INS), dagger, melee, accurate, quick), combat tunic, 120 zenit.</p>",
             "tags": [
                 "dagger",
+                "high-fantasy",
                 "melee",
                 "rogue",
                 "wayfarer",
                 "weapon",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -192,10 +245,14 @@
             "tags": [
                 "arcanist",
                 "chanter",
+                "high-fantasy",
                 "orator",
                 "ritual",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -206,9 +263,13 @@
             "tags": [
                 "commander",
                 "guardian",
+                "high-fantasy",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -222,10 +283,14 @@
                 "elementalist",
                 "entropist",
                 "fire",
+                "high-fantasy",
                 "ice",
                 "loremaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -234,8 +299,12 @@
             "slug": "optional-rules-classic-characters-high-fantasy-the-band-this-beat-will-save-the-world",
             "description": "<p>After attending Bremen\u2019s Royal Conservatory, these young prodigies are ready to serve justice with their music! They all share the Chanter Class, which they use in very different and synergistic ways.</p>",
             "tags": [
-                "chanter"
-            ]
+                "chanter",
+                "high-fantasy"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -246,14 +315,19 @@
             "tags": [
                 "air",
                 "chanter",
+                "dance",
                 "dancer",
                 "elemental",
                 "flail",
+                "high-fantasy",
                 "ranged",
                 "sharpshooter",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -267,13 +341,17 @@
                 "defense",
                 "elemental",
                 "fire",
+                "high-fantasy",
                 "ice",
                 "light",
                 "orator",
                 "ranged",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -287,10 +365,14 @@
                 "fury",
                 "guardian",
                 "heavy",
+                "high-fantasy",
                 "melee",
                 "weapon",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -303,12 +385,17 @@
                 "chanter",
                 "elemental",
                 "heavy",
+                "high-fantasy",
                 "melee",
                 "travel",
                 "weapon",
                 "weaponmaster",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

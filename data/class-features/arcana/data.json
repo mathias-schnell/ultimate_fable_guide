@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-arcana",
     "label": "Arcana",
     "sub-labels": [],
@@ -29,6 +31,8 @@
             "slug": "class-features-arcana-arcanum-of-the-forge",
             "description": "<h4>Merge</h4><p>You gain Resistance to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage. Any fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage you deal ignores Resistances.</p><h4>Dismiss</h4><p>When you dismiss this Arcanum, choose Forge or Inferno:<br><strong>Forge.</strong> You create a basic weapon, armor or shield of your choice (see pages 130 to 133). If you select this option again, the previously created item vanishes. If you create a weapon this way, it deals fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage instead of physical (<i class=\"ui-icon elem-physical svg-physical\"></i>).<br><strong>Inferno.</strong> Choose any number of creatures you can see: you deal 30 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to each of them. This damage ignores Resistances.</p>",
             "tags": [
+                "arcana",
+                "arcanist",
                 "armor",
                 "basic",
                 "fire",
@@ -37,20 +41,28 @@
                 "shield",
                 "weapon"
             ],
-            "domains": "Fire, Heat, Metal"
+            "contract-icon": "minus",
+            "domains": "Fire, Heat, Metal",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Arcanum of the Frost",
             "slug": "class-features-arcana-arcanum-of-the-frost",
-            "description": "<h4>Merge</h4><p>You gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage and are immune to enraged. Any ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage you deal ignores Resistances.</p><h4>Dismiss</h4><p><strong>Ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) Age.</strong> Choose any number of creatures you can see: you deal 30 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to each of them. This damage ignores Resistances.</p>",
+            "description": "<h4>Merge</h4><p>You gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage and are immune to enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>). Any ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage you deal ignores Resistances.</p><h4>Dismiss</h4><p><strong>Ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) Age.</strong> Choose any number of creatures you can see: you deal 30 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to each of them. This damage ignores Resistances.</p>",
             "tags": [
+                "arcana",
+                "arcanist",
                 "enraged",
                 "ice",
                 "resistance"
             ],
-            "domains": "Cold, Ice, Silence"
+            "contract-icon": "minus",
+            "domains": "Cold, Ice, Silence",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -59,13 +71,18 @@
             "slug": "class-features-arcana-arcanum-of-the-gate",
             "description": "<h4>Merge</h4><p>You gain Resistance to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage. You gain a +1 bonus to your Magic Defense.</p><h4>Dismiss</h4><p>When you dismiss this Arcanum, choose Oblivion or Warp:<br><strong>Oblivion.</strong> Choose any number of creatures you can see: you deal 30 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage to each of them. This damage ignores Resistances.<br><strong>Warp.</strong> You teleport yourself and up to five other nearby willing creatures to a location you previously visited, if that location is within 1 travel day.</p>",
             "tags": [
+                "arcana",
+                "arcanist",
                 "dark",
                 "defense",
                 "magic-defense",
                 "resistance",
                 "travel"
             ],
-            "domains": "Space, Travel, Void"
+            "contract-icon": "minus",
+            "domains": "Space, Travel, Void",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -73,23 +90,34 @@
             "label": "Arcanum of the Grimoire",
             "slug": "class-features-arcana-arcanum-of-the-grimoire",
             "description": "<h4>Merge</h4><p>You are able to read, write, speak and understand all languages. You treat your Insight as if it were one die size higher (up to a maximum of d12).</p><h4>Dismiss</h4><p><strong>Oracle.</strong> You ask the Game Master a single question. The Game Master must answer truthfully, describing the vision shown to you by the Grimoire. Once used, this dismiss effect will not be available until the next dawn. Furthermore, the same question may never be asked more than once. The Game Master has final say on which questions are too similar to be asked again.</p>",
-            "tags": [],
-            "domains": "Knowledge, Revelations, Understanding"
+            "tags": [
+                "arcana",
+                "arcanist"
+            ],
+            "contract-icon": "minus",
+            "domains": "Knowledge, Revelations, Understanding",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Arcanum of the Oak",
             "slug": "class-features-arcana-arcanum-of-the-oak",
-            "description": "<h4>Merge</h4><p>You gain Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) and poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and are immune to poisoned. Whenever you recover Hit Points, you recover 5 additional Hit Points.</p><h4>Dismiss</h4><p><strong>Blossom.</strong> Choose any number of creatures you can see (you may also choose yourself): each of them recovers from poisoned and also recovers 40 Hit Points. This amount increases to 50 Hit Points if you are level 20 or higher, or to 60 Hit Points if you are level 40 or higher.</p>",
+            "description": "<h4>Merge</h4><p>You gain Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) and poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and are immune to poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>). Whenever you recover Hit Points, you recover 5 additional Hit Points.</p><h4>Dismiss</h4><p><strong>Blossom.</strong> Choose any number of creatures you can see (you may also choose yourself): each of them recovers from poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>) and also recovers 40 Hit Points. This amount increases to 50 Hit Points if you are level 20 or higher, or to 60 Hit Points if you are level 40 or higher.</p>",
             "tags": [
+                "arcana",
+                "arcanist",
                 "earth",
                 "hp",
                 "poison",
                 "poisoned",
                 "resistance"
             ],
-            "domains": "Earth, Plants, Poison"
+            "contract-icon": "minus",
+            "domains": "Earth, Plants, Poison",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -99,11 +127,16 @@
             "description": "<h4>Merge</h4><p>You gain Resistance to air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) and bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage. You may use an action to accurately predict weather conditions for the next day within a range of two travel days \u2014 the Game Master will tell you what the weather conditions will be.</p><h4>Dismiss</h4><p><strong>Thunderstorm.</strong> Choose any number of creatures you can see: you deal 30 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to each of them. This damage ignores Resistances.</p>",
             "tags": [
                 "air",
+                "arcana",
+                "arcanist",
                 "bolt",
                 "resistance",
                 "travel"
             ],
-            "domains": "Fog, Rain, Storms"
+            "contract-icon": "minus",
+            "domains": "Fog, Rain, Storms",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -112,10 +145,16 @@
             "slug": "class-features-arcana-arcanum-of-the-sword",
             "description": "<h4>Merge</h4><p>Your attacks deal 5 extra damage, and all damage dealt by your attacks loses its type and cannot gain a type for as long as you are merged with this Arcanum (thus being unaffected by damage Affinities). When you perform an attack, you may have that attack gain the multi (any number of targets) property. If you do, this Arcanum will be automatically dismissed after the attack is resolved (this is not considered a willing dismiss).</p>",
             "tags": [
+                "arcana",
+                "arcanist",
                 "attack",
-                "multi"
+                "multi",
+                "sword"
             ],
-            "domains": "Conquest, Heroism, Leadership"
+            "contract-icon": "minus",
+            "domains": "Conquest, Heroism, Leadership",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -125,6 +164,8 @@
             "description": "<h4>Merge</h4><p>When you summon this Arcanum, choose a damage type: air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), or ice (<i class=\"ui-icon elem-ice svg-ice\"></i>). Until this Arcanum is dismissed, each of your allies present on the scene gains Resistance to the chosen damage type (you do not gain this Resistance).</p><h4>Dismiss</h4><p><strong>Judgment.</strong> Choose any number of creatures you can see: you deal 30 light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage to each of them. This damage ignores Resistances.</p>",
             "tags": [
                 "air",
+                "arcana",
+                "arcanist",
                 "bolt",
                 "dark",
                 "earth",
@@ -133,19 +174,28 @@
                 "light",
                 "resistance"
             ],
-            "domains": "Judgment, Protection, Sacrifice"
+            "contract-icon": "minus",
+            "domains": "Judgment, Protection, Sacrifice",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Arcanum of the Wheel",
             "slug": "class-features-arcana-arcanum-of-the-wheel",
-            "description": "<h4>Merge</h4><p>You are immune to slow. You gain a +1 bonus to your Defense.</p><h4>Dismiss</h4><p><strong>Time Freeze.</strong> Choose any number of creatures you can see: each of them suffers slow. If a creature chosen this way is already slow, that creature will instead perform one fewer action during their next turn (to a minimum of 0 actions).</p>",
+            "description": "<h4>Merge</h4><p>You are immune to slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>). You gain a +1 bonus to your Defense.</p><h4>Dismiss</h4><p><strong>Time Freeze.</strong> Choose any number of creatures you can see: each of them suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>). If a creature chosen this way is already slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), that creature will instead perform one fewer action during their next turn (to a minimum of 0 actions).</p>",
             "tags": [
+                "arcana",
+                "arcanist",
                 "defense",
                 "slow"
             ],
-            "domains": "Destiny, Speed, Time"
+            "contract-icon": "minus",
+            "domains": "Destiny, Speed, Time",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

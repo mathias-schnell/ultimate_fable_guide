@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-verses-volume",
     "label": "",
     "sub-labels": [
@@ -36,7 +38,15 @@
             "label": "Low",
             "slug": "class-features-verses-volume-low",
             "description": "",
-            "tags": [],
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "mp",
+                "verse"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10",
             "targets": "Yourself or another creature you can see who can hear you."
         },
@@ -46,7 +56,15 @@
             "label": "Medium",
             "slug": "class-features-verses-volume-medium",
             "description": "",
-            "tags": [],
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "mp",
+                "verse"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "20",
             "targets": "Every ally who can hear you."
         },
@@ -56,9 +74,18 @@
             "label": "High",
             "slug": "class-features-verses-volume-high",
             "description": "",
-            "tags": [],
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "mp",
+                "verse"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "30",
             "targets": "Every enemy who can hear you."
         }
-    ]
+    ],
+    "order": []
 }

@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-spells-entropist",
     "label": "Entropist",
     "sub-labels": [],
@@ -39,11 +41,17 @@
             "description": "At the end of each of their turns, the target may choose one option: perform a free attack with a weapon they have equipped; or perform the Spell action for free, casting a spell with a total MP cost equal to or lower than 10 (paying its MP cost). After the same creature benefits from this effect a second time, this spell ends.",
             "tags": [
                 "attack",
+                "core",
+                "entropist",
                 "free-attack",
+                "mp",
                 "spell",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "20",
             "offensive": false,
             "target": "One creature"
@@ -51,13 +59,18 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Anomaly <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Anomaly <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-entropist-anomaly",
             "description": "You alter the very nature of your target. Until this spell ends, if the target would suffer damage of a type they Absorb or are Immune to, they are instead treated as if they were Vulnerable to that damage type. Once that happens, this spell ends.",
             "tags": [
+                "core",
+                "entropist",
                 "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "20",
             "offensive": true,
             "target": "One creature"
@@ -70,12 +83,17 @@
             "description": "You imbue a weapon with dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) energy. Until this spell ends, all damage dealt by the weapon becomes dark (<i class=\"ui-icon elem-dark svg-dark\"></i>). If you have that weapon equipped while you cast this spell, you may perform a free attack with it as part of the same action. This spell can only be cast on a weapon equipped by a willing creature.",
             "tags": [
                 "attack",
+                "core",
                 "dark",
+                "entropist",
                 "free-attack",
                 "spell",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "5",
             "offensive": false,
             "target": "One equipped weapon"
@@ -86,8 +104,15 @@
             "label": "Dispel",
             "slug": "class-features-spells-entropist-dispel",
             "description": "You cleanse all magic from a creature. If the target is affected by one or more spells with a duration of \u201cScene\u201d, instead they are no longer affected by any of those spells.",
-            "tags": [],
+            "tags": [
+                "core",
+                "entropist",
+                "spell"
+            ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10",
             "offensive": false,
             "target": "One creature"
@@ -99,12 +124,17 @@
             "slug": "class-features-spells-entropist-divination",
             "description": "You glimpse briefly into the future. Until this spell ends, after a creature you can see rolls dice for a Check, if it's not a fumble nor a critical success, you may force them to reroll both dice. Once you have forced two rerolls this way, this spell ends.",
             "tags": [
+                "core",
                 "critical",
+                "entropist",
                 "fumble",
                 "reroll",
                 "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10",
             "offensive": false,
             "target": "Self"
@@ -112,13 +142,19 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Drain Spirit <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Drain Spirit <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-entropist-drain-spirit",
             "description": "You consume a creature\u2019s psyche. The target loses (HR + 20) Mind Points. Then, you recover an amount of Mind Points equal to half the total Mind Points loss they suffered (if the target had no MP left, you recover none).",
             "tags": [
-                "mp"
+                "core",
+                "entropist",
+                "mp",
+                "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "5",
             "offensive": true,
             "target": "One creature"
@@ -126,14 +162,20 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Drain Vigor <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Drain Vigor <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-entropist-drain-vigor",
             "description": "You steal another creature\u2019s life force. You deal (HR + 15) dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage to the target. Then, you recover an amount of Hit Points equal to half the total Hit Points loss they suffered (if the target had no HP left, you recover none).",
             "tags": [
+                "core",
                 "dark",
-                "hp"
+                "entropist",
+                "hp",
+                "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10",
             "offensive": true,
             "target": "One creature"
@@ -143,12 +185,14 @@
             "is-container": true,
             "label": "Gamble",
             "slug": "class-features-spells-entropist-gamble",
-            "description": "You summon a vortex of chaotic energy. Roll your current Willpower die once for every 10 Mind Points spent while casting this spell, then keep the single die you prefer: the number on that die determines the effects of this spell. 1: You lose half of your current Hit Points and half of your current Mind Points. 2-3: Each creature present on the scene, including yourself, suffers poisoned. 4-6: Each creature present on the scene, including yourself, suffers slow. 7-8: Choose up to three creatures you can see: each of them recovers 50 Hit Points and also recovers from all status effects. 9+: Choose any number of creatures you can see: you deal 30 damage to each of them. The damage type is determined randomly by rolling a d6 (1. air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), 2. bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), 3. dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), 4. earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), 5. fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), 6. poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)).",
+            "description": "You summon a vortex of chaotic energy. Roll your current Willpower die once for every 10 Mind Points spent while casting this spell, then keep the single die you prefer: the number on that die determines the effects of this spell. 1: You lose half of your current Hit Points and half of your current Mind Points. 2-3: Each creature present on the scene, including yourself, suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>). 4-6: Each creature present on the scene, including yourself, suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>). 7-8: Choose up to three creatures you can see: each of them recovers 50 Hit Points and also recovers from all status effects. 9+: Choose any number of creatures you can see: you deal 30 damage to each of them. The damage type is determined randomly by rolling a d6 (1. air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), 2. bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), 3. dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), 4. earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), 5. fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), 6. poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)).",
             "tags": [
                 "air",
                 "bolt",
+                "core",
                 "dark",
                 "earth",
+                "entropist",
                 "fire",
                 "hp",
                 "mp",
@@ -157,7 +201,10 @@
                 "slow",
                 "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "up to 20",
             "offensive": false,
             "target": "Special"
@@ -169,9 +216,14 @@
             "slug": "class-features-spells-entropist-mirror",
             "description": "You twist the laws of magic. Until this spell ends, when the target is targeted by an offensive spell (OO), the creature that cast that offensive spell will be targeted in their stead (any other targets of the offensive spell will be targeted as normal). Once that happens, this spell ends.",
             "tags": [
+                "core",
+                "entropist",
                 "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10",
             "offensive": false,
             "target": "One creature"
@@ -179,13 +231,19 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Omega <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Omega <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-entropist-omega",
             "description": "You invoke doom on your foe, turning strength into frailty. The target loses an amount of Hit Points equal to (20 + half the target\u2019s level).",
             "tags": [
-                "hp"
+                "core",
+                "entropist",
+                "hp",
+                "spell"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "15",
             "offensive": true,
             "target": "One creature"
@@ -193,11 +251,18 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Stop <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Stop <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-entropist-stop",
             "description": "You trap a foe inside a circle of altered time and space. The target will perform one fewer action on their next turn (to a minimum of 0 actions).",
-            "tags": [],
+            "tags": [
+                "core",
+                "entropist",
+                "spell"
+            ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10",
             "offensive": true,
             "target": "One creature"
@@ -205,18 +270,24 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Umbra <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Umbra <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-entropist-umbra",
-            "description": "A storm of dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) energy turns matter into ash. You deal (HR + 15) dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage to each target hit by this spell. Opportunity: each target hit by this spell suffers weak.",
+            "description": "A storm of dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) energy turns matter into ash. You deal (HR + 15) dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage to each target hit by this spell. Opportunity: each target hit by this spell suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
             "tags": [
+                "core",
                 "dark",
+                "entropist",
                 "spell",
                 "weak"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10 \u00d7 T",
             "offensive": true,
             "target": "Up to three creatures"
         }
-    ]
+    ],
+    "order": []
 }

@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-weapons-basic-dagger",
     "label": "Dagger",
     "sub-labels": [
@@ -41,13 +43,23 @@
             "slug": "equipment-weapons-basic-dagger-steel-dagger",
             "description": "One-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "basic",
+                "core",
+                "dagger",
+                "equipment",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "physical",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "150 z",
             "damage": "\u3010HR + 4\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

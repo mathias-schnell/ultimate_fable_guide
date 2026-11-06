@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-weapons-basic-sword",
     "label": "Sword",
     "sub-labels": [
@@ -38,62 +40,103 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Bronze Sword <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Bronze Sword <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-weapons-basic-sword-bronze-sword",
             "description": "One-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "basic",
+                "core",
+                "equipment",
+                "martial",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "physical",
+                "sword",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "200 z",
             "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Greatsword <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Greatsword <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-weapons-basic-sword-greatsword",
             "description": "Two-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "basic",
+                "core",
+                "equipment",
+                "martial",
                 "melee",
-                "two-handed"
+                "physical",
+                "sword",
+                "two-handed",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "200 z",
             "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Katana <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Katana <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-weapons-basic-sword-katana",
             "description": "Two-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "basic",
+                "core",
+                "equipment",
+                "martial",
                 "melee",
-                "two-handed"
+                "physical",
+                "sword",
+                "two-handed",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "200 z",
             "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Rapier <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Rapier <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-weapons-basic-sword-rapier",
             "description": "One-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "basic",
+                "core",
+                "equipment",
+                "martial",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "physical",
+                "sword",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "200 z",
             "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

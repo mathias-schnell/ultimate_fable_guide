@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-gadgets-magitech-basic",
     "label": "",
     "sub-labels": [
@@ -30,11 +32,20 @@
             "slug": "",
             "description": "During a conflict, you may use an action and spend 10 Mind Points to choose a construct or elemental enemy you can see that does not possess independent intelligence and is suffering from one or more status effects. If you do so, that enemy recovers from all status effects, then the Game Master reveals its entire profile and you may force it to immediately perform an action of your choice; during that action, the creature is treated as an ally of your group.",
             "tags": [
+                "basic",
                 "construct",
+                "core",
                 "elemental",
-                "mp"
+                "inventory",
+                "ip",
+                "mp",
+                "tinkerer"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Take control of a construct or elemental enemy suffering from status effects."
         }
-    ]
+    ],
+    "order": []
 }

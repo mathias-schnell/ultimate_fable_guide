@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "dna2",
+    "menu-icon": "dna2",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-mutant",
     "label": "Mutant",
     "sub-labels": [
@@ -37,13 +39,18 @@
                 "firearm",
                 "high-fantasy",
                 "melee",
+                "mutant",
                 "ranged",
                 "sword",
+                "techno-fantasy",
                 "thrown",
                 "weapon"
             ],
             "class": "Mutant",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -53,10 +60,15 @@
             "description": "After one of your attacks or offensive spells (\ud83d\uddf2) causes one or more enemies to lose Hit Points, if you are in Crisis, you may recover (SL \u00d7 5) Hit Points.",
             "tags": [
                 "crisis",
-                "hp"
+                "hp",
+                "mutant",
+                "techno-fantasy"
             ],
             "class": "Mutant",
-            "max-sl": 4
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 4,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -66,12 +78,17 @@
             "description": "After you lose Hit Points due to damage, if that damage had a type other than physical (<i class=\"ui-icon elem-physical svg-physical\"></i>), you may spend 10 Hit Points to gain Resistance to that damage type until you use this Skill again.",
             "tags": [
                 "hp",
+                "mutant",
                 "physical",
                 "resistance",
-                "skill"
+                "skill",
+                "techno-fantasy"
             ],
             "class": "Mutant",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -80,12 +97,18 @@
             "slug": "classes-mutant-genoclepsis",
             "description": "When you deal damage to one or more NPCs, you learn their Species and the GM chooses (SL) therioforms appropriate to those NPCs (see next page): if you have acquired the Theriomorphosis Skill, you may immediately pay its HP cost and use it to manifest those therioforms (even if they are not among those you have learned).",
             "tags": [
+                "hp",
+                "mutant",
                 "skill",
                 "species",
+                "techno-fantasy",
                 "therioform"
             ],
             "class": "Mutant",
-            "max-sl": 2
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 2,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -95,11 +118,17 @@
             "description": "Each time you acquire this Skill, you learn a therioform (see next page).\nYou may use an action and spend one third of your current Hit Points (rounded down) to manifest the effects of up to two therioforms from those you have learned. The details of this transformation are explained on the next page.",
             "tags": [
                 "hp",
+                "mutant",
                 "skill",
+                "techno-fantasy",
                 "therioform"
             ],
             "class": "Mutant",
-            "max-sl": 6
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 6,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "sands-of-time",
+    "menu-icon": "sands-of-time",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-entropist",
     "label": "Entropist",
     "sub-labels": [
@@ -32,10 +34,15 @@
             "slug": "classes-entropist-absorb-mp",
             "description": "After you suffer damage, you may recover (SL \u00d7 2) Mind Points.",
             "tags": [
+                "core",
+                "entropist",
                 "mp"
             ],
             "class": "Entropist",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -44,12 +51,16 @@
             "slug": "classes-entropist-entropic-magic",
             "description": "Each time you acquire this Skill, learn one Entropist spell (see next two pages). Offensive (\ud83d\uddf2) Entropist spells use (INS + WLP) for the Magic Check.",
             "tags": [
+                "core",
                 "entropist",
                 "skill",
                 "spell"
             ],
             "class": "Entropist",
-            "max-sl": 10
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 10,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -57,9 +68,15 @@
             "label": "Lucky Seven",
             "slug": "classes-entropist-lucky-seven",
             "description": "You have a lucky number; at the start of each session, that number is 7. Once per scene after you roll dice for a Check, you may replace the value shown on one of those dice with your lucky number (even if this would give an impossible value, such as a value of 7 on a d6). If you do, the replaced value becomes your new lucky number.",
-            "tags": [],
+            "tags": [
+                "core",
+                "entropist"
+            ],
             "class": "Entropist",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -67,17 +84,26 @@
             "label": "Ritual Entropism",
             "slug": "classes-entropist-ritual-entropism",
             "description": "You may perform Rituals whose effects fall within the Entropism discipline. Entropism Rituals use (INS + WLP) for the Magic Check.",
-            "tags": [],
+            "tags": [
+                "core",
+                "entropist",
+                "ritual"
+            ],
             "class": "Entropist",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Stolen Time",
             "slug": "classes-entropist-stolen-time",
-            "description": "During a conflict, you may use an action to interfere with the flow of time by spending up to (SL \u00d7 5) Mind Points. For every 5 Mind Points you spend this way, choose one option: one creature you can see suffers slow; or one creature you can see recovers from slow; or one enemy you can see that is suffering from slow loses (10 + (SL \u00d7 5)) Hit Points; or one creature you can see may perform the Equipment action for free; or choose one ally you can see that has yet to take a turn during this round: that ally may take their turn immediately after yours during this round. Each option can only be chosen once per use of this Skill.",
+            "description": "During a conflict, you may use an action to interfere with the flow of time by spending up to (SL \u00d7 5) Mind Points. For every 5 Mind Points you spend this way, choose one option: one creature you can see suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>); or one creature you can see recovers from slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>); or one enemy you can see that is suffering from slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) loses (10 + (SL \u00d7 5)) Hit Points; or one creature you can see may perform the Equipment action for free; or choose one ally you can see that has yet to take a turn during this round: that ally may take their turn immediately after yours during this round. Each option can only be chosen once per use of this Skill.",
             "tags": [
+                "core",
+                "entropist",
                 "equipment",
                 "hp",
                 "mp",
@@ -85,7 +111,11 @@
                 "slow"
             ],
             "class": "Entropist",
-            "max-sl": 4
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 4,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

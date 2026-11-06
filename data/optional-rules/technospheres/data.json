@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "optional-rules-technospheres",
     "label": "Technospheres",
     "sub-labels": [],
@@ -30,7 +32,10 @@
             "slug": "optional-rules-technospheres-agile",
             "description": "You treat your Dexterity as if it were one die size higher (up to a maximum of d12).\n\nThis hoplosphere occupies 2 slots.",
             "tags": [],
+            "contract-icon": "minus",
             "d66": "11",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -45,7 +50,10 @@
                 "resistance",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "12",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -60,7 +68,10 @@
                 "undead",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "13",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -70,7 +81,10 @@
             "slug": "optional-rules-technospheres-brave",
             "description": "You treat your Willpower as if it were one die size higher (up to a maximum of d12).\n\nThis hoplosphere occupies 2 slots.",
             "tags": [],
+            "contract-icon": "minus",
             "d66": "14",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -78,11 +92,14 @@
             "is-container": true,
             "label": "Crystalline",
             "slug": "optional-rules-technospheres-crystalline",
-            "description": "You are immune to dazed.\n\u2022 Coag. 2: you gain a +2 bonus to Open Checks made to examine creatures, items, and locations.",
+            "description": "You are immune to dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).\n\u2022 Coag. 2: you gain a +2 bonus to Open Checks made to examine creatures, items, and locations.",
             "tags": [
                 "dazed"
             ],
+            "contract-icon": "minus",
             "d66": "15",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -97,7 +114,10 @@
                 "resistance",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "16",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -112,7 +132,10 @@
                 "resistance",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "21",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -120,12 +143,15 @@
             "is-container": true,
             "label": "Dazing",
             "slug": "optional-rules-technospheres-dazing",
-            "description": "Each target hit by this weapon suffers dazed.\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "dazed",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "22",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -138,7 +164,10 @@
                 "defense",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "23",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -152,7 +181,10 @@
                 "mp",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "24",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -160,12 +192,15 @@
             "is-container": true,
             "label": "Energizing",
             "slug": "optional-rules-technospheres-energizing",
-            "description": "You are immune to weak.\n\u2022 Coag. 2: when you recover Hit Points, you recover 2 additional Hit Points.",
+            "description": "You are immune to weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).\n\u2022 Coag. 2: when you recover Hit Points, you recover 2 additional Hit Points.",
             "tags": [
                 "hp",
                 "weak"
             ],
+            "contract-icon": "minus",
             "d66": "25",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -178,7 +213,10 @@
                 "multi",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "26",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -186,12 +224,15 @@
             "is-container": true,
             "label": "Ghastly",
             "slug": "optional-rules-technospheres-ghastly",
-            "description": "Each target hit by this weapon suffers shaken.\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "shaken",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "31",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -204,7 +245,10 @@
                 "defense",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "32",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -218,7 +262,10 @@
                 "magic-defense",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "33",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -231,7 +278,10 @@
                 "hp",
                 "mp"
             ],
+            "contract-icon": "minus",
             "d66": "34",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -241,7 +291,10 @@
             "slug": "optional-rules-technospheres-mighty",
             "description": "You treat your Might as if it were one die size higher (up to a maximum of d12).\n\nThis hoplosphere occupies 2 slots.",
             "tags": [],
+            "contract-icon": "minus",
             "d66": "35",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -255,7 +308,10 @@
                 "magic-defense",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "36",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -267,7 +323,10 @@
             "tags": [
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "41",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -282,7 +341,10 @@
                 "resistance",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "42",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -295,7 +357,10 @@
                 "defense",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "43",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -303,12 +368,15 @@
             "is-container": true,
             "label": "Quick",
             "slug": "optional-rules-technospheres-quick",
-            "description": "You are immune to slow.\n\u2022 Coag. 2: you gain a +2 bonus to your Initiative Modifier.",
+            "description": "You are immune to slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).\n\u2022 Coag. 2: you gain a +2 bonus to your Initiative Modifier.",
             "tags": [
                 "initiative",
                 "slow"
             ],
+            "contract-icon": "minus",
             "d66": "44",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -323,7 +391,10 @@
                 "resistance",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "45",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -336,7 +407,10 @@
                 "defense",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "46",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -346,7 +420,10 @@
             "slug": "optional-rules-technospheres-revealing",
             "description": "You treat your Insight as if it were one die size higher (up to a maximum of d12).\n\nThis hoplosphere occupies 2 slots.",
             "tags": [],
+            "contract-icon": "minus",
             "d66": "51",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -358,7 +435,10 @@
             "tags": [
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "52",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -366,12 +446,15 @@
             "is-container": true,
             "label": "Scornful",
             "slug": "optional-rules-technospheres-scornful",
-            "description": "Each target hit by this weapon suffers enraged.\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>).\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "enraged",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "53",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -386,7 +469,10 @@
                 "resistance",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "54",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -400,7 +486,10 @@
                 "magic-defense",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "55",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -408,12 +497,15 @@
             "is-container": true,
             "label": "Snaring",
             "slug": "optional-rules-technospheres-snaring",
-            "description": "Each target hit by this weapon suffers slow.\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "slow",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "56",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -428,7 +520,10 @@
                 "magic-defense",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "61",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -436,12 +531,15 @@
             "is-container": true,
             "label": "Steadfast",
             "slug": "optional-rules-technospheres-steadfast",
-            "description": "You are immune to shaken.\n\u2022 Coag. 2: when you recover Mind Points, you recover 2 additional Mind Points.",
+            "description": "You are immune to shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).\n\u2022 Coag. 2: when you recover Mind Points, you recover 2 additional Mind Points.",
             "tags": [
                 "mp",
                 "shaken"
             ],
+            "contract-icon": "minus",
             "d66": "62",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -449,12 +547,15 @@
             "is-container": true,
             "label": "Tiring",
             "slug": "optional-rules-technospheres-tiring",
-            "description": "Each target hit by this weapon suffers weak.\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "weak",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "63",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -462,12 +563,15 @@
             "is-container": true,
             "label": "Toxic",
             "slug": "optional-rules-technospheres-toxic",
-            "description": "Each target hit by this weapon suffers poisoned.\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "poisoned",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "64",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": "<span class='ui-icon weapons-only-icon svg-check-mark'></span>"
         },
         {
@@ -482,7 +586,10 @@
                 "resistance",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "65",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         },
         {
@@ -497,8 +604,12 @@
                 "resistance",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "d66": "66",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "weapons-only": ""
         }
-    ]
+    ],
+    "order": []
 }

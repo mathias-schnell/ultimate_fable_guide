@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-weapons-basic-arcane",
     "label": "Arcane",
     "sub-labels": [
@@ -38,13 +40,20 @@
             "slug": "equipment-weapons-basic-arcane-staff",
             "description": "Two-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "arcane",
+                "basic",
+                "equipment",
                 "melee",
+                "physical",
                 "two-handed"
             ],
             "accuracy": "\u3010WLP + WLP\u3011",
+            "contract-icon": "minus",
             "cost": "100 z",
             "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -53,13 +62,21 @@
             "slug": "equipment-weapons-basic-arcane-tome",
             "description": "Two-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "arcane",
+                "basic",
+                "equipment",
                 "melee",
+                "physical",
                 "two-handed"
             ],
             "accuracy": "\u3010INS + INS\u3011",
+            "contract-icon": "minus",
             "cost": "100 z",
             "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

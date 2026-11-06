@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-gadgets-infusions-superior",
     "label": "",
     "sub-labels": [
@@ -33,9 +35,20 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "attack",
+                "core",
+                "hp",
+                "inventory",
+                "ip",
+                "mp",
+                "tinkerer"
+            ],
+            "contract-icon": "minus",
             "effect": "Choose one option: you recover an amount of HP equal to half the HP loss suffered by the target of the attack; or you recover an amount of MP equal to half the MP loss suffered by the target of the attack. This infusion can only be used if the attack targeted a single creature.",
-            "infusion": "Vampire"
+            "expand-icon": "plus",
+            "infusion": "Vampire",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -43,9 +56,21 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
-            "effect": "The attack deals 5 extra damage, its damage becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), and each creature hit by the attack suffers poisoned.",
-            "infusion": "Venom"
+            "tags": [
+                "attack",
+                "core",
+                "inventory",
+                "ip",
+                "poison",
+                "poisoned",
+                "tinkerer"
+            ],
+            "contract-icon": "minus",
+            "effect": "The attack deals 5 extra damage, its damage becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), and each creature hit by the attack suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
+            "expand-icon": "plus",
+            "infusion": "Venom",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

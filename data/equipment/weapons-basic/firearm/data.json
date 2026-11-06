@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-weapons-basic-firearm",
     "label": "Firearm",
     "sub-labels": [
@@ -38,17 +40,28 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Pistol <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Pistol <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-weapons-basic-firearm-pistol",
             "description": "One-handed \u2022 Ranged \u2022 No Quality.",
             "tags": [
+                "basic",
+                "core",
+                "equipment",
+                "firearm",
+                "martial",
                 "one-handed",
-                "ranged"
+                "physical",
+                "ranged",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "250 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

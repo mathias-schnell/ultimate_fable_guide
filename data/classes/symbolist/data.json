@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "yin-yang",
+    "menu-icon": "yin-yang",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-symbolist",
     "label": "Symbolist",
     "sub-labels": [
@@ -31,11 +33,17 @@
             "slug": "classes-symbolist-magic-symbols",
             "description": "If an ally bears one of your symbols, that ally may perform the Spell action and destroy that symbol to cast a single spell among those you know, as long as it has a total Mind Point cost equal to or lower than (SL \u00d7 10) (that ally must still pay the MP cost).",
             "tags": [
+                "high-fantasy",
+                "mp",
                 "spell",
-                "symbol"
+                "symbol",
+                "symbolist"
             ],
             "class": "Symbolist",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -43,9 +51,15 @@
             "label": "Mirage",
             "slug": "classes-symbolist-mirage",
             "description": "You gain the ability to perform Rituals of the Ritualism discipline; additionally, you may use Ritualism to create sight-based illusions.",
-            "tags": [],
+            "tags": [
+                "high-fantasy",
+                "symbolist"
+            ],
             "class": "Symbolist",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -54,12 +68,17 @@
             "slug": "classes-symbolist-personal-touch",
             "description": "When a creature you can see that is bearing one of your symbols suffers damage or recovers Hit Points and/or Mind Points, you may have that creature suffer (SL) extra damage or recover (SL) additional Hit Points and/or Mind Points, respectively.",
             "tags": [
+                "high-fantasy",
                 "hp",
                 "mp",
-                "symbol"
+                "symbol",
+                "symbolist"
             ],
             "class": "Symbolist",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -68,11 +87,16 @@
             "slug": "classes-symbolist-symbolic-connection",
             "description": "You always know the exact direction in which to find any creature bearing one of your symbols, as long as that creature is within 2 travel days of your position.",
             "tags": [
+                "high-fantasy",
                 "symbol",
+                "symbolist",
                 "travel"
             ],
             "class": "Symbolist",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -83,14 +107,20 @@
             "tags": [
                 "attack",
                 "free-attack",
+                "high-fantasy",
                 "inventory",
                 "ip",
                 "skill",
                 "symbol",
+                "symbolist",
                 "weapon"
             ],
             "class": "Symbolist",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

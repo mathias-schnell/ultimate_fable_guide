@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "optional-rules-zero-powers-zero-effects",
     "label": "Zero Effects",
     "sub-labels": [
@@ -32,6 +34,9 @@
                 "free-attack",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Perform a free attack with each equipped weapon, gaining extra damage for a single weapon or accuracy bonuses for dual weapons."
         },
         {
@@ -46,9 +51,14 @@
                 "clock",
                 "crisis",
                 "free-attack",
+                "hp",
                 "ignore",
+                "mp",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Roll 3d6 predicting odd or even matches to trigger varying effects ranging from clock manipulation to massive damage and recovery."
         },
         {
@@ -60,6 +70,9 @@
             "tags": [
                 "inventory"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Halve all Inventory Point costs for the rest of the scene and immediately perform a free Inventory action."
         },
         {
@@ -80,6 +93,9 @@
                 "light",
                 "poison"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Lock damage types and deal extra untyped-ignoring damage for two chosen elements while taking an extra action."
         },
         {
@@ -91,6 +107,9 @@
             "tags": [
                 "add-action"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Increase all attribute die sizes by one for the rest of the scene and take an additional action."
         },
         {
@@ -100,8 +119,12 @@
             "slug": "optional-rules-zero-powers-zero-effects-zero-magic",
             "description": "You perform the Spell action for free, casting a spell of your choice among those you know; the spell\u2019s total Mind Point cost is treated as being 0 (this includes any cost increases due to Skills and effects). The spell deals 10 extra damage and, if it is an offensive spell (\ud83d\uddf2), you gain a +5 bonus to the Magic Check.",
             "tags": [
+                "mp",
                 "spell"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Cast a spell for free with 0 MP cost, boosted accuracy, and extra damage."
         },
         {
@@ -111,8 +134,12 @@
             "slug": "optional-rules-zero-powers-zero-effects-zero-objective",
             "description": "Choose one option: fill 3 sections of a Clock tied to the current scene; or erase 3 sections of a Clock tied to the current scene.",
             "tags": [
-                "clock"
+                "clock",
+                "objective"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Fill or erase three sections of a clock tied to the current scene."
         },
         {
@@ -124,6 +151,9 @@
             "tags": [
                 "hp"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Cure all status effects and restore a large amount of HP for yourself and visible allies."
         },
         {
@@ -131,7 +161,7 @@
             "is-container": true,
             "label": "Zero Scourge",
             "slug": "optional-rules-zero-powers-zero-effects-zero-scourge",
-            "description": "Special rule: when you select this effect for your Zero Power, choose a damage type among air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), ice (<i class=\"ui-icon elem-ice svg-ice\"></i>), light (<i class=\"ui-icon elem-light svg-sun\"></i>), and poison (<i class=\"ui-icon elem-poison svg-poison\"></i>); then, choose two status effects among dazed, shaken, slow, and weak.\n\nChoose any number of creatures you can see: you deal (30 + half your level) damage of the chosen type to each of them, and they suffer the chosen status effect.",
+            "description": "Special rule: when you select this effect for your Zero Power, choose a damage type among air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), ice (<i class=\"ui-icon elem-ice svg-ice\"></i>), light (<i class=\"ui-icon elem-light svg-sun\"></i>), and poison (<i class=\"ui-icon elem-poison svg-poison\"></i>); then, choose two status effects among dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).\n\nChoose any number of creatures you can see: you deal (30 + half your level) damage of the chosen type to each of them, and they suffer the chosen status effect.",
             "tags": [
                 "air",
                 "bolt",
@@ -146,6 +176,9 @@
                 "slow",
                 "weak"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Deal damage of a chosen type and inflict two status effects on any number of visible creatures."
         },
         {
@@ -154,7 +187,12 @@
             "label": "Zero Shield",
             "slug": "optional-rules-zero-powers-zero-effects-zero-shield",
             "description": "Until the start of your next turn, all damage suffered by you and every ally present on the scene is halved (before applying Affinities).",
-            "tags": [],
+            "tags": [
+                "shield"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Halve all incoming damage for yourself and all allies present on the scene until your next turn."
         },
         {
@@ -169,7 +207,11 @@
                 "free-attack",
                 "weapon"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Allow up to two allies and yourself to perform a boosted free attack with equipped weapons."
         }
-    ]
+    ],
+    "order": []
 }

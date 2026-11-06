@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-gadgets-alchemy-effect",
     "label": "",
     "sub-labels": [
@@ -31,9 +33,16 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip",
+                "poison"
+            ],
+            "contract-icon": "minus",
             "die": "Any",
-            "effect": "... is dealt 20 poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage. This amount increases to 30 damage if you are level 20 or higher, or to 40 damage if you are level 40 or higher."
+            "effect": "... is dealt 20 poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage. This amount increases to 30 damage if you are level 20 or higher, or to 40 damage if you are level 40 or higher.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -41,9 +50,15 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "Any",
-            "effect": "... recovers 30 Hit Points."
+            "effect": "... recovers 30 Hit Points.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -51,9 +66,15 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "1",
-            "effect": "... treats their Dexterity and Might dice as if they were one size higher (up to a maximum of d12) until the end of your next turn."
+            "effect": "... treats their Dexterity and Might dice as if they were one size higher (up to a maximum of d12) until the end of your next turn.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -61,9 +82,15 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "2",
-            "effect": "As effect 1, but with Insight and Willpower."
+            "effect": "As effect 1, but with Insight and Willpower.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -71,9 +98,16 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "air",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "3",
-            "effect": "... is dealt 20 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage. This amount increases to 30 damage if you are level 20 or higher, or to 40 damage if you are level 40 or higher."
+            "effect": "... is dealt 20 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage. This amount increases to 30 damage if you are level 20 or higher, or to 40 damage if you are level 40 or higher.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -81,9 +115,16 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "bolt",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "4",
-            "effect": "As effect 3, but with bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage."
+            "effect": "As effect 3, but with bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -91,9 +132,16 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "dark",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "5",
-            "effect": "As effect 3, but with dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage."
+            "effect": "As effect 3, but with dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -101,9 +149,16 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "earth",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "6",
-            "effect": "As effect 3, but with earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage."
+            "effect": "As effect 3, but with earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -111,9 +166,16 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "fire",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "7",
-            "effect": "As effect 3, but with fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage."
+            "effect": "As effect 3, but with fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -121,9 +183,16 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "ice",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "8",
-            "effect": "As effect 3, but with ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage."
+            "effect": "As effect 3, but with ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -131,9 +200,18 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "air",
+                "fire",
+                "inventory",
+                "ip",
+                "resistance"
+            ],
+            "contract-icon": "minus",
             "die": "9",
-            "effect": "... gains Resistance to air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) and fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage until the end of the scene."
+            "effect": "... gains Resistance to air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) and fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage until the end of the scene.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -141,9 +219,17 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "bolt",
+                "ice",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "10",
-            "effect": "As effect 9, but with bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage."
+            "effect": "As effect 9, but with bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -151,9 +237,17 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "dark",
+                "earth",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "11",
-            "effect": "As effect 9, but with dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) and earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage."
+            "effect": "As effect 9, but with dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) and earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -161,9 +255,16 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "enraged",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "12",
-            "effect": "... suffers enraged."
+            "effect": "... suffers enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>).",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -171,9 +272,16 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip",
+                "poisoned"
+            ],
+            "contract-icon": "minus",
             "die": "13",
-            "effect": "... suffers poisoned."
+            "effect": "... suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -181,9 +289,19 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "dazed",
+                "inventory",
+                "ip",
+                "shaken",
+                "slow",
+                "weak"
+            ],
+            "contract-icon": "minus",
             "die": "14",
-            "effect": "... suffers dazed, shaken, slow and weak."
+            "effect": "... suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -191,9 +309,15 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "15",
-            "effect": "... recovers from all status effects."
+            "effect": "... recovers from all status effects.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -201,9 +325,16 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "hp",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "16-17",
-            "effect": "... recovers 50 Hit Points and 50 Mind Points."
+            "effect": "... recovers 50 Hit Points and 50 Mind Points.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -211,9 +342,15 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "18",
-            "effect": "... recovers 100 Hit Points."
+            "effect": "... recovers 100 Hit Points.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -221,9 +358,15 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "19",
-            "effect": "... recovers 100 Mind Points."
+            "effect": "... recovers 100 Mind Points.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -231,9 +374,17 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "hp",
+                "inventory",
+                "ip"
+            ],
+            "contract-icon": "minus",
             "die": "20",
-            "effect": "... recovers 100 Hit Points and 100 Mind Points."
+            "effect": "... recovers 100 Hit Points and 100 Mind Points.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

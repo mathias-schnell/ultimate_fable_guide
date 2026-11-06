@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-dances",
     "label": "Dances",
     "sub-labels": [],
@@ -28,22 +30,30 @@
             "slug": "class-features-dances-angel-dance",
             "description": "Choose one option: you gain Resistance to light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage; or all damage dealt by your attacks and spells becomes light (<i class=\"ui-icon elem-light svg-sun\"></i>).",
             "tags": [
+                "dance",
                 "light",
                 "resistance"
             ],
-            "duration": "Until the start of your next turn"
+            "contract-icon": "minus",
+            "duration": "Until the start of your next turn",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Banshee Dance",
             "slug": "class-features-dances-banshee-dance",
-            "description": "Choose another creature that is able to see you. If that creature is suffering from slow, they suffer shaken.",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), they suffer shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
             "tags": [
+                "dance",
                 "shaken",
                 "slow"
             ],
-            "duration": "Instantaneous"
+            "contract-icon": "minus",
+            "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -52,10 +62,14 @@
             "slug": "class-features-dances-bat-dance",
             "description": "Choose one option: you gain Resistance to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage; or all damage dealt by your attacks and spells becomes dark (<i class=\"ui-icon elem-dark svg-dark\"></i>).",
             "tags": [
+                "dance",
                 "dark",
                 "resistance"
             ],
-            "duration": "Until the start of your next turn"
+            "contract-icon": "minus",
+            "duration": "Until the start of your next turn",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -65,9 +79,13 @@
             "description": "Choose one option: you gain Resistance to bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage; or all damage dealt by your attacks and spells becomes bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>).",
             "tags": [
                 "bolt",
+                "dance",
                 "resistance"
             ],
-            "duration": "Until the start of your next turn"
+            "contract-icon": "minus",
+            "duration": "Until the start of your next turn",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -77,9 +95,13 @@
             "description": "Choose one option: you gain Resistance to air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage; or all damage dealt by your attacks and spells becomes air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>).",
             "tags": [
                 "air",
+                "dance",
                 "resistance"
             ],
-            "duration": "Until the start of your next turn"
+            "contract-icon": "minus",
+            "duration": "Until the start of your next turn",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -88,22 +110,30 @@
             "slug": "class-features-dances-hydra-dance",
             "description": "After you suffer damage, choose one option: you recover 5 Hit Points, or you recover 5 Mind Points.",
             "tags": [
+                "dance",
                 "hp",
                 "mp"
             ],
-            "duration": "Until the start of your next turn"
+            "contract-icon": "minus",
+            "duration": "Until the start of your next turn",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Kraken Dance",
             "slug": "class-features-dances-kraken-dance",
-            "description": "Choose another creature that is able to see you. If that creature is suffering from dazed, they suffer slow.",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), they suffer slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
             "tags": [
+                "dance",
                 "dazed",
                 "slow"
             ],
-            "duration": "Instantaneous"
+            "contract-icon": "minus",
+            "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -111,8 +141,13 @@
             "label": "Lion Dance",
             "slug": "class-features-dances-lion-dance",
             "description": "You recover from a single status effect of your choice.",
-            "tags": [],
-            "duration": "Instantaneous"
+            "tags": [
+                "dance"
+            ],
+            "contract-icon": "minus",
+            "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -121,9 +156,13 @@
             "slug": "class-features-dances-maenad-dance",
             "description": "Choose another creature that is able to see you. That creature loses an amount of Mind Points equal to your current Dexterity die size.",
             "tags": [
+                "dance",
                 "mp"
             ],
-            "duration": "Instantaneous"
+            "contract-icon": "minus",
+            "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -132,22 +171,30 @@
             "slug": "class-features-dances-myrmidon-dance",
             "description": "Choose one option: you gain Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage; or all damage dealt by your attacks and spells becomes earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>).",
             "tags": [
+                "dance",
                 "earth",
                 "resistance"
             ],
-            "duration": "Until the start of your next turn"
+            "contract-icon": "minus",
+            "duration": "Until the start of your next turn",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Nightmare Dance",
             "slug": "class-features-dances-nightmare-dance",
-            "description": "Choose another creature that is able to see you. If that creature is suffering from shaken, they suffer weak.",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), they suffer weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
             "tags": [
+                "dance",
                 "shaken",
                 "weak"
             ],
-            "duration": "Instantaneous"
+            "contract-icon": "minus",
+            "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -155,8 +202,13 @@
             "label": "Ouroboros Dance",
             "slug": "class-features-dances-ouroboros-dance",
             "description": "Choose one ally you can see who has yet to take a turn during this round. That ally may take their turn immediately after yours during this round.",
-            "tags": [],
-            "duration": "Instantaneous"
+            "tags": [
+                "dance"
+            ],
+            "contract-icon": "minus",
+            "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -166,9 +218,13 @@
             "description": "Choose another creature that is able to see you. The next time that creature performs an attack or casts an offensive spell (\ud83d\uddf2) during this scene, that attack or spell must include you among its targets if possible.",
             "tags": [
                 "attack",
+                "dance",
                 "spell"
             ],
-            "duration": "Instantaneous"
+            "contract-icon": "minus",
+            "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -177,22 +233,30 @@
             "slug": "class-features-dances-phoenix-dance",
             "description": "Choose one option: you gain Resistance to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage; or all damage dealt by your attacks and spells becomes fire (<i class=\"ui-icon elem-fire svg-fire\"></i>).",
             "tags": [
+                "dance",
                 "fire",
                 "resistance"
             ],
-            "duration": "Until the start of your next turn"
+            "contract-icon": "minus",
+            "duration": "Until the start of your next turn",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Satyr Dance",
             "slug": "class-features-dances-satyr-dance",
-            "description": "Choose another creature that is able to see you. If that creature is suffering from weak, they suffer dazed.",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>), they suffer dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
             "tags": [
+                "dance",
                 "dazed",
                 "weak"
             ],
-            "duration": "Instantaneous"
+            "contract-icon": "minus",
+            "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -202,9 +266,13 @@
             "description": "Choose an ally that is able to see you and has a Bond towards you: you and that ally both recover an amount of Hit Points equal to your current Dexterity die size. The restored amount increases by 5 Hit Points if you are level 20 or higher, or by 10 Hit Points if you are level 40 or higher.",
             "tags": [
                 "bond",
+                "dance",
                 "hp"
             ],
-            "duration": "Instantaneous"
+            "contract-icon": "minus",
+            "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -213,10 +281,15 @@
             "slug": "class-features-dances-yeti-dance",
             "description": "Choose one option: you gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage; or all damage dealt by your attacks and spells becomes ice (<i class=\"ui-icon elem-ice svg-ice\"></i>).",
             "tags": [
+                "dance",
                 "ice",
                 "resistance"
             ],
-            "duration": "Until the start of your next turn"
+            "contract-icon": "minus",
+            "duration": "Until the start of your next turn",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-rare-weapons-rare-flail",
     "label": "Flails",
     "sub-labels": [],
@@ -37,30 +39,44 @@
             "slug": "equipment-rare-weapons-rare-flail-old-whip",
             "description": "Two-handed \u2022 Melee \u2022 This weapon deals 5 extra damage to beasts and monsters.",
             "tags": [
+                "equipment",
+                "flail",
                 "melee",
+                "physical",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "650 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Dusk Star",
             "slug": "equipment-rare-weapons-rare-flail-dusk-star",
-            "description": "One-handed \u2022 Melee \u2022 You are immune to shaken.",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
             "tags": [
+                "dark",
+                "equipment",
+                "flail",
                 "melee",
                 "one-handed",
+                "rare",
                 "shaken"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "750 z",
             "damage": "\u3010HR + 4\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -69,16 +85,23 @@
             "slug": "equipment-rare-weapons-rare-flail-witchbane",
             "description": "Two-handed \u2022 Melee \u2022 Damage dealt by this weapon reduces the target\u2019s Mind Points instead of their Hit Points. If the target\u2019s Mind Points reach 0, any excess loss is applied to their Hit Points as normal.",
             "tags": [
+                "equipment",
+                "flail",
                 "hp",
                 "melee",
                 "mp",
+                "physical",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "800 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -87,15 +110,22 @@
             "slug": "equipment-rare-weapons-rare-flail-salamander",
             "description": "One-handed \u2022 Melee \u2022 You gain Resistance to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage.",
             "tags": [
+                "equipment",
                 "fire",
+                "flail",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "resistance"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1000 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -105,133 +135,188 @@
             "description": "One-handed \u2022 Melee \u2022 You gain a +1 bonus to Defense.",
             "tags": [
                 "defense",
+                "equipment",
+                "flail",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "physical",
+                "rare"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1100 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Dominatrix",
             "slug": "equipment-rare-weapons-rare-flail-dominatrix",
-            "description": "One-handed \u2022 Melee \u2022 You gain a +2 bonus to Accuracy Checks and Magic Checks against enraged targets.",
+            "description": "One-handed \u2022 Melee \u2022 You gain a +2 bonus to Accuracy Checks and Magic Checks against enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) targets.",
             "tags": [
                 "enraged",
+                "equipment",
+                "fire",
+                "flail",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "rare"
             ],
             "accuracy": "\u3010DEX + WLP\u3011",
+            "contract-icon": "minus",
             "cost": "1200 z",
             "damage": "\u3010HR + 8\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Whipblade <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Whipblade <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-flail-whipblade",
             "description": "Two-handed \u2022 Melee \u2022 Attacks with this weapon have multi (2).",
             "tags": [
+                "equipment",
+                "flail",
                 "melee",
                 "multi",
+                "physical",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1400 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Silk Wire <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Silk Wire <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-flail-silk-wire",
             "description": "Two-handed \u2022 Melee \u2022 You gain Resistance to physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage.",
             "tags": [
+                "equipment",
+                "flail",
                 "melee",
                 "physical",
+                "rare",
                 "resistance",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "1450 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Kusarigama",
             "slug": "equipment-rare-weapons-rare-flail-kusarigama",
-            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow.",
+            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
             "tags": [
+                "equipment",
+                "flail",
                 "melee",
+                "physical",
+                "rare",
                 "slow",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "1650 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Jormungand <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Jormungand <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-flail-jormungand",
             "description": "Two-handed \u2022 Melee \u2022 Attacks with this weapon have multi (3).",
             "tags": [
+                "dark",
+                "equipment",
+                "flail",
                 "melee",
                 "multi",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "2400 z",
             "damage": "\u3010HR + 12\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Koi Whisker <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Koi Whisker <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-flail-koi-whisker",
             "description": "Two-handed \u2022 Melee \u2022 You gain Immunity to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) and light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage.",
             "tags": [
                 "dark",
+                "equipment",
+                "flail",
                 "immunity",
                 "light",
                 "melee",
+                "physical",
+                "rare",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + WLP\u3011",
+            "contract-icon": "minus",
             "cost": "2800 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Chimera Tail <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Chimera Tail <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-flail-chimera-tail",
             "description": "Two-handed \u2022 Melee \u2022 Attacks with this weapon deal 1 extra damage for every different creature Species among those you learned your known Chimerist spells from. Spells learned and later forgotten do not count.",
             "tags": [
                 "chimerist",
+                "equipment",
+                "flail",
                 "melee",
+                "physical",
+                "rare",
                 "species",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "900 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -240,15 +325,24 @@
             "slug": "equipment-rare-weapons-rare-flail-connector",
             "description": "Two-handed \u2022 Melee \u2022 You may ignore the MP cost of the Magitech Override Skill.",
             "tags": [
+                "equipment",
+                "flail",
                 "ignore",
                 "melee",
+                "mp",
+                "physical",
+                "rare",
                 "skill",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "600 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

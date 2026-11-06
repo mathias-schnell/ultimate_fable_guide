@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-invocations-lightning",
     "label": "",
     "sub-labels": [
@@ -31,8 +33,15 @@
             "label": "Electro Blast",
             "slug": "class-features-invocations-lightning-electro-blast",
             "description": "",
-            "tags": [],
-            "effect": "You deal 20 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to the target."
+            "tags": [
+                "bolt",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "You deal 20 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to the target.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -40,8 +49,17 @@
             "label": "Electro Hex",
             "slug": "class-features-invocations-lightning-electro-hex",
             "description": "",
-            "tags": [],
-            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) and fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage."
+            "tags": [
+                "bolt",
+                "earth",
+                "fire",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) and fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -49,8 +67,16 @@
             "label": "Static",
             "slug": "class-features-invocations-lightning-static",
             "description": "",
-            "tags": [],
-            "effect": "You deal 10 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to the target, and they suffer slow."
+            "tags": [
+                "bolt",
+                "invocation",
+                "invoker",
+                "slow"
+            ],
+            "contract-icon": "minus",
+            "effect": "You deal 10 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to the target, and they suffer slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -58,8 +84,18 @@
             "label": "Thunder",
             "slug": "class-features-invocations-lightning-thunder",
             "description": "",
-            "tags": [],
-            "effect": "The target loses 20 Mind Points and also suffers dazed."
+            "tags": [
+                "bolt",
+                "dazed",
+                "invocation",
+                "invoker",
+                "mp"
+            ],
+            "contract-icon": "minus",
+            "effect": "The target loses 20 Mind Points and also suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

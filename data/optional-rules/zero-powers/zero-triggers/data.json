@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "optional-rules-zero-powers-zero-triggers",
     "label": "Zero Triggers",
     "sub-labels": [
@@ -35,7 +37,10 @@
                 "hp",
                 "mp"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
             "filled-sections": "1 per trigger",
+            "menu-icon": "",
             "summary": "Fills 1 section when you restore HP or MP to one or more allies."
         },
         {
@@ -45,7 +50,10 @@
             "slug": "optional-rules-zero-powers-zero-triggers-defiance",
             "description": "This trigger activates at the start of your turn during a conflict, provided one or more Villains and/or champion-Rank enemies are present on the scene.",
             "tags": [],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
             "filled-sections": "1 per trigger",
+            "menu-icon": "",
             "summary": "Fills 1 section at the start of your turn if a Villain or champion enemy is present."
         },
         {
@@ -58,7 +66,10 @@
                 "clock",
                 "hp"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
             "filled-sections": "1 per trigger",
+            "menu-icon": "",
             "summary": "Fills 1 section when the PC you love loses HP or surrenders; fills clock on Sacrifice."
         },
         {
@@ -70,7 +81,10 @@
             "tags": [
                 "crisis"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
             "filled-sections": "3 per trigger",
+            "menu-icon": "",
             "summary": "Fills 3 sections when you enter Crisis for the first time in a scene."
         },
         {
@@ -80,7 +94,10 @@
             "slug": "optional-rules-zero-powers-zero-triggers-sequence",
             "description": "This trigger activates when an ally you can see unleashes their zero effect.",
             "tags": [],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
             "filled-sections": "2 per trigger",
+            "menu-icon": "",
             "summary": "Fills 2 sections when an ally you can see unleashes their zero effect."
         },
         {
@@ -88,14 +105,17 @@
             "is-container": true,
             "label": "Strategy",
             "slug": "optional-rules-zero-powers-zero-triggers-strategy",
-            "description": "This trigger activates at the end of your turn during a conflict, provided one or more enemies present on the scene are suffering from a total of two or more different status effects (such as one dazed and weak enemy, or one slow enemy and another enraged enemy).",
+            "description": "This trigger activates at the end of your turn during a conflict, provided one or more enemies present on the scene are suffering from a total of two or more different status effects (such as one dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>) and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>) enemy, or one slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) enemy and another enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) enemy).",
             "tags": [
                 "dazed",
                 "enraged",
                 "slow",
                 "weak"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
             "filled-sections": "1 per trigger",
+            "menu-icon": "",
             "summary": "Fills 1 section at turn end if enemies suffer from two or more total status effects."
         },
         {
@@ -105,8 +125,12 @@
             "slug": "optional-rules-zero-powers-zero-triggers-synergy",
             "description": "This trigger activates when you deal damage to one or more creatures, filling 1 section for each creature that was Vulnerable to the type of damage dealt.",
             "tags": [],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
             "filled-sections": "varies",
+            "menu-icon": "",
             "summary": "Fills 1 section for each creature hit that was Vulnerable to your damage type."
         }
-    ]
+    ],
+    "order": []
 }

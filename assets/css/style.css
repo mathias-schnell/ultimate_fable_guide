@@ -74,6 +74,13 @@
   --inactive-tab-bg-color: #000022;
   --inactive-tab-text-color: #7777aa;
 
+  --status-dazed: #f1e60f;
+  --status-shaken: #9b59b6;
+  --status-slow: #347adb;
+  --status-weak: #6c6c6c;
+  --status-enraged: #e82914;
+  --status-poisoned: #1edb67;
+
   --text-color: #ffffff;
   --text-color-dark: #bbbbbb;
   --text-gold: #fadc00;
@@ -246,7 +253,7 @@ h6 { font-size: var(--font-size-mediumlarge); }
 .menu-root .menu-item .menu-toggle {
     align-items: center;
     display: inline-flex;
-    gap: 0.35rem;
+    gap: 0.25rem;
 }
 
 [data-depth='1'] .menu-label {
@@ -273,22 +280,36 @@ h6 { font-size: var(--font-size-mediumlarge); }
     transform: translateY(-1px);
 }
 
-[data-depth='1'] .menu-icon {
-    font-size: var(--font-size-xxxl);
-    height: var(--font-size-xxxl);
-    width: var(--font-size-xxxl);
-}
-
+[data-depth='1'] .menu-icon,
 [data-depth='2'] .menu-icon {
     font-size: var(--font-size-xxl);
     height: var(--font-size-xxl);
+    margin-left: 0.4rem;
     width: var(--font-size-xxl);
 }
 
+[data-depth='2'] [class*="-group"] .menu-icon,
 [data-depth='3'] .menu-icon {
+    font-size: var(--font-size-xl);
+    height: var(--font-size-xl);
+    margin-left: 0.4rem;
+    width: var(--font-size-xl);
+}
+
+[data-depth='1'] .expand-contract-icon,
+[data-depth='2'] .expand-contract-icon {
+    font-size: var(--font-size-xl);
+    height: var(--font-size-xl);
+    width: var(--font-size-xl);
+    transform: translateX(0.1rem);
+}
+
+[data-depth='2'] [class*="-group"] .expand-contract-icon,
+[data-depth='3'] .expand-contract-icon {
     font-size: var(--font-size-large);
     height: var(--font-size-large);
     width: var(--font-size-large);
+    transform: translateY(0.1rem);
 }
 
 .menu-root [aria-hidden="true"] {
@@ -369,6 +390,12 @@ h6 { font-size: var(--font-size-mediumlarge); }
     color: var(--text-gold);
 }
 
+.ui-icon.inactive {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
 .elem-physical { color: var(--elem-physical); }
 .elem-air      { color: var(--elem-air); }
 .elem-bolt     { color: var(--elem-bolt); }
@@ -378,3 +405,10 @@ h6 { font-size: var(--font-size-mediumlarge); }
 .elem-light    { color: var(--elem-light); }
 .elem-dark     { color: var(--elem-dark); }
 .elem-poison   { color: var(--elem-poison); }
+
+.status-dazed    { color: var(--status-dazed); }
+.status-shaken   { color: var(--status-shaken); }
+.status-slow     { color: var(--status-slow); }
+.status-weak     { color: var(--status-weak); }
+.status-enraged  { color: var(--status-enraged); }
+.status-poisoned { color: var(--status-poisoned); }

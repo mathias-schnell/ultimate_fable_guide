@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-gadgets-magitech-advanced",
     "label": "",
     "sub-labels": [
@@ -33,15 +35,21 @@
                 "air",
                 "attack",
                 "bolt",
+                "core",
                 "earth",
                 "fire",
                 "free-attack",
                 "ice",
                 "inventory",
                 "ip",
-                "physical"
+                "physical",
+                "tinkerer"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "You may perform the Inventory action and spend 2 Inventory Points to create a magicannon."
         }
-    ]
+    ],
+    "order": []
 }

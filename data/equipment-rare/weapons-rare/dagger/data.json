@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-rare-weapons-rare-dagger",
     "label": "Daggers",
     "sub-labels": [],
@@ -37,13 +39,20 @@
             "slug": "equipment-rare-weapons-rare-dagger-latrodectus",
             "description": "One-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "dagger",
+                "equipment",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "poison",
+                "rare"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "250 z",
             "damage": "\u3010HR + 4\u3011 poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -52,14 +61,21 @@
             "slug": "equipment-rare-weapons-rare-dagger-heart-knife",
             "description": "One-handed \u2022 Melee \u2022 This weapon deals 5 extra damage to demons.",
             "tags": [
+                "dagger",
+                "equipment",
+                "light",
                 "melee",
                 "one-handed",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + WLP\u3011",
+            "contract-icon": "minus",
             "cost": "550 z",
             "damage": "\u3010HR + 4\u3011 light (<i class=\"ui-icon elem-light svg-sun\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -68,30 +84,44 @@
             "slug": "equipment-rare-weapons-rare-dagger-atom-slicer",
             "description": "One-handed \u2022 Melee \u2022 Damage dealt by this weapon ignores Resistances.",
             "tags": [
+                "dagger",
+                "equipment",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "600 z",
             "damage": "\u3010HR + 4\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Silent Edge",
             "slug": "equipment-rare-weapons-rare-dagger-silent-edge",
-            "description": "One-handed \u2022 Melee \u2022 You are immune to slow.",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
             "tags": [
+                "air",
+                "dagger",
+                "equipment",
                 "melee",
                 "one-handed",
+                "rare",
                 "slow"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "700 z",
             "damage": "\u3010HR + 4\u3011 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -101,15 +131,22 @@
             "description": "One-handed \u2022 Melee \u2022 When you hit a creature with this weapon, if the attack had a single target, you may choose a single spell with a duration of \u201cScene\u201d affecting the target and end its effects on that creature.",
             "tags": [
                 "attack",
+                "dagger",
+                "dark",
+                "equipment",
                 "melee",
                 "one-handed",
+                "rare",
                 "spell",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "850 z",
             "damage": "\u3010HR + 4\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -119,14 +156,21 @@
             "description": "One-handed \u2022 Melee \u2022 This weapon deals 5 extra damage to enemies in Crisis.",
             "tags": [
                 "crisis",
+                "dagger",
+                "equipment",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1000 z",
             "damage": "\u3010HR + 4\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -135,49 +179,71 @@
             "slug": "equipment-rare-weapons-rare-dagger-gourmet-cutter",
             "description": "One-handed \u2022 Melee \u2022 When you hit one or more creatures with this weapon, you may recover 5 Hit Points.",
             "tags": [
+                "dagger",
+                "equipment",
+                "gourmet",
                 "hp",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1350 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Barbed Knife",
             "slug": "equipment-rare-weapons-rare-dagger-barbed-knife",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers shaken.",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
             "tags": [
+                "dagger",
+                "equipment",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "shaken",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1650 z",
             "damage": "\u3010HR + 4\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Cold Finger",
             "slug": "equipment-rare-weapons-rare-dagger-cold-finger",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers weak.",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
             "tags": [
+                "dagger",
+                "equipment",
+                "ice",
                 "melee",
                 "one-handed",
+                "rare",
                 "weak",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1950 z",
             "damage": "\u3010HR + 8\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -186,32 +252,46 @@
             "slug": "equipment-rare-weapons-rare-dagger-hornet",
             "description": "One-handed \u2022 Melee \u2022 Attacks with this weapon have multi (3).",
             "tags": [
+                "dagger",
+                "equipment",
                 "melee",
                 "multi",
                 "one-handed",
+                "physical",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "2200 z",
             "damage": "\u3010HR + 4\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Frantic Nail",
             "slug": "equipment-rare-weapons-rare-dagger-frantic-nail",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers enraged.",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>).",
             "tags": [
+                "dagger",
                 "enraged",
+                "equipment",
+                "fire",
                 "melee",
                 "one-handed",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010INS + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "2450 z",
             "damage": "\u3010HR + 8\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -220,15 +300,22 @@
             "slug": "equipment-rare-weapons-rare-dagger-midas",
             "description": "One-handed \u2022 Melee \u2022 When you use the Soul Steal Skill successfully against an elite or champion rank creature, the value of their soul treasure increases by 100 zenit.",
             "tags": [
+                "dagger",
+                "dark",
+                "equipment",
                 "melee",
                 "one-handed",
+                "rare",
                 "skill",
                 "zenit"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "900 z",
             "damage": "\u3010HR + 4\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -237,14 +324,21 @@
             "slug": "equipment-rare-weapons-rare-dagger-viper-bone",
             "description": "One-handed \u2022 Melee \u2022 Attacks with this weapon deal 5 extra damage as long as it\u2019s not your turn.",
             "tags": [
+                "dagger",
+                "equipment",
                 "melee",
                 "one-handed",
+                "poison",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1200 z",
             "damage": "\u3010HR + 8\u3011 poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -253,14 +347,21 @@
             "slug": "equipment-rare-weapons-rare-dagger-azotophore",
             "description": "One-handed \u2022 Melee \u2022 Spells you cast that deal ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage will deal 5 extra damage.",
             "tags": [
+                "dagger",
+                "equipment",
                 "ice",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "rare"
             ],
             "accuracy": "\u3010DEX + INS\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "1400 z",
             "damage": "\u3010HR + 8\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "full-motorcycle-helmet",
+    "menu-icon": "full-motorcycle-helmet",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-pilot",
     "label": "Pilot",
     "sub-labels": [
@@ -33,10 +35,16 @@
             "description": "As long as there is no one aboard your personal vehicle, you may have it safely disappear from the game world at any time. What magic or technology allows it?\nIf your personal vehicle is not present in the game world and you are in a space big enough to contain it, you may perform the Inventory action and spend 2 Inventory Points to have the vehicle appear near you, and enter it for free.",
             "tags": [
                 "inventory",
-                "ip"
+                "ip",
+                "pilot",
+                "techno-fantasy",
+                "vehicle"
             ],
             "class": "Pilot",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -47,24 +55,34 @@
             "tags": [
                 "equipment",
                 "guard",
-                "module"
+                "module",
+                "pilot",
+                "techno-fantasy"
             ],
             "class": "Pilot",
-            "max-sl": 4
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 4,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Heart in the Engine",
             "slug": "classes-pilot-heart-in-the-engine",
-            "description": "At the start of your turn during a conflict, if you are driving your personal vehicle, you may spend 10 Mind Points. If you do, choose one option: the next time you deal damage during this turn, deal (SL \u00d7 2) extra damage; or, the next time you suffer damage before the start of your next turn, that damage is reduced by (SL \u00d7 2) (applied before damage Affinities); or, you recover from either slow or weak (your choice).",
+            "description": "At the start of your turn during a conflict, if you are driving your personal vehicle, you may spend 10 Mind Points. If you do, choose one option: the next time you deal damage during this turn, deal (SL \u00d7 2) extra damage; or, the next time you suffer damage before the start of your next turn, that damage is reduced by (SL \u00d7 2) (applied before damage Affinities); or, you recover from either slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) or weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>) (your choice).",
             "tags": [
                 "mp",
+                "pilot",
                 "slow",
+                "techno-fantasy",
                 "weak"
             ],
             "class": "Pilot",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -74,10 +92,16 @@
             "description": "When you acquire this Skill, you gain a personal vehicle with a frame of your choice and three different modules of your choice (see next page).\nWhenever you acquire this Skill again, you acquire two additional modules of your choice.",
             "tags": [
                 "module",
-                "skill"
+                "pilot",
+                "skill",
+                "techno-fantasy",
+                "vehicle"
             ],
             "class": "Pilot",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -87,10 +111,16 @@
             "description": "When you perform an Accuracy Check with a weapon module, you may replace one of the Attributes with Might (such as (MIG + WLP) for an arcane module).",
             "tags": [
                 "arcane",
+                "pilot",
+                "techno-fantasy",
                 "weapon"
             ],
             "class": "Pilot",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

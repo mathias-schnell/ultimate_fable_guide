@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-verses-key",
     "label": "",
     "sub-labels": [
@@ -43,8 +45,18 @@
             "label": "Flame",
             "slug": "class-features-verses-key-flame",
             "description": "",
-            "tags": [],
+            "tags": [
+                "chanter",
+                "fire",
+                "high-fantasy",
+                "hp",
+                "shaken",
+                "verse"
+            ],
             "attribute": "Might",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "recovery": "Hit Points",
             "status-effect": "shaken",
             "type": "fire"
@@ -55,8 +67,18 @@
             "label": "Frost",
             "slug": "class-features-verses-key-frost",
             "description": "",
-            "tags": [],
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "ice",
+                "mp",
+                "verse",
+                "weak"
+            ],
             "attribute": "Willpower",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "recovery": "Mind Points",
             "status-effect": "weak",
             "type": "ice"
@@ -67,8 +89,18 @@
             "label": "Iron",
             "slug": "class-features-verses-key-iron",
             "description": "",
-            "tags": [],
+            "tags": [
+                "chanter",
+                "high-fantasy",
+                "mp",
+                "physical",
+                "slow",
+                "verse"
+            ],
             "attribute": "Willpower",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "recovery": "Mind Points",
             "status-effect": "slow",
             "type": "physical"
@@ -79,8 +111,18 @@
             "label": "Radiance",
             "slug": "class-features-verses-key-radiance",
             "description": "",
-            "tags": [],
+            "tags": [
+                "chanter",
+                "dazed",
+                "high-fantasy",
+                "hp",
+                "light",
+                "verse"
+            ],
             "attribute": "Insight",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "recovery": "Hit Points",
             "status-effect": "dazed",
             "type": "light"
@@ -91,8 +133,18 @@
             "label": "Shadow",
             "slug": "class-features-verses-key-shadow",
             "description": "",
-            "tags": [],
+            "tags": [
+                "chanter",
+                "dark",
+                "high-fantasy",
+                "mp",
+                "verse",
+                "weak"
+            ],
             "attribute": "Dexterity",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "recovery": "Mind Points",
             "status-effect": "weak",
             "type": "dark"
@@ -103,8 +155,18 @@
             "label": "Stone",
             "slug": "class-features-verses-key-stone",
             "description": "",
-            "tags": [],
+            "tags": [
+                "chanter",
+                "dazed",
+                "earth",
+                "high-fantasy",
+                "hp",
+                "verse"
+            ],
             "attribute": "Might",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "recovery": "Hit Points",
             "status-effect": "dazed",
             "type": "earth"
@@ -115,8 +177,18 @@
             "label": "Thunder",
             "slug": "class-features-verses-key-thunder",
             "description": "",
-            "tags": [],
+            "tags": [
+                "bolt",
+                "chanter",
+                "high-fantasy",
+                "hp",
+                "shaken",
+                "verse"
+            ],
             "attribute": "Dexterity",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "recovery": "Hit Points",
             "status-effect": "shaken",
             "type": "bolt"
@@ -127,11 +199,22 @@
             "label": "Wind",
             "slug": "class-features-verses-key-wind",
             "description": "",
-            "tags": [],
+            "tags": [
+                "air",
+                "chanter",
+                "high-fantasy",
+                "mp",
+                "slow",
+                "verse"
+            ],
             "attribute": "Insight",
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "recovery": "Mind Points",
             "status-effect": "slow",
             "type": "air"
         }
-    ]
+    ],
+    "order": []
 }

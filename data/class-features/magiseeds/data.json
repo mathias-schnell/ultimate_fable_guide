@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-magiseeds",
     "label": "Magiseeds",
     "sub-labels": [],
@@ -29,6 +31,9 @@
                 "earth",
                 "ice"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "It stubbornly survives in frozen territories."
         },
         {
@@ -42,6 +47,9 @@
                 "fire",
                 "garden"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Its thick petals resemble an erupting volcano."
         },
         {
@@ -54,6 +62,9 @@
                 "air",
                 "fire"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "A tenacious plant, it doesn\u2019t fear the dryness of dunes."
         },
         {
@@ -61,7 +72,7 @@
             "is-container": true,
             "label": "Golden Ginkgo",
             "slug": "class-features-magiseeds-golden-ginkgo",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you and every ally you can see recover from dazed, enraged, and shaken.</td></tr><tr><td>2-3</td><td>At the end of your turn, you and every ally you can see recover an amount of Mind Points equal to (5 + your Skill Level in Chloromancy).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you and every ally you can see recover from dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>), and shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).</td></tr><tr><td>2-3</td><td>At the end of your turn, you and every ally you can see recover an amount of Mind Points equal to (5 + your Skill Level in Chloromancy).</td></tr></tbody></table>",
             "tags": [
                 "dazed",
                 "enraged",
@@ -69,6 +80,9 @@
                 "shaken",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Its vibrantly colored leaves represent tenacity."
         },
         {
@@ -76,12 +90,15 @@
             "is-container": true,
             "label": "Grave Asphodel",
             "slug": "class-features-magiseeds-grave-asphodel",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers shaken.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers shaken.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from shaken.</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).</td></tr></tbody></table>",
             "tags": [
                 "dark",
                 "shaken",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Solemn and elegant, it embodies death\u2019s ineluctability."
         },
         {
@@ -98,6 +115,9 @@
                 "species",
                 "traits"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Its leaves carry whispers of ancient knowledge."
         },
         {
@@ -105,13 +125,16 @@
             "is-container": true,
             "label": "Hookleaf Nightshade",
             "slug": "class-features-magiseeds-hookleaf-nightshade",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>All damage you deal becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), its type cannot change, and it ignores Immunities and Resistances.</td></tr><tr><td>2-3</td><td>All damage you deal becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), its type cannot change, and it ignores Immunities and Resistances. Additionally, when you deal poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage for the first time during your turn, you deal extra damage equal to (your Skill Level in Chloromancy) and each creature that lost Hit Points this way suffers poisoned.</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>All damage you deal becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), its type cannot change, and it ignores Immunities and Resistances.</td></tr><tr><td>2-3</td><td>All damage you deal becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), its type cannot change, and it ignores Immunities and Resistances. Additionally, when you deal poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage for the first time during your turn, you deal extra damage equal to (your Skill Level in Chloromancy) and each creature that lost Hit Points this way suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).</td></tr></tbody></table>",
             "tags": [
                 "hp",
                 "poison",
                 "poisoned",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Its purplish berries contain a deadly magical venom."
         },
         {
@@ -124,6 +147,9 @@
                 "dark",
                 "poison"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Favored by witches and surgeons alike for its purifying properties."
         },
         {
@@ -137,6 +163,9 @@
                 "ice",
                 "light"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "It blooms in the darkest hours of the night."
         },
         {
@@ -144,11 +173,15 @@
             "is-container": true,
             "label": "Ocean Lotus",
             "slug": "class-features-magiseeds-ocean-lotus",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are immune to dazed and slow.</td></tr><tr><td>2</td><td>You treat your Dexterity and Insight as being one die size higher (up to a maximum of d12).</td></tr><tr><td>3</td><td>You and every ally you can see treat your Dexterity and Insight as being one die size higher (up to a maximum of d12).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are immune to dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>) and slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).</td></tr><tr><td>2</td><td>You treat your Dexterity and Insight as being one die size higher (up to a maximum of d12).</td></tr><tr><td>3</td><td>You and every ally you can see treat your Dexterity and Insight as being one die size higher (up to a maximum of d12).</td></tr></tbody></table>",
             "tags": [
                 "dazed",
-                "slow"
+                "slow",
+                "symbol"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "A graceful symbol of serenity and wisdom."
         },
         {
@@ -161,6 +194,9 @@
                 "inventory",
                 "ip"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Its flamboyant corolla is synonymous with abundance."
         },
         {
@@ -172,8 +208,12 @@
             "tags": [
                 "air",
                 "bolt",
-                "garden"
+                "garden",
+                "symbol"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "A symbol of energy and vivacity, it spreads seeds through stormy winds."
         },
         {
@@ -181,11 +221,14 @@
             "is-container": true,
             "label": "Regal Protea",
             "slug": "class-features-magiseeds-regal-protea",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are immune to shaken and weak.</td></tr><tr><td>2</td><td>You treat your Might and Willpower as being one die size higher (up to a maximum of d12).</td></tr><tr><td>3</td><td>You and every ally you can see treat your Might and Willpower as being one die size higher (up to a maximum of d12).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are immune to shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>) and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</td></tr><tr><td>2</td><td>You treat your Might and Willpower as being one die size higher (up to a maximum of d12).</td></tr><tr><td>3</td><td>You and every ally you can see treat your Might and Willpower as being one die size higher (up to a maximum of d12).</td></tr></tbody></table>",
             "tags": [
                 "shaken",
                 "weak"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "A colorful and tenacious flower, favored by an ancient dynasty."
         },
         {
@@ -193,7 +236,7 @@
             "is-container": true,
             "label": "Remedy Lily",
             "slug": "class-features-magiseeds-remedy-lily",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you and every ally you can see recover from poisoned, slow, and weak.</td></tr><tr><td>2-3</td><td>At the end of your turn, you and every ally you can see recover an amount of Hit Points equal to (15 + your Skill Level in Chloromancy).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you and every ally you can see recover from poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</td></tr><tr><td>2-3</td><td>At the end of your turn, you and every ally you can see recover an amount of Hit Points equal to (15 + your Skill Level in Chloromancy).</td></tr></tbody></table>",
             "tags": [
                 "hp",
                 "poisoned",
@@ -201,6 +244,9 @@
                 "slow",
                 "weak"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Its elegant flowers filter and purify spiritual energy."
         },
         {
@@ -208,12 +254,15 @@
             "is-container": true,
             "label": "Serrated Rose",
             "slug": "class-features-magiseeds-serrated-rose",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers slow.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers slow.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from slow.</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).</td></tr></tbody></table>",
             "tags": [
                 "physical",
                 "skill",
                 "slow"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Its thorns form a tangle equally breathtaking and dangerous."
         },
         {
@@ -226,6 +275,9 @@
                 "bolt",
                 "light"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Its silvery blossoms are easily mistaken for jewels."
         },
         {
@@ -233,12 +285,15 @@
             "is-container": true,
             "label": "Star Peony",
             "slug": "class-features-magiseeds-star-peony",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers dazed.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers dazed.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from dazed.</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).</td></tr></tbody></table>",
             "tags": [
                 "dazed",
                 "light",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "It silently gazes into celestial depths."
         },
         {
@@ -246,12 +301,16 @@
             "is-container": true,
             "label": "Striped Orchid",
             "slug": "class-features-magiseeds-striped-orchid",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers weak.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers weak.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from weak.</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</td></tr></tbody></table>",
             "tags": [
+                "plant",
                 "poison",
                 "skill",
                 "weak"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Each segment of this plant is covered in toxins."
         },
         {
@@ -267,6 +326,9 @@
                 "poison",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "A tangle of robust branches, whose thorns spread powerful poison."
         },
         {
@@ -281,7 +343,11 @@
                 "garden",
                 "spell"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Despite their beauty, its yellow flowers emit an irritatingly pungent smell."
         }
-    ]
+    ],
+    "order": []
 }

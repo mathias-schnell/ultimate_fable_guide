@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-invocations-water",
     "label": "",
     "sub-labels": [
@@ -31,8 +33,15 @@
             "label": "Hydro Blast",
             "slug": "class-features-invocations-water-hydro-blast",
             "description": "",
-            "tags": [],
-            "effect": "You deal 20 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to the target."
+            "tags": [
+                "ice",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "You deal 20 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to the target.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -40,8 +49,17 @@
             "label": "Hydro Hex",
             "slug": "class-features-invocations-water-hydro-hex",
             "description": "",
-            "tags": [],
-            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) and bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage."
+            "tags": [
+                "air",
+                "bolt",
+                "ice",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) and bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -49,8 +67,17 @@
             "label": "Chill",
             "slug": "class-features-invocations-water-chill",
             "description": "",
-            "tags": [],
-            "effect": "The target loses 20 Mind Points and also suffers shaken."
+            "tags": [
+                "ice",
+                "invocation",
+                "invoker",
+                "mp",
+                "shaken"
+            ],
+            "contract-icon": "minus",
+            "effect": "The target loses 20 Mind Points and also suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -58,8 +85,17 @@
             "label": "Frostbite",
             "slug": "class-features-invocations-water-frostbite",
             "description": "",
-            "tags": [],
-            "effect": "You deal 10 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to the target, and they suffer weak."
+            "tags": [
+                "ice",
+                "invocation",
+                "invoker",
+                "weak"
+            ],
+            "contract-icon": "minus",
+            "effect": "You deal 10 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to the target, and they suffer weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "crosshair-simple",
+    "menu-icon": "crosshair-simple",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-sharpshooter",
     "label": "Sharpshooter",
     "sub-labels": [
@@ -33,12 +35,17 @@
             "description": "When you perform a ranged attack, you may spend 10 Mind Points to choose one option: the attack gains multi (2); or you increase the attack\u2019s multi property by one, up to a maximum of multi (3).",
             "tags": [
                 "attack",
+                "core",
                 "mp",
                 "multi",
-                "ranged"
+                "ranged",
+                "sharpshooter"
             ],
             "class": "Sharpshooter",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -48,14 +55,19 @@
             "description": "After a creature you can see performs a ranged attack, you may spend an amount of Mind Points equal to (5 + the Result of their Accuracy Check) to have the attack automatically miss all targets. You can only use this Skill if you have a ranged weapon equipped, and it has no effect if the Accuracy Check was a critical success.",
             "tags": [
                 "attack",
+                "core",
                 "critical",
                 "mp",
                 "ranged",
+                "sharpshooter",
                 "skill",
                 "weapon"
             ],
             "class": "Sharpshooter",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -66,13 +78,18 @@
             "tags": [
                 "attack",
                 "bow",
+                "core",
                 "firearm",
                 "free-attack",
                 "guard",
-                "ranged"
+                "ranged",
+                "sharpshooter"
             ],
             "class": "Sharpshooter",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -81,26 +98,38 @@
             "slug": "classes-sharpshooter-ranged-weapon-mastery",
             "description": "You gain a bonus equal to (SL) to all Accuracy Checks with ranged weapons.",
             "tags": [
-                "ranged"
+                "core",
+                "ranged",
+                "sharpshooter",
+                "weapon"
             ],
             "class": "Sharpshooter",
-            "max-sl": 4
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 4,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Warning Shot",
             "slug": "classes-sharpshooter-warning-shot",
-            "description": "When you hit one or more targets with a ranged attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict shaken on each target hit by the attack; or inflict slow on each target hit by the attack; or each target hit by the attack loses (SL \u00d7 10) Mind Points. Describe your maneuver!",
+            "description": "When you hit one or more targets with a ranged attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>) on each target hit by the attack; or inflict slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) on each target hit by the attack; or each target hit by the attack loses (SL \u00d7 10) Mind Points. Describe your maneuver!",
             "tags": [
                 "attack",
+                "core",
                 "mp",
                 "ranged",
                 "shaken",
+                "sharpshooter",
                 "slow"
             ],
             "class": "Sharpshooter",
-            "max-sl": 4
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 4,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

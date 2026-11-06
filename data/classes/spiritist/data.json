@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "health-normal",
+    "menu-icon": "health-normal",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-spiritist",
     "label": "Spiritist",
     "sub-labels": [
@@ -33,12 +35,17 @@
             "description": "When you cast a spell that targets one or more allies, if you have an arcane weapon equipped, you may have each of those allies recover an amount of Hit Points equal to (3 + (SL, multiplied by the number of Bonds you have)). This healing is separate from any healing caused by the effects of the spell.",
             "tags": [
                 "arcane",
+                "core",
                 "hp",
                 "spell",
+                "spiritist",
                 "weapon"
             ],
             "class": "Spiritist",
-            "max-sl": 2
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 2,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -46,9 +53,16 @@
             "label": "Ritual Spiritism",
             "slug": "classes-spiritist-ritual-spiritism",
             "description": "You may perform Rituals whose effects fall within the Spiritism discipline. Spiritism Rituals use (INS + WLP) for the Magic Check.",
-            "tags": [],
+            "tags": [
+                "core",
+                "ritual",
+                "spiritist"
+            ],
             "class": "Spiritist",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -57,12 +71,16 @@
             "slug": "classes-spiritist-spiritual-magic",
             "description": "Each time you acquire this Skill, learn one Spiritist spell (see next two pages). Offensive (\ud83d\uddf2) Spiritist spells use (INS + WLP) for the Magic Check.",
             "tags": [
+                "core",
                 "skill",
                 "spell",
                 "spiritist"
             ],
             "class": "Spiritist",
-            "max-sl": 10
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 10,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -73,11 +91,16 @@
             "tags": [
                 "arcane",
                 "bond",
+                "core",
                 "spell",
+                "spiritist",
                 "weapon"
             ],
             "class": "Spiritist",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -86,12 +109,18 @@
             "slug": "classes-spiritist-vismagus",
             "description": "When you cast a spell, if you don\u2019t have enough Mind Points to pay for its total cost, you may choose to spend an amount of Hit Points equal to (10 + the spell\u2019s total MP cost) instead. If a spell cast this way would cause you to recover Hit Points, you instead recover no Hit Points (the spell functions normally on any other target).",
             "tags": [
+                "core",
                 "hp",
                 "mp",
-                "spell"
+                "spell",
+                "spiritist"
             ],
             "class": "Spiritist",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

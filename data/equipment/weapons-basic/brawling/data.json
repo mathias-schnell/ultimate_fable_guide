@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-weapons-basic-brawling",
     "label": "Brawling",
     "sub-labels": [
@@ -41,13 +43,22 @@
             "slug": "equipment-weapons-basic-brawling-unarmed-strike",
             "description": "One-handed \u2022 Melee \u2022 Automatically equipped in each empty hand slot.",
             "tags": [
+                "basic",
+                "brawling",
+                "core",
+                "equipment",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "physical",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "-",
             "damage": "\u3010HR + 0\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -57,13 +68,22 @@
             "description": "One-handed \u2022 Melee \u2022 Breaks after the attack.",
             "tags": [
                 "attack",
+                "basic",
+                "brawling",
+                "core",
+                "equipment",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "physical",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "-",
             "damage": "\u3010HR + 2\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -72,13 +92,23 @@
             "slug": "equipment-weapons-basic-brawling-iron-knuckle",
             "description": "One-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "basic",
+                "brawling",
+                "core",
+                "equipment",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "physical",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "150 z",
             "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

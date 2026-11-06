@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-spells-spiritist",
     "label": "Spiritist",
     "sub-labels": [],
@@ -38,11 +40,16 @@
             "slug": "class-features-spells-spiritist-aura",
             "description": "You project your soul outside your body and direct it to surround the targets, shielding them from dangerous magic. Until this spell ends, each target may treat their Magic Defense as being equal to 12 against any effects that target it (they are still free to use their normal Defense score if higher than 12). This value increases to 13 if you are level 20 or higher, or to 14 if you are level 40 or higher.",
             "tags": [
+                "core",
                 "defense",
                 "magic-defense",
-                "spell"
+                "spell",
+                "spiritist"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "5 \u00d7 T",
             "offensive": false,
             "target": "Up to three creatures"
@@ -54,10 +61,15 @@
             "slug": "class-features-spells-spiritist-awaken",
             "description": "You allow a creature to focus their vital energy into accomplishing what they previously could not. Choose one Attribute: Dexterity, Insight, Might, or Willpower. Until this spell ends, the target treats the chosen Attribute as if it were one die size higher (up to a maximum of d12).",
             "tags": [
+                "core",
                 "focus",
-                "spell"
+                "spell",
+                "spiritist"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "20",
             "offensive": false,
             "target": "One creature"
@@ -69,10 +81,15 @@
             "slug": "class-features-spells-spiritist-barrier",
             "description": "You project your soul outside your body and weave it into a barrier to protect the targets from attacks. Until this spell ends, each target may treat their Defense as being equal to 12 against any effects that target it (they are still free to use their normal Defense score if higher than 12). This value increases to 13 if you are level 20 or higher, or to 14 if you are level 40 or higher.",
             "tags": [
+                "core",
                 "defense",
-                "spell"
+                "spell",
+                "spiritist"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "5 \u00d7 T",
             "offensive": false,
             "target": "Up to three creatures"
@@ -83,8 +100,15 @@
             "label": "Cleanse",
             "slug": "class-features-spells-spiritist-cleanse",
             "description": "You strengthen and purify the soul energy coursing through your companions. Each target recovers from all status effects.",
-            "tags": [],
+            "tags": [
+                "core",
+                "spell",
+                "spiritist"
+            ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "5 \u00d7 T",
             "offensive": false,
             "target": "Up to three creatures"
@@ -92,15 +116,20 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Enrage <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Enrage <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-spiritist-enrage",
-            "description": "You cause a creature to lose any semblance of temper and act brazenly. The target suffers enraged and cannot perform the Guard or Spell actions until the end of their next turn.",
+            "description": "You cause a creature to lose any semblance of temper and act brazenly. The target suffers enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) and cannot perform the Guard or Spell actions until the end of their next turn.",
             "tags": [
+                "core",
                 "enraged",
                 "guard",
-                "spell"
+                "spell",
+                "spiritist"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10",
             "offensive": true,
             "target": "One creature"
@@ -108,15 +137,20 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Hallucination <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Hallucination <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-spiritist-hallucination",
-            "description": "You alter the senses of your enemies, causing them to experience bizarre or frightening hallucinations. Choose dazed or shaken: you inflict the chosen status effect on each target hit by this spell.",
+            "description": "You alter the senses of your enemies, causing them to experience bizarre or frightening hallucinations. Choose dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>) or shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>): you inflict the chosen status effect on each target hit by this spell.",
             "tags": [
+                "core",
                 "dazed",
                 "shaken",
-                "spell"
+                "spell",
+                "spiritist"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "5 \u00d7 T",
             "offensive": true,
             "target": "Up to three creatures"
@@ -128,9 +162,15 @@
             "slug": "class-features-spells-spiritist-heal",
             "description": "You invigorate your companions, soothing their pain and healing their fatigue. Each target recovers 40 Hit Points. This amount increases to 50 Hit Points if you are level 20 or higher, or to 60 Hit Points if you are level 40 or higher.",
             "tags": [
-                "hp"
+                "core",
+                "hp",
+                "spell",
+                "spiritist"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10 \u00d7 T",
             "offensive": false,
             "target": "Up to three creatures"
@@ -138,16 +178,21 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Lux <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Lux <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-spiritist-lux",
-            "description": "You focus your inner energy into a barrage of blinding soul rays. You deal (HR + 15) light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage to each target hit by this spell. Opportunity: each target hit by this spell suffers dazed.",
+            "description": "You focus your inner energy into a barrage of blinding soul rays. You deal (HR + 15) light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage to each target hit by this spell. Opportunity: each target hit by this spell suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
             "tags": [
+                "core",
                 "dazed",
                 "focus",
                 "light",
-                "spell"
+                "spell",
+                "spiritist"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "10 \u00d7 T",
             "offensive": true,
             "target": "Up to three creatures"
@@ -159,10 +204,15 @@
             "slug": "class-features-spells-spiritist-mercy",
             "description": "You strengthen the heart of a creature against suffering and despair. Until this spell ends, if the target would be reduced to 0 Hit Points, they are instead left standing with exactly 1 Hit Point. Once that happens, this spell ends.",
             "tags": [
+                "core",
                 "hp",
-                "spell"
+                "spell",
+                "spiritist"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "20",
             "offensive": false,
             "target": "One creature"
@@ -172,17 +222,22 @@
             "is-container": true,
             "label": "Reinforce",
             "slug": "class-features-spells-spiritist-reinforce",
-            "description": "You protect the targets from attacks that would corrupt their body and spirit. Choose dazed, enraged, poisoned, shaken, slow, or weak. Until this spell ends, each target is immune to the chosen status effect.",
+            "description": "You protect the targets from attacks that would corrupt their body and spirit. Choose dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>), poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>), shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), or weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>). Until this spell ends, each target is immune to the chosen status effect.",
             "tags": [
+                "core",
                 "dazed",
                 "enraged",
                 "poisoned",
                 "shaken",
                 "slow",
                 "spell",
+                "spiritist",
                 "weak"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "5 \u00d7 T",
             "offensive": false,
             "target": "Up to three creatures"
@@ -194,13 +249,18 @@
             "slug": "class-features-spells-spiritist-soul-shroud",
             "description": "You weave energy to safeguard the targets. Choose a damage type: dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), light (<i class=\"ui-icon elem-light svg-sun\"></i>), or poison (<i class=\"ui-icon elem-poison svg-poison\"></i>). Until this spell ends, each target gains Resistance to the chosen damage type.",
             "tags": [
+                "core",
                 "dark",
                 "light",
                 "poison",
                 "resistance",
-                "spell"
+                "spell",
+                "spiritist"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "5 \u00d7 T",
             "offensive": false,
             "target": "Up to three creatures"
@@ -213,12 +273,17 @@
             "description": "You imbue a weapon with the cleansing energy of your spirit. Until this spell ends, all damage dealt by the weapon becomes light (<i class=\"ui-icon elem-light svg-sun\"></i>). If you have that weapon equipped while you cast this spell, you may perform a free attack with it as part of the same action. This spell can only be cast on a weapon equipped by a willing creature.",
             "tags": [
                 "attack",
+                "core",
                 "free-attack",
                 "light",
                 "spell",
+                "spiritist",
                 "weapon"
             ],
+            "contract-icon": "minus",
             "duration": "Scene",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "5",
             "offensive": false,
             "target": "One equipped weapon"
@@ -226,18 +291,24 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Torpor <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon offensive-icon svg-electric'></span> <span class='ui-icon svg-svg-electric'></span>",
+            "label": "Torpor <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-spiritist-torpor",
-            "description": "You smother the soul energy coursing through the bodies of your foes, hindering their movements. Choose slow or weak: you inflict the chosen status effect on each target hit by this spell.",
+            "description": "You smother the soul energy coursing through the bodies of your foes, hindering their movements. Choose slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) or weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>): you inflict the chosen status effect on each target hit by this spell.",
             "tags": [
+                "core",
                 "slow",
                 "spell",
+                "spiritist",
                 "weak"
             ],
+            "contract-icon": "minus",
             "duration": "Instantaneous",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "mp": "5 \u00d7 T",
             "offensive": true,
             "target": "Up to three creatures"
         }
-    ]
+    ],
+    "order": []
 }

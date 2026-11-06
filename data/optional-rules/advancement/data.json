@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "optional-rules-advancement",
     "label": "Advancement",
     "sub-labels": [],
@@ -28,6 +30,9 @@
             "tags": [
                 "hp"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Gain bonus Experience based on how quickly you conclude battles."
         },
         {
@@ -37,6 +42,9 @@
             "slug": "optional-rules-advancement-booster",
             "description": "Each Player Character will automatically gain a level at the end of each session (in addition to normal advancement).\n\nIt\u2019s good if: Your campaign will be relatively short, if the Players like to have plenty of new tricks every session, and if you don\u2019t mind turning your game into a quickly escalating spiral of mayhem.",
             "tags": [],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Characters automatically gain a level at the end of each session."
         },
         {
@@ -46,6 +54,9 @@
             "slug": "optional-rules-advancement-embodiment",
             "description": "The group will vote for the Player who better embodied their character\u2019s Identity and/or Theme during the session \u2014 the chosen Player\u2019s character gains an additional 2 XP. If two or more Players are tied, they will each gain this bonus Experience!\n\nA few rules apply however: you cannot be awarded this bonus XP twice in a row, and you cannot vote for yourself or for the Game Master.\n\nIf you are using this optional rule as well as MVP, the two rewards must go to different Players. Vote for Embodiment before you vote for MVP.\n\nIt\u2019s good if: You like to roleplay intense scenes and you don\u2019t run the risk of a single person outshining everyone else or making things uncomfortable by stealing the spotlight all the time. If you see this happening, you should stop using this option.",
             "tags": [],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "The group votes for the player who best embodied their character's Identity or Theme to grant them 2 extra XP."
         },
         {
@@ -55,7 +66,11 @@
             "slug": "optional-rules-advancement-mvp",
             "description": "The group will vote for a Most Valuable Player at the end of each session \u2014 the chosen Player\u2019s character gains an additional 2 XP. If two or more Players are tied, they will each gain this bonus Experience!\n\nJust like with Embodiment, you cannot be awarded this bonus XP twice in a row, and you cannot vote for yourself or the Game Master.\n\nIf you are using this optional rule as well as Embodiment, the two rewards must go to different Players. Vote for Embodiment before you vote for MVP.\n\nIt\u2019s good if: Your group wants to reward proactive Players who take a hit for the team or turn the tables on their adversaries.",
             "tags": [],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "The group votes for a Most Valuable Player at the end of each session to award them 2 extra XP."
         }
-    ]
+    ],
+    "order": []
 }

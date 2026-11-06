@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-symbols",
     "label": "Symbols",
     "sub-labels": [],
@@ -21,7 +23,12 @@
             "label": "Symbol of Binding",
             "slug": "class-features-symbols-symbol-of-binding",
             "description": "The current Attribute die sizes of the creature bearing this symbol can never be higher than that creature\u2019s corresponding base Attribute die sizes (this does not end any spells or effects, but it will negate their influence over the creature\u2019s Attributes).",
-            "tags": []
+            "tags": [
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -31,8 +38,12 @@
             "description": "When the creature bearing this symbol needs to spend Inventory Points during a conflict, they may instead destroy this symbol to spend no Inventory Points.",
             "tags": [
                 "inventory",
-                "ip"
-            ]
+                "ip",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -42,8 +53,12 @@
             "description": "When the creature bearing this symbol recovers Hit Points and/or Mind Points during conflicts, instead they only recover half the normal amount of Hit Points and/or Mind Points, respectively.",
             "tags": [
                 "hp",
-                "mp"
-            ]
+                "mp",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -55,8 +70,12 @@
                 "critical",
                 "fabula-point",
                 "fumble",
-                "reroll"
-            ]
+                "reroll",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -73,8 +92,12 @@
                 "ice",
                 "light",
                 "mp",
-                "poison"
-            ]
+                "poison",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -83,22 +106,30 @@
             "slug": "class-features-symbols-symbol-of-enmity",
             "description": "As long as the creature bearing this symbol is in Crisis, any of that creature\u2019s enemies who are able to see them must include them among the targets of their attacks and offensive spells (\ud83d\uddf2), if possible.",
             "tags": [
-                "crisis"
-            ]
+                "crisis",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Symbol of Flux",
             "slug": "class-features-symbols-symbol-of-flux",
-            "description": "When you create this symbol, choose a status effect: dazed, shaken, slow, or weak. Then, choose one option: the creature bearing this symbol gains immunity to the chosen status effect; or the creature bearing this symbol loses immunity to the chosen status effect and cannot gain it.",
+            "description": "When you create this symbol, choose a status effect: dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), or weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>). Then, choose one option: the creature bearing this symbol gains immunity to the chosen status effect; or the creature bearing this symbol loses immunity to the chosen status effect and cannot gain it.",
             "tags": [
                 "dazed",
                 "immunity",
                 "shaken",
                 "slow",
+                "symbol",
                 "weak"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -113,8 +144,12 @@
                 "mp",
                 "objective",
                 "skill",
-                "spell"
-            ]
+                "spell",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -123,8 +158,12 @@
             "slug": "class-features-symbols-symbol-of-growth",
             "description": "Spells with a target of \u201cUp to three creatures\u201d cast by the creature bearing this symbol have a target of \u201cUp to four creatures\u201d instead. The creature still needs to spend additional Mind Points for a fourth target.",
             "tags": [
-                "mp"
-            ]
+                "mp",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -140,8 +179,12 @@
                 "monster",
                 "plant",
                 "species",
+                "symbol",
                 "undead"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -152,8 +195,12 @@
             "tags": [
                 "bond",
                 "fabula-point",
+                "symbol",
                 "zenit"
-            ]
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -170,8 +217,12 @@
                 "ice",
                 "light",
                 "poison",
-                "resistance"
-            ]
+                "resistance",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -181,8 +232,12 @@
             "description": "If a Villain is present on the scene, any Opposed Checks made by the creature bearing this symbol trigger a critical success when both dice show the same number (as long as the Check is not a fumble).",
             "tags": [
                 "critical",
-                "fumble"
-            ]
+                "fumble",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -191,8 +246,12 @@
             "slug": "class-features-symbols-symbol-of-rebirth",
             "description": "If the creature bearing this symbol is about to be reduced to 0 Hit Points, they may destroy this symbol: if they do, they are instead reduced to exactly 1 Hit Point.",
             "tags": [
-                "hp"
-            ]
+                "hp",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -205,8 +264,12 @@
                 "crisis",
                 "hp",
                 "mp",
-                "spell"
-            ]
+                "spell",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -214,7 +277,12 @@
             "label": "Symbol of Sacrifice",
             "slug": "class-features-symbols-symbol-of-sacrifice",
             "description": "When the creature bearing this symbol suffers damage, if you are able to see them, you may destroy this symbol: if you do, you suffer the same amount of damage instead of that creature.",
-            "tags": []
+            "tags": [
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -223,8 +291,13 @@
             "slug": "class-features-symbols-symbol-of-sorcery",
             "description": "The total Mind Point cost of spells that target the creature bearing this symbol is reduced by 5 MP (to a minimum total cost of 5 MP). If a spell targets multiple creatures bearing this symbol, the effect will be cumulative.",
             "tags": [
-                "spell"
-            ]
+                "mp",
+                "spell",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -234,8 +307,12 @@
             "description": "Checks performed to examine or locate the creature bearing this symbol, as well as Accuracy Checks and Magic Checks for attacks and offensive spells (\ud83d\uddf2) that include the creature bearing this symbol among their targets, gain a +2 bonus. If an attack or spell targets multiple creatures bearing this symbol, the effect will be cumulative.",
             "tags": [
                 "attack",
-                "spell"
-            ]
+                "spell",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -251,8 +328,13 @@
                 "fire",
                 "ice",
                 "light",
-                "poison"
-            ]
+                "poison",
+                "symbol"
+            ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

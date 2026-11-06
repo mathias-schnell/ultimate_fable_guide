@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-weapons-basic-bow",
     "label": "Bow",
     "sub-labels": [
@@ -42,13 +44,23 @@
             "slug": "equipment-weapons-basic-bow-crossbow",
             "description": "Two-handed \u2022 Ranged \u2022 No Quality.",
             "tags": [
+                "basic",
+                "bow",
+                "core",
+                "equipment",
+                "martial",
+                "physical",
                 "ranged",
-                "two-handed"
+                "two-handed",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "150 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -57,13 +69,24 @@
             "slug": "equipment-weapons-basic-bow-shortbow",
             "description": "Two-handed \u2022 Ranged \u2022 No Quality.",
             "tags": [
+                "basic",
+                "bow",
+                "core",
+                "equipment",
+                "martial",
+                "physical",
                 "ranged",
-                "two-handed"
+                "two-handed",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "200 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

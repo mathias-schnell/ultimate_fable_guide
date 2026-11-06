@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-weapons-basic-spear",
     "label": "Spear",
     "sub-labels": [
@@ -38,32 +40,55 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Light Spear <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Light Spear <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-weapons-basic-spear-light-spear",
             "description": "One-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "basic",
+                "core",
+                "equipment",
+                "light",
+                "martial",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "physical",
+                "spear",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "200 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Heavy Spear <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Heavy Spear <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-weapons-basic-spear-heavy-spear",
             "description": "Two-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "basic",
+                "core",
+                "equipment",
+                "heavy",
+                "martial",
                 "melee",
-                "two-handed"
+                "physical",
+                "spear",
+                "two-handed",
+                "weapon"
             ],
             "accuracy": "\u3010DEX + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "200 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "optional-rules-bonus-content-quirks",
     "label": "Quirks",
     "sub-labels": [],
@@ -30,6 +32,7 @@
             "tags": [
                 "dark",
                 "fabula-point",
+                "fabula-ultima-bonus",
                 "light",
                 "mp",
                 "rare",
@@ -37,6 +40,9 @@
                 "spiritist",
                 "zenit"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Fallen celestial dwelling among monsters, resistant to dark and light damage with special angelic quirks and item or spell options."
         },
         {
@@ -47,8 +53,13 @@
             "description": "There are demon overlords; there are aeons-old mummies, powerful vampires, and even fallen angels; there are less notorious fiends, but still, respected. And then there's a bunch of... you. You're not that great, honestly, and all look kinda... samey? But there's really a LOT of you. Why are you at the bottom of the food chain? What's your common cause? Who is your leader, and how can someone easily tell them apart?\n\nYour Player Character is not a single entity, but rather a group of monsters led by a leader who usually speaks for everyone. You're still treated as a single creature and follow all the normal rules, with some exceptions:\n- Hit Points: when you lose HP, describe how members of the gang are defeated or slain; when you recover them, describe how they rejoin the battle or gather new recruits. When you Surrender, you may describe the leader's death and explain which member of the gang replaces them; if you Sacrifice yourself, the gang will disband forever, but shall be remembered with great respect.\n- All for One: when you deal damage to a creature, if that creature is not a swarm, you deal 5 extra damage to that creature.\n- One for All: you are Resistant to damage dealt by sources that deal damage only to you, but you are Vulnerable to damage dealt by sources that also deal damage to one or more other creatures at the same time. Damage with no type ignores these Affinities as normal.",
             "tags": [
                 "demon",
-                "hp"
+                "fabula-ultima-bonus",
+                "hp",
+                "monster"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Play as a collective group of monsters led by a designated leader with unique swarm combat rules and vulnerabilities."
         },
         {
@@ -60,10 +71,14 @@
             "tags": [
                 "dark",
                 "fabula-point",
+                "fabula-ultima-bonus",
                 "hp",
                 "mp",
                 "skill"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Kind-hearted student at the Infernal Academy accumulating Delinquency Points through good deeds to unlock rewards or expulsion."
         },
         {
@@ -76,8 +91,12 @@
                 "critical",
                 "demon",
                 "fabula-point",
+                "fabula-ultima-bonus",
                 "fumble"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Displaced heir to the Demon Monarch throne dealing extra damage to soldiers, possessing a secret weakness tied to insecurities."
         },
         {
@@ -92,11 +111,16 @@
                 "bolt",
                 "dark",
                 "earth",
+                "elemental",
+                "fabula-ultima-bonus",
                 "fire",
                 "ice",
                 "physical",
                 "poison"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Heir to an ancient witch lineage with elemental Absorption, type-locked damage conversion, and specialized ritualism."
         },
         {
@@ -107,9 +131,14 @@
             "description": "This tale of monsters, demons, and magicks sounds like videogame nonsense. You're probably dreaming, or someone hypnotized you. Maybe it's a prank! Surely it won't turn out you're a wandering soul from Purgatory, or that you stumbled into a magical portal. You gotta admit though, your memories are a fair bit jumbled.\n\nIf you are about to receive the effects of an attack, a spell, a Skill, or any other game effect controlled by another creature (be it a beneficial effect, or a negative effect), you must roll 1d6:\n- 1-4: the effects apply as normal, and you gain 1 Suspicion Point.\n- 5-6: you disbelieve the effects, and thus do not receive them.\n\nAt the end of each session (approximately four hours of play), before assigning XP, roll 2d20. If you roll equal to or lower than your current character level, you gain 1 Suspicion Point. Then, if you have 20 or more Suspicion Points, you remember how you arrived here and the Game Master chooses one option: you remember a key clue regarding a threat that is present in your world; or you remember the existence of a new threat and receive a key clue about it.\n\nWhen you regain your memories, a strange power awakens within you: you lose this Quirk and receive a Heroic Skill of your choice.",
             "tags": [
                 "attack",
+                "fabula-ultima-bonus",
+                "ignore",
                 "skill",
                 "spell"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Disbelieving skeptic rolling dice to ignore game effects controlled by others while accumulating Suspicion Points toward awakening."
         },
         {
@@ -121,12 +150,16 @@
             "tags": [
                 "crisis",
                 "demon",
+                "fabula-ultima-bonus",
                 "hp",
                 "humanoid",
                 "mp",
                 "multi",
                 "species"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Transform into a terrifying Second Form and Final Form during crisis moments, gaining massive combat boosts and multi attacks."
         },
         {
@@ -137,6 +170,7 @@
             "description": "You were once an entity of untold power, who could sow death and destruction with a snap of fingers. But you made a promise: you shall never again use your true strength. Who did you give your word to? Are they still alive? What terrible tragedy were you unable to prevent due to this promise?\n\nYou may only choose this Quirk if your character's Theme is Guilt or Duty, and your Theme cannot change as long as you still have this Quirk.\n\nYou permanently increase your maximum Hit Points and maximum Mind Points by 5, and also learn a spell of your choice among Cursed Breath, Life Theft, and Mind Theft.\n\nWhen you deal damage to one or more creatures, you may choose to break your promise: you deal exactly 999 damage to each of them and have that damage ignore Resistance, Immunity, and Absorption; if one or more Villains are among those creatures, they are no longer Villains and lose all Ultima Points. Once you break your promise, your Player Character becomes a Supreme Villain and you create a new character.",
             "tags": [
                 "absorption",
+                "fabula-ultima-bonus",
                 "hp",
                 "ignore",
                 "immunity",
@@ -144,6 +178,9 @@
                 "resistance",
                 "spell"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Entity of untold power bound by a promise not to use true strength, able to break it to obliterate targets and retire as a Supreme Villain."
         },
         {
@@ -153,9 +190,14 @@
             "slug": "optional-rules-bonus-content-quirks-un-faithful-servant",
             "description": "You are the right arm to another character, someone who could be destined to great things but is in dire need of your help, as well as showing a frequent lack of common sense. Which promise, debt, or oath binds you? What is your disposition towards them? What do you think is their most significant flaw? Have you ever thought you might be the one who deserves that spot? What secret have you kept from them?\n\nWhen you gain this Quirk, choose another Player Character: that character becomes your liege. You both create a Bond towards each other; your Bond has one emotion chosen between loyalty and mistrust, and your liege's Bond towards you has one emotion chosen among admiration, inferiority, or mistrust.\n\nWhen your liege performs a Check, if you are present on the scene, you may offer your help: you will use the rules for Group Checks, but you automatically succeed on your Support Check. If this happens during a conflict scene, you do not lose your turn in the current round.\n\nWhenever your liege accepts your help in a Group Check, you gain 1 Reliance Points. At the end of each session, roll 2d20; if you roll equal to or lower than your character level, you gain 1 Reliance Point. If you reach 20 or more, choose Challenge or Betrayal.",
             "tags": [
-                "bond"
+                "bond",
+                "fabula-ultima-bonus"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "summary": "Dedicated right-hand to another player character liege, offering automatic support checks and accumulating Reliance Points toward challenge or betrayal."
         }
-    ]
+    ],
+    "order": []
 }

@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "small-fire",
+    "menu-icon": "small-fire",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-elementalist",
     "label": "Elementalist",
     "sub-labels": [
@@ -33,12 +35,17 @@
             "description": "When you cast a spell with a duration of \u201cInstantaneous\u201d, if you have an arcane weapon equipped, you may increase the spell\u2019s total MP cost by up to (SL \u00d7 10) Mind Points. If you do so, the spell deals 5 extra damage for every 10 Mind Points by which you increased its cost this way.",
             "tags": [
                 "arcane",
+                "core",
+                "elementalist",
                 "mp",
                 "spell",
                 "weapon"
             ],
             "class": "Elementalist",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -47,12 +54,17 @@
             "slug": "classes-elementalist-elemental-magic",
             "description": "Each time you acquire this Skill, learn one Elementalist spell (see next two pages). Offensive (\ud83d\uddf2) Elementalist spells use (INS + WLP) for the Magic Check.",
             "tags": [
+                "core",
+                "elemental",
                 "elementalist",
                 "skill",
                 "spell"
             ],
             "class": "Elementalist",
-            "max-sl": 10
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 10,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -62,11 +74,16 @@
             "description": "When you cast an offensive spell (\ud83d\uddf2), if you have an arcane weapon equipped, you gain a bonus to your Magic Check equal to (SL \u00d7 2).",
             "tags": [
                 "arcane",
+                "core",
+                "elementalist",
                 "spell",
                 "weapon"
             ],
             "class": "Elementalist",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -74,9 +91,16 @@
             "label": "Ritual Elementalism",
             "slug": "classes-elementalist-ritual-elementalism",
             "description": "You may perform Rituals whose effects fall within the Elementalism discipline. Elementalism Rituals use (INS + WLP) for the Magic Check.",
-            "tags": [],
+            "tags": [
+                "core",
+                "elementalist",
+                "ritual"
+            ],
             "class": "Elementalist",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -86,6 +110,7 @@
             "description": "When you cast an offensive spell (\ud83d\uddf2) targeting a single creature, if the spell has a total Mind Point cost of (SL \u00d7 20) or lower, you may choose one non-arcane weapon you have equipped. If you do, your Magic Check for the spell uses the chosen weapon\u2019s Accuracy Check formula; if that formula includes Dexterity, the Magic Check also gains a bonus equal to (SL). For instance, casting an Elementalist spell through a bronze sword (page 131) when you have Skill Level 2 in Spellblade will cause the Magic Check to be (DEX + MIG).",
             "tags": [
                 "arcane",
+                "core",
                 "elementalist",
                 "skill",
                 "spell",
@@ -93,7 +118,11 @@
                 "weapon"
             ],
             "class": "Elementalist",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

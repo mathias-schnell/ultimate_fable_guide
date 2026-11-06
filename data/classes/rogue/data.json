@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "hood",
+    "menu-icon": "hood",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-rogue",
     "label": "Rogue",
     "sub-labels": [
@@ -31,10 +33,15 @@
             "slug": "classes-rogue-cheap-shot",
             "description": "When you hit a creature with an attack, if the attack only targeted that creature and they are suffering from one or more status effects, you may have it deal extra damage equal to (SL + the number of status effects on the creature).",
             "tags": [
-                "attack"
+                "attack",
+                "core",
+                "rogue"
             ],
             "class": "Rogue",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -44,11 +51,16 @@
             "description": "As long as you have no shields and no martial armor equipped, your Defense score is increased by (SL).",
             "tags": [
                 "armor",
+                "core",
                 "defense",
-                "martial"
+                "martial",
+                "rogue"
             ],
             "class": "Rogue",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -58,14 +70,19 @@
             "description": "At the start of a conflict, you may spend 10 Mind Points. If you do, choose one option and apply it before the start of the first round: perform a free attack with a weapon you have equipped; or perform the Hinder or Objective action for free. You also gain a bonus equal to (SL) to all Checks you perform as part of the chosen option.",
             "tags": [
                 "attack",
+                "core",
                 "free-attack",
                 "hinder",
                 "mp",
                 "objective",
+                "rogue",
                 "weapon"
             ],
             "class": "Rogue",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -74,10 +91,15 @@
             "slug": "classes-rogue-see-you-later",
             "description": "You may use an action and spend 1 Fabula Point to vanish from the current scene, reappearing whenever you want during a different scene in which another Player Character is present. Describe how you escaped and miraculously got here!",
             "tags": [
-                "fabula-point"
+                "core",
+                "fabula-point",
+                "rogue"
             ],
             "class": "Rogue",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -86,15 +108,21 @@
             "slug": "classes-rogue-soul-steal",
             "description": "During a conflict, you may use an action to perform a (DEX + WLP) Check against the Magic Defense of an enemy you can see. If you succeed and the target is a soldier, you regain (SL) Inventory Points; if they are an elite or champion, the GM gives you their soul treasure, an item worth an amount of zenit equal to or lower than (the target\u2019s level multiplied by 30, or by 50 if they are a Villain). This soul treasure appears in your backpack; a creature can be successfully stolen from with this Skill only once. You gain a bonus equal to (SL) to your (DEX + WLP) Checks for this Skill.",
             "tags": [
+                "core",
                 "defense",
                 "inventory",
                 "ip",
                 "magic-defense",
+                "rogue",
                 "skill",
                 "zenit"
             ],
             "class": "Rogue",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

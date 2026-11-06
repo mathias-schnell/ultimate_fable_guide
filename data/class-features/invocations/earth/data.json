@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-invocations-earth",
     "label": "",
     "sub-labels": [
@@ -31,8 +33,15 @@
             "label": "Geo Blast",
             "slug": "class-features-invocations-earth-geo-blast",
             "description": "",
-            "tags": [],
-            "effect": "You deal 20 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage to the target."
+            "tags": [
+                "earth",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "You deal 20 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage to the target.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -40,8 +49,17 @@
             "label": "Geo Hex",
             "slug": "class-features-invocations-earth-geo-hex",
             "description": "",
-            "tags": [],
-            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage."
+            "tags": [
+                "air",
+                "earth",
+                "ice",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "Until the start of your next turn, the target suffers 5 extra damage from all sources that deal air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) and ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -49,8 +67,15 @@
             "label": "Growth",
             "slug": "class-features-invocations-earth-growth",
             "description": "",
-            "tags": [],
-            "effect": "The target recovers 30 Hit Points."
+            "tags": [
+                "earth",
+                "invocation",
+                "invoker"
+            ],
+            "contract-icon": "minus",
+            "effect": "The target recovers 30 Hit Points.",
+            "expand-icon": "plus",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -58,8 +83,17 @@
             "label": "Quicksand",
             "slug": "class-features-invocations-earth-quicksand",
             "description": "",
-            "tags": [],
-            "effect": "You deal 10 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage to the target, and they suffer slow."
+            "tags": [
+                "earth",
+                "invocation",
+                "invoker",
+                "slow"
+            ],
+            "contract-icon": "minus",
+            "effect": "You deal 10 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage to the target, and they suffer slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "expand-icon": "plus",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-rare-weapons-rare-heavy",
     "label": "Heavy",
     "sub-labels": [],
@@ -33,17 +35,24 @@
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Bardiche <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Bardiche <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-bardiche",
             "description": "Two-handed \u2022 Melee \u2022 No Quality.",
             "tags": [
+                "equipment",
+                "heavy",
                 "melee",
+                "physical",
+                "rare",
                 "two-handed"
             ],
             "accuracy": "\u3010MIG + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "350 z",
             "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -52,286 +61,407 @@
             "slug": "equipment-rare-weapons-rare-heavy-artisan-s-mallet",
             "description": "One-handed \u2022 Melee \u2022 This weapon deals 5 extra damage to constructs.",
             "tags": [
+                "equipment",
+                "heavy",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010INS + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "450 z",
             "damage": "\u3010HR + 6\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Beowulf <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Beowulf <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-beowulf",
             "description": "One-handed \u2022 Melee \u2022 This weapon deals 5 extra damage to monsters.",
             "tags": [
+                "equipment",
+                "heavy",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "550 z",
             "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Belly of the Beast <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Belly of the Beast <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-belly-of-the-beast",
             "description": "Two-handed \u2022 Melee \u2022 This weapon deals 5 extra damage to humanoids.",
             "tags": [
+                "beast",
+                "equipment",
+                "heavy",
                 "melee",
+                "poison",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "650 z",
             "damage": "\u3010HR + 14\u3011 poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Forest Hatchet <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Forest Hatchet <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-forest-hatchet",
             "description": "One-handed \u2022 Melee \u2022 This weapon deals 5 extra damage to beasts and plants.",
             "tags": [
+                "equipment",
+                "heavy",
                 "melee",
                 "one-handed",
+                "physical",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "750 z",
             "damage": "\u3010HR + 10\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Adamanthammer <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Adamanthammer <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-adamanthammer",
             "description": "Two-handed \u2022 Melee \u2022 You gain a +1 bonus to Defense.",
             "tags": [
                 "defense",
+                "equipment",
+                "heavy",
                 "melee",
+                "physical",
+                "rare",
                 "two-handed"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1050 z",
             "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Aura Hammer <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Aura Hammer <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-aura-hammer",
             "description": "Two-handed \u2022 Melee \u2022 Attacks with this weapon have multi (2).",
             "tags": [
+                "equipment",
+                "heavy",
+                "light",
                 "melee",
                 "multi",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1350 z",
             "damage": "\u3010HR + 14\u3011 light (<i class=\"ui-icon elem-light svg-sun\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Gravity Mace <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Gravity Mace <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-gravity-mace",
-            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow.",
+            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
             "tags": [
+                "earth",
+                "equipment",
+                "heavy",
                 "melee",
+                "rare",
                 "slow",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1850 z",
             "damage": "\u3010HR + 14\u3011 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Mjolnir <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Mjolnir <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-mjolnir",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers dazed.",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
             "tags": [
+                "bolt",
                 "dazed",
+                "equipment",
+                "heavy",
                 "melee",
                 "one-handed",
+                "rare",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1850 z",
             "damage": "\u3010HR + 10\u3011 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Wyrmwing <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Wyrmwing <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-wyrmwing",
             "description": "Two-handed \u2022 Melee \u2022 You gain Immunity to fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage.",
             "tags": [
+                "equipment",
                 "fire",
+                "heavy",
                 "immunity",
                 "melee",
+                "rare",
                 "two-handed"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "2050 z",
             "damage": "\u3010HR + 18\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Soul of Pillage <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Soul of Pillage <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-soul-of-pillage",
-            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers enraged.",
+            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>).",
             "tags": [
+                "dark",
                 "enraged",
+                "equipment",
+                "heavy",
                 "melee",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "2550 z",
             "damage": "\u3010HR + 18\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Winter Kolossus <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Winter Kolossus <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-winter-kolossus",
             "description": "Two-handed \u2022 Melee \u2022 You gain a +1 bonus to Defense and Magic Defense.",
             "tags": [
                 "defense",
+                "equipment",
+                "heavy",
+                "ice",
                 "magic-defense",
                 "melee",
+                "rare",
                 "two-handed"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "2550 z",
             "damage": "\u3010HR + 18\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Heavy Metal <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Heavy Metal <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-heavy-metal",
             "description": "Two-handed \u2022 Melee \u2022 When you attack with this weapon using the Vibrato Skill, all damage dealt by the attack becomes of the same type as the (key type) of the last verse you sang.",
             "tags": [
                 "attack",
+                "bolt",
+                "equipment",
+                "heavy",
                 "melee",
+                "rare",
                 "skill",
                 "two-handed",
+                "verse",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1200 z",
             "damage": "\u3010HR + 14\u3011 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Revenger <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Revenger <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-revenger",
             "description": "One-handed \u2022 Melee \u2022 When a creature inflicts a status effect on you, that creature also suffers the same status effect \u2013 this doesn\u2019t work if you are immune to that status effect, or were already suffering from it.",
             "tags": [
+                "equipment",
+                "fire",
+                "heavy",
                 "melee",
-                "one-handed"
+                "one-handed",
+                "rare"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "2000 z",
             "damage": "\u3010HR + 14\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Summer Masher <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Summer Masher <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-summer-masher",
             "description": "Two-handed \u2022 Melee \u2022 When you hit only one creature with this weapon, if that creature belongs to the plant Species, the attack deals 10 extra damage. Then, if that creature is in Crisis, you and every ally who can see you recover an amount of Mind Points equal to your High Roll in the Accuracy Check.",
             "tags": [
                 "attack",
                 "crisis",
+                "equipment",
+                "heavy",
+                "ice",
                 "melee",
                 "mp",
                 "plant",
+                "rare",
                 "species",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1300 z",
             "damage": "\u3010HR + 18\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "The Barrel <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "The Barrel <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-the-barrel",
             "description": "Two-handed \u2022 Melee \u2022 When you hit one or more creatures with this weapon, you may spend 1 Trade Point. If you do, the attack deals extra damage equal to (your Skill Level in Private Stock, multiplied by 5).",
             "tags": [
                 "attack",
+                "equipment",
+                "heavy",
                 "melee",
+                "physical",
+                "rare",
                 "skill",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1500 z",
             "damage": "\u3010HR + 18\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Scale Thresher <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Scale Thresher <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-scale-thresher",
             "description": "Two-handed \u2022 Melee \u2022 When you use this weapon with the Breach Skill, if you hit the target you can choose two of the available options instead of one. If you choose only one option, the target loses an amount of Hit Points equal to your High Roll in the Accuracy Check.",
             "tags": [
+                "equipment",
+                "heavy",
                 "hp",
                 "melee",
+                "physical",
+                "rare",
                 "skill",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1100 z",
             "damage": "\u3010HR + 14\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Seismic Pillar <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Seismic Pillar <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-seismic-pillar",
             "description": "Two-handed \u2022 Melee \u2022 Damage dealt by this weapon to creatures whose current Might die size is lower than yours ignores Immunities and Resistances.",
             "tags": [
+                "earth",
+                "equipment",
+                "heavy",
                 "melee",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010MIG + MIG\u3011",
+            "contract-icon": "minus",
             "cost": "1600 z",
             "damage": "\u3010HR + 18\u3011 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

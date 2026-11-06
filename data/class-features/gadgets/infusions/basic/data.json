@@ -2,7 +2,9 @@
     "always-expand": true,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-gadgets-infusions-basic",
     "label": "",
     "sub-labels": [
@@ -33,9 +35,20 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "attack",
+                "basic",
+                "core",
+                "ice",
+                "inventory",
+                "ip",
+                "tinkerer"
+            ],
+            "contract-icon": "minus",
             "effect": "The attack deals 5 extra damage, and its damage becomes ice (<i class=\"ui-icon elem-ice svg-ice\"></i>).",
-            "infusion": "Cryo"
+            "expand-icon": "plus",
+            "infusion": "Cryo",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -43,9 +56,20 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "attack",
+                "basic",
+                "core",
+                "fire",
+                "inventory",
+                "ip",
+                "tinkerer"
+            ],
+            "contract-icon": "minus",
             "effect": "The attack deals 5 extra damage, and its damage becomes fire (<i class=\"ui-icon elem-fire svg-fire\"></i>).",
-            "infusion": "Pyro"
+            "expand-icon": "plus",
+            "infusion": "Pyro",
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -53,9 +77,21 @@
             "label": "",
             "slug": "",
             "description": "",
-            "tags": [],
+            "tags": [
+                "attack",
+                "basic",
+                "bolt",
+                "core",
+                "inventory",
+                "ip",
+                "tinkerer"
+            ],
+            "contract-icon": "minus",
             "effect": "The attack deals 5 extra damage, and its damage becomes bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>).",
-            "infusion": "Volt"
+            "expand-icon": "plus",
+            "infusion": "Volt",
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

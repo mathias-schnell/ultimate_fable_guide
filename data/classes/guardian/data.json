@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "edged-shield",
+    "menu-icon": "edged-shield",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-guardian",
     "label": "Guardian",
     "sub-labels": [
@@ -32,11 +34,16 @@
             "slug": "classes-guardian-bodyguard",
             "description": "If you perform the Guard action and choose to provide cover to an ally, that creature gains Resistance to all damage types until the start of your next turn.",
             "tags": [
+                "core",
                 "guard",
+                "guardian",
                 "resistance"
             ],
             "class": "Guardian",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -46,11 +53,16 @@
             "description": "As long as you have a shield or martial armor equipped, all damage you suffer is reduced by (SL) (applied before damage Affinities).",
             "tags": [
                 "armor",
+                "core",
+                "guardian",
                 "martial",
                 "shield"
             ],
             "class": "Guardian",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -60,6 +72,8 @@
             "description": "You may now equip a shield in your main hand slot. As long as you have two shields equipped, you gain the sub-labels of both items and may treat them as the following combined two-handed melee brawling weapon: Twin Shields (MIG + MIG) (HR + 5) physical (<i class=\"ui-icon elem-physical svg-physical\"></i>). Deals extra damage equal to your (SL) in Defensive Mastery (above).",
             "tags": [
                 "brawling",
+                "core",
+                "guardian",
                 "melee",
                 "physical",
                 "shield",
@@ -67,7 +81,10 @@
                 "weapon"
             ],
             "class": "Guardian",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -76,10 +93,15 @@
             "slug": "classes-guardian-fortress",
             "description": "Permanently increase your maximum Hit Points by (SL \u00d7 3).",
             "tags": [
+                "core",
+                "guardian",
                 "hp"
             ],
             "class": "Guardian",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -89,11 +111,17 @@
             "description": "When another creature is threatened by an attack, spell or other danger, you may take their place (any Checks that are part of the danger will be performed against you; you may declare the use of this Skill before or after the Checks have been made). If the danger already affected you, it affects you twice (resolve both instances separately); you also cannot protect multiple creatures from the same danger. If you use this Skill during a conflict, you cannot use it again until the start of your next turn.",
             "tags": [
                 "attack",
+                "core",
+                "guardian",
                 "skill",
                 "spell"
             ],
             "class": "Guardian",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.8.4] - 2026-11-05
+
+### Added
+- Icons for status effects.
+
+### Changed
+- Reviewed and editted some icons.
+- Each category and individual data entry now has its own defined icon for expanding and contracting.
+- Searching now finds content by tag in addition to other parameters.
+
+### Internal
+- All data has been standardized, organized and sorted for consistency.
+- Lots of code has been cleaned and deleted due to being obsolete after the revamp and data standardization.
+
+---
+
 ## [0.8.3] - 2026-11-05
 
 ### Added

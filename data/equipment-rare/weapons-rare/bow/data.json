@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": false,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "equipment-rare-weapons-rare-bow",
     "label": "Bows",
     "sub-labels": [],
@@ -37,13 +39,20 @@
             "slug": "equipment-rare-weapons-rare-bow-hand-crossbow",
             "description": "One-handed \u2022 Ranged \u2022 No Quality.",
             "tags": [
+                "bow",
+                "equipment",
                 "one-handed",
-                "ranged"
+                "physical",
+                "ranged",
+                "rare"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "150 z",
             "damage": "\u3010HR + 4\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -52,45 +61,66 @@
             "slug": "equipment-rare-weapons-rare-bow-composite-bow",
             "description": "Two-handed \u2022 Ranged \u2022 No Quality.",
             "tags": [
+                "bow",
+                "equipment",
+                "physical",
                 "ranged",
+                "rare",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + MIG\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "250 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Siegebreaker <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Siegebreaker <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-bow-siegebreaker",
             "description": "Two-handed \u2022 Ranged \u2022 Damage dealt by this weapon ignores Resistances.",
             "tags": [
+                "bow",
+                "equipment",
+                "physical",
                 "ranged",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "750 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
             "label": "Yoichi",
             "slug": "equipment-rare-weapons-rare-bow-yoichi",
-            "description": "Two-handed \u2022 Ranged \u2022 You are immune to shaken.",
+            "description": "Two-handed \u2022 Ranged \u2022 You are immune to shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
             "tags": [
+                "air",
+                "bow",
+                "equipment",
                 "ranged",
+                "rare",
                 "shaken",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + DEX\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "900 z",
             "damage": "\u3010HR + 8\u3011 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -100,14 +130,20 @@
             "description": "Two-handed \u2022 Ranged \u2022 You gain Resistance to bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage.",
             "tags": [
                 "bolt",
+                "bow",
+                "equipment",
                 "ranged",
+                "rare",
                 "resistance",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "1000 z",
             "damage": "\u3010HR + 8\u3011 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -116,120 +152,169 @@
             "slug": "equipment-rare-weapons-rare-bow-looting-bow",
             "description": "Two-handed \u2022 Ranged \u2022 When you reduce a creature to 0 Hit Points with this weapon, you may regain 2 Inventory Points.",
             "tags": [
+                "bow",
+                "equipment",
+                "fire",
                 "hp",
                 "inventory",
                 "ip",
                 "ranged",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "1250 z",
             "damage": "\u3010HR + 8\u3011 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Gatling Crossbow <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Gatling Crossbow <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-bow-gatling-crossbow",
             "description": "Two-handed \u2022 Ranged \u2022 Attacks with this weapon have multi (2).",
             "tags": [
+                "bow",
+                "equipment",
                 "multi",
+                "physical",
                 "ranged",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + INS\u3011",
+            "contract-icon": "minus",
             "cost": "1350 z",
             "damage": "\u3010HR + 12\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Dragontrap Bow <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Dragontrap Bow <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-bow-dragontrap-bow",
             "description": "Two-handed \u2022 Ranged \u2022 When you hit a flying target with this weapon, you may force that target to land immediately.",
             "tags": [
+                "bow",
+                "earth",
+                "equipment",
                 "flying",
                 "ranged",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "1500 z",
             "damage": "\u3010HR + 12\u3011 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Frozen Envy <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Frozen Envy <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-bow-frozen-envy",
             "description": "Two-handed \u2022 Ranged \u2022 When you hit one or more creatures with this weapon, if you have at least one Bond of inferiority, you may recover 5 MP.",
             "tags": [
                 "bond",
+                "bow",
+                "equipment",
+                "ice",
                 "ranged",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "1500 z",
             "damage": "\u3010HR + 12\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Gorgon Eye <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Gorgon Eye <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-bow-gorgon-eye",
-            "description": "Two-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers slow.",
+            "description": "Two-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
             "tags": [
+                "bow",
+                "equipment",
+                "poison",
                 "ranged",
+                "rare",
                 "slow",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "2000 z",
             "damage": "\u3010HR + 12\u3011 poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Artemis <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Artemis <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-bow-artemis",
             "description": "Two-handed \u2022 Ranged \u2022 You gain Immunity to dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage.",
             "tags": [
+                "bow",
                 "dark",
+                "equipment",
                 "immunity",
+                "light",
                 "ranged",
+                "rare",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + DEX\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "2100 z",
             "damage": "\u3010HR + 12\u3011 light (<i class=\"ui-icon elem-light svg-sun\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Tametomo <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Tametomo <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-bow-tametomo",
-            "description": "Two-handed \u2022 Ranged \u2022 Attacks with this weapon deal 5 extra damage against creatures suffering from slow and/or shaken.",
+            "description": "Two-handed \u2022 Ranged \u2022 Attacks with this weapon deal 5 extra damage against creatures suffering from slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) and/or shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
             "tags": [
+                "bow",
+                "equipment",
+                "ice",
                 "ranged",
+                "rare",
                 "shaken",
                 "slow",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "1500 z",
             "damage": "\u3010HR + 12\u3011 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -238,36 +323,50 @@
             "slug": "equipment-rare-weapons-rare-bow-immernacht",
             "description": "Two-handed \u2022 Ranged \u2022 When a creature includes you among the targets of an offensive spell (\ud83d\uddf2), if you are in Crisis, that creature must spend Hit Points instead of Mind Points to cast the spell.",
             "tags": [
+                "bow",
                 "crisis",
+                "dark",
+                "equipment",
                 "hp",
                 "mp",
                 "ranged",
+                "rare",
                 "spell",
                 "two-handed"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "1800 z",
             "damage": "\u3010HR + 8\u3011 dark (<i class=\"ui-icon elem-dark svg-dark\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
             "is-container": true,
-            "label": "Hirundo <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon martial-icon svg-diamonds'></span> <span class='ui-icon svg-svg-diamonds'></span>",
+            "label": "Hirundo <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-bow-hirundo",
             "description": "Two-handed \u2022 Ranged \u2022 After resolving your Encourage Skill, you may perform a free attack with this weapon. If you do, treat your High Roll as 0 when calculating damage dealt by this attack.",
             "tags": [
                 "attack",
+                "bow",
+                "equipment",
                 "free-attack",
+                "light",
                 "ranged",
+                "rare",
                 "skill",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011",
+            "contract-icon": "minus",
             "cost": "1800 z",
             "damage": "\u3010HR + 12\u3011 light (<i class=\"ui-icon elem-light svg-sun\"></i>)",
-            "martial": true
+            "expand-icon": "plus",
+            "martial": true,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -276,15 +375,23 @@
             "slug": "equipment-rare-weapons-rare-bow-carbon-bow",
             "description": "Two-handed \u2022 Ranged \u2022 Attacks with this weapon treat the Defense of each target as being equal to their current Dexterity die size.",
             "tags": [
+                "bow",
                 "defense",
+                "equipment",
+                "physical",
                 "ranged",
+                "rare",
                 "two-handed",
                 "weapon"
             ],
             "accuracy": "\u3010DEX + DEX\u3011 + 1",
+            "contract-icon": "minus",
             "cost": "800 z",
             "damage": "\u3010HR + 8\u3011 physical (<i class=\"ui-icon elem-physical svg-physical\"></i>)",
-            "martial": false
+            "expand-icon": "plus",
+            "martial": false,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

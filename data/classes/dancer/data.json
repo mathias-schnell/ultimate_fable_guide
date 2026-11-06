@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "body-balance",
+    "menu-icon": "body-balance",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-dancer",
     "label": "Dancer",
     "sub-labels": [
@@ -33,12 +35,17 @@
             "tags": [
                 "armor",
                 "dance",
+                "dancer",
+                "high-fantasy",
                 "martial",
                 "mp",
                 "skill"
             ],
             "class": "Dancer",
-            "max-sl": 10
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 10,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -48,10 +55,16 @@
             "description": "When you perform a dance with a duration of \u201cUntil the start of your next turn\u201d, you may spend 10 Mind Points. If you do, choose one ally you can see towards whom you have a Bond of affection: apply the sub-labels of the dance to that ally as well as yourself (the sub-labels still last until the start of your next turn).",
             "tags": [
                 "bond",
+                "dance",
+                "dancer",
+                "high-fantasy",
                 "mp"
             ],
             "class": "Dancer",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -59,9 +72,16 @@
             "label": "Frenetic Footwork",
             "slug": "classes-dancer-frenetic-footwork",
             "description": "After you perform a dance with a duration of \u201cUntil the start of your next turn\u201d, you gain a bonus equal to (SL \u00d7 2) to all Opposed Checks that rely on acrobatics, coordination or speed until the start of your next turn.",
-            "tags": [],
+            "tags": [
+                "dance",
+                "dancer",
+                "high-fantasy"
+            ],
             "class": "Dancer",
-            "max-sl": 2
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 2,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -70,10 +90,15 @@
             "slug": "classes-dancer-quick-change",
             "description": "After you perform a dance, you may perform the Equipment action for free.",
             "tags": [
-                "equipment"
+                "dancer",
+                "equipment",
+                "high-fantasy"
             ],
             "class": "Dancer",
-            "max-sl": 1
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 1,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -85,13 +110,19 @@
                 "arcane",
                 "brawling",
                 "dagger",
+                "dancer",
                 "flail",
+                "high-fantasy",
                 "sword",
                 "thrown",
                 "weapon"
             ],
             "class": "Dancer",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }

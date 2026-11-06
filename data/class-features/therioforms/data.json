@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "",
+    "menu-icon": "",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "class-features-therioforms",
     "label": "Therioforms",
     "sub-labels": [],
@@ -27,8 +29,12 @@
             "description": "You may breathe underwater and your eyes can see perfectly in dim light (<i class=\"ui-icon elem-light svg-sun\"></i>).<br><br>When you recover Hit Points, you recover 5 additional Hit Points and you may recover from a single status effect of your choice.",
             "tags": [
                 "hp",
-                "light"
+                "light",
+                "therioform"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Frogs, salamanders, regenerating creatures, aquatic monsters."
         },
         {
@@ -38,8 +44,12 @@
             "slug": "class-features-therioforms-arpaktida",
             "description": "You treat your Insight as if it were one die size higher (to a maximum of d12).<br><br>When you deal damage to one or more creatures for the first time during your turn, if at least one of them is in Crisis, you deal 5 extra damage to each of those creatures.",
             "tags": [
-                "crisis"
+                "crisis",
+                "therioform"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Wolves, birds of prey, creatures with sharp hunting senses."
         },
         {
@@ -49,8 +59,12 @@
             "slug": "class-features-therioforms-dynamotheria",
             "description": "You treat your Might as if it were one die size higher (to a maximum of d12).<br><br>When you succeed on a Check to advance or turn back a Clock, if that Check includes Might, you may fill or erase 1 additional section of that Clock.",
             "tags": [
-                "clock"
+                "clock",
+                "therioform"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Bears, dinosaurs, creatures of massive size and strength."
         },
         {
@@ -58,14 +72,18 @@
             "is-container": true,
             "label": "Electrophora",
             "slug": "class-features-therioforms-electrophora",
-            "description": "When you deal damage with an attack or spell, you may have all that damage become bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>). While your unarmed strikes deal bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers slow.",
+            "description": "When you deal damage with an attack or spell, you may have all that damage become bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>). While your unarmed strikes deal bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
             "tags": [
                 "attack",
                 "bolt",
                 "hp",
                 "slow",
-                "spell"
+                "spell",
+                "therioform"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Electric creatures, lightning elementals, robots."
         },
         {
@@ -76,8 +94,12 @@
             "description": "When you use the Biophagy Skill, you also recover an amount of Mind Points equal to (4 + (your Skill Level in Theriomorphosis)).",
             "tags": [
                 "mp",
-                "skill"
+                "skill",
+                "therioform"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Parasites, undead, creatures who feed on souls."
         },
         {
@@ -88,8 +110,12 @@
             "description": "You may treat your Defense score as being equal to (13 + (half your Skill Level in Theriomorphosis)) (you may still use your normal scores if better).",
             "tags": [
                 "defense",
-                "skill"
+                "skill",
+                "therioform"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Crustaceans, turtles, armored creatures and vehicles."
         },
         {
@@ -97,14 +123,18 @@
             "is-container": true,
             "label": "Pneumophora",
             "slug": "class-features-therioforms-pneumophora",
-            "description": "When you deal damage with an attack or spell, you may have all that damage become air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>). While your unarmed strikes deal air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers weak.",
+            "description": "When you deal damage with an attack or spell, you may have all that damage become air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>). While your unarmed strikes deal air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
             "tags": [
                 "air",
                 "attack",
                 "hp",
                 "spell",
+                "therioform",
                 "weak"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Jet-propulsion mollusks, great winged beasts, rockets."
         },
         {
@@ -114,8 +144,12 @@
             "slug": "class-features-therioforms-polypoda",
             "description": "Your attacks with unarmed strikes gain multi (3).",
             "tags": [
-                "multi"
+                "multi",
+                "therioform"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Squids, octopi, creatures with tendrils or vines."
         },
         {
@@ -129,8 +163,13 @@
                 "bolt",
                 "flying",
                 "ice",
-                "melee"
+                "melee",
+                "therioform",
+                "vehicle"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Bats, birds, winged insects, flying creatures."
         },
         {
@@ -138,14 +177,18 @@
             "is-container": true,
             "label": "Pyrophora",
             "slug": "class-features-therioforms-pyrophora",
-            "description": "When you deal damage with an attack or spell, you may have all that damage become fire (<i class=\"ui-icon elem-fire svg-fire\"></i>). While your unarmed strikes deal fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers dazed.",
+            "description": "When you deal damage with an attack or spell, you may have all that damage become fire (<i class=\"ui-icon elem-fire svg-fire\"></i>). While your unarmed strikes deal fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
             "tags": [
                 "attack",
                 "dazed",
                 "fire",
                 "hp",
-                "spell"
+                "spell",
+                "therioform"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Bombardier beetles, pistol shrimps, fire elementals."
         },
         {
@@ -155,8 +198,12 @@
             "slug": "class-features-therioforms-tachytheria",
             "description": "You treat your Dexterity as if it were one die size higher (to a maximum of d12).<br><br>When you succeed on a Check to advance or turn back a Clock, if that Check includes Dexterity, you may fill or erase 1 additional section of that Clock.",
             "tags": [
-                "clock"
+                "clock",
+                "therioform"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Cats, gazelles, hares, creatures that are agile and quick."
         },
         {
@@ -164,15 +211,20 @@
             "is-container": true,
             "label": "Toxicophora",
             "slug": "class-features-therioforms-toxicophora",
-            "description": "When you deal damage with an attack or spell, you may have all that damage become poison (<i class=\"ui-icon elem-poison svg-poison\"></i>). While your unarmed strikes deal poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers poisoned.",
+            "description": "When you deal damage with an attack or spell, you may have all that damage become poison (<i class=\"ui-icon elem-poison svg-poison\"></i>). While your unarmed strikes deal poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
             "tags": [
                 "attack",
                 "hp",
                 "poison",
                 "poisoned",
-                "spell"
+                "spell",
+                "therioform"
             ],
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "menu-icon": "",
             "suggestions": "Spiders, snakes, toxic slimes and other venomous creatures."
         }
-    ]
+    ],
+    "order": []
 }

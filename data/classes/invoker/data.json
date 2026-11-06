@@ -2,7 +2,9 @@
     "always-expand": false,
     "is-container": true,
     "show-headers": true,
-    "icon": "human-soul",
+    "menu-icon": "human-soul",
+    "expand-icon": "plus",
+    "contract-icon": "minus",
     "slug": "classes-invoker",
     "label": "Invoker",
     "sub-labels": [
@@ -33,11 +35,17 @@
             "tags": [
                 "elemental",
                 "hp",
+                "invocation",
+                "invoker",
+                "natural-fantasy",
                 "species",
                 "spell"
             ],
             "class": "Invoker",
-            "max-sl": 2
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 2,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -47,11 +55,16 @@
             "description": "You may use an action and spend 5 Mind Points to perform an invocation, drawing energy from one of the wellsprings present on the scene (see next page). Your (SL) in this Skill determines which invocations you have access to.",
             "tags": [
                 "invocation",
+                "invoker",
                 "mp",
+                "natural-fantasy",
                 "skill"
             ],
             "class": "Invoker",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -60,10 +73,16 @@
             "slug": "classes-invoker-linked-invocation",
             "description": "When you perform an invocation, you may spend up to (SL \u00d7 10) additional Mind Points. For every 10 Mind Points you spend this way, the invocation may target an additional creature you can see.",
             "tags": [
-                "mp"
+                "invocation",
+                "invoker",
+                "mp",
+                "natural-fantasy"
             ],
             "class": "Invoker",
-            "max-sl": 3
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 3,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -76,11 +95,16 @@
                 "free-attack",
                 "hp",
                 "invocation",
+                "invoker",
+                "natural-fantasy",
                 "skill",
                 "weapon"
             ],
             "class": "Invoker",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         },
         {
             "always-expand": false,
@@ -94,12 +118,18 @@
                 "brawling",
                 "flail",
                 "invocation",
+                "invoker",
+                "natural-fantasy",
                 "sword",
                 "thrown",
                 "weapon"
             ],
             "class": "Invoker",
-            "max-sl": 5
+            "contract-icon": "minus",
+            "expand-icon": "plus",
+            "max-sl": 5,
+            "menu-icon": ""
         }
-    ]
+    ],
+    "order": []
 }
