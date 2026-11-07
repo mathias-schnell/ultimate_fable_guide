@@ -262,7 +262,7 @@
             ],
             "contract-icon": "minus",
             "die": "12",
-            "effect": "... suffers enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>).",
+            "effect": "... suffers enraged.",
             "expand-icon": "plus",
             "menu-icon": ""
         },
@@ -279,7 +279,7 @@
             ],
             "contract-icon": "minus",
             "die": "13",
-            "effect": "... suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
+            "effect": "... suffers poisoned.",
             "expand-icon": "plus",
             "menu-icon": ""
         },
@@ -299,7 +299,7 @@
             ],
             "contract-icon": "minus",
             "die": "14",
-            "effect": "... suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "effect": "... suffers dazed, shaken, slow and weak.",
             "expand-icon": "plus",
             "menu-icon": ""
         },

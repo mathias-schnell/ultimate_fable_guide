@@ -1,5 +1,20 @@
 # Changelog
 
+
+## [0.8.5] - 2026-11-06
+
+### Removed
+- Icons for status effects.
+
+### Changed
+- "Classic Characters" has been changed to "Character Templates".
+- Set a maximum character limit on the search bar.
+
+### Internal
+- Removed some debugging code.
+
+---
+
 ## [0.8.4] - 2026-11-05
 
 ### Added

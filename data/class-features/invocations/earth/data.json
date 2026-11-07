@@ -90,7 +90,7 @@
                 "slow"
             ],
             "contract-icon": "minus",
-            "effect": "You deal 10 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage to the target, and they suffer slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "effect": "You deal 10 earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage to the target, and they suffer slow.",
             "expand-icon": "plus",
             "menu-icon": ""
         }

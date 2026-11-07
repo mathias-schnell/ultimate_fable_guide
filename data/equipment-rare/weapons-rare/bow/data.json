@@ -104,7 +104,7 @@
             "is-container": true,
             "label": "Yoichi",
             "slug": "equipment-rare-weapons-rare-bow-yoichi",
-            "description": "Two-handed \u2022 Ranged \u2022 You are immune to shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "Two-handed \u2022 Ranged \u2022 You are immune to shaken.",
             "tags": [
                 "air",
                 "bow",
@@ -248,7 +248,7 @@
             "is-container": true,
             "label": "Gorgon Eye <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-bow-gorgon-eye",
-            "description": "Two-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "description": "Two-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers slow.",
             "tags": [
                 "bow",
                 "equipment",
@@ -296,7 +296,7 @@
             "is-container": true,
             "label": "Tametomo <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-bow-tametomo",
-            "description": "Two-handed \u2022 Ranged \u2022 Attacks with this weapon deal 5 extra damage against creatures suffering from slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) and/or shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "Two-handed \u2022 Ranged \u2022 Attacks with this weapon deal 5 extra damage against creatures suffering from slow and/or shaken.",
             "tags": [
                 "bow",
                 "equipment",

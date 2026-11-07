@@ -226,7 +226,7 @@
             "is-container": true,
             "label": "Longinus <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-spear-longinus",
-            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers weak.",
             "tags": [
                 "equipment",
                 "melee",

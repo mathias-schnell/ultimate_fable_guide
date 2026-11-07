@@ -153,7 +153,7 @@
             "is-container": true,
             "label": "Acupuncturer",
             "slug": "equipment-rare-weapons-rare-thrown-acupuncturer",
-            "description": "One-handed \u2022 Ranged \u2022 You are immune to poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
+            "description": "One-handed \u2022 Ranged \u2022 You are immune to poisoned.",
             "tags": [
                 "equipment",
                 "one-handed",
@@ -247,7 +247,7 @@
             "is-container": true,
             "label": "Vajra",
             "slug": "equipment-rare-weapons-rare-thrown-vajra",
-            "description": "One-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "One-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers shaken.",
             "tags": [
                 "bolt",
                 "equipment",
@@ -295,7 +295,7 @@
             "is-container": true,
             "label": "Hive Dart",
             "slug": "equipment-rare-weapons-rare-thrown-hive-dart",
-            "description": "One-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
+            "description": "One-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers poisoned.",
             "tags": [
                 "equipment",
                 "one-handed",

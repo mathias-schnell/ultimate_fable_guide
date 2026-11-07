@@ -74,7 +74,7 @@
                 "shaken"
             ],
             "contract-icon": "minus",
-            "effect": "You deal 10 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to the target, and they suffer shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "effect": "You deal 10 fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to the target, and they suffer shaken.",
             "expand-icon": "plus",
             "menu-icon": ""
         },
@@ -92,7 +92,7 @@
                 "weak"
             ],
             "contract-icon": "minus",
-            "effect": "The target loses 20 Mind Points and also suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "effect": "The target loses 20 Mind Points and also suffers weak.",
             "expand-icon": "plus",
             "menu-icon": ""
         }

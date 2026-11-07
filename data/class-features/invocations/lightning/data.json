@@ -74,7 +74,7 @@
                 "slow"
             ],
             "contract-icon": "minus",
-            "effect": "You deal 10 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to the target, and they suffer slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "effect": "You deal 10 bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to the target, and they suffer slow.",
             "expand-icon": "plus",
             "menu-icon": ""
         },
@@ -92,7 +92,7 @@
                 "mp"
             ],
             "contract-icon": "minus",
-            "effect": "The target loses 20 Mind Points and also suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "effect": "The target loses 20 Mind Points and also suffers dazed.",
             "expand-icon": "plus",
             "menu-icon": ""
         }

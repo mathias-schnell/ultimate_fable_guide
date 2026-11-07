@@ -185,7 +185,7 @@
             "is-container": true,
             "label": "Gamble",
             "slug": "class-features-spells-entropist-gamble",
-            "description": "You summon a vortex of chaotic energy. Roll your current Willpower die once for every 10 Mind Points spent while casting this spell, then keep the single die you prefer: the number on that die determines the effects of this spell. 1: You lose half of your current Hit Points and half of your current Mind Points. 2-3: Each creature present on the scene, including yourself, suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>). 4-6: Each creature present on the scene, including yourself, suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>). 7-8: Choose up to three creatures you can see: each of them recovers 50 Hit Points and also recovers from all status effects. 9+: Choose any number of creatures you can see: you deal 30 damage to each of them. The damage type is determined randomly by rolling a d6 (1. air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), 2. bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), 3. dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), 4. earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), 5. fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), 6. poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)).",
+            "description": "You summon a vortex of chaotic energy. Roll your current Willpower die once for every 10 Mind Points spent while casting this spell, then keep the single die you prefer: the number on that die determines the effects of this spell. 1: You lose half of your current Hit Points and half of your current Mind Points. 2-3: Each creature present on the scene, including yourself, suffers poisoned. 4-6: Each creature present on the scene, including yourself, suffers slow. 7-8: Choose up to three creatures you can see: each of them recovers 50 Hit Points and also recovers from all status effects. 9+: Choose any number of creatures you can see: you deal 30 damage to each of them. The damage type is determined randomly by rolling a d6 (1. air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>), 2. bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), 3. dark (<i class=\"ui-icon elem-dark svg-dark\"></i>), 4. earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>), 5. fire (<i class=\"ui-icon elem-fire svg-fire\"></i>), 6. poison (<i class=\"ui-icon elem-poison svg-poison\"></i>)).",
             "tags": [
                 "air",
                 "bolt",
@@ -272,7 +272,7 @@
             "is-container": true,
             "label": "Umbra <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-entropist-umbra",
-            "description": "A storm of dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) energy turns matter into ash. You deal (HR + 15) dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage to each target hit by this spell. Opportunity: each target hit by this spell suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "description": "A storm of dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) energy turns matter into ash. You deal (HR + 15) dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage to each target hit by this spell. Opportunity: each target hit by this spell suffers weak.",
             "tags": [
                 "core",
                 "dark",

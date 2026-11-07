@@ -232,7 +232,7 @@
             "is-container": true,
             "label": "Disarming Rhetoric",
             "slug": "heroic-skills-core-disarming-rhetoric",
-            "description": "During a conflict scene, you may use an action and choose a <strong>soldier</strong>-rank creature that can hear and understand you (the Game Master must tell you who is a valid <strong>target</strong>). If that creature is <strong>shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>)</strong> or in <strong>Crisis</strong>, you may spend an amount of Mind Points equal to (20 + half that creature\u2019s level) to have them peacefully leave the conflict.\n\nDescribe how you convince them to desist.",
+            "description": "During a conflict scene, you may use an action and choose a <strong>soldier</strong>-rank creature that can hear and understand you (the Game Master must tell you who is a valid <strong>target</strong>). If that creature is <strong>shaken</strong> or in <strong>Crisis</strong>, you may spend an amount of Mind Points equal to (20 + half that creature\u2019s level) to have them peacefully leave the conflict.\n\nDescribe how you convince them to desist.",
             "tags": [
                 "core",
                 "crisis",
@@ -370,7 +370,7 @@
             "is-container": true,
             "label": "Perfect Aim",
             "slug": "heroic-skills-core-perfect-aim",
-            "description": "When you hit one or more creatures with a <strong>ranged</strong> attack and choose to deal no damage in order to gain the benefits of the <strong>Warning Shot</strong> <strong>Skill</strong>, you may choose <strong>two</strong> options instead of one (for instance, you could inflict both <strong>shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>)</strong> and <strong>slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>)</strong> on each creature, or inflict a status effect on each creature while also lowering their Mind Points).",
+            "description": "When you hit one or more creatures with a <strong>ranged</strong> attack and choose to deal no damage in order to gain the benefits of the <strong>Warning Shot</strong> <strong>Skill</strong>, you may choose <strong>two</strong> options instead of one (for instance, you could inflict both <strong>shaken</strong> and <strong>slow</strong> on each creature, or inflict a status effect on each creature while also lowering their Mind Points).",
             "tags": [
                 "attack",
                 "core",

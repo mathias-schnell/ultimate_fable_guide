@@ -59,7 +59,7 @@
             "is-container": true,
             "label": "Encyclopedia",
             "slug": "equipment-rare-weapons-rare-arcane-encyclopedia",
-            "description": "Two-handed \u2022 Melee \u2022 You are immune to dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "description": "Two-handed \u2022 Melee \u2022 You are immune to dazed.",
             "tags": [
                 "arcane",
                 "dazed",
@@ -197,7 +197,7 @@
             "is-container": true,
             "label": "Necronomicon",
             "slug": "equipment-rare-weapons-rare-arcane-necronomicon",
-            "description": "Two-handed \u2022 Melee \u2022 When you hit one or more creatures with an offensive spell (\ud83d\uddf2), each of them suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "Two-handed \u2022 Melee \u2022 When you hit one or more creatures with an offensive spell (\ud83d\uddf2), each of them suffers shaken.",
             "tags": [
                 "arcane",
                 "dark",
@@ -243,7 +243,7 @@
             "is-container": true,
             "label": "Rafflesia Staff",
             "slug": "equipment-rare-weapons-rare-arcane-rafflesia-staff",
-            "description": "Two-handed \u2022 Melee \u2022 When you hit one or more creatures with an offensive spell (\ud83d\uddf2), each of them suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
+            "description": "Two-handed \u2022 Melee \u2022 When you hit one or more creatures with an offensive spell (\ud83d\uddf2), each of them suffers poisoned.",
             "tags": [
                 "arcane",
                 "equipment",

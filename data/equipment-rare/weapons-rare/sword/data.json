@@ -106,7 +106,7 @@
             "is-container": true,
             "label": "Elegant Edge <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-sword-elegant-edge",
-            "description": "One-handed \u2022 Melee \u2022 You are immune to enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to enraged.",
             "tags": [
                 "enraged",
                 "equipment",
@@ -129,7 +129,7 @@
             "is-container": true,
             "label": "Joyeuse <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-sword-joyeuse",
-            "description": "One-handed \u2022 Melee \u2022 You are immune to shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to shaken.",
             "tags": [
                 "equipment",
                 "melee",
@@ -245,7 +245,7 @@
             "is-container": true,
             "label": "Flesh Eater <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-sword-flesh-eater",
-            "description": "One-handed \u2022 Melee \u2022 This weapon deals 5 extra damage to weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>) targets.",
+            "description": "One-handed \u2022 Melee \u2022 This weapon deals 5 extra damage to weak targets.",
             "tags": [
                 "equipment",
                 "melee",

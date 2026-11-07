@@ -72,7 +72,7 @@
             "is-container": true,
             "label": "Electrophora",
             "slug": "class-features-therioforms-electrophora",
-            "description": "When you deal damage with an attack or spell, you may have all that damage become bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>). While your unarmed strikes deal bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "description": "When you deal damage with an attack or spell, you may have all that damage become bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>). While your unarmed strikes deal bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers slow.",
             "tags": [
                 "attack",
                 "bolt",
@@ -123,7 +123,7 @@
             "is-container": true,
             "label": "Pneumophora",
             "slug": "class-features-therioforms-pneumophora",
-            "description": "When you deal damage with an attack or spell, you may have all that damage become air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>). While your unarmed strikes deal air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "description": "When you deal damage with an attack or spell, you may have all that damage become air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>). While your unarmed strikes deal air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers weak.",
             "tags": [
                 "air",
                 "attack",
@@ -177,7 +177,7 @@
             "is-container": true,
             "label": "Pyrophora",
             "slug": "class-features-therioforms-pyrophora",
-            "description": "When you deal damage with an attack or spell, you may have all that damage become fire (<i class=\"ui-icon elem-fire svg-fire\"></i>). While your unarmed strikes deal fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "description": "When you deal damage with an attack or spell, you may have all that damage become fire (<i class=\"ui-icon elem-fire svg-fire\"></i>). While your unarmed strikes deal fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers dazed.",
             "tags": [
                 "attack",
                 "dazed",
@@ -211,7 +211,7 @@
             "is-container": true,
             "label": "Toxicophora",
             "slug": "class-features-therioforms-toxicophora",
-            "description": "When you deal damage with an attack or spell, you may have all that damage become poison (<i class=\"ui-icon elem-poison svg-poison\"></i>). While your unarmed strikes deal poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
+            "description": "When you deal damage with an attack or spell, you may have all that damage become poison (<i class=\"ui-icon elem-poison svg-poison\"></i>). While your unarmed strikes deal poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage, any enemy who loses 20 or more Hit Points due to one of your unarmed strikes also suffers poisoned.",
             "tags": [
                 "attack",
                 "hp",

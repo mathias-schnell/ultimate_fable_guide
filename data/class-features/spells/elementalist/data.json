@@ -133,7 +133,7 @@
             "is-container": true,
             "label": "Fulgur <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-fulgur",
-            "description": "You weave electricity into a wave of crackling bolts. You deal (HR + 15) bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "description": "You weave electricity into a wave of crackling bolts. You deal (HR + 15) bolt (<i class=\"ui-icon elem-bolt svg-bolt\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers dazed.",
             "tags": [
                 "bolt",
                 "core",
@@ -154,7 +154,7 @@
             "is-container": true,
             "label": "Glacies <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-glacies",
-            "description": "You coat your foes under a thick layer of frost. You deal (HR + 15) ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "description": "You coat your foes under a thick layer of frost. You deal (HR + 15) ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers slow.",
             "tags": [
                 "core",
                 "elementalist",
@@ -196,7 +196,7 @@
             "is-container": true,
             "label": "Ignis <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-elementalist-ignis",
-            "description": "You unleash a searing barrage against your foes, conjuring flames out of thin air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>). You deal (HR + 15) fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "You unleash a searing barrage against your foes, conjuring flames out of thin air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>). You deal (HR + 15) fire (<i class=\"ui-icon elem-fire svg-fire\"></i>) damage to each target hit by this spell.\nOpportunity: each target hit by this spell suffers shaken.",
             "tags": [
                 "air",
                 "core",

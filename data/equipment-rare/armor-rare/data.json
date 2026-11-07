@@ -40,7 +40,7 @@
             "is-container": true,
             "label": "Slimy Jacket",
             "slug": "equipment-rare-armor-rare-slimy-jacket",
-            "description": "You are immune to poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
+            "description": "You are immune to poisoned.",
             "tags": [
                 "DEX",
                 "INS",
@@ -63,7 +63,7 @@
             "is-container": true,
             "label": "Fox Garb",
             "slug": "equipment-rare-armor-rare-fox-garb",
-            "description": "You are immune to slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "description": "You are immune to slow.",
             "tags": [
                 "DEX",
                 "INS",
@@ -621,7 +621,7 @@
             "is-container": true,
             "label": "Woolly Cuirass <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-armor-rare-woolly-cuirass",
-            "description": "As long as you\u2019re not in Crisis, you gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage and are immune to weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "description": "As long as you\u2019re not in Crisis, you gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage and are immune to weak.",
             "tags": [
                 "INS",
                 "armor",

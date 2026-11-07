@@ -65,7 +65,7 @@
             "is-container": true,
             "label": "Fear is the Key",
             "slug": "optional-rules-bonus-content-necromancer-fear-is-the-key",
-            "description": "After you cause one or more enemies to lose Hit Points, if you have acquired the Beyond the Realms of Death Skill and at least one of them is suffering from shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>) and/or weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>), you gain 1 Grave Point and recover (SL \u00d7 2) Hit Points and Mind Points.",
+            "description": "After you cause one or more enemies to lose Hit Points, if you have acquired the Beyond the Realms of Death Skill and at least one of them is suffering from shaken and/or weak, you gain 1 Grave Point and recover (SL \u00d7 2) Hit Points and Mind Points.",
             "tags": [
                 "fabula-ultima-bonus",
                 "hp",
@@ -85,7 +85,7 @@
             "is-container": true,
             "label": "For Whom the Bell Tolls",
             "slug": "optional-rules-bonus-content-necromancer-for-whom-the-bell-tolls",
-            "description": "When you deal damage to a creature with a spell, if that spell only deals damage to that creature, you may spend 1 Grave Point. If you do, choose one option: if that creature is suffering from one or more status effects, the spell deals extra damage equal to ((SL \u00d7 2) + the number of status effects on that creature); or if that creature is suffering from no status effects, they suffer shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "When you deal damage to a creature with a spell, if that spell only deals damage to that creature, you may spend 1 Grave Point. If you do, choose one option: if that creature is suffering from one or more status effects, the spell deals extra damage equal to ((SL \u00d7 2) + the number of status effects on that creature); or if that creature is suffering from no status effects, they suffer shaken.",
             "tags": [
                 "fabula-ultima-bonus",
                 "shaken",

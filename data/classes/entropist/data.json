@@ -100,7 +100,7 @@
             "is-container": true,
             "label": "Stolen Time",
             "slug": "classes-entropist-stolen-time",
-            "description": "During a conflict, you may use an action to interfere with the flow of time by spending up to (SL \u00d7 5) Mind Points. For every 5 Mind Points you spend this way, choose one option: one creature you can see suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>); or one creature you can see recovers from slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>); or one enemy you can see that is suffering from slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) loses (10 + (SL \u00d7 5)) Hit Points; or one creature you can see may perform the Equipment action for free; or choose one ally you can see that has yet to take a turn during this round: that ally may take their turn immediately after yours during this round. Each option can only be chosen once per use of this Skill.",
+            "description": "During a conflict, you may use an action to interfere with the flow of time by spending up to (SL \u00d7 5) Mind Points. For every 5 Mind Points you spend this way, choose one option: one creature you can see suffers slow; or one creature you can see recovers from slow; or one enemy you can see that is suffering from slow loses (10 + (SL \u00d7 5)) Hit Points; or one creature you can see may perform the Equipment action for free; or choose one ally you can see that has yet to take a turn during this round: that ally may take their turn immediately after yours during this round. Each option can only be chosen once per use of this Skill.",
             "tags": [
                 "core",
                 "entropist",

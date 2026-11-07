@@ -31,7 +31,7 @@
             "is-container": true,
             "label": "Condemn",
             "slug": "classes-orator-condemn",
-            "description": "You may use an action and spend 5 Mind Points to perform an Opposed (INS + WLP) Check against an enemy that can hear and understand you. If you succeed, that enemy loses (SL \u00d7 5) Mind Points, suffers a status effect of your choice between dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>) and shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), and all sources deal (SL) extra damage to them until the start of your next turn. You gain a bonus equal to (SL) to your (INS + WLP) Checks for this Skill.",
+            "description": "You may use an action and spend 5 Mind Points to perform an Opposed (INS + WLP) Check against an enemy that can hear and understand you. If you succeed, that enemy loses (SL \u00d7 5) Mind Points, suffers a status effect of your choice between dazed and shaken, and all sources deal (SL) extra damage to them until the start of your next turn. You gain a bonus equal to (SL) to your (INS + WLP) Checks for this Skill.",
             "tags": [
                 "core",
                 "dazed",

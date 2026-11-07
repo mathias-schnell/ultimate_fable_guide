@@ -5,7 +5,7 @@
     "menu-icon": "",
     "expand-icon": "plus",
     "contract-icon": "minus",
-    "slug": "optional-rules-classic-characters-high-fantasy",
+    "slug": "optional-rules-character-templates-high-fantasy",
     "label": "Classic Characters",
     "sub-labels": [],
     "columns": [
@@ -21,7 +21,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Acrobat",
-            "slug": "optional-rules-classic-characters-high-fantasy-acrobat",
+            "slug": "optional-rules-character-templates-high-fantasy-acrobat",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Dancer (3 levels): Dance (SL 2: Phoenix, Ouroboros), Wardancer</li><li>Fury (1 level): Frenzy</li><li>Sharpshooter (1 level): Warning Shot</li></ul><p><strong>Equipment:</strong> Shuriken (\u00d72), sage robe, 170 zenit.</p>",
             "tags": [
                 "dance",
@@ -39,7 +39,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Dancing Witch",
-            "slug": "optional-rules-classic-characters-high-fantasy-dancing-witch",
+            "slug": "optional-rules-character-templates-high-fantasy-dancing-witch",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d8, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Dancer (3 levels): Dance (SL 2: Griffin, Yeti), Wardancer</li><li>Elementalist (1 level): Magical Artillery</li><li>Entropist (1 level): Entropic Magic (Drain Vigor)</li></ul><p><strong>Equipment:</strong> Tome, travel garb, 270 zenit.</p>",
             "tags": [
                 "dance",
@@ -59,7 +59,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Exorcist",
-            "slug": "optional-rules-classic-characters-high-fantasy-exorcist",
+            "slug": "optional-rules-character-templates-high-fantasy-exorcist",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Sharpshooter (2 levels): Hawkeye, Ranged Weapon Mastery</li><li>Spiritist (1 level): Soul Weapon</li><li>Symbolist (2 levels): Symbolic Connection, Symbolism (Binding, Truth)</li></ul><p><strong>Equipment:</strong> Shortbow, sage robe, 170 zenit.</p>",
             "tags": [
                 "equipment",
@@ -79,7 +79,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Fencer",
-            "slug": "optional-rules-classic-characters-high-fantasy-fencer",
+            "slug": "optional-rules-character-templates-high-fantasy-fencer",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d6, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Dancer (2 levels): Dance (SL 2: Kraken, Peacock)</li><li>Rogue (1 level): Cheap Shot</li><li>Weaponmaster (2 levels): Counterattack, Bone Crusher</li></ul><p><strong>Equipment:</strong> Rapier, combat tunic, runic shield, 70 zenit.</p>",
             "tags": [
                 "dance",
@@ -98,7 +98,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Idol",
-            "slug": "optional-rules-classic-characters-high-fantasy-idol",
+            "slug": "optional-rules-character-templates-high-fantasy-idol",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d6, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Chanter (3 levels): Magichant (SL 3: Flame; calm, lively, and solemn tones)</li><li>Orator (2 levels): My Trust in You, Unexpected Ally</li></ul><p><strong>Equipment:</strong> Staff (described as a mic and stand), sage robe, 270 zenit.</p>",
             "tags": [
                 "chanter",
@@ -115,7 +115,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Metalhead",
-            "slug": "optional-rules-classic-characters-high-fantasy-metalhead",
+            "slug": "optional-rules-character-templates-high-fantasy-metalhead",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Chanter (3 levels): Magichant (SL 2: Thunder; frantic and menacing tones), Vibrato</li><li>Fury (1 level): Provoke</li><li>Weaponmaster (1 level): Breach</li></ul><p><strong>Equipment:</strong> Waraxe, runic plate, 120 zenit.</p>",
             "tags": [
                 "bolt",
@@ -133,7 +133,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Runesmith",
-            "slug": "optional-rules-classic-characters-high-fantasy-runesmith",
+            "slug": "optional-rules-character-templates-high-fantasy-runesmith",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d10, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Arcanist (3 levels): Bind and Summon (Forge), Emergency Arcanum, Ritual Arcanism</li><li>Symbolist (2 levels): Personal Touch, Symbolism (Creation, Elements)</li></ul><p><strong>Equipment:</strong> Iron hammer, travel garb, bronze shield, 170 zenit.</p>",
             "tags": [
                 "arcanist",
@@ -153,7 +153,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Sergeant",
-            "slug": "optional-rules-classic-characters-high-fantasy-sergeant",
+            "slug": "optional-rules-character-templates-high-fantasy-sergeant",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Commander (2 levels): Charging Cavalry, Queen\u2019s Gambit</li><li>Fury (1 level): Indomitable Spirit</li><li>Weaponmaster (2 levels): Bladestorm, Bone Crusher</li></ul><p><strong>Equipment:</strong> Broadaxe, brigandine, bronze shield, 70 zenit.</p>",
             "tags": [
                 "commander",
@@ -171,7 +171,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Strategist",
-            "slug": "optional-rules-classic-characters-high-fantasy-strategist",
+            "slug": "optional-rules-character-templates-high-fantasy-strategist",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d10, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Commander (3 levels): Bishop\u2019s Edict, Crushing Chariot, King\u2019s Castle</li><li>Loremaster (2 levels): Flash of Insight, Knowledge is Power</li></ul><p><strong>Equipment:</strong> Pistol, bronze shield, travel garb, 120 zenit.</p>",
             "tags": [
                 "commander",
@@ -190,7 +190,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Traveling Artist",
-            "slug": "optional-rules-classic-characters-high-fantasy-traveling-artist",
+            "slug": "optional-rules-character-templates-high-fantasy-traveling-artist",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d10, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Symbolist (3 levels): Mirage, Symbolism (SL 2: Elements, Growth, Protection, Rebellion)</li><li>Wayfarer (2 levels): Tavern Talk, Resourceful</li></ul><p><strong>Equipment:</strong> Tome (described as a sketchbook!), sage robe, 270 zenit.</p>",
             "tags": [
                 "high-fantasy",
@@ -206,7 +206,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "A Company of Heroes: Ready for Adventure!",
-            "slug": "optional-rules-classic-characters-high-fantasy-a-company-of-heroes-ready-for-adventure",
+            "slug": "optional-rules-character-templates-high-fantasy-a-company-of-heroes-ready-for-adventure",
             "description": "<p>Each group member plays a specific role: the Valiant Knight leads charges and protects allies; the Heartthrob Thief gathers items and info, weakens enemies, and strikes with abandon; the Na\u00efve Chosen heals and supports allies; the Young Sage is a keen observer who knows mighty elemental spells.</p>",
             "tags": [
                 "elemental",
@@ -220,7 +220,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Heartthrob Thief",
-            "slug": "optional-rules-classic-characters-high-fantasy-heartthrob-thief",
+            "slug": "optional-rules-character-templates-high-fantasy-heartthrob-thief",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Rogue (3 levels): Cheap Shot, Dodge, Soul Steal</li><li>Wayfarer (1 level): Tavern Talk</li><li>Weaponmaster (1 level): Bone Crusher</li></ul><p><strong>Equipment:</strong> Twin dagger (custom weapon, (DEX + INS), dagger, melee, accurate, quick), combat tunic, 120 zenit.</p>",
             "tags": [
                 "dagger",
@@ -240,7 +240,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Na\u00efve Chosen",
-            "slug": "optional-rules-classic-characters-high-fantasy-na-ve-chosen",
+            "slug": "optional-rules-character-templates-high-fantasy-na-ve-chosen",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d8, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Arcanist (2 levels): Bind and Summon (Tower), Ritual Arcanism</li><li>Chanter (2 levels): Magichant (SL 2: Radiance; calm and solemn tone)</li><li>Orator (1 level): My Trust in You</li></ul><p><strong>Equipment:</strong> Staff, sage robe, 270 zenit.</p>",
             "tags": [
                 "arcanist",
@@ -258,7 +258,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Valiant Knight",
-            "slug": "optional-rules-classic-characters-high-fantasy-valiant-knight",
+            "slug": "optional-rules-character-templates-high-fantasy-valiant-knight",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d6, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Commander (2 levels): Charging Cavalry, Queen\u2019s Gambit</li><li>Guardian (1 level): Protect</li><li>Weaponmaster (2 levels): Bladestorm, Counterattack</li></ul><p><strong>Equipment:</strong> Greatsword, runic plate, 120 zenit.</p>",
             "tags": [
                 "commander",
@@ -275,7 +275,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Young Sage",
-            "slug": "optional-rules-classic-characters-high-fantasy-young-sage",
+            "slug": "optional-rules-character-templates-high-fantasy-young-sage",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d10, Might d6, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Elementalist (3 levels): Elemental Magic (SL 3: Fulgur, Glacies, Ignis)</li><li>Entropist (1 level): Entropic Magic (Acceleration)</li><li>Loremaster (1 level): Flash of Insight</li></ul><p><strong>Equipment:</strong> Tome, sage robe, 270 zenit.</p>",
             "tags": [
                 "bolt",
@@ -296,7 +296,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "The Band: This Beat Will Save the World!",
-            "slug": "optional-rules-classic-characters-high-fantasy-the-band-this-beat-will-save-the-world",
+            "slug": "optional-rules-character-templates-high-fantasy-the-band-this-beat-will-save-the-world",
             "description": "<p>After attending Bremen\u2019s Royal Conservatory, these young prodigies are ready to serve justice with their music! They all share the Chanter Class, which they use in very different and synergistic ways.</p>",
             "tags": [
                 "chanter",
@@ -310,7 +310,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Goth Diva",
-            "slug": "optional-rules-classic-characters-high-fantasy-goth-diva",
+            "slug": "optional-rules-character-templates-high-fantasy-goth-diva",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d6, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Chanter (2 levels): Magichant (Wind; haunting tone), Vibrato</li><li>Dancer (1 level): Dance (Nightmare)</li><li>Sharpshooter (2 levels): Ranged Weapon Mastery, Warning Shot</li></ul><p><strong>Equipment:</strong> Squall fiddle (custom weapon, (DEX + MIG), flail, ranged, elemental (<i class=\"ui-icon elem-air svg-air\"></i>), quick), combat tunic, 120 zenit.</p>",
             "tags": [
                 "air",
@@ -333,7 +333,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Golden-Hearted Siren",
-            "slug": "optional-rules-classic-characters-high-fantasy-golden-hearted-siren",
+            "slug": "optional-rules-character-templates-high-fantasy-golden-hearted-siren",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d6, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Chanter (4 levels): Magichant (SL 3: Flame, Frost; calm and menacing tones), Siren\u2019s Song</li><li>Orator (1 level): Unexpected Ally</li></ul><p><strong>Equipment:</strong> Bewitched mic (custom weapon, (DEX + INS), arcane, ranged, accurate, elemental (<i class=\"ui-icon elem-light svg-light\"></i>), defense boost), silk shirt, 170 zenit.</p>",
             "tags": [
                 "arcane",
@@ -357,7 +357,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Ironclad Big Sis",
-            "slug": "optional-rules-classic-characters-high-fantasy-ironclad-big-sis",
+            "slug": "optional-rules-character-templates-high-fantasy-ironclad-big-sis",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d6, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Chanter (3 levels): Magichant (Iron; lively tone), Sound Barrier</li><li>Fury (1 level): Provoke</li><li>Guardian (1 level): Protect</li></ul><p><strong>Equipment:</strong> Armored bass (custom weapon, (DEX + MIG), heavy, melee, accurate, defense boost, powerful), sage robe, 70 zenit.</p>",
             "tags": [
                 "chanter",
@@ -378,7 +378,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Life of the Party",
-            "slug": "optional-rules-classic-characters-high-fantasy-life-of-the-party",
+            "slug": "optional-rules-character-templates-high-fantasy-life-of-the-party",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d6, Might d8, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Chanter (3 levels): Magichant (SL 2: Thunder; frantic and menacing tones), Vibrato</li><li>Weaponmaster (2 levels): Bladestorm, Bone Crusher</li></ul><p><strong>Equipment:</strong> Thunder drums (custom weapon, (DEX + MIG), heavy, melee, accurate, elemental (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), powerful), travel garb, 170 zenit.</p>",
             "tags": [
                 "bolt",

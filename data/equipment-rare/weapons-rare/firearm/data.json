@@ -153,7 +153,7 @@
             "is-container": true,
             "label": "Comet Gun <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-firearm-comet-gun",
-            "description": "One-handed \u2022 Ranged \u2022 You are immune to dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "description": "One-handed \u2022 Ranged \u2022 You are immune to dazed.",
             "tags": [
                 "dark",
                 "dazed",
@@ -248,7 +248,7 @@
             "is-container": true,
             "label": "Freezing Shot <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-firearm-freezing-shot",
-            "description": "One-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "description": "One-handed \u2022 Ranged \u2022 Each target hit by this weapon suffers slow.",
             "tags": [
                 "equipment",
                 "firearm",

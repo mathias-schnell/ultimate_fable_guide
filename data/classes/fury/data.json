@@ -90,7 +90,7 @@
             "is-container": true,
             "label": "Provoke",
             "slug": "classes-fury-provoke",
-            "description": "You may use an action and spend 5 Mind Points to perform an Opposed (MIG + WLP) Check against an enemy you can see \u2014 describe how you taunt them! If you succeed, the target suffers enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>), is compelled to focus their attention on you, and must include you among the targets of their attacks and offensive spells (\ud83d\uddf2) if able. This compulsion ends if you fall unconscious or leave the scene, if the creature is no longer enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>), or if they are successfully provoked by someone else. You gain a bonus equal to (SL) to your (MIG + WLP) Checks for this Skill.",
+            "description": "You may use an action and spend 5 Mind Points to perform an Opposed (MIG + WLP) Check against an enemy you can see \u2014 describe how you taunt them! If you succeed, the target suffers enraged, is compelled to focus their attention on you, and must include you among the targets of their attacks and offensive spells (\ud83d\uddf2) if able. This compulsion ends if you fall unconscious or leave the scene, if the creature is no longer enraged, or if they are successfully provoked by someone else. You gain a bonus equal to (SL) to your (MIG + WLP) Checks for this Skill.",
             "tags": [
                 "core",
                 "enraged",

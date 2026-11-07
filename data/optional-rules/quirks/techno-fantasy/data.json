@@ -196,7 +196,7 @@
             "is-container": true,
             "label": "Planet Oracle",
             "slug": "optional-rules-quirks-techno-fantasy-planet-oracle",
-            "description": "<p>When you cause one or more allies to recover Hit Points and/or Mind Points, each of those allies recovers 5 additional HP/MP (increasing to 10 at level 30+) and clears a status effect of your choice among dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>), poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>), shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</p><p>You also gain the ability to perform Rituals of the Spiritism discipline.</p>",
+            "description": "<p>When you cause one or more allies to recover Hit Points and/or Mind Points, each of those allies recovers 5 additional HP/MP (increasing to 10 at level 30+) and clears a status effect of your choice among dazed, enraged, poisoned, shaken, slow, and weak.</p><p>You also gain the ability to perform Rituals of the Spiritism discipline.</p>",
             "tags": [
                 "dazed",
                 "enraged",
@@ -237,7 +237,7 @@
             "is-container": true,
             "label": "Robot",
             "slug": "optional-rules-quirks-techno-fantasy-robot",
-            "description": "<p>You are not considered a living creature and gain Immunity to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage. You are also immune to the poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>) status effect.</p><p>You do not need to breathe, eat or drink, but you still follow the normal rules for resting. You also recover Hit Points and recover from status effects as normal.</p><p>You gain a +2 bonus to all Checks you perform to examine or interact with machines, technology and constructs (except for Accuracy Checks and Magic Checks).</p>",
+            "description": "<p>You are not considered a living creature and gain Immunity to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) damage. You are also immune to the poisoned status effect.</p><p>You do not need to breathe, eat or drink, but you still follow the normal rules for resting. You also recover Hit Points and recover from status effects as normal.</p><p>You gain a +2 bonus to all Checks you perform to examine or interact with machines, technology and constructs (except for Accuracy Checks and Magic Checks).</p>",
             "tags": [
                 "construct",
                 "earth",

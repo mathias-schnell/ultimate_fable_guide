@@ -199,7 +199,7 @@
             "is-container": true,
             "label": "Gravity Mace <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-gravity-mace",
-            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow.",
             "tags": [
                 "earth",
                 "equipment",
@@ -223,7 +223,7 @@
             "is-container": true,
             "label": "Mjolnir <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-mjolnir",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers dazed.",
             "tags": [
                 "bolt",
                 "dazed",
@@ -270,7 +270,7 @@
             "is-container": true,
             "label": "Soul of Pillage <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-heavy-soul-of-pillage",
-            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>).",
+            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers enraged.",
             "tags": [
                 "dark",
                 "enraged",

@@ -74,13 +74,6 @@
   --inactive-tab-bg-color: #000022;
   --inactive-tab-text-color: #7777aa;
 
-  --status-dazed: #f1e60f;
-  --status-shaken: #9b59b6;
-  --status-slow: #347adb;
-  --status-weak: #6c6c6c;
-  --status-enraged: #e82914;
-  --status-poisoned: #1edb67;
-
   --text-color: #ffffff;
   --text-color-dark: #bbbbbb;
   --text-gold: #fadc00;
@@ -177,7 +170,7 @@ h6 { font-size: var(--font-size-mediumlarge); }
 .title-container .app-title::after {
     content: '';
     position: absolute;
-    bottom: calc(var(--title-size) * 0.15);
+    bottom: 0;
     left: -0.2rem;
     right: -0.5rem;
     
@@ -405,10 +398,3 @@ h6 { font-size: var(--font-size-mediumlarge); }
 .elem-light    { color: var(--elem-light); }
 .elem-dark     { color: var(--elem-dark); }
 .elem-poison   { color: var(--elem-poison); }
-
-.status-dazed    { color: var(--status-dazed); }
-.status-shaken   { color: var(--status-shaken); }
-.status-slow     { color: var(--status-slow); }
-.status-weak     { color: var(--status-weak); }
-.status-enraged  { color: var(--status-enraged); }
-.status-poisoned { color: var(--status-poisoned); }

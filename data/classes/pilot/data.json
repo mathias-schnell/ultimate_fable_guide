@@ -70,7 +70,7 @@
             "is-container": true,
             "label": "Heart in the Engine",
             "slug": "classes-pilot-heart-in-the-engine",
-            "description": "At the start of your turn during a conflict, if you are driving your personal vehicle, you may spend 10 Mind Points. If you do, choose one option: the next time you deal damage during this turn, deal (SL \u00d7 2) extra damage; or, the next time you suffer damage before the start of your next turn, that damage is reduced by (SL \u00d7 2) (applied before damage Affinities); or, you recover from either slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) or weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>) (your choice).",
+            "description": "At the start of your turn during a conflict, if you are driving your personal vehicle, you may spend 10 Mind Points. If you do, choose one option: the next time you deal damage during this turn, deal (SL \u00d7 2) extra damage; or, the next time you suffer damage before the start of your next turn, that damage is reduced by (SL \u00d7 2) (applied before damage Affinities); or, you recover from either slow or weak (your choice).",
             "tags": [
                 "mp",
                 "pilot",

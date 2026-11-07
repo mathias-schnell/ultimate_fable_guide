@@ -487,10 +487,6 @@ function toggle_item(target, ctx = {}, forced_state = null, scroll_to = true) {
         icon.classList.toggle('svg-' + icon.dataset.contractIcon, new_state);
     }
 
-    console.log(icon);
-    console.log(icon.dataset.expandIcon);
-    console.log(icon.dataset.contractIcon);
-
     if(content_el) {
         if (new_state) {
             content_el.removeAttribute('inert');

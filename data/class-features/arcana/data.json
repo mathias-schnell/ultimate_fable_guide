@@ -51,7 +51,7 @@
             "is-container": true,
             "label": "Arcanum of the Frost",
             "slug": "class-features-arcana-arcanum-of-the-frost",
-            "description": "<h4>Merge</h4><p>You gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage and are immune to enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>). Any ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage you deal ignores Resistances.</p><h4>Dismiss</h4><p><strong>Ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) Age.</strong> Choose any number of creatures you can see: you deal 30 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to each of them. This damage ignores Resistances.</p>",
+            "description": "<h4>Merge</h4><p>You gain Resistance to ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage and are immune to enraged. Any ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage you deal ignores Resistances.</p><h4>Dismiss</h4><p><strong>Ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) Age.</strong> Choose any number of creatures you can see: you deal 30 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to each of them. This damage ignores Resistances.</p>",
             "tags": [
                 "arcana",
                 "arcanist",
@@ -104,7 +104,7 @@
             "is-container": true,
             "label": "Arcanum of the Oak",
             "slug": "class-features-arcana-arcanum-of-the-oak",
-            "description": "<h4>Merge</h4><p>You gain Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) and poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and are immune to poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>). Whenever you recover Hit Points, you recover 5 additional Hit Points.</p><h4>Dismiss</h4><p><strong>Blossom.</strong> Choose any number of creatures you can see (you may also choose yourself): each of them recovers from poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>) and also recovers 40 Hit Points. This amount increases to 50 Hit Points if you are level 20 or higher, or to 60 Hit Points if you are level 40 or higher.</p>",
+            "description": "<h4>Merge</h4><p>You gain Resistance to earth (<i class=\"ui-icon elem-earth svg-stone-block\"></i>) and poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and are immune to poisoned. Whenever you recover Hit Points, you recover 5 additional Hit Points.</p><h4>Dismiss</h4><p><strong>Blossom.</strong> Choose any number of creatures you can see (you may also choose yourself): each of them recovers from poisoned and also recovers 40 Hit Points. This amount increases to 50 Hit Points if you are level 20 or higher, or to 60 Hit Points if you are level 40 or higher.</p>",
             "tags": [
                 "arcana",
                 "arcanist",
@@ -184,7 +184,7 @@
             "is-container": true,
             "label": "Arcanum of the Wheel",
             "slug": "class-features-arcana-arcanum-of-the-wheel",
-            "description": "<h4>Merge</h4><p>You are immune to slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>). You gain a +1 bonus to your Defense.</p><h4>Dismiss</h4><p><strong>Time Freeze.</strong> Choose any number of creatures you can see: each of them suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>). If a creature chosen this way is already slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), that creature will instead perform one fewer action during their next turn (to a minimum of 0 actions).</p>",
+            "description": "<h4>Merge</h4><p>You are immune to slow. You gain a +1 bonus to your Defense.</p><h4>Dismiss</h4><p><strong>Time Freeze.</strong> Choose any number of creatures you can see: each of them suffers slow. If a creature chosen this way is already slow, that creature will instead perform one fewer action during their next turn (to a minimum of 0 actions).</p>",
             "tags": [
                 "arcana",
                 "arcanist",

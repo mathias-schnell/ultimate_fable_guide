@@ -84,7 +84,7 @@
             "is-container": true,
             "label": "Frozen Grasp",
             "slug": "equipment-rare-weapons-rare-brawling-frozen-grasp",
-            "description": "One-handed \u2022 Melee \u2022 You are immune to enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to enraged.",
             "tags": [
                 "brawling",
                 "enraged",
@@ -107,7 +107,7 @@
             "is-container": true,
             "label": "Bear Paw <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-brawling-bear-paw",
-            "description": "One-handed \u2022 Melee \u2022 You are immune to weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to weak.",
             "tags": [
                 "brawling",
                 "equipment",
@@ -226,7 +226,7 @@
             "is-container": true,
             "label": "Lobster Claw <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-brawling-lobster-claw",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow.",
             "tags": [
                 "brawling",
                 "equipment",
@@ -250,7 +250,7 @@
             "is-container": true,
             "label": "Dozer Glove <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-weapons-rare-brawling-dozer-glove",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers dazed.",
             "tags": [
                 "brawling",
                 "dazed",
@@ -274,7 +274,7 @@
             "is-container": true,
             "label": "Venom Claw",
             "slug": "equipment-rare-weapons-rare-brawling-venom-claw",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers poisoned.",
             "tags": [
                 "brawling",
                 "equipment",

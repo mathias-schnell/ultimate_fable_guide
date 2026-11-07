@@ -118,7 +118,7 @@
             "is-container": true,
             "label": "Symbol of Flux",
             "slug": "class-features-symbols-symbol-of-flux",
-            "description": "When you create this symbol, choose a status effect: dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), or weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>). Then, choose one option: the creature bearing this symbol gains immunity to the chosen status effect; or the creature bearing this symbol loses immunity to the chosen status effect and cannot gain it.",
+            "description": "When you create this symbol, choose a status effect: dazed, shaken, slow, or weak. Then, choose one option: the creature bearing this symbol gains immunity to the chosen status effect; or the creature bearing this symbol loses immunity to the chosen status effect and cannot gain it.",
             "tags": [
                 "dazed",
                 "immunity",

@@ -216,7 +216,7 @@
             "is-container": true,
             "label": "Demonshield <span class='ui-icon svg-diamonds'></span>",
             "slug": "equipment-rare-shields-rare-demonshield",
-            "description": "After a creature deals damage to you, if you are in Crisis, you may have that creature suffer shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "After a creature deals damage to you, if you are in Crisis, you may have that creature suffer shaken.",
             "tags": [
                 "crisis",
                 "equipment",

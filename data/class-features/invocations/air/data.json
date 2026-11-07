@@ -90,7 +90,7 @@
                 "invoker"
             ],
             "contract-icon": "minus",
-            "effect": "You deal 10 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage to the target, and they suffer dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "effect": "You deal 10 air (<i class=\"ui-icon elem-air svg-fluffy-trefoil\"></i>) damage to the target, and they suffer dazed.",
             "expand-icon": "plus",
             "menu-icon": ""
         }

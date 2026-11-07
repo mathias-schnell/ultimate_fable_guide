@@ -5,7 +5,7 @@
     "menu-icon": "",
     "expand-icon": "plus",
     "contract-icon": "minus",
-    "slug": "optional-rules-classic-characters-core",
+    "slug": "optional-rules-character-templates-core",
     "label": "Classic Characters",
     "sub-labels": [],
     "columns": [
@@ -21,7 +21,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Alchemist",
-            "slug": "optional-rules-classic-characters-core-alchemist",
+            "slug": "optional-rules-character-templates-core-alchemist",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d10, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Tinkerer (3 levels): Gadgets (Alchemy: Basic), Potion Rain, Secret Formula</li><li>Wayfarer (2 levels): Resourceful, Tavern Talk</li></ul><p><strong>Equipment:</strong> Steel dagger, crossbow, travel garb, 170 zenit.</p>",
             "tags": [
                 "basic",
@@ -39,7 +39,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Black Knight",
-            "slug": "optional-rules-classic-characters-core-black-knight",
+            "slug": "optional-rules-character-templates-core-black-knight",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d6, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Darkblade (2 levels): Shadow Strike (SL 2)</li><li>Entropist (1 level): Entropic Magic (Drain Vigor)</li><li>Weaponmaster (2 levels): Bladestorm, Melee Weapon Mastery</li></ul><p><strong>Equipment:</strong> Greatsword, runic plate, 120 zenit.</p>",
             "tags": [
                 "core",
@@ -58,7 +58,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Gambler",
-            "slug": "optional-rules-classic-characters-core-gambler",
+            "slug": "optional-rules-character-templates-core-gambler",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Entropist (2 levels): Entropic Magic (Gamble), Lucky Seven</li><li>Rogue (2 levels): Dodge, High Speed</li><li>Weaponmaster (1 levels): Melee Weapon Mastery</li></ul><p><strong>Equipment:</strong> Rapier, shuriken (described as throwing cards!), silk shirt, 120 zenit.</p>",
             "tags": [
                 "core",
@@ -75,7 +75,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Gunslinger",
-            "slug": "optional-rules-classic-characters-core-gunslinger",
+            "slug": "optional-rules-character-templates-core-gunslinger",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Sharpshooter (3 levels): Barrage, Crossfire, Ranged Weapon Mastery</li><li>Tinkerer (2 levels): Gadgets (SL 2; Infusions: Basic and Advanced)</li></ul><p><strong>Equipment:</strong> Pistol, travel garb, runic shield, 70 zenit.</p>",
             "tags": [
                 "basic",
@@ -96,7 +96,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Healer",
-            "slug": "optional-rules-classic-characters-core-healer",
+            "slug": "optional-rules-character-templates-core-healer",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d8, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Orator (2 levels): Encourage, My Trust in You</li><li>Spiritist (3 levels): Spiritual Magic (SL 3; Cleanse, Heal, Lux)</li></ul><p><strong>Equipment:</strong> Staff, sage robe, 270 zenit.</p>",
             "tags": [
                 "core",
@@ -112,7 +112,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Magitechnician",
-            "slug": "optional-rules-classic-characters-core-magitechnician",
+            "slug": "optional-rules-character-templates-core-magitechnician",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d10, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Loremaster (2 levels): Quick Assessment (SL 2)</li><li>Tinkerer (3 levels): Gadgets (SL 3; Magitech: Basic, Advanced, and Superior; magisphere spells: Elemental Shroud, Flare, Heal)</li></ul><p><strong>Equipment:</strong> Steel dagger, sage robe, bronze shield, 120 zenit.</p>",
             "tags": [
                 "basic",
@@ -133,7 +133,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Monster Mage",
-            "slug": "optional-rules-classic-characters-core-monster-mage",
+            "slug": "optional-rules-character-templates-core-monster-mage",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d6, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Chimerist (2 levels): Feral Speech, Spell Mimic</li><li>Wayfarer (2 level): Faithful Companion (SL 2)</li><li>Weaponmaster (1 level): Breach</li></ul><p><strong>Equipment:</strong> Broadaxe, travel garb, runic shield, 70 zenit.</p>",
             "tags": [
                 "chimerist",
@@ -154,7 +154,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Ninja",
-            "slug": "optional-rules-classic-characters-core-ninja",
+            "slug": "optional-rules-character-templates-core-ninja",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Rogue (3 levels): Cheap Shot, Dodge (SL 2)</li><li>Sharpshooter (1 level): Warning Shot</li><li>Weaponmaster (1 level): Bone Crusher</li></ul><p><strong>Equipment:</strong> Steel dagger, shuriken, combat tunic, 120 zenit.</p>",
             "tags": [
                 "core",
@@ -171,7 +171,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Pirate",
-            "slug": "optional-rules-classic-characters-core-pirate",
+            "slug": "optional-rules-character-templates-core-pirate",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d6, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Elementalist (2 levels): Elemental Magic (Thunderbolt), Spellblade</li><li>Fury (2 levels): Adrenaline, Provoke</li><li>Weaponmaster (1 level): Breach</li></ul><p><strong>Equipment:</strong> Broadaxe, silk shirt, runic shield, 70 zenit.</p>",
             "tags": [
                 "core",
@@ -188,7 +188,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Pugilist",
-            "slug": "optional-rules-classic-characters-core-pugilist",
+            "slug": "optional-rules-character-templates-core-pugilist",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d6, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Fury (3 levels): Adrenaline, Frenzy, Withstand</li><li>Weaponmaster (2 levels): Bone Crusher, Counterattack</li></ul><p><strong>Equipment:</strong> Iron knuckle (\u00d72), combat tunic, 120 zenit.</p>",
             "tags": [
                 "core",
@@ -203,7 +203,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Ranger",
-            "slug": "optional-rules-classic-characters-core-ranger",
+            "slug": "optional-rules-character-templates-core-ranger",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Sharpshooter (3 levels): Barrage, Ranged Weapon Mastery, Warning Shot</li><li>Wayfarer (2 levels): Resourceful, Well-traveled</li></ul><p><strong>Equipment:</strong> Steel dagger, shortbow, silk shirt, 120 zenit.</p>",
             "tags": [
                 "core",
@@ -221,7 +221,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Red Sorcerer",
-            "slug": "optional-rules-classic-characters-core-red-sorcerer",
+            "slug": "optional-rules-character-templates-core-red-sorcerer",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d10, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Elementalist (3 levels): Elemental Magic (SL 2: Flare, Iceberg), Spellblade</li><li>Spiritist (1 level): Spiritual Magic (Heal)</li><li>Weaponmaster (1 level): Melee Weapon Mastery</li></ul><p><strong>Equipment:</strong> Rapier, combat tunic, runic shield, 70 zenit.</p>",
             "tags": [
                 "core",
@@ -241,7 +241,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Sage",
-            "slug": "optional-rules-classic-characters-core-sage",
+            "slug": "optional-rules-character-templates-core-sage",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d10, Might d6, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Elementalist (3 levels): Elemental Magic (SL 3: Fulgur, Glacies, Ignis)</li><li>Loremaster (2 levels): Flash of Insight, Focused</li></ul><p><strong>Equipment:</strong> Tome, sage robe, 270 zenit.</p>",
             "tags": [
                 "core",
@@ -258,7 +258,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Samurai",
-            "slug": "optional-rules-classic-characters-core-samurai",
+            "slug": "optional-rules-character-templates-core-samurai",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Guardian (2 levels): Defensive Mastery (SL 2)</li><li>Spiritist (1 level): Spiritual Magic (Soul Weapon)</li><li>Weaponmaster (2 levels): Counterattack, Melee Weapon Mastery</li></ul><p><strong>Equipment:</strong> Katana, runic plate, 120 zenit.</p>",
             "tags": [
                 "core",
@@ -277,7 +277,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Soldier",
-            "slug": "optional-rules-classic-characters-core-soldier",
+            "slug": "optional-rules-character-templates-core-soldier",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d6, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Guardian (2 levels): Bodyguard, Protect</li><li>Weaponmaster (3 levels): Bone Crusher (SL 2), Breach</li></ul><p><strong>Equipment:</strong> Bronze sword, brigandine, runic shield, 70 zenit.</p>",
             "tags": [
                 "core",
@@ -294,7 +294,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Spell Fencer",
-            "slug": "optional-rules-classic-characters-core-spell-fencer",
+            "slug": "optional-rules-character-templates-core-spell-fencer",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Elementalist (2 levels): Elemental Magic (SL 2: Elemental Shroud, Elemental Weapon)</li><li>Spiritist (1 level): Spiritual Magic (Aura)</li><li>Weaponmaster (2 levels): Bladestorm, Counterattack</li></ul><p><strong>Equipment:</strong> Rapier, silk shirt, runic shield, 120 zenit.</p>",
             "tags": [
                 "core",
@@ -315,7 +315,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Summoner",
-            "slug": "optional-rules-classic-characters-core-summoner",
+            "slug": "optional-rules-character-templates-core-summoner",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d6, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Arcanist (3 levels): Arcane Regeneration (SL 2), Bind and Summon (Grimoire or Tower)</li><li>Spiritist (2 levels): Spiritual Magic (SL 2: Barrier, Mercy)</li></ul><p><strong>Equipment:</strong> Staff, sage robe, 270 zenit.</p>",
             "tags": [
                 "arcane",
@@ -333,7 +333,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Thief",
-            "slug": "optional-rules-classic-characters-core-thief",
+            "slug": "optional-rules-character-templates-core-thief",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Rogue (3 levels): Cheap Shot, High Speed, Soul Steal</li><li>Weaponmaster (2 levels): Bone Crusher (SL 2)</li></ul><p><strong>Equipment:</strong> Steel dagger (\u00d72), travel garb, 170 zenit.</p>",
             "tags": [
                 "core",
@@ -351,7 +351,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Troubadour",
-            "slug": "optional-rules-classic-characters-core-troubadour",
+            "slug": "optional-rules-character-templates-core-troubadour",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Orator (2 levels): Condemn, Unexpected Ally</li><li>Spiritist (2 levels): Spiritual Magic (SL 2: Awaken, Enrage)</li><li>Wayfarer (1 level): Well-traveled</li></ul><p><strong>Equipment:</strong> Steel dagger, silk shirt, bronze shield, 220 zenit.</p>",
             "tags": [
                 "core",
@@ -369,7 +369,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Valkyrie",
-            "slug": "optional-rules-classic-characters-core-valkyrie",
+            "slug": "optional-rules-character-templates-core-valkyrie",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Elementalist (1 level): Elemental Magic (Soaring Strike)</li><li>Guardian (1 level): Fortress</li><li>Weaponmaster (3 levels): Bladestorm, Melee Weapon Mastery (SL 2)</li></ul><p><strong>Equipment:</strong> Light (<i class=\"ui-icon elem-light svg-sun\"></i>) spear, brigandine, runic shield, 70 zenit.</p>",
             "tags": [
                 "core",

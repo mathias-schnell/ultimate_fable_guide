@@ -114,7 +114,7 @@
             "is-container": true,
             "label": "Psychic Backlash",
             "slug": "class-features-gifts-psychic-backlash",
-            "description": "That enemy loses an amount of Mind Points equal to (5 + (the number of filled sections in your Brainwave Clock, multiplied by 5)). Then, choose one option: that enemy suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), or that enemy suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "That enemy loses an amount of Mind Points equal to (5 + (the number of filled sections in your Brainwave Clock, multiplied by 5)). Then, choose one option: that enemy suffers dazed, or that enemy suffers shaken.",
             "tags": [
                 "clock",
                 "dazed",
@@ -151,7 +151,7 @@
             "is-container": true,
             "label": "Reassuring Presence",
             "slug": "class-features-gifts-reassuring-presence",
-            "description": "That ally recovers an amount of Mind Points equal to (10 + (the number of filled sections in your Brainwave Clock, multiplied by 5)). If that ally is your focus, they recover from a single status effect of their choice out of dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>), and shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "That ally recovers an amount of Mind Points equal to (10 + (the number of filled sections in your Brainwave Clock, multiplied by 5)). If that ally is your focus, they recover from a single status effect of their choice out of dazed, enraged, and shaken.",
             "tags": [
                 "clock",
                 "dazed",

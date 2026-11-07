@@ -52,7 +52,7 @@
             "is-container": true,
             "label": "Bone Crusher",
             "slug": "classes-weaponmaster-bone-crusher",
-            "description": "When you hit one or more targets with a melee attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>) on each target hit by the attack; or inflict weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>) on each target hit by the attack; or each target hit by the attack loses (SL \u00d7 10) Mind Points. Describe your maneuver!",
+            "description": "When you hit one or more targets with a melee attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict dazed on each target hit by the attack; or inflict weak on each target hit by the attack; or each target hit by the attack loses (SL \u00d7 10) Mind Points. Describe your maneuver!",
             "tags": [
                 "attack",
                 "core",

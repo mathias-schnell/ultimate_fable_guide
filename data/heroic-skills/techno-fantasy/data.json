@@ -259,7 +259,7 @@
             "is-container": true,
             "label": "Hit the Nerve",
             "slug": "heroic-skills-techno-fantasy-hit-the-nerve",
-            "description": "When you successfully use the Condemn Skill against an enemy you know <strong>one or more Traits of</strong>, you recover an amount of Mind Points equal to half the amount of MP lost by the target, and you may have them suffer enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) instead of the normal status effects.\n\nAdditionally, when you perform an <strong>Opposed Check</strong> against an enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) creature, or an <strong>Accuracy Check</strong> or <strong>Magic Check</strong> for an attack or offensive spell (\ud83d\uddf2) that includes one or more enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) creatures among its targets, you trigger a critical success when both dice show the same number (as long as the Check is not a fumble).",
+            "description": "When you successfully use the Condemn Skill against an enemy you know <strong>one or more Traits of</strong>, you recover an amount of Mind Points equal to half the amount of MP lost by the target, and you may have them suffer enraged instead of the normal status effects.\n\nAdditionally, when you perform an <strong>Opposed Check</strong> against an enraged creature, or an <strong>Accuracy Check</strong> or <strong>Magic Check</strong> for an attack or offensive spell (\ud83d\uddf2) that includes one or more enraged creatures among its targets, you trigger a critical success when both dice show the same number (as long as the Check is not a fumble).",
             "tags": [
                 "attack",
                 "chanter",
@@ -281,7 +281,7 @@
                 "Chanter",
                 "Orator"
             ],
-            "summary": "Use Condemn to inflict enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) and gain benefits against enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) creatures."
+            "summary": "Use Condemn to inflict enraged and gain benefits against enraged creatures."
         },
         {
             "always-expand": false,

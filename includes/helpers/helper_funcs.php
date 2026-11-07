@@ -234,7 +234,7 @@ function get_filter_section(): string {
         <li class="filter-item filter-basic">
             <div class="search-wrapper">
                 <i class="ui-icon active svg-funnel"></i>
-                <input type="text" class="search-basic" placeholder="Three letters minimum..." autocomplete="off">
+                <input type="text" class="search-basic" placeholder="Three letters minimum..." autocomplete="off" maxlength="50" />
                 <i class="ui-icon svg-magnifying-glass"></i>
             </div>
         </li>

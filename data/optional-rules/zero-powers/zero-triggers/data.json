@@ -105,7 +105,7 @@
             "is-container": true,
             "label": "Strategy",
             "slug": "optional-rules-zero-powers-zero-triggers-strategy",
-            "description": "This trigger activates at the end of your turn during a conflict, provided one or more enemies present on the scene are suffering from a total of two or more different status effects (such as one dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>) and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>) enemy, or one slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) enemy and another enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) enemy).",
+            "description": "This trigger activates at the end of your turn during a conflict, provided one or more enemies present on the scene are suffering from a total of two or more different status effects (such as one dazed and weak enemy, or one slow enemy and another enraged enemy).",
             "tags": [
                 "dazed",
                 "enraged",

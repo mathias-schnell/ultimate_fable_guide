@@ -42,7 +42,7 @@
             "is-container": true,
             "label": "Gloves, Elegant",
             "slug": "equipment-rare-accessories-gloves-elegant",
-            "description": "You are immune to dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "description": "You are immune to dazed.",
             "tags": [
                 "dazed",
                 "equipment",
@@ -58,7 +58,7 @@
             "is-container": true,
             "label": "Gloves, Rough",
             "slug": "equipment-rare-accessories-gloves-rough",
-            "description": "You are immune to weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "description": "You are immune to weak.",
             "tags": [
                 "equipment",
                 "rare",
@@ -74,7 +74,7 @@
             "is-container": true,
             "label": "Gloves, Silky",
             "slug": "equipment-rare-accessories-gloves-silky",
-            "description": "You are immune to slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "description": "You are immune to slow.",
             "tags": [
                 "equipment",
                 "rare",
@@ -90,7 +90,7 @@
             "is-container": true,
             "label": "Gloves, Warm",
             "slug": "equipment-rare-accessories-gloves-warm",
-            "description": "You are immune to shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "You are immune to shaken.",
             "tags": [
                 "equipment",
                 "rare",
@@ -122,7 +122,7 @@
             "is-container": true,
             "label": "Han\u2019nya Mask",
             "slug": "equipment-rare-accessories-han-nya-mask",
-            "description": "All damage you deal to shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>) creatures ignores Resistances.",
+            "description": "All damage you deal to shaken creatures ignores Resistances.",
             "tags": [
                 "equipment",
                 "rare",
@@ -787,7 +787,7 @@
             "is-container": true,
             "label": "Flashbang Grenades",
             "slug": "equipment-rare-accessories-flashbang-grenades",
-            "description": "When you deal damage to a creature using an elemental shard, that creature also suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "description": "When you deal damage to a creature using an elemental shard, that creature also suffers dazed.",
             "tags": [
                 "dazed",
                 "elemental",
@@ -804,7 +804,7 @@
             "is-container": true,
             "label": "Gas Mask",
             "slug": "equipment-rare-accessories-gas-mask",
-            "description": "You gain Resistance to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and are immune to poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
+            "description": "You gain Resistance to poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage and are immune to poisoned.",
             "tags": [
                 "equipment",
                 "poison",

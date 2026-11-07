@@ -105,7 +105,7 @@
             "is-container": true,
             "label": "Silent Edge",
             "slug": "equipment-rare-weapons-rare-dagger-silent-edge",
-            "description": "One-handed \u2022 Melee \u2022 You are immune to slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to slow.",
             "tags": [
                 "air",
                 "dagger",
@@ -202,7 +202,7 @@
             "is-container": true,
             "label": "Barbed Knife",
             "slug": "equipment-rare-weapons-rare-dagger-barbed-knife",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers shaken.",
             "tags": [
                 "dagger",
                 "equipment",
@@ -226,7 +226,7 @@
             "is-container": true,
             "label": "Cold Finger",
             "slug": "equipment-rare-weapons-rare-dagger-cold-finger",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers weak.",
             "tags": [
                 "dagger",
                 "equipment",
@@ -274,7 +274,7 @@
             "is-container": true,
             "label": "Frantic Nail",
             "slug": "equipment-rare-weapons-rare-dagger-frantic-nail",
-            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 Each target hit by this weapon suffers enraged.",
             "tags": [
                 "dagger",
                 "enraged",

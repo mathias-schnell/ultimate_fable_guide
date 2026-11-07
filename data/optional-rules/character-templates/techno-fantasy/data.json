@@ -5,7 +5,7 @@
     "menu-icon": "",
     "expand-icon": "plus",
     "contract-icon": "minus",
-    "slug": "optional-rules-classic-characters-techno-fantasy",
+    "slug": "optional-rules-character-templates-techno-fantasy",
     "label": "Classic Characters",
     "sub-labels": [],
     "columns": [
@@ -21,7 +21,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Chimeric Hunter",
-            "slug": "optional-rules-classic-characters-techno-fantasy-chimeric-hunter",
+            "slug": "optional-rules-character-templates-techno-fantasy-chimeric-hunter",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d10, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Mutant (3 levels): Theriomorphosis (SL 3: Arpaktida, Electrophora, Toxicophora)</li><li>Sharpshooter (2 levels): Barrage, Hawkeye</li></ul><p><strong>Equipment:</strong> Defensive arbalest (custom weapon, (DEX + INS), bow, ranged, accurate, defense boost, powerful), bronze plate, 70 zenit.</p>",
             "tags": [
                 "bow",
@@ -41,7 +41,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Cybervampire",
-            "slug": "optional-rules-classic-characters-techno-fantasy-cybervampire",
+            "slug": "optional-rules-character-templates-techno-fantasy-cybervampire",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d10, Might d6, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Entropist (1 level): Entropic Magic (Drain Vigor)</li><li>Mutant (3 levels): Biophagy, Theriomorphosis (SL 2: Neurophagoida, Pterotheria)</li><li>Sharpshooter (1 level): Barrage</li></ul><p><strong>Equipment:</strong> \u201cPenance\u201d revolver (custom weapon, (DEX + INS), firearm, ranged, accurate, elemental (<i class=\"ui-icon elem-light svg-light\"></i>), magic defense boost), sage robe, 70 zenit.</p>",
             "tags": [
                 "defense",
@@ -65,7 +65,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Magical Gun Girl",
-            "slug": "optional-rules-classic-characters-techno-fantasy-magical-gun-girl",
+            "slug": "optional-rules-character-templates-techno-fantasy-magical-gun-girl",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d8, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Elementalist (3 levels): Cataclysm, Elemental Magic (SL 2: Glacies, Ignis)</li><li>Pilot (2 levels): Compression Tech, Personal Vehicle (Exoskeleton, Advanced Targeting, Aerial, Magistatic)</li></ul><p><strong>Equipment:</strong> Staff (scepter with scope!), sage robe, 270 zenit.</p>",
             "tags": [
                 "elemental",
@@ -86,7 +86,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Net Wizard",
-            "slug": "optional-rules-classic-characters-techno-fantasy-net-wizard",
+            "slug": "optional-rules-character-templates-techno-fantasy-net-wizard",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d10, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Elementalist (1 level): Elemental Magic (Iceberg)</li><li>Esper (3 levels): Cognitive Focus, Psychic Gifts (Photokinesis), Navigator</li><li>Loremaster (1 level): Flash of Insight</li></ul><p><strong>Equipment:</strong> Saboteur gauntlet (custom weapon, (DEX + INS), arcane, ranged, accurate, defense boost, elemental (<i class=\"ui-icon elem-bolt svg-bolt\"></i>)), sage robe, 70 zenit.</p>",
             "tags": [
                 "arcane",
@@ -112,7 +112,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Psychic Avenger",
-            "slug": "optional-rules-classic-characters-techno-fantasy-psychic-avenger",
+            "slug": "optional-rules-character-templates-techno-fantasy-psychic-avenger",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Darkblade (2 levels): Heart of Darkness, Shadow Strike</li><li>Esper (2 levels): Psychic Gifts (SL 2: Clairvoyance, Psychic Backlash)</li><li>Guardian (1 level): Protect</li></ul><p><strong>Equipment:</strong> Waraxe, runic plate, 70 zenit.</p>",
             "tags": [
                 "darkblade",
@@ -130,7 +130,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Road Knight",
-            "slug": "optional-rules-classic-characters-techno-fantasy-road-knight",
+            "slug": "optional-rules-character-templates-techno-fantasy-road-knight",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Pilot (2 levels): Heart in the Engine, Personal Vehicle (Steed, Flexible Plating, Rapid Interface, Turbo)</li><li>Rogue (1 level): High Speed</li><li>Weaponmaster (2 levels): Bladestorm, Melee Weapon Mastery</li></ul><p><strong>Equipment:</strong> Light (<i class=\"ui-icon elem-light svg-sun\"></i>) spear, travel garb, runic shield, 120 zenit.</p>",
             "tags": [
                 "light",
@@ -154,7 +154,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Soulstream Psyblade",
-            "slug": "optional-rules-classic-characters-techno-fantasy-soulstream-psyblade",
+            "slug": "optional-rules-character-templates-techno-fantasy-soulstream-psyblade",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d6, Might d8, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Esper (3 levels): Cognitive Focus, Psychic Gifts (Life Transference), Psychokinesis</li><li>Weaponmaster (2 levels): Bone Crusher, Counterattack</li></ul><p><strong>Equipment:</strong> Twin blades of Id (custom weapon, (DEX + MIG), sword, melee, elemental (<i class=\"ui-icon elem-dark svg-dark\"></i>), quick), travel garb, 120 zenit.</p>",
             "tags": [
                 "dark",
@@ -178,7 +178,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Roving Physician",
-            "slug": "optional-rules-classic-characters-techno-fantasy-roving-physician",
+            "slug": "optional-rules-character-templates-techno-fantasy-roving-physician",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d10, Might d6, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Esper (1 level): Psychic Gifts (Reassuring Presence)</li><li>Tinkerer (1 level): Potion Rain</li><li>Wayfarer (3 levels): Faithful Companion (SL 3: a massive construct with high HP that protects the Wayfarer and can counter attacks)</li></ul><p><strong>Equipment:</strong> Tome (an ancient medical text), sage robe, 270 zenit.</p>",
             "tags": [
                 "companion",
@@ -200,7 +200,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Test Subject",
-            "slug": "optional-rules-classic-characters-techno-fantasy-test-subject",
+            "slug": "optional-rules-character-templates-techno-fantasy-test-subject",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d10, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Chimerist (1 level): Spell Mimic</li><li>Fury (1 level): Frenzy</li><li>Mutant (3 levels): Akromorphosis, Genoclepsis, Theriomorphosis (Dynamotheria)</li></ul><p><strong>Equipment:</strong> Sage robe, 370 zenit.</p>",
             "tags": [
                 "chimerist",
@@ -219,7 +219,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Wandering Inventor",
-            "slug": "optional-rules-classic-characters-techno-fantasy-wandering-inventor",
+            "slug": "optional-rules-character-templates-techno-fantasy-wandering-inventor",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d10, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Pilot (2 levels): Personal Vehicle (SL 2: Exoskeleton, Advanced Targeting, Rifle \u00d72, Shield)</li><li>Tinkerer (3 levels): Gadgets (Infusions: Basic), Potion Rain, Visionary</li></ul><p><strong>Equipment:</strong> Sage robe, 370 zenit.</p>",
             "tags": [
                 "basic",
@@ -238,7 +238,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "The Rebel Cell: Brave Revolutionaries",
-            "slug": "optional-rules-classic-characters-techno-fantasy-the-rebel-cell-brave-revolutionaries",
+            "slug": "optional-rules-character-templates-techno-fantasy-the-rebel-cell-brave-revolutionaries",
             "description": "<p>The MagSec Defector uses his turn to fortify himself, protects his allies, and breaks enemy defenses; the Courageous Mystic heals her allies and shares her Fabula Points with My Trust in You; and the Fierce Brawler fills many roles, alternating quick and powerful strikes, as well as taking advantage of status effects and Atmokinesis to inflict massive amounts of damage in a short time.</p>",
             "tags": [
                 "techno-fantasy"
@@ -251,7 +251,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Courageous Mystic",
-            "slug": "optional-rules-classic-characters-techno-fantasy-courageous-mystic",
+            "slug": "optional-rules-character-templates-techno-fantasy-courageous-mystic",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d10, Might d6, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Esper (1 level): Psychokinesis</li><li>Orator (1 level): My Trust in You</li><li>Spiritist (3 levels): Ritual Spiritism, Spiritual Magic (SL 2: Heal, Reinforce)</li><li>Polar Mnemosphere (Elementalist; 1 level): Elemental Magic (Iceberg)</li></ul><p><strong>Equipment:</strong> Collapsible scepter (custom weapon, (DEX + INS), arcane, melee, accurate, elemental (<i class=\"ui-icon elem-light svg-light\"></i>), magic defense boost), sage robe, 70 zenit.</p>",
             "tags": [
                 "arcane",
@@ -279,7 +279,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "Fierce Brawler",
-            "slug": "optional-rules-classic-characters-techno-fantasy-fierce-brawler",
+            "slug": "optional-rules-character-templates-techno-fantasy-fierce-brawler",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d6, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Fury (1 level): Frenzy</li><li>Rogue (2 levels): Cheap Shot (SL 2)</li><li>Weaponmaster (2 levels): Bladestorm, Bone Crusher</li><li>Kinetic Mnemosphere (Esper; level 1): Psychic Gifts (Atmokinesis)</li></ul><p><strong>Equipment:</strong> Flexible hand wrappings (custom weapon, (DEX + MIG), brawling, melee, transforming (form I: quick; form II: accurate, powerful)), travel garb, 70 zenit.</p>",
             "tags": [
                 "brawling",
@@ -303,7 +303,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "MagSec Defector",
-            "slug": "optional-rules-classic-characters-techno-fantasy-magsec-defector",
+            "slug": "optional-rules-character-templates-techno-fantasy-magsec-defector",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d8, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Fury (1 level): Withstand</li><li>Guardian (1 level): Protect</li><li>Weaponmaster (3 levels): Bladestorm, Breach, Counterattack</li><li>Scorching Mnemosphere (Elementalist; 1 level): Elemental Magic (Ignis)</li></ul><p><strong>Equipment:</strong> MagSec Claymore (custom weapon, (DEX + MIG), sword, melee, accurate, defense boost, powerful), bronze plate (described as a bronze armguard), 70 zenit.</p>",
             "tags": [
                 "defense",
@@ -328,7 +328,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "The Pilots: Control Systems, Activate!",
-            "slug": "optional-rules-classic-characters-techno-fantasy-the-pilots-control-systems-activate",
+            "slug": "optional-rules-character-templates-techno-fantasy-the-pilots-control-systems-activate",
             "description": "<p>Having escaped Orbital Project Miraris following the Central Government\u2019s attack, four young recruits are caught in the struggle of civil war at the helms of their mechas. What will they choose to fight for? Can these dreadful machines protect life, or are they only fit to extinguish it? What happened to the pilot of Miraris 004?</p>",
             "tags": [
                 "attack",
@@ -343,7 +343,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "M001: Nemo",
-            "slug": "optional-rules-classic-characters-techno-fantasy-m001-nemo",
+            "slug": "optional-rules-character-templates-techno-fantasy-m001-nemo",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d10, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Pilot (3 levels): Flexible Configuration, Personal Vehicle (SL 2: Mecha, Aerial, Flamer, Shield, Sword, Standard Plating)</li><li>Sharpshooter (1 level): Hawkeye</li><li>Weaponmaster (1 level): Bone Crusher</li></ul><p><strong>Equipment:</strong> Pistol, steel dagger, silk shirt, 70 zenit.</p>",
             "tags": [
                 "dagger",
@@ -365,7 +365,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "M002: Gozen",
-            "slug": "optional-rules-classic-characters-techno-fantasy-m002-gozen",
+            "slug": "optional-rules-character-templates-techno-fantasy-m002-gozen",
             "description": "<p><strong>Attributes:</strong> Dexterity d6, Insight d8, Might d10, Willpower d8</p><p><strong>Classes:</strong></p><ul><li>Guardian (1 level): Protect</li><li>Pilot (2 levels): Personal Vehicle (Mecha, Aerial, Scythe, Heavy Plating), Strong Grip</li><li>Weaponmaster (2 levels): Bladestorm, Counterattack</li></ul><p><strong>Equipment:</strong> Waraxe, runic plate, 70 zenit.</p>",
             "tags": [
                 "guardian",
@@ -384,7 +384,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "M003: Khorkoi",
-            "slug": "optional-rules-classic-characters-techno-fantasy-m003-khorkoi",
+            "slug": "optional-rules-character-templates-techno-fantasy-m003-khorkoi",
             "description": "<p><strong>Attributes:</strong> Dexterity d10, Insight d8, Might d8, Willpower d6</p><p><strong>Classes:</strong></p><ul><li>Elementalist (1 level): Elemental Magic (Elemental Weapon)</li><li>Pilot (1 level): Personal Vehicle (Mecha, Aerial, Flexible Plating, Machine Gun)</li><li>Rogue (3 levels): Cheap Shot, Dodge (SL 2)</li></ul><p><strong>Equipment:</strong> Arc-flail (custom weapon, (DEX + INS), flail, melee, elemental (<i class=\"ui-icon elem-bolt svg-bolt\"></i>), quick)), combat tunic, 120 zenit.</p>",
             "tags": [
                 "bolt",
@@ -408,7 +408,7 @@
             "always-expand": false,
             "is-container": true,
             "label": "M005: Walpurgis",
-            "slug": "optional-rules-classic-characters-techno-fantasy-m005-walpurgis",
+            "slug": "optional-rules-character-templates-techno-fantasy-m005-walpurgis",
             "description": "<p><strong>Attributes:</strong> Dexterity d8, Insight d8, Might d6, Willpower d10</p><p><strong>Classes:</strong></p><ul><li>Entropist (2 levels): Entropic Magic (SL 2: Acceleration, Umbra)</li><li>Pilot (2 levels): Personal Vehicle (SL 2: Mecha, Advanced Targeting, Aerial, Bow, Counterstrike, Runic Plating)</li><li>Spiritist (1 level): Spiritual Magic (Heal)</li></ul><p><strong>Equipment:</strong> Ectorifle (page 116), travel garb, 70 zenit.</p>",
             "tags": [
                 "bow",

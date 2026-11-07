@@ -92,7 +92,7 @@
             "is-container": true,
             "label": "Crystalline",
             "slug": "optional-rules-technospheres-crystalline",
-            "description": "You are immune to dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).\n\u2022 Coag. 2: you gain a +2 bonus to Open Checks made to examine creatures, items, and locations.",
+            "description": "You are immune to dazed.\n\u2022 Coag. 2: you gain a +2 bonus to Open Checks made to examine creatures, items, and locations.",
             "tags": [
                 "dazed"
             ],
@@ -143,7 +143,7 @@
             "is-container": true,
             "label": "Dazing",
             "slug": "optional-rules-technospheres-dazing",
-            "description": "Each target hit by this weapon suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers dazed.\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "dazed",
                 "weapon"
@@ -192,7 +192,7 @@
             "is-container": true,
             "label": "Energizing",
             "slug": "optional-rules-technospheres-energizing",
-            "description": "You are immune to weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).\n\u2022 Coag. 2: when you recover Hit Points, you recover 2 additional Hit Points.",
+            "description": "You are immune to weak.\n\u2022 Coag. 2: when you recover Hit Points, you recover 2 additional Hit Points.",
             "tags": [
                 "hp",
                 "weak"
@@ -224,7 +224,7 @@
             "is-container": true,
             "label": "Ghastly",
             "slug": "optional-rules-technospheres-ghastly",
-            "description": "Each target hit by this weapon suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers shaken.\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "shaken",
                 "weapon"
@@ -368,7 +368,7 @@
             "is-container": true,
             "label": "Quick",
             "slug": "optional-rules-technospheres-quick",
-            "description": "You are immune to slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).\n\u2022 Coag. 2: you gain a +2 bonus to your Initiative Modifier.",
+            "description": "You are immune to slow.\n\u2022 Coag. 2: you gain a +2 bonus to your Initiative Modifier.",
             "tags": [
                 "initiative",
                 "slow"
@@ -446,7 +446,7 @@
             "is-container": true,
             "label": "Scornful",
             "slug": "optional-rules-technospheres-scornful",
-            "description": "Each target hit by this weapon suffers enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>).\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers enraged.\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "enraged",
                 "weapon"
@@ -497,7 +497,7 @@
             "is-container": true,
             "label": "Snaring",
             "slug": "optional-rules-technospheres-snaring",
-            "description": "Each target hit by this weapon suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers slow.\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "slow",
                 "weapon"
@@ -531,7 +531,7 @@
             "is-container": true,
             "label": "Steadfast",
             "slug": "optional-rules-technospheres-steadfast",
-            "description": "You are immune to shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).\n\u2022 Coag. 2: when you recover Mind Points, you recover 2 additional Mind Points.",
+            "description": "You are immune to shaken.\n\u2022 Coag. 2: when you recover Mind Points, you recover 2 additional Mind Points.",
             "tags": [
                 "mp",
                 "shaken"
@@ -547,7 +547,7 @@
             "is-container": true,
             "label": "Tiring",
             "slug": "optional-rules-technospheres-tiring",
-            "description": "Each target hit by this weapon suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers weak.\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "weak",
                 "weapon"
@@ -563,7 +563,7 @@
             "is-container": true,
             "label": "Toxic",
             "slug": "optional-rules-technospheres-toxic",
-            "description": "Each target hit by this weapon suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).\n\nThis hoplosphere occupies 2 slots.",
+            "description": "Each target hit by this weapon suffers poisoned.\n\nThis hoplosphere occupies 2 slots.",
             "tags": [
                 "poisoned",
                 "weapon"

@@ -96,7 +96,7 @@
             "is-container": true,
             "label": "EMP Cannon",
             "slug": "equipment-rare-modules-rare-emp-cannon",
-            "description": "Firearm \u2022 Ranged \u2022 Each construct hit by an attack with this weapon suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>). A personal vehicle with this module enabled cannot have any other weapon module enabled.",
+            "description": "Firearm \u2022 Ranged \u2022 Each construct hit by an attack with this weapon suffers dazed. A personal vehicle with this module enabled cannot have any other weapon module enabled.",
             "tags": [
                 "attack",
                 "bolt",

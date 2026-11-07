@@ -75,7 +75,7 @@
                 "shaken"
             ],
             "contract-icon": "minus",
-            "effect": "The target loses 20 Mind Points and also suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "effect": "The target loses 20 Mind Points and also suffers shaken.",
             "expand-icon": "plus",
             "menu-icon": ""
         },
@@ -92,7 +92,7 @@
                 "weak"
             ],
             "contract-icon": "minus",
-            "effect": "You deal 10 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to the target, and they suffer weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "effect": "You deal 10 ice (<i class=\"ui-icon elem-ice svg-ice\"></i>) damage to the target, and they suffer weak.",
             "expand-icon": "plus",
             "menu-icon": ""
         }

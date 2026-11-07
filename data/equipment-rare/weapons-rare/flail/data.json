@@ -60,7 +60,7 @@
             "is-container": true,
             "label": "Dusk Star",
             "slug": "equipment-rare-weapons-rare-flail-dusk-star",
-            "description": "One-handed \u2022 Melee \u2022 You are immune to shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "One-handed \u2022 Melee \u2022 You are immune to shaken.",
             "tags": [
                 "dark",
                 "equipment",
@@ -155,7 +155,7 @@
             "is-container": true,
             "label": "Dominatrix",
             "slug": "equipment-rare-weapons-rare-flail-dominatrix",
-            "description": "One-handed \u2022 Melee \u2022 You gain a +2 bonus to Accuracy Checks and Magic Checks against enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) targets.",
+            "description": "One-handed \u2022 Melee \u2022 You gain a +2 bonus to Accuracy Checks and Magic Checks against enraged targets.",
             "tags": [
                 "enraged",
                 "equipment",
@@ -225,7 +225,7 @@
             "is-container": true,
             "label": "Kusarigama",
             "slug": "equipment-rare-weapons-rare-flail-kusarigama",
-            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "description": "Two-handed \u2022 Melee \u2022 Each target hit by this weapon suffers slow.",
             "tags": [
                 "equipment",
                 "flail",

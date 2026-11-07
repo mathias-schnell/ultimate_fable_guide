@@ -66,7 +66,7 @@
                 "tinkerer"
             ],
             "contract-icon": "minus",
-            "effect": "The attack deals 5 extra damage, its damage becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), and each creature hit by the attack suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).",
+            "effect": "The attack deals 5 extra damage, its damage becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), and each creature hit by the attack suffers poisoned.",
             "expand-icon": "plus",
             "infusion": "Venom",
             "menu-icon": ""

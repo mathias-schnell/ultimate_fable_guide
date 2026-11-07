@@ -72,7 +72,7 @@
             "is-container": true,
             "label": "Golden Ginkgo",
             "slug": "class-features-magiseeds-golden-ginkgo",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you and every ally you can see recover from dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>), and shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).</td></tr><tr><td>2-3</td><td>At the end of your turn, you and every ally you can see recover an amount of Mind Points equal to (5 + your Skill Level in Chloromancy).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you and every ally you can see recover from dazed, enraged, and shaken.</td></tr><tr><td>2-3</td><td>At the end of your turn, you and every ally you can see recover an amount of Mind Points equal to (5 + your Skill Level in Chloromancy).</td></tr></tbody></table>",
             "tags": [
                 "dazed",
                 "enraged",
@@ -90,7 +90,7 @@
             "is-container": true,
             "label": "Grave Asphodel",
             "slug": "class-features-magiseeds-grave-asphodel",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers shaken.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers shaken.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of dark (<i class=\"ui-icon elem-dark svg-dark\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from shaken.</td></tr></tbody></table>",
             "tags": [
                 "dark",
                 "shaken",
@@ -125,7 +125,7 @@
             "is-container": true,
             "label": "Hookleaf Nightshade",
             "slug": "class-features-magiseeds-hookleaf-nightshade",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>All damage you deal becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), its type cannot change, and it ignores Immunities and Resistances.</td></tr><tr><td>2-3</td><td>All damage you deal becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), its type cannot change, and it ignores Immunities and Resistances. Additionally, when you deal poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage for the first time during your turn, you deal extra damage equal to (your Skill Level in Chloromancy) and each creature that lost Hit Points this way suffers poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>All damage you deal becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), its type cannot change, and it ignores Immunities and Resistances.</td></tr><tr><td>2-3</td><td>All damage you deal becomes poison (<i class=\"ui-icon elem-poison svg-poison\"></i>), its type cannot change, and it ignores Immunities and Resistances. Additionally, when you deal poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage for the first time during your turn, you deal extra damage equal to (your Skill Level in Chloromancy) and each creature that lost Hit Points this way suffers poisoned.</td></tr></tbody></table>",
             "tags": [
                 "hp",
                 "poison",
@@ -173,7 +173,7 @@
             "is-container": true,
             "label": "Ocean Lotus",
             "slug": "class-features-magiseeds-ocean-lotus",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are immune to dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>) and slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).</td></tr><tr><td>2</td><td>You treat your Dexterity and Insight as being one die size higher (up to a maximum of d12).</td></tr><tr><td>3</td><td>You and every ally you can see treat your Dexterity and Insight as being one die size higher (up to a maximum of d12).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are immune to dazed and slow.</td></tr><tr><td>2</td><td>You treat your Dexterity and Insight as being one die size higher (up to a maximum of d12).</td></tr><tr><td>3</td><td>You and every ally you can see treat your Dexterity and Insight as being one die size higher (up to a maximum of d12).</td></tr></tbody></table>",
             "tags": [
                 "dazed",
                 "slow",
@@ -221,7 +221,7 @@
             "is-container": true,
             "label": "Regal Protea",
             "slug": "class-features-magiseeds-regal-protea",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are immune to shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>) and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</td></tr><tr><td>2</td><td>You treat your Might and Willpower as being one die size higher (up to a maximum of d12).</td></tr><tr><td>3</td><td>You and every ally you can see treat your Might and Willpower as being one die size higher (up to a maximum of d12).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>0-1</td><td>You are immune to shaken and weak.</td></tr><tr><td>2</td><td>You treat your Might and Willpower as being one die size higher (up to a maximum of d12).</td></tr><tr><td>3</td><td>You and every ally you can see treat your Might and Willpower as being one die size higher (up to a maximum of d12).</td></tr></tbody></table>",
             "tags": [
                 "shaken",
                 "weak"
@@ -236,7 +236,7 @@
             "is-container": true,
             "label": "Remedy Lily",
             "slug": "class-features-magiseeds-remedy-lily",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you and every ally you can see recover from poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), and weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</td></tr><tr><td>2-3</td><td>At the end of your turn, you and every ally you can see recover an amount of Hit Points equal to (15 + your Skill Level in Chloromancy).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you and every ally you can see recover from poisoned, slow, and weak.</td></tr><tr><td>2-3</td><td>At the end of your turn, you and every ally you can see recover an amount of Hit Points equal to (15 + your Skill Level in Chloromancy).</td></tr></tbody></table>",
             "tags": [
                 "hp",
                 "poisoned",
@@ -254,7 +254,7 @@
             "is-container": true,
             "label": "Serrated Rose",
             "slug": "class-features-magiseeds-serrated-rose",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers slow.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers slow.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of physical (<i class=\"ui-icon elem-physical svg-physical\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from slow.</td></tr></tbody></table>",
             "tags": [
                 "physical",
                 "skill",
@@ -285,7 +285,7 @@
             "is-container": true,
             "label": "Star Peony",
             "slug": "class-features-magiseeds-star-peony",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers dazed.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers dazed.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from dazed.</td></tr></tbody></table>",
             "tags": [
                 "dazed",
                 "light",
@@ -301,7 +301,7 @@
             "is-container": true,
             "label": "Striped Orchid",
             "slug": "class-features-magiseeds-striped-orchid",
-            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).</td></tr></tbody></table>",
+            "description": "<table><thead><tr><th>\u23f2</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>At the end of your turn, you may choose an enemy you can see. If you do, that enemy suffers weak.</td></tr><tr><td>2</td><td>At the end of your turn, every enemy you can see suffers weak.</td></tr><tr><td>3</td><td>At the end of your turn, you deal an amount of poison (<i class=\"ui-icon elem-poison svg-poison\"></i>) damage equal to (15 + your Skill Level in Chloromancy) to each enemy you can see who is suffering from weak.</td></tr></tbody></table>",
             "tags": [
                 "plant",
                 "poison",

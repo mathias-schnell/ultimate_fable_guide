@@ -44,7 +44,7 @@
             "is-container": true,
             "label": "Banshee Dance",
             "slug": "class-features-dances-banshee-dance",
-            "description": "Choose another creature that is able to see you. If that creature is suffering from slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), they suffer shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>).",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from slow, they suffer shaken.",
             "tags": [
                 "dance",
                 "shaken",
@@ -124,7 +124,7 @@
             "is-container": true,
             "label": "Kraken Dance",
             "slug": "class-features-dances-kraken-dance",
-            "description": "Choose another creature that is able to see you. If that creature is suffering from dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), they suffer slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>).",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from dazed, they suffer slow.",
             "tags": [
                 "dance",
                 "dazed",
@@ -185,7 +185,7 @@
             "is-container": true,
             "label": "Nightmare Dance",
             "slug": "class-features-dances-nightmare-dance",
-            "description": "Choose another creature that is able to see you. If that creature is suffering from shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), they suffer weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>).",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from shaken, they suffer weak.",
             "tags": [
                 "dance",
                 "shaken",
@@ -247,7 +247,7 @@
             "is-container": true,
             "label": "Satyr Dance",
             "slug": "class-features-dances-satyr-dance",
-            "description": "Choose another creature that is able to see you. If that creature is suffering from weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>), they suffer dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "description": "Choose another creature that is able to see you. If that creature is suffering from weak, they suffer dazed.",
             "tags": [
                 "dance",
                 "dazed",

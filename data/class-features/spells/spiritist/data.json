@@ -118,7 +118,7 @@
             "is-container": true,
             "label": "Enrage <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-spiritist-enrage",
-            "description": "You cause a creature to lose any semblance of temper and act brazenly. The target suffers enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>) and cannot perform the Guard or Spell actions until the end of their next turn.",
+            "description": "You cause a creature to lose any semblance of temper and act brazenly. The target suffers enraged and cannot perform the Guard or Spell actions until the end of their next turn.",
             "tags": [
                 "core",
                 "enraged",
@@ -139,7 +139,7 @@
             "is-container": true,
             "label": "Hallucination <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-spiritist-hallucination",
-            "description": "You alter the senses of your enemies, causing them to experience bizarre or frightening hallucinations. Choose dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>) or shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>): you inflict the chosen status effect on each target hit by this spell.",
+            "description": "You alter the senses of your enemies, causing them to experience bizarre or frightening hallucinations. Choose dazed or shaken: you inflict the chosen status effect on each target hit by this spell.",
             "tags": [
                 "core",
                 "dazed",
@@ -180,7 +180,7 @@
             "is-container": true,
             "label": "Lux <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-spiritist-lux",
-            "description": "You focus your inner energy into a barrage of blinding soul rays. You deal (HR + 15) light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage to each target hit by this spell. Opportunity: each target hit by this spell suffers dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>).",
+            "description": "You focus your inner energy into a barrage of blinding soul rays. You deal (HR + 15) light (<i class=\"ui-icon elem-light svg-sun\"></i>) damage to each target hit by this spell. Opportunity: each target hit by this spell suffers dazed.",
             "tags": [
                 "core",
                 "dazed",
@@ -222,7 +222,7 @@
             "is-container": true,
             "label": "Reinforce",
             "slug": "class-features-spells-spiritist-reinforce",
-            "description": "You protect the targets from attacks that would corrupt their body and spirit. Choose dazed (<i class=\"ui-icon status-dazed svg-star-swirl\"></i>), enraged (<i class=\"ui-icon status-enraged svg-burning-skull\"></i>), poisoned (<i class=\"ui-icon status-poisoned svg-radioactive\"></i>), shaken (<i class=\"ui-icon status-shaken svg-kneeling\"></i>), slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>), or weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>). Until this spell ends, each target is immune to the chosen status effect.",
+            "description": "You protect the targets from attacks that would corrupt their body and spirit. Choose dazed, enraged, poisoned, shaken, slow, or weak. Until this spell ends, each target is immune to the chosen status effect.",
             "tags": [
                 "core",
                 "dazed",
@@ -293,7 +293,7 @@
             "is-container": true,
             "label": "Torpor <span class='ui-icon svg-electric'></span>",
             "slug": "class-features-spells-spiritist-torpor",
-            "description": "You smother the soul energy coursing through the bodies of your foes, hindering their movements. Choose slow (<i class=\"ui-icon status-slow svg-tortoise\"></i>) or weak (<i class=\"ui-icon status-weak svg-hand-bandage\"></i>): you inflict the chosen status effect on each target hit by this spell.",
+            "description": "You smother the soul energy coursing through the bodies of your foes, hindering their movements. Choose slow or weak: you inflict the chosen status effect on each target hit by this spell.",
             "tags": [
                 "core",
                 "slow",
