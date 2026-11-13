@@ -7,6 +7,10 @@ $css_files = [
     "content"
 ];
 
+$js_files = [
+    "app"
+];
+
 $order = [
     "classes", 
     "class-features",

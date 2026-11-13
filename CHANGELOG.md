@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.8.6] - 2026-11-12
+
+### Added
+- App will be split into five different apps with each responsible for a specific category of data (controls for accessing each will be coming soon).
+- Subtitles added to branding/titles.
+
+### Changed
+- "Optional Rules" and "Equipment (Rare)" categories have been moved.
+- Icon for "Dancer" changed.
+
+### Internal
+- Removed unused/obsolete code from several places.
+- Added some additional safeguards in several places.
+
+---
 
 ## [0.8.5] - 2026-11-06
 

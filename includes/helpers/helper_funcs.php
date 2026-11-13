@@ -31,7 +31,7 @@ function get_menu(array $nodes = [], int $level = 1, array $item_order = []): st
     $keys = array_keys($nodes);
     $list_class = $level === 1 ? 'menu-root' : 'menu-nested';
 
-    if ($level == 1) $keys = array_merge($order, array_diff(array_diff(scandir(DATA_PATH), array('.', '..')), $order));
+    if (is_dir(DATA_PATH) && $level == 1) $keys = array_merge($order, array_diff(array_diff(scandir(DATA_PATH), array('.', '..')), $order));
     if (!empty($item_order)) $keys = array_merge($item_order, array_diff($keys, $item_order));
     
     ob_start();
@@ -168,7 +168,7 @@ function render_row_article(array $item, array $combined_tags, array $cols, stri
             <?php endforeach; ?>
 
             <div class="<?= $slug ?>-url">
-                <button class="<?= $slug ?>-link" type="button" data-link="<?= BASE_URL . "?" . $url_params ?>">
+                <button class="<?= $slug ?>-link" type="button" data-link="">
                     <span class="menu-icon ui-icon active svg-share"></span>
                 </button>
             </div>

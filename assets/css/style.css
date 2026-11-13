@@ -153,36 +153,76 @@ h6 { font-size: var(--font-size-mediumlarge); }
 }
 
 .title-container .app-title {
-  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: calc(var(--title-size) * 0.5) 0 calc(var(--title-size) * 0.1) 0;
+}
 
-  color: var(--text-color);
-  display: inline-block;
+.title-container .app-title-text {
   font-family: var(--font-family-title);
   font-size: var(--title-size);
   letter-spacing: -0.1rem;
   line-height: var(--font-line-height-medium);
-  margin: 0.1rem;
-  padding: calc(var(--title-size) * 0.8) 0 calc(var(--title-size) * 0.05) 0;
-  text-shadow: 2px 2px 1px black;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
   z-index: 2;
 }
 
-.title-container .app-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: -0.2rem;
-    right: -0.5rem;
-    
-    height: calc(var(--title-size) * 0.05);
-    background-color: var(--text-color);
+/* The three-part flex row */
+.title-container .app-subtitle {
+  display: flex;
+  align-items: center;
+  margin-top: calc(var(--title-size) * 0.05);
+  width: 100%;
+  z-index: 2;
+}
+
+/* Left and Right Underlines */
+.title-container .underline-left,
+.title-container .underline-right {
+  flex: 1;
+  height: calc(var(--title-size) * 0.08);
+  background-color: var(--text-color);
+  margin-top: calc(var(--title-size) * 0.04)
+}
+
+.title-container .underline-left {
+  background: linear-gradient(
+    to right, 
+    var(--text-color) 0%, 
+    var(--text-color) 50%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.title-container .underline-right {
+  background: linear-gradient(
+    to left, 
+    var(--text-color) 0%, 
+    var(--text-color) 50%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.title-container .subtitle-text {
+  font-family: var(--font-family-title);
+  font-size: calc(var(--title-size) * 0.2);
+  letter-spacing: 0.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-shadow: 1px 1px 1px black;
+  padding: 0 0.1rem;
+  white-space: nowrap;
 }
 
 .title-container .title-icon {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-75%, -48%);
+    transform: translate(-70%, -48%);
 
     background: linear-gradient(
         135deg, 

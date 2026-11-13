@@ -2,9 +2,13 @@
     ini_set("display_errors", true);
     error_reporting(E_ALL);
 
+    define('TITLE_TEXT',    urldecode($title_text ?? "Ultimate Fable Guide"));
+    define('SUBTITLE_TEXT', urldecode($subtitle_text ?? "Character Compendium"));
+    define('DATA_SUBPATH',  $data_subpath ?? 'cc');
+
     define('APP_ROOT',      dirname(dirname(__DIR__)));
     define('INCLUDES_PATH', APP_ROOT . '/includes');
-    define('DATA_PATH',     APP_ROOT . '/data');
+    define('DATA_PATH',     APP_ROOT . '/data/' . DATA_SUBPATH);
     define('CSS_PATH',      APP_ROOT . '/assets/css');
     define('FONTS_PATH',    APP_ROOT . '/assets/fonts');
     define('ICONS_PATH',    APP_ROOT . '/assets/icons');
